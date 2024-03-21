@@ -1,0 +1,23 @@
+[INFO] 2024-03-21 22:47:24.777 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[397] - Save process definition complete, processCode:13005061728960, processVersion:1.
+[INFO] 2024-03-21 22:47:24.811 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[408] - Save process task relations complete, projectCode:13001194483488, processCode:13005061728960, processVersion:1.
+[INFO] 2024-03-21 22:49:50.873 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[397] - Save process definition complete, processCode:13005080428864, processVersion:1.
+[INFO] 2024-03-21 22:49:50.878 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[408] - Save process task relations complete, projectCode:13001194483488, processCode:13005080428864, processVersion:1.
+[ERROR] 2024-03-21 22:49:56.153 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.ProcessDefinitionController#releaseProcessDefinition[4 args] Meet a ServiceException: Internal Server Error: SubWorkflowDefinition sub is not online
+[INFO] 2024-03-21 22:51:17.919 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13005080428864, commandCount:1.
+[INFO] 2024-03-21 22:51:43.115 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:214, taskInstanceName:echo, host: 172.20.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240321/13005080428864/1/51/214.log
+[INFO] 2024-03-21 22:51:43.382 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:214, taskInstanceName:echo, host: 172.20.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240321/13005080428864/1/51/214.log
+[INFO] 2024-03-21 22:52:05.042 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:213, taskInstanceName:sub, host: 172.20.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240321/13005061728960/1/52/213.log
+[INFO] 2024-03-21 22:52:05.156 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:213, taskInstanceName:sub, host: 172.20.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240321/13005061728960/1/52/213.log
+[INFO] 2024-03-21 22:53:41.621 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13005061728960, processVersion:1.
+[INFO] 2024-03-21 22:53:41.626 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13005061728960, processVersion:2.
+[INFO] 2024-03-21 22:53:41.652 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13005061728960, processVersion:2.
+[INFO] 2024-03-21 22:54:36.975 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13005080428864, commandCount:1.
+[INFO] 2024-03-21 22:54:58.379 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13005080428864, commandCount:1.
+[INFO] 2024-03-21 22:55:24.708 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:215, taskInstanceName:sub, host: 172.20.0.6:5678, logPath:/opt/dolphinscheduler/logs/20240321/13005080428864/1/53/215.log
+[INFO] 2024-03-21 22:55:24.996 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:215, taskInstanceName:sub, host: 172.20.0.6:5678, logPath:/opt/dolphinscheduler/logs/20240321/13005080428864/1/53/215.log
+[INFO] 2024-03-21 22:55:38.571 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:216, taskInstanceName:sub, host: 172.20.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240321/13005061728960/2/54/216.log
+[INFO] 2024-03-21 22:55:38.663 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:216, taskInstanceName:sub, host: 172.20.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240321/13005061728960/2/54/216.log
+[ERROR] 2024-03-21 22:56:00.234 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:217.
+[INFO] 2024-03-21 22:56:03.781 +0800 o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+[INFO] 2024-03-21 22:56:20.232 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:220, taskInstanceName:echo, host: 172.20.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240321/13005080428864/1/55/220.log
+[INFO] 2024-03-21 22:56:20.404 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:220, taskInstanceName:echo, host: 172.20.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240321/13005080428864/1/55/220.log

@@ -1,0 +1,155 @@
+[INFO] 2024-03-21 19:47:27.075 +0800 - Submit LogicTask: check the sum of numbers to MasterTaskExecutorThreadPool success
+[INFO] 2024-03-21 19:47:27.079 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:47:27.096 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-03-21 19:47:27.096 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:47:27.096 +0800 - Begin to initialize task
+[INFO] 2024-03-21 19:47:27.097 +0800 - Set task startTime: 1711021647097
+[INFO] 2024-03-21 19:47:27.097 +0800 - Set task appId: 19_105
+[INFO] 2024-03-21 19:47:27.097 +0800 - End initialize task {
+  "taskInstanceId" : 105,
+  "taskName" : "check the sum of numbers",
+  "firstSubmitTime" : 1711021647062,
+  "startTime" : 1711021647097,
+  "taskType" : "SWITCH",
+  "workflowInstanceHost" : "172.19.0.5:5678",
+  "host" : "172.19.0.5:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240321/13002839652640/10/19/105.log",
+  "processId" : 0,
+  "processDefineCode" : 13002839652640,
+  "processDefineVersion" : 10,
+  "processInstanceId" : 19,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"\",\"resourceList\":[],\"switchResult\":{\"dependTaskList\":[{\"condition\":\"${sum} == 2\",\"nextNode\":13002733318688},{\"condition\":\"${sum} == 1\",\"nextNode\":13002841331104}],\"nextNode\":13002842616992}}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "check the sum of numbers"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "19"
+    },
+    "sum" : {
+      "prop" : "sum",
+      "direct" : "IN",
+      "type" : "INTEGER",
+      "value" : "2"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240320"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "105"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "number_sum_task_orchestrator"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13002724081056"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13002839652640"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321194727"
+    }
+  },
+  "taskAppId" : "19_105",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"sum\",\"direct\":\"IN\",\"type\":\"INTEGER\",\"value\":\"2\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-03-21 19:47:27.098 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:47:27.098 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-03-21 19:47:27.099 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:47:27.103 +0800 - Send task status RUNNING_EXECUTION to master 172.19.0.5:5678
+[INFO] 2024-03-21 19:47:27.104 +0800 - Success initialize task parameters: 
+{
+  "localParams" : null,
+  "varPool" : null,
+  "dependRelation" : null,
+  "relation" : null,
+  "nextNode" : [ 13002842616992 ],
+  "resultConditionLocation" : 0,
+  "dependTaskList" : [ {
+    "condition" : "${sum} == 2",
+    "nextNode" : [ 13002733318688 ]
+  }, {
+    "condition" : "${sum} == 1",
+    "nextNode" : [ 13002841331104 ]
+  } ]
+}
+[INFO] 2024-03-21 19:47:27.104 +0800 - Initialized task plugin instance: SWITCH successfully
+[INFO] 2024-03-21 19:47:27.105 +0800 - Initialize taskVarPool: [{"prop":"sum","direct":"IN","type":"INTEGER","value":"2"}] successfully
+[INFO] 2024-03-21 19:47:27.105 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:47:27.105 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-03-21 19:47:27.105 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:47:27.105 +0800 - Begin to execute 1 condition: ${sum} == 2 
+[INFO] 2024-03-21 19:47:27.107 +0800 - paramName:sum，paramValue:2
+[INFO] 2024-03-21 19:47:27.107 +0800 - Format condition sentence::2 == 2 successfully
+[INFO] 2024-03-21 19:47:27.108 +0800 - Execute condition sentence: 2 == 2 successfully: true
+[INFO] 2024-03-21 19:47:27.108 +0800 - The switch task depend result:SUCCESS, switch branch:0
+[INFO] 2024-03-21 19:47:27.108 +0800 - Switch task execute finished, condition result is: SUCCESS, task status is: SUCCESS
+[INFO] 2024-03-21 19:47:27.109 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:47:27.109 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-03-21 19:47:27.109 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:47:27.119 +0800 - Send task status: SUCCESS to master: 172.19.0.5:5678 successfully
+[INFO] 2024-03-21 19:47:27.121 +0800 - Execute task finished, will send the task execute result to master, the current task execute result is SUCCESS
+[INFO] 2024-03-21 19:47:27.121 +0800 - FINALIZE_SESSION

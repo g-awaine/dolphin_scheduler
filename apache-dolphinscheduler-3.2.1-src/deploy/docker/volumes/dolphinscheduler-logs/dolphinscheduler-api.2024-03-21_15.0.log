@@ -1,0 +1,192 @@
+[INFO] 2024-03-21 15:01:48.908 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13001314456096, processVersion:1.
+[INFO] 2024-03-21 15:01:48.946 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13001314456096, processVersion:2.
+[INFO] 2024-03-21 15:01:49.057 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13001314456096, processVersion:2.
+[WARN] 2024-03-21 15:04:00.697 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2024-03-21 15:04:09.603 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2024-03-21 15:04:09.612 +0800 o.a.d.a.ApiApplicationServer:[640] - The following 1 profile is active: "postgresql"
+[INFO] 2024-03-21 15:04:25.025 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=b9ea3c4b-94e1-3be4-b636-a78d78ec03d8
+[INFO] 2024-03-21 15:04:28.774 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-03-21 15:04:28.896 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-03-21 15:04:28.930 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-03-21 15:04:28.945 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$451/1350518777] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-03-21 15:04:28.975 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-03-21 15:04:29.033 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-03-21 15:04:29.085 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-03-21 15:04:29.177 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-03-21 15:04:31.085 +0800 o.e.j.u.log:[170] - Logging initialized @39091ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2024-03-21 15:04:33.434 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2024-03-21 15:04:33.733 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[INFO] 2024-03-21 15:04:34.205 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2024-03-21 15:04:34.205 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 24398 ms
+[INFO] 2024-03-21 15:04:40.088 +0800 o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> false 
+[INFO] 2024-03-21 15:04:40.089 +0800 o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+[INFO] 2024-03-21 15:04:40.090 +0800 o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=0.0.0.0, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+[INFO] 2024-03-21 15:04:41.338 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2024-03-21 15:04:41.339 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2024-03-21 15:04:41.348 +0800 o.e.j.s.session:[132] - node0 Scavenging every 600000ms
+[INFO] 2024-03-21 15:04:41.396 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@6978a32a{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.8604727390151574849/, jar:file:/opt/dolphinscheduler/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2024-03-21 15:04:41.412 +0800 o.e.j.s.Server:[415] - Started @49434ms
+[INFO] 2024-03-21 15:04:43.620 +0800 c.z.h.HikariDataSource:[110] - DolphinScheduler - Starting...
+[INFO] 2024-03-21 15:04:44.664 +0800 c.z.h.HikariDataSource:[123] - DolphinScheduler - Start completed.
+[INFO] 2024-03-21 15:04:52.565 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2024-03-21 15:04:52.770 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2024-03-21 15:04:52.858 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2024-03-21 15:04:52.962 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-03-21 15:04:52.964 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-03-21 15:04:54.264 +0800 c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+[INFO] 2024-03-21 15:04:54.325 +0800 c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.3, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+[INFO] 2024-03-21 15:05:08.028 +0800 o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2024-03-21 15:05:08.185 +0800 o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2024-03-21 15:05:08.186 +0800 o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2024-03-21 15:05:08.224 +0800 o.s.s.q.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2024-03-21 15:05:08.235 +0800 o.s.s.q.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2024-03-21 15:05:08.241 +0800 o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId '2c0286b9d7501711004708061'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.apache.dolphinscheduler.scheduler.quartz.QuartzZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2024-03-21 15:05:08.241 +0800 o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2024-03-21 15:05:08.241 +0800 o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2024-03-21 15:05:08.242 +0800 o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5ac3d009
+[INFO] 2024-03-21 15:05:09.521 +0800 o.a.d.a.p.PythonGateway:[710] - PythonGatewayService started on: /0.0.0.0
+[INFO] 2024-03-21 15:05:09.582 +0800 p.GatewayServer:[573] - Gateway Server Started
+[INFO] 2024-03-21 15:05:15.679 +0800 o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+[INFO] 2024-03-21 15:05:16.621 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[INFO] 2024-03-21 15:05:16.876 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2024-03-21 15:05:16.876 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[INFO] 2024-03-21 15:05:16.879 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 2 ms
+[INFO] 2024-03-21 15:05:16.916 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@13714753{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+[INFO] 2024-03-21 15:05:16.920 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 12345 (http/1.1) with context path '/dolphinscheduler'
+[INFO] 2024-03-21 15:05:16.944 +0800 o.a.d.a.ApiApplicationServer:[61] - Started ApiApplicationServer in 82.044 seconds (JVM running for 84.966)
+[INFO] 2024-03-21 15:05:16.956 +0800 o.a.d.a.ApiApplicationServer:[63] - Received spring application context ready event will load taskPlugin and write to DB
+[INFO] 2024-03-21 15:05:17.031 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.036 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.037 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.041 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.042 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.047 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.048 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.054 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.054 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.057 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.057 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.060 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.060 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.062 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.063 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.066 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.067 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.070 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.071 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.074 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.074 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.078 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.078 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.082 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.084 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.087 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.087 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.091 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.091 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.094 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.095 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.098 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.099 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.106 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.107 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.110 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.111 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.115 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.115 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.123 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.124 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.134 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.135 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.139 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.140 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.143 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.143 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.147 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.148 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.150 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.151 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.155 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.155 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.159 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.159 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.162 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.162 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.166 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.166 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.169 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.170 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.173 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.173 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.175 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.176 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.180 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-03-21 15:05:17.190 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2024-03-21 15:05:54.448 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-03-21 15:05:54.452 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-03-21 15:05:54.456 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-03-21 15:05:54.458 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-03-21 15:05:54.470 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-03-21 15:05:54.474 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-03-21 15:05:54.476 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[INFO] 2024-03-21 15:10:26.373 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13001314456096, processVersion:2.
+[INFO] 2024-03-21 15:10:26.391 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13001314456096, processVersion:3.
+[INFO] 2024-03-21 15:10:26.437 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13001314456096, processVersion:3.
+[INFO] 2024-03-21 15:10:40.980 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13001314456096, commandCount:1.
+[INFO] 2024-03-21 15:11:53.615 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:4, taskInstanceName:show final state, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/4.log
+[INFO] 2024-03-21 15:11:54.107 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2024-03-21 15:11:55.252 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:4, taskInstanceName:show final state, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/4.log
+[INFO] 2024-03-21 15:12:22.898 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2, taskInstanceName:num_gen_1, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/2.log
+[INFO] 2024-03-21 15:12:22.989 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2, taskInstanceName:num_gen_1, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/2.log
+[INFO] 2024-03-21 15:13:47.397 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2, taskInstanceName:num_gen_1, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/2.log
+[INFO] 2024-03-21 15:13:47.488 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2, taskInstanceName:num_gen_1, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/2.log
+[INFO] 2024-03-21 15:14:02.671 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2, taskInstanceName:num_gen_1, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/2.log
+[INFO] 2024-03-21 15:14:02.762 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2, taskInstanceName:num_gen_1, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/2.log
+[INFO] 2024-03-21 15:19:14.314 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:4, taskInstanceName:show final state, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/4.log
+[INFO] 2024-03-21 15:19:14.424 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:4, taskInstanceName:show final state, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/4.log
+[INFO] 2024-03-21 15:19:48.777 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:4, taskInstanceName:show final state, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/4.log
+[INFO] 2024-03-21 15:19:48.883 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:4, taskInstanceName:show final state, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/4.log
+[INFO] 2024-03-21 15:20:39.533 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3, taskInstanceName:check successful executions, host: 172.19.0.5:5678, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/3.log
+[INFO] 2024-03-21 15:20:39.797 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3, taskInstanceName:check successful executions, host: 172.19.0.5:5678, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/3/1/3.log
+[INFO] 2024-03-21 15:23:04.506 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[858] - The task has not changed, so skip
+[INFO] 2024-03-21 15:23:04.507 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13001314456096, processVersion:3.
+[INFO] 2024-03-21 15:23:04.514 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13001314456096, processVersion:4.
+[INFO] 2024-03-21 15:23:04.528 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13001314456096, processVersion:4.
+[INFO] 2024-03-21 15:28:04.340 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[858] - The task has not changed, so skip
+[INFO] 2024-03-21 15:28:04.341 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13001314456096, processVersion:4.
+[INFO] 2024-03-21 15:28:04.348 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13001314456096, processVersion:5.
+[INFO] 2024-03-21 15:28:04.358 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13001314456096, processVersion:5.
+[INFO] 2024-03-21 15:28:13.126 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13001314456096, commandCount:1.
+[INFO] 2024-03-21 15:28:42.474 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:8, taskInstanceName:show final state, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/5/2/8.log
+[INFO] 2024-03-21 15:28:42.603 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:8, taskInstanceName:show final state, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/5/2/8.log
+[INFO] 2024-03-21 15:29:00.331 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:6, taskInstanceName:num_gen_1, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/5/2/6.log
+[INFO] 2024-03-21 15:29:00.416 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:6, taskInstanceName:num_gen_1, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/5/2/6.log
+[INFO] 2024-03-21 15:37:16.663 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[858] - The task has not changed, so skip
+[INFO] 2024-03-21 15:37:16.664 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13001314456096, processVersion:5.
+[INFO] 2024-03-21 15:37:16.669 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13001314456096, processVersion:6.
+[INFO] 2024-03-21 15:37:16.680 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13001314456096, processVersion:6.
+[INFO] 2024-03-21 15:37:24.658 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13001314456096, commandCount:1.
+[INFO] 2024-03-21 15:37:36.133 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:10, taskInstanceName:num_gen_1, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/6/3/10.log
+[INFO] 2024-03-21 15:37:36.260 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:10, taskInstanceName:num_gen_1, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/6/3/10.log
+[INFO] 2024-03-21 15:38:51.202 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:11, taskInstanceName:check successful executions, host: 172.19.0.5:5678, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/6/3/11.log
+[INFO] 2024-03-21 15:38:51.262 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:11, taskInstanceName:check successful executions, host: 172.19.0.5:5678, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/6/3/11.log
+[INFO] 2024-03-21 15:39:33.233 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:11, taskInstanceName:check successful executions, host: 172.19.0.5:5678, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/6/3/11.log
+[INFO] 2024-03-21 15:39:33.342 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:11, taskInstanceName:check successful executions, host: 172.19.0.5:5678, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/6/3/11.log
+[INFO] 2024-03-21 15:40:11.620 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:12, taskInstanceName:show final state, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/6/3/12.log
+[INFO] 2024-03-21 15:40:11.736 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:12, taskInstanceName:show final state, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/6/3/12.log
+[INFO] 2024-03-21 15:41:21.926 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13001314456096, processVersion:6.
+[INFO] 2024-03-21 15:41:21.941 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13001314456096, processVersion:7.
+[INFO] 2024-03-21 15:41:21.950 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13001314456096, processVersion:7.
+[INFO] 2024-03-21 15:41:30.237 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13001314456096, commandCount:1.
+[INFO] 2024-03-21 15:41:43.885 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13001314456096, commandCount:1.
+[INFO] 2024-03-21 15:42:06.442 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:18, taskInstanceName:num_gen_1, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/7/5/18.log
+[INFO] 2024-03-21 15:42:06.678 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:18, taskInstanceName:num_gen_1, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/7/5/18.log
+[INFO] 2024-03-21 15:42:31.353 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:20, taskInstanceName:show final state, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/7/5/20.log
+[INFO] 2024-03-21 15:42:31.478 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:20, taskInstanceName:show final state, host: 172.19.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240321/13001314456096/7/5/20.log

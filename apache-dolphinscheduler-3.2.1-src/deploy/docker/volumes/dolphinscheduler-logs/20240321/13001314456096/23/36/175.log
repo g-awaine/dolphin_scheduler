@@ -1,0 +1,146 @@
+[INFO] 2024-03-21 21:03:00.232 +0800 - Submit LogicTask: hello to MasterTaskExecutorThreadPool success
+[INFO] 2024-03-21 21:03:00.233 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 21:03:00.250 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-03-21 21:03:00.251 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 21:03:00.252 +0800 - Begin to initialize task
+[INFO] 2024-03-21 21:03:00.252 +0800 - Set task startTime: 1711026180252
+[INFO] 2024-03-21 21:03:00.252 +0800 - Set task appId: 36_175
+[INFO] 2024-03-21 21:03:00.260 +0800 - End initialize task {
+  "taskInstanceId" : 175,
+  "taskName" : "hello",
+  "firstSubmitTime" : 1711026180189,
+  "startTime" : 1711026180252,
+  "taskType" : "SUB_PROCESS",
+  "workflowInstanceHost" : "172.20.0.6:5678",
+  "host" : "172.20.0.6:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240321/13001314456096/23/36/175.log",
+  "processId" : 0,
+  "processDefineCode" : 13001314456096,
+  "processDefineVersion" : 23,
+  "processInstanceId" : 36,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":13003655208096}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hello"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "175"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13003660949152"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321210300"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "36"
+    },
+    "num1" : {
+      "prop" : "num1",
+      "direct" : "IN",
+      "type" : "INTEGER",
+      "value" : ""
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240320"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "random_numbers_generator"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001314456096"
+    },
+    "num2" : {
+      "prop" : "num2",
+      "direct" : "IN",
+      "type" : "INTEGER",
+      "value" : "0"
+    }
+  },
+  "taskAppId" : "36_175",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"num1\",\"direct\":\"IN\",\"type\":\"INTEGER\",\"value\":\"\"},{\"prop\":\"num2\",\"direct\":\"IN\",\"type\":\"INTEGER\",\"value\":\"0\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-03-21 21:03:00.260 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 21:03:00.262 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-03-21 21:03:00.262 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 21:03:00.287 +0800 - Send task status RUNNING_EXECUTION to master 172.20.0.6:5678
+[INFO] 2024-03-21 21:03:00.289 +0800 - Success initialize task parameters: 
+{
+  "localParams" : [ ],
+  "varPool" : null,
+  "processDefinitionCode" : 13003655208096
+}
+[INFO] 2024-03-21 21:03:00.290 +0800 - Initialized task plugin instance: SUB_PROCESS successfully
+[INFO] 2024-03-21 21:03:00.291 +0800 - Initialize taskVarPool: [{"prop":"num1","direct":"IN","type":"INTEGER","value":""},{"prop":"num2","direct":"IN","type":"INTEGER","value":"0"}] successfully
+[INFO] 2024-03-21 21:03:00.292 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 21:03:00.293 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-03-21 21:03:00.293 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 21:03:00.300 +0800 - The sub workflow instance doesn't created
+[INFO] 2024-03-21 21:03:10.313 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 21:03:10.313 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-03-21 21:03:10.314 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 21:03:10.314 +0800 - Task execute finished, removed the TaskExecutionContext
+[INFO] 2024-03-21 21:03:10.318 +0800 - Send task status: SUCCESS to master: 172.20.0.6:5678 successfully
+[INFO] 2024-03-21 21:03:10.318 +0800 - Execute task finished, will send the task execute result to master, the current task execute result is SUCCESS
+[INFO] 2024-03-21 21:03:10.319 +0800 - FINALIZE_SESSION

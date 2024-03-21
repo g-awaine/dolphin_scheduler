@@ -1,0 +1,166 @@
+[INFO] 2024-03-21 19:20:50.660 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:20:50.662 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-03-21 19:20:50.662 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:20:50.662 +0800 - Begin to initialize task
+[INFO] 2024-03-21 19:20:50.662 +0800 - Set task startTime: 1711020050662
+[INFO] 2024-03-21 19:20:50.662 +0800 - Set task appId: 12_80
+[INFO] 2024-03-21 19:20:50.663 +0800 - End initialize task {
+  "taskInstanceId" : 80,
+  "taskName" : "p",
+  "firstSubmitTime" : 1711020050640,
+  "startTime" : 1711020050662,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.19.0.5:5678",
+  "host" : "172.19.0.7:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240321/13002839652640/11/12/80.log",
+  "processId" : 0,
+  "processDefineCode" : 13002839652640,
+  "processDefineVersion" : 11,
+  "processInstanceId" : 12,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 12,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"echo \\\"${task_completed}\\\"\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "p"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "sum" : {
+      "prop" : "sum",
+      "direct" : "IN",
+      "type" : "INTEGER",
+      "value" : "2"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "80"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13003468912544"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321192050"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "12"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240320"
+    },
+    "task_completed" : {
+      "prop" : "task_completed",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "'Task A'"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "number_sum_task_orchestrator"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13002839652640"
+    }
+  },
+  "taskAppId" : "12_80",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"sum\",\"direct\":\"IN\",\"type\":\"INTEGER\",\"value\":\"2\"},{\"prop\":\"task_completed\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"'Task A'\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-03-21 19:20:50.664 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:20:50.664 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-03-21 19:20:50.664 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:20:50.670 +0800 - Send task status RUNNING_EXECUTION master: 172.19.0.7:1234
+[INFO] 2024-03-21 19:20:50.670 +0800 - TenantCode: default check successfully
+[INFO] 2024-03-21 19:20:50.673 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13002839652640_11/12/80 check successfully
+[INFO] 2024-03-21 19:20:50.673 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-03-21 19:20:50.673 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-03-21 19:20:50.674 +0800 - Download upstream files: [] successfully
+[INFO] 2024-03-21 19:20:50.674 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-03-21 19:20:50.675 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "echo \"${task_completed}\"",
+  "resourceList" : [ ]
+}
+[INFO] 2024-03-21 19:20:50.676 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-03-21 19:20:50.677 +0800 - Set taskVarPool: [{"prop":"sum","direct":"IN","type":"INTEGER","value":"2"},{"prop":"task_completed","direct":"IN","type":"VARCHAR","value":"'Task A'"}] successfully
+[INFO] 2024-03-21 19:20:50.678 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:20:50.678 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-03-21 19:20:50.678 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:20:50.680 +0800 - Final Shell file is: 
+[INFO] 2024-03-21 19:20:50.680 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-03-21 19:20:50.680 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+echo "'Task A'"
+[INFO] 2024-03-21 19:20:50.680 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-03-21 19:20:50.681 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13002839652640_11/12/80/12_80.sh
+[INFO] 2024-03-21 19:20:50.688 +0800 - process start, process id is: 3855
+[INFO] 2024-03-21 19:20:51.694 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	'Task A'
+[INFO] 2024-03-21 19:20:51.706 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13002839652640_11/12/80, processId:3855 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[INFO] 2024-03-21 19:20:51.706 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:20:51.706 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-03-21 19:20:51.706 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:20:51.706 +0800 - Upload output files: [] successfully
+[INFO] 2024-03-21 19:20:51.720 +0800 - Send task execute status: SUCCESS to master : 172.19.0.7:1234
+[INFO] 2024-03-21 19:20:51.720 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-03-21 19:20:51.720 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13002839652640_11/12/80
+[INFO] 2024-03-21 19:20:51.720 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13002839652640_11/12/80
+[INFO] 2024-03-21 19:20:51.721 +0800 - FINALIZE_SESSION

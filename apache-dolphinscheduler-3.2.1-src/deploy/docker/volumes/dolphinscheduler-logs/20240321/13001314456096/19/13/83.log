@@ -1,0 +1,178 @@
+[INFO] 2024-03-21 19:34:18.649 +0800 - Submit LogicTask: check successful executions to MasterTaskExecutorThreadPool success
+[INFO] 2024-03-21 19:34:18.652 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:34:18.671 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-03-21 19:34:18.671 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:34:18.671 +0800 - Begin to initialize task
+[INFO] 2024-03-21 19:34:18.671 +0800 - Set task startTime: 1711020858671
+[INFO] 2024-03-21 19:34:18.672 +0800 - Set task appId: 13_83
+[INFO] 2024-03-21 19:34:18.672 +0800 - End initialize task {
+  "taskInstanceId" : 83,
+  "taskName" : "check successful executions",
+  "firstSubmitTime" : 1711020858621,
+  "startTime" : 1711020858671,
+  "taskType" : "CONDITIONS",
+  "workflowInstanceHost" : "172.19.0.5:5678",
+  "host" : "172.19.0.5:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240321/13001314456096/19/13/83.log",
+  "processId" : 0,
+  "processDefineCode" : 13001314456096,
+  "processDefineVersion" : 19,
+  "processInstanceId" : 13,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"dependence\":{\"relation\":\"AND\",\"dependTaskList\":[{\"relation\":\"AND\",\"dependItemList\":[{\"depTaskCode\":13001196367136,\"status\":\"SUCCESS\"},{\"depTaskCode\":13001319154336,\"status\":\"SUCCESS\"}]}]},\"conditionResult\":{\"successNode\":[13001393547168],\"failedNode\":[13001442755232]}}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "check successful executions"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "83"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001322712224"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321193418"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13"
+    },
+    "num1" : {
+      "prop" : "num1",
+      "direct" : "IN",
+      "type" : "INTEGER",
+      "value" : "0"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240320"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "random_numbers_generator"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001314456096"
+    },
+    "num2" : {
+      "prop" : "num2",
+      "direct" : "IN",
+      "type" : "INTEGER",
+      "value" : "0"
+    }
+  },
+  "taskAppId" : "13_83",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"num1\",\"direct\":\"IN\",\"type\":\"INTEGER\",\"value\":\"0\"},{\"prop\":\"num2\",\"direct\":\"IN\",\"type\":\"INTEGER\",\"value\":\"0\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-03-21 19:34:18.672 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:34:18.672 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-03-21 19:34:18.672 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:34:18.689 +0800 - Send task status RUNNING_EXECUTION to master 172.19.0.5:5678
+[INFO] 2024-03-21 19:34:18.689 +0800 - Success initialize task parameters: 
+{
+  "localParams" : null,
+  "varPool" : null,
+  "dependTaskList" : [ {
+    "dependItemList" : [ {
+      "projectCode" : 0,
+      "definitionCode" : 0,
+      "depTaskCode" : 13001196367136,
+      "cycle" : null,
+      "dateValue" : null,
+      "dependResult" : null,
+      "status" : "SUCCESS",
+      "parameterPassing" : null
+    }, {
+      "projectCode" : 0,
+      "definitionCode" : 0,
+      "depTaskCode" : 13001319154336,
+      "cycle" : null,
+      "dateValue" : null,
+      "dependResult" : null,
+      "status" : "SUCCESS",
+      "parameterPassing" : null
+    } ],
+    "relation" : "AND"
+  } ],
+  "relation" : "AND",
+  "checkInterval" : null,
+  "failurePolicy" : null,
+  "failureWaitingTime" : null
+}
+[INFO] 2024-03-21 19:34:18.689 +0800 - Initialized task plugin instance: CONDITIONS successfully
+[INFO] 2024-03-21 19:34:18.689 +0800 - Initialize taskVarPool: [{"prop":"num1","direct":"IN","type":"INTEGER","value":"0"},{"prop":"num2","direct":"IN","type":"INTEGER","value":"0"}] successfully
+[INFO] 2024-03-21 19:34:18.691 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:34:18.691 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-03-21 19:34:18.691 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:34:18.701 +0800 - The depend item: DependentItem(projectCode=0, definitionCode=0, depTaskCode=13001196367136, cycle=null, dateValue=null, dependResult=null, status=TaskExecutionStatus{code=7, desc='success'}, parameterPassing=null)
+[INFO] 2024-03-21 19:34:18.702 +0800 - Expect status: TaskExecutionStatus{code=7, desc='success'}
+[INFO] 2024-03-21 19:34:18.702 +0800 - Actual status: TaskExecutionStatus{code=7, desc='success'}
+[INFO] 2024-03-21 19:34:18.702 +0800 - The dependent result will be: SUCCESS
+[INFO] 2024-03-21 19:34:18.703 +0800 - The depend item: DependentItem(projectCode=0, definitionCode=0, depTaskCode=13001319154336, cycle=null, dateValue=null, dependResult=null, status=TaskExecutionStatus{code=7, desc='success'}, parameterPassing=null)
+[INFO] 2024-03-21 19:34:18.703 +0800 - Expect status: TaskExecutionStatus{code=7, desc='success'}
+[INFO] 2024-03-21 19:34:18.703 +0800 - Actual status: TaskExecutionStatus{code=7, desc='success'}
+[INFO] 2024-03-21 19:34:18.703 +0800 - The dependent result will be: SUCCESS
+[INFO] 2024-03-21 19:34:18.703 +0800 - The condition result is SUCCESS, task instance statue will be: TaskExecutionStatus{code=7, desc='success'}
+[INFO] 2024-03-21 19:34:18.704 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:34:18.704 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-03-21 19:34:18.704 +0800 - ***********************************************************************************************
+[INFO] 2024-03-21 19:34:18.712 +0800 - Send task status: SUCCESS to master: 172.19.0.5:5678 successfully
+[INFO] 2024-03-21 19:34:18.712 +0800 - Execute task finished, will send the task execute result to master, the current task execute result is SUCCESS
+[INFO] 2024-03-21 19:34:18.712 +0800 - FINALIZE_SESSION

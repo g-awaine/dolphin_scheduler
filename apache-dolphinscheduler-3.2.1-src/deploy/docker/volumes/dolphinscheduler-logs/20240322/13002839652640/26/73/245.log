@@ -1,0 +1,189 @@
+[INFO] 2024-03-22 03:06:43.374 +0800 - Submit LogicTask: sum from lists to MasterTaskExecutorThreadPool success
+[INFO] 2024-03-22 03:06:43.376 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 03:06:43.384 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-03-22 03:06:43.384 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 03:06:43.385 +0800 - Begin to initialize task
+[INFO] 2024-03-22 03:06:43.385 +0800 - Set task startTime: 1711048003385
+[INFO] 2024-03-22 03:06:43.385 +0800 - Set task appId: 73_245
+[INFO] 2024-03-22 03:06:43.385 +0800 - End initialize task {
+  "taskInstanceId" : 245,
+  "taskName" : "sum from lists",
+  "firstSubmitTime" : 1711048003357,
+  "startTime" : 1711048003385,
+  "taskType" : "DYNAMIC",
+  "workflowInstanceHost" : "172.20.0.6:5678",
+  "host" : "172.20.0.6:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240322/13002839652640/26/73/245.log",
+  "processId" : 0,
+  "processDefineCode" : 13002839652640,
+  "processDefineVersion" : 26,
+  "processInstanceId" : 73,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":13003655208096,\"maxNumOfSubWorkflowInstances\":3,\"degreeOfParallelism\":2,\"filterCondition\":\"\",\"listParameters\":[{\"name\":\"num1\",\"value\":\"0,1\",\"separator\":\",\"},{\"name\":\"num2\",\"value\":\"0,10\",\"separator\":\",\"}]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sum from lists"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "73"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240322"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "245"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "dynamic_task_workflow"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005792875200"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13002839652640"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240322030643"
+    }
+  },
+  "taskAppId" : "73_245",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-03-22 03:06:43.385 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 03:06:43.385 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-03-22 03:06:43.385 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 03:06:43.396 +0800 - Send task status RUNNING_EXECUTION to master 172.20.0.6:5678
+[INFO] 2024-03-22 03:06:43.399 +0800 - Success initialize task parameters: 
+{
+  "localParams" : [ ],
+  "varPool" : null,
+  "processDefinitionCode" : 13003655208096,
+  "maxNumOfSubWorkflowInstances" : 3,
+  "degreeOfParallelism" : 2,
+  "filterCondition" : "",
+  "listParameters" : [ {
+    "name" : "num1",
+    "value" : "0,1",
+    "separator" : ","
+  }, {
+    "name" : "num2",
+    "value" : "0,10",
+    "separator" : ","
+  } ]
+}
+[INFO] 2024-03-22 03:06:43.409 +0800 - Initialized task plugin instance: DYNAMIC successfully
+[INFO] 2024-03-22 03:06:43.409 +0800 - Initialize taskVarPool: null successfully
+[INFO] 2024-03-22 03:06:43.409 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 03:06:43.409 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-03-22 03:06:43.409 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 03:06:43.410 +0800 - parameter group size: 4
+[INFO] 2024-03-22 03:06:43.410 +0800 - parameter group: {num1=0, num2=0}
+[INFO] 2024-03-22 03:06:43.410 +0800 - parameter group: {num1=0, num2=10}
+[INFO] 2024-03-22 03:06:43.410 +0800 - parameter group: {num1=1, num2=0}
+[INFO] 2024-03-22 03:06:43.410 +0800 - parameter group: {num1=1, num2=10}
+[WARN] 2024-03-22 03:06:43.410 +0800 - the number of sub process instances [4] exceeds the maximum limit [3]
+[ERROR] 2024-03-22 03:06:43.421 +0800 - create sub process instance error
+java.lang.NullPointerException: null
+	at org.apache.dolphinscheduler.service.process.ProcessServiceImpl.setGlobalParamIfCommanded(ProcessServiceImpl.java:604)
+	at org.apache.dolphinscheduler.service.process.ProcessServiceImpl.generateNewProcessInstance(ProcessServiceImpl.java:561)
+	at org.apache.dolphinscheduler.service.process.ProcessServiceImpl.constructProcessInstance(ProcessServiceImpl.java:707)
+	at org.apache.dolphinscheduler.service.process.ProcessServiceImpl$$FastClassBySpringCGLIB$$9d3e18f9.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.service.process.ProcessServiceImpl$$EnhancerBySpringCGLIB$$37bfccd7.constructProcessInstance(<generated>)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.createSubProcessInstance(DynamicLogicTask.java:185)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.generateSubWorkflowInstance(DynamicLogicTask.java:159)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.getAsyncTaskExecuteFunction(DynamicLogicTask.java:116)
+	at org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutor.executeTask(AsyncMasterTaskExecutor.java:51)
+	at org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor.run(MasterTaskExecutor.java:110)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-03-22 03:06:43.432 +0800 - Task execute failed, due to meet an exception
+org.apache.dolphinscheduler.server.master.exception.MasterTaskExecuteException: null
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.createSubProcessInstance(DynamicLogicTask.java:190)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.generateSubWorkflowInstance(DynamicLogicTask.java:159)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.getAsyncTaskExecuteFunction(DynamicLogicTask.java:116)
+	at org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutor.executeTask(AsyncMasterTaskExecutor.java:51)
+	at org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor.run(MasterTaskExecutor.java:110)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] 2024-03-22 03:06:43.432 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 03:06:43.433 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-03-22 03:06:43.434 +0800 - ***********************************************************************************************
+[ERROR] 2024-03-22 03:06:43.434 +0800 - Get a exception when execute the task, will try to cancel the task
+org.apache.dolphinscheduler.server.master.exception.MasterTaskExecuteException: null
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.createSubProcessInstance(DynamicLogicTask.java:190)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.generateSubWorkflowInstance(DynamicLogicTask.java:159)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.getAsyncTaskExecuteFunction(DynamicLogicTask.java:116)
+	at org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutor.executeTask(AsyncMasterTaskExecutor.java:51)
+	at org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor.run(MasterTaskExecutor.java:110)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] 2024-03-22 03:06:43.444 +0800 - Send task status: FAILURE to master: 172.20.0.6:5678 successfully
+[INFO] 2024-03-22 03:06:43.444 +0800 - Get a exception when execute the task, sent the task execute result to master, the current task execute result is TaskExecutionStatus{code=6, desc='failure'}
+[INFO] 2024-03-22 03:06:43.444 +0800 - Get a exception when execute the task, removed the TaskExecutionContext
+[INFO] 2024-03-22 03:06:43.444 +0800 - FINALIZE_SESSION

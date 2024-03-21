@@ -1,0 +1,911 @@
+[WI-0][TI-0] - [INFO] 2024-03-21 22:44:39.344 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7032014260249555 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:44:41.393 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7412398921832885 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:47:26.096 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7313019390581718 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:49:51.808 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8223895224518888 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:49:52.823 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7166212534059946 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:49:54.846 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.736986301369863 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:49:55.878 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.72 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:50:02.915 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.726027397260274 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:51:19.798 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=213, taskName=sub, firstSubmitTime=1711032679783, startTime=0, taskType=SHELL, workflowInstanceHost=172.20.0.6:5678, host=172.20.0.5:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13005061728960, processDefineVersion=1, appIds=null, processInstanceId=52, scheduleTime=0, globalParams=[{"prop":"var1","direct":"OUT","type":"VARCHAR","value":""}], executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13001194483488, taskParams={"localParams":[{"prop":"var1","direct":"OUT","type":"VARCHAR","value":""},{"prop":"var2","direct":"OUT","type":"VARCHAR","value":""}],"rawScript":"echo \"#{setValue({var1=123})}\"\necho \"#{setValue({var2=456})}\"","resourceList":[]}, environmentConfig=null, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='sub'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13001194483488'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='52'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240321'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240320'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='213'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='sub'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13005041348672'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13005061728960'}, var1=Property{prop='var1', direct=IN, type=VARCHAR, value=''}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240321225119'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=[], dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.800 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: sub to wait queue success
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.801 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.804 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.804 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.804 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.804 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1711032679804
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.804 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 52_213
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.805 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 213,
+  "taskName" : "sub",
+  "firstSubmitTime" : 1711032679783,
+  "startTime" : 1711032679804,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.20.0.6:5678",
+  "host" : "172.20.0.5:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240321/13005061728960/1/52/213.log",
+  "processId" : 0,
+  "processDefineCode" : 13005061728960,
+  "processDefineVersion" : 1,
+  "processInstanceId" : 52,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"var1\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"var1\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"},{\"prop\":\"var2\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}],\"rawScript\":\"echo \\\"#{setValue({var1=123})}\\\"\\necho \\\"#{setValue({var2=456})}\\\"\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sub"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "52"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240320"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "213"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sub"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005041348672"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005061728960"
+    },
+    "var1" : {
+      "prop" : "var1",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : ""
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321225119"
+    }
+  },
+  "taskAppId" : "52_213",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.805 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.805 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.805 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.852 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.20.0.5:1234
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.853 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.854 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_1/52/213 check successfully
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.854 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.855 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.857 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.857 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: SHELL create successfully
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.860 +0800 o.a.d.p.t.s.ShellTask:[70] - Initialize shell task params {
+  "localParams" : [ {
+    "prop" : "var1",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  }, {
+    "prop" : "var2",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  } ],
+  "varPool" : null,
+  "rawScript" : "echo \"#{setValue({var1=123})}\"\necho \"#{setValue({var2=456})}\"",
+  "resourceList" : [ ]
+}
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.861 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.861 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: [] successfully
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.862 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.863 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.863 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.864 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.865 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.866 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+echo "#{setValue({var1=123})}"
+echo "#{setValue({var2=456})}"
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.866 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.867 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_1/52/213/52_213.sh
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:19.878 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 2770
+[WI-0][TI-213] - [INFO] 2024-03-21 22:51:20.653 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=213, success=true)
+[WI-0][TI-213] - [INFO] 2024-03-21 22:51:20.671 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=213)
+[WI-0][TI-0] - [INFO] 2024-03-21 22:51:20.879 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	#{setValue({var1=123})}
+	#{setValue({var2=456})}
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:20.885 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_1/52/213, processId:2770 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[WI-52][TI-213] - [WARN] 2024-03-21 22:51:20.887 +0800 o.a.d.p.t.a.p.AbstractParameters:[152] - Cannot find the output parameter var1 in the task output parameters
+[WI-52][TI-213] - [WARN] 2024-03-21 22:51:20.888 +0800 o.a.d.p.t.a.p.AbstractParameters:[152] - Cannot find the output parameter var2 in the task output parameters
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:20.888 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:20.888 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:20.889 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:20.891 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:20.897 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: SUCCESS to master : 172.20.0.5:1234
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:20.897 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:20.898 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_1/52/213
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:20.901 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_1/52/213
+[WI-52][TI-213] - [INFO] 2024-03-21 22:51:20.902 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-213] - [INFO] 2024-03-21 22:51:21.640 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=213, success=true)
+[WI-0][TI-0] - [INFO] 2024-03-21 22:51:29.793 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=214, taskName=echo, firstSubmitTime=1711032689780, startTime=0, taskType=SHELL, workflowInstanceHost=172.20.0.6:5678, host=172.20.0.5:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13005080428864, processDefineVersion=1, appIds=null, processInstanceId=51, scheduleTime=0, globalParams=null, executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13001194483488, taskParams={"localParams":[],"rawScript":"echo ${var1}\necho ${var2}\n","resourceList":[]}, environmentConfig=null, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='echo'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13001194483488'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='51'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240321'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240320'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='214'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='testing_subprocess_main_pipeline'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13005063775424'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13005080428864'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240321225129'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.794 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: echo to wait queue success
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.795 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.798 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.798 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.798 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.798 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1711032689798
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.799 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 51_214
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.800 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 214,
+  "taskName" : "echo",
+  "firstSubmitTime" : 1711032689780,
+  "startTime" : 1711032689798,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.20.0.6:5678",
+  "host" : "172.20.0.5:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240321/13005080428864/1/51/214.log",
+  "processId" : 0,
+  "processDefineCode" : 13005080428864,
+  "processDefineVersion" : 1,
+  "processInstanceId" : 51,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"echo ${var1}\\necho ${var2}\\n\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "echo"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "51"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240320"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "214"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "testing_subprocess_main_pipeline"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005063775424"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005080428864"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321225129"
+    }
+  },
+  "taskAppId" : "51_214",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.800 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.800 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.800 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.817 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.20.0.5:1234
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.817 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.817 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005080428864_1/51/214 check successfully
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.818 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.818 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.818 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.818 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: SHELL create successfully
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.818 +0800 o.a.d.p.t.s.ShellTask:[70] - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "echo ${var1}\necho ${var2}\n",
+  "resourceList" : [ ]
+}
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.819 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.819 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.819 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.819 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.819 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.820 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.820 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.820 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+echo ${var1}
+echo ${var2}
+
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.820 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.820 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13005080428864_1/51/214/51_214.sh
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:29.825 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 2787
+[WI-0][TI-214] - [INFO] 2024-03-21 22:51:30.661 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=214, success=true)
+[WI-0][TI-214] - [INFO] 2024-03-21 22:51:30.670 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=214)
+[WI-0][TI-0] - [INFO] 2024-03-21 22:51:30.826 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	
+	
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:30.831 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13005080428864_1/51/214, processId:2787 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:30.832 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:30.832 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:30.832 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:30.833 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:30.837 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: SUCCESS to master : 172.20.0.5:1234
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:30.837 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:30.838 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005080428864_1/51/214
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:30.846 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005080428864_1/51/214
+[WI-51][TI-214] - [INFO] 2024-03-21 22:51:30.847 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-214] - [INFO] 2024-03-21 22:51:31.655 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=214, success=true)
+[WI-0][TI-0] - [INFO] 2024-03-21 22:51:33.761 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7707182320441989 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:51:35.803 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.772972972972973 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:51:36.844 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7094240837696335 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:51:38.859 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.721227621483376 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:51:58.940 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8104395604395604 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:52:33.426 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.803763440860215 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:52:34.438 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8978494623655913 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:52:40.468 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7194444444444444 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:53:42.762 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7686170212765957 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:53:52.809 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7698863636363636 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:53:53.839 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7047353760445683 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:53:55.897 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.891037953574247 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:53:59.933 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7863013698630137 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:04.983 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7267605633802816 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:06.048 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8749788362774423 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:08.079 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7315370391335523 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:19.161 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7584269662921347 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:24.206 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8672396408508186 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:26.246 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7447092198581561 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:28.355 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7066666666666667 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:29.393 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8123324396782843 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:31.409 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8005463684708968 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:34.450 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7774647887323943 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:44.106 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=216, taskName=sub, firstSubmitTime=1711032884098, startTime=0, taskType=SHELL, workflowInstanceHost=172.20.0.6:5678, host=172.20.0.5:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13005061728960, processDefineVersion=2, appIds=null, processInstanceId=54, scheduleTime=0, globalParams=[{"prop":"var1","direct":"OUT","type":"VARCHAR","value":""}], executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13001194483488, taskParams={"localParams":[{"prop":"var1","direct":"OUT","type":"VARCHAR","value":""},{"prop":"var2","direct":"OUT","type":"VARCHAR","value":""}],"rawScript":"echo '${setValue(var1=123)}'\necho '${setValue(var1=123)}'","resourceList":[]}, environmentConfig=null, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='sub'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13001194483488'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='54'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240321'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240320'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='216'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='sub'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13005041348672'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13005061728960'}, var1=Property{prop='var1', direct=IN, type=VARCHAR, value=''}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240321225444'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=[], dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.107 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: sub to wait queue success
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.107 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.112 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.112 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.112 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.112 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1711032884112
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.112 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 54_216
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.112 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 216,
+  "taskName" : "sub",
+  "firstSubmitTime" : 1711032884098,
+  "startTime" : 1711032884112,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.20.0.6:5678",
+  "host" : "172.20.0.5:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240321/13005061728960/2/54/216.log",
+  "processId" : 0,
+  "processDefineCode" : 13005061728960,
+  "processDefineVersion" : 2,
+  "processInstanceId" : 54,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"var1\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"var1\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"},{\"prop\":\"var2\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}],\"rawScript\":\"echo '${setValue(var1=123)}'\\necho '${setValue(var1=123)}'\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sub"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "54"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240320"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "216"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sub"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005041348672"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005061728960"
+    },
+    "var1" : {
+      "prop" : "var1",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : ""
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321225444"
+    }
+  },
+  "taskAppId" : "54_216",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.113 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.113 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.113 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.119 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.20.0.5:1234
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.119 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.120 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_2/54/216 check successfully
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.121 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.121 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.121 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.121 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: SHELL create successfully
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.121 +0800 o.a.d.p.t.s.ShellTask:[70] - Initialize shell task params {
+  "localParams" : [ {
+    "prop" : "var1",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  }, {
+    "prop" : "var2",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  } ],
+  "varPool" : null,
+  "rawScript" : "echo '${setValue(var1=123)}'\necho '${setValue(var1=123)}'",
+  "resourceList" : [ ]
+}
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.122 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.122 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: [] successfully
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.122 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.122 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.122 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.122 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.123 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.123 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+echo '${setValue(var1=123)}'
+echo '${setValue(var1=123)}'
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.123 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.125 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_2/54/216/54_216.sh
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:44.128 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 2832
+[WI-0][TI-216] - [INFO] 2024-03-21 22:54:44.959 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=216, success=true)
+[WI-0][TI-216] - [INFO] 2024-03-21 22:54:44.987 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=216)
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:45.129 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	${setValue(var1=123)}
+	${setValue(var1=123)}
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:45.133 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_2/54/216, processId:2832 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[WI-54][TI-216] - [WARN] 2024-03-21 22:54:45.136 +0800 o.a.d.p.t.a.p.AbstractParameters:[152] - Cannot find the output parameter var2 in the task output parameters
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:45.136 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:45.136 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:45.136 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:45.137 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:45.141 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: SUCCESS to master : 172.20.0.5:1234
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:45.141 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:45.141 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_2/54/216
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:45.142 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_2/54/216
+[WI-54][TI-216] - [INFO] 2024-03-21 22:54:45.142 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-216] - [INFO] 2024-03-21 22:54:45.960 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=216, success=true)
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:50.541 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7349578284628178 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:54:52.583 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9410476720406408 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:55:05.713 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7692307692307692 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:55:06.260 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=219, taskName=sub, firstSubmitTime=1711032906250, startTime=0, taskType=SHELL, workflowInstanceHost=172.20.0.6:5678, host=172.20.0.5:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13005061728960, processDefineVersion=2, appIds=null, processInstanceId=56, scheduleTime=0, globalParams=[{"prop":"var1","direct":"OUT","type":"VARCHAR","value":""}], executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13001194483488, taskParams={"localParams":[{"prop":"var1","direct":"OUT","type":"VARCHAR","value":""},{"prop":"var2","direct":"OUT","type":"VARCHAR","value":""}],"rawScript":"echo '${setValue(var1=123)}'\necho '${setValue(var1=123)}'","resourceList":[]}, environmentConfig=null, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='sub'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13001194483488'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='56'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240321'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240320'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='219'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='sub'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13005041348672'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13005061728960'}, var1=Property{prop='var1', direct=IN, type=VARCHAR, value=''}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240321225506'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=[], dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.267 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: sub to wait queue success
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.268 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.281 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.281 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.281 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.281 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1711032906281
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.281 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 56_219
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.282 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 219,
+  "taskName" : "sub",
+  "firstSubmitTime" : 1711032906250,
+  "startTime" : 1711032906281,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.20.0.6:5678",
+  "host" : "172.20.0.5:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240321/13005061728960/2/56/219.log",
+  "processId" : 0,
+  "processDefineCode" : 13005061728960,
+  "processDefineVersion" : 2,
+  "processInstanceId" : 56,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"var1\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"var1\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"},{\"prop\":\"var2\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}],\"rawScript\":\"echo '${setValue(var1=123)}'\\necho '${setValue(var1=123)}'\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sub"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "56"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240320"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "219"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sub"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005041348672"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005061728960"
+    },
+    "var1" : {
+      "prop" : "var1",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : ""
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321225506"
+    }
+  },
+  "taskAppId" : "56_219",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.283 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.283 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.283 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.287 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.20.0.5:1234
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.289 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.290 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_2/56/219 check successfully
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.291 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.292 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.292 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.293 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: SHELL create successfully
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.293 +0800 o.a.d.p.t.s.ShellTask:[70] - Initialize shell task params {
+  "localParams" : [ {
+    "prop" : "var1",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  }, {
+    "prop" : "var2",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  } ],
+  "varPool" : null,
+  "rawScript" : "echo '${setValue(var1=123)}'\necho '${setValue(var1=123)}'",
+  "resourceList" : [ ]
+}
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.293 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.294 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: [] successfully
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.294 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.295 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.296 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.298 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.298 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.299 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+echo '${setValue(var1=123)}'
+echo '${setValue(var1=123)}'
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.300 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.301 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_2/56/219/56_219.sh
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:06.306 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 2850
+[WI-0][TI-219] - [INFO] 2024-03-21 22:55:06.982 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=219, success=true)
+[WI-0][TI-219] - [INFO] 2024-03-21 22:55:06.990 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=219)
+[WI-0][TI-0] - [INFO] 2024-03-21 22:55:07.310 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	${setValue(var1=123)}
+	${setValue(var1=123)}
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:07.313 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_2/56/219, processId:2850 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[WI-56][TI-219] - [WARN] 2024-03-21 22:55:07.313 +0800 o.a.d.p.t.a.p.AbstractParameters:[152] - Cannot find the output parameter var2 in the task output parameters
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:07.314 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:07.315 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:07.315 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:07.316 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:07.318 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: SUCCESS to master : 172.20.0.5:1234
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:07.319 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:07.319 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_2/56/219
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:07.320 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005061728960_2/56/219
+[WI-56][TI-219] - [INFO] 2024-03-21 22:55:07.320 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-219] - [INFO] 2024-03-21 22:55:07.977 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=219, success=true)
+[WI-0][TI-0] - [INFO] 2024-03-21 22:55:14.771 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7289473684210526 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:55:15.084 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=220, taskName=echo, firstSubmitTime=1711032915075, startTime=0, taskType=SHELL, workflowInstanceHost=172.20.0.6:5678, host=172.20.0.5:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13005080428864, processDefineVersion=1, appIds=null, processInstanceId=55, scheduleTime=0, globalParams=null, executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13001194483488, taskParams={"localParams":[],"rawScript":"echo ${var1}\necho ${var2}\n","resourceList":[]}, environmentConfig=null, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='echo'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13001194483488'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='55'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240321'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240320'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='220'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='testing_subprocess_main_pipeline'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13005063775424'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13005080428864'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240321225515'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.089 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: echo to wait queue success
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.089 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.090 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.090 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.091 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.091 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1711032915091
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.091 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 55_220
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.092 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 220,
+  "taskName" : "echo",
+  "firstSubmitTime" : 1711032915075,
+  "startTime" : 1711032915091,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.20.0.6:5678",
+  "host" : "172.20.0.5:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240321/13005080428864/1/55/220.log",
+  "processId" : 0,
+  "processDefineCode" : 13005080428864,
+  "processDefineVersion" : 1,
+  "processInstanceId" : 55,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"echo ${var1}\\necho ${var2}\\n\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "echo"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "55"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240320"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "220"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "testing_subprocess_main_pipeline"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005063775424"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005080428864"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321225515"
+    }
+  },
+  "taskAppId" : "55_220",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.092 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.092 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.092 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.102 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.20.0.5:1234
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.103 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.103 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005080428864_1/55/220 check successfully
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.104 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.104 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.104 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.104 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: SHELL create successfully
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.104 +0800 o.a.d.p.t.s.ShellTask:[70] - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "echo ${var1}\necho ${var2}\n",
+  "resourceList" : [ ]
+}
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.105 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.105 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.105 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.105 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.105 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.112 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.114 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.114 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+echo ${var1}
+echo ${var2}
+
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.114 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.114 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13005080428864_1/55/220/55_220.sh
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:15.124 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 2860
+[WI-0][TI-0] - [INFO] 2024-03-21 22:55:15.793 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7640750670241288 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-220] - [INFO] 2024-03-21 22:55:15.989 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=220, success=true)
+[WI-0][TI-220] - [INFO] 2024-03-21 22:55:15.997 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=220)
+[WI-0][TI-0] - [INFO] 2024-03-21 22:55:16.126 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	
+	
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:16.129 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13005080428864_1/55/220, processId:2860 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:16.131 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:16.131 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:16.131 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:16.131 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:16.136 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: SUCCESS to master : 172.20.0.5:1234
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:16.136 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:16.136 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005080428864_1/55/220
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:16.137 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005080428864_1/55/220
+[WI-55][TI-220] - [INFO] 2024-03-21 22:55:16.137 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-220] - [INFO] 2024-03-21 22:55:17.021 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=220, success=true)
+[WI-0][TI-0] - [INFO] 2024-03-21 22:55:36.905 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8733153638814016 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:56:06.110 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8022598870056498 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:56:07.146 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7175141242937852 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:56:09.178 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7506482881540406 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:56:10.213 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8544912672846406 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:56:13.233 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7245989304812834 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:56:15.332 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7204610951008645 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:56:21.372 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7535816618911175 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:57:19.732 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.75 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:57:25.785 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7127071823204421 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:57:26.801 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7038043478260869 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:57:31.834 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7492877492877492 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:57:32.852 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7566773618538325 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:57:33.855 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7245255163386756 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-21 22:57:35.894 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8076923076923077 is over then the MaxCpuUsagePercentageThresholds 0.7

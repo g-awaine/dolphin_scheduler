@@ -1,0 +1,15 @@
+[INFO] 2024-03-22 01:54:19.822 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13002839652640, processVersion:23.
+[INFO] 2024-03-22 01:54:19.834 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13002839652640, processVersion:24.
+[INFO] 2024-03-22 01:54:19.862 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13002839652640, processVersion:24.
+[INFO] 2024-03-22 01:56:13.638 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13003655208096, processVersion:1.
+[INFO] 2024-03-22 01:56:13.653 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13003655208096, processVersion:2.
+[INFO] 2024-03-22 01:56:13.659 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13003655208096, processVersion:2.
+[INFO] 2024-03-22 01:58:37.908 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[858] - The task has not changed, so skip
+[INFO] 2024-03-22 01:58:37.909 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13002839652640, processVersion:24.
+[INFO] 2024-03-22 01:58:37.914 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13002839652640, processVersion:25.
+[INFO] 2024-03-22 01:58:37.921 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13002839652640, processVersion:25.
+[INFO] 2024-03-22 01:58:53.125 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13002839652640, commandCount:1.
+[INFO] 2024-03-22 01:59:41.634 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:222, taskInstanceName:sum from lists, host: 172.20.0.6:5678, logPath:/opt/dolphinscheduler/logs/20240322/13002839652640/25/58/222.log
+[INFO] 2024-03-22 01:59:41.879 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:222, taskInstanceName:sum from lists, host: 172.20.0.6:5678, logPath:/opt/dolphinscheduler/logs/20240322/13002839652640/25/58/222.log
+[WARN] 2024-03-22 01:59:55.394 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[643] - Task instance is not SUB_PROCESS type instance, projectCode:13001194483488, taskInstanceId:222.
+[WARN] 2024-03-22 01:59:56.836 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[643] - Task instance is not SUB_PROCESS type instance, projectCode:13001194483488, taskInstanceId:222.
