@@ -1,0 +1,334 @@
+[INFO] 2024-05-05 03:26:19.023 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 03:26:19.026 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-05 03:26:19.027 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 03:26:19.027 +0800 - Begin to initialize task
+[INFO] 2024-05-05 03:26:19.027 +0800 - Set task startTime: 1714850779027
+[INFO] 2024-05-05 03:26:19.027 +0800 - Set task appId: 955_3415
+[INFO] 2024-05-05 03:26:19.027 +0800 - End initialize task {
+  "taskInstanceId" : 3415,
+  "taskName" : "extract_gnews_article",
+  "firstSubmitTime" : 1714850779009,
+  "startTime" : 1714850779027,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240505/13471700679104/5/955/3415.log",
+  "processId" : 0,
+  "processDefineCode" : 13471700679104,
+  "processDefineVersion" : 5,
+  "processInstanceId" : 955,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topic\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"'Singapore'\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"news_articles_string\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}],\"rawScript\":\"from gnews import GNews\\nfrom newspaper import Article, ArticleException\\nimport json\\n\\n# define the topic to search by in Google News\\ntopic = ${topic}\\n\\n# Initialize GNews client\\ngoogle_news = GNews()\\n\\n# Fetch Google News articles for a specific topic, which is singapore related\\nnews_results = google_news.get_news(topic)[:5]\\n\\n# List to store the relevant information about the news articles\\nnews_articles = []\\n\\n# Process each news article\\nfor news in news_results:\\n    # Extract basic information from Google News\\n    title = news.get('title')\\n    datetime = news.get('published date')\\n    url = news.get('url')\\n    description = news.get('description')\\n    \\n    # Extract publisher information\\n    publisher_info = news.get('publisher', {})\\n    publisher_href = publisher_info.get('href')\\n    \\n    # Initialize and handle exceptions in article parsing\\n    try:\\n        article = Article(url)\\n        article.download()\\n        article.parse()\\n\\n        # If parsing is successful, extract authors and text\\n        authors = article.authors if article.authors else \\\"Unknown Author\\\"\\n        context = article.text\\n\\n    except ArticleException as e:\\n        print(f\\\"Failed to download article: {e}\\\")  # Log the error message\\n        continue\\n    \\n    # store the article data in a dictionary\\n    article_data = {\\n        'title': title,\\n        'datetime': datetime,\\n        'description': description,\\n        'url': url,\\n        'context': context,\\n        'authors': authors,\\n        'publisher_href': publisher_href,\\n    }\\n\\n\\n    # store the article data into the article_data list for JSON serialization\\n    news_articles.append(article_data)\\n\\n\\n# create a string containing all the article data separated by a vertical line (|) for it to be passed into the dynamic node\\nnews_articles_string = '|'.join(news_articles)\\n\\n# save the news_articles_string dictionary into a parameter to pass it downstream\\n\\nprint(\\\"#setValue(news_articles_string=%s)\\\" % news_articles_string)\\n\\nprint(news_articles_string) \",\"resourceList\":[]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "extract_gnews_article"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3415"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13471571877568"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505032619"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "955"
+    },
+    "topic" : {
+      "prop" : "topic",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "'Singapore'"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "extract_gnews_articles_main"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13471700679104"
+    }
+  },
+  "taskAppId" : "955_3415",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-05 03:26:19.028 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 03:26:19.029 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-05 03:26:19.030 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 03:26:19.048 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-05 03:26:19.052 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-05 03:26:19.061 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471700679104_5/955/3415 check successfully
+[INFO] 2024-05-05 03:26:19.061 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[INFO] 2024-05-05 03:26:19.062 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-05 03:26:19.064 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-05 03:26:19.064 +0800 - Task plugin instance: PYTHON create successfully
+[INFO] 2024-05-05 03:26:19.064 +0800 - Initialize python task params {
+  "localParams" : [ {
+    "prop" : "news_articles_string",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  } ],
+  "varPool" : null,
+  "rawScript" : "from gnews import GNews\nfrom newspaper import Article, ArticleException\nimport json\n\n# define the topic to search by in Google News\ntopic = ${topic}\n\n# Initialize GNews client\ngoogle_news = GNews()\n\n# Fetch Google News articles for a specific topic, which is singapore related\nnews_results = google_news.get_news(topic)[:5]\n\n# List to store the relevant information about the news articles\nnews_articles = []\n\n# Process each news article\nfor news in news_results:\n    # Extract basic information from Google News\n    title = news.get('title')\n    datetime = news.get('published date')\n    url = news.get('url')\n    description = news.get('description')\n    \n    # Extract publisher information\n    publisher_info = news.get('publisher', {})\n    publisher_href = publisher_info.get('href')\n    \n    # Initialize and handle exceptions in article parsing\n    try:\n        article = Article(url)\n        article.download()\n        article.parse()\n\n        # If parsing is successful, extract authors and text\n        authors = article.authors if article.authors else \"Unknown Author\"\n        context = article.text\n\n    except ArticleException as e:\n        print(f\"Failed to download article: {e}\")  # Log the error message\n        continue\n    \n    # store the article data in a dictionary\n    article_data = {\n        'title': title,\n        'datetime': datetime,\n        'description': description,\n        'url': url,\n        'context': context,\n        'authors': authors,\n        'publisher_href': publisher_href,\n    }\n\n\n    # store the article data into the article_data list for JSON serialization\n    news_articles.append(article_data)\n\n\n# create a string containing all the article data separated by a vertical line (|) for it to be passed into the dynamic node\nnews_articles_string = '|'.join(news_articles)\n\n# save the news_articles_string dictionary into a parameter to pass it downstream\n\nprint(\"#setValue(news_articles_string=%s)\" % news_articles_string)\n\nprint(news_articles_string) ",
+  "resourceList" : [ ]
+}
+[INFO] 2024-05-05 03:26:19.064 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-05 03:26:19.065 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-05-05 03:26:19.065 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 03:26:19.066 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-05 03:26:19.067 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 03:26:19.067 +0800 - raw python script : from gnews import GNews
+from newspaper import Article, ArticleException
+import json
+
+# define the topic to search by in Google News
+topic = ${topic}
+
+# Initialize GNews client
+google_news = GNews()
+
+# Fetch Google News articles for a specific topic, which is singapore related
+news_results = google_news.get_news(topic)[:5]
+
+# List to store the relevant information about the news articles
+news_articles = []
+
+# Process each news article
+for news in news_results:
+    # Extract basic information from Google News
+    title = news.get('title')
+    datetime = news.get('published date')
+    url = news.get('url')
+    description = news.get('description')
+    
+    # Extract publisher information
+    publisher_info = news.get('publisher', {})
+    publisher_href = publisher_info.get('href')
+    
+    # Initialize and handle exceptions in article parsing
+    try:
+        article = Article(url)
+        article.download()
+        article.parse()
+
+        # If parsing is successful, extract authors and text
+        authors = article.authors if article.authors else "Unknown Author"
+        context = article.text
+
+    except ArticleException as e:
+        print(f"Failed to download article: {e}")  # Log the error message
+        continue
+    
+    # store the article data in a dictionary
+    article_data = {
+        'title': title,
+        'datetime': datetime,
+        'description': description,
+        'url': url,
+        'context': context,
+        'authors': authors,
+        'publisher_href': publisher_href,
+    }
+
+
+    # store the article data into the article_data list for JSON serialization
+    news_articles.append(article_data)
+
+
+# create a string containing all the article data separated by a vertical line (|) for it to be passed into the dynamic node
+news_articles_string = '|'.join(news_articles)
+
+# save the news_articles_string dictionary into a parameter to pass it downstream
+
+print("#setValue(news_articles_string=%s)" % news_articles_string)
+
+print(news_articles_string) 
+[INFO] 2024-05-05 03:26:19.068 +0800 - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13471700679104_5/955/3415
+[INFO] 2024-05-05 03:26:19.069 +0800 - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13471700679104_5/955/3415/py_955_3415.py
+[INFO] 2024-05-05 03:26:19.069 +0800 - #-*- encoding=utf8 -*-
+
+from gnews import GNews
+from newspaper import Article, ArticleException
+import json
+
+# define the topic to search by in Google News
+topic = 'Singapore'
+
+# Initialize GNews client
+google_news = GNews()
+
+# Fetch Google News articles for a specific topic, which is singapore related
+news_results = google_news.get_news(topic)[:5]
+
+# List to store the relevant information about the news articles
+news_articles = []
+
+# Process each news article
+for news in news_results:
+    # Extract basic information from Google News
+    title = news.get('title')
+    datetime = news.get('published date')
+    url = news.get('url')
+    description = news.get('description')
+    
+    # Extract publisher information
+    publisher_info = news.get('publisher', {})
+    publisher_href = publisher_info.get('href')
+    
+    # Initialize and handle exceptions in article parsing
+    try:
+        article = Article(url)
+        article.download()
+        article.parse()
+
+        # If parsing is successful, extract authors and text
+        authors = article.authors if article.authors else "Unknown Author"
+        context = article.text
+
+    except ArticleException as e:
+        print(f"Failed to download article: {e}")  # Log the error message
+        continue
+    
+    # store the article data in a dictionary
+    article_data = {
+        'title': title,
+        'datetime': datetime,
+        'description': description,
+        'url': url,
+        'context': context,
+        'authors': authors,
+        'publisher_href': publisher_href,
+    }
+
+
+    # store the article data into the article_data list for JSON serialization
+    news_articles.append(article_data)
+
+
+# create a string containing all the article data separated by a vertical line (|) for it to be passed into the dynamic node
+news_articles_string = '|'.join(news_articles)
+
+# save the news_articles_string dictionary into a parameter to pass it downstream
+
+print("#setValue(news_articles_string=%s)" % news_articles_string)
+
+print(news_articles_string) 
+[INFO] 2024-05-05 03:26:19.070 +0800 - Final Shell file is: 
+[INFO] 2024-05-05 03:26:19.070 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-05 03:26:19.070 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13471700679104_5/955/3415/py_955_3415.py
+[INFO] 2024-05-05 03:26:19.070 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-05 03:26:19.071 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13471700679104_5/955/3415/955_3415.sh
+[INFO] 2024-05-05 03:26:19.080 +0800 - process start, process id is: 898
+[INFO] 2024-05-05 03:26:19.086 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-05-05 03:26:20.092 +0800 -  -> 
+	Traceback (most recent call last):
+	  File "/tmp/dolphinscheduler/exec/process/default/13010050770016/13471700679104_5/955/3415/py_955_3415.py", line 4, in <module>
+	    from newspaper import Article, ArticleException
+	  File "/usr/local/lib/python3.11/dist-packages/newspaper/__init__.py", line 10, in <module>
+	    from .api import (build, build_article, fulltext, hot, languages,
+	  File "/usr/local/lib/python3.11/dist-packages/newspaper/api.py", line 14, in <module>
+	    from .article import Article
+	  File "/usr/local/lib/python3.11/dist-packages/newspaper/article.py", line 15, in <module>
+	    from . import network
+	  File "/usr/local/lib/python3.11/dist-packages/newspaper/network.py", line 14, in <module>
+	    from .configuration import Configuration
+	  File "/usr/local/lib/python3.11/dist-packages/newspaper/configuration.py", line 15, in <module>
+	    from .parsers import Parser
+	  File "/usr/local/lib/python3.11/dist-packages/newspaper/parsers.py", line 12, in <module>
+	    import lxml.html.clean
+	  File "/usr/local/lib/python3.11/dist-packages/lxml/html/clean.py", line 18, in <module>
+	    raise ImportError(
+	ImportError: lxml.html.clean module is now a separate project lxml_html_clean.
+	Install lxml[html_clean] or lxml_html_clean directly.
+[INFO] 2024-05-05 03:26:20.093 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13471700679104_5/955/3415, processId:898 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-05-05 03:26:20.093 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 03:26:20.093 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-05 03:26:20.094 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 03:26:20.094 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-05 03:26:20.097 +0800 - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[INFO] 2024-05-05 03:26:20.097 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-05 03:26:20.097 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471700679104_5/955/3415
+[INFO] 2024-05-05 03:26:20.098 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471700679104_5/955/3415
+[INFO] 2024-05-05 03:26:20.098 +0800 - FINALIZE_SESSION

@@ -1,0 +1,195 @@
+[WI-0][TI-0] - [INFO] 2024-04-19 00:18:35.923 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8828337874659401 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:19:51.601 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7704992888689273 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:19:56.652 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7265193370165746 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:19:57.744 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7209169130770665 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:19:58.747 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.765208674492279 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:20:04.784 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7167138810198301 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:20:51.195 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9135135135135135 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:20:54.287 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7188894581690465 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:20:56.368 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8652436803380199 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:07.062 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=734, taskName=consume kafka topic, firstSubmitTime=1713457267039, startTime=0, taskType=SHELL, workflowInstanceHost=172.22.0.10:5678, host=172.22.0.13:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13314339450656, processDefineVersion=4, appIds=null, processInstanceId=322, scheduleTime=0, globalParams=null, executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13001194483488, taskParams={"localParams":[],"rawScript":"#!/bin/bash\n\nKAFKA_DIR=\"/opt/kafka_2.13-3.7.0/bin\"\n\n${KAFKA_DIR}/kafka-console-consumer.sh \\\n    --bootstrap-server kafka:9092 \\\n    --topic test \\\n    --from-beginning \\\n    --max-messages 1","resourceList":[]}, environmentConfig=export JAVA_HOME=/opt/java/openjdk, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='consume kafka topic'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13001194483488'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='322'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240419'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240418'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='734'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='kafka consume test'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13314298788384'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13314339450656'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240419002107'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.066 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: consume kafka topic to wait queue success
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.067 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.071 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.071 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.071 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.071 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1713457267071
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.071 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 322_734
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.072 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 734,
+  "taskName" : "consume kafka topic",
+  "firstSubmitTime" : 1713457267039,
+  "startTime" : 1713457267071,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.22.0.10:5678",
+  "host" : "172.22.0.13:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240419/13314339450656/4/322/734.log",
+  "processId" : 0,
+  "processDefineCode" : 13314339450656,
+  "processDefineVersion" : 4,
+  "processInstanceId" : 322,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"#!/bin/bash\\n\\nKAFKA_DIR=\\\"/opt/kafka_2.13-3.7.0/bin\\\"\\n\\n${KAFKA_DIR}/kafka-console-consumer.sh \\\\\\n    --bootstrap-server kafka:9092 \\\\\\n    --topic test \\\\\\n    --from-beginning \\\\\\n    --max-messages 1\",\"resourceList\":[]}",
+  "environmentConfig" : "export JAVA_HOME=/opt/java/openjdk",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "consume kafka topic"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "322"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240419"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240418"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "734"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "kafka consume test"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13314298788384"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13314339450656"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240419002107"
+    }
+  },
+  "taskAppId" : "322_734",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.074 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.074 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.075 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.125 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.22.0.13:1234
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.125 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.126 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_4/322/734 check successfully
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.126 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.126 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.127 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.127 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: SHELL create successfully
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.127 +0800 o.a.d.p.t.s.ShellTask:[70] - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "#!/bin/bash\n\nKAFKA_DIR=\"/opt/kafka_2.13-3.7.0/bin\"\n\n${KAFKA_DIR}/kafka-console-consumer.sh \\\n    --bootstrap-server kafka:9092 \\\n    --topic test \\\n    --from-beginning \\\n    --max-messages 1",
+  "resourceList" : [ ]
+}
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.127 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.127 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.127 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.128 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.128 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.128 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.129 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.129 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export JAVA_HOME=/opt/java/openjdk
+#!/bin/bash
+
+KAFKA_DIR="/opt/kafka_2.13-3.7.0/bin"
+
+${KAFKA_DIR}/kafka-console-consumer.sh \
+    --bootstrap-server kafka:9092 \
+    --topic test \
+    --from-beginning \
+    --max-messages 1
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.129 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.129 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_4/322/734/322_734.sh
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:07.134 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 9577
+[WI-0][TI-734] - [INFO] 2024-04-19 00:21:07.704 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=734, success=true)
+[WI-0][TI-734] - [INFO] 2024-04-19 00:21:07.713 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=734)
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:08.135 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:15.143 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	dg
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:15.530 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7065217391304347 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:16.146 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	Processed a total of 1 messages
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:16.154 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_4/322/734, processId:9577 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:16.156 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:16.156 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:16.156 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:16.157 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:16.165 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: SUCCESS to master : 172.22.0.13:1234
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:16.165 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:16.165 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_4/322/734
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:16.167 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_4/322/734
+[WI-322][TI-734] - [INFO] 2024-04-19 00:21:16.167 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-734] - [INFO] 2024-04-19 00:21:16.726 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=734, success=true)
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:29.652 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7222222222222222 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:30.700 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7304582210242587 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:31.713 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8261960784313725 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:32.716 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9494822695035461 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:34.733 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7727272727272727 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:36.774 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7229916897506925 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:38.898 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7479528308796601 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:40.925 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7163241915677446 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:21:46.984 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7857142857142857 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:50:26.718 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7220630372492837 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:52:47.655 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8232044198895028 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:57:19.337 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8834688346883469 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:57:20.352 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7762803234501346 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-19 00:57:21.361 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8206521739130435 is over then the MaxCpuUsagePercentageThresholds 0.7

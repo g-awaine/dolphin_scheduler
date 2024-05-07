@@ -1,0 +1,27 @@
+[ERROR] 2024-03-22 10:02:05.435 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.ProcessDefinitionController#releaseProcessDefinition[4 args] Meet a ServiceException: Internal Server Error: SubWorkflowDefinition Workflow_A is not online
+[INFO] 2024-03-22 10:06:57.887 +0800 o.a.d.a.s.i.SchedulerServiceImpl:[219] - Schedule create complete, projectCode:13001194483488, processDefinitionCode:13001314456096, scheduleId:2.
+[INFO] 2024-03-22 10:07:14.009 +0800 o.a.d.s.q.QuartzScheduler:[104] - Add job, job name: job_2, group name: jobgroup_1
+[INFO] 2024-03-22 10:07:14.032 +0800 o.a.d.s.q.QuartzScheduler:[137] - schedule job trigger, triggerName: job_2, triggerGroupName: jobgroup_1, cronExpression: 0-3 0 * * * ? *, startDate: Fri Mar 22 10:07:14 CST 2024, endDate: Wed Mar 22 00:00:00 CST 2124
+[INFO] 2024-03-22 10:18:26.823 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:403, taskInstanceName:show output, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240322/13002839652640/27/150/403.log
+[INFO] 2024-03-22 10:18:27.627 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:403, taskInstanceName:show output, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240322/13002839652640/27/150/403.log
+[INFO] 2024-03-22 10:25:29.887 +0800 o.a.d.s.q.QuartzScheduler:[155] - Try to delete scheduler task, projectId: 1, schedulerId: 2
+[INFO] 2024-03-22 10:26:16.182 +0800 o.a.d.a.s.i.SchedulerServiceImpl:[809] - Schedule update complete, projectCode:13001194483488, processDefinitionCode:13001314456096, scheduleId:2.
+[INFO] 2024-03-22 10:30:05.661 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13002839652640, commandCount:1.
+[INFO] 2024-03-22 10:41:59.879 +0800 o.a.d.s.q.QuartzScheduler:[104] - Add job, job name: job_2, group name: jobgroup_1
+[INFO] 2024-03-22 10:41:59.923 +0800 o.a.d.s.q.QuartzScheduler:[137] - schedule job trigger, triggerName: job_2, triggerGroupName: jobgroup_1, cronExpression: 0/10 0 * * * ? *, startDate: Fri Mar 22 10:41:59 CST 2024, endDate: Wed Mar 22 00:00:00 CST 2124
+[INFO] 2024-03-22 10:42:03.844 +0800 o.a.d.s.q.QuartzScheduler:[155] - Try to delete scheduler task, projectId: 1, schedulerId: 2
+[INFO] 2024-03-22 10:42:28.886 +0800 o.a.d.a.s.i.SchedulerServiceImpl:[809] - Schedule update complete, projectCode:13001194483488, processDefinitionCode:13001314456096, scheduleId:2.
+[INFO] 2024-03-22 10:42:36.438 +0800 o.a.d.s.q.QuartzScheduler:[104] - Add job, job name: job_2, group name: jobgroup_1
+[INFO] 2024-03-22 10:42:36.464 +0800 o.a.d.s.q.QuartzScheduler:[137] - schedule job trigger, triggerName: job_2, triggerGroupName: jobgroup_1, cronExpression: 0/10 0 * * * ? *, startDate: Fri Mar 22 10:42:36 CST 2024, endDate: Wed Mar 22 00:00:00 CST 2124
+[INFO] 2024-03-22 10:43:40.202 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13001314456096, commandCount:1.
+[INFO] 2024-03-22 10:45:08.553 +0800 o.a.d.s.q.QuartzScheduler:[155] - Try to delete scheduler task, projectId: 1, schedulerId: 2
+[INFO] 2024-03-22 10:45:40.548 +0800 o.a.d.a.s.i.SchedulerServiceImpl:[809] - Schedule update complete, projectCode:13001194483488, processDefinitionCode:13001314456096, scheduleId:2.
+[INFO] 2024-03-22 10:45:46.131 +0800 o.a.d.s.q.QuartzScheduler:[104] - Add job, job name: job_2, group name: jobgroup_1
+[INFO] 2024-03-22 10:45:46.153 +0800 o.a.d.s.q.QuartzScheduler:[137] - schedule job trigger, triggerName: job_2, triggerGroupName: jobgroup_1, cronExpression: 0/5 0 * * * ? *, startDate: Fri Mar 22 10:45:46 CST 2024, endDate: Wed Mar 22 00:00:00 CST 2124
+[INFO] 2024-03-22 10:47:03.543 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13001314456096, commandCount:1.
+[INFO] 2024-03-22 10:49:43.963 +0800 o.a.d.s.q.QuartzScheduler:[155] - Try to delete scheduler task, projectId: 1, schedulerId: 1
+[INFO] 2024-03-22 10:53:11.767 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13001314456096, commandCount:1.
+[INFO] 2024-03-22 10:58:53.774 +0800 o.a.d.s.q.QuartzScheduler:[155] - Try to delete scheduler task, projectId: 1, schedulerId: 2
+[INFO] 2024-03-22 10:59:32.303 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13001314456096, processVersion:25.
+[INFO] 2024-03-22 10:59:32.319 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13001314456096, processVersion:26.
+[INFO] 2024-03-22 10:59:32.365 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13001314456096, processVersion:26.

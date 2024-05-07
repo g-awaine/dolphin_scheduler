@@ -1,0 +1,16 @@
+[INFO] 2024-03-26 10:18:34.412 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:496, taskInstanceName:hell, host: 172.19.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240326/13045665829504/1/225/496.log
+[INFO] 2024-03-26 10:18:34.749 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:496, taskInstanceName:hell, host: 172.19.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240326/13045665829504/1/225/496.log
+[INFO] 2024-03-26 10:30:58.103 +0800 o.a.d.a.s.i.EnvironmentServiceImpl:[149] - Environment-WorkerGroup relation create complete, environmentName:python, workerGroup:default.
+[INFO] 2024-03-26 10:31:21.082 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13045665829504, processVersion:1.
+[INFO] 2024-03-26 10:31:21.092 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13045665829504, processVersion:2.
+[INFO] 2024-03-26 10:31:21.142 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13045665829504, processVersion:2.
+[INFO] 2024-03-26 10:31:39.235 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13045665829504, commandCount:1.
+[INFO] 2024-03-26 10:32:00.459 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:497, taskInstanceName:hell, host: 172.19.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240326/13045665829504/2/226/497.log
+[INFO] 2024-03-26 10:32:00.541 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:497, taskInstanceName:hell, host: 172.19.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240326/13045665829504/2/226/497.log
+[INFO] 2024-03-26 10:33:27.811 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13045665829504, commandCount:1.
+[INFO] 2024-03-26 10:33:47.748 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:498, taskInstanceName:hell, host: 172.19.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240326/13045665829504/2/227/498.log
+[INFO] 2024-03-26 10:33:47.921 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:498, taskInstanceName:hell, host: 172.19.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240326/13045665829504/2/227/498.log
+[INFO] 2024-03-26 10:35:57.215 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13045665829504, commandCount:1.
+[INFO] 2024-03-26 10:36:10.046 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13045665829504, commandCount:1.
+[INFO] 2024-03-26 10:36:45.571 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:499, taskInstanceName:hell, host: 172.19.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240326/13045665829504/2/228/499.log
+[INFO] 2024-03-26 10:36:45.705 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:499, taskInstanceName:hell, host: 172.19.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240326/13045665829504/2/228/499.log

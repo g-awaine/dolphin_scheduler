@@ -1,0 +1,18 @@
+[WARN] 2024-04-23 17:57:38.723 +0800 o.a.z.ClientCnxn:[1249] - Client session timed out, have not heard from server in 3491718ms for session id 0x100005d5b3c000f
+[WARN] 2024-04-23 17:57:38.724 +0800 o.a.z.ClientCnxn:[1292] - Session 0x100005d5b3c000f for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 3491718ms for session id 0x100005d5b3c000f
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1250)
+[WARN] 2024-04-23 17:57:38.729 +0800 c.z.h.p.HikariPool:[788] - DolphinScheduler - Thread starvation or clock leap detected (housekeeper delta=58m7s861ms711µs856ns).
+[INFO] 2024-04-23 17:57:38.828 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: SUSPENDED
+[WARN] 2024-04-23 17:57:40.340 +0800 o.a.c.ConnectionState:[316] - Session expired event received
+[WARN] 2024-04-23 17:57:40.341 +0800 o.a.z.ClientCnxn:[1429] - Unable to reconnect to ZooKeeper service, session 0x100005d5b3c000f has expired
+[WARN] 2024-04-23 17:57:40.341 +0800 o.a.z.ClientCnxn:[1292] - Session 0x100005d5b3c000f for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x100005d5b3c000f has expired
+	at org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1430)
+	at org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:154)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:86)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[INFO] 2024-04-23 17:57:40.344 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: LOST
+[INFO] 2024-04-23 17:57:40.589 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: RECONNECTED
+[INFO] 2024-04-23 17:57:40.730 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}

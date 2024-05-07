@@ -1,0 +1,16 @@
+[WARN] 2024-04-08 16:02:06.383 +0800 o.a.h.u.NativeCodeLoader:[60] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2024-04-08 16:02:06.742 +0800 o.a.d.a.s.i.ResourcesServiceImpl:[244] - Upload resource file complete, resourceName:spark-test.py, fileName:spark-test.py.
+[INFO] 2024-04-08 16:02:58.643 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[397] - Save process definition complete, processCode:13201021801792, processVersion:1.
+[INFO] 2024-04-08 16:02:58.741 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[408] - Save process task relations complete, projectCode:13010050770016, processCode:13201021801792, processVersion:1.
+[INFO] 2024-04-08 16:03:11.688 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-08 16:04:32.368 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:514, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/1/242/514.log
+[INFO] 2024-04-08 16:04:33.014 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2024-04-08 16:04:34.902 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:514, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/1/242/514.log
+[INFO] 2024-04-08 16:09:03.003 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13201021801792, processVersion:1.
+[INFO] 2024-04-08 16:09:03.025 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13201021801792, processVersion:2.
+[INFO] 2024-04-08 16:09:03.074 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13201021801792, processVersion:2.
+[INFO] 2024-04-08 16:09:12.489 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-08 16:11:21.192 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:515, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/2/243/515.log
+[INFO] 2024-04-08 16:11:21.484 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:515, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/2/243/515.log
+[INFO] 2024-04-08 16:33:05.455 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:515, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/2/243/515.log
+[INFO] 2024-04-08 16:33:05.912 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:515, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/2/243/515.log

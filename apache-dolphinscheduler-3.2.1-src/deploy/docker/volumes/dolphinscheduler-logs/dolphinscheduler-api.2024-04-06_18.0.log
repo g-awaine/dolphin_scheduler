@@ -1,0 +1,18 @@
+[INFO] 2024-04-06 18:33:06.214 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13056817857952, processCode:13056845592480, processVersion:1.
+[INFO] 2024-04-06 18:33:06.274 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13056845592480, processVersion:2.
+[INFO] 2024-04-06 18:33:06.304 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13056817857952, processCode:13056845592480, processVersion:2.
+[INFO] 2024-04-06 18:33:22.325 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13056845592480, commandCount:1.
+[ERROR] 2024-04-06 18:33:58.194 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:503.
+[ERROR] 2024-04-06 18:35:06.860 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:503.
+[INFO] 2024-04-06 18:35:18.737 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13056845592480, commandCount:1.
+[INFO] 2024-04-06 18:36:05.191 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:505, taskInstanceName:reddit_api, host: 172.22.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240406/13056845592480/2/233/505.log
+[INFO] 2024-04-06 18:36:06.024 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2024-04-06 18:36:15.861 +0800 o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+[INFO] 2024-04-06 18:36:15.966 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:505, taskInstanceName:reddit_api, host: 172.22.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240406/13056845592480/2/233/505.log
+[INFO] 2024-04-06 18:36:16.075 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:505, taskInstanceName:reddit_api, host: 172.22.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240406/13056845592480/2/233/505.log
+[INFO] 2024-04-06 18:36:16.085 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:505, taskInstanceName:reddit_api, host: 172.22.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240406/13056845592480/2/233/505.log
+[INFO] 2024-04-06 18:36:17.322 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:505, taskInstanceName:reddit_api, host: 172.22.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240406/13056845592480/2/233/505.log
+[INFO] 2024-04-06 18:36:17.828 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:505, taskInstanceName:reddit_api, host: 172.22.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240406/13056845592480/2/233/505.log
+[INFO] 2024-04-06 18:36:18.145 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:505, taskInstanceName:reddit_api, host: 172.22.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240406/13056845592480/2/233/505.log
+[INFO] 2024-04-06 18:36:37.746 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:505, taskInstanceName:reddit_api, host: 172.22.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240406/13056845592480/2/233/505.log
+[INFO] 2024-04-06 18:36:38.079 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:505, taskInstanceName:reddit_api, host: 172.22.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240406/13056845592480/2/233/505.log

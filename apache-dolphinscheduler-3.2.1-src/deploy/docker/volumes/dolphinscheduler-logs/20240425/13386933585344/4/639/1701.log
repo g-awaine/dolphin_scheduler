@@ -1,0 +1,156 @@
+[INFO] 2024-04-25 11:41:46.913 +0800 - Submit LogicTask: check_kafka_topics to MasterTaskExecutorThreadPool success
+[INFO] 2024-04-25 11:41:46.927 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:41:46.934 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-25 11:41:46.938 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:41:46.940 +0800 - Begin to initialize task
+[INFO] 2024-04-25 11:41:46.943 +0800 - Set task startTime: 1714016506943
+[INFO] 2024-04-25 11:41:46.944 +0800 - Set task appId: 639_1701
+[INFO] 2024-04-25 11:41:46.963 +0800 - End initialize task {
+  "taskInstanceId" : 1701,
+  "taskName" : "check_kafka_topics",
+  "firstSubmitTime" : 1714016506784,
+  "startTime" : 1714016506943,
+  "taskType" : "DYNAMIC",
+  "workflowInstanceHost" : "172.18.0.10:5678",
+  "host" : "172.18.0.10:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240425/13386933585344/4/639/1701.log",
+  "processId" : 0,
+  "processDefineCode" : 13386933585344,
+  "processDefineVersion" : 4,
+  "processInstanceId" : 639,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":13387016845888,\"maxNumOfSubWorkflowInstances\":1024,\"degreeOfParallelism\":2,\"filterCondition\":\"\",\"listParameters\":[{\"name\":\"topics\",\"value\":\"reddit_post_ processed_topic|reddit_post_sa_topic\",\"separator\":\",\",\"disabled\":true}]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "check_kafka_topics"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "639"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240425"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240424"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1701"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "perform_sentiment_analysis"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386894519360"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386933585344"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240425114146"
+    }
+  },
+  "taskAppId" : "639_1701",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-25 11:41:46.966 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:41:46.966 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-25 11:41:46.966 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:41:46.987 +0800 - Send task status RUNNING_EXECUTION to master 172.18.0.10:5678
+[INFO] 2024-04-25 11:41:46.996 +0800 - Success initialize task parameters: 
+{
+  "localParams" : [ ],
+  "varPool" : null,
+  "processDefinitionCode" : 13387016845888,
+  "maxNumOfSubWorkflowInstances" : 1024,
+  "degreeOfParallelism" : 2,
+  "filterCondition" : "",
+  "listParameters" : [ {
+    "name" : "topics",
+    "value" : "reddit_post_ processed_topic|reddit_post_sa_topic",
+    "separator" : ","
+  } ]
+}
+[INFO] 2024-04-25 11:41:47.017 +0800 - Initialized task plugin instance: DYNAMIC successfully
+[INFO] 2024-04-25 11:41:47.020 +0800 - Initialize taskVarPool: null successfully
+[INFO] 2024-04-25 11:41:47.025 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:41:47.025 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-25 11:41:47.026 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:41:47.067 +0800 - parameter group size: 1
+[INFO] 2024-04-25 11:41:47.067 +0800 - parameter group: {topics=reddit_post_ processed_topic|reddit_post_sa_topic}
+[INFO] 2024-04-25 11:41:47.097 +0800 - Expected number of runs : 1, actual number of runs : 1
+[INFO] 2024-04-25 11:41:47.101 +0800 - insert 1 relation sub workflow
+[INFO] 2024-04-25 11:41:47.120 +0800 - There are 2 sub process instances that can be started
+[INFO] 2024-04-25 11:41:47.127 +0800 - start sub process instance, sub process instance id: 640, command: Command(id=826, commandType=DYNAMIC_GENERATION, processDefinitionCode=13387016845888, executorId=1, commandParam={"StartParams":"{\"topics\":\"reddit_post_ processed_topic|reddit_post_sa_topic\"}"}, taskDependType=TASK_POST, failureStrategy=CONTINUE, warningType=NONE, warningGroupId=0, scheduleTime=null, startTime=Thu Apr 25 11:41:47 GMT+08:00 2024, processInstancePriority=MEDIUM, updateTime=Thu Apr 25 11:41:47 GMT+08:00 2024, workerGroup=default, tenantCode=null, environmentCode=null, dryRun=0, processInstanceId=640, processDefinitionVersion=1, testFlag=0)
+[INFO] 2024-04-25 11:41:57.136 +0800 - all sub process instance finish
+[INFO] 2024-04-25 11:41:57.137 +0800 - success sub process instance count: 0
+[INFO] 2024-04-25 11:41:57.137 +0800 - failed sub process instance count: 1
+[INFO] 2024-04-25 11:41:57.138 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:41:57.138 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-25 11:41:57.138 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:41:57.140 +0800 - Task execute finished, removed the TaskExecutionContext
+[INFO] 2024-04-25 11:41:57.160 +0800 - Send task status: FAILURE to master: 172.18.0.10:5678 successfully
+[INFO] 2024-04-25 11:41:57.161 +0800 - Execute task finished, will send the task execute result to master, the current task execute result is FAILURE
+[INFO] 2024-04-25 11:41:57.162 +0800 - FINALIZE_SESSION

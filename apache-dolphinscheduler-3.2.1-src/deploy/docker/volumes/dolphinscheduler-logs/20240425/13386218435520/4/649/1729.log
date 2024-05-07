@@ -1,0 +1,301 @@
+[INFO] 2024-04-25 12:06:16.314 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 12:06:16.316 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-25 12:06:16.316 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 12:06:16.316 +0800 - Begin to initialize task
+[INFO] 2024-04-25 12:06:16.316 +0800 - Set task startTime: 1714017976316
+[INFO] 2024-04-25 12:06:16.316 +0800 - Set task appId: 649_1729
+[INFO] 2024-04-25 12:06:16.317 +0800 - End initialize task {
+  "taskInstanceId" : 1729,
+  "taskName" : "sentiment anaysis",
+  "firstSubmitTime" : 1714017976298,
+  "startTime" : 1714017976316,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.10:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240425/13386218435520/4/649/1729.log",
+  "processId" : 0,
+  "processDefineCode" : 13386218435520,
+  "processDefineVersion" : 4,
+  "processInstanceId" : 649,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"from pyspark.sql.functions import udf, split\\nfrom pyspark.sql.types import FloatType , ArrayType, StringType\\nimport nltk\\nfrom nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA\\nfrom pyspark.sql import SparkSession\\n\\n\\n# init Spark session\\nspark = SparkSession.builder \\\\\\n    .appName(\\\"Sentiment Analysis\\\") \\\\\\n    .master(\\\"local\\\") \\\\\\n    .getOrCreate()\\n\\n# download the model\\nnltk.download('vader_lexicon')\\n\\n# init the sentiment analysis object\\nsia = SIA()\\n\\n# define a udf to perform sentiment analysis\\ndef analyze_sentiment(message):\\n    # Perform sentiment analysis\\n    pol_score = sia.polarity_scores(message)\\n    # Return the compound score\\n    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]\\n\\nmessage = ${message}\\n\\nrdd = spark.sparkContext.parallelize([message])\\ndf = spark.read.json(rdd)\\n\\n# Register the function as a UDF\\nanalyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))\\n\\n# Example usage with PySpark DataFrame\\n# Assuming `df` is your DataFrame containing messages\\n# and `message` is the column containing the messages\\ndf = df.withColumn('sentiment_score', analyze_sentiment_udf(df['content']))\\n\\n# split the sentiment_score column into separate columns\\n            \\nsa_reddit_df = df.withColumn(\\\"negative\\\", df[\\\"sentiment_score\\\"][0]) \\\\\\n            .withColumn(\\\"neutral\\\", df[\\\"sentiment_score\\\"][1]) \\\\\\n            .withColumn(\\\"positive\\\", df[\\\"sentiment_score\\\"][2]) \\\\\\n            .withColumn(\\\"compound\\\", df[\\\"sentiment_score\\\"][3]) \\\\\\n            .drop('sentiment_score')  # drop sentiment_score column after splitting\\n\\n# Show the DataFrame with the sentiment scores\\nsa_reddit_df.show()\\n\\n# send to repective kafka topic\\nsa_reddit_json = sa_reddit_df.toJSON().collect()\\n\\n# define the parameters for the kafka broker and topic\\nkafka_params = {\\n    \\\"kafka.bootstrap.servers\\\": \\\"kafka:9092\\\",  # Kafka broker address\\n    \\\"topic\\\": \\\"${output_topic}\\\"  # Kafka topic name\\n}\\n\\n# write data to Kafka\\nspark \\\\\\n    .createDataFrame(sa_reddit_json, StringType()) \\\\\\n    .write \\\\\\n    .format(\\\"kafka\\\") \\\\\\n    .options(**kafka_params) \\\\\\n    .save()\",\"resourceList\":[]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sentiment anaysis"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "649"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240425"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240424"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1729"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sentiment_analysis"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386027735104"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386218435520"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240425120616"
+    }
+  },
+  "taskAppId" : "649_1729",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-25 12:06:16.317 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 12:06:16.317 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-25 12:06:16.318 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 12:06:16.319 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-25 12:06:16.320 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-25 12:06:16.320 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_4/649/1729 check successfully
+[INFO] 2024-04-25 12:06:16.321 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[INFO] 2024-04-25 12:06:16.321 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-04-25 12:06:16.321 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-25 12:06:16.321 +0800 - Task plugin instance: PYTHON create successfully
+[INFO] 2024-04-25 12:06:16.321 +0800 - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "from pyspark.sql.functions import udf, split\nfrom pyspark.sql.types import FloatType , ArrayType, StringType\nimport nltk\nfrom nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA\nfrom pyspark.sql import SparkSession\n\n\n# init Spark session\nspark = SparkSession.builder \\\n    .appName(\"Sentiment Analysis\") \\\n    .master(\"local\") \\\n    .getOrCreate()\n\n# download the model\nnltk.download('vader_lexicon')\n\n# init the sentiment analysis object\nsia = SIA()\n\n# define a udf to perform sentiment analysis\ndef analyze_sentiment(message):\n    # Perform sentiment analysis\n    pol_score = sia.polarity_scores(message)\n    # Return the compound score\n    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]\n\nmessage = ${message}\n\nrdd = spark.sparkContext.parallelize([message])\ndf = spark.read.json(rdd)\n\n# Register the function as a UDF\nanalyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))\n\n# Example usage with PySpark DataFrame\n# Assuming `df` is your DataFrame containing messages\n# and `message` is the column containing the messages\ndf = df.withColumn('sentiment_score', analyze_sentiment_udf(df['content']))\n\n# split the sentiment_score column into separate columns\n            \nsa_reddit_df = df.withColumn(\"negative\", df[\"sentiment_score\"][0]) \\\n            .withColumn(\"neutral\", df[\"sentiment_score\"][1]) \\\n            .withColumn(\"positive\", df[\"sentiment_score\"][2]) \\\n            .withColumn(\"compound\", df[\"sentiment_score\"][3]) \\\n            .drop('sentiment_score')  # drop sentiment_score column after splitting\n\n# Show the DataFrame with the sentiment scores\nsa_reddit_df.show()\n\n# send to repective kafka topic\nsa_reddit_json = sa_reddit_df.toJSON().collect()\n\n# define the parameters for the kafka broker and topic\nkafka_params = {\n    \"kafka.bootstrap.servers\": \"kafka:9092\",  # Kafka broker address\n    \"topic\": \"${output_topic}\"  # Kafka topic name\n}\n\n# write data to Kafka\nspark \\\n    .createDataFrame(sa_reddit_json, StringType()) \\\n    .write \\\n    .format(\"kafka\") \\\n    .options(**kafka_params) \\\n    .save()",
+  "resourceList" : [ ]
+}
+[INFO] 2024-04-25 12:06:16.322 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-25 12:06:16.322 +0800 - Set taskVarPool: [] successfully
+[INFO] 2024-04-25 12:06:16.322 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 12:06:16.322 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-25 12:06:16.322 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 12:06:16.322 +0800 - raw python script : from pyspark.sql.functions import udf, split
+from pyspark.sql.types import FloatType , ArrayType, StringType
+import nltk
+from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
+from pyspark.sql import SparkSession
+
+
+# init Spark session
+spark = SparkSession.builder \
+    .appName("Sentiment Analysis") \
+    .master("local") \
+    .getOrCreate()
+
+# download the model
+nltk.download('vader_lexicon')
+
+# init the sentiment analysis object
+sia = SIA()
+
+# define a udf to perform sentiment analysis
+def analyze_sentiment(message):
+    # Perform sentiment analysis
+    pol_score = sia.polarity_scores(message)
+    # Return the compound score
+    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]
+
+message = ${message}
+
+rdd = spark.sparkContext.parallelize([message])
+df = spark.read.json(rdd)
+
+# Register the function as a UDF
+analyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))
+
+# Example usage with PySpark DataFrame
+# Assuming `df` is your DataFrame containing messages
+# and `message` is the column containing the messages
+df = df.withColumn('sentiment_score', analyze_sentiment_udf(df['content']))
+
+# split the sentiment_score column into separate columns
+            
+sa_reddit_df = df.withColumn("negative", df["sentiment_score"][0]) \
+            .withColumn("neutral", df["sentiment_score"][1]) \
+            .withColumn("positive", df["sentiment_score"][2]) \
+            .withColumn("compound", df["sentiment_score"][3]) \
+            .drop('sentiment_score')  # drop sentiment_score column after splitting
+
+# Show the DataFrame with the sentiment scores
+sa_reddit_df.show()
+
+# send to repective kafka topic
+sa_reddit_json = sa_reddit_df.toJSON().collect()
+
+# define the parameters for the kafka broker and topic
+kafka_params = {
+    "kafka.bootstrap.servers": "kafka:9092",  # Kafka broker address
+    "topic": "${output_topic}"  # Kafka topic name
+}
+
+# write data to Kafka
+spark \
+    .createDataFrame(sa_reddit_json, StringType()) \
+    .write \
+    .format("kafka") \
+    .options(**kafka_params) \
+    .save()
+[INFO] 2024-04-25 12:06:16.323 +0800 - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_4/649/1729
+[INFO] 2024-04-25 12:06:16.323 +0800 - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_4/649/1729/py_649_1729.py
+[INFO] 2024-04-25 12:06:16.323 +0800 - #-*- encoding=utf8 -*-
+
+from pyspark.sql.functions import udf, split
+from pyspark.sql.types import FloatType , ArrayType, StringType
+import nltk
+from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
+from pyspark.sql import SparkSession
+
+
+# init Spark session
+spark = SparkSession.builder \
+    .appName("Sentiment Analysis") \
+    .master("local") \
+    .getOrCreate()
+
+# download the model
+nltk.download('vader_lexicon')
+
+# init the sentiment analysis object
+sia = SIA()
+
+# define a udf to perform sentiment analysis
+def analyze_sentiment(message):
+    # Perform sentiment analysis
+    pol_score = sia.polarity_scores(message)
+    # Return the compound score
+    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]
+
+message = ${message}
+
+rdd = spark.sparkContext.parallelize([message])
+df = spark.read.json(rdd)
+
+# Register the function as a UDF
+analyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))
+
+# Example usage with PySpark DataFrame
+# Assuming `df` is your DataFrame containing messages
+# and `message` is the column containing the messages
+df = df.withColumn('sentiment_score', analyze_sentiment_udf(df['content']))
+
+# split the sentiment_score column into separate columns
+            
+sa_reddit_df = df.withColumn("negative", df["sentiment_score"][0]) \
+            .withColumn("neutral", df["sentiment_score"][1]) \
+            .withColumn("positive", df["sentiment_score"][2]) \
+            .withColumn("compound", df["sentiment_score"][3]) \
+            .drop('sentiment_score')  # drop sentiment_score column after splitting
+
+# Show the DataFrame with the sentiment scores
+sa_reddit_df.show()
+
+# send to repective kafka topic
+sa_reddit_json = sa_reddit_df.toJSON().collect()
+
+# define the parameters for the kafka broker and topic
+kafka_params = {
+    "kafka.bootstrap.servers": "kafka:9092",  # Kafka broker address
+    "topic": "${output_topic}"  # Kafka topic name
+}
+
+# write data to Kafka
+spark \
+    .createDataFrame(sa_reddit_json, StringType()) \
+    .write \
+    .format("kafka") \
+    .options(**kafka_params) \
+    .save()
+[INFO] 2024-04-25 12:06:16.324 +0800 - Final Shell file is: 
+[INFO] 2024-04-25 12:06:16.324 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-25 12:06:16.324 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_4/649/1729/py_649_1729.py
+[INFO] 2024-04-25 12:06:16.324 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-25 12:06:16.325 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_4/649/1729/649_1729.sh
+[INFO] 2024-04-25 12:06:16.327 +0800 - process start, process id is: 2360
+[INFO] 2024-04-25 12:06:17.330 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	  File "/tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_4/649/1729/py_649_1729.py", line 29
+	    message = ${message}
+	              ^
+	SyntaxError: invalid syntax
+[INFO] 2024-04-25 12:06:17.331 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_4/649/1729, processId:2360 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-04-25 12:06:17.332 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 12:06:17.334 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-25 12:06:17.334 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 12:06:17.335 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-25 12:06:17.337 +0800 - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[INFO] 2024-04-25 12:06:17.337 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-25 12:06:17.338 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_4/649/1729
+[INFO] 2024-04-25 12:06:17.338 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_4/649/1729
+[INFO] 2024-04-25 12:06:17.338 +0800 - FINALIZE_SESSION

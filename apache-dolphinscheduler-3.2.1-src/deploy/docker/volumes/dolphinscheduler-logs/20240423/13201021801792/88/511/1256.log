@@ -1,0 +1,186 @@
+[INFO] 2024-04-23 18:03:19.697 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 18:03:19.699 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-23 18:03:19.700 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 18:03:19.700 +0800 - Begin to initialize task
+[INFO] 2024-04-23 18:03:19.700 +0800 - Set task startTime: 1713866599700
+[INFO] 2024-04-23 18:03:19.700 +0800 - Set task appId: 511_1256
+[INFO] 2024-04-23 18:03:19.701 +0800 - End initialize task {
+  "taskInstanceId" : 1256,
+  "taskName" : "spark preprocessing",
+  "firstSubmitTime" : 1713866599652,
+  "startTime" : 1713866599700,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.0.9:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240423/13201021801792/88/511/1256.log",
+  "processId" : 0,
+  "processDefineCode" : 13201021801792,
+  "processDefineVersion" : 88,
+  "processInstanceId" : 511,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"folder\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"processing\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"$SPARK_HOME/bin/spark-submit \\\\\\n    --master spark://spark-master:7077 \\\\\\n    --conf spark.driver.cores=2 \\\\\\n    --conf spark.driver.memory=2G \\\\\\n    --conf spark.executor.instances=1 \\\\\\n    --conf spark.executor.cores=2 \\\\\\n    --conf spark.executor.memory=2G \\\\\\n    --files ${raw_file_dir} \\\\\\n    --name reddit_preprocessing spark_reddit_preprocessing.py\\n\\n# $SPARK_HOME/bin/spark-submit \\\\\\n#     --master local \\\\\\n#     --files ${raw_file_dir} \\\\\\n#     --name reddit_preprocessing spark_reddit_preprocessing.py\\n\",\"resourceList\":[{\"id\":null,\"resourceName\":\"file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py\",\"res\":null}]}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11\nexport PYTHON_LAUNCHER=/bin/python3.11\nexport PYSPARK_PYTHON=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "spark preprocessing"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240423"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1256"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13210058002752"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240423180319"
+    },
+    "folder" : {
+      "prop" : "folder",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "processing"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "511"
+    },
+    "raw_file_dir" : {
+      "prop" : "raw_file_dir",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit/processing/500-20240423.json"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240422"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocess_post"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13201021801792"
+    }
+  },
+  "taskAppId" : "511_1256",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"raw_file_dir\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"/local_storage/reddit/processing/500-20240423.json\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-23 18:03:19.702 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 18:03:19.702 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-23 18:03:19.702 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 18:03:19.707 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-23 18:03:19.714 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-23 18:03:19.727 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_88/511/1256 check successfully
+[INFO] 2024-04-23 18:03:19.728 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-04-23 18:03:19.730 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py, resourceRelativePath=spark_reddit_preprocessing.py, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_88/511/1256/spark_reddit_preprocessing.py)})
+[INFO] 2024-04-23 18:03:19.730 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-23 18:03:19.732 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-04-23 18:03:19.732 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "$SPARK_HOME/bin/spark-submit \\\n    --master spark://spark-master:7077 \\\n    --conf spark.driver.cores=2 \\\n    --conf spark.driver.memory=2G \\\n    --conf spark.executor.instances=1 \\\n    --conf spark.executor.cores=2 \\\n    --conf spark.executor.memory=2G \\\n    --files ${raw_file_dir} \\\n    --name reddit_preprocessing spark_reddit_preprocessing.py\n\n# $SPARK_HOME/bin/spark-submit \\\n#     --master local \\\n#     --files ${raw_file_dir} \\\n#     --name reddit_preprocessing spark_reddit_preprocessing.py\n",
+  "resourceList" : [ {
+    "id" : null,
+    "resourceName" : "file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py",
+    "res" : null
+  } ]
+}
+[INFO] 2024-04-23 18:03:19.733 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-23 18:03:19.733 +0800 - Set taskVarPool: [{"prop":"raw_file_dir","direct":"IN","type":"VARCHAR","value":"/local_storage/reddit/processing/500-20240423.json"}] successfully
+[INFO] 2024-04-23 18:03:19.733 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 18:03:19.733 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-23 18:03:19.733 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 18:03:19.735 +0800 - Final Shell file is: 
+[INFO] 2024-04-23 18:03:19.736 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-23 18:03:19.736 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYTHON_LAUNCHER=/bin/python3.11
+export PYSPARK_PYTHON=/bin/python3.11
+$SPARK_HOME/bin/spark-submit \
+    --master spark://spark-master:7077 \
+    --conf spark.driver.cores=2 \
+    --conf spark.driver.memory=2G \
+    --conf spark.executor.instances=1 \
+    --conf spark.executor.cores=2 \
+    --conf spark.executor.memory=2G \
+    --files /local_storage/reddit/processing/500-20240423.json \
+    --name reddit_preprocessing spark_reddit_preprocessing.py
+
+# $SPARK_HOME/bin/spark-submit \
+#     --master local \
+#     --files /local_storage/reddit/processing/500-20240423.json \
+#     --name reddit_preprocessing spark_reddit_preprocessing.py
+
+[INFO] 2024-04-23 18:03:19.736 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-23 18:03:19.736 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_88/511/1256/511_1256.sh
+[INFO] 2024-04-23 18:03:19.745 +0800 - process start, process id is: 11075
+[INFO] 2024-04-23 18:03:20.763 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory

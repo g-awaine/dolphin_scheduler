@@ -1,0 +1,1288 @@
+[ERROR] 2024-04-29 17:12:36.872 +0800 o.a.d.c.g.DAG:[124] - serious error: add edge(13433255983872 -> 13426451158240) is invalid, cause cycle！
+[ERROR] 2024-04-29 17:12:36.886 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[473] - Process DAG has cycle.
+[ERROR] 2024-04-29 17:12:36.896 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.ProcessDefinitionController#updateProcessDefinition[12 args] Meet a ServiceException: process node has cycle
+[ERROR] 2024-04-29 17:12:52.443 +0800 o.a.d.c.g.DAG:[124] - serious error: add edge(13433255983872 -> 13426451158240) is invalid, cause cycle！
+[ERROR] 2024-04-29 17:12:52.455 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[473] - Process DAG has cycle.
+[ERROR] 2024-04-29 17:12:52.458 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.ProcessDefinitionController#updateProcessDefinition[12 args] Meet a ServiceException: process node has cycle
+[INFO] 2024-04-29 17:13:34.809 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13426477386080, processVersion:4.
+[INFO] 2024-04-29 17:13:34.839 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13426477386080, processVersion:5.
+[INFO] 2024-04-29 17:13:34.932 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13426477386080, processVersion:5.
+[WARN] 2024-04-29 17:22:05.512 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2024-04-29 17:22:09.417 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2024-04-29 17:22:09.419 +0800 o.a.d.a.ApiApplicationServer:[640] - The following 1 profile is active: "postgresql"
+[INFO] 2024-04-29 17:22:20.226 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=b9ea3c4b-94e1-3be4-b636-a78d78ec03d8
+[INFO] 2024-04-29 17:22:21.979 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:22:22.000 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:22:22.147 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:22:22.150 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$451/1053273441] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:22:22.176 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:22:22.358 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:22:22.389 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:22:23.290 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:22:25.329 +0800 o.e.j.u.log:[170] - Logging initialized @28398ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2024-04-29 17:22:26.390 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2024-04-29 17:22:26.662 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[INFO] 2024-04-29 17:22:26.943 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2024-04-29 17:22:26.943 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 17462 ms
+[INFO] 2024-04-29 17:22:34.954 +0800 o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> false 
+[INFO] 2024-04-29 17:22:34.955 +0800 o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+[INFO] 2024-04-29 17:22:35.007 +0800 o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=0.0.0.0, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+[INFO] 2024-04-29 17:22:36.461 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2024-04-29 17:22:36.519 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2024-04-29 17:22:36.522 +0800 o.e.j.s.session:[132] - node0 Scavenging every 600000ms
+[INFO] 2024-04-29 17:22:36.577 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@20d65767{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.8110891602673442072/, jar:file:/opt/dolphinscheduler/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2024-04-29 17:22:36.581 +0800 o.e.j.s.Server:[415] - Started @39648ms
+[INFO] 2024-04-29 17:22:38.715 +0800 c.z.h.HikariDataSource:[110] - DolphinScheduler - Starting...
+[INFO] 2024-04-29 17:22:39.607 +0800 c.z.h.HikariDataSource:[123] - DolphinScheduler - Start completed.
+[INFO] 2024-04-29 17:22:46.993 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2024-04-29 17:22:47.179 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2024-04-29 17:22:47.201 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2024-04-29 17:22:47.848 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-29 17:22:47.931 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-29 17:22:48.786 +0800 c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+[INFO] 2024-04-29 17:22:48.877 +0800 c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.3, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+[INFO] 2024-04-29 17:22:53.923 +0800 o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2024-04-29 17:22:53.967 +0800 o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2024-04-29 17:22:53.967 +0800 o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2024-04-29 17:22:53.984 +0800 o.s.s.q.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2024-04-29 17:22:53.987 +0800 o.s.s.q.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2024-04-29 17:22:53.989 +0800 o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId 'e83d796ef1371714382573927'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.apache.dolphinscheduler.scheduler.quartz.QuartzZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2024-04-29 17:22:53.990 +0800 o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2024-04-29 17:22:53.990 +0800 o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2024-04-29 17:22:53.990 +0800 o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6d17cd8b
+[INFO] 2024-04-29 17:22:54.238 +0800 o.a.d.a.p.PythonGateway:[710] - PythonGatewayService started on: /0.0.0.0
+[INFO] 2024-04-29 17:22:54.345 +0800 p.GatewayServer:[573] - Gateway Server Started
+[INFO] 2024-04-29 17:22:58.780 +0800 o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+[INFO] 2024-04-29 17:22:59.341 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[INFO] 2024-04-29 17:22:59.504 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2024-04-29 17:22:59.505 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[INFO] 2024-04-29 17:22:59.507 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 2 ms
+[INFO] 2024-04-29 17:22:59.522 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@35ff072c{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+[INFO] 2024-04-29 17:22:59.523 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 12345 (http/1.1) with context path '/dolphinscheduler'
+[INFO] 2024-04-29 17:22:59.542 +0800 o.a.d.a.ApiApplicationServer:[61] - Started ApiApplicationServer in 59.788 seconds (JVM running for 62.613)
+[INFO] 2024-04-29 17:22:59.551 +0800 o.a.d.a.ApiApplicationServer:[63] - Received spring application context ready event will load taskPlugin and write to DB
+[INFO] 2024-04-29 17:22:59.584 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.588 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.588 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.591 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.591 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.594 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.595 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.598 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.598 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.599 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.601 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.604 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.604 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.605 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.606 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.608 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.609 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.612 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.613 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.616 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.617 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.619 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.619 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.623 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.623 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.625 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.625 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.629 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.630 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.635 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.637 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.644 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.645 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.658 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.659 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.668 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.669 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.674 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.675 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.693 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.694 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.698 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.700 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.706 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.710 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.714 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.714 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.728 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.731 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.741 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.746 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.753 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.754 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.760 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.761 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.767 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.768 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.772 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.772 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.775 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.776 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.778 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.778 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.779 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.779 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.782 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-29 17:22:59.788 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2024-04-29 17:26:27.119 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-04-29 17:26:27.120 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-04-29 17:26:27.130 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-04-29 17:26:27.131 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-04-29 17:26:27.131 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-04-29 17:26:27.132 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-04-29 17:26:27.134 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[INFO] 2024-04-29 17:27:14.908 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13426477386080, processVersion:5.
+[INFO] 2024-04-29 17:27:14.934 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13426477386080, processVersion:6.
+[INFO] 2024-04-29 17:27:14.959 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13426477386080, processVersion:6.
+[INFO] 2024-04-29 17:27:21.828 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13426477386080, commandCount:1.
+[ERROR] 2024-04-29 17:27:38.539 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:2017.
+[INFO] 2024-04-29 17:28:04.171 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2022, taskInstanceName:persist_to_postgre, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/6/746/2022.log
+[INFO] 2024-04-29 17:28:04.512 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2024-04-29 17:28:05.370 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2022, taskInstanceName:persist_to_postgre, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/6/746/2022.log
+[INFO] 2024-04-29 17:28:42.289 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13426477386080, processVersion:6.
+[INFO] 2024-04-29 17:28:42.304 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13426477386080, processVersion:7.
+[INFO] 2024-04-29 17:28:42.314 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13426477386080, processVersion:7.
+[INFO] 2024-04-29 17:28:47.126 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13426477386080, commandCount:1.
+[INFO] 2024-04-29 17:29:01.141 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2027, taskInstanceName:persist_to_postgre, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/7/747/2027.log
+[INFO] 2024-04-29 17:29:01.239 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2027, taskInstanceName:persist_to_postgre, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/7/747/2027.log
+[INFO] 2024-04-29 17:29:50.588 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13426477386080, processVersion:7.
+[INFO] 2024-04-29 17:29:50.594 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13426477386080, processVersion:8.
+[INFO] 2024-04-29 17:29:50.602 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13426477386080, processVersion:8.
+[INFO] 2024-04-29 17:29:55.555 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13426477386080, commandCount:1.
+[INFO] 2024-04-29 17:30:31.016 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2033, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2033.log
+[INFO] 2024-04-29 17:30:31.153 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2033, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2033.log
+[INFO] 2024-04-29 17:32:11.195 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: HANA
+[INFO] 2024-04-29 17:32:11.196 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: HANA
+[INFO] 2024-04-29 17:32:11.199 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SQLSERVER
+[INFO] 2024-04-29 17:32:11.200 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SQLSERVER
+[INFO] 2024-04-29 17:32:11.204 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SAGEMAKER
+[INFO] 2024-04-29 17:32:11.205 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SAGEMAKER
+[INFO] 2024-04-29 17:32:11.207 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: DATABEND
+[INFO] 2024-04-29 17:32:11.207 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: DATABEND
+[INFO] 2024-04-29 17:32:11.213 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: AZURESQL
+[INFO] 2024-04-29 17:32:11.216 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: AZURESQL
+[INFO] 2024-04-29 17:32:11.227 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: HIVE
+[INFO] 2024-04-29 17:32:11.235 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: HIVE
+[INFO] 2024-04-29 17:32:11.243 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: DORIS
+[INFO] 2024-04-29 17:32:11.244 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: DORIS
+[INFO] 2024-04-29 17:32:11.254 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: POSTGRESQL
+[INFO] 2024-04-29 17:32:11.255 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: POSTGRESQL
+[INFO] 2024-04-29 17:32:11.264 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: MYSQL
+[INFO] 2024-04-29 17:32:11.265 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: MYSQL
+[INFO] 2024-04-29 17:32:11.271 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: REDSHIFT
+[INFO] 2024-04-29 17:32:11.272 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: REDSHIFT
+[INFO] 2024-04-29 17:32:11.282 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SNOWFLAKE
+[INFO] 2024-04-29 17:32:11.283 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SNOWFLAKE
+[INFO] 2024-04-29 17:32:11.287 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: STARROCKS
+[INFO] 2024-04-29 17:32:11.288 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: STARROCKS
+[INFO] 2024-04-29 17:32:11.292 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SSH
+[INFO] 2024-04-29 17:32:11.293 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SSH
+[INFO] 2024-04-29 17:32:11.299 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: ATHENA
+[INFO] 2024-04-29 17:32:11.300 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: ATHENA
+[INFO] 2024-04-29 17:32:11.306 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: PRESTO
+[INFO] 2024-04-29 17:32:11.307 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: PRESTO
+[INFO] 2024-04-29 17:32:11.310 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: OCEANBASE
+[INFO] 2024-04-29 17:32:11.312 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: OCEANBASE
+[INFO] 2024-04-29 17:32:11.326 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: ORACLE
+[INFO] 2024-04-29 17:32:11.327 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: ORACLE
+[INFO] 2024-04-29 17:32:11.332 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: CLICKHOUSE
+[INFO] 2024-04-29 17:32:11.333 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: CLICKHOUSE
+[INFO] 2024-04-29 17:32:11.341 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: VERTICA
+[INFO] 2024-04-29 17:32:11.341 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: VERTICA
+[INFO] 2024-04-29 17:32:11.351 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: KYUUBI
+[INFO] 2024-04-29 17:32:11.367 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: KYUUBI
+[INFO] 2024-04-29 17:32:11.374 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: DB2
+[INFO] 2024-04-29 17:32:11.375 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: DB2
+[INFO] 2024-04-29 17:32:11.380 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: TRINO
+[INFO] 2024-04-29 17:32:11.381 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: TRINO
+[INFO] 2024-04-29 17:32:11.387 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SPARK
+[INFO] 2024-04-29 17:32:11.388 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SPARK
+[INFO] 2024-04-29 17:32:11.393 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: DAMENG
+[INFO] 2024-04-29 17:32:11.393 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: DAMENG
+[INFO] 2024-04-29 17:32:11.409 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: ZEPPELIN
+[INFO] 2024-04-29 17:32:11.410 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: ZEPPELIN
+[INFO] 2024-04-29 17:32:11.440 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='password', address='jdbc:postgresql://dolphinscheudler-postrgresql:5432', database='sdf', jdbcUrl='jdbc:postgresql://dolphinscheudler-postrgresql:5432/sdf', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[INFO] 2024-04-29 17:32:33.848 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='root', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[WARN] 2024-04-29 17:32:33.897 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[INFO] 2024-04-29 17:32:35.891 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='root', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[INFO] 2024-04-29 17:32:54.103 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2033, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2033.log
+[INFO] 2024-04-29 17:32:54.148 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2033, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2033.log
+[INFO] 2024-04-29 17:33:46.524 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:MySQLConnectionParam{user='sdf', password='sdf', address='jdbc:mysql://sdf:3306', database='sdf', jdbcUrl='jdbc:mysql://sdf:3306/sdf', driverLocation='null', driverClassName='com.mysql.cj.jdbc.Driver', validationQuery='select 1', other='null'}
+[ERROR] 2024-04-29 17:33:46.530 +0800 o.a.d.p.d.a.d.AbstractDataSourceProcessor:[130] - Check datasource connectivity for: MYSQL error
+java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at org.apache.dolphinscheduler.plugin.datasource.mysql.param.MySQLDataSourceProcessor.getConnection(MySQLDataSourceProcessor.java:129)
+	at org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor.checkDataSourceConnectivity(AbstractDataSourceProcessor.java:127)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl.checkConnection(DataSourceServiceImpl.java:326)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$FastClassBySpringCGLIB$$a86d54aa.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$EnhancerBySpringCGLIB$$4d7429cd.checkConnection(<generated>)
+	at org.apache.dolphinscheduler.api.controller.DataSourceController.connectDataSource(DataSourceController.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-29 17:33:46.535 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.DataSourceController#connectDataSource[2 args] Meet a ServiceException: connection test failure
+[INFO] 2024-04-29 17:33:47.289 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:MySQLConnectionParam{user='sdf', password='sdf', address='jdbc:mysql://sdf:3306', database='sdf', jdbcUrl='jdbc:mysql://sdf:3306/sdf', driverLocation='null', driverClassName='com.mysql.cj.jdbc.Driver', validationQuery='select 1', other='null'}
+[INFO] 2024-04-29 17:34:06.371 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='root', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[WARN] 2024-04-29 17:34:06.377 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[INFO] 2024-04-29 17:34:07.715 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='root', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[INFO] 2024-04-29 17:35:05.193 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='root', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[WARN] 2024-04-29 17:35:05.195 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[INFO] 2024-04-29 17:35:14.529 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[INFO] 2024-04-29 17:36:03.751 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='root', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[INFO] 2024-04-29 17:38:22.702 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='dolphinscheduler123', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[WARN] 2024-04-29 17:40:23.973 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2024-04-29 17:40:28.234 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2024-04-29 17:40:28.305 +0800 o.a.d.a.ApiApplicationServer:[640] - The following 1 profile is active: "postgresql"
+[INFO] 2024-04-29 17:40:43.155 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=b9ea3c4b-94e1-3be4-b636-a78d78ec03d8
+[INFO] 2024-04-29 17:40:46.493 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:40:46.670 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:40:46.709 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:40:46.718 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$451/2087202342] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:40:46.818 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:40:46.830 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:40:46.872 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:40:46.967 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-29 17:40:48.832 +0800 o.e.j.u.log:[170] - Logging initialized @33726ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2024-04-29 17:40:51.066 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2024-04-29 17:40:51.209 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[INFO] 2024-04-29 17:40:51.532 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2024-04-29 17:40:51.588 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 23236 ms
+[INFO] 2024-04-29 17:40:53.992 +0800 o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> false 
+[INFO] 2024-04-29 17:40:53.993 +0800 o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+[INFO] 2024-04-29 17:40:53.994 +0800 o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=0.0.0.0, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+[INFO] 2024-04-29 17:40:57.017 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2024-04-29 17:40:57.018 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2024-04-29 17:40:57.021 +0800 o.e.j.s.session:[132] - node0 Scavenging every 660000ms
+[INFO] 2024-04-29 17:40:57.027 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@2b506a79{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.4355058892447886383/, jar:file:/opt/dolphinscheduler/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2024-04-29 17:40:57.028 +0800 o.e.j.s.Server:[415] - Started @41923ms
+[INFO] 2024-04-29 17:40:58.710 +0800 c.z.h.HikariDataSource:[110] - DolphinScheduler - Starting...
+[INFO] 2024-04-29 17:41:01.436 +0800 c.z.h.HikariDataSource:[123] - DolphinScheduler - Start completed.
+[INFO] 2024-04-29 17:41:14.118 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2024-04-29 17:41:14.347 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2024-04-29 17:41:14.499 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2024-04-29 17:41:14.807 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-29 17:41:14.975 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-29 17:41:16.670 +0800 c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+[INFO] 2024-04-29 17:41:16.721 +0800 c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.3, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+[INFO] 2024-04-29 17:41:23.230 +0800 o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2024-04-29 17:41:23.243 +0800 o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2024-04-29 17:41:23.245 +0800 o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2024-04-29 17:41:23.271 +0800 o.s.s.q.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2024-04-29 17:41:23.280 +0800 o.s.s.q.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2024-04-29 17:41:23.281 +0800 o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId 'dc3f445df8871714383683233'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.apache.dolphinscheduler.scheduler.quartz.QuartzZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2024-04-29 17:41:23.282 +0800 o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2024-04-29 17:41:23.283 +0800 o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2024-04-29 17:41:23.283 +0800 o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@240a9052
+[INFO] 2024-04-29 17:41:23.608 +0800 o.a.d.a.p.PythonGateway:[710] - PythonGatewayService started on: /0.0.0.0
+[INFO] 2024-04-29 17:41:23.624 +0800 p.GatewayServer:[573] - Gateway Server Started
+[INFO] 2024-04-29 17:41:28.172 +0800 o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+[INFO] 2024-04-29 17:41:28.740 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[INFO] 2024-04-29 17:41:28.967 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2024-04-29 17:41:28.968 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[INFO] 2024-04-29 17:41:28.971 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 3 ms
+[INFO] 2024-04-29 17:41:28.988 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@662713b6{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+[INFO] 2024-04-29 17:41:28.989 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 12345 (http/1.1) with context path '/dolphinscheduler'
+[INFO] 2024-04-29 17:41:29.015 +0800 o.a.d.a.ApiApplicationServer:[61] - Started ApiApplicationServer in 70.559 seconds (JVM running for 73.909)
+[INFO] 2024-04-29 17:41:29.023 +0800 o.a.d.a.ApiApplicationServer:[63] - Received spring application context ready event will load taskPlugin and write to DB
+[INFO] 2024-04-29 17:41:29.056 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.060 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.062 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.065 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.066 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.069 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.070 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.074 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.074 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.076 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.076 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.078 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.079 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.080 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.080 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.082 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.083 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.084 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.085 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.086 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.087 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.088 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.089 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.093 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.094 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.095 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.096 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.100 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.101 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.106 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.107 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.111 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.113 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.116 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.118 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.119 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.120 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.123 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.124 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.130 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.130 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.132 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.133 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.136 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.137 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.138 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.139 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.142 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.143 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.145 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.146 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.149 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.150 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.153 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.154 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.157 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.158 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.161 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.161 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.163 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.164 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.168 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.168 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.169 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.170 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.172 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-29 17:41:29.177 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2024-04-29 17:41:45.183 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-04-29 17:41:45.184 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-04-29 17:41:45.185 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-04-29 17:41:45.185 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-04-29 17:41:45.186 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-04-29 17:41:45.187 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-04-29 17:41:45.187 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[INFO] 2024-04-29 17:42:07.483 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2038, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2038.log
+[INFO] 2024-04-29 17:42:07.718 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2024-04-29 17:42:08.223 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2038, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2038.log
+[INFO] 2024-04-29 17:42:15.508 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: HANA
+[INFO] 2024-04-29 17:42:15.509 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: HANA
+[INFO] 2024-04-29 17:42:15.525 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SQLSERVER
+[INFO] 2024-04-29 17:42:15.526 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SQLSERVER
+[INFO] 2024-04-29 17:42:15.530 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SAGEMAKER
+[INFO] 2024-04-29 17:42:15.532 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SAGEMAKER
+[INFO] 2024-04-29 17:42:15.538 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: DATABEND
+[INFO] 2024-04-29 17:42:15.546 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: DATABEND
+[INFO] 2024-04-29 17:42:15.553 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: AZURESQL
+[INFO] 2024-04-29 17:42:15.554 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: AZURESQL
+[INFO] 2024-04-29 17:42:15.559 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: HIVE
+[INFO] 2024-04-29 17:42:15.562 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: HIVE
+[INFO] 2024-04-29 17:42:15.566 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: DORIS
+[INFO] 2024-04-29 17:42:15.567 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: DORIS
+[INFO] 2024-04-29 17:42:15.571 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: POSTGRESQL
+[INFO] 2024-04-29 17:42:15.572 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: POSTGRESQL
+[INFO] 2024-04-29 17:42:15.596 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: MYSQL
+[INFO] 2024-04-29 17:42:15.598 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: MYSQL
+[INFO] 2024-04-29 17:42:15.602 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: REDSHIFT
+[INFO] 2024-04-29 17:42:15.603 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: REDSHIFT
+[INFO] 2024-04-29 17:42:15.607 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SNOWFLAKE
+[INFO] 2024-04-29 17:42:15.609 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SNOWFLAKE
+[INFO] 2024-04-29 17:42:15.614 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: STARROCKS
+[INFO] 2024-04-29 17:42:15.616 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: STARROCKS
+[INFO] 2024-04-29 17:42:15.624 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SSH
+[INFO] 2024-04-29 17:42:15.625 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SSH
+[INFO] 2024-04-29 17:42:15.634 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: ATHENA
+[INFO] 2024-04-29 17:42:15.660 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: ATHENA
+[INFO] 2024-04-29 17:42:15.667 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: PRESTO
+[INFO] 2024-04-29 17:42:15.667 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: PRESTO
+[INFO] 2024-04-29 17:42:15.679 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: OCEANBASE
+[INFO] 2024-04-29 17:42:15.721 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: OCEANBASE
+[INFO] 2024-04-29 17:42:15.736 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: ORACLE
+[INFO] 2024-04-29 17:42:15.736 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: ORACLE
+[INFO] 2024-04-29 17:42:15.739 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: CLICKHOUSE
+[INFO] 2024-04-29 17:42:15.740 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: CLICKHOUSE
+[INFO] 2024-04-29 17:42:15.747 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: VERTICA
+[INFO] 2024-04-29 17:42:15.747 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: VERTICA
+[INFO] 2024-04-29 17:42:15.754 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: KYUUBI
+[INFO] 2024-04-29 17:42:15.755 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: KYUUBI
+[INFO] 2024-04-29 17:42:15.766 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: DB2
+[INFO] 2024-04-29 17:42:15.768 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: DB2
+[INFO] 2024-04-29 17:42:15.776 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: TRINO
+[INFO] 2024-04-29 17:42:15.781 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: TRINO
+[INFO] 2024-04-29 17:42:15.787 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SPARK
+[INFO] 2024-04-29 17:42:15.788 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SPARK
+[INFO] 2024-04-29 17:42:15.801 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: DAMENG
+[INFO] 2024-04-29 17:42:15.802 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: DAMENG
+[INFO] 2024-04-29 17:42:15.806 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: ZEPPELIN
+[INFO] 2024-04-29 17:42:15.807 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: ZEPPELIN
+[INFO] 2024-04-29 17:42:17.957 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='******', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[WARN] 2024-04-29 17:42:18.058 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[ERROR] 2024-04-29 17:42:18.186 +0800 o.a.d.p.d.a.d.AbstractDataSourceProcessor:[130] - Check datasource connectivity for: POSTGRESQL error
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:646)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.apache.dolphinscheduler.plugin.datasource.postgresql.param.PostgreSQLDataSourceProcessor.getConnection(PostgreSQLDataSourceProcessor.java:117)
+	at org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor.checkDataSourceConnectivity(AbstractDataSourceProcessor.java:127)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl.checkConnection(DataSourceServiceImpl.java:326)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$FastClassBySpringCGLIB$$a86d54aa.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$EnhancerBySpringCGLIB$$edfcd12.checkConnection(<generated>)
+	at org.apache.dolphinscheduler.api.controller.DataSourceController.connectDataSource(DataSourceController.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-29 17:42:18.199 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.DataSourceController#connectDataSource[2 args] Meet a ServiceException: connection test failure
+[INFO] 2024-04-29 17:42:30.745 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password=''******'', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[WARN] 2024-04-29 17:42:30.751 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[ERROR] 2024-04-29 17:42:30.790 +0800 o.a.d.p.d.a.d.AbstractDataSourceProcessor:[130] - Check datasource connectivity for: POSTGRESQL error
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:646)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.apache.dolphinscheduler.plugin.datasource.postgresql.param.PostgreSQLDataSourceProcessor.getConnection(PostgreSQLDataSourceProcessor.java:117)
+	at org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor.checkDataSourceConnectivity(AbstractDataSourceProcessor.java:127)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl.checkConnection(DataSourceServiceImpl.java:326)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$FastClassBySpringCGLIB$$a86d54aa.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$EnhancerBySpringCGLIB$$edfcd12.checkConnection(<generated>)
+	at org.apache.dolphinscheduler.api.controller.DataSourceController.connectDataSource(DataSourceController.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-29 17:42:30.791 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.DataSourceController#connectDataSource[2 args] Meet a ServiceException: connection test failure
+[INFO] 2024-04-29 17:42:31.961 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password=''******'', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[WARN] 2024-04-29 17:42:31.962 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[ERROR] 2024-04-29 17:42:32.027 +0800 o.a.d.p.d.a.d.AbstractDataSourceProcessor:[130] - Check datasource connectivity for: POSTGRESQL error
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:646)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.apache.dolphinscheduler.plugin.datasource.postgresql.param.PostgreSQLDataSourceProcessor.getConnection(PostgreSQLDataSourceProcessor.java:117)
+	at org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor.checkDataSourceConnectivity(AbstractDataSourceProcessor.java:127)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl.checkConnection(DataSourceServiceImpl.java:326)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$FastClassBySpringCGLIB$$a86d54aa.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$EnhancerBySpringCGLIB$$edfcd12.checkConnection(<generated>)
+	at org.apache.dolphinscheduler.api.controller.DataSourceController.connectDataSource(DataSourceController.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-29 17:42:32.034 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.DataSourceController#connectDataSource[2 args] Meet a ServiceException: connection test failure
+[INFO] 2024-04-29 17:43:15.851 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password=''******'', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[WARN] 2024-04-29 17:43:15.852 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[ERROR] 2024-04-29 17:43:15.888 +0800 o.a.d.p.d.a.d.AbstractDataSourceProcessor:[130] - Check datasource connectivity for: POSTGRESQL error
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:646)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.apache.dolphinscheduler.plugin.datasource.postgresql.param.PostgreSQLDataSourceProcessor.getConnection(PostgreSQLDataSourceProcessor.java:117)
+	at org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor.checkDataSourceConnectivity(AbstractDataSourceProcessor.java:127)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl.checkConnection(DataSourceServiceImpl.java:326)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$FastClassBySpringCGLIB$$a86d54aa.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$EnhancerBySpringCGLIB$$edfcd12.checkConnection(<generated>)
+	at org.apache.dolphinscheduler.api.controller.DataSourceController.connectDataSource(DataSourceController.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-29 17:43:15.894 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.DataSourceController#connectDataSource[2 args] Meet a ServiceException: connection test failure
+[INFO] 2024-04-29 17:43:20.984 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='******', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[WARN] 2024-04-29 17:43:20.987 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[ERROR] 2024-04-29 17:43:21.026 +0800 o.a.d.p.d.a.d.AbstractDataSourceProcessor:[130] - Check datasource connectivity for: POSTGRESQL error
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:646)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.apache.dolphinscheduler.plugin.datasource.postgresql.param.PostgreSQLDataSourceProcessor.getConnection(PostgreSQLDataSourceProcessor.java:117)
+	at org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor.checkDataSourceConnectivity(AbstractDataSourceProcessor.java:127)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl.checkConnection(DataSourceServiceImpl.java:326)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$FastClassBySpringCGLIB$$a86d54aa.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$EnhancerBySpringCGLIB$$edfcd12.checkConnection(<generated>)
+	at org.apache.dolphinscheduler.api.controller.DataSourceController.connectDataSource(DataSourceController.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-29 17:43:21.028 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.DataSourceController#connectDataSource[2 args] Meet a ServiceException: connection test failure
+[INFO] 2024-04-29 17:43:21.221 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='******', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[WARN] 2024-04-29 17:43:21.222 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[ERROR] 2024-04-29 17:43:21.244 +0800 o.a.d.p.d.a.d.AbstractDataSourceProcessor:[130] - Check datasource connectivity for: POSTGRESQL error
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:646)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.apache.dolphinscheduler.plugin.datasource.postgresql.param.PostgreSQLDataSourceProcessor.getConnection(PostgreSQLDataSourceProcessor.java:117)
+	at org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor.checkDataSourceConnectivity(AbstractDataSourceProcessor.java:127)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl.checkConnection(DataSourceServiceImpl.java:326)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$FastClassBySpringCGLIB$$a86d54aa.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$EnhancerBySpringCGLIB$$edfcd12.checkConnection(<generated>)
+	at org.apache.dolphinscheduler.api.controller.DataSourceController.connectDataSource(DataSourceController.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-29 17:43:21.245 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.DataSourceController#connectDataSource[2 args] Meet a ServiceException: connection test failure
+[INFO] 2024-04-29 17:43:21.932 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='******', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[WARN] 2024-04-29 17:43:21.934 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[ERROR] 2024-04-29 17:43:21.954 +0800 o.a.d.p.d.a.d.AbstractDataSourceProcessor:[130] - Check datasource connectivity for: POSTGRESQL error
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:646)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.apache.dolphinscheduler.plugin.datasource.postgresql.param.PostgreSQLDataSourceProcessor.getConnection(PostgreSQLDataSourceProcessor.java:117)
+	at org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor.checkDataSourceConnectivity(AbstractDataSourceProcessor.java:127)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl.checkConnection(DataSourceServiceImpl.java:326)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$FastClassBySpringCGLIB$$a86d54aa.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$EnhancerBySpringCGLIB$$edfcd12.checkConnection(<generated>)
+	at org.apache.dolphinscheduler.api.controller.DataSourceController.connectDataSource(DataSourceController.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-29 17:43:21.955 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.DataSourceController#connectDataSource[2 args] Meet a ServiceException: connection test failure
+[INFO] 2024-04-29 17:43:22.519 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='******', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[WARN] 2024-04-29 17:43:22.521 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[ERROR] 2024-04-29 17:43:22.544 +0800 o.a.d.p.d.a.d.AbstractDataSourceProcessor:[130] - Check datasource connectivity for: POSTGRESQL error
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:646)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.apache.dolphinscheduler.plugin.datasource.postgresql.param.PostgreSQLDataSourceProcessor.getConnection(PostgreSQLDataSourceProcessor.java:117)
+	at org.apache.dolphinscheduler.plugin.datasource.api.datasource.AbstractDataSourceProcessor.checkDataSourceConnectivity(AbstractDataSourceProcessor.java:127)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl.checkConnection(DataSourceServiceImpl.java:326)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$FastClassBySpringCGLIB$$a86d54aa.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.DataSourceServiceImpl$$EnhancerBySpringCGLIB$$edfcd12.checkConnection(<generated>)
+	at org.apache.dolphinscheduler.api.controller.DataSourceController.connectDataSource(DataSourceController.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-29 17:43:22.551 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.DataSourceController#connectDataSource[2 args] Meet a ServiceException: connection test failure
+[INFO] 2024-04-29 17:43:29.321 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='******', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[INFO] 2024-04-29 17:51:50.364 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='root', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='null'}
+[INFO] 2024-04-29 17:53:12.052 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='root', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='{password=root}'}
+[WARN] 2024-04-29 17:53:12.055 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[INFO] 2024-04-29 17:53:15.576 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='sdf', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='{password=root}'}
+[WARN] 2024-04-29 17:53:15.577 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[INFO] 2024-04-29 17:53:20.562 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='sdf', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='{password=root}'}
+[INFO] 2024-04-29 17:53:23.973 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='******', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='{password=root}'}
+[WARN] 2024-04-29 17:53:23.975 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[INFO] 2024-04-29 17:53:25.730 +0800 o.a.d.p.d.a.u.DataSourceUtils:[57] - Parameters map:PostgreSQLConnectionParam{user='root', password='******', address='jdbc:postgresql://dolphinscheduler-postgresql:5432', database='persistence', jdbcUrl='jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence', driverLocation='null', driverClassName='org.postgresql.Driver', validationQuery='select version()', other='{password=root}'}
+[INFO] 2024-04-29 17:54:02.332 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2045, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2045.log
+[INFO] 2024-04-29 17:54:02.439 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2045, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2045.log
+[INFO] 2024-04-29 17:55:04.985 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2041, taskInstanceName:persist_to_postgre, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2041.log
+[INFO] 2024-04-29 17:55:05.065 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2041, taskInstanceName:persist_to_postgre, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2041.log
+[INFO] 2024-04-29 17:56:38.807 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13426477386080, processVersion:8.
+[INFO] 2024-04-29 17:56:38.816 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13426477386080, processVersion:9.
+[INFO] 2024-04-29 17:56:38.849 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13426477386080, processVersion:9.
+[INFO] 2024-04-29 17:56:46.521 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13426477386080, commandCount:1.
+[INFO] 2024-04-29 17:57:19.041 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2051, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/9/749/2051.log
+[INFO] 2024-04-29 17:57:19.137 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2051, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240429/13426477386080/9/749/2051.log

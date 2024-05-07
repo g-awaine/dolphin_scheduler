@@ -1,0 +1,1203 @@
+[WI-0][TI-0] - [WARN] 2024-04-07 00:41:15.544 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - [WARN] 2024-04-07 00:41:20.957 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:20.970 +0800 o.a.d.s.w.WorkerServer:[634] - No active profile set, falling back to 1 default profile: "default"
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:33.710 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=7e7bf7c6-2cb3-34d2-a0d5-a56161c67d0e
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:36.677 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:36.682 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:36.701 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$392/1342373353] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:36.743 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:37.006 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:37.284 +0800 o.a.d.s.w.c.WorkerConfig:[98] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  exec-threads -> 100
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, distributedTenantEnabled=false, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtection(enabled=true, maxCpuUsagePercentageThresholds=0.7, maxJVMMemoryUsagePercentageThresholds=0.7, maxSystemMemoryUsagePercentageThresholds=0.7, maxDiskUsagePercentageThresholds=0.7)
+  registry-disconnect-strategy -> ConnectStrategyProperties(strategy=WAITING, maxWaitingTime=PT1M40S)
+  task-execute-threads-full-policy: REJECT
+  address -> 172.18.0.8:1234
+  registry-path: /nodes/worker/172.18.0.8:1234
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:37.292 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$20716c19] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:38.457 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:38.601 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:38.670 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:38.751 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:40.024 +0800 o.e.j.u.log:[170] - Logging initialized @64701ms to org.eclipse.jetty.util.log.Slf4jLog
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:42.575 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 1235
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:42.599 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:42.930 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:42.951 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 21589 ms
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:48.970 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:48.978 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:48.994 +0800 o.e.j.s.session:[132] - node0 Scavenging every 660000ms
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:49.142 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@68f776ee{application,/,[file:///tmp/jetty-docbase.1235.3962142720979934706/],AVAILABLE}
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:49.151 +0800 o.e.j.s.Server:[415] - Started @73829ms
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.580 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.654 +0800 o.a.z.ZooKeeper:[98] - Client environment:zookeeper.version=3.8.0-5a02a05eddb59aee6ac762f7ea82e92a68eb9c0f, built on 2022-02-25 08:49 UTC
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.654 +0800 o.a.z.ZooKeeper:[98] - Client environment:host.name=b6a66df38dc0
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.655 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.version=1.8.0_402
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.655 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.vendor=Temurin
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.655 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.home=/opt/java/openjdk
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.656 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.class.path=/opt/dolphinscheduler/conf:/opt/dolphinscheduler/libs/kerb-client-1.0.1.jar:/opt/dolphinscheduler/libs/spring-cloud-starter-kubernetes-client-config-2.1.3.jar:/opt/dolphinscheduler/libs/oauth2-oidc-sdk-9.35.jar:/opt/dolphinscheduler/libs/jsqlparser-4.4.jar:/opt/dolphinscheduler/libs/reactive-streams-1.0.4.jar:/opt/dolphinscheduler/libs/kubernetes-model-extensions-5.10.2.jar:/opt/dolphinscheduler/libs/zookeeper-3.8.0.jar:/opt/dolphinscheduler/libs/kubernetes-model-apps-5.10.2.jar:/opt/dolphinscheduler/libs/grpc-api-1.41.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-pigeon-3.2.1.jar:/opt/dolphinscheduler/libs/client-java-api-13.0.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-obs-3.2.1.jar:/opt/dolphinscheduler/libs/spring-web-5.3.22.jar:/opt/dolphinscheduler/libs/aws-java-sdk-emr-1.12.300.jar:/opt/dolphinscheduler/libs/spring-context-5.3.22.jar:/opt/dolphinscheduler/libs/gapic-google-cloud-storage-v2-2.18.0-alpha.jar:/opt/dolphinscheduler/libs/spring-cloud-kubernetes-client-config-2.1.3.jar:/opt/dolphinscheduler/libs/jetty-io-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/annotations-13.0.jar:/opt/dolphinscheduler/libs/jpam-1.1.jar:/opt/dolphinscheduler/libs/joda-time-2.10.13.jar:/opt/dolphinscheduler/libs/spring-cloud-kubernetes-client-autoconfig-2.1.3.jar:/opt/dolphinscheduler/libs/kerb-identity-1.0.1.jar:/opt/dolphinscheduler/libs/vertica-jdbc-12.0.4-0.jar:/opt/dolphinscheduler/libs/grpc-googleapis-1.52.1.jar:/opt/dolphinscheduler/libs/aliyun-java-sdk-kms-2.11.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-dvc-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-hana-3.2.1.jar:/opt/dolphinscheduler/libs/kubernetes-httpclient-okhttp-6.0.0.jar:/opt/dolphinscheduler/libs/jline-2.12.jar:/opt/dolphinscheduler/libs/sshd-core-2.8.0.jar:/opt/dolphinscheduler/libs/jna-platform-5.10.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-sqlserver-3.2.1.jar:/opt/dolphinscheduler/libs/commons-beanutils-1.9.4.jar:/opt/dolphinscheduler/libs/grpc-services-1.41.0.jar:/opt/dolphinscheduler/libs/jmespath-java-1.12.300.jar:/opt/dolphinscheduler/libs/curator-client-5.3.0.jar:/opt/dolphinscheduler/libs/proto-google-common-protos-2.0.1.jar:/opt/dolphinscheduler/libs/mybatis-3.5.10.jar:/opt/dolphinscheduler/libs/jackson-annotations-2.13.4.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-all-3.2.1.jar:/opt/dolphinscheduler/libs/jakarta.xml.bind-api-2.3.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-jupyter-3.2.1.jar:/opt/dolphinscheduler/libs/mybatis-plus-extension-3.5.2.jar:/opt/dolphinscheduler/libs/j2objc-annotations-1.3.jar:/opt/dolphinscheduler/libs/Java-WebSocket-1.5.1.jar:/opt/dolphinscheduler/libs/azure-storage-common-12.20.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-sagemaker-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-databend-3.2.1.jar:/opt/dolphinscheduler/libs/google-auth-library-oauth2-http-1.15.0.jar:/opt/dolphinscheduler/libs/jetty-security-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-python-3.2.1.jar:/opt/dolphinscheduler/libs/snappy-java-1.1.10.1.jar:/opt/dolphinscheduler/libs/kubernetes-model-batch-5.10.2.jar:/opt/dolphinscheduler/libs/netty-transport-native-epoll-4.1.53.Final-linux-x86_64.jar:/opt/dolphinscheduler/libs/jackson-core-asl-1.9.13.jar:/opt/dolphinscheduler/libs/gson-fire-1.8.5.jar:/opt/dolphinscheduler/libs/clickhouse-jdbc-0.4.6.jar:/opt/dolphinscheduler/libs/grpc-netty-shaded-1.41.0.jar:/opt/dolphinscheduler/libs/caffeine-2.9.3.jar:/opt/dolphinscheduler/libs/aliyun-java-sdk-core-4.5.10.jar:/opt/dolphinscheduler/libs/jackson-module-jaxb-annotations-2.13.3.jar:/opt/dolphinscheduler/libs/jetty-http-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/jersey-servlet-1.19.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-dinky-3.2.1.jar:/opt/dolphinscheduler/libs/simpleclient_tracer_common-0.15.0.jar:/opt/dolphinscheduler/libs/netty-handler-4.1.53.Final.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-datafactory-3.2.1.jar:/opt/dolphinscheduler/libs/json-path-2.7.0.jar:/opt/dolphinscheduler/libs/mybatis-plus-annotation-3.5.2.jar:/opt/dolphinscheduler/libs/azure-resourcemanager-datafactory-1.0.0-beta.19.jar:/opt/dolphinscheduler/libs/commons-codec-1.11.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-master-3.2.1.jar:/opt/dolphinscheduler/libs/spring-aop-5.3.22.jar:/opt/dolphinscheduler/libs/kubernetes-model-core-5.10.2.jar:/opt/dolphinscheduler/libs/kubernetes-model-networking-5.10.2.jar:/opt/dolphinscheduler/libs/kotlin-stdlib-jdk7-1.6.21.jar:/opt/dolphinscheduler/libs/kerby-xdr-1.0.1.jar:/opt/dolphinscheduler/libs/aliyun-java-sdk-ram-3.1.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-k8s-3.2.1.jar:/opt/dolphinscheduler/libs/guava-31.1-jre.jar:/opt/dolphinscheduler/libs/netty-codec-dns-4.1.53.Final.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-kubeflow-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-azure-sql-3.2.1.jar:/opt/dolphinscheduler/libs/HikariCP-4.0.3.jar:/opt/dolphinscheduler/libs/hive-metastore-2.3.9.jar:/opt/dolphinscheduler/libs/msal4j-1.13.3.jar:/opt/dolphinscheduler/libs/jackson-core-2.13.4.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-hive-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-mr-3.2.1.jar:/opt/dolphinscheduler/libs/kubernetes-model-node-5.10.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-common-3.2.1.jar:/opt/dolphinscheduler/libs/jose4j-0.7.8.jar:/opt/dolphinscheduler/libs/jul-to-slf4j-1.7.36.jar:/opt/dolphinscheduler/libs/azure-identity-1.7.1.jar:/opt/dolphinscheduler/libs/spring-boot-autoconfigure-2.7.3.jar:/opt/dolphinscheduler/libs/commons-math3-3.1.1.jar:/opt/dolphinscheduler/libs/jackson-jaxrs-json-provider-2.13.3.jar:/opt/dolphinscheduler/libs/perfmark-api-0.23.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-doris-3.2.1.jar:/opt/dolphinscheduler/libs/httpclient-4.5.13.jar:/opt/dolphinscheduler/libs/hive-service-2.3.9.jar:/opt/dolphinscheduler/libs/kerby-util-1.0.1.jar:/opt/dolphinscheduler/libs/commons-collections-3.2.2.jar:/opt/dolphinscheduler/libs/hadoop-yarn-client-3.2.4.jar:/opt/dolphinscheduler/libs/commons-text-1.8.jar:/opt/dolphinscheduler/libs/dolphinscheduler-worker-3.2.1.jar:/opt/dolphinscheduler/libs/hadoop-yarn-common-3.2.4.jar:/opt/dolphinscheduler/libs/zeppelin-client-0.10.1.jar:/opt/dolphinscheduler/libs/azure-core-management-1.10.1.jar:/opt/dolphinscheduler/libs/hadoop-mapreduce-client-jobclient-3.2.4.jar:/opt/dolphinscheduler/libs/jta-1.1.jar:/opt/dolphinscheduler/libs/annotations-4.1.1.4.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-alert-3.2.1.jar:/opt/dolphinscheduler/libs/curator-framework-5.3.0.jar:/opt/dolphinscheduler/libs/hive-jdbc-2.3.9.jar:/opt/dolphinscheduler/libs/kyuubi-hive-jdbc-shaded-1.7.0.jar:/opt/dolphinscheduler/libs/client-java-proto-13.0.2.jar:/opt/dolphinscheduler/libs/checker-qual-3.19.0.jar:/opt/dolphinscheduler/libs/jetty-servlet-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/google-cloud-core-grpc-2.10.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-shell-3.2.1.jar:/opt/dolphinscheduler/libs/spring-security-rsa-1.0.10.RELEASE.jar:/opt/dolphinscheduler/libs/avro-1.7.7.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-postgresql-3.2.1.jar:/opt/dolphinscheduler/libs/netty-nio-client-2.17.282.jar:/opt/dolphinscheduler/libs/spring-webmvc-5.3.22.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-mysql-3.2.1.jar:/opt/dolphinscheduler/libs/opentracing-util-0.33.0.jar:/opt/dolphinscheduler/libs/auto-value-1.10.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-all-3.2.1.jar:/opt/dolphinscheduler/libs/jetcd-core-0.5.11.jar:/opt/dolphinscheduler/libs/grpc-context-1.41.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-datasync-3.2.1.jar:/opt/dolphinscheduler/libs/jackson-dataformat-cbor-2.13.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-gcs-3.2.1.jar:/opt/dolphinscheduler/libs/client-java-extended-13.0.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-redshift-3.2.1.jar:/opt/dolphinscheduler/libs/opencsv-2.3.jar:/opt/dolphinscheduler/libs/jcip-annotations-1.0-1.jar:/opt/dolphinscheduler/libs/accessors-smart-2.4.8.jar:/opt/dolphinscheduler/libs/hadoop-client-3.2.4.jar:/opt/dolphinscheduler/libs/commons-collections4-4.3.jar:/opt/dolphinscheduler/libs/metrics-core-4.2.11.jar:/opt/dolphinscheduler/libs/netty-resolver-4.1.53.Final.jar:/opt/dolphinscheduler/libs/parquet-hadoop-bundle-1.8.1.jar:/opt/dolphinscheduler/libs/bucket4j-core-6.2.0.jar:/opt/dolphinscheduler/libs/spring-cloud-starter-3.1.3.jar:/opt/dolphinscheduler/libs/mssql-jdbc-11.2.1.jre8.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final.jar:/opt/dolphinscheduler/libs/kubernetes-model-coordination-5.10.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-linkis-3.2.1.jar:/opt/dolphinscheduler/libs/commons-net-3.6.jar:/opt/dolphinscheduler/libs/netty-transport-native-kqueue-4.1.53.Final-osx-x86_64.jar:/opt/dolphinscheduler/libs/dolphinscheduler-meter-3.2.1.jar:/opt/dolphinscheduler/libs/kubernetes-client-api-6.0.0.jar:/opt/dolphinscheduler/libs/kubernetes-model-certificates-5.10.2.jar:/opt/dolphinscheduler/libs/opencensus-api-0.31.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-mlflow-3.2.1.jar:/opt/dolphinscheduler/libs/kotlin-stdlib-jdk8-1.6.21.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-jdbc-3.2.1.jar:/opt/dolphinscheduler/libs/audience-annotations-0.12.0.jar:/opt/dolphinscheduler/libs/simpleclient_httpserver-0.15.0.jar:/opt/dolphinscheduler/libs/jetty-xml-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/kerby-asn1-1.0.1.jar:/opt/dolphinscheduler/libs/lang-tag-1.6.jar:/opt/dolphinscheduler/libs/api-common-2.6.0.jar:/opt/dolphinscheduler/libs/HdrHistogram-2.1.12.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-abs-3.2.1.jar:/opt/dolphinscheduler/libs/failsafe-2.4.4.jar:/opt/dolphinscheduler/libs/hbase-noop-htrace-4.1.1.jar:/opt/dolphinscheduler/libs/jamon-runtime-2.3.1.jar:/opt/dolphinscheduler/libs/jetty-util-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/threetenbp-1.6.5.jar:/opt/dolphinscheduler/libs/jakarta.activation-api-1.2.2.jar:/opt/dolphinscheduler/libs/kubernetes-model-common-5.10.2.jar:/opt/dolphinscheduler/libs/okhttp-4.9.3.jar:/opt/dolphinscheduler/libs/profiles-2.17.282.jar:/opt/dolphinscheduler/libs/hadoop-auth-3.2.4.jar:/opt/dolphinscheduler/libs/grpc-netty-1.41.0.jar:/opt/dolphinscheduler/libs/httpcore-nio-4.4.15.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-seatunnel-3.2.1.jar:/opt/dolphinscheduler/libs/aws-java-sdk-sagemaker-1.12.300.jar:/opt/dolphinscheduler/libs/oshi-core-6.1.1.jar:/opt/dolphinscheduler/libs/bonecp-0.8.0.RELEASE.jar:/opt/dolphinscheduler/libs/jackson-module-parameter-names-2.13.3.jar:/opt/dolphinscheduler/libs/bcutil-jdk15on-1.69.jar:/opt/dolphinscheduler/libs/aws-json-protocol-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-base-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-all-3.2.1.jar:/opt/dolphinscheduler/libs/derby-10.14.2.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-snowflake-3.2.1.jar:/opt/dolphinscheduler/libs/netty-codec-http2-4.1.53.Final.jar:/opt/dolphinscheduler/libs/jetty-continuation-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/jackson-mapper-asl-1.9.13.jar:/opt/dolphinscheduler/libs/datanucleus-core-4.1.17.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar:/opt/dolphinscheduler/libs/failureaccess-1.0.1.jar:/opt/dolphinscheduler/libs/error_prone_annotations-2.5.1.jar:/opt/dolphinscheduler/libs/kerb-admin-1.0.1.jar:/opt/dolphinscheduler/libs/token-provider-1.0.1.jar:/opt/dolphinscheduler/libs/reactor-netty-core-1.0.22.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-all-3.2.1.jar:/opt/dolphinscheduler/libs/jakarta.servlet-api-4.0.4.jar:/opt/dolphinscheduler/libs/http-client-spi-2.17.282.jar:/opt/dolphinscheduler/libs/regions-2.17.282.jar:/opt/dolphinscheduler/libs/logback-core-1.2.11.jar:/opt/dolphinscheduler/libs/json-1.8.jar:/opt/dolphinscheduler/libs/gax-grpc-2.23.0.jar:/opt/dolphinscheduler/libs/google-http-client-1.42.3.jar:/opt/dolphinscheduler/libs/hive-serde-2.3.9.jar:/opt/dolphinscheduler/libs/jettison-1.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-http-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-zookeeper-3.2.1.jar:/opt/dolphinscheduler/libs/spring-security-crypto-5.7.3.jar:/opt/dolphinscheduler/libs/auth-2.17.282.jar:/opt/dolphinscheduler/libs/proto-google-cloud-storage-v2-2.18.0-alpha.jar:/opt/dolphinscheduler/libs/jetty-server-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/javax.annotation-api-1.3.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-starrocks-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-dataquality-3.2.1.jar:/opt/dolphinscheduler/libs/jcl-over-slf4j-1.7.36.jar:/opt/dolphinscheduler/libs/commons-lang3-3.12.0.jar:/opt/dolphinscheduler/libs/tomcat-embed-el-9.0.65.jar:/opt/dolphinscheduler/libs/opentracing-noop-0.33.0.jar:/opt/dolphinscheduler/libs/client-java-13.0.2.jar:/opt/dolphinscheduler/libs/spring-beans-5.3.22.jar:/opt/dolphinscheduler/libs/snakeyaml-1.33.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-ssh-3.2.1.jar:/opt/dolphinscheduler/libs/commons-pool-1.6.jar:/opt/dolphinscheduler/libs/javax.servlet-api-3.1.0.jar:/opt/dolphinscheduler/libs/hadoop-common-3.2.4.jar:/opt/dolphinscheduler/libs/kubernetes-model-apiextensions-5.10.2.jar:/opt/dolphinscheduler/libs/spring-boot-2.7.3.jar:/opt/dolphinscheduler/libs/bcprov-ext-jdk15on-1.69.jar:/opt/dolphinscheduler/libs/spring-boot-starter-2.7.3.jar:/opt/dolphinscheduler/libs/paranamer-2.3.jar:/opt/dolphinscheduler/libs/httpmime-4.5.13.jar:/opt/dolphinscheduler/libs/reactor-core-3.4.22.jar:/opt/dolphinscheduler/libs/azure-core-1.36.0.jar:/opt/dolphinscheduler/libs/bcpkix-jdk15on-1.69.jar:/opt/dolphinscheduler/libs/kubernetes-model-scheduling-5.10.2.jar:/opt/dolphinscheduler/libs/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/opt/dolphinscheduler/libs/websocket-client-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/unirest-java-3.7.04-standalone.jar:/opt/dolphinscheduler/libs/hadoop-mapreduce-client-core-3.2.4.jar:/opt/dolphinscheduler/libs/google-auth-library-credentials-1.15.0.jar:/opt/dolphinscheduler/libs/azure-storage-internal-avro-12.6.0.jar:/opt/dolphinscheduler/libs/jackson-datatype-jdk8-2.13.3.jar:/opt/dolphinscheduler/libs/spring-expression-5.3.22.jar:/opt/dolphinscheduler/libs/aspectjweaver-1.9.7.jar:/opt/dolphinscheduler/libs/websocket-common-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/client-java-api-fluent-13.0.2.jar:/opt/dolphinscheduler/libs/mybatis-plus-3.5.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-athena-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-oss-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-openmldb-3.2.1.jar:/opt/dolphinscheduler/libs/curator-recipes-5.3.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-api-3.2.1.jar:/opt/dolphinscheduler/libs/netty-all-4.1.53.Final.jar:/opt/dolphinscheduler/libs/netty-resolver-dns-4.1.53.Final.jar:/opt/dolphinscheduler/libs/kubernetes-model-autoscaling-5.10.2.jar:/opt/dolphinscheduler/libs/kerb-util-1.0.1.jar:/opt/dolphinscheduler/libs/grpc-alts-1.41.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-presto-3.2.1.jar:/opt/dolphinscheduler/libs/kerb-simplekdc-1.0.1.jar:/opt/dolphinscheduler/libs/protobuf-java-util-3.17.2.jar:/opt/dolphinscheduler/libs/azure-core-http-netty-1.13.0.jar:/opt/dolphinscheduler/libs/transaction-api-1.1.jar:/opt/dolphinscheduler/libs/datanucleus-api-jdo-4.2.4.jar:/opt/dolphinscheduler/libs/zeppelin-common-0.10.1.jar:/opt/dolphinscheduler/libs/zt-zip-1.15.jar:/opt/dolphinscheduler/libs/animal-sniffer-annotations-1.19.jar:/opt/dolphinscheduler/libs/google-http-client-jackson2-1.42.3.jar:/opt/dolphinscheduler/libs/netty-buffer-4.1.53.Final.jar:/opt/dolphinscheduler/libs/jsr305-3.0.0.jar:/opt/dolphinscheduler/libs/netty-transport-classes-epoll-4.1.79.Final.jar:/opt/dolphinscheduler/libs/spring-boot-actuator-autoconfigure-2.7.3.jar:/opt/dolphinscheduler/libs/simpleclient-0.15.0.jar:/opt/dolphinscheduler/libs/aliyun-sdk-oss-3.15.1.jar:/opt/dolphinscheduler/libs/json-utils-2.17.282.jar:/opt/dolphinscheduler/libs/tephra-api-0.6.0.jar:/opt/dolphinscheduler/libs/spring-jdbc-5.3.22.jar:/opt/dolphinscheduler/libs/grpc-xds-1.41.0.jar:/opt/dolphinscheduler/libs/logback-classic-1.2.11.jar:/opt/dolphinscheduler/libs/google-cloud-storage-2.18.0.jar:/opt/dolphinscheduler/libs/micrometer-registry-prometheus-1.9.3.jar:/opt/dolphinscheduler/libs/grpc-core-1.41.0.jar:/opt/dolphinscheduler/libs/aws-java-sdk-kms-1.12.300.jar:/opt/dolphinscheduler/libs/kubernetes-model-rbac-5.10.2.jar:/opt/dolphinscheduler/libs/ini4j-0.5.4.jar:/opt/dolphinscheduler/libs/spring-boot-starter-web-2.7.3.jar:/opt/dolphinscheduler/libs/spring-cloud-commons-3.1.3.jar:/opt/dolphinscheduler/libs/netty-codec-http-4.1.53.Final.jar:/opt/dolphinscheduler/libs/jetty-client-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/jetcd-common-0.5.11.jar:/opt/dolphinscheduler/libs/metrics-spi-2.17.282.jar:/opt/dolphinscheduler/libs/utils-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-emr-3.2.1.jar:/opt/dolphinscheduler/libs/protocol-core-2.17.282.jar:/opt/dolphinscheduler/libs/micrometer-core-1.9.3.jar:/opt/dolphinscheduler/libs/netty-transport-native-unix-common-4.1.53.Final.jar:/opt/dolphinscheduler/libs/zjsonpatch-0.4.11.jar:/opt/dolphinscheduler/libs/annotations-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-sql-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-common-3.2.1.jar:/opt/dolphinscheduler/libs/apache-client-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-oceanbase-3.2.1.jar:/opt/dolphinscheduler/libs/jdo-api-3.0.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-datax-3.2.1.jar:/opt/dolphinscheduler/libs/postgresql-42.4.1.jar:/opt/dolphinscheduler/libs/jetty-util-ajax-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/gax-2.23.0.jar:/opt/dolphinscheduler/libs/grpc-stub-1.41.0.jar:/opt/dolphinscheduler/libs/libfb303-0.9.3.jar:/opt/dolphinscheduler/libs/spring-core-5.3.22.jar:/opt/dolphinscheduler/libs/jaxb-api-2.3.1.jar:/opt/dolphinscheduler/libs/hive-service-rpc-2.3.9.jar:/opt/dolphinscheduler/libs/kubernetes-model-flowcontrol-5.10.2.jar:/opt/dolphinscheduler/libs/commons-logging-1.1.1.jar:/opt/dolphinscheduler/libs/mybatis-spring-2.0.7.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-oracle-3.2.1.jar:/opt/dolphinscheduler/libs/opencensus-proto-0.2.0.jar:/opt/dolphinscheduler/libs/grpc-protobuf-1.41.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-clickhouse-3.2.1.jar:/opt/dolphinscheduler/libs/spring-cloud-starter-bootstrap-3.1.3.jar:/opt/dolphinscheduler/libs/kubernetes-model-admissionregistration-5.10.2.jar:/opt/dolphinscheduler/libs/grpc-google-cloud-storage-v2-2.18.0-alpha.jar:/opt/dolphinscheduler/libs/esdk-obs-java-bundle-3.23.3.jar:/opt/dolphinscheduler/libs/dnsjava-2.1.7.jar:/opt/dolphinscheduler/libs/asm-9.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-spark-3.2.1.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar:/opt/dolphinscheduler/libs/re2j-1.6.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-vertica-3.2.1.jar:/opt/dolphinscheduler/libs/json-smart-2.4.8.jar:/opt/dolphinscheduler/libs/reactor-netty-http-1.0.22.jar:/opt/dolphinscheduler/libs/google-api-services-storage-v1-rev20220705-2.0.0.jar:/opt/dolphinscheduler/libs/kubernetes-client-6.0.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-kyuubi-3.2.1.jar:/opt/dolphinscheduler/libs/auto-value-annotations-1.10.1.jar:/opt/dolphinscheduler/libs/commons-cli-1.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-data-quality-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-chunjun-3.2.1.jar:/opt/dolphinscheduler/libs/kerb-server-1.0.1.jar:/opt/dolphinscheduler/libs/content-type-2.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-remoteshell-3.2.1.jar:/opt/dolphinscheduler/libs/opencensus-contrib-http-util-0.31.1.jar:/opt/dolphinscheduler/libs/druid-1.2.20.jar:/opt/dolphinscheduler/libs/javolution-5.5.1.jar:/opt/dolphinscheduler/libs/protobuf-java-3.17.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-db2-3.2.1.jar:/opt/dolphinscheduler/libs/aws-java-sdk-core-1.12.300.jar:/opt/dolphinscheduler/libs/spring-boot-starter-logging-2.7.3.jar:/opt/dolphinscheduler/libs/kerby-pkix-1.0.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-procedure-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-etcd-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-sqoop-3.2.1.jar:/opt/dolphinscheduler/libs/zookeeper-jute-3.8.0.jar:/opt/dolphinscheduler/libs/netty-resolver-dns-native-macos-4.1.53.Final-osx-x86_64.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-sagemaker-3.2.1.jar:/opt/dolphinscheduler/libs/spring-boot-configuration-processor-2.6.1.jar:/opt/dolphinscheduler/libs/hive-common-2.3.9.jar:/opt/dolphinscheduler/libs/kerb-common-1.0.1.jar:/opt/dolphinscheduler/libs/stax-api-1.0.1.jar:/opt/dolphinscheduler/libs/kubernetes-model-storageclass-5.10.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-s3-3.2.1.jar:/opt/dolphinscheduler/libs/spring-boot-starter-jetty-2.7.3.jar:/opt/dolphinscheduler/libs/okio-2.8.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-dms-3.2.1.jar:/opt/dolphinscheduler/libs/simpleclient_common-0.15.0.jar:/opt/dolphinscheduler/libs/sdk-core-2.17.282.jar:/opt/dolphinscheduler/libs/javax.activation-api-1.2.0.jar:/opt/dolphinscheduler/libs/netty-handler-proxy-4.1.53.Final.jar:/opt/dolphinscheduler/libs/kerby-config-1.0.1.jar:/opt/dolphinscheduler/libs/netty-tcnative-classes-2.0.53.Final.jar:/opt/dolphinscheduler/libs/jackson-jaxrs-base-2.13.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-trino-3.2.1.jar:/opt/dolphinscheduler/libs/presto-jdbc-0.238.1.jar:/opt/dolphinscheduler/libs/websocket-api-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-flink-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-api-3.2.1.jar:/opt/dolphinscheduler/libs/kubernetes-model-metrics-5.10.2.jar:/opt/dolphinscheduler/libs/datasync-2.17.282.jar:/opt/dolphinscheduler/libs/hadoop-yarn-api-3.2.4.jar:/opt/dolphinscheduler/libs/google-http-client-apache-v2-1.42.3.jar:/opt/dolphinscheduler/libs/hadoop-annotations-3.2.4.jar:/opt/dolphinscheduler/libs/google-oauth-client-1.34.1.jar:/opt/dolphinscheduler/libs/sshd-common-2.8.0.jar:/opt/dolphinscheduler/libs/LatencyUtils-2.0.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-spark-3.2.1.jar:/opt/dolphinscheduler/libs/slf4j-api-1.7.36.jar:/opt/dolphinscheduler/libs/snowflake-jdbc-3.13.29.jar:/opt/dolphinscheduler/libs/jackson-datatype-jsr310-2.13.3.jar:/opt/dolphinscheduler/libs/trino-jdbc-402.jar:/opt/dolphinscheduler/libs/logging-interceptor-4.9.3.jar:/opt/dolphinscheduler/libs/simpleclient_tracer_otel_agent-0.15.0.jar:/opt/dolphinscheduler/libs/janino-3.0.16.jar:/opt/dolphinscheduler/libs/jackson-dataformat-yaml-2.13.3.jar:/opt/dolphinscheduler/libs/ion-java-1.0.2.jar:/opt/dolphinscheduler/libs/commons-dbcp-1.4.jar:/opt/dolphinscheduler/libs/jsp-api-2.1.jar:/opt/dolphinscheduler/libs/google-http-client-gson-1.42.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-hivecli-3.2.1.jar:/opt/dolphinscheduler/libs/spring-boot-actuator-2.7.3.jar:/opt/dolphinscheduler/libs/google-cloud-core-http-2.10.0.jar:/opt/dolphinscheduler/libs/DmJdbcDriver18-8.1.2.79.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-java-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-dameng-3.2.1.jar:/opt/dolphinscheduler/libs/sshd-sftp-2.8.0.jar:/opt/dolphinscheduler/libs/kerb-crypto-1.0.1.jar:/opt/dolphinscheduler/libs/conscrypt-openjdk-uber-2.5.2.jar:/opt/dolphinscheduler/libs/httpcore-4.4.15.jar:/opt/dolphinscheduler/libs/lz4-java-1.4.0.jar:/opt/dolphinscheduler/libs/guava-retrying-2.0.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-flink-stream-3.2.1.jar:/opt/dolphinscheduler/libs/spring-tx-5.3.22.jar:/opt/dolphinscheduler/libs/grpc-auth-1.41.0.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar:/opt/dolphinscheduler/libs/databend-jdbc-0.0.7.jar:/opt/dolphinscheduler/libs/bcprov-jdk15on-1.69.jar:/opt/dolphinscheduler/libs/commons-lang-2.6.jar:/opt/dolphinscheduler/libs/kubernetes-model-policy-5.10.2.jar:/opt/dolphinscheduler/libs/commons-io-2.11.0.jar:/opt/dolphinscheduler/libs/grpc-grpclb-1.41.0.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar:/opt/dolphinscheduler/libs/opentracing-api-0.33.0.jar:/opt/dolphinscheduler/libs/sshd-scp-2.8.0.jar:/opt/dolphinscheduler/libs/reload4j-1.2.18.3.jar:/opt/dolphinscheduler/libs/netty-tcnative-2.0.48.Final.jar:/opt/dolphinscheduler/libs/jdom2-2.0.6.1.jar:/opt/dolphinscheduler/libs/spring-boot-starter-json-2.7.3.jar:/opt/dolphinscheduler/libs/netty-transport-native-epoll-4.1.53.Final.jar:/opt/dolphinscheduler/libs/google-cloud-core-2.10.0.jar:/opt/dolphinscheduler/libs/javax.jdo-3.2.0-m3.jar:/opt/dolphinscheduler/libs/gax-httpjson-0.108.0.jar:/opt/dolphinscheduler/libs/mybatis-plus-core-3.5.2.jar:/opt/dolphinscheduler/libs/auto-service-annotations-1.0.1.jar:/opt/dolphinscheduler/libs/nimbus-jose-jwt-9.22.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-zeppelin-3.2.1.jar:/opt/dolphinscheduler/libs/commons-compress-1.21.jar:/opt/dolphinscheduler/libs/hadoop-hdfs-client-3.2.4.jar:/opt/dolphinscheduler/libs/msal4j-persistence-extension-1.1.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-pytorch-3.2.1.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar:/opt/dolphinscheduler/libs/jetty-servlets-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/woodstox-core-6.4.0.jar:/opt/dolphinscheduler/libs/spring-cloud-kubernetes-commons-2.1.3.jar:/opt/dolphinscheduler/libs/grpc-protobuf-lite-1.41.0.jar:/opt/dolphinscheduler/libs/jetty-webapp-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/eventstream-1.0.1.jar:/opt/dolphinscheduler/libs/commons-compiler-3.1.7.jar:/opt/dolphinscheduler/libs/netty-transport-4.1.53.Final.jar:/opt/dolphinscheduler/libs/spring-cloud-context-3.1.3.jar:/opt/dolphinscheduler/libs/aws-java-sdk-dms-1.12.300.jar:/opt/dolphinscheduler/libs/hive-storage-api-2.4.0.jar:/opt/dolphinscheduler/libs/client-java-spring-integration-13.0.2.jar:/opt/dolphinscheduler/libs/spring-boot-starter-actuator-2.7.3.jar:/opt/dolphinscheduler/libs/third-party-jackson-core-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-hdfs-3.2.1.jar:/opt/dolphinscheduler/libs/netty-codec-4.1.53.Final.jar:/opt/dolphinscheduler/libs/google-http-client-appengine-1.42.3.jar:/opt/dolphinscheduler/libs/commons-configuration2-2.1.1.jar:/opt/dolphinscheduler/libs/datanucleus-rdbms-4.1.19.jar:/opt/dolphinscheduler/libs/swagger-annotations-1.6.2.jar:/opt/dolphinscheduler/libs/simpleclient_tracer_otel-0.15.0.jar:/opt/dolphinscheduler/libs/kotlin-stdlib-common-1.6.21.jar:/opt/dolphinscheduler/libs/aws-core-2.17.282.jar:/opt/dolphinscheduler/libs/kerb-core-1.0.1.jar:/opt/dolphinscheduler/libs/httpasyncclient-4.1.5.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-worker-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-spi-3.2.1.jar:/opt/dolphinscheduler/libs/okhttp-2.7.5.jar:/opt/dolphinscheduler/libs/google-api-client-2.2.0.jar:/opt/dolphinscheduler/libs/kotlin-stdlib-1.6.21.jar:/opt/dolphinscheduler/libs/jakarta.websocket-api-1.1.2.jar:/opt/dolphinscheduler/libs/libthrift-0.9.3.jar:/opt/dolphinscheduler/libs/spring-boot-starter-aop-2.7.3.jar:/opt/dolphinscheduler/libs/netty-common-4.1.53.Final.jar:/opt/dolphinscheduler/libs/log4j-1.2-api-2.17.2.jar:/opt/dolphinscheduler/libs/jackson-databind-2.13.4.jar:/opt/dolphinscheduler/libs/jackson-dataformat-xml-2.13.3.jar:/opt/dolphinscheduler/libs/kubernetes-model-events-5.10.2.jar:/opt/dolphinscheduler/libs/gson-2.9.1.jar:/opt/dolphinscheduler/libs/proto-google-iam-v1-1.9.0.jar:/opt/dolphinscheduler/libs/netty-codec-socks-4.1.53.Final.jar:/opt/dolphinscheduler/libs/zjsonpatch-0.3.0.jar:/opt/dolphinscheduler/libs/hadoop-mapreduce-client-common-3.2.4.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-api-3.2.1.jar:/opt/dolphinscheduler/libs/azure-storage-blob-12.21.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-zeppelin-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-api-3.2.1.jar:/opt/dolphinscheduler/libs/aws-java-sdk-s3-1.12.300.jar:/opt/dolphinscheduler/libs/stax2-api-4.2.1.jar:/opt/dolphinscheduler/libs/jakarta.annotation-api-1.3.5.jar:/opt/dolphinscheduler/libs/kubernetes-model-discovery-5.10.2.jar:/opt/dolphinscheduler/libs/jna-5.10.0.jar:/opt/dolphinscheduler/libs/spring-jcl-5.3.22.jar
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.656 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.657 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.io.tmpdir=/tmp
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.657 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.compiler=<NA>
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.664 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.name=Linux
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.665 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.arch=amd64
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.665 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.version=6.5.0-26-generic
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.665 +0800 o.a.z.ZooKeeper:[98] - Client environment:user.name=root
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.666 +0800 o.a.z.ZooKeeper:[98] - Client environment:user.home=/root
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.667 +0800 o.a.z.ZooKeeper:[98] - Client environment:user.dir=/opt/dolphinscheduler
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.667 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.memory.free=3211MB
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.667 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.memory.max=3840MB
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.668 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.memory.total=3840MB
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.688 +0800 o.a.z.ZooKeeper:[637] - Initiating client connection, connectString=dolphinscheduler-zookeeper:2181 sessionTimeout=30000 watcher=org.apache.curator.ConnectionState@1de30c31
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.725 +0800 o.a.z.c.X509Util:[77] - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.748 +0800 o.a.z.ClientCnxnSocket:[239] - jute.maxbuffer value is 1048575 Bytes
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.818 +0800 o.a.z.ClientCnxn:[1732] - zookeeper.request.timeout value is 0. feature enabled=false
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.890 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.905 +0800 o.a.z.ClientCnxn:[1171] - Opening socket connection to server dolphinscheduler-zookeeper/172.18.0.4:2181.
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.914 +0800 o.a.z.ClientCnxn:[1173] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:50.960 +0800 o.a.z.ClientCnxn:[1005] - Socket connection established, initiating session, client: /172.18.0.8:37986, server: dolphinscheduler-zookeeper/172.18.0.4:2181
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:51.039 +0800 o.a.z.ClientCnxn:[1444] - Session establishment complete on server dolphinscheduler-zookeeper/172.18.0.4:2181, session id = 0x1000002739d0000, negotiated timeout = 30000
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:51.159 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:51.551 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:51.556 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:52.763 +0800 o.a.d.s.w.r.WorkerRpcServer:[41] - WorkerRpcServer starting...
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:54.582 +0800 o.a.d.e.b.NettyRemotingServer:[112] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:54.593 +0800 o.a.d.s.w.r.WorkerRpcServer:[43] - WorkerRpcServer started...
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:54.955 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:54.972 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:54.973 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:54.991 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.007 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.039 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.055 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.104 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.104 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.129 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.131 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.136 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.137 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.191 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.192 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.210 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.224 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.229 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.247 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.256 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.263 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.266 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.267 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.271 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.277 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.288 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.293 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.297 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.320 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.325 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.348 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.372 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.372 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.395 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.403 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.415 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.423 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.440 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.441 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.480 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.481 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.499 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.500 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.506 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.521 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.541 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.542 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.559 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.560 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.568 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.571 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.576 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.585 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.591 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.608 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.619 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.619 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.627 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.638 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.655 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.655 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.667 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.680 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.683 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.684 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.700 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.968 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.25 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:41:55.992 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421715992, cpuUsage=1.25, jvmMemoryUsage=0.02714376449584961, memoryUsage=0.2981884332449909, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:55.996 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.25 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:41:57.003 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421716002, cpuUsage=1.25, jvmMemoryUsage=0.02714376449584961, memoryUsage=0.2981884332449909, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:57.007 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0263838383838384 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:41:58.011 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421717007, cpuUsage=1.0263838383838384, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.2985222773857081, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:58.016 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9848037335379106 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:41:59.017 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421718016, cpuUsage=0.9848037335379106, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.2995562199299186, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:41:59.019 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9871860787027883 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:00.022 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421719019, cpuUsage=0.9871860787027883, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.3028368003216357, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:00.028 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9874371859296482 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:01.034 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421720031, cpuUsage=0.9874371859296482, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.3011027593739319, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:01.040 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.985105520477606 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:02.041 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421721041, cpuUsage=0.985105520477606, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.29944447460110196, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:02.044 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:03.045 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421722044, cpuUsage=1.0, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.29981112653408737, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:03.048 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9974747474747475 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:04.049 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421723048, cpuUsage=0.9974747474747475, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.3006782464254916, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:04.053 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9899371549245605 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:05.054 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421724054, cpuUsage=0.9899371549245605, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.29666277148696646, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:05.057 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9948849104859335 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:06.058 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421725057, cpuUsage=0.9948849104859335, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.29941922254281067, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:06.060 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9924812030075187 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:07.061 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421726061, cpuUsage=0.9924812030075187, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.3013071618615181, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:07.064 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0025062656641603 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:08.065 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421727065, cpuUsage=1.0025062656641603, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.30396678022139495, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:08.067 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0025 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:09.068 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421728068, cpuUsage=1.0025, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.3053916325813589, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:09.072 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:10.073 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421729073, cpuUsage=1.0, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.30749093361631546, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:10.080 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0024813895781637 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:11.081 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421730081, cpuUsage=1.0024813895781637, jvmMemoryUsage=0.02725248336791992, memoryUsage=0.3110423274205738, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:11.086 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0000189868610923 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:12.092 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421731091, cpuUsage=1.0000189868610923, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.31318238965198486, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:12.094 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:13.101 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421732095, cpuUsage=1.0, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3154429459568174, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:13.104 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0024813895781637 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:14.105 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421733104, cpuUsage=1.0024813895781637, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.31740962397696854, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:14.107 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.005050505050505 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:15.111 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421734107, cpuUsage=1.005050505050505, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3192709193916521, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:15.117 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9975247830327272 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:16.119 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421735119, cpuUsage=0.9975247830327272, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.319640752686312, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:16.124 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9949622166246851 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:17.126 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421736125, cpuUsage=0.9949622166246851, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3200833596292759, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:17.128 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9924623115577889 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:18.131 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421737128, cpuUsage=0.9924623115577889, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3211346008275915, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:18.148 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9623686080873826 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:19.150 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421738149, cpuUsage=0.9623686080873826, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3214837552713672, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:19.155 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9875621890547264 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:20.156 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421739155, cpuUsage=0.9875621890547264, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.32287182313696977, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:20.158 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9695431472081218 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:21.159 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421740159, cpuUsage=0.9695431472081218, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3249975692408456, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:21.165 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9650872817955112 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:22.166 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421741166, cpuUsage=0.9650872817955112, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3274287260654728, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:22.168 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.969620253164557 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:23.169 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421742169, cpuUsage=0.969620253164557, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.32962784232296666, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:23.171 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9797916189603847 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:24.172 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421743172, cpuUsage=0.9797916189603847, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.33291140524125357, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:24.193 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9488360561615949 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:25.230 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421744225, cpuUsage=0.9488360561615949, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3351697743599349, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:25.233 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9666100055516446 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:26.234 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421745233, cpuUsage=0.9666100055516446, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3391890271654485, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:26.236 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9335038363171356 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:27.237 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421746237, cpuUsage=0.9335038363171356, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3438544940610937, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:27.241 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9797979797979798 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:28.244 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421747242, cpuUsage=0.9797979797979798, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.34715078242607855, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:28.247 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9571852021474188 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:29.252 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421748247, cpuUsage=0.9571852021474188, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.349253065987605, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:29.255 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9696074670758216 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:30.256 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421749255, cpuUsage=0.9696074670758216, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3522823188070371, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:30.258 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9975062656641602 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:31.259 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421750259, cpuUsage=0.9975062656641602, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.35506342541585867, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:31.262 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9899749373433584 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:32.267 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421751263, cpuUsage=0.9899749373433584, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.35755920364949906, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:32.284 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9999878965396206 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:33.299 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421752289, cpuUsage=0.9999878965396206, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3583366489087035, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:33.301 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9926169190537006 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:34.303 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421753301, cpuUsage=0.9926169190537006, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3610425958479651, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:34.309 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.987493765586035 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:35.312 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421754311, cpuUsage=0.987493765586035, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.36326974785521543, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:35.316 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.000006234413965 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:36.332 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421755331, cpuUsage=1.000006234413965, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3656545761004579, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:36.335 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0024875621890548 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:37.336 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421756336, cpuUsage=1.0024875621890548, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3665399888214904, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:37.339 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0025445292620865 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:38.340 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421757340, cpuUsage=1.0025445292620865, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.36870808680265793, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:38.353 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9875187960619544 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:39.358 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421758355, cpuUsage=0.9875187960619544, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.37069087046628624, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:39.363 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9750748442177763 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:40.364 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421759364, cpuUsage=0.9750748442177763, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3713669098221162, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:40.367 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9872773536895674 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:41.369 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421760367, cpuUsage=0.9872773536895674, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3730987635836687, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:41.372 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9774999999999999 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:42.375 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421761373, cpuUsage=0.9774999999999999, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.37369009918491525, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:42.379 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9641878490526645 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:43.382 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421762380, cpuUsage=0.9641878490526645, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3743892034128853, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:43.385 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9795983610835638 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:44.387 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421763385, cpuUsage=0.9795983610835638, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.37591566051132835, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:44.389 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9899497487437185 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:45.391 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421764390, cpuUsage=0.9899497487437185, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3743750861204547, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:45.406 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9258312020460359 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:46.407 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421765407, cpuUsage=0.9258312020460359, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3751091853268442, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:46.411 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8994845360824743 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:47.412 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421766411, cpuUsage=0.8994845360824743, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3758639633841178, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:47.416 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7920683515719994 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:48.417 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421767416, cpuUsage=0.7920683515719994, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3766396191273803, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:48.423 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.773543386820377 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:49.426 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421768424, cpuUsage=0.773543386820377, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3767193520043473, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:49.429 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8931297709923663 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:50.430 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421769429, cpuUsage=0.8931297709923663, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3771428707772643, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:50.432 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9010416666666666 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:51.432 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421770432, cpuUsage=0.9010416666666666, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3772530254252437, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:51.437 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8682170542635659 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:52.440 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421771439, cpuUsage=0.8682170542635659, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.37795590752020214, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:52.449 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9256410256410256 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:53.449 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421772449, cpuUsage=0.9256410256410256, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3773041260471402, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:53.454 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9341772151898735 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:54.456 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421773455, cpuUsage=0.9341772151898735, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.37760039035307746, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:54.459 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.931758530183727 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:55.461 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421774460, cpuUsage=0.931758530183727, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3784142224364339, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:55.469 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8921052631578947 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:56.476 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421775476, cpuUsage=0.8921052631578947, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.38002876348623954, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:56.480 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8874680306905371 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:57.486 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421776486, cpuUsage=0.8874680306905371, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3802262067451628, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:57.490 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8152156408026542 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:58.493 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421777492, cpuUsage=0.8152156408026542, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3805799343963456, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:58.500 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8733370365227052 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:42:59.503 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421778503, cpuUsage=0.8733370365227052, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3818180805930376, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:42:59.523 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8434279825967483 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:43:00.525 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421779525, cpuUsage=0.8434279825967483, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.38197973353312287, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:00.529 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9205392545598732 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-07 00:43:01.531 +0800 o.a.d.s.w.r.WorkerRegistryClient:[96] - Worker node is BUSY: WorkerHeartBeat(startupTime=1712421715992, reportTime=1712421780530, cpuUsage=0.9205392545598732, jvmMemoryUsage=0.02725699742635091, memoryUsage=0.3829943890721817, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.8, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:02.577 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:02.700 +0800 o.a.d.s.w.r.WorkerRegistryClient:[104] - Worker node: 172.18.0.8:1234 registry to ZK /nodes/worker/172.18.0.8:1234 successfully
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:03.731 +0800 o.a.d.c.m.BaseHeartBeatTask:[48] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:03.732 +0800 o.a.d.c.m.BaseHeartBeatTask:[50] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:03.733 +0800 o.a.d.s.w.r.WorkerRegistryClient:[114] - Worker node: 172.18.0.8:1234 registry finished
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:03.737 +0800 o.a.d.s.w.m.MessageRetryRunner:[69] - Message retry runner staring
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:03.785 +0800 o.a.d.s.w.m.MessageRetryRunner:[72] - Injected message sender: TaskInstanceExecutionFinishEventSender
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:03.786 +0800 o.a.d.s.w.m.MessageRetryRunner:[72] - Injected message sender: TaskInstanceExecutionInfoUpdateEventSender
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:03.787 +0800 o.a.d.s.w.m.MessageRetryRunner:[72] - Injected message sender: TaskInstanceExecutionRunningEventSender
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:03.789 +0800 o.a.d.s.w.m.MessageRetryRunner:[75] - Message retry runner started
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:04.765 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.1783204798628963 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:05.779 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2623376623376623 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:06.782 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.3315926892950392 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:07.785 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.4522613065326633 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:08.789 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.556675062972292 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:09.792 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.4661129787093798 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:10.799 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.271841185634289 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:10.811 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:11.010 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:11.013 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:11.016 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 3 ms
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:11.119 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@d28c214{HTTP/1.1, (http/1.1)}{0.0.0.0:1235}
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:11.125 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 1235 (http/1.1) with context path '/'
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:11.187 +0800 o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 136.796 seconds (JVM running for 155.864)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:11.806 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.433895866038723 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:27.882 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8138297872340425 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:28.904 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.921875 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:29.908 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8678756476683938 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:30.912 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7696624248851184 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:31.919 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8759894459102903 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:32.922 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9694656488549618 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:33.925 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.955958549222798 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:34.929 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8844086021505376 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:35.931 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8135062286005683 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:36.941 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8306010928961749 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:37.965 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9552631578947369 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:39.007 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0754553185458153 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:40.009 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0613333333333332 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:42.041 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7597911227154047 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:43.055 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9076923076923076 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:44.060 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8850125156445556 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:49.098 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7417582417582418 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:50.134 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7349219505456555 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:51.140 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7052023121387284 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:43:59.189 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7696476964769648 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:44:02.253 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9306880570409983 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:44:10.402 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.717741935483871 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:44:11.430 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8163682660937376 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:44:12.434 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.704308321015564 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:44:13.437 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7759103641456582 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:44:14.443 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7313829787234042 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:44:15.446 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9411764705882353 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:44:17.475 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8441558441558441 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:44:18.500 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9258312020460359 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:48:57.891 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7146814404432132 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:08.953 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8171822099107418 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:10.017 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8161081081081081 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:12.050 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8486486486486488 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:15.109 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8854748603351955 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:18.221 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9438502673796791 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:19.275 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8616119995648389 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:20.280 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7548285466417058 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:21.287 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7881355932203389 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:22.300 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.830238726790451 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:23.303 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7388888888888889 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:25.327 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7748691099476439 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:26.366 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.765498652291105 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:27.369 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8543417366946778 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:31.417 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8385416666666666 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:32.440 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.734806629834254 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:41.525 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9048839401437493 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:49:45.615 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7492877492877492 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:50:51.040 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7002650752280535 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:50:53.086 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.791451018623389 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:50:54.113 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7474226804123711 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:50:55.117 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7325905292479109 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:50:56.138 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.1518987341772151 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:50:57.141 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9236842105263159 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:50:58.144 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8189655172413793 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:50:59.156 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7572845156369182 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:00.159 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8726509396241503 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:02.194 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7342616702517076 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:09.284 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7471590909090909 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:10.303 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8637602179836512 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:12.331 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8831168831168831 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:13.381 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.853723404255319 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:14.390 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8352601156069365 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:15.395 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8403361344537815 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:19.437 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7067039106145252 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:20.460 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9133789559027634 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:21.464 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9110222478734662 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:22.466 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8010610079575596 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:23.468 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7903225806451613 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:25.492 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7378451622354062 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:27.521 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8389990557129368 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:28.545 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8342245989304813 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:29.548 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8970976253298153 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:32.589 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8194444444444444 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:34.632 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7225517299153891 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:35.665 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9510598210080076 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:36.145 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=510, taskName=reddit_api, firstSubmitTime=1712422294574, startTime=0, taskType=PYTHON, workflowInstanceHost=172.18.0.5:5678, host=172.18.0.8:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13056845592480, processDefineVersion=3, appIds=null, processInstanceId=238, scheduleTime=0, globalParams=null, executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13056817857952, taskParams={"localParams":[],"rawScript":"import praw\n\nclass RedditPostDataExtractor:\n    def __init__(self):\n        self.data = {}\n\n    def extract_data(self, hot_posts):\n        if hot_posts:\n            for post in hot_posts:\n                # initialise a dictionary to contain the data of the post\n                post_data = {}\n\n                # get the unique name of the post (name refers to the id of the post prefixed with t3_)\n                # t3 represents that it is a post\n                name = post.name\n\n                # get the relevant post's data and store it inside post_data\n\n                # get the poster's name\n                if post.author is not None:\n                    post_data['author'] = post.author.name\n                else:\n                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'\n\n\n                # get the unix time in which the post was created\n                unix_time = post.created_utc\n                post_data['datetime'] = unix_time\n                \n                post_data['permalink'] = post.permalink\n                post_data['score'] = post.score\n                post_data['subreddit'] = post.subreddit.display_name\n                post_data['post_title'] = post.title\n                post_data['body'] = post.selftext\n\n                # store the posts data in the dictionary where the name is used as the key\n                self.data[name] = post_data\n\n                # extract the comments from the post\n                comments = post.comments\n\n                # extract the data in the comments and store them inside the dictionary\n                self.extract_comments_data(comments)\n        \n        return self.data\n\n    def extract_comments_data(self, comments):\n        if comments:\n            for comment in comments:\n                # initialise a dictionary to contain the data of the comment\n                comment_data = {}\n\n                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)\n                # t1 represents that it is a post\n                name = comment.name\n\n                # get the relevant post's data and store it inside post_data\n\n                # get the commenter name\n                if comment.author is not None:\n                    comment_data['author'] = comment.author.name\n                else:\n                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'\n\n                # get the unix time in which the comment was created\n                unix_time = comment.created_utc\n                comment_data['datetime'] = unix_time\n\n                comment_data['permalink'] = comment.permalink\n                comment_data['score'] = comment.score\n                comment_data['subreddit'] = comment.subreddit.display_name\n                comment_data['post_title'] = comment.submission.title\n                comment_data['body'] = comment.body\n\n                # store the comment's data in the dictionary where the name is used as the key\n                self.data[name] = comment_data\n\n                # extract the comment's replies from the post\n                replies = comment.replies\n\n                # extract the data in the comments and store them inside the dictionary\n                self.extract_comments_data(replies)\n        \n        return\n    \ndef get_hot_posts(reddit_instance, subreddit_name, limit):\n    # Define the subreddit\n    subreddit = reddit_instance.subreddit(subreddit_name)\n\n    # Get hot posts from the subreddit\n    hot_posts = subreddit.hot(limit=limit)\n\n    # Filter out posts that are not pinned\n    filtered_posts = [post for post in hot_posts if not post.stickied]\n    return filtered_posts\n\n# initialize Reddit instance\nreddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',\n                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',\n                     user_agent='Prawlingv1')\n\n\n# choose the subreddit to extract data from\nsubreddit = 'singapore'\nlimit = 5\n\n# get hot posts from the subreddit\nhot_posts = get_hot_posts(reddit, subreddit, limit)\n\n# initialise a reddit data extractor object\ndata_extractor = RedditPostDataExtractor()\n\n# extract data from the hot posts from r/singapore\ndata = data_extractor.extract_data(hot_posts)\nprint(data)\n","resourceList":[{"id":null,"resourceName":"file:/dolphinscheduler/default/resources/folder/s.py","res":null}]}, environmentConfig=export PYTHON_LAUNCHER=/bin/python3.11, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='reddit_api'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13056817857952'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='238'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240407'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240406'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='510'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='batch_reddit_post_analysis'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13056825838112'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13056845592480'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240407005134'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:36.229 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: reddit_api to wait queue success
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:36.276 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:36.308 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:36.308 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:36.309 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:36.309 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1712422296309
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:36.309 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 238_510
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:36.320 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 510,
+  "taskName" : "reddit_api",
+  "firstSubmitTime" : 1712422294574,
+  "startTime" : 1712422296309,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.5:5678",
+  "host" : "172.18.0.8:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240407/13056845592480/3/238/510.log",
+  "processId" : 0,
+  "processDefineCode" : 13056845592480,
+  "processDefineVersion" : 3,
+  "processInstanceId" : 238,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13056817857952,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"import praw\\n\\nclass RedditPostDataExtractor:\\n    def __init__(self):\\n        self.data = {}\\n\\n    def extract_data(self, hot_posts):\\n        if hot_posts:\\n            for post in hot_posts:\\n                # initialise a dictionary to contain the data of the post\\n                post_data = {}\\n\\n                # get the unique name of the post (name refers to the id of the post prefixed with t3_)\\n                # t3 represents that it is a post\\n                name = post.name\\n\\n                # get the relevant post's data and store it inside post_data\\n\\n                # get the poster's name\\n                if post.author is not None:\\n                    post_data['author'] = post.author.name\\n                else:\\n                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'\\n\\n\\n                # get the unix time in which the post was created\\n                unix_time = post.created_utc\\n                post_data['datetime'] = unix_time\\n                \\n                post_data['permalink'] = post.permalink\\n                post_data['score'] = post.score\\n                post_data['subreddit'] = post.subreddit.display_name\\n                post_data['post_title'] = post.title\\n                post_data['body'] = post.selftext\\n\\n                # store the posts data in the dictionary where the name is used as the key\\n                self.data[name] = post_data\\n\\n                # extract the comments from the post\\n                comments = post.comments\\n\\n                # extract the data in the comments and store them inside the dictionary\\n                self.extract_comments_data(comments)\\n        \\n        return self.data\\n\\n    def extract_comments_data(self, comments):\\n        if comments:\\n            for comment in comments:\\n                # initialise a dictionary to contain the data of the comment\\n                comment_data = {}\\n\\n                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)\\n                # t1 represents that it is a post\\n                name = comment.name\\n\\n                # get the relevant post's data and store it inside post_data\\n\\n                # get the commenter name\\n                if comment.author is not None:\\n                    comment_data['author'] = comment.author.name\\n                else:\\n                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'\\n\\n                # get the unix time in which the comment was created\\n                unix_time = comment.created_utc\\n                comment_data['datetime'] = unix_time\\n\\n                comment_data['permalink'] = comment.permalink\\n                comment_data['score'] = comment.score\\n                comment_data['subreddit'] = comment.subreddit.display_name\\n                comment_data['post_title'] = comment.submission.title\\n                comment_data['body'] = comment.body\\n\\n                # store the comment's data in the dictionary where the name is used as the key\\n                self.data[name] = comment_data\\n\\n                # extract the comment's replies from the post\\n                replies = comment.replies\\n\\n                # extract the data in the comments and store them inside the dictionary\\n                self.extract_comments_data(replies)\\n        \\n        return\\n    \\ndef get_hot_posts(reddit_instance, subreddit_name, limit):\\n    # Define the subreddit\\n    subreddit = reddit_instance.subreddit(subreddit_name)\\n\\n    # Get hot posts from the subreddit\\n    hot_posts = subreddit.hot(limit=limit)\\n\\n    # Filter out posts that are not pinned\\n    filtered_posts = [post for post in hot_posts if not post.stickied]\\n    return filtered_posts\\n\\n# initialize Reddit instance\\nreddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',\\n                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',\\n                     user_agent='Prawlingv1')\\n\\n\\n# choose the subreddit to extract data from\\nsubreddit = 'singapore'\\nlimit = 5\\n\\n# get hot posts from the subreddit\\nhot_posts = get_hot_posts(reddit, subreddit, limit)\\n\\n# initialise a reddit data extractor object\\ndata_extractor = RedditPostDataExtractor()\\n\\n# extract data from the hot posts from r/singapore\\ndata = data_extractor.extract_data(hot_posts)\\nprint(data)\\n\",\"resourceList\":[{\"id\":null,\"resourceName\":\"file:/dolphinscheduler/default/resources/folder/s.py\",\"res\":null}]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "reddit_api"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13056817857952"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "238"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240407"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240406"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "510"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "batch_reddit_post_analysis"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13056825838112"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13056845592480"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240407005134"
+    }
+  },
+  "taskAppId" : "238_510",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:36.357 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:36.374 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:36.375 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:36.669 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0106100795755968 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:37.111 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.18.0.8:1234
+[WI-0][TI-510] - [INFO] 2024-04-07 00:51:37.213 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=510, success=true)
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:37.301 +0800 o.a.d.c.u.OSUtils:[231] - create linux os user: default
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:37.303 +0800 o.a.d.c.u.OSUtils:[233] - execute cmd: sudo useradd -g root
+ default
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:37.673 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0712328767123287 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.188 +0800 o.a.d.c.u.OSUtils:[190] - create user default success
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.193 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.226 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/238/510 check successfully
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.234 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.518 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={file:/dolphinscheduler/default/resources/folder/s.py=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=file:/dolphinscheduler/default/resources/folder/s.py, resourceRelativePath=folder/s.py, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/238/510/folder/s.py)})
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.631 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.657 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: PYTHON create successfully
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.676 +0800 o.a.d.p.t.p.PythonTask:[75] - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "import praw\n\nclass RedditPostDataExtractor:\n    def __init__(self):\n        self.data = {}\n\n    def extract_data(self, hot_posts):\n        if hot_posts:\n            for post in hot_posts:\n                # initialise a dictionary to contain the data of the post\n                post_data = {}\n\n                # get the unique name of the post (name refers to the id of the post prefixed with t3_)\n                # t3 represents that it is a post\n                name = post.name\n\n                # get the relevant post's data and store it inside post_data\n\n                # get the poster's name\n                if post.author is not None:\n                    post_data['author'] = post.author.name\n                else:\n                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'\n\n\n                # get the unix time in which the post was created\n                unix_time = post.created_utc\n                post_data['datetime'] = unix_time\n                \n                post_data['permalink'] = post.permalink\n                post_data['score'] = post.score\n                post_data['subreddit'] = post.subreddit.display_name\n                post_data['post_title'] = post.title\n                post_data['body'] = post.selftext\n\n                # store the posts data in the dictionary where the name is used as the key\n                self.data[name] = post_data\n\n                # extract the comments from the post\n                comments = post.comments\n\n                # extract the data in the comments and store them inside the dictionary\n                self.extract_comments_data(comments)\n        \n        return self.data\n\n    def extract_comments_data(self, comments):\n        if comments:\n            for comment in comments:\n                # initialise a dictionary to contain the data of the comment\n                comment_data = {}\n\n                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)\n                # t1 represents that it is a post\n                name = comment.name\n\n                # get the relevant post's data and store it inside post_data\n\n                # get the commenter name\n                if comment.author is not None:\n                    comment_data['author'] = comment.author.name\n                else:\n                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'\n\n                # get the unix time in which the comment was created\n                unix_time = comment.created_utc\n                comment_data['datetime'] = unix_time\n\n                comment_data['permalink'] = comment.permalink\n                comment_data['score'] = comment.score\n                comment_data['subreddit'] = comment.subreddit.display_name\n                comment_data['post_title'] = comment.submission.title\n                comment_data['body'] = comment.body\n\n                # store the comment's data in the dictionary where the name is used as the key\n                self.data[name] = comment_data\n\n                # extract the comment's replies from the post\n                replies = comment.replies\n\n                # extract the data in the comments and store them inside the dictionary\n                self.extract_comments_data(replies)\n        \n        return\n    \ndef get_hot_posts(reddit_instance, subreddit_name, limit):\n    # Define the subreddit\n    subreddit = reddit_instance.subreddit(subreddit_name)\n\n    # Get hot posts from the subreddit\n    hot_posts = subreddit.hot(limit=limit)\n\n    # Filter out posts that are not pinned\n    filtered_posts = [post for post in hot_posts if not post.stickied]\n    return filtered_posts\n\n# initialize Reddit instance\nreddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',\n                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',\n                     user_agent='Prawlingv1')\n\n\n# choose the subreddit to extract data from\nsubreddit = 'singapore'\nlimit = 5\n\n# get hot posts from the subreddit\nhot_posts = get_hot_posts(reddit, subreddit, limit)\n\n# initialise a reddit data extractor object\ndata_extractor = RedditPostDataExtractor()\n\n# extract data from the hot posts from r/singapore\ndata = data_extractor.extract_data(hot_posts)\nprint(data)\n",
+  "resourceList" : [ {
+    "id" : null,
+    "resourceName" : "file:/dolphinscheduler/default/resources/folder/s.py",
+    "res" : null
+  } ]
+}
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.678 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.683 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:38.684 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0141242937853108 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.693 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.694 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.694 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.695 +0800 o.a.d.p.t.p.PythonTask:[165] - raw python script : import praw
+
+class RedditPostDataExtractor:
+    def __init__(self):
+        self.data = {}
+
+    def extract_data(self, hot_posts):
+        if hot_posts:
+            for post in hot_posts:
+                # initialise a dictionary to contain the data of the post
+                post_data = {}
+
+                # get the unique name of the post (name refers to the id of the post prefixed with t3_)
+                # t3 represents that it is a post
+                name = post.name
+
+                # get the relevant post's data and store it inside post_data
+
+                # get the poster's name
+                if post.author is not None:
+                    post_data['author'] = post.author.name
+                else:
+                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'
+
+
+                # get the unix time in which the post was created
+                unix_time = post.created_utc
+                post_data['datetime'] = unix_time
+                
+                post_data['permalink'] = post.permalink
+                post_data['score'] = post.score
+                post_data['subreddit'] = post.subreddit.display_name
+                post_data['post_title'] = post.title
+                post_data['body'] = post.selftext
+
+                # store the posts data in the dictionary where the name is used as the key
+                self.data[name] = post_data
+
+                # extract the comments from the post
+                comments = post.comments
+
+                # extract the data in the comments and store them inside the dictionary
+                self.extract_comments_data(comments)
+        
+        return self.data
+
+    def extract_comments_data(self, comments):
+        if comments:
+            for comment in comments:
+                # initialise a dictionary to contain the data of the comment
+                comment_data = {}
+
+                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)
+                # t1 represents that it is a post
+                name = comment.name
+
+                # get the relevant post's data and store it inside post_data
+
+                # get the commenter name
+                if comment.author is not None:
+                    comment_data['author'] = comment.author.name
+                else:
+                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'
+
+                # get the unix time in which the comment was created
+                unix_time = comment.created_utc
+                comment_data['datetime'] = unix_time
+
+                comment_data['permalink'] = comment.permalink
+                comment_data['score'] = comment.score
+                comment_data['subreddit'] = comment.subreddit.display_name
+                comment_data['post_title'] = comment.submission.title
+                comment_data['body'] = comment.body
+
+                # store the comment's data in the dictionary where the name is used as the key
+                self.data[name] = comment_data
+
+                # extract the comment's replies from the post
+                replies = comment.replies
+
+                # extract the data in the comments and store them inside the dictionary
+                self.extract_comments_data(replies)
+        
+        return
+    
+def get_hot_posts(reddit_instance, subreddit_name, limit):
+    # Define the subreddit
+    subreddit = reddit_instance.subreddit(subreddit_name)
+
+    # Get hot posts from the subreddit
+    hot_posts = subreddit.hot(limit=limit)
+
+    # Filter out posts that are not pinned
+    filtered_posts = [post for post in hot_posts if not post.stickied]
+    return filtered_posts
+
+# initialize Reddit instance
+reddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',
+                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',
+                     user_agent='Prawlingv1')
+
+
+# choose the subreddit to extract data from
+subreddit = 'singapore'
+limit = 5
+
+# get hot posts from the subreddit
+hot_posts = get_hot_posts(reddit, subreddit, limit)
+
+# initialise a reddit data extractor object
+data_extractor = RedditPostDataExtractor()
+
+# extract data from the hot posts from r/singapore
+data = data_extractor.extract_data(hot_posts)
+print(data)
+
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.736 +0800 o.a.d.p.t.p.PythonTask:[131] - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/238/510
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.737 +0800 o.a.d.p.t.p.PythonTask:[134] - generate python script file:/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/238/510/py_238_510.py
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.737 +0800 o.a.d.p.t.p.PythonTask:[141] - #-*- encoding=utf8 -*-
+
+import praw
+
+class RedditPostDataExtractor:
+    def __init__(self):
+        self.data = {}
+
+    def extract_data(self, hot_posts):
+        if hot_posts:
+            for post in hot_posts:
+                # initialise a dictionary to contain the data of the post
+                post_data = {}
+
+                # get the unique name of the post (name refers to the id of the post prefixed with t3_)
+                # t3 represents that it is a post
+                name = post.name
+
+                # get the relevant post's data and store it inside post_data
+
+                # get the poster's name
+                if post.author is not None:
+                    post_data['author'] = post.author.name
+                else:
+                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'
+
+
+                # get the unix time in which the post was created
+                unix_time = post.created_utc
+                post_data['datetime'] = unix_time
+                
+                post_data['permalink'] = post.permalink
+                post_data['score'] = post.score
+                post_data['subreddit'] = post.subreddit.display_name
+                post_data['post_title'] = post.title
+                post_data['body'] = post.selftext
+
+                # store the posts data in the dictionary where the name is used as the key
+                self.data[name] = post_data
+
+                # extract the comments from the post
+                comments = post.comments
+
+                # extract the data in the comments and store them inside the dictionary
+                self.extract_comments_data(comments)
+        
+        return self.data
+
+    def extract_comments_data(self, comments):
+        if comments:
+            for comment in comments:
+                # initialise a dictionary to contain the data of the comment
+                comment_data = {}
+
+                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)
+                # t1 represents that it is a post
+                name = comment.name
+
+                # get the relevant post's data and store it inside post_data
+
+                # get the commenter name
+                if comment.author is not None:
+                    comment_data['author'] = comment.author.name
+                else:
+                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'
+
+                # get the unix time in which the comment was created
+                unix_time = comment.created_utc
+                comment_data['datetime'] = unix_time
+
+                comment_data['permalink'] = comment.permalink
+                comment_data['score'] = comment.score
+                comment_data['subreddit'] = comment.subreddit.display_name
+                comment_data['post_title'] = comment.submission.title
+                comment_data['body'] = comment.body
+
+                # store the comment's data in the dictionary where the name is used as the key
+                self.data[name] = comment_data
+
+                # extract the comment's replies from the post
+                replies = comment.replies
+
+                # extract the data in the comments and store them inside the dictionary
+                self.extract_comments_data(replies)
+        
+        return
+    
+def get_hot_posts(reddit_instance, subreddit_name, limit):
+    # Define the subreddit
+    subreddit = reddit_instance.subreddit(subreddit_name)
+
+    # Get hot posts from the subreddit
+    hot_posts = subreddit.hot(limit=limit)
+
+    # Filter out posts that are not pinned
+    filtered_posts = [post for post in hot_posts if not post.stickied]
+    return filtered_posts
+
+# initialize Reddit instance
+reddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',
+                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',
+                     user_agent='Prawlingv1')
+
+
+# choose the subreddit to extract data from
+subreddit = 'singapore'
+limit = 5
+
+# get hot posts from the subreddit
+hot_posts = get_hot_posts(reddit, subreddit, limit)
+
+# initialise a reddit data extractor object
+data_extractor = RedditPostDataExtractor()
+
+# extract data from the hot posts from r/singapore
+data = data_extractor.extract_data(hot_posts)
+print(data)
+
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.975 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.977 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.978 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/238/510/py_238_510.py
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.978 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.985 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/238/510/238_510.sh
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:38.999 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 207
+[WI-0][TI-510] - [INFO] 2024-04-07 00:51:39.276 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=510)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:39.689 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0185505491654416 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:39.998 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	Traceback (most recent call last):
+	  File "/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/238/510/py_238_510.py", line 3, in <module>
+	    import praw
+	ModuleNotFoundError: No module named 'praw'
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:40.005 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/238/510, processId:207 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:40.010 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:40.011 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:40.012 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:40.022 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:40.055 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: FAILURE to master : 172.18.0.8:1234
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:40.058 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:40.064 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/238/510
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:40.175 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/238/510
+[WI-0][TI-510] - [INFO] 2024-04-07 00:51:40.186 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=510, success=true)
+[WI-238][TI-510] - [INFO] 2024-04-07 00:51:40.225 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:40.698 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7144430806030277 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:41.709 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7802816901408451 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:42.711 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9347826086956522 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:44.737 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8543956043956045 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:45.778 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8818897637795275 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:46.781 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9013698630136986 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:47.794 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.953551912568306 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:50.822 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8085177304964539 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:52.968 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8551689224401067 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:53.715 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=511, taskName=reddit_api, firstSubmitTime=1712422313694, startTime=0, taskType=PYTHON, workflowInstanceHost=172.18.0.5:5678, host=172.18.0.8:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13056845592480, processDefineVersion=3, appIds=null, processInstanceId=239, scheduleTime=0, globalParams=null, executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13056817857952, taskParams={"localParams":[],"rawScript":"import praw\n\nclass RedditPostDataExtractor:\n    def __init__(self):\n        self.data = {}\n\n    def extract_data(self, hot_posts):\n        if hot_posts:\n            for post in hot_posts:\n                # initialise a dictionary to contain the data of the post\n                post_data = {}\n\n                # get the unique name of the post (name refers to the id of the post prefixed with t3_)\n                # t3 represents that it is a post\n                name = post.name\n\n                # get the relevant post's data and store it inside post_data\n\n                # get the poster's name\n                if post.author is not None:\n                    post_data['author'] = post.author.name\n                else:\n                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'\n\n\n                # get the unix time in which the post was created\n                unix_time = post.created_utc\n                post_data['datetime'] = unix_time\n                \n                post_data['permalink'] = post.permalink\n                post_data['score'] = post.score\n                post_data['subreddit'] = post.subreddit.display_name\n                post_data['post_title'] = post.title\n                post_data['body'] = post.selftext\n\n                # store the posts data in the dictionary where the name is used as the key\n                self.data[name] = post_data\n\n                # extract the comments from the post\n                comments = post.comments\n\n                # extract the data in the comments and store them inside the dictionary\n                self.extract_comments_data(comments)\n        \n        return self.data\n\n    def extract_comments_data(self, comments):\n        if comments:\n            for comment in comments:\n                # initialise a dictionary to contain the data of the comment\n                comment_data = {}\n\n                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)\n                # t1 represents that it is a post\n                name = comment.name\n\n                # get the relevant post's data and store it inside post_data\n\n                # get the commenter name\n                if comment.author is not None:\n                    comment_data['author'] = comment.author.name\n                else:\n                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'\n\n                # get the unix time in which the comment was created\n                unix_time = comment.created_utc\n                comment_data['datetime'] = unix_time\n\n                comment_data['permalink'] = comment.permalink\n                comment_data['score'] = comment.score\n                comment_data['subreddit'] = comment.subreddit.display_name\n                comment_data['post_title'] = comment.submission.title\n                comment_data['body'] = comment.body\n\n                # store the comment's data in the dictionary where the name is used as the key\n                self.data[name] = comment_data\n\n                # extract the comment's replies from the post\n                replies = comment.replies\n\n                # extract the data in the comments and store them inside the dictionary\n                self.extract_comments_data(replies)\n        \n        return\n    \ndef get_hot_posts(reddit_instance, subreddit_name, limit):\n    # Define the subreddit\n    subreddit = reddit_instance.subreddit(subreddit_name)\n\n    # Get hot posts from the subreddit\n    hot_posts = subreddit.hot(limit=limit)\n\n    # Filter out posts that are not pinned\n    filtered_posts = [post for post in hot_posts if not post.stickied]\n    return filtered_posts\n\n# initialize Reddit instance\nreddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',\n                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',\n                     user_agent='Prawlingv1')\n\n\n# choose the subreddit to extract data from\nsubreddit = 'singapore'\nlimit = 5\n\n# get hot posts from the subreddit\nhot_posts = get_hot_posts(reddit, subreddit, limit)\n\n# initialise a reddit data extractor object\ndata_extractor = RedditPostDataExtractor()\n\n# extract data from the hot posts from r/singapore\ndata = data_extractor.extract_data(hot_posts)\nprint(data)\n","resourceList":[{"id":null,"resourceName":"file:/dolphinscheduler/default/resources/folder/s.py","res":null}]}, environmentConfig=export PYTHON_LAUNCHER=/bin/python3.11, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='reddit_api'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13056817857952'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='239'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240407'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240406'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='511'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='batch_reddit_post_analysis'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13056825838112'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13056845592480'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240407005153'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.717 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: reddit_api to wait queue success
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.717 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.720 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.721 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.721 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.721 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1712422313721
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.721 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 239_511
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.724 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 511,
+  "taskName" : "reddit_api",
+  "firstSubmitTime" : 1712422313694,
+  "startTime" : 1712422313721,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.5:5678",
+  "host" : "172.18.0.8:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240407/13056845592480/3/239/511.log",
+  "processId" : 0,
+  "processDefineCode" : 13056845592480,
+  "processDefineVersion" : 3,
+  "processInstanceId" : 239,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13056817857952,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"import praw\\n\\nclass RedditPostDataExtractor:\\n    def __init__(self):\\n        self.data = {}\\n\\n    def extract_data(self, hot_posts):\\n        if hot_posts:\\n            for post in hot_posts:\\n                # initialise a dictionary to contain the data of the post\\n                post_data = {}\\n\\n                # get the unique name of the post (name refers to the id of the post prefixed with t3_)\\n                # t3 represents that it is a post\\n                name = post.name\\n\\n                # get the relevant post's data and store it inside post_data\\n\\n                # get the poster's name\\n                if post.author is not None:\\n                    post_data['author'] = post.author.name\\n                else:\\n                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'\\n\\n\\n                # get the unix time in which the post was created\\n                unix_time = post.created_utc\\n                post_data['datetime'] = unix_time\\n                \\n                post_data['permalink'] = post.permalink\\n                post_data['score'] = post.score\\n                post_data['subreddit'] = post.subreddit.display_name\\n                post_data['post_title'] = post.title\\n                post_data['body'] = post.selftext\\n\\n                # store the posts data in the dictionary where the name is used as the key\\n                self.data[name] = post_data\\n\\n                # extract the comments from the post\\n                comments = post.comments\\n\\n                # extract the data in the comments and store them inside the dictionary\\n                self.extract_comments_data(comments)\\n        \\n        return self.data\\n\\n    def extract_comments_data(self, comments):\\n        if comments:\\n            for comment in comments:\\n                # initialise a dictionary to contain the data of the comment\\n                comment_data = {}\\n\\n                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)\\n                # t1 represents that it is a post\\n                name = comment.name\\n\\n                # get the relevant post's data and store it inside post_data\\n\\n                # get the commenter name\\n                if comment.author is not None:\\n                    comment_data['author'] = comment.author.name\\n                else:\\n                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'\\n\\n                # get the unix time in which the comment was created\\n                unix_time = comment.created_utc\\n                comment_data['datetime'] = unix_time\\n\\n                comment_data['permalink'] = comment.permalink\\n                comment_data['score'] = comment.score\\n                comment_data['subreddit'] = comment.subreddit.display_name\\n                comment_data['post_title'] = comment.submission.title\\n                comment_data['body'] = comment.body\\n\\n                # store the comment's data in the dictionary where the name is used as the key\\n                self.data[name] = comment_data\\n\\n                # extract the comment's replies from the post\\n                replies = comment.replies\\n\\n                # extract the data in the comments and store them inside the dictionary\\n                self.extract_comments_data(replies)\\n        \\n        return\\n    \\ndef get_hot_posts(reddit_instance, subreddit_name, limit):\\n    # Define the subreddit\\n    subreddit = reddit_instance.subreddit(subreddit_name)\\n\\n    # Get hot posts from the subreddit\\n    hot_posts = subreddit.hot(limit=limit)\\n\\n    # Filter out posts that are not pinned\\n    filtered_posts = [post for post in hot_posts if not post.stickied]\\n    return filtered_posts\\n\\n# initialize Reddit instance\\nreddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',\\n                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',\\n                     user_agent='Prawlingv1')\\n\\n\\n# choose the subreddit to extract data from\\nsubreddit = 'singapore'\\nlimit = 5\\n\\n# get hot posts from the subreddit\\nhot_posts = get_hot_posts(reddit, subreddit, limit)\\n\\n# initialise a reddit data extractor object\\ndata_extractor = RedditPostDataExtractor()\\n\\n# extract data from the hot posts from r/singapore\\ndata = data_extractor.extract_data(hot_posts)\\nprint(data)\\n\",\"resourceList\":[{\"id\":null,\"resourceName\":\"file:/dolphinscheduler/default/resources/folder/s.py\",\"res\":null}]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "reddit_api"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13056817857952"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "239"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240407"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240406"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "511"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "batch_reddit_post_analysis"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13056825838112"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13056845592480"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240407005153"
+    }
+  },
+  "taskAppId" : "239_511",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.725 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.725 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.726 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.736 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.18.0.8:1234
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.736 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.737 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/239/511 check successfully
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.737 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.769 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={file:/dolphinscheduler/default/resources/folder/s.py=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=file:/dolphinscheduler/default/resources/folder/s.py, resourceRelativePath=folder/s.py, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/239/511/folder/s.py)})
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.770 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.771 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: PYTHON create successfully
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.772 +0800 o.a.d.p.t.p.PythonTask:[75] - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "import praw\n\nclass RedditPostDataExtractor:\n    def __init__(self):\n        self.data = {}\n\n    def extract_data(self, hot_posts):\n        if hot_posts:\n            for post in hot_posts:\n                # initialise a dictionary to contain the data of the post\n                post_data = {}\n\n                # get the unique name of the post (name refers to the id of the post prefixed with t3_)\n                # t3 represents that it is a post\n                name = post.name\n\n                # get the relevant post's data and store it inside post_data\n\n                # get the poster's name\n                if post.author is not None:\n                    post_data['author'] = post.author.name\n                else:\n                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'\n\n\n                # get the unix time in which the post was created\n                unix_time = post.created_utc\n                post_data['datetime'] = unix_time\n                \n                post_data['permalink'] = post.permalink\n                post_data['score'] = post.score\n                post_data['subreddit'] = post.subreddit.display_name\n                post_data['post_title'] = post.title\n                post_data['body'] = post.selftext\n\n                # store the posts data in the dictionary where the name is used as the key\n                self.data[name] = post_data\n\n                # extract the comments from the post\n                comments = post.comments\n\n                # extract the data in the comments and store them inside the dictionary\n                self.extract_comments_data(comments)\n        \n        return self.data\n\n    def extract_comments_data(self, comments):\n        if comments:\n            for comment in comments:\n                # initialise a dictionary to contain the data of the comment\n                comment_data = {}\n\n                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)\n                # t1 represents that it is a post\n                name = comment.name\n\n                # get the relevant post's data and store it inside post_data\n\n                # get the commenter name\n                if comment.author is not None:\n                    comment_data['author'] = comment.author.name\n                else:\n                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'\n\n                # get the unix time in which the comment was created\n                unix_time = comment.created_utc\n                comment_data['datetime'] = unix_time\n\n                comment_data['permalink'] = comment.permalink\n                comment_data['score'] = comment.score\n                comment_data['subreddit'] = comment.subreddit.display_name\n                comment_data['post_title'] = comment.submission.title\n                comment_data['body'] = comment.body\n\n                # store the comment's data in the dictionary where the name is used as the key\n                self.data[name] = comment_data\n\n                # extract the comment's replies from the post\n                replies = comment.replies\n\n                # extract the data in the comments and store them inside the dictionary\n                self.extract_comments_data(replies)\n        \n        return\n    \ndef get_hot_posts(reddit_instance, subreddit_name, limit):\n    # Define the subreddit\n    subreddit = reddit_instance.subreddit(subreddit_name)\n\n    # Get hot posts from the subreddit\n    hot_posts = subreddit.hot(limit=limit)\n\n    # Filter out posts that are not pinned\n    filtered_posts = [post for post in hot_posts if not post.stickied]\n    return filtered_posts\n\n# initialize Reddit instance\nreddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',\n                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',\n                     user_agent='Prawlingv1')\n\n\n# choose the subreddit to extract data from\nsubreddit = 'singapore'\nlimit = 5\n\n# get hot posts from the subreddit\nhot_posts = get_hot_posts(reddit, subreddit, limit)\n\n# initialise a reddit data extractor object\ndata_extractor = RedditPostDataExtractor()\n\n# extract data from the hot posts from r/singapore\ndata = data_extractor.extract_data(hot_posts)\nprint(data)\n",
+  "resourceList" : [ {
+    "id" : null,
+    "resourceName" : "file:/dolphinscheduler/default/resources/folder/s.py",
+    "res" : null
+  } ]
+}
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.773 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.773 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.774 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.774 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.775 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.775 +0800 o.a.d.p.t.p.PythonTask:[165] - raw python script : import praw
+
+class RedditPostDataExtractor:
+    def __init__(self):
+        self.data = {}
+
+    def extract_data(self, hot_posts):
+        if hot_posts:
+            for post in hot_posts:
+                # initialise a dictionary to contain the data of the post
+                post_data = {}
+
+                # get the unique name of the post (name refers to the id of the post prefixed with t3_)
+                # t3 represents that it is a post
+                name = post.name
+
+                # get the relevant post's data and store it inside post_data
+
+                # get the poster's name
+                if post.author is not None:
+                    post_data['author'] = post.author.name
+                else:
+                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'
+
+
+                # get the unix time in which the post was created
+                unix_time = post.created_utc
+                post_data['datetime'] = unix_time
+                
+                post_data['permalink'] = post.permalink
+                post_data['score'] = post.score
+                post_data['subreddit'] = post.subreddit.display_name
+                post_data['post_title'] = post.title
+                post_data['body'] = post.selftext
+
+                # store the posts data in the dictionary where the name is used as the key
+                self.data[name] = post_data
+
+                # extract the comments from the post
+                comments = post.comments
+
+                # extract the data in the comments and store them inside the dictionary
+                self.extract_comments_data(comments)
+        
+        return self.data
+
+    def extract_comments_data(self, comments):
+        if comments:
+            for comment in comments:
+                # initialise a dictionary to contain the data of the comment
+                comment_data = {}
+
+                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)
+                # t1 represents that it is a post
+                name = comment.name
+
+                # get the relevant post's data and store it inside post_data
+
+                # get the commenter name
+                if comment.author is not None:
+                    comment_data['author'] = comment.author.name
+                else:
+                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'
+
+                # get the unix time in which the comment was created
+                unix_time = comment.created_utc
+                comment_data['datetime'] = unix_time
+
+                comment_data['permalink'] = comment.permalink
+                comment_data['score'] = comment.score
+                comment_data['subreddit'] = comment.subreddit.display_name
+                comment_data['post_title'] = comment.submission.title
+                comment_data['body'] = comment.body
+
+                # store the comment's data in the dictionary where the name is used as the key
+                self.data[name] = comment_data
+
+                # extract the comment's replies from the post
+                replies = comment.replies
+
+                # extract the data in the comments and store them inside the dictionary
+                self.extract_comments_data(replies)
+        
+        return
+    
+def get_hot_posts(reddit_instance, subreddit_name, limit):
+    # Define the subreddit
+    subreddit = reddit_instance.subreddit(subreddit_name)
+
+    # Get hot posts from the subreddit
+    hot_posts = subreddit.hot(limit=limit)
+
+    # Filter out posts that are not pinned
+    filtered_posts = [post for post in hot_posts if not post.stickied]
+    return filtered_posts
+
+# initialize Reddit instance
+reddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',
+                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',
+                     user_agent='Prawlingv1')
+
+
+# choose the subreddit to extract data from
+subreddit = 'singapore'
+limit = 5
+
+# get hot posts from the subreddit
+hot_posts = get_hot_posts(reddit, subreddit, limit)
+
+# initialise a reddit data extractor object
+data_extractor = RedditPostDataExtractor()
+
+# extract data from the hot posts from r/singapore
+data = data_extractor.extract_data(hot_posts)
+print(data)
+
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.776 +0800 o.a.d.p.t.p.PythonTask:[131] - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/239/511
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.776 +0800 o.a.d.p.t.p.PythonTask:[134] - generate python script file:/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/239/511/py_239_511.py
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.777 +0800 o.a.d.p.t.p.PythonTask:[141] - #-*- encoding=utf8 -*-
+
+import praw
+
+class RedditPostDataExtractor:
+    def __init__(self):
+        self.data = {}
+
+    def extract_data(self, hot_posts):
+        if hot_posts:
+            for post in hot_posts:
+                # initialise a dictionary to contain the data of the post
+                post_data = {}
+
+                # get the unique name of the post (name refers to the id of the post prefixed with t3_)
+                # t3 represents that it is a post
+                name = post.name
+
+                # get the relevant post's data and store it inside post_data
+
+                # get the poster's name
+                if post.author is not None:
+                    post_data['author'] = post.author.name
+                else:
+                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'
+
+
+                # get the unix time in which the post was created
+                unix_time = post.created_utc
+                post_data['datetime'] = unix_time
+                
+                post_data['permalink'] = post.permalink
+                post_data['score'] = post.score
+                post_data['subreddit'] = post.subreddit.display_name
+                post_data['post_title'] = post.title
+                post_data['body'] = post.selftext
+
+                # store the posts data in the dictionary where the name is used as the key
+                self.data[name] = post_data
+
+                # extract the comments from the post
+                comments = post.comments
+
+                # extract the data in the comments and store them inside the dictionary
+                self.extract_comments_data(comments)
+        
+        return self.data
+
+    def extract_comments_data(self, comments):
+        if comments:
+            for comment in comments:
+                # initialise a dictionary to contain the data of the comment
+                comment_data = {}
+
+                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)
+                # t1 represents that it is a post
+                name = comment.name
+
+                # get the relevant post's data and store it inside post_data
+
+                # get the commenter name
+                if comment.author is not None:
+                    comment_data['author'] = comment.author.name
+                else:
+                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'
+
+                # get the unix time in which the comment was created
+                unix_time = comment.created_utc
+                comment_data['datetime'] = unix_time
+
+                comment_data['permalink'] = comment.permalink
+                comment_data['score'] = comment.score
+                comment_data['subreddit'] = comment.subreddit.display_name
+                comment_data['post_title'] = comment.submission.title
+                comment_data['body'] = comment.body
+
+                # store the comment's data in the dictionary where the name is used as the key
+                self.data[name] = comment_data
+
+                # extract the comment's replies from the post
+                replies = comment.replies
+
+                # extract the data in the comments and store them inside the dictionary
+                self.extract_comments_data(replies)
+        
+        return
+    
+def get_hot_posts(reddit_instance, subreddit_name, limit):
+    # Define the subreddit
+    subreddit = reddit_instance.subreddit(subreddit_name)
+
+    # Get hot posts from the subreddit
+    hot_posts = subreddit.hot(limit=limit)
+
+    # Filter out posts that are not pinned
+    filtered_posts = [post for post in hot_posts if not post.stickied]
+    return filtered_posts
+
+# initialize Reddit instance
+reddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',
+                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',
+                     user_agent='Prawlingv1')
+
+
+# choose the subreddit to extract data from
+subreddit = 'singapore'
+limit = 5
+
+# get hot posts from the subreddit
+hot_posts = get_hot_posts(reddit, subreddit, limit)
+
+# initialise a reddit data extractor object
+data_extractor = RedditPostDataExtractor()
+
+# extract data from the hot posts from r/singapore
+data = data_extractor.extract_data(hot_posts)
+print(data)
+
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.778 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.779 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.779 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/239/511/py_239_511.py
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.779 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.780 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/239/511/239_511.sh
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:53.789 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 227
+[WI-0][TI-511] - [INFO] 2024-04-07 00:51:54.145 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=511, success=true)
+[WI-0][TI-511] - [INFO] 2024-04-07 00:51:54.173 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=511)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:54.791 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	Traceback (most recent call last):
+	  File "/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/239/511/py_239_511.py", line 3, in <module>
+	    import praw
+	ModuleNotFoundError: No module named 'praw'
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:54.796 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/239/511, processId:227 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:54.797 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:54.797 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:54.797 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:54.798 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:54.807 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: FAILURE to master : 172.18.0.8:1234
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:54.808 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:54.810 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/239/511
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:54.812 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_3/239/511
+[WI-239][TI-511] - [INFO] 2024-04-07 00:51:54.812 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-511] - [INFO] 2024-04-07 00:51:55.149 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=511, success=true)
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:58.013 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9196675900277007 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:51:59.106 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9213197969543148 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:52:00.121 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8486486486486486 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:53:36.185 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.705891028977963 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:53:37.223 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9078947368421052 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:53:38.230 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8365122615803815 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:53:42.279 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8940217391304348 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:53:43.304 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7019117473783434 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:53:48.340 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8784530386740331 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:53:49.364 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7335164835164835 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-07 00:53:51.424 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7372654155495979 is over then the MaxCpuUsagePercentageThresholds 0.7

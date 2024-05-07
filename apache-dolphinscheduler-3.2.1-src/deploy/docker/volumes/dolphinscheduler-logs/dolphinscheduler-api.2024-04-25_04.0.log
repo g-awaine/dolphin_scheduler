@@ -1,0 +1,887 @@
+[INFO] 2024-04-25 04:00:26.997 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[1076] - Success delete workflow definition workflowDefinitionCode: 13383474743782
+[INFO] 2024-04-25 04:01:34.568 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance spark_test-3-20240425035755232 ready to stop success, will call master to stop the workflow instance
+[WARN] 2024-04-25 04:10:28.286 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2024-04-25 04:10:32.533 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2024-04-25 04:10:32.536 +0800 o.a.d.a.ApiApplicationServer:[640] - The following 1 profile is active: "postgresql"
+[INFO] 2024-04-25 04:10:44.924 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=b9ea3c4b-94e1-3be4-b636-a78d78ec03d8
+[INFO] 2024-04-25 04:10:47.530 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:10:47.752 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:10:47.785 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:10:47.867 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$451/1350518777] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:10:47.876 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:10:47.960 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:10:48.000 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:10:48.143 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:10:49.911 +0800 o.e.j.u.log:[170] - Logging initialized @32942ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2024-04-25 04:10:51.332 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2024-04-25 04:10:51.438 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[INFO] 2024-04-25 04:10:52.058 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2024-04-25 04:10:52.121 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 19493 ms
+[INFO] 2024-04-25 04:11:00.354 +0800 o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> false 
+[INFO] 2024-04-25 04:11:00.437 +0800 o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+[INFO] 2024-04-25 04:11:00.438 +0800 o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=0.0.0.0, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+[INFO] 2024-04-25 04:11:01.474 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2024-04-25 04:11:01.476 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2024-04-25 04:11:01.490 +0800 o.e.j.s.session:[132] - node0 Scavenging every 660000ms
+[INFO] 2024-04-25 04:11:01.512 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@6978a32a{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.7263418081505602565/, jar:file:/opt/dolphinscheduler/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2024-04-25 04:11:01.523 +0800 o.e.j.s.Server:[415] - Started @44555ms
+[INFO] 2024-04-25 04:11:02.623 +0800 c.z.h.HikariDataSource:[110] - DolphinScheduler - Starting...
+[INFO] 2024-04-25 04:11:05.156 +0800 c.z.h.HikariDataSource:[123] - DolphinScheduler - Start completed.
+[INFO] 2024-04-25 04:11:19.708 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2024-04-25 04:11:20.212 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2024-04-25 04:11:20.272 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2024-04-25 04:11:20.809 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 04:11:20.809 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 04:11:23.476 +0800 c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+[INFO] 2024-04-25 04:11:23.572 +0800 c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.3, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+[INFO] 2024-04-25 04:11:35.847 +0800 o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2024-04-25 04:11:35.881 +0800 o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2024-04-25 04:11:35.881 +0800 o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2024-04-25 04:11:35.915 +0800 o.s.s.q.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2024-04-25 04:11:35.925 +0800 o.s.s.q.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2024-04-25 04:11:35.929 +0800 o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId '37d7a019d3991713989495856'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.apache.dolphinscheduler.scheduler.quartz.QuartzZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2024-04-25 04:11:35.930 +0800 o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2024-04-25 04:11:35.932 +0800 o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2024-04-25 04:11:35.933 +0800 o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@508863eb
+[INFO] 2024-04-25 04:11:36.558 +0800 o.a.d.a.p.PythonGateway:[710] - PythonGatewayService started on: /0.0.0.0
+[INFO] 2024-04-25 04:11:36.615 +0800 p.GatewayServer:[573] - Gateway Server Started
+[INFO] 2024-04-25 04:11:43.876 +0800 o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+[INFO] 2024-04-25 04:11:44.976 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[INFO] 2024-04-25 04:11:45.234 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2024-04-25 04:11:45.235 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[INFO] 2024-04-25 04:11:45.238 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 3 ms
+[INFO] 2024-04-25 04:11:45.267 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@13714753{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+[INFO] 2024-04-25 04:11:45.270 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 12345 (http/1.1) with context path '/dolphinscheduler'
+[INFO] 2024-04-25 04:11:45.305 +0800 o.a.d.a.ApiApplicationServer:[61] - Started ApiApplicationServer in 83.341 seconds (JVM running for 88.338)
+[INFO] 2024-04-25 04:11:45.348 +0800 o.a.d.a.ApiApplicationServer:[63] - Received spring application context ready event will load taskPlugin and write to DB
+[INFO] 2024-04-25 04:11:45.463 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.476 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.476 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.480 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.481 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.486 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.486 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.491 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.492 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.497 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.498 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.501 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.502 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.506 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.509 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.517 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.519 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.522 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.523 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.526 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.527 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.529 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.529 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.536 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.536 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.542 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.544 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.547 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.548 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.555 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.556 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.570 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.571 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.578 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.579 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.581 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.582 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.586 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.586 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.593 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.594 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.596 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.597 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.603 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.604 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.607 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.607 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.612 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.613 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.616 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.617 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.621 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.622 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.627 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.628 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.631 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.633 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.637 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.638 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.641 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.642 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.645 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.646 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.647 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.649 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.654 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 04:11:45.661 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2024-04-25 04:12:25.697 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13383445003744, commandCount:1.
+[INFO] 2024-04-25 04:12:45.039 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-04-25 04:12:45.045 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-04-25 04:12:45.048 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-04-25 04:12:45.048 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-04-25 04:12:45.049 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-04-25 04:12:45.050 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-04-25 04:12:45.050 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[INFO] 2024-04-25 04:12:47.355 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1569, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/602/1569.log
+[INFO] 2024-04-25 04:12:47.576 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2024-04-25 04:12:49.207 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1569, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/602/1569.log
+[INFO] 2024-04-25 04:13:31.599 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1569, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/602/1569.log
+[INFO] 2024-04-25 04:13:31.879 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1569, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/602/1569.log
+[ERROR] 2024-04-25 04:14:23.355 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:1572.
+[INFO] 2024-04-25 04:18:59.899 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance spark_test-3-20240425041227205 ready to stop success, will call master to stop the workflow instance
+[WARN] 2024-04-25 04:21:31.198 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2024-04-25 04:21:35.335 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2024-04-25 04:21:35.382 +0800 o.a.d.a.ApiApplicationServer:[640] - The following 1 profile is active: "postgresql"
+[INFO] 2024-04-25 04:21:51.192 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=b9ea3c4b-94e1-3be4-b636-a78d78ec03d8
+[INFO] 2024-04-25 04:21:54.540 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:21:55.176 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:21:55.204 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:21:55.241 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$451/401872697] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:21:55.299 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:21:55.352 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:21:55.498 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:21:55.545 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:21:57.044 +0800 o.e.j.u.log:[170] - Logging initialized @34572ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2024-04-25 04:21:59.636 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2024-04-25 04:21:59.822 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[INFO] 2024-04-25 04:22:00.234 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2024-04-25 04:22:00.241 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 24789 ms
+[INFO] 2024-04-25 04:22:06.992 +0800 o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> false 
+[INFO] 2024-04-25 04:22:07.103 +0800 o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+[INFO] 2024-04-25 04:22:07.104 +0800 o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=0.0.0.0, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+[INFO] 2024-04-25 04:22:07.348 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2024-04-25 04:22:07.367 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2024-04-25 04:22:07.370 +0800 o.e.j.s.session:[132] - node0 Scavenging every 660000ms
+[INFO] 2024-04-25 04:22:07.375 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@237aba92{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.3845476125694852958/, jar:file:/opt/dolphinscheduler/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2024-04-25 04:22:07.376 +0800 o.e.j.s.Server:[415] - Started @44906ms
+[INFO] 2024-04-25 04:22:09.064 +0800 c.z.h.HikariDataSource:[110] - DolphinScheduler - Starting...
+[INFO] 2024-04-25 04:22:10.458 +0800 c.z.h.HikariDataSource:[123] - DolphinScheduler - Start completed.
+[INFO] 2024-04-25 04:22:18.755 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2024-04-25 04:22:18.854 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2024-04-25 04:22:18.989 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2024-04-25 04:22:19.290 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 04:22:19.299 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 04:22:20.218 +0800 c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+[INFO] 2024-04-25 04:22:20.263 +0800 c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.3, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+[INFO] 2024-04-25 04:22:27.496 +0800 o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2024-04-25 04:22:27.520 +0800 o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2024-04-25 04:22:27.521 +0800 o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2024-04-25 04:22:27.538 +0800 o.s.s.q.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2024-04-25 04:22:27.542 +0800 o.s.s.q.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2024-04-25 04:22:27.545 +0800 o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId 'ca52bbce71481713990147501'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.apache.dolphinscheduler.scheduler.quartz.QuartzZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2024-04-25 04:22:27.545 +0800 o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2024-04-25 04:22:27.547 +0800 o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2024-04-25 04:22:27.548 +0800 o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7f5a5ef3
+[INFO] 2024-04-25 04:22:27.819 +0800 o.a.d.a.p.PythonGateway:[710] - PythonGatewayService started on: /0.0.0.0
+[INFO] 2024-04-25 04:22:27.883 +0800 p.GatewayServer:[573] - Gateway Server Started
+[INFO] 2024-04-25 04:22:32.332 +0800 o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+[INFO] 2024-04-25 04:22:32.968 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[INFO] 2024-04-25 04:22:33.121 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2024-04-25 04:22:33.123 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[INFO] 2024-04-25 04:22:33.128 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 4 ms
+[INFO] 2024-04-25 04:22:33.143 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@26612078{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+[INFO] 2024-04-25 04:22:33.145 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 12345 (http/1.1) with context path '/dolphinscheduler'
+[INFO] 2024-04-25 04:22:33.165 +0800 o.a.d.a.ApiApplicationServer:[61] - Started ApiApplicationServer in 68.241 seconds (JVM running for 70.696)
+[INFO] 2024-04-25 04:22:33.174 +0800 o.a.d.a.ApiApplicationServer:[63] - Received spring application context ready event will load taskPlugin and write to DB
+[INFO] 2024-04-25 04:22:33.205 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.209 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.210 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.212 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.213 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.216 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.217 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.220 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.221 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.223 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.223 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.225 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.225 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.226 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.226 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.228 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.229 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.231 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.231 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.233 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.234 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.235 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.235 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.238 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.238 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.239 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.240 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.241 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.242 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.244 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.244 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.247 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.249 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.253 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.254 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.256 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.256 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.258 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.259 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.263 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.263 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.265 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.265 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.267 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.268 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.269 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.270 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.272 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.273 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.275 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.276 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.278 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.278 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.281 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.281 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.283 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.283 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.285 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.285 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.287 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.287 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.289 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.289 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.291 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.291 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.293 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 04:22:33.297 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2024-04-25 04:23:01.496 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-04-25 04:23:01.497 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-04-25 04:23:01.498 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-04-25 04:23:01.520 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-04-25 04:23:01.521 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-04-25 04:23:01.521 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-04-25 04:23:01.521 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[INFO] 2024-04-25 04:23:41.013 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1577, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/602/1577.log
+[INFO] 2024-04-25 04:23:41.279 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2024-04-25 04:23:42.173 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1577, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/602/1577.log
+[WARN] 2024-04-25 04:30:58.798 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2024-04-25 04:31:02.397 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2024-04-25 04:31:02.522 +0800 o.a.d.a.ApiApplicationServer:[640] - The following 1 profile is active: "postgresql"
+[INFO] 2024-04-25 04:31:12.816 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=b9ea3c4b-94e1-3be4-b636-a78d78ec03d8
+[INFO] 2024-04-25 04:31:17.144 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:31:17.167 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:31:17.198 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:31:17.205 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$451/674480275] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:31:17.216 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:31:17.557 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:31:17.584 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:31:17.659 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:31:19.223 +0800 o.e.j.u.log:[170] - Logging initialized @29849ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2024-04-25 04:31:20.925 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2024-04-25 04:31:20.976 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[INFO] 2024-04-25 04:31:21.289 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2024-04-25 04:31:21.289 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 18667 ms
+[INFO] 2024-04-25 04:31:28.073 +0800 o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> false 
+[INFO] 2024-04-25 04:31:28.097 +0800 o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+[INFO] 2024-04-25 04:31:28.098 +0800 o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=0.0.0.0, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+[INFO] 2024-04-25 04:31:28.345 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2024-04-25 04:31:28.346 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2024-04-25 04:31:28.371 +0800 o.e.j.s.session:[132] - node0 Scavenging every 600000ms
+[INFO] 2024-04-25 04:31:28.378 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@250e8712{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.3789235484585953288/, jar:file:/opt/dolphinscheduler/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2024-04-25 04:31:28.379 +0800 o.e.j.s.Server:[415] - Started @39006ms
+[INFO] 2024-04-25 04:31:30.499 +0800 c.z.h.HikariDataSource:[110] - DolphinScheduler - Starting...
+[INFO] 2024-04-25 04:31:31.132 +0800 c.z.h.HikariDataSource:[123] - DolphinScheduler - Start completed.
+[INFO] 2024-04-25 04:31:37.469 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2024-04-25 04:31:37.655 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2024-04-25 04:31:38.066 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2024-04-25 04:31:38.253 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 04:31:38.254 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 04:31:39.252 +0800 c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+[INFO] 2024-04-25 04:31:39.473 +0800 c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.3, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+[INFO] 2024-04-25 04:31:44.914 +0800 o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2024-04-25 04:31:44.928 +0800 o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2024-04-25 04:31:44.929 +0800 o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2024-04-25 04:31:44.940 +0800 o.s.s.q.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2024-04-25 04:31:44.943 +0800 o.s.s.q.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2024-04-25 04:31:44.944 +0800 o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId '35bd8866cc5b1713990704917'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.apache.dolphinscheduler.scheduler.quartz.QuartzZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2024-04-25 04:31:44.945 +0800 o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2024-04-25 04:31:44.945 +0800 o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2024-04-25 04:31:44.945 +0800 o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4ff7de80
+[INFO] 2024-04-25 04:31:45.171 +0800 o.a.d.a.p.PythonGateway:[710] - PythonGatewayService started on: /0.0.0.0
+[INFO] 2024-04-25 04:31:45.199 +0800 p.GatewayServer:[573] - Gateway Server Started
+[INFO] 2024-04-25 04:31:49.727 +0800 o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+[INFO] 2024-04-25 04:31:50.787 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[INFO] 2024-04-25 04:31:50.944 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2024-04-25 04:31:50.945 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[INFO] 2024-04-25 04:31:50.949 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 2 ms
+[INFO] 2024-04-25 04:31:50.979 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@c0004b7{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+[INFO] 2024-04-25 04:31:50.982 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 12345 (http/1.1) with context path '/dolphinscheduler'
+[INFO] 2024-04-25 04:31:51.003 +0800 o.a.d.a.ApiApplicationServer:[61] - Started ApiApplicationServer in 58.787 seconds (JVM running for 61.63)
+[INFO] 2024-04-25 04:31:51.017 +0800 o.a.d.a.ApiApplicationServer:[63] - Received spring application context ready event will load taskPlugin and write to DB
+[INFO] 2024-04-25 04:31:51.064 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.071 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.071 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.084 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.085 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.090 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.091 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.093 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.094 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.095 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.096 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.098 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.099 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.101 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.101 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.103 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.103 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.105 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.105 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.106 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.107 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.108 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.108 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.110 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.110 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.111 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.112 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.113 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.113 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.115 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.115 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.117 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.117 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.120 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.121 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.123 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.123 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.125 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.125 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.128 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.129 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.131 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.131 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.133 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.133 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.135 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.135 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.137 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.138 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.139 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.139 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.141 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.142 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.144 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.144 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.146 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.146 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.147 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.148 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.149 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.150 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.151 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.152 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.153 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.153 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.156 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 04:31:51.160 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2024-04-25 04:34:24.101 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance spark_test-3-20240425041227205 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-04-25 04:34:24.100 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance spark_test-3-20240425041227205 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-04-25 04:34:24.350 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[ERROR] 2024-04-25 04:34:25.122 +0800 o.a.d.a.e.ApiExceptionHandler:[47] - Meet en unknown exception: 
+java.util.concurrent.CompletionException: org.apache.dolphinscheduler.api.executor.ExecuteRuntimeException: The workflow instance: spark_test-3-20240425041227205 status is WorkflowExecutionStatus{code=4, desc='ready stop'}, can not be stopped
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.biApply(CompletableFuture.java:1121)
+	at java.util.concurrent.CompletableFuture.biApplyStage(CompletableFuture.java:1134)
+	at java.util.concurrent.CompletableFuture.thenCombine(CompletableFuture.java:2038)
+	at org.apache.dolphinscheduler.api.executor.ExecuteClient.executeWorkflowInstance(ExecuteClient.java:58)
+	at org.apache.dolphinscheduler.api.service.impl.ExecutorServiceImpl.execute(ExecutorServiceImpl.java:422)
+	at org.apache.dolphinscheduler.api.service.impl.ExecutorServiceImpl$$FastClassBySpringCGLIB$$ff5175fc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.ExecutorServiceImpl$$EnhancerBySpringCGLIB$$4ad92a89.execute(<generated>)
+	at org.apache.dolphinscheduler.api.controller.ExecutorController.execute(ExecutorController.java:325)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.dolphinscheduler.api.executor.ExecuteRuntimeException: The workflow instance: spark_test-3-20240425041227205 status is WorkflowExecutionStatus{code=4, desc='ready stop'}, can not be stopped
+	at org.apache.dolphinscheduler.api.executor.workflow.instance.stop.StopExecuteFunction.execute(StopExecuteFunction.java:49)
+	at org.apache.dolphinscheduler.api.executor.workflow.instance.stop.StopExecuteFunction.execute(StopExecuteFunction.java:33)
+	at java.util.concurrent.CompletableFuture.biApply(CompletableFuture.java:1119)
+	... 82 common frames omitted
+[INFO] 2024-04-25 04:34:37.971 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13383445003744, commandCount:1.
+[INFO] 2024-04-25 04:34:58.467 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13383445003744, commandCount:1.
+[ERROR] 2024-04-25 04:35:10.476 +0800 o.a.d.a.e.ApiExceptionHandler:[47] - Meet en unknown exception: 
+java.util.concurrent.CompletionException: org.apache.dolphinscheduler.api.executor.ExecuteRuntimeException: The workflow instance: spark_test-3-20240425043504446 status is WorkflowExecutionStatus{code=6, desc='failure'}, can not be stopped
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.biApply(CompletableFuture.java:1121)
+	at java.util.concurrent.CompletableFuture.biApplyStage(CompletableFuture.java:1134)
+	at java.util.concurrent.CompletableFuture.thenCombine(CompletableFuture.java:2038)
+	at org.apache.dolphinscheduler.api.executor.ExecuteClient.executeWorkflowInstance(ExecuteClient.java:58)
+	at org.apache.dolphinscheduler.api.service.impl.ExecutorServiceImpl.execute(ExecutorServiceImpl.java:422)
+	at org.apache.dolphinscheduler.api.service.impl.ExecutorServiceImpl$$FastClassBySpringCGLIB$$ff5175fc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.ExecutorServiceImpl$$EnhancerBySpringCGLIB$$4ad92a89.execute(<generated>)
+	at org.apache.dolphinscheduler.api.controller.ExecutorController.execute(ExecutorController.java:325)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.dolphinscheduler.api.executor.ExecuteRuntimeException: The workflow instance: spark_test-3-20240425043504446 status is WorkflowExecutionStatus{code=6, desc='failure'}, can not be stopped
+	at org.apache.dolphinscheduler.api.executor.workflow.instance.stop.StopExecuteFunction.execute(StopExecuteFunction.java:49)
+	at org.apache.dolphinscheduler.api.executor.workflow.instance.stop.StopExecuteFunction.execute(StopExecuteFunction.java:33)
+	at java.util.concurrent.CompletableFuture.biApply(CompletableFuture.java:1119)
+	... 82 common frames omitted
+[ERROR] 2024-04-25 04:35:12.106 +0800 o.a.d.a.e.ApiExceptionHandler:[47] - Meet en unknown exception: 
+java.util.concurrent.CompletionException: org.apache.dolphinscheduler.api.executor.ExecuteRuntimeException: The workflow instance: spark_test-3-20240425043504446 status is WorkflowExecutionStatus{code=6, desc='failure'}, can not be stopped
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:273)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:280)
+	at java.util.concurrent.CompletableFuture.biApply(CompletableFuture.java:1121)
+	at java.util.concurrent.CompletableFuture.biApplyStage(CompletableFuture.java:1134)
+	at java.util.concurrent.CompletableFuture.thenCombine(CompletableFuture.java:2038)
+	at org.apache.dolphinscheduler.api.executor.ExecuteClient.executeWorkflowInstance(ExecuteClient.java:58)
+	at org.apache.dolphinscheduler.api.service.impl.ExecutorServiceImpl.execute(ExecutorServiceImpl.java:422)
+	at org.apache.dolphinscheduler.api.service.impl.ExecutorServiceImpl$$FastClassBySpringCGLIB$$ff5175fc.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.ExecutorServiceImpl$$EnhancerBySpringCGLIB$$4ad92a89.execute(<generated>)
+	at org.apache.dolphinscheduler.api.controller.ExecutorController.execute(ExecutorController.java:325)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.dolphinscheduler.api.executor.ExecuteRuntimeException: The workflow instance: spark_test-3-20240425043504446 status is WorkflowExecutionStatus{code=6, desc='failure'}, can not be stopped
+	at org.apache.dolphinscheduler.api.executor.workflow.instance.stop.StopExecuteFunction.execute(StopExecuteFunction.java:49)
+	at org.apache.dolphinscheduler.api.executor.workflow.instance.stop.StopExecuteFunction.execute(StopExecuteFunction.java:33)
+	at java.util.concurrent.CompletableFuture.biApply(CompletableFuture.java:1119)
+	... 82 common frames omitted
+[INFO] 2024-04-25 04:35:18.719 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-04-25 04:35:18.719 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-04-25 04:35:18.720 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-04-25 04:35:18.720 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-04-25 04:35:18.721 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-04-25 04:35:18.721 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-04-25 04:35:18.721 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[WARN] 2024-04-25 04:50:24.835 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2024-04-25 04:50:29.997 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2024-04-25 04:50:30.016 +0800 o.a.d.a.ApiApplicationServer:[640] - The following 1 profile is active: "postgresql"
+[INFO] 2024-04-25 04:50:48.388 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=b9ea3c4b-94e1-3be4-b636-a78d78ec03d8
+[INFO] 2024-04-25 04:50:50.338 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:50:50.363 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:50:50.384 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:50:50.389 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$451/1120917396] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:50:50.402 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:50:50.459 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:50:50.482 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:50:50.559 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:50:51.662 +0800 o.e.j.u.log:[170] - Logging initialized @40126ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2024-04-25 04:50:54.003 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2024-04-25 04:50:54.261 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[INFO] 2024-04-25 04:50:54.779 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2024-04-25 04:50:54.786 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 24729 ms
+[INFO] 2024-04-25 04:51:01.965 +0800 o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> false 
+[INFO] 2024-04-25 04:51:01.966 +0800 o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+[INFO] 2024-04-25 04:51:02.118 +0800 o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=0.0.0.0, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+[INFO] 2024-04-25 04:51:04.420 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2024-04-25 04:51:04.440 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2024-04-25 04:51:04.444 +0800 o.e.j.s.session:[132] - node0 Scavenging every 600000ms
+[INFO] 2024-04-25 04:51:04.471 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@4c614d8c{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.303786712668667169/, jar:file:/opt/dolphinscheduler/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2024-04-25 04:51:04.533 +0800 o.e.j.s.Server:[415] - Started @52998ms
+[INFO] 2024-04-25 04:51:05.379 +0800 c.z.h.HikariDataSource:[110] - DolphinScheduler - Starting...
+[INFO] 2024-04-25 04:51:06.967 +0800 c.z.h.HikariDataSource:[123] - DolphinScheduler - Start completed.
+[INFO] 2024-04-25 04:51:15.056 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2024-04-25 04:51:15.368 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2024-04-25 04:51:15.477 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2024-04-25 04:51:15.580 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 04:51:15.664 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 04:51:18.404 +0800 c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+[INFO] 2024-04-25 04:51:18.590 +0800 c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.3, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+[INFO] 2024-04-25 04:51:26.519 +0800 o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2024-04-25 04:51:26.592 +0800 o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2024-04-25 04:51:26.593 +0800 o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2024-04-25 04:51:26.608 +0800 o.s.s.q.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2024-04-25 04:51:26.611 +0800 o.s.s.q.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2024-04-25 04:51:26.613 +0800 o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId '464e40ed6b371713991886525'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.apache.dolphinscheduler.scheduler.quartz.QuartzZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2024-04-25 04:51:26.613 +0800 o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2024-04-25 04:51:26.614 +0800 o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2024-04-25 04:51:26.614 +0800 o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@11544ddd
+[INFO] 2024-04-25 04:51:26.858 +0800 o.a.d.a.p.PythonGateway:[710] - PythonGatewayService started on: /0.0.0.0
+[INFO] 2024-04-25 04:51:26.913 +0800 p.GatewayServer:[573] - Gateway Server Started
+[INFO] 2024-04-25 04:51:32.669 +0800 o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+[INFO] 2024-04-25 04:51:33.604 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[INFO] 2024-04-25 04:51:33.838 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2024-04-25 04:51:33.840 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[INFO] 2024-04-25 04:51:33.843 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 3 ms
+[INFO] 2024-04-25 04:51:33.868 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@196d684b{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+[INFO] 2024-04-25 04:51:33.872 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 12345 (http/1.1) with context path '/dolphinscheduler'
+[INFO] 2024-04-25 04:51:33.904 +0800 o.a.d.a.ApiApplicationServer:[61] - Started ApiApplicationServer in 78.135 seconds (JVM running for 82.37)
+[INFO] 2024-04-25 04:51:33.929 +0800 o.a.d.a.ApiApplicationServer:[63] - Received spring application context ready event will load taskPlugin and write to DB
+[INFO] 2024-04-25 04:51:34.006 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.015 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.017 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.021 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.024 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.031 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.032 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.038 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.038 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.041 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.042 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.047 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.049 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.064 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.067 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.070 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.076 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.079 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.084 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.087 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.088 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.089 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.095 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.098 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.098 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.102 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.106 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.113 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.115 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.118 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.119 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.124 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.125 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.135 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.135 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.138 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.138 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.140 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.141 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.149 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.150 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.152 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.153 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.156 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.157 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.158 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.159 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.164 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.165 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.168 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.169 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.173 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.174 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.179 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.180 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.182 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.183 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.186 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.187 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.191 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.192 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.199 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.200 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.203 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.204 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.209 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 04:51:34.218 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2024-04-25 04:52:41.525 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13383445003744, commandCount:1.
+[INFO] 2024-04-25 04:53:18.161 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-04-25 04:53:18.163 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-04-25 04:53:18.164 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-04-25 04:53:18.164 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-04-25 04:53:18.165 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-04-25 04:53:18.165 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-04-25 04:53:18.165 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[WARN] 2024-04-25 04:58:41.521 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2024-04-25 04:58:46.452 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2024-04-25 04:58:46.565 +0800 o.a.d.a.ApiApplicationServer:[640] - The following 1 profile is active: "postgresql"
+[INFO] 2024-04-25 04:59:00.291 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=b9ea3c4b-94e1-3be4-b636-a78d78ec03d8
+[INFO] 2024-04-25 04:59:03.097 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:59:03.860 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:59:03.893 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:59:04.004 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$452/65194223] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:59:04.139 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:59:04.290 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:59:04.580 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:59:04.732 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 04:59:07.771 +0800 o.e.j.u.log:[170] - Logging initialized @42440ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2024-04-25 04:59:10.509 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2024-04-25 04:59:10.908 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[INFO] 2024-04-25 04:59:12.140 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2024-04-25 04:59:12.185 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 25201 ms
+[INFO] 2024-04-25 04:59:18.663 +0800 o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> false 
+[INFO] 2024-04-25 04:59:18.731 +0800 o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+[INFO] 2024-04-25 04:59:18.735 +0800 o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=0.0.0.0, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+[INFO] 2024-04-25 04:59:21.129 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2024-04-25 04:59:21.222 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2024-04-25 04:59:21.243 +0800 o.e.j.s.session:[132] - node0 Scavenging every 600000ms
+[INFO] 2024-04-25 04:59:21.258 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@723b8eff{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.2343601142192185273/, jar:file:/opt/dolphinscheduler/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2024-04-25 04:59:21.276 +0800 o.e.j.s.Server:[415] - Started @55935ms
+[INFO] 2024-04-25 04:59:24.493 +0800 c.z.h.HikariDataSource:[110] - DolphinScheduler - Starting...
+[INFO] 2024-04-25 04:59:26.034 +0800 c.z.h.HikariDataSource:[123] - DolphinScheduler - Start completed.
+[INFO] 2024-04-25 04:59:38.840 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2024-04-25 04:59:39.086 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2024-04-25 04:59:39.169 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2024-04-25 04:59:39.287 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 04:59:39.555 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 04:59:41.434 +0800 c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+[INFO] 2024-04-25 04:59:41.483 +0800 c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.3, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+[INFO] 2024-04-25 04:59:53.944 +0800 o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2024-04-25 04:59:53.967 +0800 o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2024-04-25 04:59:53.968 +0800 o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2024-04-25 04:59:53.984 +0800 o.s.s.q.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2024-04-25 04:59:53.987 +0800 o.s.s.q.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2024-04-25 04:59:53.997 +0800 o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId '2450a8505d921713992393949'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.apache.dolphinscheduler.scheduler.quartz.QuartzZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2024-04-25 04:59:53.997 +0800 o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2024-04-25 04:59:53.997 +0800 o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2024-04-25 04:59:53.999 +0800 o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@29617475
+[INFO] 2024-04-25 04:59:54.327 +0800 o.a.d.a.p.PythonGateway:[710] - PythonGatewayService started on: /0.0.0.0
+[INFO] 2024-04-25 04:59:54.389 +0800 p.GatewayServer:[573] - Gateway Server Started

@@ -1,0 +1,1080 @@
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:10.216 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7750677506775068 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:11.303 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8191575929011509 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:14.319 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.843501326259947 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:15.278 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=432, taskName=hell, firstSubmitTime=1711352655251, startTime=0, taskType=PYTHON, workflowInstanceHost=172.18.0.6:5678, host=172.18.0.5:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13045665829504, processDefineVersion=1, appIds=null, processInstanceId=164, scheduleTime=0, globalParams=null, executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13010050770016, taskParams={"localParams":[],"rawScript":"print('Hello')","resourceList":[]}, environmentConfig=null, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='hell'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13010050770016'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='164'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240325'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240324'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='432'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='hello'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13045662268160'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13045665829504'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240325154415'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.284 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: hell to wait queue success
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.284 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.299 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.301 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.301 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.302 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1711352655301
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.303 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 164_432
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.313 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 432,
+  "taskName" : "hell",
+  "firstSubmitTime" : 1711352655251,
+  "startTime" : 1711352655301,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.6:5678",
+  "host" : "172.18.0.5:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240325/13045665829504/1/164/432.log",
+  "processId" : 0,
+  "processDefineCode" : 13045665829504,
+  "processDefineVersion" : 1,
+  "processInstanceId" : 164,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"print('Hello')\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hell"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "164"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240325"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240324"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "432"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hello"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13045662268160"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13045665829504"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240325154415"
+    }
+  },
+  "taskAppId" : "164_432",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.318 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.321 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.323 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.334 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.18.0.5:1234
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.337 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.340 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/164/432 check successfully
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.341 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.343 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.344 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.345 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: PYTHON create successfully
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.348 +0800 o.a.d.p.t.p.PythonTask:[75] - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "print('Hello')",
+  "resourceList" : [ ]
+}
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.351 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.352 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.354 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.355 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.358 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.359 +0800 o.a.d.p.t.p.PythonTask:[165] - raw python script : print('Hello')
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.361 +0800 o.a.d.p.t.p.PythonTask:[131] - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/164/432
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.363 +0800 o.a.d.p.t.p.PythonTask:[134] - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/164/432/py_164_432.py
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.364 +0800 o.a.d.p.t.p.PythonTask:[141] - #-*- encoding=utf8 -*-
+
+print('Hello')
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.366 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.367 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.367 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/164/432/py_164_432.py
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.368 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.369 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/164/432/164_432.sh
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:15.382 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 866
+[WI-0][TI-432] - [INFO] 2024-03-25 15:44:15.764 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=432, success=true)
+[WI-0][TI-432] - [INFO] 2024-03-25 15:44:15.787 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=432)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:16.383 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/164/432/164_432.sh: line 4: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/164/432/py_164_432.py: Permission denied
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:16.388 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/164/432, processId:866 ,exitStatusCode:126 ,processWaitForStatus:true ,processExitValue:126
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:16.389 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:16.390 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:16.390 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:16.390 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:16.397 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: FAILURE to master : 172.18.0.5:1234
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:16.398 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:16.405 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/164/432
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:16.412 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/164/432
+[WI-164][TI-432] - [INFO] 2024-03-25 15:44:16.413 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-432] - [INFO] 2024-03-25 15:44:16.743 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=432, success=true)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:22.395 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=433, taskName=hell, firstSubmitTime=1711352662358, startTime=0, taskType=PYTHON, workflowInstanceHost=172.18.0.6:5678, host=172.18.0.5:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13045665829504, processDefineVersion=1, appIds=null, processInstanceId=165, scheduleTime=0, globalParams=null, executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13010050770016, taskParams={"localParams":[],"rawScript":"print('Hello')","resourceList":[]}, environmentConfig=null, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='hell'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13010050770016'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='165'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240325'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240324'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='433'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='hello'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13045662268160'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13045665829504'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240325154422'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.398 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: hell to wait queue success
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.398 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.400 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.400 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.400 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.400 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1711352662400
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.401 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 165_433
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.401 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 433,
+  "taskName" : "hell",
+  "firstSubmitTime" : 1711352662358,
+  "startTime" : 1711352662400,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.6:5678",
+  "host" : "172.18.0.5:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240325/13045665829504/1/165/433.log",
+  "processId" : 0,
+  "processDefineCode" : 13045665829504,
+  "processDefineVersion" : 1,
+  "processInstanceId" : 165,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"print('Hello')\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hell"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "165"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240325"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240324"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "433"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hello"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13045662268160"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13045665829504"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240325154422"
+    }
+  },
+  "taskAppId" : "165_433",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.422 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.422 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.422 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.447 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.18.0.5:1234
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.447 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.448 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/165/433 check successfully
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.448 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.449 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.450 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.450 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: PYTHON create successfully
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.450 +0800 o.a.d.p.t.p.PythonTask:[75] - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "print('Hello')",
+  "resourceList" : [ ]
+}
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.451 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.460 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.460 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.460 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.461 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.461 +0800 o.a.d.p.t.p.PythonTask:[165] - raw python script : print('Hello')
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.463 +0800 o.a.d.p.t.p.PythonTask:[131] - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/165/433
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.463 +0800 o.a.d.p.t.p.PythonTask:[134] - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/165/433/py_165_433.py
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.463 +0800 o.a.d.p.t.p.PythonTask:[141] - #-*- encoding=utf8 -*-
+
+print('Hello')
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.464 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.464 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.464 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/165/433/py_165_433.py
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.464 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.465 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/165/433/165_433.sh
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:22.478 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 879
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:22.479 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[WI-0][TI-433] - [INFO] 2024-03-25 15:44:22.751 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=433, success=true)
+[WI-0][TI-433] - [INFO] 2024-03-25 15:44:22.775 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=433)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:23.510 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/165/433/165_433.sh: line 4: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/165/433/py_165_433.py: Permission denied
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:23.511 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/165/433, processId:879 ,exitStatusCode:126 ,processWaitForStatus:true ,processExitValue:126
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:23.511 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:23.512 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:23.512 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:23.512 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:23.521 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: FAILURE to master : 172.18.0.5:1234
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:23.522 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:23.522 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/165/433
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:23.523 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/165/433
+[WI-165][TI-433] - [INFO] 2024-03-25 15:44:23.523 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-433] - [INFO] 2024-03-25 15:44:23.759 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=433, success=true)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:24.372 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8602890260424507 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:29.433 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8521505376344086 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:30.457 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:32.472 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7904509283819628 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:33.490 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7843665768194071 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:44:34.491 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7073702678341488 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:47:58.992 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7736842105263159 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:48:01.035 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7579787234042552 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:48:04.101 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7100271002710027 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:48:06.143 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7032228928617511 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:48:06.145 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=434, taskName=hell, firstSubmitTime=1711352886110, startTime=0, taskType=PYTHON, workflowInstanceHost=172.18.0.6:5678, host=172.18.0.5:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13045665829504, processDefineVersion=1, appIds=null, processInstanceId=166, scheduleTime=0, globalParams=null, executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13010050770016, taskParams={"localParams":[],"rawScript":"print('Hello')","resourceList":[]}, environmentConfig=null, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='hell'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13010050770016'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='166'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240325'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240324'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='434'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='hello'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13045662268160'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13045665829504'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240325154806'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.146 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: hell to wait queue success
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.148 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.151 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.152 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.152 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.152 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1711352886152
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.153 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 166_434
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.168 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 434,
+  "taskName" : "hell",
+  "firstSubmitTime" : 1711352886110,
+  "startTime" : 1711352886152,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.6:5678",
+  "host" : "172.18.0.5:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240325/13045665829504/1/166/434.log",
+  "processId" : 0,
+  "processDefineCode" : 13045665829504,
+  "processDefineVersion" : 1,
+  "processInstanceId" : 166,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"print('Hello')\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hell"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "166"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240325"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240324"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "434"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hello"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13045662268160"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13045665829504"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240325154806"
+    }
+  },
+  "taskAppId" : "166_434",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.174 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.175 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.175 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.181 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.18.0.5:1234
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.182 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.182 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/166/434 check successfully
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.183 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.183 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.183 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.183 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: PYTHON create successfully
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.183 +0800 o.a.d.p.t.p.PythonTask:[75] - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "print('Hello')",
+  "resourceList" : [ ]
+}
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.184 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.184 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.184 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.184 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.184 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.184 +0800 o.a.d.p.t.p.PythonTask:[165] - raw python script : print('Hello')
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.186 +0800 o.a.d.p.t.p.PythonTask:[131] - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/166/434
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.187 +0800 o.a.d.p.t.p.PythonTask:[134] - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/166/434/py_166_434.py
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.187 +0800 o.a.d.p.t.p.PythonTask:[141] - #-*- encoding=utf8 -*-
+
+print('Hello')
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.188 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.189 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.190 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/166/434/py_166_434.py
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.191 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.192 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/166/434/166_434.sh
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:06.204 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 949
+[WI-0][TI-434] - [INFO] 2024-03-25 15:48:07.003 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=434, success=true)
+[WI-0][TI-434] - [INFO] 2024-03-25 15:48:07.018 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=434)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:48:07.208 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/166/434/166_434.sh: line 4: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/166/434/py_166_434.py: Permission denied
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:07.211 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/166/434, processId:949 ,exitStatusCode:126 ,processWaitForStatus:true ,processExitValue:126
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:07.211 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:07.211 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:07.211 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:07.214 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:07.236 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: FAILURE to master : 172.18.0.5:1234
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:07.237 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:07.237 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/166/434
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:07.239 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/166/434
+[WI-166][TI-434] - [INFO] 2024-03-25 15:48:07.240 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-434] - [INFO] 2024-03-25 15:48:07.999 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=434, success=true)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:48:18.233 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8210665185390917 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:48:21.313 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7424657534246575 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-25 15:50:49.555 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - [WARN] 2024-03-25 15:50:54.506 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - [INFO] 2024-03-25 15:50:54.520 +0800 o.a.d.s.w.WorkerServer:[634] - No active profile set, falling back to 1 default profile: "default"
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:02.407 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=7e7bf7c6-2cb3-34d2-a0d5-a56161c67d0e
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:05.523 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:05.527 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:05.541 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$392/302905744] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:05.568 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:05.792 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:05.996 +0800 o.a.d.s.w.c.WorkerConfig:[98] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  exec-threads -> 100
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, distributedTenantEnabled=false, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtection(enabled=true, maxCpuUsagePercentageThresholds=0.7, maxJVMMemoryUsagePercentageThresholds=0.7, maxSystemMemoryUsagePercentageThresholds=0.7, maxDiskUsagePercentageThresholds=0.7)
+  registry-disconnect-strategy -> ConnectStrategyProperties(strategy=WAITING, maxWaitingTime=PT1M40S)
+  task-execute-threads-full-policy: REJECT
+  address -> 172.19.0.6:1234
+  registry-path: /nodes/worker/172.19.0.6:1234
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:06.006 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$da954724] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:06.797 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:06.823 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:06.842 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:06.935 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:07.805 +0800 o.e.j.u.log:[170] - Logging initialized @28664ms to org.eclipse.jetty.util.log.Slf4jLog
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:10.134 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 1235
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:10.142 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:10.712 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:10.712 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 16008 ms
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:14.715 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:14.716 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:14.722 +0800 o.e.j.s.session:[132] - node0 Scavenging every 600000ms
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:14.789 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@52433946{application,/,[file:///tmp/jetty-docbase.1235.3253051730322904677/],AVAILABLE}
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:14.798 +0800 o.e.j.s.Server:[415] - Started @35656ms
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.543 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.596 +0800 o.a.z.ZooKeeper:[98] - Client environment:zookeeper.version=3.8.0-5a02a05eddb59aee6ac762f7ea82e92a68eb9c0f, built on 2022-02-25 08:49 UTC
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.603 +0800 o.a.z.ZooKeeper:[98] - Client environment:host.name=07680144d8ae
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.603 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.version=1.8.0_402
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.607 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.vendor=Temurin
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.608 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.home=/opt/java/openjdk
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.609 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.class.path=/opt/dolphinscheduler/conf:/opt/dolphinscheduler/libs/kerb-client-1.0.1.jar:/opt/dolphinscheduler/libs/spring-cloud-starter-kubernetes-client-config-2.1.3.jar:/opt/dolphinscheduler/libs/oauth2-oidc-sdk-9.35.jar:/opt/dolphinscheduler/libs/jsqlparser-4.4.jar:/opt/dolphinscheduler/libs/reactive-streams-1.0.4.jar:/opt/dolphinscheduler/libs/kubernetes-model-extensions-5.10.2.jar:/opt/dolphinscheduler/libs/zookeeper-3.8.0.jar:/opt/dolphinscheduler/libs/kubernetes-model-apps-5.10.2.jar:/opt/dolphinscheduler/libs/grpc-api-1.41.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-pigeon-3.2.1.jar:/opt/dolphinscheduler/libs/client-java-api-13.0.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-obs-3.2.1.jar:/opt/dolphinscheduler/libs/spring-web-5.3.22.jar:/opt/dolphinscheduler/libs/aws-java-sdk-emr-1.12.300.jar:/opt/dolphinscheduler/libs/spring-context-5.3.22.jar:/opt/dolphinscheduler/libs/gapic-google-cloud-storage-v2-2.18.0-alpha.jar:/opt/dolphinscheduler/libs/spring-cloud-kubernetes-client-config-2.1.3.jar:/opt/dolphinscheduler/libs/jetty-io-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/annotations-13.0.jar:/opt/dolphinscheduler/libs/jpam-1.1.jar:/opt/dolphinscheduler/libs/joda-time-2.10.13.jar:/opt/dolphinscheduler/libs/spring-cloud-kubernetes-client-autoconfig-2.1.3.jar:/opt/dolphinscheduler/libs/kerb-identity-1.0.1.jar:/opt/dolphinscheduler/libs/vertica-jdbc-12.0.4-0.jar:/opt/dolphinscheduler/libs/grpc-googleapis-1.52.1.jar:/opt/dolphinscheduler/libs/aliyun-java-sdk-kms-2.11.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-dvc-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-hana-3.2.1.jar:/opt/dolphinscheduler/libs/kubernetes-httpclient-okhttp-6.0.0.jar:/opt/dolphinscheduler/libs/jline-2.12.jar:/opt/dolphinscheduler/libs/sshd-core-2.8.0.jar:/opt/dolphinscheduler/libs/jna-platform-5.10.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-sqlserver-3.2.1.jar:/opt/dolphinscheduler/libs/commons-beanutils-1.9.4.jar:/opt/dolphinscheduler/libs/grpc-services-1.41.0.jar:/opt/dolphinscheduler/libs/jmespath-java-1.12.300.jar:/opt/dolphinscheduler/libs/curator-client-5.3.0.jar:/opt/dolphinscheduler/libs/proto-google-common-protos-2.0.1.jar:/opt/dolphinscheduler/libs/mybatis-3.5.10.jar:/opt/dolphinscheduler/libs/jackson-annotations-2.13.4.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-all-3.2.1.jar:/opt/dolphinscheduler/libs/jakarta.xml.bind-api-2.3.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-jupyter-3.2.1.jar:/opt/dolphinscheduler/libs/mybatis-plus-extension-3.5.2.jar:/opt/dolphinscheduler/libs/j2objc-annotations-1.3.jar:/opt/dolphinscheduler/libs/Java-WebSocket-1.5.1.jar:/opt/dolphinscheduler/libs/azure-storage-common-12.20.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-sagemaker-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-databend-3.2.1.jar:/opt/dolphinscheduler/libs/google-auth-library-oauth2-http-1.15.0.jar:/opt/dolphinscheduler/libs/jetty-security-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-python-3.2.1.jar:/opt/dolphinscheduler/libs/snappy-java-1.1.10.1.jar:/opt/dolphinscheduler/libs/kubernetes-model-batch-5.10.2.jar:/opt/dolphinscheduler/libs/netty-transport-native-epoll-4.1.53.Final-linux-x86_64.jar:/opt/dolphinscheduler/libs/jackson-core-asl-1.9.13.jar:/opt/dolphinscheduler/libs/gson-fire-1.8.5.jar:/opt/dolphinscheduler/libs/clickhouse-jdbc-0.4.6.jar:/opt/dolphinscheduler/libs/grpc-netty-shaded-1.41.0.jar:/opt/dolphinscheduler/libs/caffeine-2.9.3.jar:/opt/dolphinscheduler/libs/aliyun-java-sdk-core-4.5.10.jar:/opt/dolphinscheduler/libs/jackson-module-jaxb-annotations-2.13.3.jar:/opt/dolphinscheduler/libs/jetty-http-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/jersey-servlet-1.19.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-dinky-3.2.1.jar:/opt/dolphinscheduler/libs/simpleclient_tracer_common-0.15.0.jar:/opt/dolphinscheduler/libs/netty-handler-4.1.53.Final.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-datafactory-3.2.1.jar:/opt/dolphinscheduler/libs/json-path-2.7.0.jar:/opt/dolphinscheduler/libs/mybatis-plus-annotation-3.5.2.jar:/opt/dolphinscheduler/libs/azure-resourcemanager-datafactory-1.0.0-beta.19.jar:/opt/dolphinscheduler/libs/commons-codec-1.11.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-master-3.2.1.jar:/opt/dolphinscheduler/libs/spring-aop-5.3.22.jar:/opt/dolphinscheduler/libs/kubernetes-model-core-5.10.2.jar:/opt/dolphinscheduler/libs/kubernetes-model-networking-5.10.2.jar:/opt/dolphinscheduler/libs/kotlin-stdlib-jdk7-1.6.21.jar:/opt/dolphinscheduler/libs/kerby-xdr-1.0.1.jar:/opt/dolphinscheduler/libs/aliyun-java-sdk-ram-3.1.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-k8s-3.2.1.jar:/opt/dolphinscheduler/libs/guava-31.1-jre.jar:/opt/dolphinscheduler/libs/netty-codec-dns-4.1.53.Final.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-kubeflow-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-azure-sql-3.2.1.jar:/opt/dolphinscheduler/libs/HikariCP-4.0.3.jar:/opt/dolphinscheduler/libs/hive-metastore-2.3.9.jar:/opt/dolphinscheduler/libs/msal4j-1.13.3.jar:/opt/dolphinscheduler/libs/jackson-core-2.13.4.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-hive-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-mr-3.2.1.jar:/opt/dolphinscheduler/libs/kubernetes-model-node-5.10.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-common-3.2.1.jar:/opt/dolphinscheduler/libs/jose4j-0.7.8.jar:/opt/dolphinscheduler/libs/jul-to-slf4j-1.7.36.jar:/opt/dolphinscheduler/libs/azure-identity-1.7.1.jar:/opt/dolphinscheduler/libs/spring-boot-autoconfigure-2.7.3.jar:/opt/dolphinscheduler/libs/commons-math3-3.1.1.jar:/opt/dolphinscheduler/libs/jackson-jaxrs-json-provider-2.13.3.jar:/opt/dolphinscheduler/libs/perfmark-api-0.23.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-doris-3.2.1.jar:/opt/dolphinscheduler/libs/httpclient-4.5.13.jar:/opt/dolphinscheduler/libs/hive-service-2.3.9.jar:/opt/dolphinscheduler/libs/kerby-util-1.0.1.jar:/opt/dolphinscheduler/libs/commons-collections-3.2.2.jar:/opt/dolphinscheduler/libs/hadoop-yarn-client-3.2.4.jar:/opt/dolphinscheduler/libs/commons-text-1.8.jar:/opt/dolphinscheduler/libs/dolphinscheduler-worker-3.2.1.jar:/opt/dolphinscheduler/libs/hadoop-yarn-common-3.2.4.jar:/opt/dolphinscheduler/libs/zeppelin-client-0.10.1.jar:/opt/dolphinscheduler/libs/azure-core-management-1.10.1.jar:/opt/dolphinscheduler/libs/hadoop-mapreduce-client-jobclient-3.2.4.jar:/opt/dolphinscheduler/libs/jta-1.1.jar:/opt/dolphinscheduler/libs/annotations-4.1.1.4.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-alert-3.2.1.jar:/opt/dolphinscheduler/libs/curator-framework-5.3.0.jar:/opt/dolphinscheduler/libs/hive-jdbc-2.3.9.jar:/opt/dolphinscheduler/libs/kyuubi-hive-jdbc-shaded-1.7.0.jar:/opt/dolphinscheduler/libs/client-java-proto-13.0.2.jar:/opt/dolphinscheduler/libs/checker-qual-3.19.0.jar:/opt/dolphinscheduler/libs/jetty-servlet-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/google-cloud-core-grpc-2.10.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-shell-3.2.1.jar:/opt/dolphinscheduler/libs/spring-security-rsa-1.0.10.RELEASE.jar:/opt/dolphinscheduler/libs/avro-1.7.7.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-postgresql-3.2.1.jar:/opt/dolphinscheduler/libs/netty-nio-client-2.17.282.jar:/opt/dolphinscheduler/libs/spring-webmvc-5.3.22.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-mysql-3.2.1.jar:/opt/dolphinscheduler/libs/opentracing-util-0.33.0.jar:/opt/dolphinscheduler/libs/auto-value-1.10.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-all-3.2.1.jar:/opt/dolphinscheduler/libs/jetcd-core-0.5.11.jar:/opt/dolphinscheduler/libs/grpc-context-1.41.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-datasync-3.2.1.jar:/opt/dolphinscheduler/libs/jackson-dataformat-cbor-2.13.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-gcs-3.2.1.jar:/opt/dolphinscheduler/libs/client-java-extended-13.0.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-redshift-3.2.1.jar:/opt/dolphinscheduler/libs/opencsv-2.3.jar:/opt/dolphinscheduler/libs/jcip-annotations-1.0-1.jar:/opt/dolphinscheduler/libs/accessors-smart-2.4.8.jar:/opt/dolphinscheduler/libs/hadoop-client-3.2.4.jar:/opt/dolphinscheduler/libs/commons-collections4-4.3.jar:/opt/dolphinscheduler/libs/metrics-core-4.2.11.jar:/opt/dolphinscheduler/libs/netty-resolver-4.1.53.Final.jar:/opt/dolphinscheduler/libs/parquet-hadoop-bundle-1.8.1.jar:/opt/dolphinscheduler/libs/bucket4j-core-6.2.0.jar:/opt/dolphinscheduler/libs/spring-cloud-starter-3.1.3.jar:/opt/dolphinscheduler/libs/mssql-jdbc-11.2.1.jre8.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final.jar:/opt/dolphinscheduler/libs/kubernetes-model-coordination-5.10.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-linkis-3.2.1.jar:/opt/dolphinscheduler/libs/commons-net-3.6.jar:/opt/dolphinscheduler/libs/netty-transport-native-kqueue-4.1.53.Final-osx-x86_64.jar:/opt/dolphinscheduler/libs/dolphinscheduler-meter-3.2.1.jar:/opt/dolphinscheduler/libs/kubernetes-client-api-6.0.0.jar:/opt/dolphinscheduler/libs/kubernetes-model-certificates-5.10.2.jar:/opt/dolphinscheduler/libs/opencensus-api-0.31.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-mlflow-3.2.1.jar:/opt/dolphinscheduler/libs/kotlin-stdlib-jdk8-1.6.21.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-jdbc-3.2.1.jar:/opt/dolphinscheduler/libs/audience-annotations-0.12.0.jar:/opt/dolphinscheduler/libs/simpleclient_httpserver-0.15.0.jar:/opt/dolphinscheduler/libs/jetty-xml-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/kerby-asn1-1.0.1.jar:/opt/dolphinscheduler/libs/lang-tag-1.6.jar:/opt/dolphinscheduler/libs/api-common-2.6.0.jar:/opt/dolphinscheduler/libs/HdrHistogram-2.1.12.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-abs-3.2.1.jar:/opt/dolphinscheduler/libs/failsafe-2.4.4.jar:/opt/dolphinscheduler/libs/hbase-noop-htrace-4.1.1.jar:/opt/dolphinscheduler/libs/jamon-runtime-2.3.1.jar:/opt/dolphinscheduler/libs/jetty-util-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/threetenbp-1.6.5.jar:/opt/dolphinscheduler/libs/jakarta.activation-api-1.2.2.jar:/opt/dolphinscheduler/libs/kubernetes-model-common-5.10.2.jar:/opt/dolphinscheduler/libs/okhttp-4.9.3.jar:/opt/dolphinscheduler/libs/profiles-2.17.282.jar:/opt/dolphinscheduler/libs/hadoop-auth-3.2.4.jar:/opt/dolphinscheduler/libs/grpc-netty-1.41.0.jar:/opt/dolphinscheduler/libs/httpcore-nio-4.4.15.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-seatunnel-3.2.1.jar:/opt/dolphinscheduler/libs/aws-java-sdk-sagemaker-1.12.300.jar:/opt/dolphinscheduler/libs/oshi-core-6.1.1.jar:/opt/dolphinscheduler/libs/bonecp-0.8.0.RELEASE.jar:/opt/dolphinscheduler/libs/jackson-module-parameter-names-2.13.3.jar:/opt/dolphinscheduler/libs/bcutil-jdk15on-1.69.jar:/opt/dolphinscheduler/libs/aws-json-protocol-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-base-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-all-3.2.1.jar:/opt/dolphinscheduler/libs/derby-10.14.2.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-snowflake-3.2.1.jar:/opt/dolphinscheduler/libs/netty-codec-http2-4.1.53.Final.jar:/opt/dolphinscheduler/libs/jetty-continuation-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/jackson-mapper-asl-1.9.13.jar:/opt/dolphinscheduler/libs/datanucleus-core-4.1.17.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar:/opt/dolphinscheduler/libs/failureaccess-1.0.1.jar:/opt/dolphinscheduler/libs/error_prone_annotations-2.5.1.jar:/opt/dolphinscheduler/libs/kerb-admin-1.0.1.jar:/opt/dolphinscheduler/libs/token-provider-1.0.1.jar:/opt/dolphinscheduler/libs/reactor-netty-core-1.0.22.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-all-3.2.1.jar:/opt/dolphinscheduler/libs/jakarta.servlet-api-4.0.4.jar:/opt/dolphinscheduler/libs/http-client-spi-2.17.282.jar:/opt/dolphinscheduler/libs/regions-2.17.282.jar:/opt/dolphinscheduler/libs/logback-core-1.2.11.jar:/opt/dolphinscheduler/libs/json-1.8.jar:/opt/dolphinscheduler/libs/gax-grpc-2.23.0.jar:/opt/dolphinscheduler/libs/google-http-client-1.42.3.jar:/opt/dolphinscheduler/libs/hive-serde-2.3.9.jar:/opt/dolphinscheduler/libs/jettison-1.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-http-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-zookeeper-3.2.1.jar:/opt/dolphinscheduler/libs/spring-security-crypto-5.7.3.jar:/opt/dolphinscheduler/libs/auth-2.17.282.jar:/opt/dolphinscheduler/libs/proto-google-cloud-storage-v2-2.18.0-alpha.jar:/opt/dolphinscheduler/libs/jetty-server-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/javax.annotation-api-1.3.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-starrocks-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-dataquality-3.2.1.jar:/opt/dolphinscheduler/libs/jcl-over-slf4j-1.7.36.jar:/opt/dolphinscheduler/libs/commons-lang3-3.12.0.jar:/opt/dolphinscheduler/libs/tomcat-embed-el-9.0.65.jar:/opt/dolphinscheduler/libs/opentracing-noop-0.33.0.jar:/opt/dolphinscheduler/libs/client-java-13.0.2.jar:/opt/dolphinscheduler/libs/spring-beans-5.3.22.jar:/opt/dolphinscheduler/libs/snakeyaml-1.33.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-ssh-3.2.1.jar:/opt/dolphinscheduler/libs/commons-pool-1.6.jar:/opt/dolphinscheduler/libs/javax.servlet-api-3.1.0.jar:/opt/dolphinscheduler/libs/hadoop-common-3.2.4.jar:/opt/dolphinscheduler/libs/kubernetes-model-apiextensions-5.10.2.jar:/opt/dolphinscheduler/libs/spring-boot-2.7.3.jar:/opt/dolphinscheduler/libs/bcprov-ext-jdk15on-1.69.jar:/opt/dolphinscheduler/libs/spring-boot-starter-2.7.3.jar:/opt/dolphinscheduler/libs/paranamer-2.3.jar:/opt/dolphinscheduler/libs/httpmime-4.5.13.jar:/opt/dolphinscheduler/libs/reactor-core-3.4.22.jar:/opt/dolphinscheduler/libs/azure-core-1.36.0.jar:/opt/dolphinscheduler/libs/bcpkix-jdk15on-1.69.jar:/opt/dolphinscheduler/libs/kubernetes-model-scheduling-5.10.2.jar:/opt/dolphinscheduler/libs/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/opt/dolphinscheduler/libs/websocket-client-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/unirest-java-3.7.04-standalone.jar:/opt/dolphinscheduler/libs/hadoop-mapreduce-client-core-3.2.4.jar:/opt/dolphinscheduler/libs/google-auth-library-credentials-1.15.0.jar:/opt/dolphinscheduler/libs/azure-storage-internal-avro-12.6.0.jar:/opt/dolphinscheduler/libs/jackson-datatype-jdk8-2.13.3.jar:/opt/dolphinscheduler/libs/spring-expression-5.3.22.jar:/opt/dolphinscheduler/libs/aspectjweaver-1.9.7.jar:/opt/dolphinscheduler/libs/websocket-common-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/client-java-api-fluent-13.0.2.jar:/opt/dolphinscheduler/libs/mybatis-plus-3.5.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-athena-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-oss-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-openmldb-3.2.1.jar:/opt/dolphinscheduler/libs/curator-recipes-5.3.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-api-3.2.1.jar:/opt/dolphinscheduler/libs/netty-all-4.1.53.Final.jar:/opt/dolphinscheduler/libs/netty-resolver-dns-4.1.53.Final.jar:/opt/dolphinscheduler/libs/kubernetes-model-autoscaling-5.10.2.jar:/opt/dolphinscheduler/libs/kerb-util-1.0.1.jar:/opt/dolphinscheduler/libs/grpc-alts-1.41.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-presto-3.2.1.jar:/opt/dolphinscheduler/libs/kerb-simplekdc-1.0.1.jar:/opt/dolphinscheduler/libs/protobuf-java-util-3.17.2.jar:/opt/dolphinscheduler/libs/azure-core-http-netty-1.13.0.jar:/opt/dolphinscheduler/libs/transaction-api-1.1.jar:/opt/dolphinscheduler/libs/datanucleus-api-jdo-4.2.4.jar:/opt/dolphinscheduler/libs/zeppelin-common-0.10.1.jar:/opt/dolphinscheduler/libs/zt-zip-1.15.jar:/opt/dolphinscheduler/libs/animal-sniffer-annotations-1.19.jar:/opt/dolphinscheduler/libs/google-http-client-jackson2-1.42.3.jar:/opt/dolphinscheduler/libs/netty-buffer-4.1.53.Final.jar:/opt/dolphinscheduler/libs/jsr305-3.0.0.jar:/opt/dolphinscheduler/libs/netty-transport-classes-epoll-4.1.79.Final.jar:/opt/dolphinscheduler/libs/spring-boot-actuator-autoconfigure-2.7.3.jar:/opt/dolphinscheduler/libs/simpleclient-0.15.0.jar:/opt/dolphinscheduler/libs/aliyun-sdk-oss-3.15.1.jar:/opt/dolphinscheduler/libs/json-utils-2.17.282.jar:/opt/dolphinscheduler/libs/tephra-api-0.6.0.jar:/opt/dolphinscheduler/libs/spring-jdbc-5.3.22.jar:/opt/dolphinscheduler/libs/grpc-xds-1.41.0.jar:/opt/dolphinscheduler/libs/logback-classic-1.2.11.jar:/opt/dolphinscheduler/libs/google-cloud-storage-2.18.0.jar:/opt/dolphinscheduler/libs/micrometer-registry-prometheus-1.9.3.jar:/opt/dolphinscheduler/libs/grpc-core-1.41.0.jar:/opt/dolphinscheduler/libs/aws-java-sdk-kms-1.12.300.jar:/opt/dolphinscheduler/libs/kubernetes-model-rbac-5.10.2.jar:/opt/dolphinscheduler/libs/ini4j-0.5.4.jar:/opt/dolphinscheduler/libs/spring-boot-starter-web-2.7.3.jar:/opt/dolphinscheduler/libs/spring-cloud-commons-3.1.3.jar:/opt/dolphinscheduler/libs/netty-codec-http-4.1.53.Final.jar:/opt/dolphinscheduler/libs/jetty-client-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/jetcd-common-0.5.11.jar:/opt/dolphinscheduler/libs/metrics-spi-2.17.282.jar:/opt/dolphinscheduler/libs/utils-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-emr-3.2.1.jar:/opt/dolphinscheduler/libs/protocol-core-2.17.282.jar:/opt/dolphinscheduler/libs/micrometer-core-1.9.3.jar:/opt/dolphinscheduler/libs/netty-transport-native-unix-common-4.1.53.Final.jar:/opt/dolphinscheduler/libs/zjsonpatch-0.4.11.jar:/opt/dolphinscheduler/libs/annotations-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-sql-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-common-3.2.1.jar:/opt/dolphinscheduler/libs/apache-client-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-oceanbase-3.2.1.jar:/opt/dolphinscheduler/libs/jdo-api-3.0.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-datax-3.2.1.jar:/opt/dolphinscheduler/libs/postgresql-42.4.1.jar:/opt/dolphinscheduler/libs/jetty-util-ajax-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/gax-2.23.0.jar:/opt/dolphinscheduler/libs/grpc-stub-1.41.0.jar:/opt/dolphinscheduler/libs/libfb303-0.9.3.jar:/opt/dolphinscheduler/libs/spring-core-5.3.22.jar:/opt/dolphinscheduler/libs/jaxb-api-2.3.1.jar:/opt/dolphinscheduler/libs/hive-service-rpc-2.3.9.jar:/opt/dolphinscheduler/libs/kubernetes-model-flowcontrol-5.10.2.jar:/opt/dolphinscheduler/libs/commons-logging-1.1.1.jar:/opt/dolphinscheduler/libs/mybatis-spring-2.0.7.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-oracle-3.2.1.jar:/opt/dolphinscheduler/libs/opencensus-proto-0.2.0.jar:/opt/dolphinscheduler/libs/grpc-protobuf-1.41.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-clickhouse-3.2.1.jar:/opt/dolphinscheduler/libs/spring-cloud-starter-bootstrap-3.1.3.jar:/opt/dolphinscheduler/libs/kubernetes-model-admissionregistration-5.10.2.jar:/opt/dolphinscheduler/libs/grpc-google-cloud-storage-v2-2.18.0-alpha.jar:/opt/dolphinscheduler/libs/esdk-obs-java-bundle-3.23.3.jar:/opt/dolphinscheduler/libs/dnsjava-2.1.7.jar:/opt/dolphinscheduler/libs/asm-9.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-spark-3.2.1.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar:/opt/dolphinscheduler/libs/re2j-1.6.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-vertica-3.2.1.jar:/opt/dolphinscheduler/libs/json-smart-2.4.8.jar:/opt/dolphinscheduler/libs/reactor-netty-http-1.0.22.jar:/opt/dolphinscheduler/libs/google-api-services-storage-v1-rev20220705-2.0.0.jar:/opt/dolphinscheduler/libs/kubernetes-client-6.0.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-kyuubi-3.2.1.jar:/opt/dolphinscheduler/libs/auto-value-annotations-1.10.1.jar:/opt/dolphinscheduler/libs/commons-cli-1.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-data-quality-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-chunjun-3.2.1.jar:/opt/dolphinscheduler/libs/kerb-server-1.0.1.jar:/opt/dolphinscheduler/libs/content-type-2.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-remoteshell-3.2.1.jar:/opt/dolphinscheduler/libs/opencensus-contrib-http-util-0.31.1.jar:/opt/dolphinscheduler/libs/druid-1.2.20.jar:/opt/dolphinscheduler/libs/javolution-5.5.1.jar:/opt/dolphinscheduler/libs/protobuf-java-3.17.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-db2-3.2.1.jar:/opt/dolphinscheduler/libs/aws-java-sdk-core-1.12.300.jar:/opt/dolphinscheduler/libs/spring-boot-starter-logging-2.7.3.jar:/opt/dolphinscheduler/libs/kerby-pkix-1.0.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-procedure-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-etcd-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-sqoop-3.2.1.jar:/opt/dolphinscheduler/libs/zookeeper-jute-3.8.0.jar:/opt/dolphinscheduler/libs/netty-resolver-dns-native-macos-4.1.53.Final-osx-x86_64.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-sagemaker-3.2.1.jar:/opt/dolphinscheduler/libs/spring-boot-configuration-processor-2.6.1.jar:/opt/dolphinscheduler/libs/hive-common-2.3.9.jar:/opt/dolphinscheduler/libs/kerb-common-1.0.1.jar:/opt/dolphinscheduler/libs/stax-api-1.0.1.jar:/opt/dolphinscheduler/libs/kubernetes-model-storageclass-5.10.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-s3-3.2.1.jar:/opt/dolphinscheduler/libs/spring-boot-starter-jetty-2.7.3.jar:/opt/dolphinscheduler/libs/okio-2.8.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-dms-3.2.1.jar:/opt/dolphinscheduler/libs/simpleclient_common-0.15.0.jar:/opt/dolphinscheduler/libs/sdk-core-2.17.282.jar:/opt/dolphinscheduler/libs/javax.activation-api-1.2.0.jar:/opt/dolphinscheduler/libs/netty-handler-proxy-4.1.53.Final.jar:/opt/dolphinscheduler/libs/kerby-config-1.0.1.jar:/opt/dolphinscheduler/libs/netty-tcnative-classes-2.0.53.Final.jar:/opt/dolphinscheduler/libs/jackson-jaxrs-base-2.13.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-trino-3.2.1.jar:/opt/dolphinscheduler/libs/presto-jdbc-0.238.1.jar:/opt/dolphinscheduler/libs/websocket-api-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-flink-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-api-3.2.1.jar:/opt/dolphinscheduler/libs/kubernetes-model-metrics-5.10.2.jar:/opt/dolphinscheduler/libs/datasync-2.17.282.jar:/opt/dolphinscheduler/libs/hadoop-yarn-api-3.2.4.jar:/opt/dolphinscheduler/libs/google-http-client-apache-v2-1.42.3.jar:/opt/dolphinscheduler/libs/hadoop-annotations-3.2.4.jar:/opt/dolphinscheduler/libs/google-oauth-client-1.34.1.jar:/opt/dolphinscheduler/libs/sshd-common-2.8.0.jar:/opt/dolphinscheduler/libs/LatencyUtils-2.0.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-spark-3.2.1.jar:/opt/dolphinscheduler/libs/slf4j-api-1.7.36.jar:/opt/dolphinscheduler/libs/snowflake-jdbc-3.13.29.jar:/opt/dolphinscheduler/libs/jackson-datatype-jsr310-2.13.3.jar:/opt/dolphinscheduler/libs/trino-jdbc-402.jar:/opt/dolphinscheduler/libs/logging-interceptor-4.9.3.jar:/opt/dolphinscheduler/libs/simpleclient_tracer_otel_agent-0.15.0.jar:/opt/dolphinscheduler/libs/janino-3.0.16.jar:/opt/dolphinscheduler/libs/jackson-dataformat-yaml-2.13.3.jar:/opt/dolphinscheduler/libs/ion-java-1.0.2.jar:/opt/dolphinscheduler/libs/commons-dbcp-1.4.jar:/opt/dolphinscheduler/libs/jsp-api-2.1.jar:/opt/dolphinscheduler/libs/google-http-client-gson-1.42.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-hivecli-3.2.1.jar:/opt/dolphinscheduler/libs/spring-boot-actuator-2.7.3.jar:/opt/dolphinscheduler/libs/google-cloud-core-http-2.10.0.jar:/opt/dolphinscheduler/libs/DmJdbcDriver18-8.1.2.79.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-java-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-dameng-3.2.1.jar:/opt/dolphinscheduler/libs/sshd-sftp-2.8.0.jar:/opt/dolphinscheduler/libs/kerb-crypto-1.0.1.jar:/opt/dolphinscheduler/libs/conscrypt-openjdk-uber-2.5.2.jar:/opt/dolphinscheduler/libs/httpcore-4.4.15.jar:/opt/dolphinscheduler/libs/lz4-java-1.4.0.jar:/opt/dolphinscheduler/libs/guava-retrying-2.0.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-flink-stream-3.2.1.jar:/opt/dolphinscheduler/libs/spring-tx-5.3.22.jar:/opt/dolphinscheduler/libs/grpc-auth-1.41.0.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar:/opt/dolphinscheduler/libs/databend-jdbc-0.0.7.jar:/opt/dolphinscheduler/libs/bcprov-jdk15on-1.69.jar:/opt/dolphinscheduler/libs/commons-lang-2.6.jar:/opt/dolphinscheduler/libs/kubernetes-model-policy-5.10.2.jar:/opt/dolphinscheduler/libs/commons-io-2.11.0.jar:/opt/dolphinscheduler/libs/grpc-grpclb-1.41.0.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar:/opt/dolphinscheduler/libs/opentracing-api-0.33.0.jar:/opt/dolphinscheduler/libs/sshd-scp-2.8.0.jar:/opt/dolphinscheduler/libs/reload4j-1.2.18.3.jar:/opt/dolphinscheduler/libs/netty-tcnative-2.0.48.Final.jar:/opt/dolphinscheduler/libs/jdom2-2.0.6.1.jar:/opt/dolphinscheduler/libs/spring-boot-starter-json-2.7.3.jar:/opt/dolphinscheduler/libs/netty-transport-native-epoll-4.1.53.Final.jar:/opt/dolphinscheduler/libs/google-cloud-core-2.10.0.jar:/opt/dolphinscheduler/libs/javax.jdo-3.2.0-m3.jar:/opt/dolphinscheduler/libs/gax-httpjson-0.108.0.jar:/opt/dolphinscheduler/libs/mybatis-plus-core-3.5.2.jar:/opt/dolphinscheduler/libs/auto-service-annotations-1.0.1.jar:/opt/dolphinscheduler/libs/nimbus-jose-jwt-9.22.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-zeppelin-3.2.1.jar:/opt/dolphinscheduler/libs/commons-compress-1.21.jar:/opt/dolphinscheduler/libs/hadoop-hdfs-client-3.2.4.jar:/opt/dolphinscheduler/libs/msal4j-persistence-extension-1.1.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-pytorch-3.2.1.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar:/opt/dolphinscheduler/libs/jetty-servlets-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/woodstox-core-6.4.0.jar:/opt/dolphinscheduler/libs/spring-cloud-kubernetes-commons-2.1.3.jar:/opt/dolphinscheduler/libs/grpc-protobuf-lite-1.41.0.jar:/opt/dolphinscheduler/libs/jetty-webapp-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/eventstream-1.0.1.jar:/opt/dolphinscheduler/libs/commons-compiler-3.1.7.jar:/opt/dolphinscheduler/libs/netty-transport-4.1.53.Final.jar:/opt/dolphinscheduler/libs/spring-cloud-context-3.1.3.jar:/opt/dolphinscheduler/libs/aws-java-sdk-dms-1.12.300.jar:/opt/dolphinscheduler/libs/hive-storage-api-2.4.0.jar:/opt/dolphinscheduler/libs/client-java-spring-integration-13.0.2.jar:/opt/dolphinscheduler/libs/spring-boot-starter-actuator-2.7.3.jar:/opt/dolphinscheduler/libs/third-party-jackson-core-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-hdfs-3.2.1.jar:/opt/dolphinscheduler/libs/netty-codec-4.1.53.Final.jar:/opt/dolphinscheduler/libs/google-http-client-appengine-1.42.3.jar:/opt/dolphinscheduler/libs/commons-configuration2-2.1.1.jar:/opt/dolphinscheduler/libs/datanucleus-rdbms-4.1.19.jar:/opt/dolphinscheduler/libs/swagger-annotations-1.6.2.jar:/opt/dolphinscheduler/libs/simpleclient_tracer_otel-0.15.0.jar:/opt/dolphinscheduler/libs/kotlin-stdlib-common-1.6.21.jar:/opt/dolphinscheduler/libs/aws-core-2.17.282.jar:/opt/dolphinscheduler/libs/kerb-core-1.0.1.jar:/opt/dolphinscheduler/libs/httpasyncclient-4.1.5.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-worker-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-spi-3.2.1.jar:/opt/dolphinscheduler/libs/okhttp-2.7.5.jar:/opt/dolphinscheduler/libs/google-api-client-2.2.0.jar:/opt/dolphinscheduler/libs/kotlin-stdlib-1.6.21.jar:/opt/dolphinscheduler/libs/jakarta.websocket-api-1.1.2.jar:/opt/dolphinscheduler/libs/libthrift-0.9.3.jar:/opt/dolphinscheduler/libs/spring-boot-starter-aop-2.7.3.jar:/opt/dolphinscheduler/libs/netty-common-4.1.53.Final.jar:/opt/dolphinscheduler/libs/log4j-1.2-api-2.17.2.jar:/opt/dolphinscheduler/libs/jackson-databind-2.13.4.jar:/opt/dolphinscheduler/libs/jackson-dataformat-xml-2.13.3.jar:/opt/dolphinscheduler/libs/kubernetes-model-events-5.10.2.jar:/opt/dolphinscheduler/libs/gson-2.9.1.jar:/opt/dolphinscheduler/libs/proto-google-iam-v1-1.9.0.jar:/opt/dolphinscheduler/libs/netty-codec-socks-4.1.53.Final.jar:/opt/dolphinscheduler/libs/zjsonpatch-0.3.0.jar:/opt/dolphinscheduler/libs/hadoop-mapreduce-client-common-3.2.4.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-api-3.2.1.jar:/opt/dolphinscheduler/libs/azure-storage-blob-12.21.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-zeppelin-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-api-3.2.1.jar:/opt/dolphinscheduler/libs/aws-java-sdk-s3-1.12.300.jar:/opt/dolphinscheduler/libs/stax2-api-4.2.1.jar:/opt/dolphinscheduler/libs/jakarta.annotation-api-1.3.5.jar:/opt/dolphinscheduler/libs/kubernetes-model-discovery-5.10.2.jar:/opt/dolphinscheduler/libs/jna-5.10.0.jar:/opt/dolphinscheduler/libs/spring-jcl-5.3.22.jar
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.610 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.610 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.io.tmpdir=/tmp
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.611 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.compiler=<NA>
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.613 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.name=Linux
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.614 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.arch=amd64
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.614 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.version=6.5.0-26-generic
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.615 +0800 o.a.z.ZooKeeper:[98] - Client environment:user.name=root
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.615 +0800 o.a.z.ZooKeeper:[98] - Client environment:user.home=/root
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.616 +0800 o.a.z.ZooKeeper:[98] - Client environment:user.dir=/opt/dolphinscheduler
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.616 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.memory.free=3147MB
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.617 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.memory.max=3840MB
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.617 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.memory.total=3840MB
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.633 +0800 o.a.z.ZooKeeper:[637] - Initiating client connection, connectString=dolphinscheduler-zookeeper:2181 sessionTimeout=30000 watcher=org.apache.curator.ConnectionState@6996bbc4
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.657 +0800 o.a.z.c.X509Util:[77] - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.678 +0800 o.a.z.ClientCnxnSocket:[239] - jute.maxbuffer value is 1048575 Bytes
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.709 +0800 o.a.z.ClientCnxn:[1732] - zookeeper.request.timeout value is 0. feature enabled=false
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.768 +0800 o.a.z.ClientCnxn:[1171] - Opening socket connection to server dolphinscheduler-zookeeper/172.19.0.4:2181.
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.785 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.797 +0800 o.a.z.ClientCnxn:[1173] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:15.912 +0800 o.a.z.ClientCnxn:[1005] - Socket connection established, initiating session, client: /172.19.0.6:36990, server: dolphinscheduler-zookeeper/172.19.0.4:2181
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:16.025 +0800 o.a.z.ClientCnxn:[1444] - Session establishment complete on server dolphinscheduler-zookeeper/172.19.0.4:2181, session id = 0x100003be49c0000, negotiated timeout = 30000
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:16.062 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:16.431 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:16.432 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:17.303 +0800 o.a.d.s.w.r.WorkerRpcServer:[41] - WorkerRpcServer starting...
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:17.959 +0800 o.a.d.e.b.NettyRemotingServer:[112] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:17.960 +0800 o.a.d.s.w.r.WorkerRpcServer:[43] - WorkerRpcServer started...
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.137 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.147 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.148 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.154 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.154 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.166 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.167 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.181 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.194 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.196 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.197 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.200 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.214 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.216 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.217 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.221 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.221 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.225 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.231 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.234 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.238 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.240 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.241 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.245 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.253 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.256 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.262 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.265 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.266 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.270 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.278 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.282 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.286 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.296 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.297 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.300 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.315 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.319 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.320 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.326 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.327 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.335 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.346 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.349 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.353 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.357 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.357 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.362 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.365 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.372 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.374 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.383 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.390 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.394 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.402 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.406 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.406 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.412 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.417 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.424 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.425 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.428 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.433 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.435 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.435 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.439 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.655 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:18.954 +0800 o.a.d.s.w.r.WorkerRegistryClient:[104] - Worker node: 172.19.0.6:1234 registry to ZK /nodes/worker/172.19.0.6:1234 successfully
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:20.002 +0800 o.a.d.c.m.BaseHeartBeatTask:[48] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:20.012 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0548387096774194 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:20.006 +0800 o.a.d.c.m.BaseHeartBeatTask:[50] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:20.037 +0800 o.a.d.s.w.r.WorkerRegistryClient:[114] - Worker node: 172.19.0.6:1234 registry finished
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:20.045 +0800 o.a.d.s.w.m.MessageRetryRunner:[69] - Message retry runner staring
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:20.157 +0800 o.a.d.s.w.m.MessageRetryRunner:[72] - Injected message sender: TaskInstanceExecutionFinishEventSender
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:20.158 +0800 o.a.d.s.w.m.MessageRetryRunner:[72] - Injected message sender: TaskInstanceExecutionInfoUpdateEventSender
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:20.158 +0800 o.a.d.s.w.m.MessageRetryRunner:[72] - Injected message sender: TaskInstanceExecutionRunningEventSender
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:20.158 +0800 o.a.d.s.w.m.MessageRetryRunner:[75] - Message retry runner started
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:21.055 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.279236276849642 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:22.060 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.268170426065163 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:23.062 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.1786600496277915 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:24.074 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2525 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:25.495 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2241992882562278 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:26.499 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2658227848101267 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:27.503 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2468513853904282 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:28.507 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2388059701492538 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:29.524 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2430379746835443 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:30.529 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.225 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:31.567 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2524038461538463 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:32.585 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2285012285012284 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:33.592 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.208955223880597 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:34.602 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2247474747474747 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:35.415 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:35.615 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2320987654320987 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:36.243 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:36.243 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:36.258 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 14 ms
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:36.390 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@acb5508{HTTP/1.1, (http/1.1)}{0.0.0.0:1235}
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:36.394 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 1235 (http/1.1) with context path '/'
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:36.482 +0800 o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 53.811 seconds (JVM running for 57.341)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:36.623 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2236180904522613 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:37.636 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2044887780548628 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:38.645 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0179028132992327 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:39.648 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0024875621890548 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:40.650 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0970149253731343 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:41.675 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0814814814814815 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:42.679 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9925187032418952 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:43.681 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9899244332493703 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:44.684 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.984771573604061 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:45.686 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9798488664987405 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:46.690 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9974874371859296 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:47.692 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9824120603015074 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:48.694 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.972361809045226 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:49.696 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9547738693467336 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:50.698 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.846938775510204 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:54.732 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9065656565656566 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:55.757 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7989949748743719 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:56.759 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8527918781725887 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:57.766 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7735368956743003 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:58.770 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8086734693877551 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:51:59.772 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8753180661577608 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:52:00.775 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9448818897637796 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:52:01.777 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7835051546391751 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:52:02.783 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.806615776081425 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:52:03.785 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7016129032258065 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:52:04.787 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8143165901786592 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:53:40.220 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8530183727034121 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:53:41.239 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.75 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:53:42.242 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7844030013841334 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:53:44.273 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7639257294429708 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:53:45.288 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7142857142857143 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:53:46.292 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8541666666666667 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:53:50.330 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7553763440860215 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:53:52.407 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8072916666666666 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:53:54.452 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7747989276139411 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:53:55.468 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8195876288659794 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:53:56.471 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.78125 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:00.509 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7533728271209894 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:05.554 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7932816537467701 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:07.598 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7319587628865979 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:08.615 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8070652173913043 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:12.641 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7119565217391304 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:22.707 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7874659400544959 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:23.727 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7506768890730764 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:25.754 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7120418848167539 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:26.771 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8367875647668394 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:27.777 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7311827956989247 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:28.778 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7100271002710027 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:36.833 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7771587743732591 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:38.867 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7532467532467532 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:40.904 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7135062325921192 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:45.978 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8620760200914273 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:48.002 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7974025974025973 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:49.015 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7086614173228346 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:56.052 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8059299191374664 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:54:57.066 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.831578947368421 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:55:01.098 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.739247311827957 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:55:06.094 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=469, taskName=hell, firstSubmitTime=1711353305407, startTime=0, taskType=PYTHON, workflowInstanceHost=172.19.0.8:5678, host=172.19.0.6:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13045665829504, processDefineVersion=1, appIds=null, processInstanceId=201, scheduleTime=0, globalParams=null, executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13010050770016, taskParams={"localParams":[],"rawScript":"print('Hello')","resourceList":[]}, environmentConfig=null, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='hell'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13010050770016'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='201'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240325'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240324'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='469'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='hello'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13045662268160'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13045665829504'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240325155505'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-0][TI-0] - [INFO] 2024-03-25 15:55:06.138 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7323661187297551 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.182 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: hell to wait queue success
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.198 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.205 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.206 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.206 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.207 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1711353306207
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.208 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 201_469
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.213 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 469,
+  "taskName" : "hell",
+  "firstSubmitTime" : 1711353305407,
+  "startTime" : 1711353306207,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.19.0.8:5678",
+  "host" : "172.19.0.6:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240325/13045665829504/1/201/469.log",
+  "processId" : 0,
+  "processDefineCode" : 13045665829504,
+  "processDefineVersion" : 1,
+  "processInstanceId" : 201,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"print('Hello')\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hell"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "201"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240325"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240324"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "469"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hello"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13045662268160"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13045665829504"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240325155505"
+    }
+  },
+  "taskAppId" : "201_469",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.216 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.217 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.218 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.426 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.19.0.6:1234
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.508 +0800 o.a.d.c.u.OSUtils:[231] - create linux os user: default
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.510 +0800 o.a.d.c.u.OSUtils:[233] - execute cmd: sudo useradd -g root
+ default
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.651 +0800 o.a.d.c.u.OSUtils:[190] - create user default success
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.652 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.663 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/201/469 check successfully
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.668 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.681 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.718 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.727 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: PYTHON create successfully
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.730 +0800 o.a.d.p.t.p.PythonTask:[75] - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "print('Hello')",
+  "resourceList" : [ ]
+}
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.732 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.732 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.743 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.744 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.747 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.747 +0800 o.a.d.p.t.p.PythonTask:[165] - raw python script : print('Hello')
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.782 +0800 o.a.d.p.t.p.PythonTask:[131] - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/201/469
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.802 +0800 o.a.d.p.t.p.PythonTask:[134] - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/201/469/py_201_469.py
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.803 +0800 o.a.d.p.t.p.PythonTask:[141] - #-*- encoding=utf8 -*-
+
+print('Hello')
+[WI-0][TI-469] - [INFO] 2024-03-25 15:55:06.856 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=469, success=true)
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.895 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.896 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.896 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/201/469/py_201_469.py
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.896 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.900 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/201/469/201_469.sh
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:06.908 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 122
+[WI-0][TI-0] - [INFO] 2024-03-25 15:55:07.171 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9333186059900123 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-469] - [INFO] 2024-03-25 15:55:07.799 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=469)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:55:07.916 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/201/469/201_469.sh: line 4: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/201/469/py_201_469.py: Permission denied
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:07.931 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/201/469, processId:122 ,exitStatusCode:126 ,processWaitForStatus:true ,processExitValue:126
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:07.933 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:07.933 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:07.934 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:07.936 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:07.959 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: FAILURE to master : 172.19.0.6:1234
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:07.960 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:07.960 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/201/469
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:08.023 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/201/469
+[WI-201][TI-469] - [INFO] 2024-03-25 15:55:08.075 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-0] - [INFO] 2024-03-25 15:55:08.176 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9573333333333334 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-469] - [INFO] 2024-03-25 15:55:08.794 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=469, success=true)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:55:09.179 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7191535363108637 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:55:17.219 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7348066298342542 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:55:20.246 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7466380126757485 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:55:22.280 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7026315789473684 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:55:26.412 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8119891008174388 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:57:19.402 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7415143603133159 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:57:26.515 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=470, taskName=hell, firstSubmitTime=1711353446492, startTime=0, taskType=PYTHON, workflowInstanceHost=172.19.0.8:5678, host=172.19.0.6:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13045665829504, processDefineVersion=1, appIds=null, processInstanceId=202, scheduleTime=0, globalParams=null, executorId=1, cmdTypeIfComplement=0, tenantCode=default, processDefineId=0, projectId=0, projectCode=13010050770016, taskParams={"localParams":[],"rawScript":"print('Hello')","resourceList":[]}, environmentConfig=null, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='hell'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13010050770016'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='202'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240325'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240324'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='470'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='hello'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13045662268160'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13045665829504'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240325155726'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.517 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: hell to wait queue success
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.518 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.524 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.524 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.524 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.524 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1711353446524
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.525 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 202_470
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.529 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 470,
+  "taskName" : "hell",
+  "firstSubmitTime" : 1711353446492,
+  "startTime" : 1711353446524,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.19.0.8:5678",
+  "host" : "172.19.0.6:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240325/13045665829504/1/202/470.log",
+  "processId" : 0,
+  "processDefineCode" : 13045665829504,
+  "processDefineVersion" : 1,
+  "processInstanceId" : 202,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"print('Hello')\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hell"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "202"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240325"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240324"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "470"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hello"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13045662268160"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13045665829504"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240325155726"
+    }
+  },
+  "taskAppId" : "202_470",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.530 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.531 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.531 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.540 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.19.0.6:1234
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.541 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.543 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/202/470 check successfully
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.544 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.544 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.545 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.546 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: PYTHON create successfully
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.546 +0800 o.a.d.p.t.p.PythonTask:[75] - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "print('Hello')",
+  "resourceList" : [ ]
+}
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.547 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.547 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.548 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.548 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.548 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.549 +0800 o.a.d.p.t.p.PythonTask:[165] - raw python script : print('Hello')
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.549 +0800 o.a.d.p.t.p.PythonTask:[131] - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/202/470
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.550 +0800 o.a.d.p.t.p.PythonTask:[134] - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/202/470/py_202_470.py
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.551 +0800 o.a.d.p.t.p.PythonTask:[141] - #-*- encoding=utf8 -*-
+
+print('Hello')
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.553 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.553 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.553 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/202/470/py_202_470.py
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.553 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.554 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/202/470/202_470.sh
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:26.559 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 187
+[WI-0][TI-470] - [INFO] 2024-03-25 15:57:27.311 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=470, success=true)
+[WI-0][TI-470] - [INFO] 2024-03-25 15:57:27.343 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=470)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:57:27.560 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/202/470/202_470.sh: line 4: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/202/470/py_202_470.py: Permission denied
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:27.563 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/202/470, processId:187 ,exitStatusCode:126 ,processWaitForStatus:true ,processExitValue:126
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:27.564 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:27.564 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:27.564 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:27.564 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:27.570 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: FAILURE to master : 172.19.0.6:1234
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:27.570 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:27.570 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/202/470
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:27.571 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13045665829504_1/202/470
+[WI-202][TI-470] - [INFO] 2024-03-25 15:57:27.571 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-470] - [INFO] 2024-03-25 15:57:28.299 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionFinishEventAckListenFunction:[44] - Receive TaskInstanceExecutionFinishEventAck: TaskInstanceExecutionFinishEventAck(taskInstanceId=470, success=true)
+[WI-0][TI-0] - [INFO] 2024-03-25 15:57:33.487 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8419689119170984 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:57:34.516 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8809523809523809 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:57:35.519 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7546666666666667 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-25 15:57:36.522 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7135549872122762 is over then the MaxCpuUsagePercentageThresholds 0.7

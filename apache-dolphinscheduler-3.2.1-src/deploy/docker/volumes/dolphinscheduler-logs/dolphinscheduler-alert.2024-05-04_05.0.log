@@ -1,0 +1,89 @@
+[WARN] 2024-05-04 05:02:59.203 +0800 org.apache.zookeeper.ClientCnxn:[1292] - Session 0x1000005169a0002 for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x1000005169a0002, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[INFO] 2024-05-04 05:02:59.337 +0800 org.apache.curator.framework.state.ConnectionStateManager:[252] - State change: SUSPENDED
+[ERROR] 2024-05-04 05:03:00.339 +0800 org.apache.zookeeper.client.StaticHostProvider:[148] - Unable to resolve address: dolphinscheduler-zookeeper:2181
+java.net.UnknownHostException: dolphinscheduler-zookeeper: Temporary failure in name resolution
+	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:867)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:815)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WARN] 2024-05-04 05:03:01.006 +0800 org.apache.zookeeper.ClientCnxn:[1292] - Session 0x1000005169a0002 for server dolphinscheduler-zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address dolphinscheduler-zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+[ERROR] 2024-05-04 05:03:02.110 +0800 org.apache.zookeeper.client.StaticHostProvider:[148] - Unable to resolve address: dolphinscheduler-zookeeper:2181
+java.net.UnknownHostException: dolphinscheduler-zookeeper
+	at java.net.InetAddress$CachedAddresses.get(InetAddress.java:764)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WARN] 2024-05-04 05:03:02.563 +0800 org.apache.zookeeper.ClientCnxn:[1292] - Session 0x1000005169a0002 for server dolphinscheduler-zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address dolphinscheduler-zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+[ERROR] 2024-05-04 05:03:03.667 +0800 org.apache.zookeeper.client.StaticHostProvider:[148] - Unable to resolve address: dolphinscheduler-zookeeper:2181
+java.net.UnknownHostException: dolphinscheduler-zookeeper
+	at java.net.InetAddress$CachedAddresses.get(InetAddress.java:764)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WARN] 2024-05-04 05:03:04.483 +0800 org.apache.zookeeper.ClientCnxn:[1292] - Session 0x1000005169a0002 for server dolphinscheduler-zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address dolphinscheduler-zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+[ERROR] 2024-05-04 05:03:05.586 +0800 org.apache.zookeeper.client.StaticHostProvider:[148] - Unable to resolve address: dolphinscheduler-zookeeper:2181
+java.net.UnknownHostException: dolphinscheduler-zookeeper
+	at java.net.InetAddress$CachedAddresses.get(InetAddress.java:764)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WARN] 2024-05-04 05:03:06.067 +0800 org.apache.zookeeper.ClientCnxn:[1292] - Session 0x1000005169a0002 for server dolphinscheduler-zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address dolphinscheduler-zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+[ERROR] 2024-05-04 05:03:07.172 +0800 org.apache.zookeeper.client.StaticHostProvider:[148] - Unable to resolve address: dolphinscheduler-zookeeper:2181
+java.net.UnknownHostException: dolphinscheduler-zookeeper
+	at java.net.InetAddress$CachedAddresses.get(InetAddress.java:764)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WARN] 2024-05-04 05:03:07.834 +0800 org.apache.zookeeper.ClientCnxn:[1292] - Session 0x1000005169a0002 for server dolphinscheduler-zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address dolphinscheduler-zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)

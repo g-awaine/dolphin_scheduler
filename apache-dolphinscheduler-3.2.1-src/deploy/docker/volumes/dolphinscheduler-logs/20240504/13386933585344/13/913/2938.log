@@ -1,0 +1,175 @@
+[INFO] 2024-05-04 23:18:03.674 +0800 - Submit LogicTask: create sentiment analysis instances to MasterTaskExecutorThreadPool success
+[INFO] 2024-05-04 23:18:03.693 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 23:18:03.705 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-04 23:18:03.707 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 23:18:03.708 +0800 - Begin to initialize task
+[INFO] 2024-05-04 23:18:03.711 +0800 - Set task startTime: 1714835883711
+[INFO] 2024-05-04 23:18:03.712 +0800 - Set task appId: 913_2938
+[INFO] 2024-05-04 23:18:03.723 +0800 - End initialize task {
+  "taskInstanceId" : 2938,
+  "taskName" : "create sentiment analysis instances",
+  "firstSubmitTime" : 1714835883543,
+  "startTime" : 1714835883711,
+  "taskType" : "DYNAMIC",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.0.11:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240504/13386933585344/13/913/2938.log",
+  "processId" : 0,
+  "processDefineCode" : 13386933585344,
+  "processDefineVersion" : 13,
+  "processInstanceId" : 913,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topics\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\\\"reddit_post_filtered|reddit_post_sa\\\",\\\"gnews_filtered|gnews_sa\\\"\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":13386218435520,\"maxNumOfSubWorkflowInstances\":1024,\"degreeOfParallelism\":2,\"filterCondition\":\"\",\"listParameters\":[{\"name\":\"topics\",\"value\":\"${topics}\",\"separator\":\",\",\"disabled\":true}]}",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "create sentiment analysis instances"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "topics" : {
+      "prop" : "topics",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "\"reddit_post_filtered|reddit_post_sa\",\"gnews_filtered|gnews_sa\""
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2938"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386894519360"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504231803"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "913"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240503"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sentiment_analysis_main"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386933585344"
+    }
+  },
+  "taskAppId" : "913_2938",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-04 23:18:03.735 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 23:18:03.735 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-04 23:18:03.737 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 23:18:03.747 +0800 - Send task status RUNNING_EXECUTION to master 172.18.0.11:5678
+[INFO] 2024-05-04 23:18:03.755 +0800 - Success initialize task parameters: 
+{
+  "localParams" : [ ],
+  "varPool" : null,
+  "processDefinitionCode" : 13386218435520,
+  "maxNumOfSubWorkflowInstances" : 1024,
+  "degreeOfParallelism" : 2,
+  "filterCondition" : "",
+  "listParameters" : [ {
+    "name" : "topics",
+    "value" : "${topics}",
+    "separator" : ","
+  } ]
+}
+[INFO] 2024-05-04 23:18:03.764 +0800 - Initialized task plugin instance: DYNAMIC successfully
+[INFO] 2024-05-04 23:18:03.765 +0800 - Initialize taskVarPool: null successfully
+[INFO] 2024-05-04 23:18:03.772 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 23:18:03.774 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-04 23:18:03.775 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 23:18:03.808 +0800 - parameter group size: 2
+[INFO] 2024-05-04 23:18:03.809 +0800 - parameter group: {topics="reddit_post_filtered|reddit_post_sa"}
+[INFO] 2024-05-04 23:18:03.809 +0800 - parameter group: {topics="gnews_filtered|gnews_sa"}
+[INFO] 2024-05-04 23:18:03.874 +0800 - Expected number of runs : 2, actual number of runs : 2
+[INFO] 2024-05-04 23:18:03.895 +0800 - insert 2 relation sub workflow
+[INFO] 2024-05-04 23:18:03.962 +0800 - There are 2 sub process instances that can be started
+[INFO] 2024-05-04 23:18:03.973 +0800 - start sub process instance, sub process instance id: 914, command: Command(id=1355, commandType=DYNAMIC_GENERATION, processDefinitionCode=13386218435520, executorId=1, commandParam={"StartParams":"{\"topics\":\"\\\"reddit_post_filtered|reddit_post_sa\\\",\\\"gnews_filtered|gnews_sa\\\"\"}"}, taskDependType=TASK_POST, failureStrategy=CONTINUE, warningType=NONE, warningGroupId=0, scheduleTime=null, startTime=Sat May 04 23:18:03 GMT+08:00 2024, processInstancePriority=MEDIUM, updateTime=Sat May 04 23:18:03 GMT+08:00 2024, workerGroup=default, tenantCode=null, environmentCode=null, dryRun=0, processInstanceId=914, processDefinitionVersion=20, testFlag=0)
+[INFO] 2024-05-04 23:18:03.980 +0800 - start sub process instance, sub process instance id: 915, command: Command(id=1356, commandType=DYNAMIC_GENERATION, processDefinitionCode=13386218435520, executorId=1, commandParam={"StartParams":"{\"topics\":\"\\\"reddit_post_filtered|reddit_post_sa\\\",\\\"gnews_filtered|gnews_sa\\\"\"}"}, taskDependType=TASK_POST, failureStrategy=CONTINUE, warningType=NONE, warningGroupId=0, scheduleTime=null, startTime=Sat May 04 23:18:03 GMT+08:00 2024, processInstancePriority=MEDIUM, updateTime=Sat May 04 23:18:03 GMT+08:00 2024, workerGroup=default, tenantCode=null, environmentCode=null, dryRun=0, processInstanceId=915, processDefinitionVersion=20, testFlag=0)
+[INFO] 2024-05-04 23:18:54.134 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:19:04.162 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:19:14.187 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:19:24.201 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:19:34.207 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:19:44.259 +0800 - all sub process instance finish
+[INFO] 2024-05-04 23:19:44.261 +0800 - success sub process instance count: 0
+[INFO] 2024-05-04 23:19:44.262 +0800 - failed sub process instance count: 2
+[INFO] 2024-05-04 23:19:44.264 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 23:19:44.264 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-04 23:19:44.264 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 23:19:44.266 +0800 - Task execute finished, removed the TaskExecutionContext
+[INFO] 2024-05-04 23:19:44.295 +0800 - Send task status: FAILURE to master: 172.18.0.11:5678 successfully
+[INFO] 2024-05-04 23:19:44.296 +0800 - Execute task finished, will send the task execute result to master, the current task execute result is FAILURE
+[INFO] 2024-05-04 23:19:44.297 +0800 - FINALIZE_SESSION

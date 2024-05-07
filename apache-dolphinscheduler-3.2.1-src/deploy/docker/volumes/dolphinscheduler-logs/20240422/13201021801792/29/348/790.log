@@ -1,0 +1,195 @@
+[INFO] 2024-04-22 02:21:39.735 +0800 - Submit LogicTask: Check file existence to MasterTaskExecutorThreadPool success
+[INFO] 2024-04-22 02:21:39.809 +0800 - ***********************************************************************************************
+[INFO] 2024-04-22 02:21:39.849 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-22 02:21:39.851 +0800 - ***********************************************************************************************
+[INFO] 2024-04-22 02:21:39.854 +0800 - Begin to initialize task
+[INFO] 2024-04-22 02:21:39.854 +0800 - Set task startTime: 1713723699854
+[INFO] 2024-04-22 02:21:39.855 +0800 - Set task appId: 348_790
+[INFO] 2024-04-22 02:21:39.888 +0800 - End initialize task {
+  "taskInstanceId" : 790,
+  "taskName" : "Check file existence",
+  "firstSubmitTime" : 1713723699350,
+  "startTime" : 1713723699854,
+  "taskType" : "SWITCH",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.0.12:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240422/13201021801792/29/348/790.log",
+  "processId" : 0,
+  "processDefineCode" : 13201021801792,
+  "processDefineVersion" : 29,
+  "processInstanceId" : 348,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"folder\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"in\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 7,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"\",\"resourceList\":[],\"switchResult\":{\"dependTaskList\":[{\"condition\":\"-n \\\"${raw_file_dir}\\\"\",\"nextNode\":13340390094208}],\"nextNode\":13348985859488}}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "Check file existence"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240422"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "790"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13348933988640"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240422022139"
+    },
+    "folder" : {
+      "prop" : "folder",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "in"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "348"
+    },
+    "raw_file_dir" : {
+      "prop" : "raw_file_dir",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "./342-20240421.json"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240421"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocess_post"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13201021801792"
+    }
+  },
+  "taskAppId" : "348_790",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"raw_file_dir\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"./342-20240421.json\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-22 02:21:39.901 +0800 - ***********************************************************************************************
+[INFO] 2024-04-22 02:21:39.911 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-22 02:21:39.911 +0800 - ***********************************************************************************************
+[INFO] 2024-04-22 02:21:39.944 +0800 - Send task status RUNNING_EXECUTION to master 172.18.0.12:5678
+[INFO] 2024-04-22 02:21:39.954 +0800 - Success initialize task parameters: 
+{
+  "localParams" : null,
+  "varPool" : null,
+  "dependRelation" : null,
+  "relation" : null,
+  "nextNode" : [ 13348985859488 ],
+  "resultConditionLocation" : 0,
+  "dependTaskList" : [ {
+    "condition" : "-n \"${raw_file_dir}\"",
+    "nextNode" : [ 13340390094208 ]
+  } ]
+}
+[INFO] 2024-04-22 02:21:39.970 +0800 - Initialized task plugin instance: SWITCH successfully
+[INFO] 2024-04-22 02:21:39.973 +0800 - Initialize taskVarPool: [{"prop":"raw_file_dir","direct":"IN","type":"VARCHAR","value":"./342-20240421.json"}] successfully
+[INFO] 2024-04-22 02:21:39.976 +0800 - ***********************************************************************************************
+[INFO] 2024-04-22 02:21:39.977 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-22 02:21:39.978 +0800 - ***********************************************************************************************
+[INFO] 2024-04-22 02:21:39.984 +0800 - Begin to execute 1 condition: -n "${raw_file_dir}" 
+[INFO] 2024-04-22 02:21:41.285 +0800 - paramName:raw_file_dir，paramValue:"./342-20240421.json"
+[INFO] 2024-04-22 02:21:41.286 +0800 - Format condition sentence::-n ""./342-20240421.json"" successfully
+[INFO] 2024-04-22 02:21:41.449 +0800 - Execute condition sentence: -n ""./342-20240421.json"" failed
+javax.script.ScriptException: <eval>:1:4 Expected ; but found 
+-n ""./342-20240421.json""
+    ^ in <eval> at line number 1 at column number 4
+	at jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.compileImpl(NashornScriptEngine.java:537)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.compileImpl(NashornScriptEngine.java:524)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.evalImpl(NashornScriptEngine.java:402)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.eval(NashornScriptEngine.java:155)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at org.apache.dolphinscheduler.server.master.utils.SwitchTaskUtils.evaluate(SwitchTaskUtils.java:61)
+	at org.apache.dolphinscheduler.server.master.runner.task.switchtask.SwitchLogicTask.calculateConditionResult(SwitchLogicTask.java:113)
+	at org.apache.dolphinscheduler.server.master.runner.task.switchtask.SwitchLogicTask.handle(SwitchLogicTask.java:72)
+	at org.apache.dolphinscheduler.server.master.runner.execute.SyncMasterTaskExecutor.executeTask(SyncMasterTaskExecutor.java:44)
+	at org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor.run(MasterTaskExecutor.java:110)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: jdk.nashorn.internal.runtime.ParserException: <eval>:1:4 Expected ; but found 
+-n ""./342-20240421.json""
+    ^
+	at jdk.nashorn.internal.parser.AbstractParser.error(AbstractParser.java:294)
+	at jdk.nashorn.internal.parser.AbstractParser.error(AbstractParser.java:279)
+	at jdk.nashorn.internal.parser.AbstractParser.expectDontAdvance(AbstractParser.java:350)
+	at jdk.nashorn.internal.parser.AbstractParser.expect(AbstractParser.java:337)
+	at jdk.nashorn.internal.parser.Parser.endOfLine(Parser.java:3372)
+	at jdk.nashorn.internal.parser.Parser.expressionStatement(Parser.java:1160)
+	at jdk.nashorn.internal.parser.Parser.statement(Parser.java:967)
+	at jdk.nashorn.internal.parser.Parser.sourceElements(Parser.java:773)
+	at jdk.nashorn.internal.parser.Parser.program(Parser.java:709)
+	at jdk.nashorn.internal.parser.Parser.parse(Parser.java:283)
+	at jdk.nashorn.internal.parser.Parser.parse(Parser.java:249)
+	at jdk.nashorn.internal.runtime.Context.compile(Context.java:1284)
+	at jdk.nashorn.internal.runtime.Context.compileScript(Context.java:1251)
+	at jdk.nashorn.internal.runtime.Context.compileScript(Context.java:627)
+	at jdk.nashorn.api.scripting.NashornScriptEngine.compileImpl(NashornScriptEngine.java:535)
+	... 12 common frames omitted
+[INFO] 2024-04-22 02:21:41.454 +0800 - The switch task depend result:FAILED, switch branch:1
+[INFO] 2024-04-22 02:21:41.455 +0800 - Switch task execute finished, condition result is: FAILED, task status is: FAILURE
+[INFO] 2024-04-22 02:21:41.457 +0800 - ***********************************************************************************************
+[INFO] 2024-04-22 02:21:41.458 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-22 02:21:41.458 +0800 - ***********************************************************************************************
+[INFO] 2024-04-22 02:21:41.483 +0800 - Send task status: FAILURE to master: 172.18.0.12:5678 successfully
+[INFO] 2024-04-22 02:21:41.484 +0800 - Execute task finished, will send the task execute result to master, the current task execute result is FAILURE
+[INFO] 2024-04-22 02:21:41.488 +0800 - FINALIZE_SESSION

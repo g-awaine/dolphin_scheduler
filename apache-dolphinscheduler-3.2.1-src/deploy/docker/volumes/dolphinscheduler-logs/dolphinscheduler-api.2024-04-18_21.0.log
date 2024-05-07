@@ -1,0 +1,47 @@
+[INFO] 2024-04-18 21:11:38.671 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13300689577641, processVersion:9.
+[INFO] 2024-04-18 21:11:38.681 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13300689577641, processVersion:10.
+[INFO] 2024-04-18 21:11:38.691 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13300689577641, processVersion:10.
+[INFO] 2024-04-18 21:11:44.343 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13300689577641, commandCount:1.
+[INFO] 2024-04-18 21:12:30.275 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:704, taskInstanceName:send to kafka test topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13300689577641/10/311/704.log
+[INFO] 2024-04-18 21:12:30.365 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:704, taskInstanceName:send to kafka test topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13300689577641/10/311/704.log
+[INFO] 2024-04-18 21:19:25.117 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[397] - Save process definition complete, processCode:13314043532704, processVersion:1.
+[INFO] 2024-04-18 21:19:25.124 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[408] - Save process task relations complete, projectCode:13001194483488, processCode:13314043532704, processVersion:1.
+[INFO] 2024-04-18 21:19:40.543 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13314043532704, commandCount:1.
+[INFO] 2024-04-18 21:20:10.602 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:705, taskInstanceName:kafka, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13314043532704/1/312/705.log
+[INFO] 2024-04-18 21:20:10.725 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:705, taskInstanceName:kafka, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13314043532704/1/312/705.log
+[INFO] 2024-04-18 21:20:53.993 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[765] - Update process definition complete, projectCode:13001194483488, processDefinitionName:afsdf.
+[INFO] 2024-04-18 21:20:54.005 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[770] - Update task relations complete, projectCode:13001194483488, processDefinitionCode:13314043532704, processDefinitionVersion:2.
+[INFO] 2024-04-18 21:20:54.009 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[791] - Update process instance complete, projectCode:13001194483488, processDefinitionCode:13314043532704, processDefinitionVersion:2, processInstanceId:312
+[INFO] 2024-04-18 21:21:22.925 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13314043532704, commandCount:1.
+[INFO] 2024-04-18 21:21:28.314 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13314043532704, commandCount:1.
+[INFO] 2024-04-18 21:21:46.602 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:706, taskInstanceName:kafka, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13314043532704/2/313/706.log
+[INFO] 2024-04-18 21:21:46.920 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:706, taskInstanceName:kafka, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13314043532704/2/313/706.log
+[INFO] 2024-04-18 21:26:42.277 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13314043532704, processVersion:2.
+[INFO] 2024-04-18 21:26:42.282 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13314043532704, processVersion:3.
+[INFO] 2024-04-18 21:26:42.288 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13314043532704, processVersion:3.
+[INFO] 2024-04-18 21:26:55.235 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13314043532704, commandCount:1.
+[INFO] 2024-04-18 21:27:39.627 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:708, taskInstanceName:kafka, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13314043532704/3/315/708.log
+[INFO] 2024-04-18 21:27:39.847 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:708, taskInstanceName:kafka, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13314043532704/3/315/708.log
+[INFO] 2024-04-18 21:37:20.340 +0800 o.a.d.a.s.i.EnvironmentServiceImpl:[149] - Environment-WorkerGroup relation create complete, environmentName:kafka, workerGroup:default.
+[INFO] 2024-04-18 21:38:29.938 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13300689577641, processVersion:10.
+[INFO] 2024-04-18 21:38:29.945 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13300689577641, processVersion:11.
+[INFO] 2024-04-18 21:38:29.955 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13300689577641, processVersion:11.
+[INFO] 2024-04-18 21:39:33.027 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13300689577641, commandCount:1.
+[INFO] 2024-04-18 21:40:24.457 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13300689577641, commandCount:1.
+[ERROR] 2024-04-18 21:40:50.954 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:718.
+[INFO] 2024-04-18 21:41:13.642 +0800 o.a.d.a.s.i.ProjectPreferenceServiceImpl:[84] - Project preference is created and id is :1
+[INFO] 2024-04-18 21:42:12.194 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13300689577641, commandCount:1.
+[ERROR] 2024-04-18 21:42:37.832 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:723.
+[ERROR] 2024-04-18 21:42:40.163 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:723.
+[INFO] 2024-04-18 21:43:02.990 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13300689577641, commandCount:1.
+[INFO] 2024-04-18 21:52:28.911 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[858] - The task has not changed, so skip
+[INFO] 2024-04-18 21:52:28.912 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13300689577641, processVersion:11.
+[INFO] 2024-04-18 21:52:28.936 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13300689577641, processVersion:12.
+[INFO] 2024-04-18 21:52:28.946 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13300689577641, processVersion:12.
+[INFO] 2024-04-18 21:57:56.984 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[397] - Save process definition complete, processCode:13314339450656, processVersion:1.
+[INFO] 2024-04-18 21:57:56.991 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[408] - Save process task relations complete, projectCode:13001194483488, processCode:13314339450656, processVersion:1.
+[INFO] 2024-04-18 21:58:11.888 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[858] - The task has not changed, so skip
+[INFO] 2024-04-18 21:58:11.891 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13314339450656, processVersion:1.
+[INFO] 2024-04-18 21:58:11.898 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13314339450656, processVersion:2.
+[INFO] 2024-04-18 21:58:11.907 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13314339450656, processVersion:2.
+[INFO] 2024-04-18 21:58:25.364 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13314339450656, commandCount:1.

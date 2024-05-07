@@ -1,0 +1,7 @@
+[INFO] 2024-04-08 15:06:19.655 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-04-08 15:06:19.703 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-04-08 15:06:19.704 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-04-08 15:06:19.705 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-04-08 15:06:19.706 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-04-08 15:06:19.706 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-04-08 15:06:19.718 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]

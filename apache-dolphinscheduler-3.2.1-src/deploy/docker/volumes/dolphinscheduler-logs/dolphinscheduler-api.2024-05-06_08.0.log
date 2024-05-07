@@ -1,0 +1,403 @@
+[WARN] 2024-05-06 08:14:16.162 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2024-05-06 08:14:32.537 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2024-05-06 08:14:32.572 +0800 o.a.d.a.ApiApplicationServer:[640] - The following 1 profile is active: "postgresql"
+[INFO] 2024-05-06 08:14:54.541 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=b9ea3c4b-94e1-3be4-b636-a78d78ec03d8
+[INFO] 2024-05-06 08:15:01.710 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-05-06 08:15:02.188 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-05-06 08:15:02.318 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-05-06 08:15:02.327 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$451/1736826640] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-05-06 08:15:02.337 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-05-06 08:15:02.347 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-05-06 08:15:02.520 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-05-06 08:15:02.637 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-05-06 08:15:06.164 +0800 o.e.j.u.log:[170] - Logging initialized @81186ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2024-05-06 08:15:09.548 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2024-05-06 08:15:09.661 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[INFO] 2024-05-06 08:15:10.649 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2024-05-06 08:15:10.650 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 37727 ms
+[INFO] 2024-05-06 08:15:25.570 +0800 o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> false 
+[INFO] 2024-05-06 08:15:25.580 +0800 o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+[INFO] 2024-05-06 08:15:25.592 +0800 o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=0.0.0.0, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+[INFO] 2024-05-06 08:15:26.738 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2024-05-06 08:15:26.739 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2024-05-06 08:15:26.744 +0800 o.e.j.s.session:[132] - node0 Scavenging every 660000ms
+[INFO] 2024-05-06 08:15:26.776 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@55665086{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.2839072069846990676/, jar:file:/opt/dolphinscheduler/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2024-05-06 08:15:26.959 +0800 o.e.j.s.Server:[415] - Started @101982ms
+[INFO] 2024-05-06 08:15:30.409 +0800 c.z.h.HikariDataSource:[110] - DolphinScheduler - Starting...
+[INFO] 2024-05-06 08:15:32.132 +0800 c.z.h.HikariDataSource:[123] - DolphinScheduler - Start completed.
+[INFO] 2024-05-06 08:15:44.840 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2024-05-06 08:15:45.331 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2024-05-06 08:15:45.760 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2024-05-06 08:15:46.127 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-05-06 08:15:46.127 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-05-06 08:15:49.110 +0800 c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+[INFO] 2024-05-06 08:15:49.359 +0800 c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.3, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+[INFO] 2024-05-06 08:15:58.540 +0800 o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2024-05-06 08:15:58.571 +0800 o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2024-05-06 08:15:58.572 +0800 o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2024-05-06 08:15:58.595 +0800 o.s.s.q.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2024-05-06 08:15:58.599 +0800 o.s.s.q.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2024-05-06 08:15:58.603 +0800 o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId 'bd22591379131714954558545'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.apache.dolphinscheduler.scheduler.quartz.QuartzZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2024-05-06 08:15:58.604 +0800 o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2024-05-06 08:15:58.604 +0800 o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2024-05-06 08:15:58.606 +0800 o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@7d8802cf
+[INFO] 2024-05-06 08:15:59.224 +0800 o.a.d.a.p.PythonGateway:[710] - PythonGatewayService started on: /0.0.0.0
+[INFO] 2024-05-06 08:15:59.243 +0800 p.GatewayServer:[573] - Gateway Server Started
+[INFO] 2024-05-06 08:16:04.520 +0800 o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+[INFO] 2024-05-06 08:16:05.217 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[INFO] 2024-05-06 08:16:05.385 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2024-05-06 08:16:05.386 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[INFO] 2024-05-06 08:16:05.388 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 2 ms
+[INFO] 2024-05-06 08:16:05.405 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@3c3cd7a5{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+[INFO] 2024-05-06 08:16:05.407 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 12345 (http/1.1) with context path '/dolphinscheduler'
+[INFO] 2024-05-06 08:16:05.432 +0800 o.a.d.a.ApiApplicationServer:[61] - Started ApiApplicationServer in 131.445 seconds (JVM running for 140.455)
+[INFO] 2024-05-06 08:16:05.441 +0800 o.a.d.a.ApiApplicationServer:[63] - Received spring application context ready event will load taskPlugin and write to DB
+[INFO] 2024-05-06 08:16:05.483 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.488 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.489 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.491 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.492 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.498 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.498 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.503 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.503 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.505 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.505 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.507 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.508 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.509 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.510 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.512 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.514 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.516 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.517 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.521 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.522 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.525 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.525 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.529 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.530 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.532 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.532 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.536 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.536 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.558 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.559 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.562 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.562 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.565 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.566 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.569 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.570 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.572 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.572 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.576 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.577 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.579 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.580 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.582 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.582 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.584 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.585 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.589 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.589 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.591 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.591 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.594 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.594 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.597 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.597 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.600 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.601 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.604 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.604 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.606 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.607 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.609 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.609 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.610 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.611 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.613 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-05-06 08:16:05.619 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2024-05-06 08:20:26.075 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-05-06 08:20:26.084 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-05-06 08:20:26.085 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-05-06 08:20:26.091 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-05-06 08:20:26.091 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-05-06 08:20:26.091 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-05-06 08:20:26.102 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[ERROR] 2024-05-06 08:21:05.291 +0800 o.a.d.c.u.JSONUtils:[148] - Parse object exception, jsonStr: {"localParams":null,"varPool":[{"prop":"is_message_empty","direct":"IN","type":"VARCHAR","value":"0"},{"prop":"filtered_data_message","direct":"IN","type":"VARCHAR","value":"{\n\t\"authors\": [\n\t\t\"premiumplatinum\"\n\t],\n\t\"content\": \"singapore is stupid\",\n\t\"url\": \"https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/\",\n\t\"context\": \"21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist\",\n\t\"type\": \"post\",\n\t\"datetime\": \"2024-04-21 22:10:42\"\n}"}],"dependRelation":null,"relation":null,"nextNode":[13504600516704],"resultConditionLocation":0,"dependTaskList":[{"condition":"${is_message_empty}==0","nextNode":[13426451158240]},{"condition":null,"nextNode":[13504600516704]}]}, class: class org.apache.dolphinscheduler.plugin.task.api.parameters.SwitchParameters
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (String)"{"localParams":null,"varPool":[{"prop":"is_message_empty","direct":"IN","type":"VARCHAR","value":"0"},{"prop":"filtered_data_message","direct":"IN","type":"VARCHAR","value":"{\n\t\"authors\": [\n\t\t\"premiumplatinum\"\n\t],\n\t\"content\": \"singapore is stupid\",\n\t\"url\": \"https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/\",\n\t\"context\": \"21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist\",\n\t\"type\":"[truncated 285 chars]; line: 1, column: 32] (through reference chain: org.apache.dolphinscheduler.plugin.task.api.parameters.SwitchParameters["varPool"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1741)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromArray(StdDeserializer.java:222)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:46)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:11)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3597)
+	at org.apache.dolphinscheduler.common.utils.JSONUtils.parseObject(JSONUtils.java:146)
+	at org.apache.dolphinscheduler.dao.entity.TaskInstance.getSwitchDependency(TaskInstance.java:329)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.commons.beanutils.BeanMap.get(BeanMap.java:415)
+	at org.apache.commons.beanutils.BeanMap$12.next(BeanMap.java:606)
+	at org.apache.commons.beanutils.BeanMap$12.next(BeanMap.java:600)
+	at java.util.Collections$UnmodifiableCollection$1.next(Collections.java:1044)
+	at org.apache.dolphinscheduler.common.utils.CollectionUtils.getListByExclusion(CollectionUtils.java:65)
+	at org.apache.dolphinscheduler.api.service.impl.TaskInstanceServiceImpl.queryTaskListPaging(TaskInstanceServiceImpl.java:203)
+	at org.apache.dolphinscheduler.api.service.impl.TaskInstanceServiceImpl$$FastClassBySpringCGLIB$$a1a6235.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.TaskInstanceServiceImpl$$EnhancerBySpringCGLIB$$29fafe1c.queryTaskListPaging(<generated>)
+	at org.apache.dolphinscheduler.api.controller.TaskInstanceController.queryTaskListPaging(TaskInstanceController.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:497)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-05-06 08:21:05.310 +0800 o.a.d.c.u.JSONUtils:[148] - Parse object exception, jsonStr: {"localParams":null,"varPool":[{"prop":"is_message_empty","direct":"IN","type":"VARCHAR","value":"0"},{"prop":"filtered_data_message","direct":"IN","type":"VARCHAR","value":"{\n\t\"authors\": [\n\t\t\"premiumplatinum\"\n\t],\n\t\"content\": \"singapore is stupid\",\n\t\"url\": \"https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/\",\n\t\"context\": \"21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist\",\n\t\"type\": \"post\",\n\t\"datetime\": \"2024-04-21 22:10:42\"\n}"}],"dependRelation":null,"relation":null,"nextNode":[13504600516704],"resultConditionLocation":0,"dependTaskList":[{"condition":"${is_message_empty}==0","nextNode":[13426451158240]},{"condition":null,"nextNode":[13504600516704]}]}, class: class org.apache.dolphinscheduler.plugin.task.api.parameters.SwitchParameters
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (String)"{"localParams":null,"varPool":[{"prop":"is_message_empty","direct":"IN","type":"VARCHAR","value":"0"},{"prop":"filtered_data_message","direct":"IN","type":"VARCHAR","value":"{\n\t\"authors\": [\n\t\t\"premiumplatinum\"\n\t],\n\t\"content\": \"singapore is stupid\",\n\t\"url\": \"https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/\",\n\t\"context\": \"21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist\",\n\t\"type\":"[truncated 285 chars]; line: 1, column: 32] (through reference chain: org.apache.dolphinscheduler.plugin.task.api.parameters.SwitchParameters["varPool"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1741)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromArray(StdDeserializer.java:222)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:46)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:11)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3597)
+	at org.apache.dolphinscheduler.common.utils.JSONUtils.parseObject(JSONUtils.java:146)
+	at org.apache.dolphinscheduler.dao.entity.TaskInstance.getSwitchDependency(TaskInstance.java:329)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.commons.beanutils.BeanMap.get(BeanMap.java:415)
+	at org.apache.commons.beanutils.BeanMap$12.next(BeanMap.java:606)
+	at org.apache.commons.beanutils.BeanMap$12.next(BeanMap.java:600)
+	at java.util.Collections$UnmodifiableCollection$1.next(Collections.java:1044)
+	at org.apache.dolphinscheduler.common.utils.CollectionUtils.getListByExclusion(CollectionUtils.java:65)
+	at org.apache.dolphinscheduler.api.service.impl.TaskInstanceServiceImpl.queryTaskListPaging(TaskInstanceServiceImpl.java:203)
+	at org.apache.dolphinscheduler.api.service.impl.TaskInstanceServiceImpl$$FastClassBySpringCGLIB$$a1a6235.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.TaskInstanceServiceImpl$$EnhancerBySpringCGLIB$$29fafe1c.queryTaskListPaging(<generated>)
+	at org.apache.dolphinscheduler.api.controller.TaskInstanceController.queryTaskListPaging(TaskInstanceController.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:497)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] 2024-05-06 08:21:23.476 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: HANA
+[INFO] 2024-05-06 08:21:23.476 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: HANA
+[INFO] 2024-05-06 08:21:23.478 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SQLSERVER
+[INFO] 2024-05-06 08:21:23.483 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SQLSERVER
+[INFO] 2024-05-06 08:21:23.485 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SAGEMAKER
+[INFO] 2024-05-06 08:21:23.486 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SAGEMAKER
+[INFO] 2024-05-06 08:21:23.495 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: DATABEND
+[INFO] 2024-05-06 08:21:23.499 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: DATABEND
+[INFO] 2024-05-06 08:21:23.503 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: AZURESQL
+[INFO] 2024-05-06 08:21:23.504 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: AZURESQL
+[INFO] 2024-05-06 08:21:23.511 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: HIVE
+[INFO] 2024-05-06 08:21:23.512 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: HIVE
+[INFO] 2024-05-06 08:21:23.516 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: DORIS
+[INFO] 2024-05-06 08:21:23.517 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: DORIS
+[INFO] 2024-05-06 08:21:23.521 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: POSTGRESQL
+[INFO] 2024-05-06 08:21:23.522 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: POSTGRESQL
+[INFO] 2024-05-06 08:21:23.530 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: MYSQL
+[INFO] 2024-05-06 08:21:23.531 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: MYSQL
+[INFO] 2024-05-06 08:21:23.536 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: REDSHIFT
+[INFO] 2024-05-06 08:21:23.539 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: REDSHIFT
+[INFO] 2024-05-06 08:21:23.541 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SNOWFLAKE
+[INFO] 2024-05-06 08:21:23.542 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SNOWFLAKE
+[INFO] 2024-05-06 08:21:23.548 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: STARROCKS
+[INFO] 2024-05-06 08:21:23.550 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: STARROCKS
+[INFO] 2024-05-06 08:21:23.554 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SSH
+[INFO] 2024-05-06 08:21:23.555 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SSH
+[INFO] 2024-05-06 08:21:23.560 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: ATHENA
+[INFO] 2024-05-06 08:21:23.564 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: ATHENA
+[INFO] 2024-05-06 08:21:23.568 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: PRESTO
+[INFO] 2024-05-06 08:21:23.568 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: PRESTO
+[INFO] 2024-05-06 08:21:23.572 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: OCEANBASE
+[INFO] 2024-05-06 08:21:23.572 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: OCEANBASE
+[INFO] 2024-05-06 08:21:23.586 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: ORACLE
+[INFO] 2024-05-06 08:21:23.587 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: ORACLE
+[INFO] 2024-05-06 08:21:23.590 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: CLICKHOUSE
+[INFO] 2024-05-06 08:21:23.591 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: CLICKHOUSE
+[INFO] 2024-05-06 08:21:23.593 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: VERTICA
+[INFO] 2024-05-06 08:21:23.593 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: VERTICA
+[INFO] 2024-05-06 08:21:23.597 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: KYUUBI
+[INFO] 2024-05-06 08:21:23.598 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: KYUUBI
+[INFO] 2024-05-06 08:21:23.604 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: DB2
+[INFO] 2024-05-06 08:21:23.605 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: DB2
+[INFO] 2024-05-06 08:21:23.609 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: TRINO
+[INFO] 2024-05-06 08:21:23.610 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: TRINO
+[INFO] 2024-05-06 08:21:23.617 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: SPARK
+[INFO] 2024-05-06 08:21:23.618 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: SPARK
+[INFO] 2024-05-06 08:21:23.625 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: DAMENG
+[INFO] 2024-05-06 08:21:23.626 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: DAMENG
+[INFO] 2024-05-06 08:21:23.634 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[45] - start register processor: ZEPPELIN
+[INFO] 2024-05-06 08:21:23.635 +0800 o.a.d.p.d.a.p.DataSourceProcessorManager:[51] - done register processor: ZEPPELIN
+[WARN] 2024-05-06 08:21:23.797 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[WARN] 2024-05-06 08:21:23.798 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[WARN] 2024-05-06 08:21:23.798 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[WARN] 2024-05-06 08:29:08.040 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[WARN] 2024-05-06 08:29:08.047 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://
+[WARN] 2024-05-06 08:29:08.048 +0800 n.s.c.j.SnowflakeConnectString:[136] - Connect strings must start with jdbc:snowflake://

@@ -1,0 +1,160 @@
+[INFO] 2024-03-22 09:43:32.238 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:43:32.251 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-03-22 09:43:32.252 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:43:32.252 +0800 - Begin to initialize task
+[INFO] 2024-03-22 09:43:32.252 +0800 - Set task startTime: 1711071812252
+[INFO] 2024-03-22 09:43:32.252 +0800 - Set task appId: 90_283
+[INFO] 2024-03-22 09:43:32.253 +0800 - End initialize task {
+  "taskInstanceId" : 283,
+  "taskName" : "show output",
+  "firstSubmitTime" : 1711071812216,
+  "startTime" : 1711071812252,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.0.6:5678",
+  "host" : "172.18.0.7:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240322/13002839652640/27/90/283.log",
+  "processId" : 0,
+  "processDefineCode" : 13002839652640,
+  "processDefineVersion" : 27,
+  "processInstanceId" : 90,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"echo \\\"${dynamic.out(sum from lists)}\\\"\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "show output"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "dynamic.out(sum from lists)" : {
+      "prop" : "dynamic.out(sum from lists)",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "[{\"dynParams\":{\"num1\":\"0\",\"num2\":\"0\"},\"outputValue\":{},\"mappedTimes\":1},{\"dynParams\":{\"num1\":\"0\",\"num2\":\"10\"},\"outputValue\":{},\"mappedTimes\":2},{\"dynParams\":{\"num1\":\"1\",\"num2\":\"0\"},\"outputValue\":{},\"mappedTimes\":3}]"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "90"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240322"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "283"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "dynamic_task_workflow"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13006486943680"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13002839652640"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240322094332"
+    }
+  },
+  "taskAppId" : "90_283",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"dynamic.out(sum from lists)\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"[{\\\"dynParams\\\":{\\\"num1\\\":\\\"0\\\",\\\"num2\\\":\\\"0\\\"},\\\"outputValue\\\":{},\\\"mappedTimes\\\":1},{\\\"dynParams\\\":{\\\"num1\\\":\\\"0\\\",\\\"num2\\\":\\\"10\\\"},\\\"outputValue\\\":{},\\\"mappedTimes\\\":2},{\\\"dynParams\\\":{\\\"num1\\\":\\\"1\\\",\\\"num2\\\":\\\"0\\\"},\\\"outputValue\\\":{},\\\"mappedTimes\\\":3}]\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-03-22 09:43:32.254 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:43:32.254 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-03-22 09:43:32.254 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:43:32.285 +0800 - Send task status RUNNING_EXECUTION master: 172.18.0.7:1234
+[INFO] 2024-03-22 09:43:32.290 +0800 - TenantCode: default check successfully
+[INFO] 2024-03-22 09:43:32.295 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13002839652640_27/90/283 check successfully
+[INFO] 2024-03-22 09:43:32.295 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-03-22 09:43:32.296 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-03-22 09:43:32.298 +0800 - Download upstream files: [] successfully
+[INFO] 2024-03-22 09:43:32.298 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-03-22 09:43:32.300 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "echo \"${dynamic.out(sum from lists)}\"",
+  "resourceList" : [ ]
+}
+[INFO] 2024-03-22 09:43:32.300 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-03-22 09:43:32.303 +0800 - Set taskVarPool: [{"prop":"dynamic.out(sum from lists)","direct":"IN","type":"VARCHAR","value":"[{\"dynParams\":{\"num1\":\"0\",\"num2\":\"0\"},\"outputValue\":{},\"mappedTimes\":1},{\"dynParams\":{\"num1\":\"0\",\"num2\":\"10\"},\"outputValue\":{},\"mappedTimes\":2},{\"dynParams\":{\"num1\":\"1\",\"num2\":\"0\"},\"outputValue\":{},\"mappedTimes\":3}]"}] successfully
+[INFO] 2024-03-22 09:43:32.313 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:43:32.313 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-03-22 09:43:32.313 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:43:32.314 +0800 - Final Shell file is: 
+[INFO] 2024-03-22 09:43:32.314 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-03-22 09:43:32.314 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+echo "[{"dynParams":{"num1":"0","num2":"0"},"outputValue":{},"mappedTimes":1},{"dynParams":{"num1":"0","num2":"10"},"outputValue":{},"mappedTimes":2},{"dynParams":{"num1":"1","num2":"0"},"outputValue":{},"mappedTimes":3}]"
+[INFO] 2024-03-22 09:43:32.315 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-03-22 09:43:32.318 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13002839652640_27/90/283/90_283.sh
+[INFO] 2024-03-22 09:43:32.346 +0800 - process start, process id is: 743
+[INFO] 2024-03-22 09:43:33.353 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	[{dynParams:{num1:0,num2:0},outputValue:{},mappedTimes:1},{dynParams:{num1:0,num2:10},outputValue:{},mappedTimes:2},{dynParams:{num1:1,num2:0},outputValue:{},mappedTimes:3}]
+[INFO] 2024-03-22 09:43:33.354 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13002839652640_27/90/283, processId:743 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[INFO] 2024-03-22 09:43:33.355 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:43:33.356 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-03-22 09:43:33.356 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:43:33.357 +0800 - Upload output files: [] successfully
+[INFO] 2024-03-22 09:43:33.371 +0800 - Send task execute status: SUCCESS to master : 172.18.0.7:1234
+[INFO] 2024-03-22 09:43:33.372 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-03-22 09:43:33.372 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13002839652640_27/90/283
+[INFO] 2024-03-22 09:43:33.374 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13002839652640_27/90/283
+[INFO] 2024-03-22 09:43:33.374 +0800 - FINALIZE_SESSION

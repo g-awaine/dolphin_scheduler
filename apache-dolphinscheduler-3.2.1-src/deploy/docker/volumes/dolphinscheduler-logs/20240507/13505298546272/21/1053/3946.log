@@ -1,0 +1,435 @@
+[INFO] 2024-05-07 08:25:47.083 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 08:25:47.085 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-07 08:25:47.085 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 08:25:47.085 +0800 - Begin to initialize task
+[INFO] 2024-05-07 08:25:47.086 +0800 - Set task startTime: 1715041547086
+[INFO] 2024-05-07 08:25:47.086 +0800 - Set task appId: 1053_3946
+[INFO] 2024-05-07 08:25:47.086 +0800 - End initialize task {
+  "taskInstanceId" : 3946,
+  "taskName" : "[null check] filtered data persistence",
+  "firstSubmitTime" : 1715041547027,
+  "startTime" : 1715041547086,
+  "taskType" : "DATA_QUALITY",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240507/13505298546272/21/1053/3946.log",
+  "processId" : 0,
+  "processDefineCode" : 13505298546272,
+  "processDefineVersion" : 21,
+  "processInstanceId" : 1053,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"ruleId\":6,\"ruleInputParameter\":{\"check_type\":\"0\",\"comparison_type\":1,\"comparison_name\":\"0\",\"failure_strategy\":\"0\",\"operator\":\"0\",\"src_connector_type\":1,\"src_datasource_id\":6,\"src_database\":\"persistence\",\"src_field\":\"content\",\"src_table\":\"filtered_data_persistence\",\"threshold\":\"0\"},\"sparkParameters\":{\"deployMode\":\"local\",\"driverCores\":1,\"driverMemory\":\"512M\",\"executorCores\":1,\"executorMemory\":\"1G\",\"numExecutors\":1,\"others\":\"--conf spark.driver.extraJavaOptions=\\\"-Divy.cache.dir=/tmp -Divy.home=/tmp\\\" \\\\\\n--packages org.postgresql:postgresql:42.7.3\",\"yarnQueue\":\"\"}}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11\nexport PYSPARK_PYTHON=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "[null check] filtered data persistence"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1053"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240507"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240506"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3946"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "qualti_test"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13505264408800"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13505298546272"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240507082547"
+    }
+  },
+  "taskAppId" : "1053_3946",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "dataQualityTaskExecutionContext" : {
+    "ruleId" : 6,
+    "ruleName" : "$t(uniqueness_check)",
+    "ruleType" : 0,
+    "ruleInputEntryList" : "[{\"id\":1,\"field\":\"src_connector_type\",\"type\":\"select\",\"title\":\"$t(src_connector_type)\",\"data\":\"\",\"options\":\"[{\\\"label\\\":\\\"HIVE\\\",\\\"value\\\":\\\"HIVE\\\"},{\\\"label\\\":\\\"JDBC\\\",\\\"value\\\":\\\"JDBC\\\"}]\",\"placeholder\":\"please select source connector type\",\"optionSourceType\":2,\"dataType\":2,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":false,\"valuesMap\":null,\"index\":1,\"createTime\":null,\"updateTime\":null},{\"id\":2,\"field\":\"src_datasource_id\",\"type\":\"select\",\"title\":\"$t(src_datasource_id)\",\"data\":\"\",\"options\":null,\"placeholder\":\"please select source datasource id\",\"optionSourceType\":1,\"dataType\":2,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":false,\"valuesMap\":null,\"index\":2,\"createTime\":null,\"updateTime\":null},{\"id\":30,\"field\":\"src_database\",\"type\":\"select\",\"title\":\"$t(src_database)\",\"data\":null,\"options\":null,\"placeholder\":\"Please select source database\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":true,\"valuesMap\":null,\"index\":2,\"createTime\":null,\"updateTime\":null},{\"id\":3,\"field\":\"src_table\",\"type\":\"select\",\"title\":\"$t(src_table)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter source table name\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":true,\"valuesMap\":null,\"index\":3,\"createTime\":null,\"updateTime\":null},{\"id\":4,\"field\":\"src_filter\",\"type\":\"input\",\"title\":\"$t(src_filter)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter filter expression\",\"optionSourceType\":0,\"dataType\":3,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":false,\"valuesMap\":null,\"index\":4,\"createTime\":null,\"updateTime\":null},{\"id\":5,\"field\":\"src_field\",\"type\":\"select\",\"title\":\"$t(src_field)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter column, only single column is supported\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":true,\"valuesMap\":null,\"index\":5,\"createTime\":null,\"updateTime\":null},{\"id\":6,\"field\":\"statistics_name\",\"type\":\"input\",\"title\":\"$t(statistics_name)\",\"data\":\"duplicate_count.duplicates\",\"options\":null,\"placeholder\":\"Please enter statistics name, the alias in statistics execute sql\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":1,\"isShow\":false,\"canEdit\":false,\"isEmit\":false,\"isValidate\":true,\"valuesMap\":\"{\\\"statistics_name\\\":\\\"duplicate_count.duplicates\\\"}\",\"index\":6,\"createTime\":null,\"updateTime\":null},{\"id\":7,\"field\":\"check_type\",\"type\":\"select\",\"title\":\"$t(check_type)\",\"data\":\"0\",\"options\":\"[{\\\"label\\\":\\\"Expected - Actual\\\",\\\"value\\\":\\\"0\\\"},{\\\"label\\\":\\\"Actual - Expected\\\",\\\"value\\\":\\\"1\\\"},{\\\"label\\\":\\\"Actual / Expected\\\",\\\"value\\\":\\\"2\\\"},{\\\"label\\\":\\\"(Expected - Actual) / Expected\\\",\\\"value\\\":\\\"3\\\"}]\",\"placeholder\":\"please select check type\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":3,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":false,\"valuesMap\":null,\"index\":7,\"createTime\":null,\"updateTime\":null},{\"id\":8,\"field\":\"operator\",\"type\":\"select\",\"title\":\"$t(operator)\",\"data\":\"0\",\"options\":\"[{\\\"label\\\":\\\"=\\\",\\\"value\\\":\\\"0\\\"},{\\\"label\\\":\\\"<\\\",\\\"value\\\":\\\"1\\\"},{\\\"label\\\":\\\"<=\\\",\\\"value\\\":\\\"2\\\"},{\\\"label\\\":\\\">\\\",\\\"value\\\":\\\"3\\\"},{\\\"label\\\":\\\">=\\\",\\\"value\\\":\\\"4\\\"},{\\\"label\\\":\\\"!=\\\",\\\"value\\\":\\\"5\\\"}]\",\"placeholder\":\"please select operator\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":3,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":false,\"valuesMap\":null,\"index\":8,\"createTime\":null,\"updateTime\":null},{\"id\":9,\"field\":\"threshold\",\"type\":\"input\",\"title\":\"$t(threshold)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter threshold, number is needed\",\"optionSourceType\":0,\"dataType\":2,\"inputType\":3,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":true,\"valuesMap\":null,\"index\":9,\"createTime\":null,\"updateTime\":null},{\"id\":10,\"field\":\"failure_strategy\",\"type\":\"select\",\"title\":\"$t(failure_strategy)\",\"data\":\"0\",\"options\":\"[{\\\"label\\\":\\\"Alert\\\",\\\"value\\\":\\\"0\\\"},{\\\"label\\\":\\\"Block\\\",\\\"value\\\":\\\"1\\\"}]\",\"placeholder\":\"please select failure strategy\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":3,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":false,\"valuesMap\":null,\"index\":10,\"createTime\":null,\"updateTime\":null},{\"id\":17,\"field\":\"comparison_name\",\"type\":\"input\",\"title\":\"$t(comparison_name)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter comparison name, the alias in comparison execute sql\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":0,\"isShow\":false,\"canEdit\":false,\"isEmit\":false,\"isValidate\":true,\"valuesMap\":\"\",\"index\":11,\"createTime\":null,\"updateTime\":null},{\"id\":19,\"field\":\"comparison_type\",\"type\":\"select\",\"title\":\"$t(comparison_type)\",\"data\":\"\",\"options\":null,\"placeholder\":\"Please enter comparison title\",\"optionSourceType\":3,\"dataType\":0,\"inputType\":2,\"isShow\":true,\"canEdit\":false,\"isEmit\":true,\"isValidate\":false,\"valuesMap\":null,\"index\":12,\"createTime\":null,\"updateTime\":null}]",
+    "executeSqlList" : "[{\"id\":6,\"index\":1,\"sql\":\"SELECT ${src_field} FROM ${src_table} group by ${src_field} having count(*) > 1\",\"tableAlias\":\"duplicate_items\",\"type\":0,\"createTime\":\"2021-03-03 11:31:24\",\"updateTime\":\"2021-03-03 11:31:24\",\"errorOutputSql\":true},{\"id\":7,\"index\":1,\"sql\":\"SELECT COUNT(*) AS duplicates FROM duplicate_items\",\"tableAlias\":\"duplicate_count\",\"type\":1,\"createTime\":\"2021-03-03 11:31:24\",\"updateTime\":\"2021-03-03 11:31:24\",\"errorOutputSql\":false}]",
+    "comparisonNeedStatisticsValueTable" : false,
+    "compareWithFixedValue" : true,
+    "hdfsPath" : "hdfs://mycluster:8020/user/default/data_quality_error_data",
+    "sourceConnectorType" : "JDBC",
+    "sourceType" : 1,
+    "sourceConnectionParams" : "{\"user\":\"root\",\"password\":\"****\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"persistence\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence\",\"driverClassName\":\"org.postgresql.Driver\",\"validationQuery\":\"select version()\",\"other\":{\"password\":\"****\"}}",
+    "targetConnectorType" : null,
+    "targetType" : 0,
+    "targetConnectionParams" : null,
+    "writerConnectorType" : "JDBC",
+    "writerType" : 1,
+    "writerTable" : "t_ds_dq_execute_result",
+    "writerConnectionParams" : "{\"user\":\"root\",\"password\":\"****\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"dolphinscheduler\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler\"}",
+    "statisticsValueConnectorType" : "JDBC",
+    "statisticsValueType" : 1,
+    "statisticsValueTable" : "t_ds_dq_task_statistics_value",
+    "statisticsValueWriterConnectionParams" : "{\"user\":\"root\",\"password\":\"****\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"dolphinscheduler\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler\"}"
+  },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-07 08:25:47.088 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 08:25:47.092 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-07 08:25:47.093 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 08:25:47.106 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-07 08:25:47.106 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-07 08:25:47.108 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1053/3946 check successfully
+[INFO] 2024-05-07 08:25:47.110 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.dq.DataQualityTaskChannel successfully
+[INFO] 2024-05-07 08:25:47.111 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-07 08:25:47.111 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-07 08:25:47.111 +0800 - Task plugin instance: DATA_QUALITY create successfully
+[INFO] 2024-05-07 08:25:47.112 +0800 - Initialize data quality task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "ruleId" : 6,
+  "ruleInputParameter" : {
+    "check_type" : "0",
+    "comparison_type" : "1",
+    "comparison_name" : "0",
+    "failure_strategy" : "0",
+    "operator" : "0",
+    "src_connector_type" : "1",
+    "src_datasource_id" : "6",
+    "src_database" : "persistence",
+    "src_field" : "content",
+    "src_table" : "filtered_data_persistence",
+    "threshold" : "0"
+  },
+  "sparkParameters" : {
+    "localParams" : null,
+    "varPool" : null,
+    "mainJar" : null,
+    "mainClass" : null,
+    "deployMode" : "local",
+    "mainArgs" : null,
+    "driverCores" : 1,
+    "driverMemory" : "512M",
+    "numExecutors" : 1,
+    "executorCores" : 1,
+    "executorMemory" : "1G",
+    "appName" : null,
+    "yarnQueue" : "",
+    "others" : "--conf spark.driver.extraJavaOptions=\"-Divy.cache.dir=/tmp -Divy.home=/tmp\" \\\n--packages org.postgresql:postgresql:42.7.3",
+    "programType" : null,
+    "resourceList" : [ ]
+  }
+}
+[INFO] 2024-05-07 08:25:47.125 +0800 - data quality configuration: {
+  "name" : "$t(uniqueness_check)",
+  "env" : {
+    "type" : "batch",
+    "config" : null
+  },
+  "readers" : [ {
+    "type" : "JDBC",
+    "config" : {
+      "database" : "persistence",
+      "password" : "****",
+      "driver" : "org.postgresql.Driver",
+      "user" : "root",
+      "output_table" : "persistence_filtered_data_persistence",
+      "table" : "filtered_data_persistence",
+      "url" : "jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence?password=root"
+    }
+  } ],
+  "transformers" : [ {
+    "type" : "sql",
+    "config" : {
+      "index" : 1,
+      "output_table" : "duplicate_items",
+      "sql" : "SELECT content FROM persistence_filtered_data_persistence group by content having count(*) > 1"
+    }
+  }, {
+    "type" : "sql",
+    "config" : {
+      "index" : 2,
+      "output_table" : "duplicate_count",
+      "sql" : "SELECT COUNT(*) AS duplicates FROM duplicate_items"
+    }
+  } ],
+  "writers" : [ {
+    "type" : "JDBC",
+    "config" : {
+      "database" : "dolphinscheduler",
+      "password" : "****",
+      "driver" : "org.postgresql.Driver",
+      "user" : "root",
+      "table" : "t_ds_dq_execute_result",
+      "url" : "jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler",
+      "sql" : "select 0 as rule_type,'$t(uniqueness_check)' as rule_name,0 as process_definition_id,1053 as process_instance_id,3946 as task_instance_id,duplicate_count.duplicates AS statistics_value,0 AS comparison_value,1 AS comparison_type,0 as check_type,0 as threshold,0 as operator,0 as failure_strategy,'hdfs://mycluster:8020/user/default/data_quality_error_data/0_1053_[null check] filtered data persistence' as error_output_path,'2024-05-07 08:25:47' as create_time,'2024-05-07 08:25:47' as update_time from duplicate_count "
+    }
+  }, {
+    "type" : "JDBC",
+    "config" : {
+      "database" : "dolphinscheduler",
+      "password" : "****",
+      "driver" : "org.postgresql.Driver",
+      "user" : "root",
+      "table" : "t_ds_dq_task_statistics_value",
+      "url" : "jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler",
+      "sql" : "select 0 as process_definition_id,3946 as task_instance_id,6 as rule_id,'KA0AXXWVHWW+GZX4BPZXFGFZ0F0OYMUQ+BVYG4+ZIKG=' as unique_code,'duplicate_count.duplicates'AS statistics_name,duplicate_count.duplicates AS statistics_value,'2024-05-07 08:25:47' as data_time,'2024-05-07 08:25:47' as create_time,'2024-05-07 08:25:47' as update_time from duplicate_count"
+    }
+  }, {
+    "type" : "hdfs_file",
+    "config" : {
+      "path" : "hdfs://mycluster:8020/user/default/data_quality_error_data/0_1053_[null check] filtered data persistence",
+      "input_table" : "duplicate_items"
+    }
+  } ]
+}
+[INFO] 2024-05-07 08:25:47.126 +0800 - Trying to get data quality jar in path
+[INFO] 2024-05-07 08:25:47.127 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-07 08:25:47.127 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-05-07 08:25:47.127 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 08:25:47.127 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-07 08:25:47.127 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 08:25:47.130 +0800 - Final Shell file is: 
+[INFO] 2024-05-07 08:25:47.130 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-07 08:25:47.131 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYSPARK_PYTHON=/bin/python3.11
+${SPARK_HOME}/bin/spark-submit --master local --driver-cores 1 --driver-memory 512M --num-executors 1 --executor-cores 1 --executor-memory 1G --conf spark.driver.extraJavaOptions="-Divy.cache.dir=/tmp -Divy.home=/tmp" \
+--packages org.postgresql:postgresql:42.7.3 /opt/dolphinscheduler/conf/../libs/dolphinscheduler-data-quality-3.2.1.jar "{\"name\":\"$t(uniqueness_check)\",\"env\":{\"type\":\"batch\",\"config\":null},\"readers\":[{\"type\":\"JDBC\",\"config\":{\"database\":\"persistence\",\"password\":\"****\",\"driver\":\"org.postgresql.Driver\",\"user\":\"root\",\"output_table\":\"persistence_filtered_data_persistence\",\"table\":\"filtered_data_persistence\",\"url\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence?password=root\"} }],\"transformers\":[{\"type\":\"sql\",\"config\":{\"index\":1,\"output_table\":\"duplicate_items\",\"sql\":\"SELECT content FROM persistence_filtered_data_persistence group by content having count(*) > 1\"} },{\"type\":\"sql\",\"config\":{\"index\":2,\"output_table\":\"duplicate_count\",\"sql\":\"SELECT COUNT(*) AS duplicates FROM duplicate_items\"} }],\"writers\":[{\"type\":\"JDBC\",\"config\":{\"database\":\"dolphinscheduler\",\"password\":\"****\",\"driver\":\"org.postgresql.Driver\",\"user\":\"root\",\"table\":\"t_ds_dq_execute_result\",\"url\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler\",\"sql\":\"select 0 as rule_type,'$t(uniqueness_check)' as rule_name,0 as process_definition_id,1053 as process_instance_id,3946 as task_instance_id,duplicate_count.duplicates AS statistics_value,0 AS comparison_value,1 AS comparison_type,0 as check_type,0 as threshold,0 as operator,0 as failure_strategy,'hdfs://mycluster:8020/user/default/data_quality_error_data/0_1053_[null check] filtered data persistence' as error_output_path,'2024-05-07 08:25:47' as create_time,'2024-05-07 08:25:47' as update_time from duplicate_count \"} },{\"type\":\"JDBC\",\"config\":{\"database\":\"dolphinscheduler\",\"password\":\"****\",\"driver\":\"org.postgresql.Driver\",\"user\":\"root\",\"table\":\"t_ds_dq_task_statistics_value\",\"url\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler\",\"sql\":\"select 0 as process_definition_id,3946 as task_instance_id,6 as rule_id,'KA0AXXWVHWW+GZX4BPZXFGFZ0F0OYMUQ+BVYG4+ZIKG=' as unique_code,'duplicate_count.duplicates'AS statistics_name,duplicate_count.duplicates AS statistics_value,'2024-05-07 08:25:47' as data_time,'2024-05-07 08:25:47' as create_time,'2024-05-07 08:25:47' as update_time from duplicate_count\"} },{\"type\":\"hdfs_file\",\"config\":{\"path\":\"hdfs://mycluster:8020/user/default/data_quality_error_data/0_1053_[null check] filtered data persistence\",\"input_table\":\"duplicate_items\"} }]}"
+[INFO] 2024-05-07 08:25:47.131 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-07 08:25:47.131 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1053/3946/1053_3946.sh
+[INFO] 2024-05-07 08:25:47.139 +0800 - process start, process id is: 628
+[INFO] 2024-05-07 08:25:48.141 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-05-07 08:25:53.162 +0800 -  -> 
+	:: loading settings :: url = jar:file:/opt/spark-3.5.1-bin-hadoop3/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+	Ivy Default Cache set to: /tmp
+	The jars for the packages stored in: /tmp/jars
+	org.postgresql#postgresql added as a dependency
+	:: resolving dependencies :: org.apache.spark#spark-submit-parent-7a531136-2a66-43ad-895c-c7bac366bb41;1.0
+		confs: [default]
+		found org.postgresql#postgresql;42.7.3 in central
+		found org.checkerframework#checker-qual;3.42.0 in central
+	:: resolution report :: resolve 278ms :: artifacts dl 22ms
+		:: modules in use:
+		org.checkerframework#checker-qual;3.42.0 from central in [default]
+		org.postgresql#postgresql;42.7.3 from central in [default]
+		---------------------------------------------------------------------
+		|                  |            modules            ||   artifacts   |
+		|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+		---------------------------------------------------------------------
+		|      default     |   2   |   0   |   0   |   0   ||   2   |   0   |
+		---------------------------------------------------------------------
+	:: retrieving :: org.apache.spark#spark-submit-parent-7a531136-2a66-43ad-895c-c7bac366bb41
+		confs: [default]
+		0 artifacts copied, 2 already retrieved (0kB/36ms)
+[INFO] 2024-05-07 08:25:54.189 +0800 -  -> 
+	24/05/07 08:25:53 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2024-05-07 08:25:56.202 +0800 -  -> 
+	24/05/07 08:25:55 INFO SparkContext: Running Spark version 3.5.1
+	24/05/07 08:25:55 INFO SparkContext: OS info Linux, 6.5.0-28-generic, amd64
+	24/05/07 08:25:55 INFO SparkContext: Java version 1.8.0_402
+	24/05/07 08:25:55 INFO ResourceUtils: ==============================================================
+	24/05/07 08:25:55 INFO ResourceUtils: No custom resources configured for spark.driver.
+	24/05/07 08:25:55 INFO ResourceUtils: ==============================================================
+	24/05/07 08:25:55 INFO SparkContext: Submitted application: (uniqueness_check)
+	24/05/07 08:25:55 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+	24/05/07 08:25:55 INFO ResourceProfile: Limiting resource is cpu
+	24/05/07 08:25:55 INFO ResourceProfileManager: Added ResourceProfile id: 0
+	24/05/07 08:25:56 INFO SecurityManager: Changing view acls to: default
+	24/05/07 08:25:56 INFO SecurityManager: Changing modify acls to: default
+	24/05/07 08:25:56 INFO SecurityManager: Changing view acls groups to: 
+	24/05/07 08:25:56 INFO SecurityManager: Changing modify acls groups to: 
+	24/05/07 08:25:56 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: default; groups with view permissions: EMPTY; users with modify permissions: default; groups with modify permissions: EMPTY
+[INFO] 2024-05-07 08:25:57.214 +0800 -  -> 
+	24/05/07 08:25:56 INFO Utils: Successfully started service 'sparkDriver' on port 39051.
+	24/05/07 08:25:56 INFO SparkEnv: Registering MapOutputTracker
+	24/05/07 08:25:57 INFO SparkEnv: Registering BlockManagerMaster
+	24/05/07 08:25:57 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+	24/05/07 08:25:57 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+	24/05/07 08:25:57 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[INFO] 2024-05-07 08:25:58.220 +0800 -  -> 
+	24/05/07 08:25:57 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-7f306fd9-56e3-4929-92b8-30c74832cc2f
+	24/05/07 08:25:57 INFO MemoryStore: MemoryStore started with capacity 93.3 MiB
+	24/05/07 08:25:57 INFO SparkEnv: Registering OutputCommitCoordinator
+	24/05/07 08:25:57 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+	24/05/07 08:25:57 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+	24/05/07 08:25:57 INFO Utils: Successfully started service 'SparkUI' on port 4041.
+	24/05/07 08:25:58 INFO SparkContext: Added JAR file:///tmp/jars/org.postgresql_postgresql-42.7.3.jar at spark://941f01f0fea3:39051/jars/org.postgresql_postgresql-42.7.3.jar with timestamp 1715041555750
+	24/05/07 08:25:58 INFO SparkContext: Added JAR file:///tmp/jars/org.checkerframework_checker-qual-3.42.0.jar at spark://941f01f0fea3:39051/jars/org.checkerframework_checker-qual-3.42.0.jar with timestamp 1715041555750
+	24/05/07 08:25:58 INFO SparkContext: Added JAR file:/opt/dolphinscheduler/libs/dolphinscheduler-data-quality-3.2.1.jar at spark://941f01f0fea3:39051/jars/dolphinscheduler-data-quality-3.2.1.jar with timestamp 1715041555750
+[INFO] 2024-05-07 08:25:59.237 +0800 -  -> 
+	24/05/07 08:25:58 INFO Executor: Starting executor ID driver on host 941f01f0fea3
+	24/05/07 08:25:58 INFO Executor: OS info Linux, 6.5.0-28-generic, amd64
+	24/05/07 08:25:58 INFO Executor: Java version 1.8.0_402
+	24/05/07 08:25:58 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+	24/05/07 08:25:58 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@7fb29ca9 for default.
+	24/05/07 08:25:58 INFO Executor: Fetching spark://941f01f0fea3:39051/jars/org.postgresql_postgresql-42.7.3.jar with timestamp 1715041555750
+	24/05/07 08:25:58 INFO TransportClientFactory: Successfully created connection to 941f01f0fea3/172.18.1.1:39051 after 179 ms (0 ms spent in bootstraps)
+	24/05/07 08:25:58 INFO Utils: Fetching spark://941f01f0fea3:39051/jars/org.postgresql_postgresql-42.7.3.jar to /tmp/spark-a37722a1-0bea-45c9-8cc1-40a9abffa1b9/userFiles-33fedafd-b8a0-48e0-a6d6-dd8bd176ddb3/fetchFileTemp7939221146906775262.tmp
+	24/05/07 08:25:59 INFO Executor: Adding file:/tmp/spark-a37722a1-0bea-45c9-8cc1-40a9abffa1b9/userFiles-33fedafd-b8a0-48e0-a6d6-dd8bd176ddb3/org.postgresql_postgresql-42.7.3.jar to class loader default
+	24/05/07 08:25:59 INFO Executor: Fetching spark://941f01f0fea3:39051/jars/org.checkerframework_checker-qual-3.42.0.jar with timestamp 1715041555750
+	24/05/07 08:25:59 INFO Utils: Fetching spark://941f01f0fea3:39051/jars/org.checkerframework_checker-qual-3.42.0.jar to /tmp/spark-a37722a1-0bea-45c9-8cc1-40a9abffa1b9/userFiles-33fedafd-b8a0-48e0-a6d6-dd8bd176ddb3/fetchFileTemp2768793051556173615.tmp
+	24/05/07 08:25:59 INFO Executor: Adding file:/tmp/spark-a37722a1-0bea-45c9-8cc1-40a9abffa1b9/userFiles-33fedafd-b8a0-48e0-a6d6-dd8bd176ddb3/org.checkerframework_checker-qual-3.42.0.jar to class loader default
+	24/05/07 08:25:59 INFO Executor: Fetching spark://941f01f0fea3:39051/jars/dolphinscheduler-data-quality-3.2.1.jar with timestamp 1715041555750
+	24/05/07 08:25:59 INFO Utils: Fetching spark://941f01f0fea3:39051/jars/dolphinscheduler-data-quality-3.2.1.jar to /tmp/spark-a37722a1-0bea-45c9-8cc1-40a9abffa1b9/userFiles-33fedafd-b8a0-48e0-a6d6-dd8bd176ddb3/fetchFileTemp8234151838708943089.tmp
+	24/05/07 08:25:59 INFO Executor: Adding file:/tmp/spark-a37722a1-0bea-45c9-8cc1-40a9abffa1b9/userFiles-33fedafd-b8a0-48e0-a6d6-dd8bd176ddb3/dolphinscheduler-data-quality-3.2.1.jar to class loader default
+	24/05/07 08:25:59 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40765.
+	24/05/07 08:25:59 INFO NettyBlockTransferService: Server created on 941f01f0fea3:40765
+[INFO] 2024-05-07 08:25:59.722 +0800 - process id:628, cmd:sudo -u default kill -9 628 632 635 638 661 662 663 664 665 666 667 668 669 670 671 672 673 674 676 678 682 684 685 686 687 688 689 690 691 692 693 694 695 696 697 698 699 700 701 702 703 704 707 708 709 710 711 712 713 714 715 716 718 727 737 738 739 740 741
+[ERROR] 2024-05-07 08:25:59.845 +0800 - kill task error
+org.apache.dolphinscheduler.common.shell.AbstractShell$ExitCodeException: kill: (628): Operation not permitted
+kill: (662): No such process
+kill: (663): No such process
+kill: (664): No such process
+kill: (665): No such process
+kill: (666): No such process
+kill: (667): No such process
+kill: (668): No such process
+kill: (669): No such process
+kill: (670): No such process
+kill: (671): No such process
+kill: (672): No such process
+kill: (673): No such process
+kill: (674): No such process
+kill: (676): No such process
+kill: (678): No such process
+kill: (682): No such process
+kill: (684): No such process
+kill: (685): No such process
+kill: (686): No such process
+kill: (687): No such process
+kill: (688): No such process
+kill: (689): No such process
+kill: (690): No such process
+kill: (691): No such process
+kill: (693): No such process
+kill: (694): No such process
+kill: (695): No such process
+kill: (696): No such process
+kill: (698): No such process
+kill: (699): No such process
+kill: (700): No such process
+kill: (701): No such process
+kill: (702): No such process
+kill: (703): No such process
+kill: (704): No such process
+kill: (708): No such process
+kill: (709): No such process
+kill: (711): No such process
+kill: (712): No such process
+kill: (713): No such process
+kill: (714): No such process
+kill: (715): No such process
+kill: (716): No such process
+kill: (727): No such process
+kill: (739): No such process
+kill: (740): No such process
+kill: (741): No such process
+
+	at org.apache.dolphinscheduler.common.shell.AbstractShell.runCommand(AbstractShell.java:205)
+	at org.apache.dolphinscheduler.common.shell.AbstractShell.run(AbstractShell.java:118)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execute(ShellExecutor.java:125)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execCommand(ShellExecutor.java:103)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execCommand(ShellExecutor.java:86)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.exeShell(OSUtils.java:345)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.exeCmd(OSUtils.java:334)
+	at org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction.killProcess(TaskInstanceKillOperationFunction.java:135)
+	at org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction.doKill(TaskInstanceKillOperationFunction.java:96)
+	at org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction.operate(TaskInstanceKillOperationFunction.java:69)
+	at org.apache.dolphinscheduler.server.worker.rpc.TaskInstanceOperatorImpl.killTask(TaskInstanceOperatorImpl.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.dolphinscheduler.extract.base.server.ServerMethodInvokerImpl.invoke(ServerMethodInvokerImpl.java:41)
+	at org.apache.dolphinscheduler.extract.base.server.JdkDynamicServerHandler.lambda$processReceived$0(JdkDynamicServerHandler.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] 2024-05-07 08:25:59.845 +0800 - Get appIds from worker 172.18.1.1:1234, taskLogPath: /opt/dolphinscheduler/logs/20240507/13505298546272/21/1053/3946.log
+[INFO] 2024-05-07 08:25:59.846 +0800 - Start finding appId in /opt/dolphinscheduler/logs/20240507/13505298546272/21/1053/3946.log, fetch way: log 
+[INFO] 2024-05-07 08:25:59.846 +0800 - The appId is empty
+[INFO] 2024-05-07 08:25:59.846 +0800 - Begin to kill process process, pid is : 628
+[INFO] 2024-05-07 08:25:59.846 +0800 - Success kill task: 1053_3946, pid: 628
+[INFO] 2024-05-07 08:25:59.846 +0800 - kill task by cancelApplication, taskInstanceId: 3946
+[INFO] 2024-05-07 08:26:00.324 +0800 -  -> 
+	24/05/07 08:25:59 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+	24/05/07 08:25:59 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 941f01f0fea3, 40765, None)
+	24/05/07 08:25:59 INFO BlockManagerMasterEndpoint: Registering block manager 941f01f0fea3:40765 with 93.3 MiB RAM, BlockManagerId(driver, 941f01f0fea3, 40765, None)
+	24/05/07 08:25:59 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 941f01f0fea3, 40765, None)
+	24/05/07 08:25:59 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 941f01f0fea3, 40765, None)
+[INFO] 2024-05-07 08:26:00.342 +0800 - process has killed. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1053/3946, processId:628 ,exitStatusCode:137 ,processWaitForStatus:true ,processExitValue:137
+[INFO] 2024-05-07 08:26:00.343 +0800 - Start finding appId in /opt/dolphinscheduler/logs/20240507/13505298546272/21/1053/3946.log, fetch way: log 
+[INFO] 2024-05-07 08:26:00.343 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 08:26:00.343 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-07 08:26:00.343 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 08:26:00.348 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-07 08:26:00.363 +0800 - Send task execute status: KILL to master : 172.18.1.1:1234
+[INFO] 2024-05-07 08:26:00.363 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-07 08:26:00.364 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1053/3946
+[INFO] 2024-05-07 08:26:00.366 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1053/3946
+[INFO] 2024-05-07 08:26:00.366 +0800 - FINALIZE_SESSION

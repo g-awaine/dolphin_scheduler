@@ -28,6 +28,7 @@ services:
       POSTGRESQL_DATABASE: dolphinscheduler
     volumes:
       - ./volumes/dolphinscheduler-postgresql:/bitnami/postgresql
+      - ./volumes/dolphinscheduler-postgresql-init-persistence/init-persistence-db.sh:/docker-entrypoint-initdb.d/init-persistence-db.sh
     healthcheck:
       test: ["CMD", "bash", "-c", "cat < /dev/null > /dev/tcp/127.0.0.1/5432"]
       interval: 5s
@@ -125,7 +126,11 @@ services:
       - dolphinscheduler
 
   dolphinscheduler-worker:
-    image: ${HUB}/dolphinscheduler-worker:${TAG}
+    image: ${HUB}/dolphinscheduler-worker:local_${TAG}
+    build:
+      # Build the image from the Dockerfile if the image doesn't exist
+      context: dolphinscheduler_worker_image/
+      dockerfile: Dockerfile
     profiles: ["all"]
     env_file: .env
     healthcheck:
@@ -141,12 +146,198 @@ services:
       - ./volumes/dolphinscheduler-logs:/opt/dolphinscheduler/logs
       - ./volumes/dolphinscheduler-shared-local:/opt/soft
       - ./volumes/dolphinscheduler-resource-local:/dolphinscheduler
+      - ./volumes/local_storage:/local_storage
+    networks:
+      dolphinscheduler:
+        ipv4_address: 172.18.1.1
+
+  # spark-master:
+  #   image: bitnami/spark:3.4.2
+  #   command: bin/spark-class org.apache.spark.deploy.master.Master
+  #   environment:
+  #     SPARK_WORKLOAD: master
+  #   ports:
+  #     - "9090:8080"
+  #     - "7077:7077"
+  #   profiles: ["all"]
+  #   networks:
+  #     - dolphinscheduler
+
+  # spark-worker:
+  #   image: bitnami/spark:3.4.2
+  #   command: bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
+  #   depends_on:
+  #     - spark-master
+  #   environment:
+  #     SPARK_MODE: worker
+  #     SPARK_WORKER_CORES: 2
+  #     SPARK_WORKER_MEMORY: 4g
+  #     SPARK_MASTER_URL: spark://spark-master:7077
+  #   profiles: ["all"]
+  #   networks:
+  #     - dolphinscheduler
+
+  spark-master:
+    image: bitnami/spark:3.5.1
+    environment:
+      - SPARK_MODE=master
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+      - SPARK_USER=spark
+    ports:
+      - "9090:8080"
+      - "7077:7077"
+    profiles: ["all"]
+    networks:
+      - dolphinscheduler
+
+  spark-worker:
+    image: bitnami/spark:3.5.1
+    depends_on:
+      - spark-master
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark-master:7077
+      - SPARK_WORKER_MEMORY=2G
+      - SPARK_WORKER_CORES=2
+      - SPARK_RPC_AUTHENTICATION_ENABLED=no
+      - SPARK_RPC_ENCRYPTION_ENABLED=no
+      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
+      - SPARK_SSL_ENABLED=no
+      - SPARK_USER=spark
+    profiles: ["all"]
+    networks:
+      - dolphinscheduler
+
+  kafka-zookeeper:
+    image: confluentinc/cp-zookeeper:7.4.4
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - 22181:2181
+    profiles: ["all"]
+    networks:
+      - dolphinscheduler
+
+  kafka:
+    image: confluentinc/cp-kafka:7.4.4
+    depends_on:
+      - kafka-zookeeper
+    ports:
+      - 29092:29092
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: kafka-zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    profiles: ["all"]
+    networks:
+      - dolphinscheduler
+
+  init-kafka:
+    image: confluentinc/cp-kafka:7.4.4
+    depends_on:
+      - kafka
+    entrypoint: [ '/bin/sh', '-c' ]
+    command: |
+      "
+      # blocks until kafka is reachable
+      kafka-topics --bootstrap-server kafka:9092 --list
+
+      echo -e 'Creating kafka topics'
+      kafka-topics --bootstrap-server kafka:9092 --create --if-not-exists --topic reddit_post_preprocessed --replication-factor 1 --partitions 1
+      kafka-topics --bootstrap-server kafka:9092 --create --if-not-exists --topic reddit_post_filtered --replication-factor 1 --partitions 1
+      kafka-topics --bootstrap-server kafka:9092 --create --if-not-exists --topic reddit_post_sa --replication-factor 1 --partitions 1
+      
+      kafka-topics --bootstrap-server kafka:9092 --create --if-not-exists --topic gnews_preprocessed --replication-factor 1 --partitions 1
+      kafka-topics --bootstrap-server kafka:9092 --create --if-not-exists --topic gnews_filtered --replication-factor 1 --partitions 1
+      kafka-topics --bootstrap-server kafka:9092 --create --if-not-exists --topic gnews_sa --replication-factor 1 --partitions 1
+
+      echo -e 'Successfully created the following topics:'
+      kafka-topics --bootstrap-server kafka:9092 --list
+      "
+    profiles: ["all"]
+    networks:
+      - dolphinscheduler
+
+  kafka-ui:
+    container_name: kafka-ui
+    image: provectuslabs/kafka-ui:v0.7.2
+    depends_on:
+      - kafka
+    ports:
+      - 8080:8080
+    environment:
+      DYNAMIC_CONFIG_ENABLED: 'true'
+    volumes:
+      - ./volumes/kui/:/etc/kafkaui/
+    profiles: ["all"]
+    networks:
+      - dolphinscheduler
+
+  mycluster:
+    image: apache/hadoop:3
+    hostname: mycluster
+    command: ["hdfs", "namenode"]
+    ports:
+      - 9870:9870
+    env_file:
+      - ./config
+    environment:
+        ENSURE_NAMENODE_DIR: "/tmp/hadoop-root/dfs/name"
+    volumes:
+      - ./volumes/namenode_data:/hadoop/dfs/name
+    profiles: ["all"]
+    networks:
+      - dolphinscheduler
+
+  datanode:
+    image: apache/hadoop:3
+    command: ["hdfs", "datanode"]
+    env_file:
+      - ./config
+    volumes:
+      - ./volumes/datanode_data:/hadoop/dfs/data
+    profiles: ["all"]
+    networks:
+      - dolphinscheduler
+
+  resourcemanager:
+    image: apache/hadoop:3
+    hostname: resourcemanager
+    command: ["yarn", "resourcemanager"]
+    ports:
+        - 8088:8088
+    env_file:
+      - ./config
+    volumes:
+      - ./test.sh:/opt/test.sh
+    profiles: ["all"]
+    networks:
+      - dolphinscheduler
+
+  nodemanager:
+    image: apache/hadoop:3
+    command: ["yarn", "nodemanager"]
+    env_file:
+      - ./config
+    profiles: ["all"]
     networks:
       - dolphinscheduler
 
 networks:
   dolphinscheduler:
     driver: bridge
+    ipam:
+      config:
+        - 
+          subnet: 172.18.0.0/16
+          gateway: 172.18.0.1 # the ip is important as the task original ip in which it was stored will persist in the postgresql database
 
 volumes:
   dolphinscheduler-postgresql:

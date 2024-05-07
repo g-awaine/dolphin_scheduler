@@ -1,0 +1,31 @@
+[WARN] 2024-05-06 00:18:21.212 +0800 org.apache.zookeeper.ClientCnxn:[1292] - Session 0x10000020921002b for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10000020921002b, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WARN] 2024-05-06 00:18:21.315 +0800 com.zaxxer.hikari.pool.HikariPool:[788] - DolphinScheduler - Thread starvation or clock leap detected (housekeeper delta=5m2s10ms771µs405ns).
+[INFO] 2024-05-06 00:18:21.592 +0800 org.apache.curator.framework.state.ConnectionStateManager:[252] - State change: SUSPENDED
+[INFO] 2024-05-06 00:18:23.272 +0800 org.apache.zookeeper.ClientCnxn:[1171] - Opening socket connection to server dolphinscheduler-zookeeper/172.18.0.4:2181.
+[INFO] 2024-05-06 00:18:23.272 +0800 org.apache.zookeeper.ClientCnxn:[1173] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+[INFO] 2024-05-06 00:18:23.273 +0800 org.apache.zookeeper.ClientCnxn:[1005] - Socket connection established, initiating session, client: /172.18.0.13:47360, server: dolphinscheduler-zookeeper/172.18.0.4:2181
+[WARN] 2024-05-06 00:18:23.275 +0800 org.apache.zookeeper.ClientCnxn:[1429] - Unable to reconnect to ZooKeeper service, session 0x10000020921002b has expired
+[WARN] 2024-05-06 00:18:23.276 +0800 org.apache.curator.ConnectionState:[316] - Session expired event received
+[WARN] 2024-05-06 00:18:23.276 +0800 org.apache.zookeeper.ClientCnxn:[1292] - Session 0x10000020921002b for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x10000020921002b has expired
+	at org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1430)
+	at org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:154)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:86)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[INFO] 2024-05-06 00:18:23.276 +0800 org.apache.zookeeper.ZooKeeper:[637] - Initiating client connection, connectString=dolphinscheduler-zookeeper:2181 sessionTimeout=30000 watcher=org.apache.curator.ConnectionState@3b56947a
+[INFO] 2024-05-06 00:18:23.277 +0800 org.apache.zookeeper.ClientCnxnSocket:[239] - jute.maxbuffer value is 1048575 Bytes
+[INFO] 2024-05-06 00:18:23.277 +0800 org.apache.zookeeper.ClientCnxn:[1732] - zookeeper.request.timeout value is 0. feature enabled=false
+[INFO] 2024-05-06 00:18:23.284 +0800 org.apache.curator.framework.state.ConnectionStateManager:[252] - State change: LOST
+[INFO] 2024-05-06 00:18:23.287 +0800 org.apache.zookeeper.ClientCnxn:[568] - EventThread shut down for session: 0x10000020921002b
+[INFO] 2024-05-06 00:18:23.292 +0800 org.apache.zookeeper.ClientCnxn:[1171] - Opening socket connection to server dolphinscheduler-zookeeper/172.18.0.4:2181.
+[INFO] 2024-05-06 00:18:23.293 +0800 org.apache.zookeeper.ClientCnxn:[1173] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+[INFO] 2024-05-06 00:18:23.294 +0800 org.apache.zookeeper.ClientCnxn:[1005] - Socket connection established, initiating session, client: /172.18.0.13:47366, server: dolphinscheduler-zookeeper/172.18.0.4:2181
+[INFO] 2024-05-06 00:18:23.299 +0800 org.apache.zookeeper.ClientCnxn:[1444] - Session establishment complete on server dolphinscheduler-zookeeper/172.18.0.4:2181, session id = 0x100000209210030, negotiated timeout = 30000
+[INFO] 2024-05-06 00:18:23.300 +0800 org.apache.curator.framework.state.ConnectionStateManager:[252] - State change: RECONNECTED
+[INFO] 2024-05-06 00:18:23.307 +0800 org.apache.curator.framework.imps.EnsembleTracker:[201] - New config event received: {}
+[ERROR] 2024-05-06 00:18:26.264 +0800 org.apache.dolphinscheduler.alert.service.AlertBootstrapService:[106] - send alert msg fail,no bind plugin instance.

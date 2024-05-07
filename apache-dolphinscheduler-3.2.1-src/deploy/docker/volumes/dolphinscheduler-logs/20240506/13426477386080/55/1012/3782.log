@@ -1,0 +1,290 @@
+[INFO] 2024-05-06 01:51:26.095 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 01:51:26.096 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-06 01:51:26.096 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 01:51:26.096 +0800 - Begin to initialize task
+[INFO] 2024-05-06 01:51:26.096 +0800 - Set task startTime: 1714931486096
+[INFO] 2024-05-06 01:51:26.096 +0800 - Set task appId: 1012_3782
+[INFO] 2024-05-06 01:51:26.096 +0800 - End initialize task {
+  "taskInstanceId" : 3782,
+  "taskName" : "persist in postgresql",
+  "firstSubmitTime" : 1714931486052,
+  "startTime" : 1714931486096,
+  "taskType" : "SQL",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240506/13426477386080/55/1012/3782.log",
+  "processId" : 0,
+  "processDefineCode" : 13426477386080,
+  "processDefineVersion" : 55,
+  "processInstanceId" : 1012,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"input_topic\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"gnews_filtered\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"type\":\"POSTGRESQL\",\"datasource\":1,\"sql\":\"INSERT INTO filtered_data_persistence\\nVALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})\\n\",\"sqlType\":\"1\",\"preStatements\":[],\"postStatements\":[],\"displayRows\":10}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "persist in postgresql"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "input_topic" : {
+      "prop" : "input_topic",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "gnews_filtered"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240506"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3782"
+    },
+    "type" : {
+      "prop" : "type",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "article"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13427698681952"
+    },
+    "filtered_data_message" : {
+      "prop" : "filtered_data_message",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : ""
+    },
+    "content" : {
+      "prop" : "content",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "lolcontent"
+    },
+    "url" : {
+      "prop" : "url",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "lol"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240506015126"
+    },
+    "datetime" : {
+      "prop" : "datetime",
+      "direct" : "IN",
+      "type" : "TIMESTAMP",
+      "value" : "24-05-03 13:45:22"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1012"
+    },
+    "context" : {
+      "prop" : "context",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "context"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "es_filtered_data_persistence_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13426477386080"
+    },
+    "authors" : {
+      "prop" : "authors",
+      "direct" : "IN",
+      "type" : "LIST",
+      "value" : "[\"Erin Hale\", \"sss hale\"]"
+    }
+  },
+  "taskAppId" : "1012_3782",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "resourceParametersHelper" : {
+    "resourceMap" : {
+      "DATASOURCE" : {
+        "1" : {
+          "resourceType" : "DATASOURCE",
+          "type" : "POSTGRESQL",
+          "connectionParams" : "{\"user\":\"root\",\"password\":\"******\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"persistence\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence\",\"driverClassName\":\"org.postgresql.Driver\",\"validationQuery\":\"select version()\",\"other\":{\"password\":\"****\"}}",
+          "DATASOURCE" : null
+        }
+      }
+    }
+  },
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"datetime\",\"direct\":\"IN\",\"type\":\"TIMESTAMP\",\"value\":\"24-05-03 13:45:22\"},{\"prop\":\"context\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"context\"},{\"prop\":\"type\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"article\"},{\"prop\":\"filtered_data_message\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\"},{\"prop\":\"content\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"lolcontent\"},{\"prop\":\"url\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"lol\"},{\"prop\":\"authors\",\"direct\":\"IN\",\"type\":\"LIST\",\"value\":\"[\\\"Erin Hale\\\", \\\"sss hale\\\"]\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-06 01:51:26.100 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 01:51:26.100 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-06 01:51:26.100 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 01:51:26.111 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-06 01:51:26.112 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-06 01:51:26.112 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_55/1012/3782 check successfully
+[INFO] 2024-05-06 01:51:26.112 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.sql.SqlTaskChannel successfully
+[INFO] 2024-05-06 01:51:26.112 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-06 01:51:26.112 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-06 01:51:26.113 +0800 - Initialize sql task parameter {
+  "localParams" : [ ],
+  "varPool" : null,
+  "type" : "POSTGRESQL",
+  "datasource" : 1,
+  "sql" : "INSERT INTO filtered_data_persistence\nVALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})\n",
+  "sqlType" : 1,
+  "sendEmail" : null,
+  "displayRows" : 10,
+  "udfs" : null,
+  "showType" : null,
+  "connParams" : null,
+  "preStatements" : [ ],
+  "postStatements" : [ ],
+  "groupId" : 0,
+  "title" : null,
+  "limit" : 0
+}
+[INFO] 2024-05-06 01:51:26.113 +0800 - Task plugin instance: SQL create successfully
+[INFO] 2024-05-06 01:51:26.113 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-06 01:51:26.113 +0800 - Set taskVarPool: [{"prop":"datetime","direct":"IN","type":"TIMESTAMP","value":"24-05-03 13:45:22"},{"prop":"context","direct":"IN","type":"VARCHAR","value":"context"},{"prop":"type","direct":"IN","type":"VARCHAR","value":"article"},{"prop":"filtered_data_message","direct":"IN","type":"VARCHAR","value":""},{"prop":"content","direct":"IN","type":"VARCHAR","value":"lolcontent"},{"prop":"url","direct":"IN","type":"VARCHAR","value":"lol"},{"prop":"authors","direct":"IN","type":"LIST","value":"[\"Erin Hale\", \"sss hale\"]"}] successfully
+[INFO] 2024-05-06 01:51:26.113 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 01:51:26.113 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-06 01:51:26.113 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 01:51:26.113 +0800 - Full sql parameters: SqlParameters{type='POSTGRESQL', datasource=1, sql='INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+', sqlType=1, sendEmail=null, displayRows=10, limit=0, udfs='null', showType='null', connParams='null', groupId='0', title='null', preStatements=[], postStatements=[]}
+[INFO] 2024-05-06 01:51:26.114 +0800 - sql type : POSTGRESQL, datasource : 1, sql : INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ , localParams : [],udfs : null,showType : null,connParams : null,varPool : [Property{prop='datetime', direct=IN, type=TIMESTAMP, value='24-05-03 13:45:22'}, Property{prop='context', direct=IN, type=VARCHAR, value='context'}, Property{prop='type', direct=IN, type=VARCHAR, value='article'}, Property{prop='filtered_data_message', direct=IN, type=VARCHAR, value=''}, Property{prop='content', direct=IN, type=VARCHAR, value='lolcontent'}, Property{prop='url', direct=IN, type=VARCHAR, value='lol'}, Property{prop='authors', direct=IN, type=LIST, value='["Erin Hale", "sss hale"]'}] ,query max result limit  0
+[INFO] 2024-05-06 01:51:26.115 +0800 - setSqlParamsMap: Property with paramName: authors put in sqlParamsMap of content INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ successfully.
+[INFO] 2024-05-06 01:51:26.115 +0800 - setSqlParamsMap: Property with paramName: content put in sqlParamsMap of content INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ successfully.
+[INFO] 2024-05-06 01:51:26.115 +0800 - setSqlParamsMap: Property with paramName: url put in sqlParamsMap of content INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ successfully.
+[INFO] 2024-05-06 01:51:26.115 +0800 - setSqlParamsMap: Property with paramName: context put in sqlParamsMap of content INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ successfully.
+[INFO] 2024-05-06 01:51:26.115 +0800 - setSqlParamsMap: Property with paramName: type put in sqlParamsMap of content INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ successfully.
+[INFO] 2024-05-06 01:51:26.115 +0800 - setSqlParamsMap: Property with paramName: datetime put in sqlParamsMap of content INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ successfully.
+[INFO] 2024-05-06 01:51:26.116 +0800 - after replace sql , preparing : INSERT INTO filtered_data_persistence
+VALUES (?,?, ?, ?, ?, ?, ?)
+
+[INFO] 2024-05-06 01:51:26.116 +0800 - Sql Params are replaced sql , parameters:Erin Hale(VARCHAR)sss hale(VARCHAR)lolcontent(VARCHAR)lol(VARCHAR)context(VARCHAR)article(VARCHAR)24-05-03 13:45:22(TIMESTAMP)
+[INFO] 2024-05-06 01:51:26.116 +0800 - can't find udf function resource
+[WARN] 2024-05-06 01:51:26.116 +0800 - Connect strings must start with jdbc:snowflake://
+[ERROR] 2024-05-06 01:51:26.201 +0800 - execute sql error: SQL task prepareStatementAndBind error
+[ERROR] 2024-05-06 01:51:26.202 +0800 - sql task error
+org.apache.dolphinscheduler.plugin.task.api.TaskException: SQL task prepareStatementAndBind error
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.prepareStatementAndBind(SqlTask.java:396)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeUpdate(SqlTask.java:326)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeFuncAndSql(SqlTask.java:208)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:159)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerTaskExecutor.executeTask(DefaultWorkerTaskExecutor.java:54)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor.run(WorkerTaskExecutor.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff]
+	at java.sql.Timestamp.valueOf(Timestamp.java:237)
+	at org.apache.dolphinscheduler.plugin.task.api.utils.ParameterUtils.setInParameter(ParameterUtils.java:150)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.prepareStatementAndBind(SqlTask.java:389)
+	... 8 common frames omitted
+[ERROR] 2024-05-06 01:51:26.204 +0800 - Task execute failed, due to meet an exception
+org.apache.dolphinscheduler.plugin.task.api.TaskException: Execute sql task failed
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:166)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerTaskExecutor.executeTask(DefaultWorkerTaskExecutor.java:54)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor.run(WorkerTaskExecutor.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.apache.dolphinscheduler.plugin.task.api.TaskException: SQL task prepareStatementAndBind error
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.prepareStatementAndBind(SqlTask.java:396)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeUpdate(SqlTask.java:326)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeFuncAndSql(SqlTask.java:208)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:159)
+	... 5 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Timestamp format must be yyyy-mm-dd hh:mm:ss[.fffffffff]
+	at java.sql.Timestamp.valueOf(Timestamp.java:237)
+	at org.apache.dolphinscheduler.plugin.task.api.utils.ParameterUtils.setInParameter(ParameterUtils.java:150)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.prepareStatementAndBind(SqlTask.java:389)
+	... 8 common frames omitted
+[INFO] 2024-05-06 01:51:26.204 +0800 - Get appIds from worker 172.18.1.1:1234, taskLogPath: /opt/dolphinscheduler/logs/20240506/13426477386080/55/1012/3782.log
+[INFO] 2024-05-06 01:51:26.205 +0800 - Start finding appId in /opt/dolphinscheduler/logs/20240506/13426477386080/55/1012/3782.log, fetch way: log 
+[INFO] 2024-05-06 01:51:26.205 +0800 - The appId is empty
+[INFO] 2024-05-06 01:51:26.205 +0800 - Cancel the task successfully
+[INFO] 2024-05-06 01:51:26.242 +0800 - Get a exception when execute the task, will send the task status: FAILURE to master: 172.18.1.1:1234
+[INFO] 2024-05-06 01:51:26.242 +0800 - FINALIZE_SESSION

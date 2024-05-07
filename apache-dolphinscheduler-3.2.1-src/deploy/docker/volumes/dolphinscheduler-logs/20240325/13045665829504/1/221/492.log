@@ -1,0 +1,159 @@
+[INFO] 2024-03-25 17:15:54.322 +0800 - ***********************************************************************************************
+[INFO] 2024-03-25 17:15:54.328 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-03-25 17:15:54.328 +0800 - ***********************************************************************************************
+[INFO] 2024-03-25 17:15:54.328 +0800 - Begin to initialize task
+[INFO] 2024-03-25 17:15:54.328 +0800 - Set task startTime: 1711358154328
+[INFO] 2024-03-25 17:15:54.328 +0800 - Set task appId: 221_492
+[INFO] 2024-03-25 17:15:54.329 +0800 - End initialize task {
+  "taskInstanceId" : 492,
+  "taskName" : "hell",
+  "firstSubmitTime" : 1711358154304,
+  "startTime" : 1711358154328,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.19.0.8:5678",
+  "host" : "172.19.0.6:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240325/13045665829504/1/221/492.log",
+  "processId" : 0,
+  "processDefineCode" : 13045665829504,
+  "processDefineVersion" : 1,
+  "processInstanceId" : 221,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "gawain",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"print('Hello')\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hell"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "221"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240325"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240324"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "492"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hello"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13045662268160"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13045665829504"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240325171554"
+    }
+  },
+  "taskAppId" : "221_492",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-03-25 17:15:54.331 +0800 - ***********************************************************************************************
+[INFO] 2024-03-25 17:15:54.331 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-03-25 17:15:54.331 +0800 - ***********************************************************************************************
+[INFO] 2024-03-25 17:15:54.344 +0800 - Send task status RUNNING_EXECUTION master: 172.19.0.6:1234
+[INFO] 2024-03-25 17:15:54.345 +0800 - TenantCode: gawain check successfully
+[INFO] 2024-03-25 17:15:54.346 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/gawain/13010050770016/13045665829504_1/221/492 check successfully
+[INFO] 2024-03-25 17:15:54.346 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[INFO] 2024-03-25 17:15:54.346 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-03-25 17:15:54.349 +0800 - Download upstream files: [] successfully
+[INFO] 2024-03-25 17:15:54.350 +0800 - Task plugin instance: PYTHON create successfully
+[INFO] 2024-03-25 17:15:54.350 +0800 - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "print('Hello')",
+  "resourceList" : [ ]
+}
+[INFO] 2024-03-25 17:15:54.350 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-03-25 17:15:54.350 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-03-25 17:15:54.350 +0800 - ***********************************************************************************************
+[INFO] 2024-03-25 17:15:54.351 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-03-25 17:15:54.352 +0800 - ***********************************************************************************************
+[INFO] 2024-03-25 17:15:54.352 +0800 - raw python script : print('Hello')
+[INFO] 2024-03-25 17:15:54.352 +0800 - tenantCode :gawain, task dir:/tmp/dolphinscheduler/exec/process/gawain/13010050770016/13045665829504_1/221/492
+[INFO] 2024-03-25 17:15:54.353 +0800 - generate python script file:/tmp/dolphinscheduler/exec/process/gawain/13010050770016/13045665829504_1/221/492/py_221_492.py
+[INFO] 2024-03-25 17:15:54.353 +0800 - #-*- encoding=utf8 -*-
+
+print('Hello')
+[INFO] 2024-03-25 17:15:54.354 +0800 - Final Shell file is: 
+[INFO] 2024-03-25 17:15:54.355 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-03-25 17:15:54.355 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/gawain/13010050770016/13045665829504_1/221/492/py_221_492.py
+[INFO] 2024-03-25 17:15:54.355 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-03-25 17:15:54.356 +0800 - Executing shell command : sudo -u gawain -i /tmp/dolphinscheduler/exec/process/gawain/13010050770016/13045665829504_1/221/492/221_492.sh
+[INFO] 2024-03-25 17:15:54.369 +0800 - process start, process id is: 1440
+[INFO] 2024-03-25 17:15:55.372 +0800 -  -> 
+	sudo: unable to change directory to /home/gawain: No such file or directory
+	/tmp/dolphinscheduler/exec/process/gawain/13010050770016/13045665829504_1/221/492/221_492.sh: line 4: /tmp/dolphinscheduler/exec/process/gawain/13010050770016/13045665829504_1/221/492/py_221_492.py: Permission denied
+[INFO] 2024-03-25 17:15:55.374 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/gawain/13010050770016/13045665829504_1/221/492, processId:1440 ,exitStatusCode:126 ,processWaitForStatus:true ,processExitValue:126
+[INFO] 2024-03-25 17:15:55.374 +0800 - ***********************************************************************************************
+[INFO] 2024-03-25 17:15:55.374 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-03-25 17:15:55.374 +0800 - ***********************************************************************************************
+[INFO] 2024-03-25 17:15:55.375 +0800 - Upload output files: [] successfully
+[INFO] 2024-03-25 17:15:55.379 +0800 - Send task execute status: FAILURE to master : 172.19.0.6:1234
+[INFO] 2024-03-25 17:15:55.379 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-03-25 17:15:55.379 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/gawain/13010050770016/13045665829504_1/221/492
+[INFO] 2024-03-25 17:15:55.380 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/gawain/13010050770016/13045665829504_1/221/492
+[INFO] 2024-03-25 17:15:55.380 +0800 - FINALIZE_SESSION

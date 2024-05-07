@@ -1,0 +1,168 @@
+[INFO] 2024-04-25 11:53:54.847 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:53:54.873 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-25 11:53:54.874 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:53:54.874 +0800 - Begin to initialize task
+[INFO] 2024-04-25 11:53:54.875 +0800 - Set task startTime: 1714017234875
+[INFO] 2024-04-25 11:53:54.875 +0800 - Set task appId: 648_1726
+[INFO] 2024-04-25 11:53:54.876 +0800 - End initialize task {
+  "taskInstanceId" : 1726,
+  "taskName" : "test_dynamic",
+  "firstSubmitTime" : 1714017234800,
+  "startTime" : 1714017234875,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.0.10:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240425/13387016845888/1/648/1726.log",
+  "processId" : 0,
+  "processDefineCode" : 13387016845888,
+  "processDefineVersion" : 1,
+  "processInstanceId" : 648,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topics\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\\\"reddit_post_ processed_topic|reddit_post_sa_topic\\\"\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 13,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"echo ${topics}\",\"resourceList\":[]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "test_dynamic"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "topics" : {
+      "prop" : "topics",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "\"reddit_post_ processed_topic|reddit_post_sa_topic\""
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240425"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1726"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13387013244992"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240425115354"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "648"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240424"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "test"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13387016845888"
+    }
+  },
+  "taskAppId" : "648_1726",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-25 11:53:54.876 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:53:54.877 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-25 11:53:54.877 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:53:54.884 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-25 11:53:54.885 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-25 11:53:54.885 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13387016845888_1/648/1726 check successfully
+[INFO] 2024-04-25 11:53:54.885 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-04-25 11:53:54.885 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-04-25 11:53:54.886 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-25 11:53:54.886 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-04-25 11:53:54.886 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "echo ${topics}",
+  "resourceList" : [ ]
+}
+[INFO] 2024-04-25 11:53:54.886 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-25 11:53:54.886 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-04-25 11:53:54.886 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:53:54.886 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-25 11:53:54.886 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:53:54.887 +0800 - Final Shell file is: 
+[INFO] 2024-04-25 11:53:54.887 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-25 11:53:54.888 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+echo "reddit_post_ processed_topic|reddit_post_sa_topic"
+[INFO] 2024-04-25 11:53:54.888 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-25 11:53:54.888 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13387016845888_1/648/1726/648_1726.sh
+[INFO] 2024-04-25 11:53:54.907 +0800 - process start, process id is: 2183
+[INFO] 2024-04-25 11:53:55.907 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	reddit_post_ processed_topic|reddit_post_sa_topic
+[INFO] 2024-04-25 11:53:55.910 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13387016845888_1/648/1726, processId:2183 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[INFO] 2024-04-25 11:53:55.911 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:53:55.911 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-25 11:53:55.911 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 11:53:55.911 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-25 11:53:55.913 +0800 - Send task execute status: SUCCESS to master : 172.18.1.1:1234
+[INFO] 2024-04-25 11:53:55.913 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-25 11:53:55.914 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13387016845888_1/648/1726
+[INFO] 2024-04-25 11:53:55.914 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13387016845888_1/648/1726
+[INFO] 2024-04-25 11:53:55.914 +0800 - FINALIZE_SESSION

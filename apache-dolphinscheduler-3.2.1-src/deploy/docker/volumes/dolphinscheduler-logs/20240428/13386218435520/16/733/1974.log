@@ -1,0 +1,541 @@
+[INFO] 2024-04-28 00:43:46.636 +0800 - ***********************************************************************************************
+[INFO] 2024-04-28 00:43:46.638 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-28 00:43:46.638 +0800 - ***********************************************************************************************
+[INFO] 2024-04-28 00:43:46.640 +0800 - Begin to initialize task
+[INFO] 2024-04-28 00:43:46.640 +0800 - Set task startTime: 1714236226640
+[INFO] 2024-04-28 00:43:46.640 +0800 - Set task appId: 733_1974
+[INFO] 2024-04-28 00:43:46.641 +0800 - End initialize task {
+  "taskInstanceId" : 1974,
+  "taskName" : "sentiment anaysis",
+  "firstSubmitTime" : 1714236226619,
+  "startTime" : 1714236226640,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240428/13386218435520/16/733/1974.log",
+  "processId" : 0,
+  "processDefineCode" : 13386218435520,
+  "processDefineVersion" : 16,
+  "processInstanceId" : 733,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 7,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"# use kafka streaming api\\nfrom pyspark.sql.functions import udf, col, from_json\\nfrom pyspark.sql.types import FloatType, ArrayType, StringType, StructType, StructField, IntegerType\\nimport nltk\\nfrom nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA\\nfrom pyspark.sql import SparkSession\\nimport os\\n\\n# access the nltk data directory variable\\nnltk_data_dir = os.environ.get('NLTK_DATA')\\n\\n# download the model\\nnltk.download('vader_lexicon', download_dir=nltk_data_dir)\\n\\n# init the sentiment analysis object\\nsia = SIA()\\n\\n# init Spark session\\nspark = SparkSession.builder \\\\\\n    .master('local') \\\\\\n    .appName(\\\"Sentiment Analysis\\\") \\\\\\n    .config(\\\"spark.jars.packages\\\", \\\"org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1\\\") \\\\\\n    .config(\\\"spark.sql.streaming.checkpointLocation\\\", r\\\"/tmp/\\\") \\\\\\n    .config(\\\"spark.driver.extraJavaOptions\\\", \\\"-Divy.cache.dir=/tmp -Divy.home=/tmp\\\") \\\\\\n    .getOrCreate()\\n\\n# define a udf to perform sentiment analysis\\ndef analyze_sentiment(message):\\n    # Perform sentiment analysis\\n    pol_score = sia.polarity_scores(message)\\n    # Return the compound score\\n    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]\\n\\n# Register the function as a UDF\\nanalyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))\\n\\n# define the schema for the JSON data\\nschema = StructType([\\n    StructField(\\\"user\\\", StringType(), nullable=True),\\n    StructField(\\\"content\\\", StringType(), nullable=True),\\n    StructField(\\\"url\\\", StringType(), nullable=True),\\n    StructField(\\\"context\\\", StringType(), nullable=True),\\n    StructField(\\\"score\\\", IntegerType(), nullable=True),\\n    StructField(\\\"subreddit\\\", StringType(), nullable=True),\\n    StructField(\\\"type\\\", StringType(), nullable=True),\\n    StructField(\\\"id\\\", StringType(), nullable=True),\\n    StructField(\\\"datetime\\\", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed\\n])\\n\\n\\n# define the parameters for the input and output kafka broker and topic\\nkafka_broker = \\\"kafka:9092\\\"\\ninput_kafka_topic = \\\"reddit_post_filtered\\\"\\noutput_kafka_topic = \\\"reddit_post_sa\\\"\\n\\n# Subscribe to the input topic\\ndf = spark \\\\\\n    .readStream \\\\\\n    .format(\\\"kafka\\\") \\\\\\n    .option(\\\"kafka.bootstrap.servers\\\", kafka_broker) \\\\\\n    .option(\\\"subscribe\\\", input_kafka_topic) \\\\\\n    .load()\\n\\n# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data\\ndf = df.select(col(\\\"value\\\").cast(\\\"string\\\")) \\\\\\n    .withColumn(\\\"value\\\", from_json(\\\"value\\\", schema)) \\\\\\n\\nparsed_df = df \\\\\\n    .select(\\\"value.*\\\")\\n\\n# perform sentiment analysis on the parsed dataframe \\nsa_reddit_df = parsed_df.withColumn('sentiment_score', analyze_sentiment_udf(parsed_df['content']))\\n\\n# split the sentiment_score column into separate columns\\nsa_reddit_df = sa_reddit_df.withColumn(\\\"negative\\\", sa_reddit_df[\\\"sentiment_score\\\"][0]) \\\\\\n            .withColumn(\\\"neutral\\\", sa_reddit_df[\\\"sentiment_score\\\"][1]) \\\\\\n            .withColumn(\\\"positive\\\", sa_reddit_df[\\\"sentiment_score\\\"][2]) \\\\\\n            .withColumn(\\\"compound\\\", sa_reddit_df[\\\"sentiment_score\\\"][3]) \\\\\\n            .drop('sentiment_score')  # drop sentiment_score column after splitting\\n\\n# stream the data to kafka\\nkafka_write = sa_reddit_df \\\\\\n    .selectExpr(\\\"'' AS key\\\", \\\"to_json(struct(*)) AS value\\\") \\\\\\n    .writeStream \\\\\\n    .format(\\\"kafka\\\") \\\\\\n    .option(\\\"kafka.bootstrap.servers\\\", kafka_broker) \\\\\\n    .option(\\\"topic\\\", output_kafka_topic) \\\\\\n    .start()\\n\\n# Wait for the termination of the query\\nkafka_write.awaitTermination()\",\"resourceList\":[]}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11\nexport PYSPARK_PYTHON=/bin/python3.11\nexport PYTHON_LAUNCHER=/bin/python3.11\nexport NLTK_DATA=/local_storage/nltk_data",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sentiment anaysis"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "733"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240428"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240427"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1974"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sentiment_analysis_subprocess"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386027735104"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386218435520"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240428004346"
+    }
+  },
+  "taskAppId" : "733_1974",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-28 00:43:46.642 +0800 - ***********************************************************************************************
+[INFO] 2024-04-28 00:43:46.643 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-28 00:43:46.643 +0800 - ***********************************************************************************************
+[INFO] 2024-04-28 00:43:46.647 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-28 00:43:46.649 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-28 00:43:46.650 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_16/733/1974 check successfully
+[INFO] 2024-04-28 00:43:46.650 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[INFO] 2024-04-28 00:43:46.650 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-04-28 00:43:46.651 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-28 00:43:46.651 +0800 - Task plugin instance: PYTHON create successfully
+[INFO] 2024-04-28 00:43:46.654 +0800 - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "# use kafka streaming api\nfrom pyspark.sql.functions import udf, col, from_json\nfrom pyspark.sql.types import FloatType, ArrayType, StringType, StructType, StructField, IntegerType\nimport nltk\nfrom nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA\nfrom pyspark.sql import SparkSession\nimport os\n\n# access the nltk data directory variable\nnltk_data_dir = os.environ.get('NLTK_DATA')\n\n# download the model\nnltk.download('vader_lexicon', download_dir=nltk_data_dir)\n\n# init the sentiment analysis object\nsia = SIA()\n\n# init Spark session\nspark = SparkSession.builder \\\n    .master('local') \\\n    .appName(\"Sentiment Analysis\") \\\n    .config(\"spark.jars.packages\", \"org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1\") \\\n    .config(\"spark.sql.streaming.checkpointLocation\", r\"/tmp/\") \\\n    .config(\"spark.driver.extraJavaOptions\", \"-Divy.cache.dir=/tmp -Divy.home=/tmp\") \\\n    .getOrCreate()\n\n# define a udf to perform sentiment analysis\ndef analyze_sentiment(message):\n    # Perform sentiment analysis\n    pol_score = sia.polarity_scores(message)\n    # Return the compound score\n    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]\n\n# Register the function as a UDF\nanalyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))\n\n# define the schema for the JSON data\nschema = StructType([\n    StructField(\"user\", StringType(), nullable=True),\n    StructField(\"content\", StringType(), nullable=True),\n    StructField(\"url\", StringType(), nullable=True),\n    StructField(\"context\", StringType(), nullable=True),\n    StructField(\"score\", IntegerType(), nullable=True),\n    StructField(\"subreddit\", StringType(), nullable=True),\n    StructField(\"type\", StringType(), nullable=True),\n    StructField(\"id\", StringType(), nullable=True),\n    StructField(\"datetime\", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed\n])\n\n\n# define the parameters for the input and output kafka broker and topic\nkafka_broker = \"kafka:9092\"\ninput_kafka_topic = \"reddit_post_filtered\"\noutput_kafka_topic = \"reddit_post_sa\"\n\n# Subscribe to the input topic\ndf = spark \\\n    .readStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", kafka_broker) \\\n    .option(\"subscribe\", input_kafka_topic) \\\n    .load()\n\n# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data\ndf = df.select(col(\"value\").cast(\"string\")) \\\n    .withColumn(\"value\", from_json(\"value\", schema)) \\\n\nparsed_df = df \\\n    .select(\"value.*\")\n\n# perform sentiment analysis on the parsed dataframe \nsa_reddit_df = parsed_df.withColumn('sentiment_score', analyze_sentiment_udf(parsed_df['content']))\n\n# split the sentiment_score column into separate columns\nsa_reddit_df = sa_reddit_df.withColumn(\"negative\", sa_reddit_df[\"sentiment_score\"][0]) \\\n            .withColumn(\"neutral\", sa_reddit_df[\"sentiment_score\"][1]) \\\n            .withColumn(\"positive\", sa_reddit_df[\"sentiment_score\"][2]) \\\n            .withColumn(\"compound\", sa_reddit_df[\"sentiment_score\"][3]) \\\n            .drop('sentiment_score')  # drop sentiment_score column after splitting\n\n# stream the data to kafka\nkafka_write = sa_reddit_df \\\n    .selectExpr(\"'' AS key\", \"to_json(struct(*)) AS value\") \\\n    .writeStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", kafka_broker) \\\n    .option(\"topic\", output_kafka_topic) \\\n    .start()\n\n# Wait for the termination of the query\nkafka_write.awaitTermination()",
+  "resourceList" : [ ]
+}
+[INFO] 2024-04-28 00:43:46.656 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-28 00:43:46.657 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-04-28 00:43:46.657 +0800 - ***********************************************************************************************
+[INFO] 2024-04-28 00:43:46.657 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-28 00:43:46.657 +0800 - ***********************************************************************************************
+[INFO] 2024-04-28 00:43:46.657 +0800 - raw python script : # use kafka streaming api
+from pyspark.sql.functions import udf, col, from_json
+from pyspark.sql.types import FloatType, ArrayType, StringType, StructType, StructField, IntegerType
+import nltk
+from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
+from pyspark.sql import SparkSession
+import os
+
+# access the nltk data directory variable
+nltk_data_dir = os.environ.get('NLTK_DATA')
+
+# download the model
+nltk.download('vader_lexicon', download_dir=nltk_data_dir)
+
+# init the sentiment analysis object
+sia = SIA()
+
+# init Spark session
+spark = SparkSession.builder \
+    .master('local') \
+    .appName("Sentiment Analysis") \
+    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1") \
+    .config("spark.sql.streaming.checkpointLocation", r"/tmp/") \
+    .config("spark.driver.extraJavaOptions", "-Divy.cache.dir=/tmp -Divy.home=/tmp") \
+    .getOrCreate()
+
+# define a udf to perform sentiment analysis
+def analyze_sentiment(message):
+    # Perform sentiment analysis
+    pol_score = sia.polarity_scores(message)
+    # Return the compound score
+    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]
+
+# Register the function as a UDF
+analyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))
+
+# define the schema for the JSON data
+schema = StructType([
+    StructField("user", StringType(), nullable=True),
+    StructField("content", StringType(), nullable=True),
+    StructField("url", StringType(), nullable=True),
+    StructField("context", StringType(), nullable=True),
+    StructField("score", IntegerType(), nullable=True),
+    StructField("subreddit", StringType(), nullable=True),
+    StructField("type", StringType(), nullable=True),
+    StructField("id", StringType(), nullable=True),
+    StructField("datetime", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed
+])
+
+
+# define the parameters for the input and output kafka broker and topic
+kafka_broker = "kafka:9092"
+input_kafka_topic = "reddit_post_filtered"
+output_kafka_topic = "reddit_post_sa"
+
+# Subscribe to the input topic
+df = spark \
+    .readStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("subscribe", input_kafka_topic) \
+    .load()
+
+# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data
+df = df.select(col("value").cast("string")) \
+    .withColumn("value", from_json("value", schema)) \
+
+parsed_df = df \
+    .select("value.*")
+
+# perform sentiment analysis on the parsed dataframe 
+sa_reddit_df = parsed_df.withColumn('sentiment_score', analyze_sentiment_udf(parsed_df['content']))
+
+# split the sentiment_score column into separate columns
+sa_reddit_df = sa_reddit_df.withColumn("negative", sa_reddit_df["sentiment_score"][0]) \
+            .withColumn("neutral", sa_reddit_df["sentiment_score"][1]) \
+            .withColumn("positive", sa_reddit_df["sentiment_score"][2]) \
+            .withColumn("compound", sa_reddit_df["sentiment_score"][3]) \
+            .drop('sentiment_score')  # drop sentiment_score column after splitting
+
+# stream the data to kafka
+kafka_write = sa_reddit_df \
+    .selectExpr("'' AS key", "to_json(struct(*)) AS value") \
+    .writeStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("topic", output_kafka_topic) \
+    .start()
+
+# Wait for the termination of the query
+kafka_write.awaitTermination()
+[INFO] 2024-04-28 00:43:46.659 +0800 - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_16/733/1974
+[INFO] 2024-04-28 00:43:46.661 +0800 - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_16/733/1974/py_733_1974.py
+[INFO] 2024-04-28 00:43:46.661 +0800 - #-*- encoding=utf8 -*-
+
+# use kafka streaming api
+from pyspark.sql.functions import udf, col, from_json
+from pyspark.sql.types import FloatType, ArrayType, StringType, StructType, StructField, IntegerType
+import nltk
+from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
+from pyspark.sql import SparkSession
+import os
+
+# access the nltk data directory variable
+nltk_data_dir = os.environ.get('NLTK_DATA')
+
+# download the model
+nltk.download('vader_lexicon', download_dir=nltk_data_dir)
+
+# init the sentiment analysis object
+sia = SIA()
+
+# init Spark session
+spark = SparkSession.builder \
+    .master('local') \
+    .appName("Sentiment Analysis") \
+    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1") \
+    .config("spark.sql.streaming.checkpointLocation", r"/tmp/") \
+    .config("spark.driver.extraJavaOptions", "-Divy.cache.dir=/tmp -Divy.home=/tmp") \
+    .getOrCreate()
+
+# define a udf to perform sentiment analysis
+def analyze_sentiment(message):
+    # Perform sentiment analysis
+    pol_score = sia.polarity_scores(message)
+    # Return the compound score
+    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]
+
+# Register the function as a UDF
+analyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))
+
+# define the schema for the JSON data
+schema = StructType([
+    StructField("user", StringType(), nullable=True),
+    StructField("content", StringType(), nullable=True),
+    StructField("url", StringType(), nullable=True),
+    StructField("context", StringType(), nullable=True),
+    StructField("score", IntegerType(), nullable=True),
+    StructField("subreddit", StringType(), nullable=True),
+    StructField("type", StringType(), nullable=True),
+    StructField("id", StringType(), nullable=True),
+    StructField("datetime", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed
+])
+
+
+# define the parameters for the input and output kafka broker and topic
+kafka_broker = "kafka:9092"
+input_kafka_topic = "reddit_post_filtered"
+output_kafka_topic = "reddit_post_sa"
+
+# Subscribe to the input topic
+df = spark \
+    .readStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("subscribe", input_kafka_topic) \
+    .load()
+
+# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data
+df = df.select(col("value").cast("string")) \
+    .withColumn("value", from_json("value", schema)) \
+
+parsed_df = df \
+    .select("value.*")
+
+# perform sentiment analysis on the parsed dataframe 
+sa_reddit_df = parsed_df.withColumn('sentiment_score', analyze_sentiment_udf(parsed_df['content']))
+
+# split the sentiment_score column into separate columns
+sa_reddit_df = sa_reddit_df.withColumn("negative", sa_reddit_df["sentiment_score"][0]) \
+            .withColumn("neutral", sa_reddit_df["sentiment_score"][1]) \
+            .withColumn("positive", sa_reddit_df["sentiment_score"][2]) \
+            .withColumn("compound", sa_reddit_df["sentiment_score"][3]) \
+            .drop('sentiment_score')  # drop sentiment_score column after splitting
+
+# stream the data to kafka
+kafka_write = sa_reddit_df \
+    .selectExpr("'' AS key", "to_json(struct(*)) AS value") \
+    .writeStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("topic", output_kafka_topic) \
+    .start()
+
+# Wait for the termination of the query
+kafka_write.awaitTermination()
+[INFO] 2024-04-28 00:43:46.663 +0800 - Final Shell file is: 
+[INFO] 2024-04-28 00:43:46.663 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-28 00:43:46.663 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYSPARK_PYTHON=/bin/python3.11
+export PYTHON_LAUNCHER=/bin/python3.11
+export NLTK_DATA=/local_storage/nltk_data
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_16/733/1974/py_733_1974.py
+[INFO] 2024-04-28 00:43:46.663 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-28 00:43:46.663 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_16/733/1974/733_1974.sh
+[INFO] 2024-04-28 00:43:46.667 +0800 - process start, process id is: 5397
+[INFO] 2024-04-28 00:43:47.671 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	[nltk_data] Downloading package vader_lexicon to
+	[nltk_data]     /local_storage/nltk_data...
+	[nltk_data]   Package vader_lexicon is already up-to-date!
+[INFO] 2024-04-28 00:43:53.721 +0800 -  -> 
+	:: loading settings :: url = jar:file:/opt/spark-3.5.1-bin-hadoop3/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+	Ivy Default Cache set to: /tmp
+	The jars for the packages stored in: /tmp/jars
+	org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+	:: resolving dependencies :: org.apache.spark#spark-submit-parent-e88f45ac-32ad-4abc-b445-261314176c39;1.0
+		confs: [default]
+		found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+[INFO] 2024-04-28 00:43:54.725 +0800 -  -> 
+		found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+		found org.apache.kafka#kafka-clients;3.4.1 in central
+		found org.lz4#lz4-java;1.8.0 in central
+		found org.xerial.snappy#snappy-java;1.1.10.3 in central
+		found org.slf4j#slf4j-api;2.0.7 in central
+		found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+		found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+		found commons-logging#commons-logging;1.1.3 in central
+		found com.google.code.findbugs#jsr305;3.0.0 in central
+		found org.apache.commons#commons-pool2;2.11.1 in central
+	:: resolution report :: resolve 1190ms :: artifacts dl 17ms
+		:: modules in use:
+		com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+		commons-logging#commons-logging;1.1.3 from central in [default]
+		org.apache.commons#commons-pool2;2.11.1 from central in [default]
+		org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+		org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+		org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+		org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+		org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+		org.lz4#lz4-java;1.8.0 from central in [default]
+		org.slf4j#slf4j-api;2.0.7 from central in [default]
+		org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+		---------------------------------------------------------------------
+		|                  |            modules            ||   artifacts   |
+		|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+		---------------------------------------------------------------------
+		|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+		---------------------------------------------------------------------
+	:: retrieving :: org.apache.spark#spark-submit-parent-e88f45ac-32ad-4abc-b445-261314176c39
+		confs: [default]
+		0 artifacts copied, 11 already retrieved (0kB/27ms)
+[INFO] 2024-04-28 00:43:56.731 +0800 -  -> 
+	24/04/28 00:43:55 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2024-04-28 00:43:57.752 +0800 -  -> 
+	Setting default log level to "WARN".
+	To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[INFO] 2024-04-28 00:43:59.774 +0800 -  -> 
+	24/04/28 00:43:59 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+	24/04/28 00:43:59 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+	24/04/28 00:43:59 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+[INFO] 2024-04-28 00:44:18.824 +0800 -  -> 
+	24/04/28 00:44:18 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+[INFO] 2024-04-28 00:44:21.830 +0800 -  -> 
+	24/04/28 00:44:21 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+[INFO] 2024-04-28 00:44:26.846 +0800 -  -> 
+	24/04/28 00:44:26 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[INFO] 2024-04-28 00:44:28.849 +0800 -  -> 
+	
+	[Stage 0:>                                                          (0 + 1) / 1]
+[INFO] 2024-04-28 00:44:30.854 +0800 -  -> 
+	
+	                                                                                
+[INFO] 2024-04-28 00:45:08.961 +0800 -  -> 
+	
+	[Stage 1:>                                                          (0 + 1) / 1]
+[INFO] 2024-04-28 00:45:16.038 +0800 -  -> 
+	24/04/28 00:45:15 WARN KafkaDataConsumer: KafkaDataConsumer is not running in UninterruptibleThread. It may hang when KafkaDataConsumer's methods are interrupted because of KAFKA-1894
+[INFO] 2024-04-28 00:45:19.046 +0800 -  -> 
+	
+	                                                                                
+[INFO] 2024-04-28 00:47:05.377 +0800 -  -> 
+	
+	[Stage 2:>                                                          (0 + 1) / 1]
+	24/04/28 00:47:04 WARN KafkaDataConsumer: KafkaDataConsumer is not running in UninterruptibleThread. It may hang when KafkaDataConsumer's methods are interrupted because of KAFKA-1894
+[INFO] 2024-04-28 00:47:06.381 +0800 -  -> 
+	
+	                                                                                
+[INFO] 2024-04-28 00:47:18.881 +0800 - process id:5397, cmd:sudo -u default kill -9 5397 5401 5404 5407 5408 5976 6145 5426 5427 5428 5429 5430 5431 5432 5433 5434 5435 5436 5437 5438 5439 5441 5443 5444 5446 5447 5448 5449 5450 5451 5452 5453 5454 5455 5456 5457 5458 5459 5460 5461 5462 5463 5464 5465 5466 5467 5468 5469 5470 5493 5494 5495 5496 5497 5498 5499 5500 5501 5524 5525 5548 5549 5550 5551 5552 5553 5639 5729 5734 5776 5975 5982 5983 5988 5989 5995 5996 5997 6045 6046 6047 6048 6049 6052 6140 6173 5445 5554
+[ERROR] 2024-04-28 00:47:19.093 +0800 - kill task error
+org.apache.dolphinscheduler.common.shell.AbstractShell$ExitCodeException: kill: (5397): Operation not permitted
+kill: (5426): No such process
+kill: (5427): No such process
+kill: (5428): No such process
+kill: (5429): No such process
+kill: (5430): No such process
+kill: (5431): No such process
+kill: (5432): No such process
+kill: (5433): No such process
+kill: (5434): No such process
+kill: (5435): No such process
+kill: (5436): No such process
+kill: (5437): No such process
+kill: (5438): No such process
+kill: (5439): No such process
+kill: (5441): No such process
+kill: (5443): No such process
+kill: (5444): No such process
+kill: (5446): No such process
+kill: (5447): No such process
+kill: (5448): No such process
+kill: (5449): No such process
+kill: (5450): No such process
+kill: (5451): No such process
+kill: (5452): No such process
+kill: (5453): No such process
+kill: (5454): No such process
+kill: (5455): No such process
+kill: (5456): No such process
+kill: (5457): No such process
+kill: (5458): No such process
+kill: (5459): No such process
+kill: (5460): No such process
+kill: (5461): No such process
+kill: (5462): No such process
+kill: (5463): No such process
+kill: (5464): No such process
+kill: (5465): No such process
+kill: (5466): No such process
+kill: (5467): No such process
+kill: (5468): No such process
+kill: (5469): No such process
+kill: (5470): No such process
+kill: (5493): No such process
+kill: (5494): No such process
+kill: (5495): No such process
+kill: (5496): No such process
+kill: (5497): No such process
+kill: (5498): No such process
+kill: (5499): No such process
+kill: (5500): No such process
+kill: (5501): No such process
+kill: (5524): No such process
+kill: (5525): No such process
+kill: (5548): No such process
+kill: (5549): No such process
+kill: (5550): No such process
+kill: (5551): No such process
+kill: (5552): No such process
+kill: (5639): No such process
+kill: (5729): No such process
+kill: (5734): No such process
+kill: (5776): No such process
+kill: (5975): No such process
+kill: (5982): No such process
+kill: (5983): No such process
+kill: (5988): No such process
+kill: (5989): No such process
+kill: (5995): No such process
+kill: (5996): No such process
+kill: (5997): No such process
+kill: (6045): No such process
+kill: (6046): No such process
+kill: (6047): No such process
+kill: (6048): No such process
+kill: (6049): No such process
+kill: (6052): No such process
+kill: (6140): No such process
+kill: (6173): No such process
+kill: (5445): No such process
+kill: (5554): No such process
+
+	at org.apache.dolphinscheduler.common.shell.AbstractShell.runCommand(AbstractShell.java:205)
+	at org.apache.dolphinscheduler.common.shell.AbstractShell.run(AbstractShell.java:118)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execute(ShellExecutor.java:125)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execCommand(ShellExecutor.java:103)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execCommand(ShellExecutor.java:86)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.exeShell(OSUtils.java:345)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.exeCmd(OSUtils.java:334)
+	at org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction.killProcess(TaskInstanceKillOperationFunction.java:135)
+	at org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction.doKill(TaskInstanceKillOperationFunction.java:96)
+	at org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction.operate(TaskInstanceKillOperationFunction.java:69)
+	at org.apache.dolphinscheduler.server.worker.rpc.TaskInstanceOperatorImpl.killTask(TaskInstanceOperatorImpl.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.dolphinscheduler.extract.base.server.ServerMethodInvokerImpl.invoke(ServerMethodInvokerImpl.java:41)
+	at org.apache.dolphinscheduler.extract.base.server.JdkDynamicServerHandler.lambda$processReceived$0(JdkDynamicServerHandler.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] 2024-04-28 00:47:19.101 +0800 - Get appIds from worker 172.18.1.1:1234, taskLogPath: /opt/dolphinscheduler/logs/20240428/13386218435520/16/733/1974.log
+[INFO] 2024-04-28 00:47:19.110 +0800 - Start finding appId in /opt/dolphinscheduler/logs/20240428/13386218435520/16/733/1974.log, fetch way: log 
+[INFO] 2024-04-28 00:47:19.138 +0800 - The appId is empty
+[INFO] 2024-04-28 00:47:19.140 +0800 - Begin to kill process process, pid is : 5397
+[INFO] 2024-04-28 00:47:19.140 +0800 - Success kill task: 733_1974, pid: 5397
+[INFO] 2024-04-28 00:47:19.141 +0800 - kill task by cancelApplication, taskInstanceId: 1974
+[INFO] 2024-04-28 00:47:19.439 +0800 - process has killed. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_16/733/1974, processId:5397 ,exitStatusCode:137 ,processWaitForStatus:true ,processExitValue:137
+[INFO] 2024-04-28 00:47:19.471 +0800 - ***********************************************************************************************
+[INFO] 2024-04-28 00:47:19.474 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-28 00:47:19.476 +0800 - ***********************************************************************************************
+[INFO] 2024-04-28 00:47:19.517 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-28 00:47:19.549 +0800 - Send task execute status: KILL to master : 172.18.1.1:1234
+[INFO] 2024-04-28 00:47:19.552 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-28 00:47:19.553 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_16/733/1974
+[INFO] 2024-04-28 00:47:19.555 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_16/733/1974
+[INFO] 2024-04-28 00:47:19.556 +0800 - FINALIZE_SESSION

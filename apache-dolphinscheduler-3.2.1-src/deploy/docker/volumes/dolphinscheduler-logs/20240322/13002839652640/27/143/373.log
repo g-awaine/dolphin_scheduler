@@ -1,0 +1,169 @@
+[INFO] 2024-03-22 10:00:55.268 +0800 - Submit LogicTask: sum from lists to MasterTaskExecutorThreadPool success
+[INFO] 2024-03-22 10:00:55.268 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 10:00:55.300 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-03-22 10:00:55.302 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 10:00:55.302 +0800 - Begin to initialize task
+[INFO] 2024-03-22 10:00:55.302 +0800 - Set task startTime: 1711072855302
+[INFO] 2024-03-22 10:00:55.304 +0800 - Set task appId: 143_373
+[INFO] 2024-03-22 10:00:55.313 +0800 - End initialize task {
+  "taskInstanceId" : 373,
+  "taskName" : "sum from lists",
+  "firstSubmitTime" : 1711072855228,
+  "startTime" : 1711072855302,
+  "taskType" : "DYNAMIC",
+  "workflowInstanceHost" : "172.18.0.6:5678",
+  "host" : "172.18.0.6:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240322/13002839652640/27/143/373.log",
+  "processId" : 0,
+  "processDefineCode" : 13002839652640,
+  "processDefineVersion" : 27,
+  "processInstanceId" : 143,
+  "scheduleTime" : 1711072850000,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 6,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":13003655208096,\"maxNumOfSubWorkflowInstances\":3,\"degreeOfParallelism\":2,\"filterCondition\":\"\",\"listParameters\":[{\"name\":\"num1\",\"value\":\"0,1\",\"separator\":\",\"},{\"name\":\"num2\",\"value\":\"0,10\",\"separator\":\",\"}]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sum from lists"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "143"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240322"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "373"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "dynamic_task_workflow"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005792875200"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13002839652640"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : null,
+      "type" : null,
+      "value" : "20240322100050"
+    }
+  },
+  "taskAppId" : "143_373",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : {
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : null,
+      "type" : null,
+      "value" : "20240322100050"
+    }
+  },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-03-22 10:00:55.314 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 10:00:55.314 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-03-22 10:00:55.314 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 10:00:55.335 +0800 - Send task status RUNNING_EXECUTION to master 172.18.0.6:5678
+[INFO] 2024-03-22 10:00:55.335 +0800 - Success initialize task parameters: 
+{
+  "localParams" : [ ],
+  "varPool" : null,
+  "processDefinitionCode" : 13003655208096,
+  "maxNumOfSubWorkflowInstances" : 3,
+  "degreeOfParallelism" : 2,
+  "filterCondition" : "",
+  "listParameters" : [ {
+    "name" : "num1",
+    "value" : "0,1",
+    "separator" : ","
+  }, {
+    "name" : "num2",
+    "value" : "0,10",
+    "separator" : ","
+  } ]
+}
+[INFO] 2024-03-22 10:00:55.342 +0800 - Initialized task plugin instance: DYNAMIC successfully
+[INFO] 2024-03-22 10:00:55.342 +0800 - Initialize taskVarPool: null successfully
+[INFO] 2024-03-22 10:00:55.342 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 10:00:55.342 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-03-22 10:00:55.342 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 10:00:55.344 +0800 - parameter group size: 4
+[INFO] 2024-03-22 10:00:55.344 +0800 - parameter group: {num1=0, num2=0}
+[INFO] 2024-03-22 10:00:55.344 +0800 - parameter group: {num1=0, num2=10}
+[INFO] 2024-03-22 10:00:55.344 +0800 - parameter group: {num1=1, num2=0}
+[INFO] 2024-03-22 10:00:55.344 +0800 - parameter group: {num1=1, num2=10}
+[WARN] 2024-03-22 10:00:55.344 +0800 - the number of sub process instances [4] exceeds the maximum limit [3]
+[INFO] 2024-03-22 10:00:55.415 +0800 - Expected number of runs : 3, actual number of runs : 3
+[INFO] 2024-03-22 10:00:55.422 +0800 - insert 3 relation sub workflow
+[INFO] 2024-03-22 10:00:55.429 +0800 - There are 2 sub process instances that can be started
+[INFO] 2024-03-22 10:00:55.437 +0800 - start sub process instance, sub process instance id: 146, command: Command(id=171, commandType=SCHEDULER, processDefinitionCode=13003655208096, executorId=1, commandParam={"StartParams":"{\"num1\":\"0\",\"num2\":\"0\"}"}, taskDependType=TASK_POST, failureStrategy=CONTINUE, warningType=NONE, warningGroupId=0, scheduleTime=null, startTime=Fri Mar 22 10:00:55 GMT+08:00 2024, processInstancePriority=MEDIUM, updateTime=Fri Mar 22 10:00:55 GMT+08:00 2024, workerGroup=default, tenantCode=null, environmentCode=null, dryRun=0, processInstanceId=146, processDefinitionVersion=14, testFlag=0)
+[INFO] 2024-03-22 10:00:55.442 +0800 - start sub process instance, sub process instance id: 148, command: Command(id=172, commandType=SCHEDULER, processDefinitionCode=13003655208096, executorId=1, commandParam={"StartParams":"{\"num1\":\"0\",\"num2\":\"10\"}"}, taskDependType=TASK_POST, failureStrategy=CONTINUE, warningType=NONE, warningGroupId=0, scheduleTime=null, startTime=Fri Mar 22 10:00:55 GMT+08:00 2024, processInstancePriority=MEDIUM, updateTime=Fri Mar 22 10:00:55 GMT+08:00 2024, workerGroup=default, tenantCode=null, environmentCode=null, dryRun=0, processInstanceId=148, processDefinitionVersion=14, testFlag=0)
+[INFO] 2024-03-22 10:01:05.467 +0800 - There are 2 sub process instances that can be started
+[INFO] 2024-03-22 10:01:05.495 +0800 - start sub process instance, sub process instance id: 149, command: Command(id=175, commandType=SCHEDULER, processDefinitionCode=13003655208096, executorId=1, commandParam={"StartParams":"{\"num1\":\"1\",\"num2\":\"0\"}"}, taskDependType=TASK_POST, failureStrategy=CONTINUE, warningType=NONE, warningGroupId=0, scheduleTime=null, startTime=Fri Mar 22 10:01:05 GMT+08:00 2024, processInstancePriority=MEDIUM, updateTime=Fri Mar 22 10:01:05 GMT+08:00 2024, workerGroup=default, tenantCode=null, environmentCode=null, dryRun=0, processInstanceId=149, processDefinitionVersion=14, testFlag=0)
+[INFO] 2024-03-22 10:01:15.533 +0800 - all sub process instance finish
+[INFO] 2024-03-22 10:01:15.541 +0800 - success sub process instance count: 3
+[INFO] 2024-03-22 10:01:15.541 +0800 - all sub process instance success
+[INFO] 2024-03-22 10:01:15.541 +0800 - set varPool
+[INFO] 2024-03-22 10:01:15.571 +0800 - set property: Property{prop='dynamic.out(sum from lists)', direct=OUT, type=VARCHAR, value='[{"dynParams":{"num1":"0","num2":"0"},"outputValue":{},"mappedTimes":1},{"dynParams":{"num1":"0","num2":"10"},"outputValue":{},"mappedTimes":2},{"dynParams":{"num1":"1","num2":"0"},"outputValue":{},"mappedTimes":3}]'}
+[INFO] 2024-03-22 10:01:15.572 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 10:01:15.572 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-03-22 10:01:15.572 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 10:01:15.572 +0800 - Task execute finished, removed the TaskExecutionContext
+[INFO] 2024-03-22 10:01:15.576 +0800 - Send task status: SUCCESS to master: 172.18.0.6:5678 successfully
+[INFO] 2024-03-22 10:01:15.576 +0800 - Execute task finished, will send the task execute result to master, the current task execute result is SUCCESS
+[INFO] 2024-03-22 10:01:15.577 +0800 - FINALIZE_SESSION

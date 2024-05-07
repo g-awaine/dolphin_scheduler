@@ -1,0 +1,165 @@
+[INFO] 2024-04-09 17:29:50.446 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 17:29:50.457 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-09 17:29:50.461 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 17:29:50.462 +0800 - Begin to initialize task
+[INFO] 2024-04-09 17:29:50.466 +0800 - Set task startTime: 1712654990463
+[INFO] 2024-04-09 17:29:50.474 +0800 - Set task appId: 256_534
+[INFO] 2024-04-09 17:29:50.479 +0800 - End initialize task {
+  "taskInstanceId" : 534,
+  "taskName" : "spark_shell",
+  "firstSubmitTime" : 1712654989271,
+  "startTime" : 1712654990463,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.20.0.8:5678",
+  "host" : "172.20.0.9:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240409/13201021801792/9/256/534.log",
+  "processId" : 0,
+  "processDefineCode" : 13201021801792,
+  "processDefineVersion" : 9,
+  "processInstanceId" : 256,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 2,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"$SPARK_HOME/bin/spark-submit --master local --deploy-mode client --conf spark.driver.cores=1 --conf spark.driver.memory=512M --conf spark.executor.instances=2 --conf spark.executor.cores=2 --conf spark.executor.memory=2G --name myapple spark-test.py\\n\",\"resourceList\":[{\"id\":null,\"resourceName\":\"file:/dolphinscheduler/default/resources/spark-test.py\",\"res\":null}]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "spark_shell"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "256"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240409"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240408"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "534"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "spark"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13210058002752"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13201021801792"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240409172949"
+    }
+  },
+  "taskAppId" : "256_534",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-09 17:29:50.487 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 17:29:50.488 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-09 17:29:50.490 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 17:29:50.677 +0800 - Send task status RUNNING_EXECUTION master: 172.20.0.9:1234
+[INFO] 2024-04-09 17:29:50.714 +0800 - create linux os user: default
+[INFO] 2024-04-09 17:29:50.716 +0800 - execute cmd: sudo useradd -g root
+ default
+[INFO] 2024-04-09 17:29:50.868 +0800 - create user default success
+[INFO] 2024-04-09 17:29:50.870 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-09 17:29:50.888 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_9/256/534 check successfully
+[INFO] 2024-04-09 17:29:50.893 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-04-09 17:29:51.044 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={file:/dolphinscheduler/default/resources/spark-test.py=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=file:/dolphinscheduler/default/resources/spark-test.py, resourceRelativePath=spark-test.py, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_9/256/534/spark-test.py)})
+[INFO] 2024-04-09 17:29:51.073 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-09 17:29:51.099 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-04-09 17:29:51.106 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "$SPARK_HOME/bin/spark-submit --master local --deploy-mode client --conf spark.driver.cores=1 --conf spark.driver.memory=512M --conf spark.executor.instances=2 --conf spark.executor.cores=2 --conf spark.executor.memory=2G --name myapple spark-test.py\n",
+  "resourceList" : [ {
+    "id" : null,
+    "resourceName" : "file:/dolphinscheduler/default/resources/spark-test.py",
+    "res" : null
+  } ]
+}
+[INFO] 2024-04-09 17:29:51.108 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-09 17:29:51.110 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-04-09 17:29:51.116 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 17:29:51.124 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-09 17:29:51.125 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 17:29:51.204 +0800 - Final Shell file is: 
+[INFO] 2024-04-09 17:29:51.205 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-09 17:29:51.206 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+$SPARK_HOME/bin/spark-submit --master local --deploy-mode client --conf spark.driver.cores=1 --conf spark.driver.memory=512M --conf spark.executor.instances=2 --conf spark.executor.cores=2 --conf spark.executor.memory=2G --name myapple spark-test.py
+
+[INFO] 2024-04-09 17:29:51.207 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-09 17:29:51.215 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_9/256/534/256_534.sh
+[INFO] 2024-04-09 17:29:51.254 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-04-09 17:29:51.260 +0800 - process start, process id is: 115
+[INFO] 2024-04-09 17:29:52.267 +0800 -  -> 
+	/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_9/256/534/256_534.sh: line 5: /bin/spark-submit: No such file or directory
+[INFO] 2024-04-09 17:29:52.271 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_9/256/534, processId:115 ,exitStatusCode:127 ,processWaitForStatus:true ,processExitValue:127
+[INFO] 2024-04-09 17:29:52.274 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 17:29:52.274 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-09 17:29:52.274 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 17:29:52.277 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-09 17:29:52.285 +0800 - Send task execute status: FAILURE to master : 172.20.0.9:1234
+[INFO] 2024-04-09 17:29:52.286 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-09 17:29:52.286 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_9/256/534
+[INFO] 2024-04-09 17:29:52.325 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_9/256/534
+[INFO] 2024-04-09 17:29:52.335 +0800 - FINALIZE_SESSION

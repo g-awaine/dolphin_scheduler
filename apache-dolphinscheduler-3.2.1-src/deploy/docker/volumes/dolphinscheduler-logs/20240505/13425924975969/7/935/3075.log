@@ -1,0 +1,178 @@
+[INFO] 2024-05-05 00:11:09.586 +0800 - Submit LogicTask: create filter data instances to MasterTaskExecutorThreadPool success
+[INFO] 2024-05-05 00:11:09.587 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 00:11:09.591 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-05 00:11:09.591 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 00:11:09.591 +0800 - Begin to initialize task
+[INFO] 2024-05-05 00:11:09.592 +0800 - Set task startTime: 1714839069592
+[INFO] 2024-05-05 00:11:09.592 +0800 - Set task appId: 935_3075
+[INFO] 2024-05-05 00:11:09.592 +0800 - End initialize task {
+  "taskInstanceId" : 3075,
+  "taskName" : "create filter data instances",
+  "firstSubmitTime" : 1714839069572,
+  "startTime" : 1714839069592,
+  "taskType" : "DYNAMIC",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.0.11:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240505/13425924975969/7/935/3075.log",
+  "processId" : 0,
+  "processDefineCode" : 13425924975969,
+  "processDefineVersion" : 7,
+  "processInstanceId" : 935,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topics\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\\\"reddit_post_preprocessed|reddit_post_filtered\\\",\\\"gnews_preprocessed|gnews_filtered\\\"\"},{\"prop\":\"keywords\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"[\\\"singapore\\\", \\\"sg\\\"]\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 7,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":13377949373536,\"maxNumOfSubWorkflowInstances\":1024,\"degreeOfParallelism\":2,\"filterCondition\":\"\",\"listParameters\":[{\"name\":\"topics\",\"value\":\"${topics}\",\"separator\":\",\",\"disabled\":true},{\"name\":\"keywords\",\"value\":\"${keywords}\",\"separator\":\"|\"}]}",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "create filter data instances"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "keywords" : {
+      "prop" : "keywords",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "[\"singapore\", \"sg\"]"
+    },
+    "topics" : {
+      "prop" : "topics",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "\"reddit_post_preprocessed|reddit_post_filtered\",\"gnews_preprocessed|gnews_filtered\""
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3075"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13425924975968"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505001109"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "935"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "filter_data_main"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13425924975969"
+    }
+  },
+  "taskAppId" : "935_3075",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-05 00:11:09.592 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 00:11:09.592 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-05 00:11:09.592 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 00:11:09.606 +0800 - Send task status RUNNING_EXECUTION to master 172.18.0.11:5678
+[INFO] 2024-05-05 00:11:09.606 +0800 - Success initialize task parameters: 
+{
+  "localParams" : [ ],
+  "varPool" : null,
+  "processDefinitionCode" : 13377949373536,
+  "maxNumOfSubWorkflowInstances" : 1024,
+  "degreeOfParallelism" : 2,
+  "filterCondition" : "",
+  "listParameters" : [ {
+    "name" : "topics",
+    "value" : "${topics}",
+    "separator" : ","
+  }, {
+    "name" : "keywords",
+    "value" : "${keywords}",
+    "separator" : "|"
+  } ]
+}
+[INFO] 2024-05-05 00:11:09.608 +0800 - Initialized task plugin instance: DYNAMIC successfully
+[INFO] 2024-05-05 00:11:09.625 +0800 - Initialize taskVarPool: null successfully
+[INFO] 2024-05-05 00:11:09.625 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 00:11:09.626 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-05 00:11:09.626 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 00:11:09.626 +0800 - parameter group size: 2
+[INFO] 2024-05-05 00:11:09.626 +0800 - parameter group: {keywords=["singapore", "sg"], topics="reddit_post_preprocessed|reddit_post_filtered"}
+[INFO] 2024-05-05 00:11:09.626 +0800 - parameter group: {keywords=["singapore", "sg"], topics="gnews_preprocessed|gnews_filtered"}
+[INFO] 2024-05-05 00:11:09.641 +0800 - There are 2 sub process instances that can be started
+[INFO] 2024-05-05 00:11:09.647 +0800 - start sub process instance, sub process instance id: 936, command: Command(id=1404, commandType=REPEAT_RUNNING, processDefinitionCode=13377949373536, executorId=1, commandParam={"StartParams":"{\"keywords\":\"[\\\"singapore\\\", \\\"sg\\\"]\",\"topics\":\"\\\"reddit_post_preprocessed|reddit_post_filtered\\\",\\\"gnews_preprocessed|gnews_filtered\\\"\"}"}, taskDependType=TASK_POST, failureStrategy=CONTINUE, warningType=NONE, warningGroupId=0, scheduleTime=null, startTime=Sun May 05 00:11:09 GMT+08:00 2024, processInstancePriority=MEDIUM, updateTime=Sun May 05 00:11:09 GMT+08:00 2024, workerGroup=default, tenantCode=null, environmentCode=null, dryRun=0, processInstanceId=936, processDefinitionVersion=25, testFlag=0)
+[INFO] 2024-05-05 00:11:09.654 +0800 - start sub process instance, sub process instance id: 937, command: Command(id=1405, commandType=REPEAT_RUNNING, processDefinitionCode=13377949373536, executorId=1, commandParam={"StartParams":"{\"keywords\":\"[\\\"singapore\\\", \\\"sg\\\"]\",\"topics\":\"\\\"reddit_post_preprocessed|reddit_post_filtered\\\",\\\"gnews_preprocessed|gnews_filtered\\\"\"}"}, taskDependType=TASK_POST, failureStrategy=CONTINUE, warningType=NONE, warningGroupId=0, scheduleTime=null, startTime=Sun May 05 00:11:09 GMT+08:00 2024, processInstancePriority=MEDIUM, updateTime=Sun May 05 00:11:09 GMT+08:00 2024, workerGroup=default, tenantCode=null, environmentCode=null, dryRun=0, processInstanceId=937, processDefinitionVersion=25, testFlag=0)
+[INFO] 2024-05-05 00:12:19.935 +0800 - all sub process instance finish
+[INFO] 2024-05-05 00:12:19.935 +0800 - success sub process instance count: 0
+[INFO] 2024-05-05 00:12:19.936 +0800 - failed sub process instance count: 2
+[INFO] 2024-05-05 00:12:19.936 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 00:12:19.936 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-05 00:12:19.936 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 00:12:19.936 +0800 - Task execute finished, removed the TaskExecutionContext
+[INFO] 2024-05-05 00:12:19.971 +0800 - Send task status: FAILURE to master: 172.18.0.11:5678 successfully
+[INFO] 2024-05-05 00:12:19.972 +0800 - Execute task finished, will send the task execute result to master, the current task execute result is FAILURE
+[INFO] 2024-05-05 00:12:19.972 +0800 - FINALIZE_SESSION

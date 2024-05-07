@@ -1,0 +1,136 @@
+[WI-0][TI-3942] - [INFO] 2024-05-07 06:04:44.363 +0800 o.a.d.s.w.m.MessageRetryRunner:[132] - Begin retry send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3942, processInstanceId=1050, status=6, startTime=1715025626405, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.11:5678, logPath=/opt/dolphinscheduler/logs/20240507/13505298546272/21/1050/3942.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3942, endTime=1715025656476, processId=88, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1715032784275)
+[WI-0][TI-3942] - [INFO] 2024-05-07 06:04:44.373 +0800 o.a.d.s.w.m.MessageRetryRunner:[135] - Success send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3942, processInstanceId=1050, status=6, startTime=1715025626405, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.11:5678, logPath=/opt/dolphinscheduler/logs/20240507/13505298546272/21/1050/3942.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3942, endTime=1715025656476, processId=88, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1715033084363)
+[WI-0][TI-3942] - [INFO] 2024-05-07 06:09:44.805 +0800 o.a.d.s.w.m.MessageRetryRunner:[132] - Begin retry send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3942, processInstanceId=1050, status=6, startTime=1715025626405, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.11:5678, logPath=/opt/dolphinscheduler/logs/20240507/13505298546272/21/1050/3942.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3942, endTime=1715025656476, processId=88, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1715033084363)
+[WI-0][TI-3942] - [INFO] 2024-05-07 06:09:44.810 +0800 o.a.d.s.w.m.MessageRetryRunner:[135] - Success send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3942, processInstanceId=1050, status=6, startTime=1715025626405, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.11:5678, logPath=/opt/dolphinscheduler/logs/20240507/13505298546272/21/1050/3942.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3942, endTime=1715025656476, processId=88, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1715033384805)
+[WI-0][TI-3942] - [INFO] 2024-05-07 06:14:44.936 +0800 o.a.d.s.w.m.MessageRetryRunner:[132] - Begin retry send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3942, processInstanceId=1050, status=6, startTime=1715025626405, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.11:5678, logPath=/opt/dolphinscheduler/logs/20240507/13505298546272/21/1050/3942.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3942, endTime=1715025656476, processId=88, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1715033384805)
+[WI-0][TI-3942] - [INFO] 2024-05-07 06:14:44.941 +0800 o.a.d.s.w.m.MessageRetryRunner:[135] - Success send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3942, processInstanceId=1050, status=6, startTime=1715025626405, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.11:5678, logPath=/opt/dolphinscheduler/logs/20240507/13505298546272/21/1050/3942.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3942, endTime=1715025656476, processId=88, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1715033684936)
+[WI-0][TI-0] - [INFO] 2024-05-07 06:18:10.938 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7506702412868633 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-05-07 06:18:11.123 +0800 o.a.z.ClientCnxn:[1292] - Session 0x10000039d3a0002 for server dolphinscheduler-zookeeper/172.18.0.6:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:74)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - [INFO] 2024-05-07 06:18:11.227 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: SUSPENDED
+[WI-0][TI-0] - [WARN] 2024-05-07 06:18:11.232 +0800 o.a.d.p.r.z.ZookeeperConnectionStateListener:[50] - Registry suspended
+[WI-0][TI-0] - [INFO] 2024-05-07 06:18:11.233 +0800 o.a.d.s.w.r.WorkerConnectionStateListener:[42] - Worker received a SUSPENDED event from registry, the current server state is RUNNING
+[WI-0][TI-0] - [ERROR] 2024-05-07 06:18:12.242 +0800 o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: dolphinscheduler-zookeeper:2181
+java.net.UnknownHostException: dolphinscheduler-zookeeper: Temporary failure in name resolution
+	at java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:867)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:815)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WI-0][TI-0] - [WARN] 2024-05-07 06:18:12.316 +0800 o.a.z.ClientCnxn:[1292] - Session 0x10000039d3a0002 for server dolphinscheduler-zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address dolphinscheduler-zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+[WI-0][TI-0] - [ERROR] 2024-05-07 06:18:13.419 +0800 o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: dolphinscheduler-zookeeper:2181
+java.net.UnknownHostException: dolphinscheduler-zookeeper
+	at java.net.InetAddress$CachedAddresses.get(InetAddress.java:764)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WI-0][TI-0] - [WARN] 2024-05-07 06:18:13.738 +0800 o.a.z.ClientCnxn:[1292] - Session 0x10000039d3a0002 for server dolphinscheduler-zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address dolphinscheduler-zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+[WI-0][TI-0] - [WARN] 2024-05-07 06:18:13.841 +0800 o.a.c.r.ExponentialBackoffRetry:[74] - Sleep extension too large (420). Pinning to 300
+[WI-0][TI-0] - [ERROR] 2024-05-07 06:18:14.862 +0800 o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: dolphinscheduler-zookeeper:2181
+java.net.UnknownHostException: dolphinscheduler-zookeeper
+	at java.net.InetAddress$CachedAddresses.get(InetAddress.java:764)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WI-0][TI-0] - [WARN] 2024-05-07 06:18:15.808 +0800 o.a.z.ClientCnxn:[1292] - Session 0x10000039d3a0002 for server dolphinscheduler-zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address dolphinscheduler-zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+[WI-0][TI-0] - [ERROR] 2024-05-07 06:18:16.916 +0800 o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: dolphinscheduler-zookeeper:2181
+java.net.UnknownHostException: dolphinscheduler-zookeeper
+	at java.net.InetAddress$CachedAddresses.get(InetAddress.java:764)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WI-0][TI-0] - [WARN] 2024-05-07 06:18:17.737 +0800 o.a.z.ClientCnxn:[1292] - Session 0x10000039d3a0002 for server dolphinscheduler-zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address dolphinscheduler-zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+[WI-0][TI-0] - [ERROR] 2024-05-07 06:18:18.841 +0800 o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: dolphinscheduler-zookeeper:2181
+java.net.UnknownHostException: dolphinscheduler-zookeeper
+	at java.net.InetAddress$CachedAddresses.get(InetAddress.java:764)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WI-0][TI-0] - [WARN] 2024-05-07 06:18:19.723 +0800 o.a.z.ClientCnxn:[1292] - Session 0x10000039d3a0002 for server dolphinscheduler-zookeeper:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+java.lang.IllegalArgumentException: Unable to canonicalize address dolphinscheduler-zookeeper:2181 because it's not resolvable
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:78)
+	at org.apache.zookeeper.SaslServerPrincipal.getServerPrincipal(SaslServerPrincipal.java:41)
+	at org.apache.zookeeper.ClientCnxn$SendThread.startConnect(ClientCnxn.java:1151)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1200)
+[WI-0][TI-0] - [ERROR] 2024-05-07 06:18:19.833 +0800 o.a.d.c.m.BaseHeartBeatTask:[71] - WorkerHeartBeatTask task execute failed
+org.apache.dolphinscheduler.registry.api.RegistryException: Failed to put registry key: /nodes/worker/172.18.1.1:1234
+	at org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperRegistry.put(ZookeeperRegistry.java:191)
+	at org.apache.dolphinscheduler.registry.api.RegistryClient.persistEphemeral(RegistryClient.java:173)
+	at org.apache.dolphinscheduler.server.worker.task.WorkerHeartBeatTask.writeHeartBeat(WorkerHeartBeatTask.java:86)
+	at org.apache.dolphinscheduler.server.worker.task.WorkerHeartBeatTask.writeHeartBeat(WorkerHeartBeatTask.java:37)
+	at org.apache.dolphinscheduler.common.model.BaseHeartBeatTask.run(BaseHeartBeatTask.java:67)
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /dolphinscheduler/nodes/worker/172.18.1.1:1234
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:1450)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$18.call(CreateBuilderImpl.java:1216)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$18.call(CreateBuilderImpl.java:1193)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:93)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1190)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:48)
+	at org.apache.dolphinscheduler.plugin.registry.zookeeper.ZookeeperRegistry.put(ZookeeperRegistry.java:189)
+	... 4 common frames omitted
+[WI-0][TI-0] - [ERROR] 2024-05-07 06:18:21.065 +0800 o.a.z.c.StaticHostProvider:[148] - Unable to resolve address: dolphinscheduler-zookeeper:2181
+java.net.UnknownHostException: dolphinscheduler-zookeeper
+	at java.net.InetAddress$CachedAddresses.get(InetAddress.java:764)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1291)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1144)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1065)
+	at org.apache.zookeeper.client.StaticHostProvider$1.getAllByName(StaticHostProvider.java:88)
+	at org.apache.zookeeper.client.StaticHostProvider.resolve(StaticHostProvider.java:141)
+	at org.apache.zookeeper.client.StaticHostProvider.next(StaticHostProvider.java:368)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1197)
+[WI-0][TI-0] - [ERROR] 2024-05-07 06:18:21.088 +0800 o.a.d.e.b.NettyClientHandler:[78] - NettyClientHandler catch an exception : readAddress(..) failed: Connection reset by peer
+io.netty.channel.unix.Errors$NativeIoException: readAddress(..) failed: Connection reset by peer

@@ -1,0 +1,195 @@
+[INFO] 2024-05-04 03:57:08.869 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:57:08.880 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-04 03:57:08.880 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:57:08.880 +0800 - Begin to initialize task
+[INFO] 2024-05-04 03:57:08.880 +0800 - Set task startTime: 1714766228880
+[INFO] 2024-05-04 03:57:08.881 +0800 - Set task appId: 887_2852
+[INFO] 2024-05-04 03:57:08.882 +0800 - End initialize task {
+  "taskInstanceId" : 2852,
+  "taskName" : "search for intake article JSON files",
+  "firstSubmitTime" : 1714766228851,
+  "startTime" : 1714766228880,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240504/13475238524230/32/887/2852.log",
+  "processId" : 0,
+  "processDefineCode" : 13475238524230,
+  "processDefineVersion" : 32,
+  "processInstanceId" : 887,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"folder\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"in\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"raw_file_dir\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"},{\"prop\":\"is_exists\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}],\"rawScript\":\"# find 1 raw file in the folder\\nraw_file_dir=$(find ${GNEWS_HOME}/${folder} -type f -name '*.json'| head -n 1)\\n\\n# check if raw_file_dir is empty, then set does_file_exist to 1 \\nif [ -z \\\"$raw_file_dir\\\" ]; then\\n    raw_file_dir=null\\n    is_exists=0\\nelse\\n    is_exists=1\\nfi\\n\\necho \\\"#{setValue(raw_file_dir=${raw_file_dir})}\\\"\\necho \\\"#{setValue(is_exists=${is_exists})}\\\"\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "search for intake article JSON files"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2852"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13475238524226"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504035708"
+    },
+    "folder" : {
+      "prop" : "folder",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "in"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "887"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240503"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocess_gnews_article"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13475238524230"
+    }
+  },
+  "taskAppId" : "887_2852",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-04 03:57:08.882 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:57:08.883 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-04 03:57:08.883 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:57:08.897 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-04 03:57:08.898 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-04 03:57:08.900 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_32/887/2852 check successfully
+[INFO] 2024-05-04 03:57:08.900 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-05-04 03:57:08.902 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-04 03:57:08.903 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-04 03:57:08.903 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-05-04 03:57:08.903 +0800 - Initialize shell task params {
+  "localParams" : [ {
+    "prop" : "raw_file_dir",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  }, {
+    "prop" : "is_exists",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  } ],
+  "varPool" : null,
+  "rawScript" : "# find 1 raw file in the folder\nraw_file_dir=$(find ${GNEWS_HOME}/${folder} -type f -name '*.json'| head -n 1)\n\n# check if raw_file_dir is empty, then set does_file_exist to 1 \nif [ -z \"$raw_file_dir\" ]; then\n    raw_file_dir=null\n    is_exists=0\nelse\n    is_exists=1\nfi\n\necho \"#{setValue(raw_file_dir=${raw_file_dir})}\"\necho \"#{setValue(is_exists=${is_exists})}\"",
+  "resourceList" : [ ]
+}
+[INFO] 2024-05-04 03:57:08.904 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-04 03:57:08.905 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-05-04 03:57:08.905 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:57:08.905 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-04 03:57:08.905 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:57:08.906 +0800 - Final Shell file is: 
+[INFO] 2024-05-04 03:57:08.906 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-04 03:57:08.906 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+# find 1 raw file in the folder
+raw_file_dir=$(find /local_storage/google_news/in -type f -name '*.json'| head -n 1)
+
+# check if raw_file_dir is empty, then set does_file_exist to 1 
+if [ -z "$raw_file_dir" ]; then
+    raw_file_dir=null
+    is_exists=0
+else
+    is_exists=1
+fi
+
+echo "#{setValue(raw_file_dir=${raw_file_dir})}"
+echo "#{setValue(is_exists=${is_exists})}"
+[INFO] 2024-05-04 03:57:08.907 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-04 03:57:08.907 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_32/887/2852/887_2852.sh
+[INFO] 2024-05-04 03:57:08.913 +0800 - process start, process id is: 1015
+[INFO] 2024-05-04 03:57:09.915 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	#{setValue(raw_file_dir=/local_storage/google_news/in/830-20240503110322.json)}
+	#{setValue(is_exists=1)}
+[INFO] 2024-05-04 03:57:09.917 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_32/887/2852, processId:1015 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[INFO] 2024-05-04 03:57:09.918 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:57:09.920 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-04 03:57:09.920 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:57:09.921 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-04 03:57:09.924 +0800 - Send task execute status: SUCCESS to master : 172.18.1.1:1234
+[INFO] 2024-05-04 03:57:09.924 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-04 03:57:09.925 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_32/887/2852
+[INFO] 2024-05-04 03:57:09.925 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_32/887/2852
+[INFO] 2024-05-04 03:57:09.925 +0800 - FINALIZE_SESSION

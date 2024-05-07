@@ -1,0 +1,234 @@
+[INFO] 2024-04-29 17:30:05.044 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:30:05.046 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-29 17:30:05.046 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:30:05.046 +0800 - Begin to initialize task
+[INFO] 2024-04-29 17:30:05.046 +0800 - Set task startTime: 1714383005046
+[INFO] 2024-04-29 17:30:05.046 +0800 - Set task appId: 748_2032
+[INFO] 2024-04-29 17:30:05.046 +0800 - End initialize task {
+  "taskInstanceId" : 2032,
+  "taskName" : "Persist in postgresql",
+  "firstSubmitTime" : 1714383005022,
+  "startTime" : 1714383005046,
+  "taskType" : "SQL",
+  "workflowInstanceHost" : "172.18.0.10:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2032.log",
+  "processId" : 0,
+  "processDefineCode" : 13426477386080,
+  "processDefineVersion" : 8,
+  "processInstanceId" : 748,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"type\":\"POSTGRESQL\",\"datasource\":1,\"sql\":\"${query}\",\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\":[],\"displayRows\":10}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "Persist in postgresql"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "query" : {
+      "prop" : "query",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : ""
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240429"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2032"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13427698681952"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240429173005"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "748"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240428"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "es_filtered_data_persistence_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13426477386080"
+    }
+  },
+  "taskAppId" : "748_2032",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "resourceParametersHelper" : {
+    "resourceMap" : {
+      "DATASOURCE" : {
+        "1" : {
+          "resourceType" : "DATASOURCE",
+          "type" : "POSTGRESQL",
+          "connectionParams" : "{\"user\":\"root\",\"password\":\"******\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"persistence\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence\",\"driverClassName\":\"org.postgresql.Driver\",\"validationQuery\":\"select version()\"}",
+          "DATASOURCE" : null
+        }
+      }
+    }
+  },
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"query\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-29 17:30:05.047 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:30:05.047 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-29 17:30:05.047 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:30:05.051 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-29 17:30:05.051 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-29 17:30:05.052 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_8/748/2032 check successfully
+[INFO] 2024-04-29 17:30:05.053 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.sql.SqlTaskChannel successfully
+[INFO] 2024-04-29 17:30:05.053 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-04-29 17:30:05.053 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-29 17:30:05.060 +0800 - Initialize sql task parameter {
+  "localParams" : [ ],
+  "varPool" : null,
+  "type" : "POSTGRESQL",
+  "datasource" : 1,
+  "sql" : "${query}",
+  "sqlType" : 0,
+  "sendEmail" : null,
+  "displayRows" : 10,
+  "udfs" : null,
+  "showType" : null,
+  "connParams" : null,
+  "preStatements" : [ ],
+  "postStatements" : [ ],
+  "groupId" : 0,
+  "title" : null,
+  "limit" : 0
+}
+[INFO] 2024-04-29 17:30:05.061 +0800 - Task plugin instance: SQL create successfully
+[INFO] 2024-04-29 17:30:05.061 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-29 17:30:05.061 +0800 - Set taskVarPool: [{"prop":"query","direct":"IN","type":"VARCHAR","value":""}] successfully
+[INFO] 2024-04-29 17:30:05.062 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:30:05.064 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-29 17:30:05.065 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:30:05.066 +0800 - Full sql parameters: SqlParameters{type='POSTGRESQL', datasource=1, sql='${query}', sqlType=0, sendEmail=null, displayRows=10, limit=0, udfs='null', showType='null', connParams='null', groupId='0', title='null', preStatements=[], postStatements=[]}
+[INFO] 2024-04-29 17:30:05.069 +0800 - sql type : POSTGRESQL, datasource : 1, sql : ${query} , localParams : [],udfs : null,showType : null,connParams : null,varPool : [Property{prop='query', direct=IN, type=VARCHAR, value=''}] ,query max result limit  0
+[INFO] 2024-04-29 17:30:05.078 +0800 - setSqlParamsMap: Property with paramName: query put in sqlParamsMap of content ${query} successfully.
+[INFO] 2024-04-29 17:30:05.080 +0800 - after replace sql , preparing : ?
+[INFO] 2024-04-29 17:30:05.081 +0800 - Sql Params are replaced sql , parameters:(VARCHAR)
+[INFO] 2024-04-29 17:30:05.083 +0800 - can't find udf function resource
+[WARN] 2024-04-29 17:30:05.086 +0800 - Connect strings must start with jdbc:snowflake://
+[ERROR] 2024-04-29 17:30:05.124 +0800 - execute sql error: Create adhoc connection error
+[ERROR] 2024-04-29 17:30:05.125 +0800 - sql task error
+java.sql.SQLException: Create adhoc connection error
+	at org.apache.dolphinscheduler.plugin.datasource.api.client.BaseAdHocDataSourceClient.getConnection(BaseAdHocDataSourceClient.java:43)
+	at org.apache.dolphinscheduler.plugin.datasource.api.plugin.DataSourceClientProvider.getAdHocConnection(DataSourceClientProvider.java:97)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeFuncAndSql(SqlTask.java:189)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:159)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerTaskExecutor.executeTask(DefaultWorkerTaskExecutor.java:54)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor.run(WorkerTaskExecutor.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:646)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.apache.dolphinscheduler.plugin.datasource.postgresql.param.PostgreSQLDataSourceProcessor.getConnection(PostgreSQLDataSourceProcessor.java:117)
+	at org.apache.dolphinscheduler.plugin.datasource.api.client.BaseAdHocDataSourceClient.getConnection(BaseAdHocDataSourceClient.java:41)
+	... 8 common frames omitted
+[ERROR] 2024-04-29 17:30:05.130 +0800 - Task execute failed, due to meet an exception
+org.apache.dolphinscheduler.plugin.task.api.TaskException: Execute sql task failed
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:166)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerTaskExecutor.executeTask(DefaultWorkerTaskExecutor.java:54)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor.run(WorkerTaskExecutor.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.sql.SQLException: Create adhoc connection error
+	at org.apache.dolphinscheduler.plugin.datasource.api.client.BaseAdHocDataSourceClient.getConnection(BaseAdHocDataSourceClient.java:43)
+	at org.apache.dolphinscheduler.plugin.datasource.api.plugin.DataSourceClientProvider.getAdHocConnection(DataSourceClientProvider.java:97)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeFuncAndSql(SqlTask.java:189)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:159)
+	... 5 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "root"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:646)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247)
+	at org.postgresql.Driver.makeConnection(Driver.java:434)
+	at org.postgresql.Driver.connect(Driver.java:291)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.apache.dolphinscheduler.plugin.datasource.postgresql.param.PostgreSQLDataSourceProcessor.getConnection(PostgreSQLDataSourceProcessor.java:117)
+	at org.apache.dolphinscheduler.plugin.datasource.api.client.BaseAdHocDataSourceClient.getConnection(BaseAdHocDataSourceClient.java:41)
+	... 8 common frames omitted
+[INFO] 2024-04-29 17:30:05.130 +0800 - Get appIds from worker 172.18.1.1:1234, taskLogPath: /opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2032.log
+[INFO] 2024-04-29 17:30:05.131 +0800 - Start finding appId in /opt/dolphinscheduler/logs/20240429/13426477386080/8/748/2032.log, fetch way: log 
+[INFO] 2024-04-29 17:30:05.131 +0800 - The appId is empty
+[INFO] 2024-04-29 17:30:05.131 +0800 - Cancel the task successfully
+[INFO] 2024-04-29 17:30:05.156 +0800 - Get a exception when execute the task, will send the task status: FAILURE to master: 172.18.1.1:1234
+[INFO] 2024-04-29 17:30:05.157 +0800 - FINALIZE_SESSION

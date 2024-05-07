@@ -1,0 +1,225 @@
+[INFO] 2024-05-05 06:13:06.136 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:06.138 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-05 06:13:06.138 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:06.138 +0800 - Begin to initialize task
+[INFO] 2024-05-05 06:13:06.138 +0800 - Set task startTime: 1714860786138
+[INFO] 2024-05-05 06:13:06.139 +0800 - Set task appId: 972_3534
+[INFO] 2024-05-05 06:13:06.139 +0800 - End initialize task {
+  "taskInstanceId" : 3534,
+  "taskName" : "hash_article_data",
+  "firstSubmitTime" : 1714860785823,
+  "startTime" : 1714860786138,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240505/13471825071552/30/972/3534.log",
+  "processId" : 0,
+  "processDefineCode" : 13471825071552,
+  "processDefineVersion" : 30,
+  "processInstanceId" : 972,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topic\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"'Singapore'\"},{\"prop\":\"article_list\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"${news_articles_param_list}\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 13,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"article_data_hash\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"},{\"prop\":\"article_data\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}],\"rawScript\":\"import hashlib\\nimport json\\n\\n# receive the article data from the main gnews extraction workflow\\narticle_data = \\\"${news_article}\\\"\\n\\n# convert JSON data to string\\narticle_data_json = json.dumps(article_data)\\n\\n# hash the JSON string\\narticle_data_hash = hashlib.sha256(article_data_json.encode()).hexdigest()\\n\\n# pass the hash and article data to the downstream nodes\\nprint(\\\"${setValue(article_data_hash=%s)}\\\" % str(article_data_hash))\\nprint(\\\"${setValue(article_data=%s)}\\\" % article_data)\",\"resourceList\":[]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hash_article_data"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3534"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13471727617984"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505061305"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "972"
+    },
+    "topic" : {
+      "prop" : "topic",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "'Singapore'"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "article_list" : {
+      "prop" : "article_list",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "${news_articles_param_list}"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "extract_gnews_articles_hashing_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13471825071552"
+    }
+  },
+  "taskAppId" : "972_3534",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-05 06:13:06.155 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:06.155 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-05 06:13:06.156 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:06.189 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-05 06:13:06.192 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-05 06:13:06.200 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3534 check successfully
+[INFO] 2024-05-05 06:13:06.201 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[INFO] 2024-05-05 06:13:06.202 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-05 06:13:06.202 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-05 06:13:06.202 +0800 - Task plugin instance: PYTHON create successfully
+[INFO] 2024-05-05 06:13:06.203 +0800 - Initialize python task params {
+  "localParams" : [ {
+    "prop" : "article_data_hash",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  }, {
+    "prop" : "article_data",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  } ],
+  "varPool" : null,
+  "rawScript" : "import hashlib\nimport json\n\n# receive the article data from the main gnews extraction workflow\narticle_data = \"${news_article}\"\n\n# convert JSON data to string\narticle_data_json = json.dumps(article_data)\n\n# hash the JSON string\narticle_data_hash = hashlib.sha256(article_data_json.encode()).hexdigest()\n\n# pass the hash and article data to the downstream nodes\nprint(\"${setValue(article_data_hash=%s)}\" % str(article_data_hash))\nprint(\"${setValue(article_data=%s)}\" % article_data)",
+  "resourceList" : [ ]
+}
+[INFO] 2024-05-05 06:13:06.203 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-05 06:13:06.203 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-05-05 06:13:06.342 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:06.342 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-05 06:13:06.342 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:06.342 +0800 - raw python script : import hashlib
+import json
+
+# receive the article data from the main gnews extraction workflow
+article_data = "${news_article}"
+
+# convert JSON data to string
+article_data_json = json.dumps(article_data)
+
+# hash the JSON string
+article_data_hash = hashlib.sha256(article_data_json.encode()).hexdigest()
+
+# pass the hash and article data to the downstream nodes
+print("${setValue(article_data_hash=%s)}" % str(article_data_hash))
+print("${setValue(article_data=%s)}" % article_data)
+[INFO] 2024-05-05 06:13:06.344 +0800 - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3534
+[INFO] 2024-05-05 06:13:06.452 +0800 - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3534/py_972_3534.py
+[INFO] 2024-05-05 06:13:06.453 +0800 - #-*- encoding=utf8 -*-
+
+import hashlib
+import json
+
+# receive the article data from the main gnews extraction workflow
+article_data = "${news_article}"
+
+# convert JSON data to string
+article_data_json = json.dumps(article_data)
+
+# hash the JSON string
+article_data_hash = hashlib.sha256(article_data_json.encode()).hexdigest()
+
+# pass the hash and article data to the downstream nodes
+print("${setValue(article_data_hash=%s)}" % str(article_data_hash))
+print("${setValue(article_data=%s)}" % article_data)
+[INFO] 2024-05-05 06:13:06.453 +0800 - Final Shell file is: 
+[INFO] 2024-05-05 06:13:06.454 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-05 06:13:06.454 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3534/py_972_3534.py
+[INFO] 2024-05-05 06:13:06.455 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-05 06:13:06.485 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3534/972_3534.sh
+[INFO] 2024-05-05 06:13:06.523 +0800 - process start, process id is: 891
+[INFO] 2024-05-05 06:13:07.524 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	${setValue(article_data_hash=12dce0aecfe9b404b98d9e84e87e1cdb22aceb035be3c5185d407576f54c9911)}
+	${setValue(article_data=${news_article})}
+[INFO] 2024-05-05 06:13:07.527 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3534, processId:891 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[INFO] 2024-05-05 06:13:07.528 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:07.530 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-05 06:13:07.530 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:07.531 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-05 06:13:07.535 +0800 - Send task execute status: SUCCESS to master : 172.18.1.1:1234
+[INFO] 2024-05-05 06:13:07.535 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-05 06:13:07.535 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3534
+[INFO] 2024-05-05 06:13:07.536 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3534
+[INFO] 2024-05-05 06:13:07.536 +0800 - FINALIZE_SESSION

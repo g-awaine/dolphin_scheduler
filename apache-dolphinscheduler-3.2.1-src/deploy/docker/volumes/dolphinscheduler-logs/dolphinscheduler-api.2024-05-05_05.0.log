@@ -1,0 +1,96 @@
+[INFO] 2024-05-05 05:19:10.786 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-05-05 05:19:10.993 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-05-05 05:19:11.043 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-05-05 05:19:11.045 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-05-05 05:19:11.045 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-05-05 05:19:11.045 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-05-05 05:19:11.046 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[INFO] 2024-05-05 05:23:28.204 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13471700679104, processVersion:5.
+[INFO] 2024-05-05 05:23:28.221 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13471700679104, processVersion:6.
+[INFO] 2024-05-05 05:23:28.237 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13471700679104, processVersion:6.
+[INFO] 2024-05-05 05:24:16.422 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13471700679104, processVersion:6.
+[INFO] 2024-05-05 05:24:16.473 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13471700679104, processVersion:7.
+[INFO] 2024-05-05 05:24:16.516 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13471700679104, processVersion:7.
+[INFO] 2024-05-05 05:24:23.552 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13471700679104, commandCount:1.
+[INFO] 2024-05-05 05:25:09.799 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3418, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/5/955/3418.log
+[INFO] 2024-05-05 05:25:10.262 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WARN] 2024-05-05 05:25:13.668 +0800 o.a.d.e.b.NettyRemotingClient:[253] - connect to Host(ip=172.18.1.1, port=1234) error
+io.netty.channel.ConnectTimeoutException: connection timed out: /172.18.1.1:1234
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe$2.run(AbstractEpollChannel.java:576)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-05-05 05:25:13.681 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.LoggerController#queryLog[4 args] Meet a ServiceException: view task instance log error: null
+[INFO] 2024-05-05 05:25:24.918 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13471700679104, commandCount:1.
+[ERROR] 2024-05-05 05:25:41.823 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:3426.
+[INFO] 2024-05-05 05:25:51.150 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13471700679104, commandCount:1.
+[ERROR] 2024-05-05 05:26:11.565 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:3434.
+[INFO] 2024-05-05 05:27:06.473 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13471700679104, commandCount:1.
+[ERROR] 2024-05-05 05:27:23.301 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:3438.
+[ERROR] 2024-05-05 05:27:25.134 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:3438.
+[INFO] 2024-05-05 05:27:40.218 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13471700679104, commandCount:1.
+[ERROR] 2024-05-05 05:27:56.860 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:3438.
+[INFO] 2024-05-05 05:29:59.895 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3443, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/7/960/3443.log
+[INFO] 2024-05-05 05:30:00.280 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3443, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/7/960/3443.log
+[INFO] 2024-05-05 05:30:20.871 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3447, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/7/960/3447.log
+[INFO] 2024-05-05 05:30:21.299 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3447, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/7/960/3447.log
+[INFO] 2024-05-05 05:31:05.574 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3443, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/7/960/3443.log
+[INFO] 2024-05-05 05:31:05.758 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3443, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/7/960/3443.log
+[INFO] 2024-05-05 05:33:17.365 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13471700679104, processVersion:7.
+[INFO] 2024-05-05 05:33:17.370 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13471700679104, processVersion:8.
+[INFO] 2024-05-05 05:33:17.376 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13471700679104, processVersion:8.
+[INFO] 2024-05-05 05:33:23.820 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13471700679104, commandCount:1.
+[INFO] 2024-05-05 05:36:21.492 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13471700679104, commandCount:1.
+[INFO] 2024-05-05 05:37:01.732 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3456, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/8/962/3456.log
+[INFO] 2024-05-05 05:37:01.931 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3456, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/8/962/3456.log
+[INFO] 2024-05-05 05:38:02.016 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3452, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/8/962/3452.log
+[INFO] 2024-05-05 05:38:02.122 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3452, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/8/962/3452.log
+[INFO] 2024-05-05 05:38:40.865 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3452, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/8/962/3452.log
+[INFO] 2024-05-05 05:38:40.962 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3452, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/8/962/3452.log
+[INFO] 2024-05-05 05:39:44.242 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3456, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/8/962/3456.log
+[INFO] 2024-05-05 05:39:44.339 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3456, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/8/962/3456.log
+[INFO] 2024-05-05 05:41:52.365 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13471700679104, processVersion:8.
+[INFO] 2024-05-05 05:41:52.372 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13471700679104, processVersion:9.
+[INFO] 2024-05-05 05:41:52.379 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13471700679104, processVersion:9.
+[INFO] 2024-05-05 05:41:58.407 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13471700679104, commandCount:1.
+[INFO] 2024-05-05 05:44:16.160 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3461, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/9/963/3461.log
+[INFO] 2024-05-05 05:44:16.383 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3461, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/9/963/3461.log
+[INFO] 2024-05-05 05:44:24.309 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3457, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/9/963/3457.log
+[INFO] 2024-05-05 05:44:24.417 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3457, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/9/963/3457.log
+[INFO] 2024-05-05 05:45:59.260 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[765] - Update process definition complete, projectCode:13010050770016, processDefinitionName:extract_gnews_articles_main.
+[INFO] 2024-05-05 05:45:59.287 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[770] - Update task relations complete, projectCode:13010050770016, processDefinitionCode:13471700679104, processDefinitionVersion:10.
+[INFO] 2024-05-05 05:45:59.306 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[791] - Update process instance complete, projectCode:13010050770016, processDefinitionCode:13471700679104, processDefinitionVersion:10, processInstanceId:963
+[INFO] 2024-05-05 05:47:09.136 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3466, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/10/963/3466.log
+[INFO] 2024-05-05 05:47:09.332 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3466, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/10/963/3466.log
+[INFO] 2024-05-05 05:48:17.745 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[765] - Update process definition complete, projectCode:13010050770016, processDefinitionName:extract_gnews_articles_main.
+[INFO] 2024-05-05 05:48:17.750 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[770] - Update task relations complete, projectCode:13010050770016, processDefinitionCode:13471700679104, processDefinitionVersion:11.
+[INFO] 2024-05-05 05:48:17.754 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[791] - Update process instance complete, projectCode:13010050770016, processDefinitionCode:13471700679104, processDefinitionVersion:11, processInstanceId:963
+[INFO] 2024-05-05 05:49:10.558 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13471700679104, commandCount:1.
+[INFO] 2024-05-05 05:49:25.597 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3471, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/11/963/3471.log
+[INFO] 2024-05-05 05:49:25.970 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3471, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/11/963/3471.log
+[INFO] 2024-05-05 05:50:35.484 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3479, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/11/963/3479.log
+[INFO] 2024-05-05 05:50:35.559 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3479, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/11/963/3479.log
+[INFO] 2024-05-05 05:52:06.541 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[765] - Update process definition complete, projectCode:13010050770016, processDefinitionName:extract_gnews_articles_main.
+[INFO] 2024-05-05 05:52:06.556 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[770] - Update task relations complete, projectCode:13010050770016, processDefinitionCode:13471700679104, processDefinitionVersion:12.
+[INFO] 2024-05-05 05:52:06.559 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[791] - Update process instance complete, projectCode:13010050770016, processDefinitionCode:13471700679104, processDefinitionVersion:12, processInstanceId:963
+[INFO] 2024-05-05 05:52:51.090 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3484, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/11/964/3484.log
+[INFO] 2024-05-05 05:52:51.241 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3484, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/11/964/3484.log
+[INFO] 2024-05-05 05:53:09.963 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3480, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/11/964/3480.log
+[INFO] 2024-05-05 05:53:10.038 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3480, taskInstanceName:extract_gnews_article, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/11/964/3480.log
+[INFO] 2024-05-05 05:53:37.666 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[765] - Update process definition complete, projectCode:13010050770016, processDefinitionName:extract_gnews_articles_main.
+[INFO] 2024-05-05 05:53:37.677 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[770] - Update task relations complete, projectCode:13010050770016, processDefinitionCode:13471700679104, processDefinitionVersion:13.
+[INFO] 2024-05-05 05:53:37.682 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[791] - Update process instance complete, projectCode:13010050770016, processDefinitionCode:13471700679104, processDefinitionVersion:13, processInstanceId:964
+[INFO] 2024-05-05 05:53:56.138 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13471700679104, commandCount:1.
+[ERROR] 2024-05-05 05:54:16.049 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:3488.
+[INFO] 2024-05-05 05:55:44.605 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3493, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/13/965/3493.log
+[INFO] 2024-05-05 05:55:44.666 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3493, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/13/965/3493.log
+[INFO] 2024-05-05 05:59:03.083 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[765] - Update process definition complete, projectCode:13010050770016, processDefinitionName:extract_gnews_articles_main.
+[INFO] 2024-05-05 05:59:03.093 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[770] - Update task relations complete, projectCode:13010050770016, processDefinitionCode:13471700679104, processDefinitionVersion:14.
+[INFO] 2024-05-05 05:59:03.097 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[791] - Update process instance complete, projectCode:13010050770016, processDefinitionCode:13471700679104, processDefinitionVersion:14, processInstanceId:965
+[INFO] 2024-05-05 05:59:40.939 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3495, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/14/965/3495.log
+[INFO] 2024-05-05 05:59:41.275 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3495, taskInstanceName:hash, check and store json, host: 172.18.0.12:5678, logPath:/opt/dolphinscheduler/logs/20240505/13471700679104/14/965/3495.log

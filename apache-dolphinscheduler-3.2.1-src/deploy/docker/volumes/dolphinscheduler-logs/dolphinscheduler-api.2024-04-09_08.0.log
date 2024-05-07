@@ -1,0 +1,219 @@
+[WARN] 2024-04-09 08:04:56.721 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2024-04-09 08:05:08.318 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2024-04-09 08:05:08.324 +0800 o.a.d.a.ApiApplicationServer:[640] - The following 1 profile is active: "postgresql"
+[INFO] 2024-04-09 08:05:27.347 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=b9ea3c4b-94e1-3be4-b636-a78d78ec03d8
+[INFO] 2024-04-09 08:05:33.488 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-09 08:05:33.635 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-09 08:05:33.641 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-09 08:05:33.650 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$451/1736826640] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-09 08:05:33.681 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-09 08:05:33.716 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-09 08:05:33.796 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-09 08:05:33.910 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-09 08:05:37.057 +0800 o.e.j.u.log:[170] - Logging initialized @66517ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2024-04-09 08:05:40.396 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2024-04-09 08:05:40.732 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[INFO] 2024-04-09 08:05:41.187 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2024-04-09 08:05:41.188 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 32730 ms
+[INFO] 2024-04-09 08:05:50.515 +0800 o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> false 
+[INFO] 2024-04-09 08:05:50.516 +0800 o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+[INFO] 2024-04-09 08:05:50.516 +0800 o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=0.0.0.0, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+[INFO] 2024-04-09 08:05:51.994 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2024-04-09 08:05:51.995 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2024-04-09 08:05:52.015 +0800 o.e.j.s.session:[132] - node0 Scavenging every 660000ms
+[INFO] 2024-04-09 08:05:52.101 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@66596c4c{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.2261003551091753107/, jar:file:/opt/dolphinscheduler/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2024-04-09 08:05:52.109 +0800 o.e.j.s.Server:[415] - Started @81610ms
+[INFO] 2024-04-09 08:05:55.298 +0800 c.z.h.HikariDataSource:[110] - DolphinScheduler - Starting...
+[INFO] 2024-04-09 08:05:57.223 +0800 c.z.h.HikariDataSource:[123] - DolphinScheduler - Start completed.
+[INFO] 2024-04-09 08:06:10.494 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2024-04-09 08:06:10.758 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2024-04-09 08:06:10.841 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2024-04-09 08:06:10.973 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-09 08:06:10.974 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-09 08:06:12.376 +0800 c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+[INFO] 2024-04-09 08:06:12.442 +0800 c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.3, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+[INFO] 2024-04-09 08:06:37.768 +0800 o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2024-04-09 08:06:37.812 +0800 o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2024-04-09 08:06:37.813 +0800 o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2024-04-09 08:06:37.855 +0800 o.s.s.q.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2024-04-09 08:06:37.863 +0800 o.s.s.q.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2024-04-09 08:06:37.866 +0800 o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId '99fabd0b796d1712621197778'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.apache.dolphinscheduler.scheduler.quartz.QuartzZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2024-04-09 08:06:37.866 +0800 o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2024-04-09 08:06:37.870 +0800 o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2024-04-09 08:06:37.870 +0800 o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6d66a248
+[INFO] 2024-04-09 08:06:38.388 +0800 o.a.d.a.p.PythonGateway:[710] - PythonGatewayService started on: /0.0.0.0
+[INFO] 2024-04-09 08:06:38.446 +0800 p.GatewayServer:[573] - Gateway Server Started
+[INFO] 2024-04-09 08:06:50.976 +0800 o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+[INFO] 2024-04-09 08:06:54.435 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[INFO] 2024-04-09 08:06:54.887 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2024-04-09 08:06:54.888 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[INFO] 2024-04-09 08:06:54.895 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 5 ms
+[INFO] 2024-04-09 08:06:54.980 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@6eb5b9e7{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+[INFO] 2024-04-09 08:06:54.988 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 12345 (http/1.1) with context path '/dolphinscheduler'
+[INFO] 2024-04-09 08:06:55.074 +0800 o.a.d.a.ApiApplicationServer:[61] - Started ApiApplicationServer in 132.885 seconds (JVM running for 144.575)
+[INFO] 2024-04-09 08:06:55.153 +0800 o.a.d.a.ApiApplicationServer:[63] - Received spring application context ready event will load taskPlugin and write to DB
+[INFO] 2024-04-09 08:06:55.403 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.417 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.418 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.425 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.426 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.434 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.435 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.451 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.452 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.457 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.459 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.464 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.465 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.470 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.471 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.477 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.479 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.484 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.485 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.489 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.490 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.494 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.494 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.499 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.500 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.503 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.504 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.508 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.509 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.516 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.517 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.524 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.525 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.540 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.540 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.545 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.545 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.554 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.555 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.567 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.568 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.574 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.575 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.580 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.581 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.587 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.588 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.594 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.595 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.598 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.599 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.604 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.605 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.610 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.610 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.615 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.616 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.620 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.620 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.624 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.625 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.629 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.630 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.632 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.632 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.637 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-09 08:06:55.648 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2024-04-09 08:19:46.604 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-04-09 08:19:46.610 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-04-09 08:19:46.628 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-04-09 08:19:46.655 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-04-09 08:19:46.674 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-04-09 08:19:46.680 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-04-09 08:19:46.682 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[INFO] 2024-04-09 08:19:51.465 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:516, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/3/244/516.log
+[INFO] 2024-04-09 08:19:52.083 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WARN] 2024-04-09 08:19:52.861 +0800 o.a.d.e.b.NettyRemotingClient:[253] - connect to Host(ip=172.18.0.3, port=1234) error
+io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /172.18.0.3:1234
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:124)
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:251)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:673)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:650)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:530)
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:465)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-09 08:19:52.883 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.LoggerController#queryLog[4 args] Meet a ServiceException: view task instance log error: null
+[INFO] 2024-04-09 08:22:25.516 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:515, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/2/243/515.log
+[WARN] 2024-04-09 08:22:25.564 +0800 o.a.d.e.b.NettyRemotingClient:[253] - connect to Host(ip=172.18.0.3, port=1234) error
+io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /172.18.0.3:1234
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:124)
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:251)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:673)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:650)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:530)
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:465)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-09 08:22:25.567 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.LoggerController#queryLog[4 args] Meet a ServiceException: view task instance log error: null
+[INFO] 2024-04-09 08:22:28.368 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:515, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/2/243/515.log
+[WARN] 2024-04-09 08:22:28.375 +0800 o.a.d.e.b.NettyRemotingClient:[253] - connect to Host(ip=172.18.0.3, port=1234) error
+io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /172.18.0.3:1234
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:124)
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:251)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:673)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:650)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:530)
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:465)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-09 08:22:28.378 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.LoggerController#queryLog[4 args] Meet a ServiceException: view task instance log error: null
+[INFO] 2024-04-09 08:22:47.186 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:514, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/1/242/514.log
+[WARN] 2024-04-09 08:22:47.196 +0800 o.a.d.e.b.NettyRemotingClient:[253] - connect to Host(ip=172.18.0.3, port=1234) error
+io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /172.18.0.3:1234
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:124)
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:251)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:673)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:650)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:530)
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:465)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-09 08:22:47.200 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.LoggerController#queryLog[4 args] Meet a ServiceException: view task instance log error: null
+[INFO] 2024-04-09 08:23:48.313 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:514, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/1/242/514.log
+[WARN] 2024-04-09 08:23:48.326 +0800 o.a.d.e.b.NettyRemotingClient:[253] - connect to Host(ip=172.18.0.3, port=1234) error
+io.netty.channel.AbstractChannel$AnnotatedConnectException: finishConnect(..) failed: Connection refused: /172.18.0.3:1234
+Caused by: java.net.ConnectException: finishConnect(..) failed: Connection refused
+	at io.netty.channel.unix.Errors.throwConnectException(Errors.java:124)
+	at io.netty.channel.unix.Socket.finishConnect(Socket.java:251)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.doFinishConnect(AbstractEpollChannel.java:673)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.finishConnect(AbstractEpollChannel.java:650)
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe.epollOutReady(AbstractEpollChannel.java:530)
+	at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:465)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:378)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-09 08:23:48.327 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.LoggerController#queryLog[4 args] Meet a ServiceException: view task instance log error: null
+[INFO] 2024-04-09 08:44:27.029 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 08:44:51.878 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 08:45:27.584 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 08:46:34.535 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:518, taskInstanceName:spark, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/3/245/518.log
+[INFO] 2024-04-09 08:46:35.368 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:518, taskInstanceName:spark, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/3/245/518.log
+[INFO] 2024-04-09 08:52:43.011 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 08:53:26.480 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:520, taskInstanceName:spark, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/3/248/520.log
+[INFO] 2024-04-09 08:53:26.696 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:520, taskInstanceName:spark, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/3/248/520.log

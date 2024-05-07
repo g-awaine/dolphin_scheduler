@@ -1,0 +1,216 @@
+[INFO] 2024-05-05 06:13:11.820 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:11.833 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-05 06:13:11.834 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:11.834 +0800 - Begin to initialize task
+[INFO] 2024-05-05 06:13:11.835 +0800 - Set task startTime: 1714860791835
+[INFO] 2024-05-05 06:13:11.835 +0800 - Set task appId: 972_3544
+[INFO] 2024-05-05 06:13:11.835 +0800 - End initialize task {
+  "taskInstanceId" : 3544,
+  "taskName" : "store article data in intake folder",
+  "firstSubmitTime" : 1714860791729,
+  "startTime" : 1714860791835,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240505/13471825071552/30/972/3544.log",
+  "processId" : 0,
+  "processDefineCode" : 13471825071552,
+  "processDefineVersion" : 30,
+  "processInstanceId" : 972,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topic\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"'Singapore'\"},{\"prop\":\"article_list\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"${news_articles_param_list}\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 13,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"import json\\n\\n# store the file in the intake folder and name it after the workflow instance id and datetime this task was conducted\\nwith open(\\\"${GNEWS_HOME}/in/${system.workflow.instance.id}-${system.datetime}.json\\\", \\\"w\\\") as fp:\\n    json.dump(${article_data} , fp, indent=4)\",\"resourceList\":[]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "store article data in intake folder"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "article_data" : {
+      "prop" : "article_data",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "${news_article}"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3544"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13475012246208"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505061311"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "972"
+    },
+    "topic" : {
+      "prop" : "topic",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "'Singapore'"
+    },
+    "article_data_hash" : {
+      "prop" : "article_data_hash",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "12dce0aecfe9b404b98d9e84e87e1cdb22aceb035be3c5185d407576f54c9911"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "article_list" : {
+      "prop" : "article_list",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "${news_articles_param_list}"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "extract_gnews_articles_hashing_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13471825071552"
+    },
+    "article_hash_in_db" : {
+      "prop" : "article_hash_in_db",
+      "direct" : "IN",
+      "type" : "LIST",
+      "value" : "null"
+    }
+  },
+  "taskAppId" : "972_3544",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"article_data_hash\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"12dce0aecfe9b404b98d9e84e87e1cdb22aceb035be3c5185d407576f54c9911\"},{\"prop\":\"article_data\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"${news_article}\"},{\"prop\":\"article_hash_in_db\",\"direct\":\"IN\",\"type\":\"LIST\",\"value\":\"null\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-05 06:13:11.838 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:11.839 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-05 06:13:11.839 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:11.858 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-05 06:13:11.860 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-05 06:13:11.860 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3544 check successfully
+[INFO] 2024-05-05 06:13:11.860 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[INFO] 2024-05-05 06:13:11.861 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-05 06:13:11.862 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-05 06:13:11.862 +0800 - Task plugin instance: PYTHON create successfully
+[INFO] 2024-05-05 06:13:11.862 +0800 - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "import json\n\n# store the file in the intake folder and name it after the workflow instance id and datetime this task was conducted\nwith open(\"${GNEWS_HOME}/in/${system.workflow.instance.id}-${system.datetime}.json\", \"w\") as fp:\n    json.dump(${article_data} , fp, indent=4)",
+  "resourceList" : [ ]
+}
+[INFO] 2024-05-05 06:13:11.862 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-05 06:13:11.862 +0800 - Set taskVarPool: [{"prop":"article_data_hash","direct":"IN","type":"VARCHAR","value":"12dce0aecfe9b404b98d9e84e87e1cdb22aceb035be3c5185d407576f54c9911"},{"prop":"article_data","direct":"IN","type":"VARCHAR","value":"${news_article}"},{"prop":"article_hash_in_db","direct":"IN","type":"LIST","value":"null"}] successfully
+[INFO] 2024-05-05 06:13:11.863 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:11.864 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-05 06:13:11.864 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:11.864 +0800 - raw python script : import json
+
+# store the file in the intake folder and name it after the workflow instance id and datetime this task was conducted
+with open("${GNEWS_HOME}/in/${system.workflow.instance.id}-${system.datetime}.json", "w") as fp:
+    json.dump(${article_data} , fp, indent=4)
+[INFO] 2024-05-05 06:13:11.864 +0800 - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3544
+[INFO] 2024-05-05 06:13:11.865 +0800 - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3544/py_972_3544.py
+[INFO] 2024-05-05 06:13:11.865 +0800 - #-*- encoding=utf8 -*-
+
+import json
+
+# store the file in the intake folder and name it after the workflow instance id and datetime this task was conducted
+with open("/local_storage/google_news/in/972-20240505061311.json", "w") as fp:
+    json.dump(${news_article} , fp, indent=4)
+[INFO] 2024-05-05 06:13:11.865 +0800 - Final Shell file is: 
+[INFO] 2024-05-05 06:13:11.865 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-05 06:13:11.865 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3544/py_972_3544.py
+[INFO] 2024-05-05 06:13:11.866 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-05 06:13:11.866 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3544/972_3544.sh
+[INFO] 2024-05-05 06:13:11.872 +0800 - process start, process id is: 954
+[INFO] 2024-05-05 06:13:12.875 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	  File "/tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3544/py_972_3544.py", line 7
+	    json.dump(${news_article} , fp, indent=4)
+	              ^
+	SyntaxError: invalid syntax
+[INFO] 2024-05-05 06:13:12.888 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3544, processId:954 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-05-05 06:13:12.895 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:12.895 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-05 06:13:12.896 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:12.896 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-05 06:13:12.905 +0800 - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[INFO] 2024-05-05 06:13:12.906 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-05 06:13:12.907 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3544
+[INFO] 2024-05-05 06:13:12.914 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_30/972/3544
+[INFO] 2024-05-05 06:13:12.916 +0800 - FINALIZE_SESSION

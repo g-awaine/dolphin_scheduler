@@ -1,0 +1,352 @@
+[INFO] 2024-05-05 08:44:40.418 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 08:44:40.425 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-05 08:44:40.426 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 08:44:40.426 +0800 - Begin to initialize task
+[INFO] 2024-05-05 08:44:40.426 +0800 - Set task startTime: 1714869880426
+[INFO] 2024-05-05 08:44:40.426 +0800 - Set task appId: 996_3688
+[INFO] 2024-05-05 08:44:40.427 +0800 - End initialize task {
+  "taskInstanceId" : 3688,
+  "taskName" : "persist in postgresql",
+  "firstSubmitTime" : 1714869880377,
+  "startTime" : 1714869880426,
+  "taskType" : "SQL",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240505/13426477386080/40/996/3688.log",
+  "processId" : 0,
+  "processDefineCode" : 13426477386080,
+  "processDefineVersion" : 40,
+  "processInstanceId" : 996,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"input_topic\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"gnews_filtered\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"type\":\"POSTGRESQL\",\"datasource\":1,\"sql\":\"INSERT INTO filtered_data_persistence\\nVALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})\\n\",\"sqlType\":\"1\",\"preStatements\":[],\"postStatements\":[],\"displayRows\":10}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "persist in postgresql"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "input_topic" : {
+      "prop" : "input_topic",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "gnews_filtered"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3688"
+    },
+    "type" : {
+      "prop" : "type",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "article"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13427698681952"
+    },
+    "filtered_data_message" : {
+      "prop" : "filtered_data_message",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : ""
+    },
+    "content" : {
+      "prop" : "content",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "Company-wide memo says the newspaper is shifting its ‘center of gravity in the region’ to Southeast Asian hub.\n\nHong Kong, China – The Wall Street Journal has announced staff cuts at its Hong Kong bureau as it shifts its “center of gravity in the region” to Singapore, marking the latest blow to the financial hub’s once-thriving media industry.\n\nEditor-in-chief Emma Tucker told staff in a company-wide memo on Thursday that the newspaper was following the same path that “many of the companies we cover have done”.\n\nThe cuts include six editorial staff in Hong Kong and two reporters at the newspaper’s Singapore office, two sources familiar with the matter told Al Jazeera on condition of anonymity.\n\nIn her memo, Tucker said “some of our colleagues, mostly in Hong Kong, will be leaving us”, while listing several new positions in Singapore, including an editor and several reporters.\n\n“At the core of these changes is the creation of a new business, finance and economics group,” she said.\n\n“This unites what had been separate teams under one banner with a common goal: Focus on the biggest money stories in Asia – the rise of China’s EV industry, the chip war, China Shock 2.0, the struggles of Hong Kong’s finance industry and China’s stunning property bust.”\n\nThe WSJ did not immediately respond to a request for comment.\n\nSince the imposition of a Beijing-decreed national security law and some of the world’s toughest pandemic curbs in 2020, numerous international companies have departed Hong Kong or scaled bank operations in the city, shifting resources elsewhere.\n\nChina’s economic slowdown has also impacted the work of the army of analysts and financiers who thrived in Hong Kong’s once-free-wheeling atmosphere, in turn informing the coverage of media outlets such as the WSJ.\n\nEarlier this year, Hong Kong’s Hang Seng Index fell to its lowest levels since 1997, the year the former British colony was returned to Chinese sovereignty, in what was widely seen as an ominous sign for the future of the city’s economy – although the market has rebounded over 10 percent during the last month.\n\nHundreds of thousands of expatriate and local residents have departed the city in recent years, many of them driven to leave by harsh zero-COVID curbs and a national security crackdown that has weakened rights and freedoms that are supposed to be guaranteed until 2047 under an arrangement known as “one country, two systems”.\n\nMainland Chinese and Hong Kong officials have argued that a greater focus on national security has been necessary to restore peace and stability to the city after mass antigovernment protests in 2019 that devolved into widespread property destruction and clashes with police.\n\nSeveral local independent news outlets have shuttered under political pressure, while international media including The New York Times and Radio Free Asia have shifted editorial positions to cities such as Seoul and Taipei.\n\nOnce known as one of the freest media environments in Asia, Hong Kong ranks 135 out of 180 countries and territories in Reporters without Borders’ (RSF) latest media freedom index released on Friday, falling between the Philippines and South Sudan.\n\nLast month, Hong Kong immigration authorities denied entry to an RSF representative who visited the city to attend the ongoing national security trial of media tycoon Jimmy Lai."
+    },
+    "url" : {
+      "prop" : "url",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "https://news.google.com/rss/articles/CBMibWh0dHBzOi8vd3d3LmFsamF6ZWVyYS5jb20vZWNvbm9teS8yMDI0LzUvMy93YWxsLXN0cmVldC1qb3VybmFsLWN1dHMtaG9uZy1rb25nLXN0YWZmLXNoaWZ0cy1mb2N1cy10by1zaW5nYXBvcmXSAXFodHRwczovL3d3dy5hbGphemVlcmEuY29tL2FtcC9lY29ub215LzIwMjQvNS8zL3dhbGwtc3RyZWV0LWpvdXJuYWwtY3V0cy1ob25nLWtvbmctc3RhZmYtc2hpZnRzLWZvY3VzLXRvLXNpbmdhcG9yZQ?oc=5&hl=en-SG&gl=SG&ceid=SG:en"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505084440"
+    },
+    "datetime" : {
+      "prop" : "datetime",
+      "direct" : "IN",
+      "type" : "TIMESTAMP",
+      "value" : "24-05-03 13:45:22"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "996"
+    },
+    "context" : {
+      "prop" : "context",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "Wall Street Journal cuts Hong Kong staff, shifts focus to Singapore - Al Jazeera English"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "es_filtered_data_persistence_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13426477386080"
+    },
+    "authors" : {
+      "prop" : "authors",
+      "direct" : "IN",
+      "type" : "LIST",
+      "value" : "['Erin Hale']"
+    }
+  },
+  "taskAppId" : "996_3688",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "resourceParametersHelper" : {
+    "resourceMap" : {
+      "DATASOURCE" : {
+        "1" : {
+          "resourceType" : "DATASOURCE",
+          "type" : "POSTGRESQL",
+          "connectionParams" : "{\"user\":\"root\",\"password\":\"******\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"persistence\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence\",\"driverClassName\":\"org.postgresql.Driver\",\"validationQuery\":\"select version()\",\"other\":{\"password\":\"****\"}}",
+          "DATASOURCE" : null
+        }
+      }
+    }
+  },
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"datetime\",\"direct\":\"IN\",\"type\":\"TIMESTAMP\",\"value\":\"24-05-03 13:45:22\"},{\"prop\":\"context\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"Wall Street Journal cuts Hong Kong staff, shifts focus to Singapore - Al Jazeera English\"},{\"prop\":\"type\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"article\"},{\"prop\":\"filtered_data_message\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\"},{\"prop\":\"content\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"Company-wide memo says the newspaper is shifting its ‘center of gravity in the region’ to Southeast Asian hub.\\n\\nHong Kong, China – The Wall Street Journal has announced staff cuts at its Hong Kong bureau as it shifts its “center of gravity in the region” to Singapore, marking the latest blow to the financial hub’s once-thriving media industry.\\n\\nEditor-in-chief Emma Tucker told staff in a company-wide memo on Thursday that the newspaper was following the same path that “many of the companies we cover have done”.\\n\\nThe cuts include six editorial staff in Hong Kong and two reporters at the newspaper’s Singapore office, two sources familiar with the matter told Al Jazeera on condition of anonymity.\\n\\nIn her memo, Tucker said “some of our colleagues, mostly in Hong Kong, will be leaving us”, while listing several new positions in Singapore, including an editor and several reporters.\\n\\n“At the core of these changes is the creation of a new business, finance and economics group,” she said.\\n\\n“This unites what had been separate teams under one banner with a common goal: Focus on the biggest money stories in Asia – the rise of China’s EV industry, the chip war, China Shock 2.0, the struggles of Hong Kong’s finance industry and China’s stunning property bust.”\\n\\nThe WSJ did not immediately respond to a request for comment.\\n\\nSince the imposition of a Beijing-decreed national security law and some of the world’s toughest pandemic curbs in 2020, numerous international companies have departed Hong Kong or scaled bank operations in the city, shifting resources elsewhere.\\n\\nChina’s economic slowdown has also impacted the work of the army of analysts and financiers who thrived in Hong Kong’s once-free-wheeling atmosphere, in turn informing the coverage of media outlets such as the WSJ.\\n\\nEarlier this year, Hong Kong’s Hang Seng Index fell to its lowest levels since 1997, the year the former British colony was returned to Chinese sovereignty, in what was widely seen as an ominous sign for the future of the city’s economy – although the market has rebounded over 10 percent during the last month.\\n\\nHundreds of thousands of expatriate and local residents have departed the city in recent years, many of them driven to leave by harsh zero-COVID curbs and a national security crackdown that has weakened rights and freedoms that are supposed to be guaranteed until 2047 under an arrangement known as “one country, two systems”.\\n\\nMainland Chinese and Hong Kong officials have argued that a greater focus on national security has been necessary to restore peace and stability to the city after mass antigovernment protests in 2019 that devolved into widespread property destruction and clashes with police.\\n\\nSeveral local independent news outlets have shuttered under political pressure, while international media including The New York Times and Radio Free Asia have shifted editorial positions to cities such as Seoul and Taipei.\\n\\nOnce known as one of the freest media environments in Asia, Hong Kong ranks 135 out of 180 countries and territories in Reporters without Borders’ (RSF) latest media freedom index released on Friday, falling between the Philippines and South Sudan.\\n\\nLast month, Hong Kong immigration authorities denied entry to an RSF representative who visited the city to attend the ongoing national security trial of media tycoon Jimmy Lai.\"},{\"prop\":\"url\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"https://news.google.com/rss/articles/CBMibWh0dHBzOi8vd3d3LmFsamF6ZWVyYS5jb20vZWNvbm9teS8yMDI0LzUvMy93YWxsLXN0cmVldC1qb3VybmFsLWN1dHMtaG9uZy1rb25nLXN0YWZmLXNoaWZ0cy1mb2N1cy10by1zaW5nYXBvcmXSAXFodHRwczovL3d3dy5hbGphemVlcmEuY29tL2FtcC9lY29ub215LzIwMjQvNS8zL3dhbGwtc3RyZWV0LWpvdXJuYWwtY3V0cy1ob25nLWtvbmctc3RhZmYtc2hpZnRzLWZvY3VzLXRvLXNpbmdhcG9yZQ?oc=5&hl=en-SG&gl=SG&ceid=SG:en\"},{\"prop\":\"authors\",\"direct\":\"IN\",\"type\":\"LIST\",\"value\":\"['Erin Hale']\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-05 08:44:40.430 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 08:44:40.432 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-05 08:44:40.432 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 08:44:40.437 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-05 08:44:40.438 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-05 08:44:40.438 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_40/996/3688 check successfully
+[INFO] 2024-05-05 08:44:40.439 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.sql.SqlTaskChannel successfully
+[INFO] 2024-05-05 08:44:40.440 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-05 08:44:40.440 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-05 08:44:40.441 +0800 - Initialize sql task parameter {
+  "localParams" : [ ],
+  "varPool" : null,
+  "type" : "POSTGRESQL",
+  "datasource" : 1,
+  "sql" : "INSERT INTO filtered_data_persistence\nVALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})\n",
+  "sqlType" : 1,
+  "sendEmail" : null,
+  "displayRows" : 10,
+  "udfs" : null,
+  "showType" : null,
+  "connParams" : null,
+  "preStatements" : [ ],
+  "postStatements" : [ ],
+  "groupId" : 0,
+  "title" : null,
+  "limit" : 0
+}
+[INFO] 2024-05-05 08:44:40.441 +0800 - Task plugin instance: SQL create successfully
+[INFO] 2024-05-05 08:44:40.441 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-05 08:44:40.441 +0800 - Set taskVarPool: [{"prop":"datetime","direct":"IN","type":"TIMESTAMP","value":"24-05-03 13:45:22"},{"prop":"context","direct":"IN","type":"VARCHAR","value":"Wall Street Journal cuts Hong Kong staff, shifts focus to Singapore - Al Jazeera English"},{"prop":"type","direct":"IN","type":"VARCHAR","value":"article"},{"prop":"filtered_data_message","direct":"IN","type":"VARCHAR","value":""},{"prop":"content","direct":"IN","type":"VARCHAR","value":"Company-wide memo says the newspaper is shifting its ‘center of gravity in the region’ to Southeast Asian hub.\n\nHong Kong, China – The Wall Street Journal has announced staff cuts at its Hong Kong bureau as it shifts its “center of gravity in the region” to Singapore, marking the latest blow to the financial hub’s once-thriving media industry.\n\nEditor-in-chief Emma Tucker told staff in a company-wide memo on Thursday that the newspaper was following the same path that “many of the companies we cover have done”.\n\nThe cuts include six editorial staff in Hong Kong and two reporters at the newspaper’s Singapore office, two sources familiar with the matter told Al Jazeera on condition of anonymity.\n\nIn her memo, Tucker said “some of our colleagues, mostly in Hong Kong, will be leaving us”, while listing several new positions in Singapore, including an editor and several reporters.\n\n“At the core of these changes is the creation of a new business, finance and economics group,” she said.\n\n“This unites what had been separate teams under one banner with a common goal: Focus on the biggest money stories in Asia – the rise of China’s EV industry, the chip war, China Shock 2.0, the struggles of Hong Kong’s finance industry and China’s stunning property bust.”\n\nThe WSJ did not immediately respond to a request for comment.\n\nSince the imposition of a Beijing-decreed national security law and some of the world’s toughest pandemic curbs in 2020, numerous international companies have departed Hong Kong or scaled bank operations in the city, shifting resources elsewhere.\n\nChina’s economic slowdown has also impacted the work of the army of analysts and financiers who thrived in Hong Kong’s once-free-wheeling atmosphere, in turn informing the coverage of media outlets such as the WSJ.\n\nEarlier this year, Hong Kong’s Hang Seng Index fell to its lowest levels since 1997, the year the former British colony was returned to Chinese sovereignty, in what was widely seen as an ominous sign for the future of the city’s economy – although the market has rebounded over 10 percent during the last month.\n\nHundreds of thousands of expatriate and local residents have departed the city in recent years, many of them driven to leave by harsh zero-COVID curbs and a national security crackdown that has weakened rights and freedoms that are supposed to be guaranteed until 2047 under an arrangement known as “one country, two systems”.\n\nMainland Chinese and Hong Kong officials have argued that a greater focus on national security has been necessary to restore peace and stability to the city after mass antigovernment protests in 2019 that devolved into widespread property destruction and clashes with police.\n\nSeveral local independent news outlets have shuttered under political pressure, while international media including The New York Times and Radio Free Asia have shifted editorial positions to cities such as Seoul and Taipei.\n\nOnce known as one of the freest media environments in Asia, Hong Kong ranks 135 out of 180 countries and territories in Reporters without Borders’ (RSF) latest media freedom index released on Friday, falling between the Philippines and South Sudan.\n\nLast month, Hong Kong immigration authorities denied entry to an RSF representative who visited the city to attend the ongoing national security trial of media tycoon Jimmy Lai."},{"prop":"url","direct":"IN","type":"VARCHAR","value":"https://news.google.com/rss/articles/CBMibWh0dHBzOi8vd3d3LmFsamF6ZWVyYS5jb20vZWNvbm9teS8yMDI0LzUvMy93YWxsLXN0cmVldC1qb3VybmFsLWN1dHMtaG9uZy1rb25nLXN0YWZmLXNoaWZ0cy1mb2N1cy10by1zaW5nYXBvcmXSAXFodHRwczovL3d3dy5hbGphemVlcmEuY29tL2FtcC9lY29ub215LzIwMjQvNS8zL3dhbGwtc3RyZWV0LWpvdXJuYWwtY3V0cy1ob25nLWtvbmctc3RhZmYtc2hpZnRzLWZvY3VzLXRvLXNpbmdhcG9yZQ?oc=5&hl=en-SG&gl=SG&ceid=SG:en"},{"prop":"authors","direct":"IN","type":"LIST","value":"['Erin Hale']"}] successfully
+[INFO] 2024-05-05 08:44:40.442 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 08:44:40.442 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-05 08:44:40.443 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 08:44:40.443 +0800 - Full sql parameters: SqlParameters{type='POSTGRESQL', datasource=1, sql='INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+', sqlType=1, sendEmail=null, displayRows=10, limit=0, udfs='null', showType='null', connParams='null', groupId='0', title='null', preStatements=[], postStatements=[]}
+[INFO] 2024-05-05 08:44:40.443 +0800 - sql type : POSTGRESQL, datasource : 1, sql : INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ , localParams : [],udfs : null,showType : null,connParams : null,varPool : [Property{prop='datetime', direct=IN, type=TIMESTAMP, value='24-05-03 13:45:22'}, Property{prop='context', direct=IN, type=VARCHAR, value='Wall Street Journal cuts Hong Kong staff, shifts focus to Singapore - Al Jazeera English'}, Property{prop='type', direct=IN, type=VARCHAR, value='article'}, Property{prop='filtered_data_message', direct=IN, type=VARCHAR, value=''}, Property{prop='content', direct=IN, type=VARCHAR, value='Company-wide memo says the newspaper is shifting its ‘center of gravity in the region’ to Southeast Asian hub.
+
+Hong Kong, China – The Wall Street Journal has announced staff cuts at its Hong Kong bureau as it shifts its “center of gravity in the region” to Singapore, marking the latest blow to the financial hub’s once-thriving media industry.
+
+Editor-in-chief Emma Tucker told staff in a company-wide memo on Thursday that the newspaper was following the same path that “many of the companies we cover have done”.
+
+The cuts include six editorial staff in Hong Kong and two reporters at the newspaper’s Singapore office, two sources familiar with the matter told Al Jazeera on condition of anonymity.
+
+In her memo, Tucker said “some of our colleagues, mostly in Hong Kong, will be leaving us”, while listing several new positions in Singapore, including an editor and several reporters.
+
+“At the core of these changes is the creation of a new business, finance and economics group,” she said.
+
+“This unites what had been separate teams under one banner with a common goal: Focus on the biggest money stories in Asia – the rise of China’s EV industry, the chip war, China Shock 2.0, the struggles of Hong Kong’s finance industry and China’s stunning property bust.”
+
+The WSJ did not immediately respond to a request for comment.
+
+Since the imposition of a Beijing-decreed national security law and some of the world’s toughest pandemic curbs in 2020, numerous international companies have departed Hong Kong or scaled bank operations in the city, shifting resources elsewhere.
+
+China’s economic slowdown has also impacted the work of the army of analysts and financiers who thrived in Hong Kong’s once-free-wheeling atmosphere, in turn informing the coverage of media outlets such as the WSJ.
+
+Earlier this year, Hong Kong’s Hang Seng Index fell to its lowest levels since 1997, the year the former British colony was returned to Chinese sovereignty, in what was widely seen as an ominous sign for the future of the city’s economy – although the market has rebounded over 10 percent during the last month.
+
+Hundreds of thousands of expatriate and local residents have departed the city in recent years, many of them driven to leave by harsh zero-COVID curbs and a national security crackdown that has weakened rights and freedoms that are supposed to be guaranteed until 2047 under an arrangement known as “one country, two systems”.
+
+Mainland Chinese and Hong Kong officials have argued that a greater focus on national security has been necessary to restore peace and stability to the city after mass antigovernment protests in 2019 that devolved into widespread property destruction and clashes with police.
+
+Several local independent news outlets have shuttered under political pressure, while international media including The New York Times and Radio Free Asia have shifted editorial positions to cities such as Seoul and Taipei.
+
+Once known as one of the freest media environments in Asia, Hong Kong ranks 135 out of 180 countries and territories in Reporters without Borders’ (RSF) latest media freedom index released on Friday, falling between the Philippines and South Sudan.
+
+Last month, Hong Kong immigration authorities denied entry to an RSF representative who visited the city to attend the ongoing national security trial of media tycoon Jimmy Lai.'}, Property{prop='url', direct=IN, type=VARCHAR, value='https://news.google.com/rss/articles/CBMibWh0dHBzOi8vd3d3LmFsamF6ZWVyYS5jb20vZWNvbm9teS8yMDI0LzUvMy93YWxsLXN0cmVldC1qb3VybmFsLWN1dHMtaG9uZy1rb25nLXN0YWZmLXNoaWZ0cy1mb2N1cy10by1zaW5nYXBvcmXSAXFodHRwczovL3d3dy5hbGphemVlcmEuY29tL2FtcC9lY29ub215LzIwMjQvNS8zL3dhbGwtc3RyZWV0LWpvdXJuYWwtY3V0cy1ob25nLWtvbmctc3RhZmYtc2hpZnRzLWZvY3VzLXRvLXNpbmdhcG9yZQ?oc=5&hl=en-SG&gl=SG&ceid=SG:en'}, Property{prop='authors', direct=IN, type=LIST, value='['Erin Hale']'}] ,query max result limit  0
+[INFO] 2024-05-05 08:44:40.450 +0800 - setSqlParamsMap: Property with paramName: authors put in sqlParamsMap of content INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ successfully.
+[INFO] 2024-05-05 08:44:40.451 +0800 - setSqlParamsMap: Property with paramName: content put in sqlParamsMap of content INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ successfully.
+[INFO] 2024-05-05 08:44:40.451 +0800 - setSqlParamsMap: Property with paramName: url put in sqlParamsMap of content INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ successfully.
+[INFO] 2024-05-05 08:44:40.452 +0800 - setSqlParamsMap: Property with paramName: context put in sqlParamsMap of content INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ successfully.
+[INFO] 2024-05-05 08:44:40.452 +0800 - setSqlParamsMap: Property with paramName: type put in sqlParamsMap of content INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ successfully.
+[INFO] 2024-05-05 08:44:40.452 +0800 - setSqlParamsMap: Property with paramName: datetime put in sqlParamsMap of content INSERT INTO filtered_data_persistence
+VALUES (${authors}, ${content}, ${url}, ${context}, ${type}, ${datetime})
+ successfully.
+[ERROR] 2024-05-05 08:44:40.453 +0800 - parse list exception!
+com.fasterxml.jackson.core.JsonParseException: Unexpected character (''' (code 39)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"['Erin Hale']"; line: 1, column: 3]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:735)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:659)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2005)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer._deserializeFromArray(CollectionDeserializer.java:346)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:244)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.apache.dolphinscheduler.common.utils.JSONUtils.toList(JSONUtils.java:184)
+	at org.apache.dolphinscheduler.plugin.task.api.utils.ParameterUtils.expandListParameter(ParameterUtils.java:205)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.getSqlAndSqlParamsMap(SqlTask.java:459)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Collections$2.tryAdvance(Collections.java:4719)
+	at java.util.Collections$2.forEachRemaining(Collections.java:4727)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:143)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerTaskExecutor.executeTask(DefaultWorkerTaskExecutor.java:54)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor.run(WorkerTaskExecutor.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-05-05 08:44:40.454 +0800 - sql task error
+java.lang.UnsupportedOperationException: null
+	at java.util.AbstractList.add(AbstractList.java:148)
+	at java.util.AbstractList.add(AbstractList.java:108)
+	at org.apache.dolphinscheduler.plugin.task.api.utils.ParameterUtils.expandListParameter(ParameterUtils.java:207)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.getSqlAndSqlParamsMap(SqlTask.java:459)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Collections$2.tryAdvance(Collections.java:4719)
+	at java.util.Collections$2.forEachRemaining(Collections.java:4727)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:143)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerTaskExecutor.executeTask(DefaultWorkerTaskExecutor.java:54)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor.run(WorkerTaskExecutor.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-05-05 08:44:40.454 +0800 - Task execute failed, due to meet an exception
+org.apache.dolphinscheduler.plugin.task.api.TaskException: Execute sql task failed
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:166)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerTaskExecutor.executeTask(DefaultWorkerTaskExecutor.java:54)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor.run(WorkerTaskExecutor.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.lang.UnsupportedOperationException: null
+	at java.util.AbstractList.add(AbstractList.java:148)
+	at java.util.AbstractList.add(AbstractList.java:108)
+	at org.apache.dolphinscheduler.plugin.task.api.utils.ParameterUtils.expandListParameter(ParameterUtils.java:207)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.getSqlAndSqlParamsMap(SqlTask.java:459)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Collections$2.tryAdvance(Collections.java:4719)
+	at java.util.Collections$2.forEachRemaining(Collections.java:4727)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:143)
+	... 5 common frames omitted
+[INFO] 2024-05-05 08:44:40.455 +0800 - Get appIds from worker 172.18.1.1:1234, taskLogPath: /opt/dolphinscheduler/logs/20240505/13426477386080/40/996/3688.log
+[INFO] 2024-05-05 08:44:40.455 +0800 - Start finding appId in /opt/dolphinscheduler/logs/20240505/13426477386080/40/996/3688.log, fetch way: log 
+[INFO] 2024-05-05 08:44:40.457 +0800 - The appId is empty
+[INFO] 2024-05-05 08:44:40.457 +0800 - Cancel the task successfully
+[INFO] 2024-05-05 08:44:40.463 +0800 - Get a exception when execute the task, will send the task status: FAILURE to master: 172.18.1.1:1234
+[INFO] 2024-05-05 08:44:40.464 +0800 - FINALIZE_SESSION

@@ -1,0 +1,11 @@
+[INFO] 2024-04-09 15:09:04.694 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[858] - The task has not changed, so skip
+[INFO] 2024-04-09 15:09:04.711 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13201021801792, processVersion:14.
+[INFO] 2024-04-09 15:09:04.720 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13201021801792, processVersion:15.
+[INFO] 2024-04-09 15:09:04.742 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13201021801792, processVersion:15.
+[INFO] 2024-04-09 15:09:12.078 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 15:09:39.317 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:533, taskInstanceName:spark_shell, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/15/263/533.log
+[INFO] 2024-04-09 15:09:39.480 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:533, taskInstanceName:spark_shell, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/15/263/533.log
+[INFO] 2024-04-09 15:10:38.692 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:533, taskInstanceName:spark_shell, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/15/263/533.log
+[INFO] 2024-04-09 15:10:39.357 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:533, taskInstanceName:spark_shell, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/15/263/533.log
+[INFO] 2024-04-09 15:11:14.599 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:533, taskInstanceName:spark_shell, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/15/263/533.log
+[INFO] 2024-04-09 15:11:14.715 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:533, taskInstanceName:spark_shell, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/15/263/533.log

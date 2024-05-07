@@ -1,0 +1,9 @@
+[INFO] 2024-04-18 22:10:17.944 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:732, taskInstanceName:consume kafka topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13314339450656/2/320/732.log
+[INFO] 2024-04-18 22:10:18.114 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:732, taskInstanceName:consume kafka topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13314339450656/2/320/732.log
+[INFO] 2024-04-18 22:11:00.039 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13314339450656, processVersion:2.
+[INFO] 2024-04-18 22:11:00.088 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13314339450656, processVersion:3.
+[INFO] 2024-04-18 22:11:00.094 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13314339450656, processVersion:3.
+[INFO] 2024-04-18 22:11:07.352 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13314339450656, commandCount:1.
+[INFO] 2024-04-18 22:15:00.330 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance kafka consume test-3-20240418221122989 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-04-18 22:22:08.572 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:733, taskInstanceName:consume kafka topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13314339450656/3/321/733.log
+[INFO] 2024-04-18 22:22:08.723 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:733, taskInstanceName:consume kafka topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13314339450656/3/321/733.log

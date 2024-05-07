@@ -1,0 +1,32 @@
+[INFO] 2024-03-25 16:01:15.998 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13045665829504, commandCount:1.
+[INFO] 2024-03-25 16:01:35.518 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:471, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/203/471.log
+[INFO] 2024-03-25 16:01:35.651 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:471, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/203/471.log
+[WARN] 2024-03-25 16:23:45.428 +0800 o.s.w.s.PageNotFound:[1281] - No mapping for GET /dolphinscheduler/resources/authed-resource-tree
+[WARN] 2024-03-25 16:23:45.434 +0800 o.s.w.s.PageNotFound:[1281] - No mapping for GET /dolphinscheduler/resources/authed-file
+[INFO] 2024-03-25 16:25:28.637 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:471, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/203/471.log
+[INFO] 2024-03-25 16:25:28.779 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:471, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/203/471.log
+[INFO] 2024-03-25 16:25:29.906 +0800 o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+[INFO] 2024-03-25 16:25:37.164 +0800 o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+[INFO] 2024-03-25 16:25:54.949 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:471, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/203/471.log
+[INFO] 2024-03-25 16:25:55.055 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:471, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/203/471.log
+[INFO] 2024-03-25 16:25:56.404 +0800 o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+[INFO] 2024-03-25 16:25:59.779 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:470, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/202/470.log
+[INFO] 2024-03-25 16:25:59.878 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:470, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/202/470.log
+[INFO] 2024-03-25 16:40:59.548 +0800 o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+[INFO] 2024-03-25 16:41:20.190 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:470, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/202/470.log
+[INFO] 2024-03-25 16:41:20.299 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:470, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/202/470.log
+[INFO] 2024-03-25 16:50:55.396 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:471, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/203/471.log
+[INFO] 2024-03-25 16:50:56.367 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:471, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/203/471.log
+[INFO] 2024-03-25 16:55:59.717 +0800 o.a.d.a.s.i.SchedulerServiceImpl:[219] - Schedule create complete, projectCode:13010050770016, processDefinitionCode:13045665829504, scheduleId:3.
+[INFO] 2024-03-25 16:56:03.662 +0800 o.a.d.s.q.QuartzScheduler:[104] - Add job, job name: job_3, group name: jobgroup_2
+[INFO] 2024-03-25 16:56:03.802 +0800 o.a.d.s.q.QuartzScheduler:[137] - schedule job trigger, triggerName: job_3, triggerGroupName: jobgroup_2, cronExpression: 1/5 0 * * * ? *, startDate: Mon Mar 25 16:56:03 CST 2024, endDate: Sat Mar 25 00:00:00 CST 2124
+[INFO] 2024-03-25 16:56:12.563 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13045665829504, commandCount:1.
+[INFO] 2024-03-25 16:56:25.547 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:472, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/204/472.log
+[INFO] 2024-03-25 16:56:25.759 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:472, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/204/472.log
+[INFO] 2024-03-25 16:57:01.529 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13045665829504, commandCount:1.
+[INFO] 2024-03-25 16:57:22.722 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:473, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/205/473.log
+[INFO] 2024-03-25 16:57:23.018 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:473, taskInstanceName:hell, host: 172.19.0.6:1234, logPath:/opt/dolphinscheduler/logs/20240325/13045665829504/1/205/473.log
+[WARN] 2024-03-25 16:57:59.368 +0800 o.a.h.u.NativeCodeLoader:[60] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2024-03-25 16:58:52.425 +0800 o.a.d.a.s.i.UsersServiceImpl:[177] - User is created and id is 2.
+[WARN] 2024-03-25 16:59:57.520 +0800 o.s.w.s.PageNotFound:[1281] - No mapping for GET /dolphinscheduler/resources/authed-resource-tree
+[WARN] 2024-03-25 16:59:57.521 +0800 o.s.w.s.PageNotFound:[1281] - No mapping for GET /dolphinscheduler/resources/authed-file

@@ -1,0 +1,177 @@
+[INFO] 2024-04-17 15:09:56.996 +0800 - Submit LogicTask: check the sum of numbers to MasterTaskExecutorThreadPool success
+[INFO] 2024-04-17 15:09:56.997 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:09:57.015 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-17 15:09:57.015 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:09:57.015 +0800 - Begin to initialize task
+[INFO] 2024-04-17 15:09:57.016 +0800 - Set task startTime: 1713337797016
+[INFO] 2024-04-17 15:09:57.016 +0800 - Set task appId: 286_597
+[INFO] 2024-04-17 15:09:57.016 +0800 - End initialize task {
+  "taskInstanceId" : 597,
+  "taskName" : "check the sum of numbers",
+  "firstSubmitTime" : 1713337796977,
+  "startTime" : 1713337797016,
+  "taskType" : "SWITCH",
+  "workflowInstanceHost" : "172.27.0.8:5678",
+  "host" : "172.27.0.8:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240417/13001314456096/32/286/597.log",
+  "processId" : 0,
+  "processDefineCode" : 13001314456096,
+  "processDefineVersion" : 32,
+  "processInstanceId" : 286,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"\",\"resourceList\":[],\"switchResult\":{\"dependTaskList\":[{\"condition\":\"${sum} == 2\",\"nextNode\":null},{\"condition\":\"${sum} == 1\",\"nextNode\":null}],\"nextNode\":null}}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "check the sum of numbers"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240417"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "597"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005221862208"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240417150956"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "286"
+    },
+    "num1" : {
+      "prop" : "num1",
+      "direct" : "IN",
+      "type" : "INTEGER",
+      "value" : "1"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240416"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "random_numbers_generator"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001314456096"
+    },
+    "num2" : {
+      "prop" : "num2",
+      "direct" : "IN",
+      "type" : "INTEGER",
+      "value" : "0"
+    }
+  },
+  "taskAppId" : "286_597",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"num1\",\"direct\":\"IN\",\"type\":\"INTEGER\",\"value\":\"1\"},{\"prop\":\"num2\",\"direct\":\"IN\",\"type\":\"INTEGER\",\"value\":\"0\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-17 15:09:57.016 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:09:57.021 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-17 15:09:57.021 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:09:57.028 +0800 - Send task status RUNNING_EXECUTION to master 172.27.0.8:5678
+[INFO] 2024-04-17 15:09:57.029 +0800 - Success initialize task parameters: 
+{
+  "localParams" : null,
+  "varPool" : null,
+  "dependRelation" : null,
+  "relation" : null,
+  "nextNode" : null,
+  "resultConditionLocation" : 0,
+  "dependTaskList" : [ {
+    "condition" : "${sum} == 2",
+    "nextNode" : null
+  }, {
+    "condition" : "${sum} == 1",
+    "nextNode" : null
+  } ]
+}
+[INFO] 2024-04-17 15:09:57.029 +0800 - Initialized task plugin instance: SWITCH successfully
+[INFO] 2024-04-17 15:09:57.030 +0800 - Initialize taskVarPool: [{"prop":"num1","direct":"IN","type":"INTEGER","value":"1"},{"prop":"num2","direct":"IN","type":"INTEGER","value":"0"}] successfully
+[INFO] 2024-04-17 15:09:57.030 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:09:57.031 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-17 15:09:57.032 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:09:57.032 +0800 - Begin to execute 1 condition: ${sum} == 2 
+[ERROR] 2024-04-17 15:09:57.038 +0800 - Task execute failed, due to meet an exception
+java.lang.IllegalArgumentException: condition is not valid, please check it. condition: ${sum} == 2
+	at org.apache.dolphinscheduler.server.master.utils.SwitchTaskUtils.generateContentWithTaskParams(SwitchTaskUtils.java:105)
+	at org.apache.dolphinscheduler.server.master.runner.task.switchtask.SwitchLogicTask.calculateConditionResult(SwitchLogicTask.java:109)
+	at org.apache.dolphinscheduler.server.master.runner.task.switchtask.SwitchLogicTask.handle(SwitchLogicTask.java:72)
+	at org.apache.dolphinscheduler.server.master.runner.execute.SyncMasterTaskExecutor.executeTask(SyncMasterTaskExecutor.java:44)
+	at org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor.run(MasterTaskExecutor.java:110)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] 2024-04-17 15:09:57.039 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:09:57.044 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-17 15:09:57.045 +0800 - ***********************************************************************************************
+[ERROR] 2024-04-17 15:09:57.046 +0800 - Get a exception when execute the task, will try to cancel the task
+java.lang.IllegalArgumentException: condition is not valid, please check it. condition: ${sum} == 2
+	at org.apache.dolphinscheduler.server.master.utils.SwitchTaskUtils.generateContentWithTaskParams(SwitchTaskUtils.java:105)
+	at org.apache.dolphinscheduler.server.master.runner.task.switchtask.SwitchLogicTask.calculateConditionResult(SwitchLogicTask.java:109)
+	at org.apache.dolphinscheduler.server.master.runner.task.switchtask.SwitchLogicTask.handle(SwitchLogicTask.java:72)
+	at org.apache.dolphinscheduler.server.master.runner.execute.SyncMasterTaskExecutor.executeTask(SyncMasterTaskExecutor.java:44)
+	at org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor.run(MasterTaskExecutor.java:110)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[WARN] 2024-04-17 15:09:57.048 +0800 - The Sync task does not support kill operation
+[INFO] 2024-04-17 15:09:57.055 +0800 - Send task status: FAILURE to master: 172.27.0.8:5678 successfully
+[INFO] 2024-04-17 15:09:57.056 +0800 - Get a exception when execute the task, sent the task execute result to master, the current task execute result is TaskExecutionStatus{code=6, desc='failure'}
+[INFO] 2024-04-17 15:09:57.060 +0800 - Get a exception when execute the task, removed the TaskExecutionContext
+[INFO] 2024-04-17 15:09:57.062 +0800 - FINALIZE_SESSION

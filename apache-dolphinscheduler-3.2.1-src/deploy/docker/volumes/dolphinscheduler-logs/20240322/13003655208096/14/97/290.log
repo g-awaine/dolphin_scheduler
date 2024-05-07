@@ -1,0 +1,180 @@
+[INFO] 2024-03-22 09:45:34.448 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:45:34.450 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-03-22 09:45:34.451 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:45:34.451 +0800 - Begin to initialize task
+[INFO] 2024-03-22 09:45:34.451 +0800 - Set task startTime: 1711071934451
+[INFO] 2024-03-22 09:45:34.451 +0800 - Set task appId: 97_290
+[INFO] 2024-03-22 09:45:34.452 +0800 - End initialize task {
+  "taskInstanceId" : 290,
+  "taskName" : "sum of numbers",
+  "firstSubmitTime" : 1711071934434,
+  "startTime" : 1711071934451,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.0.6:5678",
+  "host" : "172.18.0.7:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240322/13003655208096/14/97/290.log",
+  "processId" : 0,
+  "processDefineCode" : 13003655208096,
+  "processDefineVersion" : 14,
+  "processInstanceId" : 97,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"num1\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"1\"},{\"prop\":\"num2\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"0\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 13,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"output_sum\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}],\"rawScript\":\"#!/bin/bash\\n\\n# Add the two numbers together\\nsum=$((${num1} + ${num2}))\\n\\n# Display the result\\necho \\\"The sum of ${num1} and ${num2} is: $sum\\\"\\n\\necho \\\"#{setValue(output_sum=${sum})}\\\"\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sum of numbers"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240322"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "290"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13006679698240"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240322094534"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "97"
+    },
+    "num1" : {
+      "prop" : "num1",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240321"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "dynamic_task_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13003655208096"
+    },
+    "num2" : {
+      "prop" : "num2",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "0"
+    }
+  },
+  "taskAppId" : "97_290",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-03-22 09:45:34.454 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:45:34.455 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-03-22 09:45:34.455 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:45:34.468 +0800 - Send task status RUNNING_EXECUTION master: 172.18.0.7:1234
+[INFO] 2024-03-22 09:45:34.469 +0800 - TenantCode: default check successfully
+[INFO] 2024-03-22 09:45:34.470 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13003655208096_14/97/290 check successfully
+[INFO] 2024-03-22 09:45:34.470 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-03-22 09:45:34.470 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-03-22 09:45:34.471 +0800 - Download upstream files: [] successfully
+[INFO] 2024-03-22 09:45:34.471 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-03-22 09:45:34.471 +0800 - Initialize shell task params {
+  "localParams" : [ {
+    "prop" : "output_sum",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  } ],
+  "varPool" : null,
+  "rawScript" : "#!/bin/bash\n\n# Add the two numbers together\nsum=$((${num1} + ${num2}))\n\n# Display the result\necho \"The sum of ${num1} and ${num2} is: $sum\"\n\necho \"#{setValue(output_sum=${sum})}\"",
+  "resourceList" : [ ]
+}
+[INFO] 2024-03-22 09:45:34.472 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-03-22 09:45:34.472 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-03-22 09:45:34.472 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:45:34.472 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-03-22 09:45:34.473 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:45:34.474 +0800 - Final Shell file is: 
+[INFO] 2024-03-22 09:45:34.474 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-03-22 09:45:34.474 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+#!/bin/bash
+
+# Add the two numbers together
+sum=$((1 + 0))
+
+# Display the result
+echo "The sum of 1 and 0 is: $sum"
+
+echo "#{setValue(output_sum=${sum})}"
+[INFO] 2024-03-22 09:45:34.475 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-03-22 09:45:34.475 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13003655208096_14/97/290/97_290.sh
+[INFO] 2024-03-22 09:45:34.482 +0800 - process start, process id is: 830
+[INFO] 2024-03-22 09:45:35.482 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	The sum of 1 and 0 is: 1
+	#{setValue(output_sum=1)}
+[INFO] 2024-03-22 09:45:35.488 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13003655208096_14/97/290, processId:830 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[INFO] 2024-03-22 09:45:35.489 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:45:35.489 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-03-22 09:45:35.490 +0800 - ***********************************************************************************************
+[INFO] 2024-03-22 09:45:35.490 +0800 - Upload output files: [] successfully
+[INFO] 2024-03-22 09:45:35.506 +0800 - Send task execute status: SUCCESS to master : 172.18.0.7:1234
+[INFO] 2024-03-22 09:45:35.506 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-03-22 09:45:35.507 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13003655208096_14/97/290
+[INFO] 2024-03-22 09:45:35.507 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13003655208096_14/97/290
+[INFO] 2024-03-22 09:45:35.507 +0800 - FINALIZE_SESSION

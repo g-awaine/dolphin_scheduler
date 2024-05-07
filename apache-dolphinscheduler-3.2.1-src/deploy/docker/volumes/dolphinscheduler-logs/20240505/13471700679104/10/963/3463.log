@@ -1,0 +1,297 @@
+[INFO] 2024-05-05 05:46:35.830 +0800 - Submit LogicTask: hash, check and store json to MasterTaskExecutorThreadPool success
+[INFO] 2024-05-05 05:46:35.832 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 05:46:35.926 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-05 05:46:35.927 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 05:46:35.927 +0800 - Begin to initialize task
+[INFO] 2024-05-05 05:46:35.928 +0800 - Set task startTime: 1714859195928
+[INFO] 2024-05-05 05:46:35.928 +0800 - Set task appId: 963_3463
+[INFO] 2024-05-05 05:46:35.928 +0800 - End initialize task {
+  "taskInstanceId" : 3463,
+  "taskName" : "hash, check and store json",
+  "firstSubmitTime" : 1714859195767,
+  "startTime" : 1714859195928,
+  "taskType" : "DYNAMIC",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.0.12:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240505/13471700679104/10/963/3463.log",
+  "processId" : 0,
+  "processDefineCode" : 13471700679104,
+  "processDefineVersion" : 10,
+  "processInstanceId" : 963,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topic\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"'Singapore'\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 7,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":13471825071552,\"maxNumOfSubWorkflowInstances\":1024,\"degreeOfParallelism\":1024,\"filterCondition\":\"\",\"listParameters\":[{\"name\":\"news_article\",\"value\":\"${news_articles_param_list}\",\"separator\":\"|\",\"disabled\":true}]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "news_articles_param_list" : {
+      "prop" : "news_articles_param_list",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : ""
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "hash, check and store json"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3463"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13494693469152"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505054635"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "963"
+    },
+    "topic" : {
+      "prop" : "topic",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "'Singapore'"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "extract_gnews_articles_main"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13471700679104"
+    }
+  },
+  "taskAppId" : "963_3463",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"news_articles_param_list\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-05 05:46:35.929 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 05:46:35.929 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-05 05:46:35.929 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 05:46:36.050 +0800 - Send task status RUNNING_EXECUTION to master 172.18.0.12:5678
+[INFO] 2024-05-05 05:46:36.050 +0800 - Success initialize task parameters: 
+{
+  "localParams" : [ ],
+  "varPool" : null,
+  "processDefinitionCode" : 13471825071552,
+  "maxNumOfSubWorkflowInstances" : 1024,
+  "degreeOfParallelism" : 1024,
+  "filterCondition" : "",
+  "listParameters" : [ {
+    "name" : "news_article",
+    "value" : "${news_articles_param_list}",
+    "separator" : "|"
+  } ]
+}
+[INFO] 2024-05-05 05:46:36.088 +0800 - Initialized task plugin instance: DYNAMIC successfully
+[INFO] 2024-05-05 05:46:36.089 +0800 - Initialize taskVarPool: [{"prop":"news_articles_param_list","direct":"IN","type":"VARCHAR","value":""}] successfully
+[INFO] 2024-05-05 05:46:36.089 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 05:46:36.091 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-05 05:46:36.093 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 05:46:36.094 +0800 - parameter group size: 0
+[INFO] 2024-05-05 05:46:36.111 +0800 - Expected number of runs : 0, actual number of runs : 0
+[ERROR] 2024-05-05 05:46:36.188 +0800 - Task execute failed, due to meet an exception
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: org.postgresql.util.PSQLException: ERROR: syntax error at end of input
+  Position: 128
+### The error may exist in class path resource [org/apache/dolphinscheduler/dao/mapper/RelationSubWorkflowMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into t_ds_relation_sub_workflow (parent_workflow_instance_id, parent_task_code, sub_workflow_instance_id)         values
+### Cause: org.postgresql.util.PSQLException: ERROR: syntax error at end of input
+  Position: 128
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: ERROR: syntax error at end of input
+  Position: 128
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy136.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy198.batchInsert(Unknown Source)
+	at org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl.batchInsertRelationSubWorkflow(SubWorkflowServiceImpl.java:65)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.generateSubWorkflowInstance(DynamicLogicTask.java:178)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.getAsyncTaskExecuteFunction(DynamicLogicTask.java:116)
+	at org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutor.executeTask(AsyncMasterTaskExecutor.java:51)
+	at org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor.run(MasterTaskExecutor.java:110)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at end of input
+  Position: 128
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:181)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:170)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at sun.reflect.GeneratedMethodAccessor116.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy180.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:106)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy179.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at sun.reflect.GeneratedMethodAccessor337.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 14 common frames omitted
+[INFO] 2024-05-05 05:46:36.189 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 05:46:36.189 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-05 05:46:36.189 +0800 - ***********************************************************************************************
+[ERROR] 2024-05-05 05:46:36.190 +0800 - Get a exception when execute the task, will try to cancel the task
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: org.postgresql.util.PSQLException: ERROR: syntax error at end of input
+  Position: 128
+### The error may exist in class path resource [org/apache/dolphinscheduler/dao/mapper/RelationSubWorkflowMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: insert into t_ds_relation_sub_workflow (parent_workflow_instance_id, parent_task_code, sub_workflow_instance_id)         values
+### Cause: org.postgresql.util.PSQLException: ERROR: syntax error at end of input
+  Position: 128
+; bad SQL grammar []; nested exception is org.postgresql.util.PSQLException: ERROR: syntax error at end of input
+  Position: 128
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy136.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:59)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy198.batchInsert(Unknown Source)
+	at org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl.batchInsertRelationSubWorkflow(SubWorkflowServiceImpl.java:65)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.generateSubWorkflowInstance(DynamicLogicTask.java:178)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicLogicTask.getAsyncTaskExecuteFunction(DynamicLogicTask.java:116)
+	at org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskExecutor.executeTask(AsyncMasterTaskExecutor.java:51)
+	at org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor.run(MasterTaskExecutor.java:110)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at end of input
+  Position: 128
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:181)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:170)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at sun.reflect.GeneratedMethodAccessor116.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy180.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at sun.reflect.GeneratedMethodAccessor115.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:106)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy179.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
+	at sun.reflect.GeneratedMethodAccessor337.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 14 common frames omitted
+[INFO] 2024-05-05 05:46:36.216 +0800 - Send task status: FAILURE to master: 172.18.0.12:5678 successfully
+[INFO] 2024-05-05 05:46:36.216 +0800 - Get a exception when execute the task, sent the task execute result to master, the current task execute result is TaskExecutionStatus{code=6, desc='failure'}
+[INFO] 2024-05-05 05:46:36.217 +0800 - Get a exception when execute the task, removed the TaskExecutionContext
+[INFO] 2024-05-05 05:46:36.217 +0800 - FINALIZE_SESSION

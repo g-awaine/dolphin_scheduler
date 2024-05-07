@@ -1,0 +1,899 @@
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:03.652 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 11/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:08.773 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 14/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:13.841 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 26/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:18.878 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:23.947 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 23/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:28.987 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:34.017 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:38.213 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.1388888888888888 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:39.101 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 35/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:39.216 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8870523415977962 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:39.217 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:39.285 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8870523415977962 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:40.233 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8820088600880274 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:40.233 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:40.287 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8820088600880274 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:41.241 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9051972572791415 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:41.242 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:41.293 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9051972572791415 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:42.246 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9026548672566372 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:42.248 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:42.321 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9026548672566372 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:43.290 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9230769230769231 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:43.292 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:43.325 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9230769230769231 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:44.198 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 33/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:44.300 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.960581825177612 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:44.305 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:44.332 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.960581825177612 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:44.640 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218438718, cpuUsage=0.8673610539316591, jvmMemoryUsage=0.0322141965230306, memoryUsage=0.40370544755948046, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:44.671 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:45.311 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8836399870882629 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:45.312 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:45.333 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8836399870882629 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:46.315 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9637305699481866 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:46.315 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:46.339 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9637305699481866 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:47.324 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8047949318441122 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:47.325 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:47.340 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8047949318441122 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:48.333 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:49.265 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 11/ms
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:49.342 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:50.346 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:51.358 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:52.365 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:53.368 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8362573099415205 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:53.369 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:53.371 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8362573099415205 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:54.340 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 15/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:54.378 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7528241609854098 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:54.379 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:54.397 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7528241609854098 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:54.693 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218452962, cpuUsage=0.8063417234428878, jvmMemoryUsage=0.03222096761067708, memoryUsage=0.40710115010086895, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:54.714 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:55.382 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:56.385 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7441176470588236 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:56.386 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:56.430 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7441176470588236 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:57.409 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8189028164654906 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:57.409 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:57.456 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8189028164654906 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:58.413 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9093633639088184 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:58.414 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:58.457 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9093633639088184 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:59.429 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8875832256782271 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:00:59.432 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:59.463 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8875832256782271 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:00:59.473 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 28/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:00.446 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9537275064267353 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:00.457 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:00.474 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9537275064267353 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:01.464 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8350781646819798 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:01.466 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:01.489 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8350781646819798 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:02.480 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.851424794359577 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:02.481 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:02.491 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.851424794359577 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:03.486 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8262108262108261 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:03.487 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:03.493 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8262108262108261 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:04.492 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:04.603 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 15/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:04.754 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:07.517 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8882681564245809 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:08.556 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9743261866270903 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:08.557 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:08.604 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9743261866270903 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:09.560 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8614958448753463 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:09.568 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:09.605 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8614958448753463 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:09.649 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:10.572 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.89281198253801 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:10.575 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:10.607 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.89281198253801 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:11.578 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.800021973192705 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:11.578 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:11.608 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.800021973192705 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:12.581 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8666666666666667 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:12.583 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:12.610 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8666666666666667 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:13.587 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8516483516483515 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:13.588 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:13.616 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8516483516483515 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:14.701 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:15.617 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8228723243667543 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:15.617 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:15.639 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8228723243667543 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:16.626 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8267529200359389 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:16.627 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:16.665 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8267529200359389 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:17.634 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9769230769230768 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:17.635 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:17.675 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9769230769230768 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:18.641 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9609375 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:18.641 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:18.676 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9609375 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:19.645 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9196891191709844 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:19.646 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:19.679 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9196891191709844 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:19.744 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:20.653 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.924924924924925 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:20.655 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:20.683 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.924924924924925 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:21.661 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.955958549222798 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:21.662 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:21.691 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.955958549222798 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:22.668 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8373333333333334 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:22.668 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:22.694 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8373333333333334 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:23.673 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8209366391184573 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:23.674 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:23.696 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8209366391184573 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:24.701 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9463735286949291 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:24.696 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9463735286949291 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:24.705 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:24.843 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218475446, cpuUsage=0.7627094474153296, jvmMemoryUsage=0.03222096761067708, memoryUsage=0.41034056840537186, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:24.856 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 28/ms
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:24.876 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:25.711 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7466630138654248 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:25.712 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:25.709 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7466630138654248 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:26.717 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8548098820951886 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:26.718 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:26.757 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8548098820951886 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:27.724 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7252446561936647 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:27.731 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:27.766 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7252446561936647 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:28.737 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:29.741 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:29.906 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 16/ms
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:30.756 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:31.759 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:32.762 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:33.764 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:34.776 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:34.901 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:34.950 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:40.037 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 27/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:45.135 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 24/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:48.892 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8914956011730205 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:48.936 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8914956011730205 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:01:48.937 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:50.208 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:01:55.252 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:00.325 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 20/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:02.055 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.5 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:05.409 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 14/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:10.446 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:15.499 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 14/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:17.183 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.754335260115607 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:17.207 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:17.217 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:18.225 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9000512707829781 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:18.226 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:18.244 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9000512707829781 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:19.249 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.5 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:19.251 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.828042328042328 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:19.252 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:20.260 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8101818551697582 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:20.271 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8101818551697582 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:20.276 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:20.624 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 20/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:21.277 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9450413223140496 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:21.281 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9450413223140496 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:21.281 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:22.301 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0053763440860215 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:22.314 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:22.306 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8958904109589041 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:23.336 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:25.375 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.807799442896936 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:25.382 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.5 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:25.393 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:25.805 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 15/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:26.403 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9030541871921182 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:26.404 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:26.486 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9030541871921182 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:27.408 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8658816289997762 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:27.409 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:27.487 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8658816289997762 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:30.425 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7653701702937696 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:30.425 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:30.517 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7653701702937696 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:30.855 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:31.432 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8904711726629536 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:31.432 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:31.550 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8904711726629536 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:32.442 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9467318961010588 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:32.458 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:32.571 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9467318961010588 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:33.461 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9569317526059357 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:33.462 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:33.575 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9569317526059357 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:34.470 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9388015689372988 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:34.472 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:34.579 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9388015689372988 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:35.112 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218550535, cpuUsage=0.7953890489913545, jvmMemoryUsage=0.03222096761067708, memoryUsage=0.42297692441370544, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:35.156 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:35.486 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8543956043956044 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:35.488 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:35.580 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8543956043956044 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:35.910 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 14/ms
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:36.492 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:37.517 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9620234604105573 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:37.521 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:37.690 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9620234604105573 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:38.529 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9195208670843428 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:38.531 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:38.722 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9195208670843428 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:39.541 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8038595050576686 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:39.542 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:39.725 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8038595050576686 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:40.545 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.872093023255814 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:40.545 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:40.728 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.872093023255814 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:41.065 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 27/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:41.550 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.819277108433735 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:41.552 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:41.731 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.819277108433735 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:42.557 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:43.560 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:44.566 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9207161125319693 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:44.567 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:44.749 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9207161125319693 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:45.169 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218563877, cpuUsage=0.7632978723404256, jvmMemoryUsage=0.03222096761067708, memoryUsage=0.4192032367141498, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:45.179 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:45.571 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7046580006190034 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:45.571 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:45.928 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7046580006190034 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:46.157 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 27/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:46.603 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8298527216485326 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:46.604 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:46.932 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8298527216485326 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:47.612 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8599712281963675 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:47.613 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:47.933 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8599712281963675 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:48.615 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.800593448330432 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:48.616 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:48.935 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.800593448330432 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:49.635 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7589339006137035 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:49.636 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:49.937 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7589339006137035 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:50.640 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7597145683199096 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:50.640 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:50.941 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7597145683199096 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:51.372 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 60/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:51.649 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7676470588235293 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:51.650 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:51.942 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7676470588235293 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:52.653 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:53.657 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8262108262108263 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:53.657 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:53.975 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8262108262108263 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:02:54.661 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:55.215 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:02:56.477 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 29/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:01.526 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 11/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:06.591 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:11.618 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:16.668 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 14/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:20.959 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8555555555555555 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:20.965 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:21.139 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8555555555555555 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:21.708 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 11/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:25.020 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.882183908045977 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:25.022 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:25.224 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.882183908045977 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:25.338 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218604481, cpuUsage=0.7288135593220338, jvmMemoryUsage=0.03222096761067708, memoryUsage=0.4270043254545664, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:25.357 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:26.026 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9680851063829787 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:26.027 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:26.257 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9680851063829787 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:26.745 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 10/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:27.035 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7841530054644809 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:27.037 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:27.259 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7841530054644809 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:28.043 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8394366197183099 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:28.043 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:28.261 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8394366197183099 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:29.048 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7189478848258424 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:29.049 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:29.263 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7189478848258424 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:30.056 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:31.069 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:31.791 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:32.073 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:33.080 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:34.084 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:35.090 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:35.385 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:36.840 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 14/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:41.871 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:46.989 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 76/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:47.228 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.754874651810585 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:47.242 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:47.337 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.754874651810585 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:49.271 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.907103825136612 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:49.272 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:49.464 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.907103825136612 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:50.275 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7065527065527065 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:50.276 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:50.518 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7065527065527065 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:52.077 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 17/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:53.321 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8739726027397259 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:53.321 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:53.539 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8739726027397259 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:55.333 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7050362102185901 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:55.334 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:55.443 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218635097, cpuUsage=0.7130843693343694, jvmMemoryUsage=0.03222096761067708, memoryUsage=0.4230220599375897, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:55.696 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7050362102185901 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:56.338 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8679829655439412 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:03:56.340 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:56.717 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8679829655439412 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:03:57.122 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:02.171 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 17/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:07.257 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:12.303 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:17.355 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:19.566 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7249779113647061 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:19.567 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:19.867 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7249779113647061 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:20.570 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8135593220338984 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:20.571 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:20.948 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8135593220338984 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:22.462 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 56/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:27.573 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 33/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:27.654 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8748104222821205 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:27.656 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:27.991 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8748104222821205 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:28.665 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8647572946080408 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:28.674 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:29.011 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8647572946080408 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:29.685 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7944300363085026 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:29.686 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:30.020 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7944300363085026 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:30.692 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7937853107344632 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:30.693 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:31.021 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7937853107344632 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:32.640 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:32.704 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8276836158192091 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:32.704 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:33.057 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8276836158192091 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:33.706 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7285714285714285 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:33.706 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:34.160 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7285714285714285 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:35.716 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8337567530340827 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:35.717 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:36.196 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8337567530340827 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:37.704 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 34/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:37.753 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7858492638980443 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:37.754 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:38.243 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7858492638980443 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:40.783 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7914285714285715 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:40.785 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:41.296 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7914285714285715 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:42.761 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:47.845 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 38/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:47.867 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7558902298460912 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:47.876 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:48.369 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7558902298460912 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:48.901 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8309859154929577 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:48.902 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:49.415 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8309859154929577 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:49.904 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7424432966539412 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:49.905 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:50.431 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7424432966539412 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:50.908 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8559556786703602 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:50.908 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:51.432 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8559556786703602 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:52.932 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:53.938 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.777221194884639 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:53.950 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:54.493 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.777221194884639 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:54.953 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7130681818181818 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:54.955 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:55.542 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7130681818181818 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:55.711 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:55.962 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:56.968 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9178533794972151 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:56.969 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:57.574 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9178533794972151 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:57.971 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:04:58.023 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 18/ms
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:58.974 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:04:59.978 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:00.985 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:01.989 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7549614068592345 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:01.990 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:02.628 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7549614068592345 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:03.007 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8419128544610216 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:03.014 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:03.065 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:03.648 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8419128544610216 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:04.036 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:05.038 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:05.767 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:08.177 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 24/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:10.085 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7470243511811597 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:10.086 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:10.688 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7470243511811597 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:11.089 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7770089366474909 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:11.090 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:11.705 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7770089366474909 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:13.111 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.848396501457726 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:13.111 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:13.222 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:13.722 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.848396501457726 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:18.272 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 16/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:23.366 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 23/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:27.223 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7925072046109509 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:27.224 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:27.830 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7925072046109509 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:28.499 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:29.244 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.844632768361582 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:29.244 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:29.989 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.844632768361582 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:30.247 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7580174927113703 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:30.248 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:31.043 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7580174927113703 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:31.259 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8351351351351353 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:31.260 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:32.045 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8351351351351353 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:33.273 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8461538461538461 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:33.274 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:33.551 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:34.072 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8461538461538461 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:34.279 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7729885057471264 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:34.280 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:35.133 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7729885057471264 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:35.892 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:36.298 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7936046511627907 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:36.299 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:37.165 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7936046511627907 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:37.305 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8176795580110496 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:37.308 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:38.216 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8176795580110496 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:38.342 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8347578347578347 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:38.343 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:38.638 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 43/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:39.219 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8347578347578347 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:39.354 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:40.357 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:41.362 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:42.368 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:43.372 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:43.680 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 10/ms
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:44.375 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:45.380 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:45.937 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:46.385 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8747062759683166 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:46.416 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:47.241 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8747062759683166 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:47.431 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9395671340909594 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:47.432 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:48.286 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9395671340909594 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:48.711 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:51.474 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7601156069364162 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:51.478 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:52.335 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7601156069364162 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:53.761 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:55.525 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8101983002832862 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:55.526 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [WARN] 2024-04-16 06:05:55.948 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218755377, cpuUsage=0.8825214899713467, jvmMemoryUsage=0.03223225275675456, memoryUsage=0.4261582829253705, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:56.404 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8101983002832862 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:05:58.802 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 16/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:00.561 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8079096045197741 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:00.567 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:01.453 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8079096045197741 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:03.846 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 10/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:05.619 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7662721893491123 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:05.619 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:06.069 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218765609, cpuUsage=0.7492448471926083, jvmMemoryUsage=0.03223225275675456, memoryUsage=0.42592206705587937, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:06.538 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7662721893491123 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:06.628 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8215297450424929 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:06.628 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:07.556 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8215297450424929 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:08.650 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7415676522059501 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:08.653 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:08.899 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:09.602 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7415676522059501 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:10.668 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7680489235151211 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:10.669 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:10.671 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:11.684 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9018937834499794 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:11.684 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:11.685 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:12.689 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7541436464088398 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:12.689 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:13.693 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8027777777777778 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:13.694 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:13.716 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8027777777777778 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:14.030 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 52/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:14.696 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7832817337461301 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:14.696 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:14.793 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7832817337461301 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:16.144 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218775986, cpuUsage=0.7242031188512257, jvmMemoryUsage=0.03223225275675456, memoryUsage=0.4279040534086467, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:19.080 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:20.761 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8608695652173913 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:20.788 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:20.881 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8608695652173913 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:21.800 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9812121212121212 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:21.805 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:21.953 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9812121212121212 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:22.831 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7574315663792952 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:22.835 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:22.953 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7574315663792952 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:24.123 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:27.881 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7349726775956285 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:27.881 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:27.994 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7349726775956285 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:29.160 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:30.925 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8264705882352941 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:30.933 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:31.071 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8264705882352941 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:31.939 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7679083094555874 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:31.939 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:32.098 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7679083094555874 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:34.221 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 16/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:39.281 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 11/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:41.046 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8484306003102996 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:41.047 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:41.182 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8484306003102996 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:42.057 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7363323782234957 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:42.062 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:42.266 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7363323782234957 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:43.069 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7002881844380403 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:43.069 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:43.270 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7002881844380403 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:44.325 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:47.112 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7457627118644068 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:47.113 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:47.305 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7457627118644068 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:48.116 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7858917550245291 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:48.117 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:48.328 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7858917550245291 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:49.120 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.828360209049895 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:49.120 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:49.329 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.828360209049895 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:49.378 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 18/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:50.125 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7239040987498021 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:50.125 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:50.333 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7239040987498021 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:51.134 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8082191780821918 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:51.134 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:51.336 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8082191780821918 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:52.143 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9378771146428515 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:52.143 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:52.341 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9378771146428515 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:53.145 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9034090909090908 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:53.145 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:53.345 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9034090909090908 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:54.149 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9355742296918768 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:54.150 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:54.349 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9355742296918768 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:54.431 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 26/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:55.187 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.835135135135135 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:55.204 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:55.353 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.835135135135135 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:56.278 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218810618, cpuUsage=0.9107889560719749, jvmMemoryUsage=0.03223225275675456, memoryUsage=0.4395826216700621, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:56.284 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:57.216 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:58.219 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:06:59.232 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:06:59.538 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 21/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:00.238 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7681159420289855 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:00.238 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:00.400 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7681159420289855 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:01.244 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:02.249 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:03.254 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7113702623906706 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:03.255 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:03.482 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7113702623906706 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:04.272 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:04.849 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 131/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:05.275 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9299191374663073 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:05.276 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:05.576 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9299191374663073 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:06.283 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:06.351 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:07.286 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:08.291 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:09.295 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:09.992 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 21/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:10.304 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7551020408163265 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:10.305 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:10.627 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7551020408163265 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:11.310 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:12.319 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:13.324 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:14.328 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:15.102 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 14/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:15.349 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7307692307692307 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:15.351 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:15.677 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7307692307692307 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:16.357 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:16.453 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:17.390 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:18.404 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:19.412 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:20.135 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:20.416 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:21.420 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8357100268309648 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:21.420 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:21.741 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8357100268309648 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:22.423 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:23.427 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7314415944230941 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:23.431 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:23.961 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7314415944230941 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:24.453 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:25.164 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:25.456 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:26.462 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:26.541 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:27.470 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8176071613571614 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:27.470 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:28.024 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8176071613571614 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:28.475 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8833642835035593 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:28.477 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:29.056 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8833642835035593 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:29.484 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7122507122507122 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:29.485 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:30.057 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7122507122507122 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:30.232 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 11/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:32.518 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8539944903581267 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:32.518 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:33.082 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8539944903581267 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:33.520 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.807909604519774 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:33.521 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:34.118 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.807909604519774 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:34.527 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9046321525885558 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:34.528 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:35.120 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9046321525885558 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:35.323 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:35.531 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.899441340782123 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:35.531 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:36.123 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.899441340782123 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:36.540 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9289617486338798 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:36.540 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:36.567 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218852317, cpuUsage=0.8324022346368716, jvmMemoryUsage=0.03223225275675456, memoryUsage=0.4466683024151681, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:36.579 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:37.125 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9289617486338798 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:37.547 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9459459459459459 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:37.548 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:38.138 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9459459459459459 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:38.550 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8746438746438746 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:38.550 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:39.159 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8746438746438746 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:39.554 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:40.360 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 14/ms
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:40.567 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:41.612 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:42.620 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:43.627 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7669097483542244 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:43.628 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:44.187 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7669097483542244 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:44.630 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:45.457 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 52/ms
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:45.633 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:46.612 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:50.526 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:51.673 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7008547008547008 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:51.674 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:52.246 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7008547008547008 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:52.681 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8727810650887574 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:52.682 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:53.323 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8727810650887574 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:53.732 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0016125475494788 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:53.734 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:54.324 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0016125475494788 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:55.646 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 58/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:56.752 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8065831556503198 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:56.753 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:57.374 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8065831556503198 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:57.762 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7130198944115375 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:07:57.775 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:07:58.400 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7130198944115375 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:00.698 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:03.837 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.81693323784515 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:03.847 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:04.431 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.81693323784515 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:04.851 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8657963875205255 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:04.852 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:05.473 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8657963875205255 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:05.780 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 15/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:08.889 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8986394286398276 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:08.889 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:09.503 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8986394286398276 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:09.893 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7204610951008645 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:09.893 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:10.523 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7204610951008645 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:10.837 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 21/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:14.929 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.703438107365458 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:14.929 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:15.797 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.703438107365458 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:15.883 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 11/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:18.953 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7244318181818181 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:18.953 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:19.849 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7244318181818181 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:19.966 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7507246376811594 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:19.975 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:20.891 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7507246376811594 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:20.982 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7002881844380403 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:20.983 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:21.008 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 20/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:21.901 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7002881844380403 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:24.005 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.844574780058651 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:24.007 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:24.944 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.844574780058651 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:25.013 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8436578171091446 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:25.018 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:25.985 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8436578171091446 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:26.078 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 28/ms
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:26.912 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218906393, cpuUsage=0.7756756756756757, jvmMemoryUsage=0.03223225275675456, memoryUsage=0.4280482087162065, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:26.931 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:27.061 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7758321205577203 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:27.061 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:28.013 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7758321205577203 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:28.068 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:29.077 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:30.081 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7570621468926553 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:30.081 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:30.097 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7570621468926553 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:31.091 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8018278229417238 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:31.092 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:31.112 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8018278229417238 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:31.118 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:32.098 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8764044943820225 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:32.098 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:32.115 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8764044943820225 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:33.100 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:34.102 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:35.105 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:36.107 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:36.182 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:36.962 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:40.130 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8168168168168167 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:40.133 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:40.166 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8168168168168167 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:41.229 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:45.194 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8285111512959614 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:45.195 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:45.297 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8285111512959614 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:46.301 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:47.209 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7165131982811541 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:47.210 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:47.363 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7165131982811541 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:48.215 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9233766233766233 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:48.216 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:48.440 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9233766233766233 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:49.222 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8171091445427728 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:49.222 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:49.441 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8171091445427728 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:51.344 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:54.278 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7486187845303868 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:54.279 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:54.473 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7486187845303868 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:56.376 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:59.318 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.749271137026239 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:08:59.319 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:08:59.573 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.749271137026239 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:01.463 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 17/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:06.543 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 10/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:11.608 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 10/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:15.431 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7176470588235294 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:15.432 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:15.681 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7176470588235294 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:16.638 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:18.448 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7861271676300579 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:18.449 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:18.749 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7861271676300579 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:19.461 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7312138728323698 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:19.462 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:19.825 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7312138728323698 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:21.471 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8575418994413408 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:21.471 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:21.724 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:21.866 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8575418994413408 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:22.480 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8591074537110303 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:22.481 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:22.887 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8591074537110303 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:23.486 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8845070422535211 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:23.488 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:23.891 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8845070422535211 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:24.491 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7650429799426934 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:24.492 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:24.896 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7650429799426934 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:26.763 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:27.517 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.727536231884058 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:27.518 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:27.919 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.727536231884058 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:31.833 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 39/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:32.606 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8083333333333332 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:32.613 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:32.973 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8083333333333332 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:33.620 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.923728813559322 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:33.652 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:34.012 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.923728813559322 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:34.661 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9122182013637585 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:34.669 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:35.018 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9122182013637585 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:35.674 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7676992690567351 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:35.678 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:36.020 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7676992690567351 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:36.681 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8309859154929577 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:36.681 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:36.976 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 62/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:37.023 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8309859154929577 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:37.231 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713218972561, cpuUsage=0.7905027932960894, jvmMemoryUsage=0.03223225275675456, memoryUsage=0.4361889074777434, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:37.310 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:37.689 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.992 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:37.689 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:38.026 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.992 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:38.693 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.92507204610951 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:38.694 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:39.036 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.92507204610951 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:39.697 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:40.701 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:41.709 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8118341141766442 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:41.726 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:42.067 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8118341141766442 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:42.071 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 17/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:42.746 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.923943661971831 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:42.747 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:43.151 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.923943661971831 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:43.749 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8714285714285713 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:43.749 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:44.156 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8714285714285713 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:44.761 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8149253731343284 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:44.762 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:45.162 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8149253731343284 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:45.766 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8442622950819673 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:45.768 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:46.179 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8442622950819673 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:46.772 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:47.142 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:47.339 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:48.782 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9287808351132889 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:48.782 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:49.201 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.9287808351132889 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:49.787 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7615176151761518 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:49.787 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:50.221 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7615176151761518 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:51.837 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.710308267997149 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:09:51.838 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:52.172 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 11/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:52.249 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.710308267997149 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:09:57.211 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:02.251 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:07.355 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 11/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:12.423 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 10/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:17.453 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:22.515 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 10/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:24.164 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7098591549295774 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:10:24.164 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:24.460 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7098591549295774 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:25.167 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.773841961852861 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:10:25.168 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:25.480 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.773841961852861 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:27.560 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:32.629 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:37.676 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:42.717 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:47.747 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:52.794 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 14/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:55.417 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.871754403004403 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:10:55.417 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:55.655 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.871754403004403 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:10:57.830 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:11:00.452 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7597765363128491 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:11:00.452 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:11:00.752 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7597765363128491 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:11:01.456 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8555247768544169 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:11:01.456 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-16 06:11:01.784 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8555247768544169 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:11:02.875 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 17/ms
+[WI-0][TI-0] - [INFO] 2024-04-16 06:11:07.494 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7690140845070422 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-16 06:11:07.496 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [WARN] 2024-04-16 06:11:07.632 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.18.0.11:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1713218142354, reportTime=1713219067565, cpuUsage=0.7556657678479713, jvmMemoryUsage=0.03223225275675456, memoryUsage=0.41353425468126964, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.18.0.11, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [INFO] 2024-04-16 06:11:07.841 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7690140845070422 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-16 06:11:07.940 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms

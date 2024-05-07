@@ -1,0 +1,765 @@
+[INFO] 2024-04-25 16:28:08.815 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 16:28:08.817 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-25 16:28:08.817 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 16:28:08.817 +0800 - Begin to initialize task
+[INFO] 2024-04-25 16:28:08.817 +0800 - Set task startTime: 1714033688817
+[INFO] 2024-04-25 16:28:08.817 +0800 - Set task appId: 677_1837
+[INFO] 2024-04-25 16:28:08.818 +0800 - End initialize task {
+  "taskInstanceId" : 1837,
+  "taskName" : "preprocessing and kafka",
+  "firstSubmitTime" : 1714033688807,
+  "startTime" : 1714033688817,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.0.9:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240425/13201021801792/114/677/1837.log",
+  "processId" : 0,
+  "processDefineCode" : 13201021801792,
+  "processDefineVersion" : 114,
+  "processInstanceId" : 677,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"folder\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"in\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"$SPARK_HOME/bin/spark-submit \\\\\\n    --master local \\\\\\n    --deploy-mode client \\\\\\n    --conf spark.driver.cores=1 \\\\\\n    --conf spark.driver.memory=1G \\\\\\n    --conf spark.executor.instances=1 \\\\\\n    --conf spark.executor.cores=1 \\\\\\n    --conf spark.executor.memory=1G \\\\\\n    --name reddit_preprocessing \\\\\\n    --files ${raw_file_dir} \\\\\\n    --packages org.apache.spark:spark-sql-kafka-0-10_2.13:3.5.1 \\\\\\n    --conf spark.driver.extraJavaOptions=\\\"-Divy.cache.dir=/tmp -Divy.home=/tmp\\\" \\\\\\n    spark_reddit_preprocessing.py\\n\\n#     --jars spark_packages/spark-sql-kafka-0-10_2.13-3.5.1.jar \\\\\",\"resourceList\":[{\"id\":null,\"resourceName\":\"file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py\",\"res\":null}]}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocessing and kafka"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240425"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1837"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13210058002752"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240425162808"
+    },
+    "folder" : {
+      "prop" : "folder",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "in"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "677"
+    },
+    "raw_file_dir" : {
+      "prop" : "raw_file_dir",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit/processing/676-20240425162748.json"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240424"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocess_post"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13201021801792"
+    }
+  },
+  "taskAppId" : "677_1837",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"raw_file_dir\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"/local_storage/reddit/processing/676-20240425162748.json\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-25 16:28:08.818 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 16:28:08.818 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-25 16:28:08.818 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 16:28:08.823 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-25 16:28:08.824 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-25 16:28:08.826 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_114/677/1837 check successfully
+[INFO] 2024-04-25 16:28:08.827 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-04-25 16:28:08.884 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py, resourceRelativePath=spark_reddit_preprocessing.py, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_114/677/1837/spark_reddit_preprocessing.py)})
+[INFO] 2024-04-25 16:28:08.886 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-25 16:28:08.886 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-04-25 16:28:08.890 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "$SPARK_HOME/bin/spark-submit \\\n    --master local \\\n    --deploy-mode client \\\n    --conf spark.driver.cores=1 \\\n    --conf spark.driver.memory=1G \\\n    --conf spark.executor.instances=1 \\\n    --conf spark.executor.cores=1 \\\n    --conf spark.executor.memory=1G \\\n    --name reddit_preprocessing \\\n    --files ${raw_file_dir} \\\n    --packages org.apache.spark:spark-sql-kafka-0-10_2.13:3.5.1 \\\n    --conf spark.driver.extraJavaOptions=\"-Divy.cache.dir=/tmp -Divy.home=/tmp\" \\\n    spark_reddit_preprocessing.py\n\n#     --jars spark_packages/spark-sql-kafka-0-10_2.13-3.5.1.jar \\",
+  "resourceList" : [ {
+    "id" : null,
+    "resourceName" : "file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py",
+    "res" : null
+  } ]
+}
+[INFO] 2024-04-25 16:28:08.891 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-25 16:28:08.891 +0800 - Set taskVarPool: [{"prop":"raw_file_dir","direct":"IN","type":"VARCHAR","value":"/local_storage/reddit/processing/676-20240425162748.json"}] successfully
+[INFO] 2024-04-25 16:28:08.892 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 16:28:08.892 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-25 16:28:08.892 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 16:28:08.895 +0800 - Final Shell file is: 
+[INFO] 2024-04-25 16:28:08.896 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-25 16:28:08.896 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+$SPARK_HOME/bin/spark-submit \
+    --master local \
+    --deploy-mode client \
+    --conf spark.driver.cores=1 \
+    --conf spark.driver.memory=1G \
+    --conf spark.executor.instances=1 \
+    --conf spark.executor.cores=1 \
+    --conf spark.executor.memory=1G \
+    --name reddit_preprocessing \
+    --files /local_storage/reddit/processing/676-20240425162748.json \
+    --packages org.apache.spark:spark-sql-kafka-0-10_2.13:3.5.1 \
+    --conf spark.driver.extraJavaOptions="-Divy.cache.dir=/tmp -Divy.home=/tmp" \
+    spark_reddit_preprocessing.py
+
+#     --jars spark_packages/spark-sql-kafka-0-10_2.13-3.5.1.jar \
+[INFO] 2024-04-25 16:28:08.896 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-25 16:28:08.896 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_114/677/1837/677_1837.sh
+[INFO] 2024-04-25 16:28:08.918 +0800 - process start, process id is: 6925
+[INFO] 2024-04-25 16:28:09.937 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-04-25 16:28:11.970 +0800 -  -> 
+	:: loading settings :: url = jar:file:/opt/spark-3.5.1-bin-hadoop3/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+	Ivy Default Cache set to: /tmp
+	The jars for the packages stored in: /tmp/jars
+	org.apache.spark#spark-sql-kafka-0-10_2.13 added as a dependency
+	:: resolving dependencies :: org.apache.spark#spark-submit-parent-f300938d-2750-49b0-b681-6c3ea6405e59;1.0
+		confs: [default]
+[INFO] 2024-04-25 16:28:12.971 +0800 -  -> 
+		found org.apache.spark#spark-sql-kafka-0-10_2.13;3.5.1 in central
+		found org.apache.spark#spark-token-provider-kafka-0-10_2.13;3.5.1 in central
+		found org.apache.kafka#kafka-clients;3.4.1 in central
+		found org.lz4#lz4-java;1.8.0 in central
+		found org.xerial.snappy#snappy-java;1.1.10.3 in central
+		found org.slf4j#slf4j-api;2.0.7 in central
+		found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+		found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+		found commons-logging#commons-logging;1.1.3 in central
+		found com.google.code.findbugs#jsr305;3.0.0 in central
+		found org.scala-lang.modules#scala-parallel-collections_2.13;1.0.4 in central
+		found org.apache.commons#commons-pool2;2.11.1 in central
+	:: resolution report :: resolve 696ms :: artifacts dl 38ms
+		:: modules in use:
+		com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+		commons-logging#commons-logging;1.1.3 from central in [default]
+		org.apache.commons#commons-pool2;2.11.1 from central in [default]
+		org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+		org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+		org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+		org.apache.spark#spark-sql-kafka-0-10_2.13;3.5.1 from central in [default]
+		org.apache.spark#spark-token-provider-kafka-0-10_2.13;3.5.1 from central in [default]
+		org.lz4#lz4-java;1.8.0 from central in [default]
+		org.scala-lang.modules#scala-parallel-collections_2.13;1.0.4 from central in [default]
+		org.slf4j#slf4j-api;2.0.7 from central in [default]
+		org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+		---------------------------------------------------------------------
+		|                  |            modules            ||   artifacts   |
+		|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+		---------------------------------------------------------------------
+		|      default     |   12  |   0   |   0   |   0   ||   12  |   0   |
+		---------------------------------------------------------------------
+	:: retrieving :: org.apache.spark#spark-submit-parent-f300938d-2750-49b0-b681-6c3ea6405e59
+		confs: [default]
+		0 artifacts copied, 12 already retrieved (0kB/25ms)
+[INFO] 2024-04-25 16:28:14.012 +0800 -  -> 
+	24/04/25 16:28:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2024-04-25 16:28:15.013 +0800 -  -> 
+	24/04/25 16:28:14 INFO SparkContext: Running Spark version 3.5.1
+	24/04/25 16:28:14 INFO SparkContext: OS info Linux, 6.5.0-28-generic, amd64
+	24/04/25 16:28:14 INFO SparkContext: Java version 1.8.0_402
+	24/04/25 16:28:14 INFO ResourceUtils: ==============================================================
+	24/04/25 16:28:14 INFO ResourceUtils: No custom resources configured for spark.driver.
+	24/04/25 16:28:14 INFO ResourceUtils: ==============================================================
+	24/04/25 16:28:14 INFO SparkContext: Submitted application: reddit_preprocessing
+	24/04/25 16:28:14 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+	24/04/25 16:28:14 INFO ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+	24/04/25 16:28:14 INFO ResourceProfileManager: Added ResourceProfile id: 0
+	24/04/25 16:28:14 INFO SecurityManager: Changing view acls to: default
+	24/04/25 16:28:14 INFO SecurityManager: Changing modify acls to: default
+	24/04/25 16:28:14 INFO SecurityManager: Changing view acls groups to: 
+	24/04/25 16:28:14 INFO SecurityManager: Changing modify acls groups to: 
+	24/04/25 16:28:14 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: default; groups with view permissions: EMPTY; users with modify permissions: default; groups with modify permissions: EMPTY
+	24/04/25 16:28:14 INFO Utils: Successfully started service 'sparkDriver' on port 36319.
+	24/04/25 16:28:14 INFO SparkEnv: Registering MapOutputTracker
+	24/04/25 16:28:14 INFO SparkEnv: Registering BlockManagerMaster
+	24/04/25 16:28:14 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+	24/04/25 16:28:14 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+	24/04/25 16:28:14 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+	24/04/25 16:28:14 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-787132e4-56ea-4266-bf62-10a9ab290c3c
+	24/04/25 16:28:14 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+	24/04/25 16:28:14 INFO SparkEnv: Registering OutputCommitCoordinator
+[INFO] 2024-04-25 16:28:16.014 +0800 -  -> 
+	24/04/25 16:28:15 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+	24/04/25 16:28:15 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+	24/04/25 16:28:15 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar at spark://15dedf891bed:36319/jars/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar at spark://15dedf891bed:36319/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO SparkContext: Added JAR file:///tmp/jars/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar at spark://15dedf891bed:36319/jars/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar at spark://15dedf891bed:36319/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO SparkContext: Added JAR file:///tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar at spark://15dedf891bed:36319/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar at spark://15dedf891bed:36319/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar at spark://15dedf891bed:36319/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO SparkContext: Added JAR file:///tmp/jars/org.lz4_lz4-java-1.8.0.jar at spark://15dedf891bed:36319/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO SparkContext: Added JAR file:///tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar at spark://15dedf891bed:36319/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO SparkContext: Added JAR file:///tmp/jars/org.slf4j_slf4j-api-2.0.7.jar at spark://15dedf891bed:36319/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar at spark://15dedf891bed:36319/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO SparkContext: Added JAR file:///tmp/jars/commons-logging_commons-logging-1.1.3.jar at spark://15dedf891bed:36319/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///local_storage/reddit/processing/676-20240425162748.json at file:///local_storage/reddit/processing/676-20240425162748.json with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /local_storage/reddit/processing/676-20240425162748.json to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/676-20240425162748.json
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar at file:///tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar at file:///tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///tmp/jars/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar at file:///tmp/jars/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /tmp/jars/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar at file:///tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.kafka_kafka-clients-3.4.1.jar
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar at file:///tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/com.google.code.findbugs_jsr305-3.0.0.jar
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar at file:///tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.commons_commons-pool2-2.11.1.jar
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar at file:///tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///tmp/jars/org.lz4_lz4-java-1.8.0.jar at file:///tmp/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /tmp/jars/org.lz4_lz4-java-1.8.0.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.lz4_lz4-java-1.8.0.jar
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar at file:///tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.xerial.snappy_snappy-java-1.1.10.3.jar
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///tmp/jars/org.slf4j_slf4j-api-2.0.7.jar at file:///tmp/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /tmp/jars/org.slf4j_slf4j-api-2.0.7.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.slf4j_slf4j-api-2.0.7.jar
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar at file:///tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.hadoop_hadoop-client-api-3.3.4.jar
+	24/04/25 16:28:15 INFO SparkContext: Added file file:///tmp/jars/commons-logging_commons-logging-1.1.3.jar at file:///tmp/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1714033694181
+	24/04/25 16:28:15 INFO Utils: Copying /tmp/jars/commons-logging_commons-logging-1.1.3.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/commons-logging_commons-logging-1.1.3.jar
+[INFO] 2024-04-25 16:28:17.018 +0800 -  -> 
+	24/04/25 16:28:16 INFO Executor: Starting executor ID driver on host 15dedf891bed
+	24/04/25 16:28:16 INFO Executor: OS info Linux, 6.5.0-28-generic, amd64
+	24/04/25 16:28:16 INFO Executor: Java version 1.8.0_402
+	24/04/25 16:28:16 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+	24/04/25 16:28:16 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@5a142a20 for default.
+	24/04/25 16:28:16 INFO Executor: Fetching file:///local_storage/reddit/processing/676-20240425162748.json with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /local_storage/reddit/processing/676-20240425162748.json has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/676-20240425162748.json
+	24/04/25 16:28:16 INFO Executor: Fetching file:///tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar
+	24/04/25 16:28:16 INFO Executor: Fetching file:///tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar
+	24/04/25 16:28:16 INFO Executor: Fetching file:///tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.commons_commons-pool2-2.11.1.jar
+	24/04/25 16:28:16 INFO Executor: Fetching file:///tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar
+	24/04/25 16:28:16 INFO Executor: Fetching file:///tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.kafka_kafka-clients-3.4.1.jar
+	24/04/25 16:28:16 INFO Executor: Fetching file:///tmp/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /tmp/jars/org.lz4_lz4-java-1.8.0.jar has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.lz4_lz4-java-1.8.0.jar
+	24/04/25 16:28:16 INFO Executor: Fetching file:///tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.xerial.snappy_snappy-java-1.1.10.3.jar
+	24/04/25 16:28:16 INFO Executor: Fetching file:///tmp/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /tmp/jars/org.slf4j_slf4j-api-2.0.7.jar has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.slf4j_slf4j-api-2.0.7.jar
+	24/04/25 16:28:16 INFO Executor: Fetching file:///tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/com.google.code.findbugs_jsr305-3.0.0.jar
+	24/04/25 16:28:16 INFO Executor: Fetching file:///tmp/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /tmp/jars/commons-logging_commons-logging-1.1.3.jar has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/commons-logging_commons-logging-1.1.3.jar
+	24/04/25 16:28:16 INFO Executor: Fetching file:///tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.hadoop_hadoop-client-api-3.3.4.jar
+	24/04/25 16:28:16 INFO Executor: Fetching file:///tmp/jars/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: /tmp/jars/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar
+	24/04/25 16:28:16 INFO Executor: Fetching spark://15dedf891bed:36319/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO TransportClientFactory: Successfully created connection to 15dedf891bed/172.18.1.1:36319 after 51 ms (0 ms spent in bootstraps)
+	24/04/25 16:28:16 INFO Utils: Fetching spark://15dedf891bed:36319/jars/com.google.code.findbugs_jsr305-3.0.0.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp3224159743529252733.tmp
+	24/04/25 16:28:16 INFO Utils: /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp3224159743529252733.tmp has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/com.google.code.findbugs_jsr305-3.0.0.jar
+	24/04/25 16:28:16 INFO Executor: Adding file:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/com.google.code.findbugs_jsr305-3.0.0.jar to class loader default
+	24/04/25 16:28:16 INFO Executor: Fetching spark://15dedf891bed:36319/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: Fetching spark://15dedf891bed:36319/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp3870549914194222666.tmp
+	24/04/25 16:28:16 INFO Utils: /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp3870549914194222666.tmp has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar
+	24/04/25 16:28:16 INFO Executor: Adding file:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar to class loader default
+	24/04/25 16:28:16 INFO Executor: Fetching spark://15dedf891bed:36319/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: Fetching spark://15dedf891bed:36319/jars/org.apache.commons_commons-pool2-2.11.1.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp429499119233277940.tmp
+	24/04/25 16:28:16 INFO Utils: /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp429499119233277940.tmp has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.commons_commons-pool2-2.11.1.jar
+	24/04/25 16:28:16 INFO Executor: Adding file:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.commons_commons-pool2-2.11.1.jar to class loader default
+	24/04/25 16:28:16 INFO Executor: Fetching spark://15dedf891bed:36319/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: Fetching spark://15dedf891bed:36319/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp5351020522701281641.tmp
+	24/04/25 16:28:16 INFO Utils: /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp5351020522701281641.tmp has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.xerial.snappy_snappy-java-1.1.10.3.jar
+	24/04/25 16:28:16 INFO Executor: Adding file:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.xerial.snappy_snappy-java-1.1.10.3.jar to class loader default
+	24/04/25 16:28:16 INFO Executor: Fetching spark://15dedf891bed:36319/jars/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: Fetching spark://15dedf891bed:36319/jars/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp5920796217116667923.tmp
+	24/04/25 16:28:16 INFO Utils: /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp5920796217116667923.tmp has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar
+	24/04/25 16:28:16 INFO Executor: Adding file:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.spark_spark-sql-kafka-0-10_2.13-3.5.1.jar to class loader default
+	24/04/25 16:28:16 INFO Executor: Fetching spark://15dedf891bed:36319/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: Fetching spark://15dedf891bed:36319/jars/org.lz4_lz4-java-1.8.0.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp4143248722473052797.tmp
+	24/04/25 16:28:16 INFO Utils: /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp4143248722473052797.tmp has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.lz4_lz4-java-1.8.0.jar
+	24/04/25 16:28:16 INFO Executor: Adding file:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.lz4_lz4-java-1.8.0.jar to class loader default
+	24/04/25 16:28:16 INFO Executor: Fetching spark://15dedf891bed:36319/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: Fetching spark://15dedf891bed:36319/jars/commons-logging_commons-logging-1.1.3.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp2479903447014787108.tmp
+	24/04/25 16:28:16 INFO Utils: /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp2479903447014787108.tmp has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/commons-logging_commons-logging-1.1.3.jar
+	24/04/25 16:28:16 INFO Executor: Adding file:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/commons-logging_commons-logging-1.1.3.jar to class loader default
+	24/04/25 16:28:16 INFO Executor: Fetching spark://15dedf891bed:36319/jars/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar with timestamp 1714033694181
+	24/04/25 16:28:16 INFO Utils: Fetching spark://15dedf891bed:36319/jars/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp5597305974012949226.tmp
+[INFO] 2024-04-25 16:28:18.023 +0800 -  -> 
+	24/04/25 16:28:17 INFO Utils: /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp5597305974012949226.tmp has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar
+	24/04/25 16:28:17 INFO Executor: Adding file:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.scala-lang.modules_scala-parallel-collections_2.13-1.0.4.jar to class loader default
+	24/04/25 16:28:17 INFO Executor: Fetching spark://15dedf891bed:36319/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1714033694181
+	24/04/25 16:28:17 INFO Utils: Fetching spark://15dedf891bed:36319/jars/org.slf4j_slf4j-api-2.0.7.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp5874974531177613609.tmp
+	24/04/25 16:28:17 INFO Utils: /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp5874974531177613609.tmp has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.slf4j_slf4j-api-2.0.7.jar
+	24/04/25 16:28:17 INFO Executor: Adding file:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.slf4j_slf4j-api-2.0.7.jar to class loader default
+	24/04/25 16:28:17 INFO Executor: Fetching spark://15dedf891bed:36319/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1714033694181
+	24/04/25 16:28:17 INFO Utils: Fetching spark://15dedf891bed:36319/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp170145558701005603.tmp
+	24/04/25 16:28:17 INFO Utils: /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp170145558701005603.tmp has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.hadoop_hadoop-client-api-3.3.4.jar
+	24/04/25 16:28:17 INFO Executor: Adding file:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.hadoop_hadoop-client-api-3.3.4.jar to class loader default
+	24/04/25 16:28:17 INFO Executor: Fetching spark://15dedf891bed:36319/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1714033694181
+	24/04/25 16:28:17 INFO Utils: Fetching spark://15dedf891bed:36319/jars/org.apache.kafka_kafka-clients-3.4.1.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp8256387140655673992.tmp
+	24/04/25 16:28:17 INFO Utils: /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp8256387140655673992.tmp has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.kafka_kafka-clients-3.4.1.jar
+	24/04/25 16:28:17 INFO Executor: Adding file:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.kafka_kafka-clients-3.4.1.jar to class loader default
+	24/04/25 16:28:17 INFO Executor: Fetching spark://15dedf891bed:36319/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar with timestamp 1714033694181
+	24/04/25 16:28:17 INFO Utils: Fetching spark://15dedf891bed:36319/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp7965669196869015784.tmp
+	24/04/25 16:28:17 INFO Utils: /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/fetchFileTemp7965669196869015784.tmp has been previously copied to /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar
+	24/04/25 16:28:17 INFO Executor: Adding file:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/org.apache.spark_spark-token-provider-kafka-0-10_2.13-3.5.1.jar to class loader default
+	24/04/25 16:28:17 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39583.
+	24/04/25 16:28:17 INFO NettyBlockTransferService: Server created on 15dedf891bed:39583
+	24/04/25 16:28:17 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+	24/04/25 16:28:17 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 15dedf891bed, 39583, None)
+	24/04/25 16:28:17 INFO BlockManagerMasterEndpoint: Registering block manager 15dedf891bed:39583 with 366.3 MiB RAM, BlockManagerId(driver, 15dedf891bed, 39583, None)
+	24/04/25 16:28:17 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 15dedf891bed, 39583, None)
+	24/04/25 16:28:17 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 15dedf891bed, 39583, None)
+[INFO] 2024-04-25 16:28:19.028 +0800 -  -> 
+	
+	
+	
+	 /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/676-20240425162748.json 
+	
+	
+	
+[INFO] 2024-04-25 16:28:20.052 +0800 -  -> 
+	24/04/25 16:28:19 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 345.7 KiB, free 366.0 MiB)
+	24/04/25 16:28:19 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 32.6 KiB, free 365.9 MiB)
+	24/04/25 16:28:19 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 15dedf891bed:39583 (size: 32.6 KiB, free: 366.3 MiB)
+	24/04/25 16:28:19 INFO SparkContext: Created broadcast 0 from wholeTextFiles at NativeMethodAccessorImpl.java:0
+	24/04/25 16:28:19 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+	24/04/25 16:28:19 INFO SharedState: Warehouse path is 'file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_114/677/1837/spark-warehouse'.
+[INFO] 2024-04-25 16:28:26.094 +0800 -  -> 
+	24/04/25 16:28:25 INFO CodeGenerator: Code generated in 333.058051 ms
+	24/04/25 16:28:25 INFO FileInputFormat: Total input files to process : 1
+	24/04/25 16:28:25 INFO FileInputFormat: Total input files to process : 1
+	24/04/25 16:28:25 INFO SparkContext: Starting job: json at NativeMethodAccessorImpl.java:0
+	24/04/25 16:28:25 INFO DAGScheduler: Got job 0 (json at NativeMethodAccessorImpl.java:0) with 1 output partitions
+	24/04/25 16:28:25 INFO DAGScheduler: Final stage: ResultStage 0 (json at NativeMethodAccessorImpl.java:0)
+	24/04/25 16:28:25 INFO DAGScheduler: Parents of final stage: List()
+	24/04/25 16:28:25 INFO DAGScheduler: Missing parents: List()
+	24/04/25 16:28:25 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[7] at json at NativeMethodAccessorImpl.java:0), which has no missing parents
+	24/04/25 16:28:26 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 28.6 KiB, free 365.9 MiB)
+	24/04/25 16:28:26 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 12.5 KiB, free 365.9 MiB)
+	24/04/25 16:28:26 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 15dedf891bed:39583 (size: 12.5 KiB, free: 366.3 MiB)
+	24/04/25 16:28:26 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+	24/04/25 16:28:26 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[7] at json at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+	24/04/25 16:28:26 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+[INFO] 2024-04-25 16:28:27.096 +0800 -  -> 
+	24/04/25 16:28:26 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (15dedf891bed, executor driver, partition 0, PROCESS_LOCAL, 10096 bytes) 
+	24/04/25 16:28:26 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+	24/04/25 16:28:26 INFO WholeTextFileRDD: Input split: Paths:/tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/userFiles-e110ee56-ef03-46fd-b70a-570896baf917/676-20240425162748.json:0+186591
+[INFO] 2024-04-25 16:28:28.100 +0800 -  -> 
+	24/04/25 16:28:27 INFO CodeGenerator: Code generated in 142.941738 ms
+	24/04/25 16:28:27 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+	org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+	    raise PySparkRuntimeError(
+	pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 10) than that in driver 3.11, PySpark cannot run with different minor versions.
+	Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+	
+		at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+		at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+		at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+		at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+		at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+		at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+		at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+		at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+		at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+		at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+		at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+		at scala.collection.Iterator.isEmpty(Iterator.scala:387)
+		at scala.collection.Iterator.isEmpty$(Iterator.scala:387)
+		at scala.collection.AbstractIterator.isEmpty(Iterator.scala:1431)
+		at scala.collection.TraversableOnce.reduceLeftOption(TraversableOnce.scala:249)
+		at scala.collection.TraversableOnce.reduceLeftOption$(TraversableOnce.scala:248)
+		at scala.collection.AbstractIterator.reduceLeftOption(Iterator.scala:1431)
+		at scala.collection.TraversableOnce.reduceOption(TraversableOnce.scala:256)
+		at scala.collection.TraversableOnce.reduceOption$(TraversableOnce.scala:256)
+		at scala.collection.AbstractIterator.reduceOption(Iterator.scala:1431)
+		at org.apache.spark.sql.catalyst.json.JsonInferSchema.$anonfun$infer$1(JsonInferSchema.scala:107)
+		at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:858)
+		at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:858)
+		at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+		at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+		at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	24/04/25 16:28:27 WARN TaskSetManager: Lost task 0.0 in stage 0.0 (TID 0) (15dedf891bed executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+	    raise PySparkRuntimeError(
+	pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 10) than that in driver 3.11, PySpark cannot run with different minor versions.
+	Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+	
+		at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+		at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+		at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+		at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+		at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+		at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+		at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+		at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+		at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+		at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+		at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+		at scala.collection.Iterator.isEmpty(Iterator.scala:387)
+		at scala.collection.Iterator.isEmpty$(Iterator.scala:387)
+		at scala.collection.AbstractIterator.isEmpty(Iterator.scala:1431)
+		at scala.collection.TraversableOnce.reduceLeftOption(TraversableOnce.scala:249)
+		at scala.collection.TraversableOnce.reduceLeftOption$(TraversableOnce.scala:248)
+		at scala.collection.AbstractIterator.reduceLeftOption(Iterator.scala:1431)
+		at scala.collection.TraversableOnce.reduceOption(TraversableOnce.scala:256)
+		at scala.collection.TraversableOnce.reduceOption$(TraversableOnce.scala:256)
+		at scala.collection.AbstractIterator.reduceOption(Iterator.scala:1431)
+		at org.apache.spark.sql.catalyst.json.JsonInferSchema.$anonfun$infer$1(JsonInferSchema.scala:107)
+		at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:858)
+		at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:858)
+		at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+		at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+		at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	
+	24/04/25 16:28:27 ERROR TaskSetManager: Task 0 in stage 0.0 failed 1 times; aborting job
+	24/04/25 16:28:27 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+	24/04/25 16:28:27 INFO TaskSchedulerImpl: Cancelling stage 0
+	24/04/25 16:28:27 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage cancelled: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (15dedf891bed executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+	    raise PySparkRuntimeError(
+	pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 10) than that in driver 3.11, PySpark cannot run with different minor versions.
+	Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+	
+		at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+		at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+		at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+		at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+		at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+		at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+		at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+		at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+		at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+		at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+		at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+		at scala.collection.Iterator.isEmpty(Iterator.scala:387)
+		at scala.collection.Iterator.isEmpty$(Iterator.scala:387)
+		at scala.collection.AbstractIterator.isEmpty(Iterator.scala:1431)
+		at scala.collection.TraversableOnce.reduceLeftOption(TraversableOnce.scala:249)
+		at scala.collection.TraversableOnce.reduceLeftOption$(TraversableOnce.scala:248)
+		at scala.collection.AbstractIterator.reduceLeftOption(Iterator.scala:1431)
+		at scala.collection.TraversableOnce.reduceOption(TraversableOnce.scala:256)
+		at scala.collection.TraversableOnce.reduceOption$(TraversableOnce.scala:256)
+		at scala.collection.AbstractIterator.reduceOption(Iterator.scala:1431)
+		at org.apache.spark.sql.catalyst.json.JsonInferSchema.$anonfun$infer$1(JsonInferSchema.scala:107)
+		at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:858)
+		at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:858)
+		at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+		at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+		at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	
+	Driver stacktrace:
+	24/04/25 16:28:27 INFO DAGScheduler: ResultStage 0 (json at NativeMethodAccessorImpl.java:0) failed in 2.015 s due to Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (15dedf891bed executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+	    raise PySparkRuntimeError(
+	pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 10) than that in driver 3.11, PySpark cannot run with different minor versions.
+	Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+	
+		at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+		at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+		at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+		at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+		at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+		at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+		at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+		at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+		at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+		at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+		at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+		at scala.collection.Iterator.isEmpty(Iterator.scala:387)
+		at scala.collection.Iterator.isEmpty$(Iterator.scala:387)
+		at scala.collection.AbstractIterator.isEmpty(Iterator.scala:1431)
+		at scala.collection.TraversableOnce.reduceLeftOption(TraversableOnce.scala:249)
+		at scala.collection.TraversableOnce.reduceLeftOption$(TraversableOnce.scala:248)
+		at scala.collection.AbstractIterator.reduceLeftOption(Iterator.scala:1431)
+		at scala.collection.TraversableOnce.reduceOption(TraversableOnce.scala:256)
+		at scala.collection.TraversableOnce.reduceOption$(TraversableOnce.scala:256)
+		at scala.collection.AbstractIterator.reduceOption(Iterator.scala:1431)
+		at org.apache.spark.sql.catalyst.json.JsonInferSchema.$anonfun$infer$1(JsonInferSchema.scala:107)
+		at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:858)
+		at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:858)
+		at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+		at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+		at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	
+	Driver stacktrace:
+	24/04/25 16:28:27 INFO DAGScheduler: Job 0 failed: json at NativeMethodAccessorImpl.java:0, took 2.084489 s
+[INFO] 2024-04-25 16:28:29.104 +0800 -  -> 
+	24/04/25 16:28:28 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 15dedf891bed:39583 in memory (size: 12.5 KiB, free: 366.3 MiB)
+	Traceback (most recent call last):
+	  File "/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_114/677/1837/spark_reddit_preprocessing.py", line 50, in <module>
+	    raw_df = spark.read.json(raw_df)
+	             ^^^^^^^^^^^^^^^^^^^^^^^
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 440, in json
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 179, in deco
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 326, in get_return_value
+	py4j.protocol.Py4JJavaError: An error occurred while calling o38.json.
+	: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (15dedf891bed executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+	    raise PySparkRuntimeError(
+	pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 10) than that in driver 3.11, PySpark cannot run with different minor versions.
+	Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+	
+		at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+		at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+		at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+		at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+		at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+		at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+		at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+		at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+		at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+		at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+		at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+		at scala.collection.Iterator.isEmpty(Iterator.scala:387)
+		at scala.collection.Iterator.isEmpty$(Iterator.scala:387)
+		at scala.collection.AbstractIterator.isEmpty(Iterator.scala:1431)
+		at scala.collection.TraversableOnce.reduceLeftOption(TraversableOnce.scala:249)
+		at scala.collection.TraversableOnce.reduceLeftOption$(TraversableOnce.scala:248)
+		at scala.collection.AbstractIterator.reduceLeftOption(Iterator.scala:1431)
+		at scala.collection.TraversableOnce.reduceOption(TraversableOnce.scala:256)
+		at scala.collection.TraversableOnce.reduceOption$(TraversableOnce.scala:256)
+		at scala.collection.AbstractIterator.reduceOption(Iterator.scala:1431)
+		at org.apache.spark.sql.catalyst.json.JsonInferSchema.$anonfun$infer$1(JsonInferSchema.scala:107)
+		at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:858)
+		at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:858)
+		at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+		at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+		at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	
+	Driver stacktrace:
+		at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+		at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+		at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+		at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+		at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+		at scala.Option.foreach(Option.scala:407)
+		at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+		at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+		at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+		at org.apache.spark.SparkContext.runJob(SparkContext.scala:2398)
+		at org.apache.spark.SparkContext.runJob(SparkContext.scala:2493)
+		at org.apache.spark.sql.catalyst.json.JsonInferSchema.infer(JsonInferSchema.scala:120)
+		at org.apache.spark.sql.execution.datasources.json.TextInputJsonDataSource$.$anonfun$inferFromDataset$5(JsonDataSource.scala:109)
+		at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+		at org.apache.spark.sql.execution.datasources.json.TextInputJsonDataSource$.inferFromDataset(JsonDataSource.scala:109)
+		at org.apache.spark.sql.DataFrameReader.$anonfun$json$4(DataFrameReader.scala:416)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.sql.DataFrameReader.json(DataFrameReader.scala:416)
+		at org.apache.spark.sql.DataFrameReader.json(DataFrameReader.scala:391)
+		at org.apache.spark.sql.DataFrameReader.json(DataFrameReader.scala:377)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+		at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+		at py4j.Gateway.invoke(Gateway.java:282)
+		at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+		at py4j.commands.CallCommand.execute(CallCommand.java:79)
+		at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+		at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1100, in main
+	    raise PySparkRuntimeError(
+	pyspark.errors.exceptions.base.PySparkRuntimeError: [PYTHON_VERSION_MISMATCH] Python in worker has different version (3, 10) than that in driver 3.11, PySpark cannot run with different minor versions.
+	Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+	
+		at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+		at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+		at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+		at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+		at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+		at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+		at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+		at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+		at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+		at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+		at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:491)
+		at scala.collection.Iterator.isEmpty(Iterator.scala:387)
+		at scala.collection.Iterator.isEmpty$(Iterator.scala:387)
+		at scala.collection.AbstractIterator.isEmpty(Iterator.scala:1431)
+		at scala.collection.TraversableOnce.reduceLeftOption(TraversableOnce.scala:249)
+		at scala.collection.TraversableOnce.reduceLeftOption$(TraversableOnce.scala:248)
+		at scala.collection.AbstractIterator.reduceLeftOption(Iterator.scala:1431)
+		at scala.collection.TraversableOnce.reduceOption(TraversableOnce.scala:256)
+		at scala.collection.TraversableOnce.reduceOption$(TraversableOnce.scala:256)
+		at scala.collection.AbstractIterator.reduceOption(Iterator.scala:1431)
+		at org.apache.spark.sql.catalyst.json.JsonInferSchema.$anonfun$infer$1(JsonInferSchema.scala:107)
+		at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2(RDD.scala:858)
+		at org.apache.spark.rdd.RDD.$anonfun$mapPartitions$2$adapted(RDD.scala:858)
+		at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:52)
+		at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+		at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		... 1 more
+	
+	24/04/25 16:28:28 INFO SparkContext: Invoking stop() from shutdown hook
+	24/04/25 16:28:28 INFO SparkContext: SparkContext is stopping with exitCode 0.
+	24/04/25 16:28:28 INFO SparkUI: Stopped Spark web UI at http://15dedf891bed:4040
+	24/04/25 16:28:28 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+	24/04/25 16:28:28 INFO MemoryStore: MemoryStore cleared
+	24/04/25 16:28:28 INFO BlockManager: BlockManager stopped
+	24/04/25 16:28:28 INFO BlockManagerMaster: BlockManagerMaster stopped
+	24/04/25 16:28:28 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+	24/04/25 16:28:28 INFO SparkContext: Successfully stopped SparkContext
+	24/04/25 16:28:28 INFO ShutdownHookManager: Shutdown hook called
+	24/04/25 16:28:28 INFO ShutdownHookManager: Deleting directory /tmp/spark-e23b66db-a00c-4ed2-8e89-63e140dd42f6
+	24/04/25 16:28:28 INFO ShutdownHookManager: Deleting directory /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd
+	24/04/25 16:28:28 INFO ShutdownHookManager: Deleting directory /tmp/spark-55af6747-b515-4cd6-86f4-6c899a8f53dd/pyspark-1b3c61cc-9ccd-4cd4-a1d3-c39621b51639
+[INFO] 2024-04-25 16:28:29.109 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_114/677/1837, processId:6925 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-04-25 16:28:29.110 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 16:28:29.110 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-25 16:28:29.111 +0800 - ***********************************************************************************************
+[INFO] 2024-04-25 16:28:29.111 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-25 16:28:29.116 +0800 - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[INFO] 2024-04-25 16:28:29.116 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-25 16:28:29.116 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_114/677/1837
+[INFO] 2024-04-25 16:28:29.117 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_114/677/1837
+[INFO] 2024-04-25 16:28:29.118 +0800 - FINALIZE_SESSION

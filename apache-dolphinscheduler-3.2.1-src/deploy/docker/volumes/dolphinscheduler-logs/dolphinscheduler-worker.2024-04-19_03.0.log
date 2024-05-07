@@ -1,0 +1,30 @@
+[WI-0][TI-0] - [ERROR] 2024-04-19 03:15:49.176 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[279] - Parse var pool error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:283)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at org.apache.dolphinscheduler.plugin.task.api.AbstractCommandExecutor.lambda$parseProcessOutput$1(AbstractCommandExecutor.java:273)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[WI-321][TI-733] - [INFO] 2024-04-19 03:15:49.573 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has killed. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_3/321/733, processId:7586 ,exitStatusCode:137 ,processWaitForStatus:true ,processExitValue:137
+[WI-321][TI-733] - [INFO] 2024-04-19 03:15:49.578 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-321][TI-733] - [INFO] 2024-04-19 03:15:49.579 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-321][TI-733] - [INFO] 2024-04-19 03:15:49.579 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-321][TI-733] - [INFO] 2024-04-19 03:15:49.581 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-321][TI-733] - [INFO] 2024-04-19 03:15:49.589 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: KILL to master : 172.22.0.13:1234
+[WI-321][TI-733] - [INFO] 2024-04-19 03:15:49.590 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-321][TI-733] - [INFO] 2024-04-19 03:15:49.590 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_3/321/733
+[WI-321][TI-733] - [INFO] 2024-04-19 03:15:49.592 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_3/321/733
+[WI-321][TI-733] - [INFO] 2024-04-19 03:15:49.592 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION

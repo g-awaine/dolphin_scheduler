@@ -1,0 +1,193 @@
+[INFO] 2024-04-30 02:38:55.716 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 02:38:55.718 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-30 02:38:55.718 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 02:38:55.718 +0800 - Begin to initialize task
+[INFO] 2024-04-30 02:38:55.718 +0800 - Set task startTime: 1714415935718
+[INFO] 2024-04-30 02:38:55.718 +0800 - Set task appId: 785_2115
+[INFO] 2024-04-30 02:38:55.718 +0800 - End initialize task {
+  "taskInstanceId" : 2115,
+  "taskName" : "Persist in postgresql",
+  "firstSubmitTime" : 1714415935706,
+  "startTime" : 1714415935718,
+  "taskType" : "SQL",
+  "workflowInstanceHost" : "172.18.0.3:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240430/13426477386080/13/785/2115.log",
+  "processId" : 0,
+  "processDefineCode" : 13426477386080,
+  "processDefineVersion" : 13,
+  "processInstanceId" : 785,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"type\":\"POSTGRESQL\",\"datasource\":1,\"sql\":\"SELECT *\\nFROM filtered_data_persistence;\",\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\":[],\"displayRows\":10}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "Persist in postgresql"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "query" : {
+      "prop" : "query",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : " INSERT INTO filtered_data_persistence (user, content, url, context, score, type, id, datetime) VALUES ('premiumplatinum', 'singapore is stupid', 'https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/', '21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist', 131, 'post', '1c9itat', '2024-04-21 22:10:42'),('premiumplatinum', 's is stupid', 'https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/', '21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist', 131, 'post', '1c9itat', '2024-04-21 22:10:42');"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240430"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2115"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13427698681952"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240430023855"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "785"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240429"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "es_filtered_data_persistence_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13426477386080"
+    }
+  },
+  "taskAppId" : "785_2115",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "resourceParametersHelper" : {
+    "resourceMap" : {
+      "DATASOURCE" : {
+        "1" : {
+          "resourceType" : "DATASOURCE",
+          "type" : "POSTGRESQL",
+          "connectionParams" : "{\"user\":\"root\",\"password\":\"******\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"persistence\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence\",\"driverClassName\":\"org.postgresql.Driver\",\"validationQuery\":\"select version()\",\"other\":{\"password\":\"****\"}}",
+          "DATASOURCE" : null
+        }
+      }
+    }
+  },
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"query\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\" INSERT INTO filtered_data_persistence (user, content, url, context, score, type, id, datetime) VALUES ('premiumplatinum', 'singapore is stupid', 'https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/', '21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist', 131, 'post', '1c9itat', '2024-04-21 22:10:42'),('premiumplatinum', 's is stupid', 'https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/', '21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist', 131, 'post', '1c9itat', '2024-04-21 22:10:42');\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-30 02:38:55.719 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 02:38:55.719 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-30 02:38:55.719 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 02:38:55.722 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-30 02:38:55.723 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-30 02:38:55.724 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_13/785/2115 check successfully
+[INFO] 2024-04-30 02:38:55.724 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.sql.SqlTaskChannel successfully
+[INFO] 2024-04-30 02:38:55.725 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-04-30 02:38:55.727 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-30 02:38:55.728 +0800 - Initialize sql task parameter {
+  "localParams" : [ ],
+  "varPool" : null,
+  "type" : "POSTGRESQL",
+  "datasource" : 1,
+  "sql" : "SELECT *\nFROM filtered_data_persistence;",
+  "sqlType" : 0,
+  "sendEmail" : null,
+  "displayRows" : 10,
+  "udfs" : null,
+  "showType" : null,
+  "connParams" : null,
+  "preStatements" : [ ],
+  "postStatements" : [ ],
+  "groupId" : 0,
+  "title" : null,
+  "limit" : 0
+}
+[INFO] 2024-04-30 02:38:55.729 +0800 - Task plugin instance: SQL create successfully
+[INFO] 2024-04-30 02:38:55.729 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-30 02:38:55.729 +0800 - Set taskVarPool: [{"prop":"query","direct":"IN","type":"VARCHAR","value":" INSERT INTO filtered_data_persistence (user, content, url, context, score, type, id, datetime) VALUES ('premiumplatinum', 'singapore is stupid', 'https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/', '21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist', 131, 'post', '1c9itat', '2024-04-21 22:10:42'),('premiumplatinum', 's is stupid', 'https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/', '21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist', 131, 'post', '1c9itat', '2024-04-21 22:10:42');"}] successfully
+[INFO] 2024-04-30 02:38:55.729 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 02:38:55.730 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-30 02:38:55.731 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 02:38:55.731 +0800 - Full sql parameters: SqlParameters{type='POSTGRESQL', datasource=1, sql='SELECT *
+FROM filtered_data_persistence;', sqlType=0, sendEmail=null, displayRows=10, limit=0, udfs='null', showType='null', connParams='null', groupId='0', title='null', preStatements=[], postStatements=[]}
+[INFO] 2024-04-30 02:38:55.731 +0800 - sql type : POSTGRESQL, datasource : 1, sql : SELECT *
+FROM filtered_data_persistence; , localParams : [],udfs : null,showType : null,connParams : null,varPool : [Property{prop='query', direct=IN, type=VARCHAR, value=' INSERT INTO filtered_data_persistence (user, content, url, context, score, type, id, datetime) VALUES ('premiumplatinum', 'singapore is stupid', 'https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/', '21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist', 131, 'post', '1c9itat', '2024-04-21 22:10:42'),('premiumplatinum', 's is stupid', 'https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/', '21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist', 131, 'post', '1c9itat', '2024-04-21 22:10:42');'}] ,query max result limit  0
+[INFO] 2024-04-30 02:38:55.734 +0800 - after replace sql , preparing : SELECT *
+FROM filtered_data_persistence
+[INFO] 2024-04-30 02:38:55.734 +0800 - Sql Params are replaced sql , parameters:
+[INFO] 2024-04-30 02:38:55.735 +0800 - can't find udf function resource
+[WARN] 2024-04-30 02:38:55.735 +0800 - Connect strings must start with jdbc:snowflake://
+[INFO] 2024-04-30 02:38:55.754 +0800 - prepare statement replace sql : SELECT *
+FROM filtered_data_persistence, sql parameters : {}
+[INFO] 2024-04-30 02:38:55.754 +0800 - main statement execute query, for sql: SELECT *
+FROM filtered_data_persistence
+[INFO] 2024-04-30 02:38:55.764 +0800 - display sql result 0 rows as follows:
+[INFO] 2024-04-30 02:38:55.772 +0800 - sql query results is empty
+[INFO] 2024-04-30 02:38:55.775 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 02:38:55.775 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-30 02:38:55.775 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 02:38:55.775 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-30 02:38:55.783 +0800 - Send task execute status: SUCCESS to master : 172.18.1.1:1234
+[INFO] 2024-04-30 02:38:55.783 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-30 02:38:55.783 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_13/785/2115
+[INFO] 2024-04-30 02:38:55.783 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_13/785/2115
+[INFO] 2024-04-30 02:38:55.784 +0800 - FINALIZE_SESSION

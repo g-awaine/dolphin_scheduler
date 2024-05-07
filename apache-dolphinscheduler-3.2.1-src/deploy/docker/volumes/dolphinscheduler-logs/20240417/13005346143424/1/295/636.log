@@ -1,0 +1,162 @@
+[INFO] 2024-04-17 15:41:07.736 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:41:07.743 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-17 15:41:07.743 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:41:07.743 +0800 - Begin to initialize task
+[INFO] 2024-04-17 15:41:07.743 +0800 - Set task startTime: 1713339667743
+[INFO] 2024-04-17 15:41:07.743 +0800 - Set task appId: 295_636
+[INFO] 2024-04-17 15:41:07.744 +0800 - End initialize task {
+  "taskInstanceId" : 636,
+  "taskName" : "Workflow B",
+  "firstSubmitTime" : 1713339667722,
+  "startTime" : 1713339667743,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.27.0.8:5678",
+  "host" : "172.27.0.12:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240417/13005346143424/1/295/636.log",
+  "processId" : 0,
+  "processDefineCode" : 13005346143424,
+  "processDefineVersion" : 1,
+  "processInstanceId" : 295,
+  "scheduleTime" : 0,
+  "globalParams" : "[]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"#!/bin/bash\\necho \\\"Task B\\\"\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "Workflow B"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "295"
+    },
+    "sum" : {
+      "prop" : "sum",
+      "direct" : "OUT",
+      "type" : "VARCHAR",
+      "value" : "sum_of_num"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240417"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240416"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "636"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "Workflow_B"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005334545216"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13005346143424"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240417154107"
+    }
+  },
+  "taskAppId" : "295_636",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"sum\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"sum_of_num\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-17 15:41:07.744 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:41:07.744 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-17 15:41:07.744 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:41:07.749 +0800 - Send task status RUNNING_EXECUTION master: 172.27.0.12:1234
+[INFO] 2024-04-17 15:41:07.749 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-17 15:41:07.750 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005346143424_1/295/636 check successfully
+[INFO] 2024-04-17 15:41:07.750 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-04-17 15:41:07.751 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-04-17 15:41:07.751 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-17 15:41:07.751 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-04-17 15:41:07.751 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "#!/bin/bash\necho \"Task B\"",
+  "resourceList" : [ ]
+}
+[INFO] 2024-04-17 15:41:07.752 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-17 15:41:07.752 +0800 - Set taskVarPool: [{"prop":"sum","direct":"OUT","type":"VARCHAR","value":"sum_of_num"}] successfully
+[INFO] 2024-04-17 15:41:07.752 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:41:07.752 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-17 15:41:07.752 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:41:07.752 +0800 - Final Shell file is: 
+[INFO] 2024-04-17 15:41:07.753 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-17 15:41:07.753 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+#!/bin/bash
+echo "Task B"
+[INFO] 2024-04-17 15:41:07.753 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-17 15:41:07.753 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13005346143424_1/295/636/295_636.sh
+[INFO] 2024-04-17 15:41:07.770 +0800 - process start, process id is: 3780
+[INFO] 2024-04-17 15:41:08.775 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	Task B
+[INFO] 2024-04-17 15:41:08.778 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13005346143424_1/295/636, processId:3780 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[INFO] 2024-04-17 15:41:08.779 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:41:08.779 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-17 15:41:08.779 +0800 - ***********************************************************************************************
+[INFO] 2024-04-17 15:41:08.780 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-17 15:41:08.784 +0800 - Send task execute status: SUCCESS to master : 172.27.0.12:1234
+[INFO] 2024-04-17 15:41:08.784 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-17 15:41:08.785 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005346143424_1/295/636
+[INFO] 2024-04-17 15:41:08.787 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13005346143424_1/295/636
+[INFO] 2024-04-17 15:41:08.788 +0800 - FINALIZE_SESSION

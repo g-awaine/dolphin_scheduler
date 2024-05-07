@@ -1,0 +1,507 @@
+[INFO] 2024-04-25 05:00:02.970 +0800 o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+[INFO] 2024-04-25 05:00:03.914 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[INFO] 2024-04-25 05:00:04.294 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2024-04-25 05:00:04.296 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[INFO] 2024-04-25 05:00:04.304 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 7 ms
+[INFO] 2024-04-25 05:00:04.410 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@6eb5b9e7{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+[INFO] 2024-04-25 05:00:04.413 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 12345 (http/1.1) with context path '/dolphinscheduler'
+[INFO] 2024-04-25 05:00:04.524 +0800 o.a.d.a.ApiApplicationServer:[61] - Started ApiApplicationServer in 94.131 seconds (JVM running for 99.199)
+[INFO] 2024-04-25 05:00:04.546 +0800 o.a.d.a.ApiApplicationServer:[63] - Received spring application context ready event will load taskPlugin and write to DB
+[INFO] 2024-04-25 05:00:04.668 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.678 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.680 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.682 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.683 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.687 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.689 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.695 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.695 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.704 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.708 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.709 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.710 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.717 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.717 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.722 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.723 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.727 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.727 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.729 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.730 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.732 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.732 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.735 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.735 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.737 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.737 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.741 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.742 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.746 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.747 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.750 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.752 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.756 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.757 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.761 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.761 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.763 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.764 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.769 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.769 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.771 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.773 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.776 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.778 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.779 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.780 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.787 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.788 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.789 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.790 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.793 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.794 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.797 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.798 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.800 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.800 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.803 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.804 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.806 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.807 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.808 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.809 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.810 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.810 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.812 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 05:00:04.817 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2024-04-25 05:00:24.513 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-04-25 05:00:24.561 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-04-25 05:00:24.563 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-04-25 05:00:24.593 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-04-25 05:00:24.594 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-04-25 05:00:24.594 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-04-25 05:00:24.595 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[INFO] 2024-04-25 05:02:02.136 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance spark_test-3-20240425045245592 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-04-25 05:02:02.302 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WARN] 2024-04-25 05:12:04.457 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2024-04-25 05:12:10.446 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2024-04-25 05:12:10.476 +0800 o.a.d.a.ApiApplicationServer:[640] - The following 1 profile is active: "postgresql"
+[INFO] 2024-04-25 05:12:31.197 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=b9ea3c4b-94e1-3be4-b636-a78d78ec03d8
+[INFO] 2024-04-25 05:12:34.212 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:12:34.274 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:12:34.278 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:12:34.282 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$451/378838522] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:12:34.289 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:12:34.297 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:12:34.312 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:12:34.374 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:12:35.776 +0800 o.e.j.u.log:[170] - Logging initialized @46702ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2024-04-25 05:12:38.300 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2024-04-25 05:12:38.468 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[INFO] 2024-04-25 05:12:38.839 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2024-04-25 05:12:38.840 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 28160 ms
+[INFO] 2024-04-25 05:12:45.339 +0800 o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> false 
+[INFO] 2024-04-25 05:12:45.655 +0800 o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+[INFO] 2024-04-25 05:12:45.657 +0800 o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=0.0.0.0, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+[INFO] 2024-04-25 05:12:47.635 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2024-04-25 05:12:47.636 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2024-04-25 05:12:47.638 +0800 o.e.j.s.session:[132] - node0 Scavenging every 600000ms
+[INFO] 2024-04-25 05:12:47.649 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@c3d4bd7{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.3979860288637595567/, jar:file:/opt/dolphinscheduler/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2024-04-25 05:12:47.650 +0800 o.e.j.s.Server:[415] - Started @58577ms
+[INFO] 2024-04-25 05:12:48.571 +0800 c.z.h.HikariDataSource:[110] - DolphinScheduler - Starting...
+[INFO] 2024-04-25 05:12:50.081 +0800 c.z.h.HikariDataSource:[123] - DolphinScheduler - Start completed.
+[INFO] 2024-04-25 05:13:03.346 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2024-04-25 05:13:03.792 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2024-04-25 05:13:03.957 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2024-04-25 05:13:04.151 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 05:13:04.219 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 05:13:07.525 +0800 c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+[INFO] 2024-04-25 05:13:07.616 +0800 c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.3, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+[INFO] 2024-04-25 05:13:18.817 +0800 o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2024-04-25 05:13:18.843 +0800 o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2024-04-25 05:13:18.844 +0800 o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2024-04-25 05:13:18.873 +0800 o.s.s.q.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2024-04-25 05:13:18.877 +0800 o.s.s.q.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2024-04-25 05:13:18.879 +0800 o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId 'e70fe2fd48d11713993198824'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.apache.dolphinscheduler.scheduler.quartz.QuartzZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2024-04-25 05:13:18.880 +0800 o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2024-04-25 05:13:18.880 +0800 o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2024-04-25 05:13:18.880 +0800 o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2746b1cc
+[INFO] 2024-04-25 05:13:19.552 +0800 o.a.d.a.p.PythonGateway:[710] - PythonGatewayService started on: /0.0.0.0
+[INFO] 2024-04-25 05:13:19.600 +0800 p.GatewayServer:[573] - Gateway Server Started
+[INFO] 2024-04-25 05:13:28.969 +0800 o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+[INFO] 2024-04-25 05:13:29.616 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[INFO] 2024-04-25 05:13:29.828 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2024-04-25 05:13:29.828 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[INFO] 2024-04-25 05:13:29.833 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 3 ms
+[INFO] 2024-04-25 05:13:29.864 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@1cab19e2{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+[INFO] 2024-04-25 05:13:29.866 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 12345 (http/1.1) with context path '/dolphinscheduler'
+[INFO] 2024-04-25 05:13:29.896 +0800 o.a.d.a.ApiApplicationServer:[61] - Started ApiApplicationServer in 95.063 seconds (JVM running for 100.823)
+[INFO] 2024-04-25 05:13:29.909 +0800 o.a.d.a.ApiApplicationServer:[63] - Received spring application context ready event will load taskPlugin and write to DB
+[INFO] 2024-04-25 05:13:29.952 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.956 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.957 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.959 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.959 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.962 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.962 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.966 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.966 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.968 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.970 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.971 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.972 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.973 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.974 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.977 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.978 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.981 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.981 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.983 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.984 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.985 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.986 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.988 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.988 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.990 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.990 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.992 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.992 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.995 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.995 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.998 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 05:13:29.999 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.002 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.003 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.005 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.005 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.007 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.007 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.010 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.010 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.012 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.012 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.014 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.015 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.016 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.017 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.020 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.021 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.022 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.022 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.024 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.025 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.028 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.028 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.030 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.030 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.031 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.032 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.033 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.034 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.035 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.035 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.036 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.036 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.038 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 05:13:30.042 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2024-04-25 05:14:14.880 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-04-25 05:14:14.881 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-04-25 05:14:14.882 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-04-25 05:14:14.882 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-04-25 05:14:14.883 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-04-25 05:14:14.883 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-04-25 05:14:14.884 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[INFO] 2024-04-25 05:18:44.038 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1661, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/605/1661.log
+[INFO] 2024-04-25 05:18:44.241 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2024-04-25 05:18:45.365 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1661, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/605/1661.log
+[WARN] 2024-04-25 05:26:30.710 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WARN] 2024-04-25 05:26:37.809 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[INFO] 2024-04-25 05:26:37.853 +0800 o.a.d.a.ApiApplicationServer:[640] - The following 1 profile is active: "postgresql"
+[INFO] 2024-04-25 05:26:50.447 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=b9ea3c4b-94e1-3be4-b636-a78d78ec03d8
+[INFO] 2024-04-25 05:26:52.340 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:26:52.600 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:26:52.604 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:26:52.783 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$451/1120917396] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:26:52.810 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:26:52.864 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:26:52.926 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:26:53.009 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[INFO] 2024-04-25 05:26:55.127 +0800 o.e.j.u.log:[170] - Logging initialized @37765ms to org.eclipse.jetty.util.log.Slf4jLog
+[INFO] 2024-04-25 05:26:58.466 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 12345
+[INFO] 2024-04-25 05:26:58.493 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[INFO] 2024-04-25 05:26:58.529 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[INFO] 2024-04-25 05:26:58.531 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 20532 ms
+[INFO] 2024-04-25 05:27:05.539 +0800 o.a.d.a.c.ApiConfig:[58] - API config: auditEnable -> false 
+[INFO] 2024-04-25 05:27:05.543 +0800 o.a.d.a.c.ApiConfig:[59] - API config: trafficControl -> ApiConfig.TrafficConfiguration(globalSwitch=false, maxGlobalQpsRate=300, tenantSwitch=false, defaultTenantQpsRate=10, customizeTenantQpsRate={}) 
+[INFO] 2024-04-25 05:27:05.545 +0800 o.a.d.a.c.ApiConfig:[60] - API config: pythonGateway -> ApiConfig.PythonGatewayConfiguration(enabled=true, gatewayServerAddress=0.0.0.0, gatewayServerPort=25333, pythonAddress=127.0.0.1, pythonPort=25334, connectTimeout=0, readTimeout=0, authToken=jwUDzpLsNKEFER4*a8gruBH_GsAurNxU7A@Xc) 
+[INFO] 2024-04-25 05:27:07.474 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[INFO] 2024-04-25 05:27:07.474 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[INFO] 2024-04-25 05:27:07.477 +0800 o.e.j.s.session:[132] - node0 Scavenging every 660000ms
+[INFO] 2024-04-25 05:27:07.724 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@5ca8c904{application,/dolphinscheduler,[file:///tmp/jetty-docbase.12345.8595427748343290645/, jar:file:/opt/dolphinscheduler/libs/swagger-ui-4.11.1.jar!/META-INF/resources],AVAILABLE}
+[INFO] 2024-04-25 05:27:07.801 +0800 o.e.j.s.Server:[415] - Started @50441ms
+[INFO] 2024-04-25 05:27:09.157 +0800 c.z.h.HikariDataSource:[110] - DolphinScheduler - Starting...
+[INFO] 2024-04-25 05:27:09.986 +0800 c.z.h.HikariDataSource:[123] - DolphinScheduler - Start completed.
+[INFO] 2024-04-25 05:27:19.184 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[INFO] 2024-04-25 05:27:19.340 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[INFO] 2024-04-25 05:27:19.716 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[INFO] 2024-04-25 05:27:20.297 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 05:27:20.297 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-04-25 05:27:21.631 +0800 c.a.c.i.ReflectionUtils:[542] - Unable to create MethodHandles to use Java 9+ MethodHandles.privateLookupIn. Will attempt to fallback to using the package-private constructor.
+[INFO] 2024-04-25 05:27:21.736 +0800 c.a.c.i.j.JacksonVersion:[222] - Package versions: jackson-core=2.13.4, jackson-databind=2.13.4, jackson-dataformat-xml=2.13.3, jackson-datatype-jsr310=2.13.3, azure-core=1.36.0, Troubleshooting version conflicts: https://aka.ms/azsdk/java/dependency/troubleshoot
+[INFO] 2024-04-25 05:27:27.977 +0800 o.q.i.StdSchedulerFactory:[1220] - Using default implementation for ThreadExecutor
+[INFO] 2024-04-25 05:27:28.008 +0800 o.q.c.SchedulerSignalerImpl:[61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[INFO] 2024-04-25 05:27:28.009 +0800 o.q.c.QuartzScheduler:[229] - Quartz Scheduler v.2.3.2 created.
+[INFO] 2024-04-25 05:27:28.026 +0800 o.s.s.q.LocalDataSourceJobStore:[672] - Using db table-based data access locking (synchronization).
+[INFO] 2024-04-25 05:27:28.030 +0800 o.s.s.q.LocalDataSourceJobStore:[145] - JobStoreCMT initialized.
+[INFO] 2024-04-25 05:27:28.033 +0800 o.q.c.QuartzScheduler:[294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DolphinScheduler' with instanceId 'c2dcb551827f1713994047984'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.apache.dolphinscheduler.scheduler.quartz.QuartzZeroSizeThreadPool' - with 0 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+[INFO] 2024-04-25 05:27:28.034 +0800 o.q.i.StdSchedulerFactory:[1374] - Quartz scheduler 'DolphinScheduler' initialized from an externally provided properties instance.
+[INFO] 2024-04-25 05:27:28.035 +0800 o.q.i.StdSchedulerFactory:[1378] - Quartz scheduler version: 2.3.2
+[INFO] 2024-04-25 05:27:28.036 +0800 o.q.c.QuartzScheduler:[2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4bb4adf7
+[INFO] 2024-04-25 05:27:28.365 +0800 o.a.d.a.p.PythonGateway:[710] - PythonGatewayService started on: /0.0.0.0
+[INFO] 2024-04-25 05:27:28.416 +0800 p.GatewayServer:[573] - Gateway Server Started
+[INFO] 2024-04-25 05:27:33.148 +0800 o.s.l.c.s.AbstractContextSource:[425] - Property 'userDn' not set - anonymous context will be used for read-write operations
+[INFO] 2024-04-25 05:27:33.861 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[INFO] 2024-04-25 05:27:34.008 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO] 2024-04-25 05:27:34.009 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[INFO] 2024-04-25 05:27:34.012 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 2 ms
+[INFO] 2024-04-25 05:27:34.034 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@196d684b{HTTP/1.1, (http/1.1)}{0.0.0.0:12345}
+[INFO] 2024-04-25 05:27:34.036 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 12345 (http/1.1) with context path '/dolphinscheduler'
+[INFO] 2024-04-25 05:27:34.057 +0800 o.a.d.a.ApiApplicationServer:[61] - Started ApiApplicationServer in 72.304 seconds (JVM running for 76.696)
+[INFO] 2024-04-25 05:27:34.065 +0800 o.a.d.a.ApiApplicationServer:[63] - Received spring application context ready event will load taskPlugin and write to DB
+[INFO] 2024-04-25 05:27:34.096 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.100 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.101 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.104 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.104 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.107 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.108 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.112 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.112 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.114 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.114 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.116 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.116 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.118 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.118 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.121 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.121 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.124 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.124 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.127 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.127 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.129 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.130 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.132 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.133 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.134 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.135 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.136 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.137 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.139 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.140 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.142 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.143 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.147 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.148 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.150 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.151 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.154 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.154 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.158 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.159 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.161 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.162 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.164 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.165 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.167 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.167 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.171 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.171 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.173 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.173 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.176 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.177 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.180 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.180 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.182 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.183 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.185 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.186 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.188 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.188 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.191 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.191 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.193 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.193 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.196 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[INFO] 2024-04-25 05:27:34.201 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[INFO] 2024-04-25 05:29:25.041 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13383445003744, commandCount:1.
+[INFO] 2024-04-25 05:29:51.023 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance spark_test-3-20240425045245592 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-04-25 05:29:51.582 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2024-04-25 05:29:57.677 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-04-25 05:29:57.680 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-04-25 05:29:57.681 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-04-25 05:29:57.682 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-04-25 05:29:57.683 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-04-25 05:29:57.683 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-04-25 05:29:57.684 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[INFO] 2024-04-25 05:30:01.019 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:30:01.565 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:54.124 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:54.394 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:54.612 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:54.776 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:54.921 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:55.113 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:55.223 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:55.518 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:55.668 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:55.815 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:55.988 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:56.193 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:56.277 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:56.452 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:56.570 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:56.634 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:56.724 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:56.813 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:56.912 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:57.046 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:57.183 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:57.336 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:57.612 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:57.804 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:57.965 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:58.079 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:58.166 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:58.337 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:58.538 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:58.723 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:58.954 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:59.175 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:59.268 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:59.371 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:59.453 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:59.558 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:59.632 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:32:59.862 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:00.046 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:00.292 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:00.420 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:00.588 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:00.780 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:01.083 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:01.273 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:01.477 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:02.026 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:02.702 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:03.805 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:04.935 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:05.492 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:05.625 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:05.846 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:05.961 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:06.126 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:06.265 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:06.619 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:06.694 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:06.765 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:06.850 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:06.997 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:07.092 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:07.221 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:07.286 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:07.463 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:07.499 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:07.650 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:07.771 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:07.974 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:08.117 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:08.207 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:08.288 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:08.363 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:08.437 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:08.500 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:08.605 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:08.606 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:08.832 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:08.941 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:09.080 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:09.134 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:09.268 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:09.438 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:09.620 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:09.718 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:09.788 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:09.879 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:09.927 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:10.016 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:10.087 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:10.152 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:10.268 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:10.354 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:10.421 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:10.666 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:10.749 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:10.913 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:11.378 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.050 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.199 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.262 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.302 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.345 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.387 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.439 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.479 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.528 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.611 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.679 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.794 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.851 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:12.967 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:13.036 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:13.135 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:13.179 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:13.220 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:13.287 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:13.368 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:13.438 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:13.515 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:13.599 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:13.750 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:13.899 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:14.044 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:14.175 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:14.328 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:14.421 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:14.478 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:14.526 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:14.693 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:14.786 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:14.876 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:15.102 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:15.220 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:15.382 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:15.504 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:15.564 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:15.691 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:28.572 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:33:28.780 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1698, taskInstanceName:spark test, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240425/13383445003744/3/638/1698.log
+[INFO] 2024-04-25 05:36:58.133 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[2068] - Copy process definition...
+[INFO] 2024-04-25 05:36:58.201 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[397] - Save process definition complete, processCode:13384219922401, processVersion:1.
+[INFO] 2024-04-25 05:36:58.234 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[408] - Save process task relations complete, projectCode:13001194483488, processCode:13384219922401, processVersion:1.
+[INFO] 2024-04-25 05:36:58.236 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[2262] - Batch copy process definition complete, srcProjectCode:13001194483488, targetProjectCode:13001194483488.

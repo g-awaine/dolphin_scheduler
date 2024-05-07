@@ -1,0 +1,624 @@
+[INFO] 2024-04-29 03:39:15.101 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 03:39:15.105 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-29 03:39:15.106 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 03:39:15.106 +0800 - Begin to initialize task
+[INFO] 2024-04-29 03:39:15.106 +0800 - Set task startTime: 1714333155106
+[INFO] 2024-04-29 03:39:15.106 +0800 - Set task appId: 741_2008
+[INFO] 2024-04-29 03:39:15.110 +0800 - End initialize task {
+  "taskInstanceId" : 2008,
+  "taskName" : "keyword filtering",
+  "firstSubmitTime" : 1714333155083,
+  "startTime" : 1714333155106,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240429/13377949373536/24/741/2008.log",
+  "processId" : 0,
+  "processDefineCode" : 13377949373536,
+  "processDefineVersion" : 24,
+  "processInstanceId" : 741,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topics\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\\\"reddit_post_preprocessed|reddit_post_filtered\\\"\"},{\"prop\":\"keywords\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"[\\\"singapore\\\", \\\"sg\\\"]\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 2,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"from pyspark.sql import SparkSession\\nfrom pyspark.sql.functions import col, from_json\\nfrom pyspark.sql.types import StringType, StructType, StructField, IntegerType\\n\\nspark = SparkSession.builder \\\\\\n    .master(\\\"local\\\") \\\\\\n    .appName(\\\"Reddit Keyword Filtering\\\") \\\\\\n    .config(\\\"spark.jars.packages\\\", \\\"org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1\\\") \\\\\\n    .config(\\\"spark.sql.streaming.checkpointLocation\\\", r\\\"/tmp/\\\") \\\\\\n    .config(\\\"spark.driver.extraJavaOptions\\\", \\\"-Divy.cache.dir=/tmp -Divy.home=/tmp\\\") \\\\\\n    .getOrCreate()\\n\\n# define the schema for the JSON data\\nschema = StructType([\\n    StructField(\\\"user\\\", StringType(), nullable=True),\\n    StructField(\\\"content\\\", StringType(), nullable=True),\\n    StructField(\\\"url\\\", StringType(), nullable=True),\\n    StructField(\\\"context\\\", StringType(), nullable=True),\\n    StructField(\\\"score\\\", IntegerType(), nullable=True),\\n    StructField(\\\"type\\\", StringType(), nullable=True),\\n    StructField(\\\"id\\\", StringType(), nullable=True),\\n    StructField(\\\"datetime\\\", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed\\n])\\n\\n# parse the topics parameter\\ntopics = ${topics}\\nparsed_topics = topics.split(\\\"|\\\")\\n\\n# define the parameters for the input and output kafka broker and topic\\nkafka_broker = \\\"kafka:9092\\\"\\ninput_kafka_topic = parsed_topics[0]\\noutput_kafka_topic = parsed_topics[1]\\n\\n# Subscribe to the input topic\\ndf = spark \\\\\\n    .readStream \\\\\\n    .format(\\\"kafka\\\") \\\\\\n    .option(\\\"kafka.bootstrap.servers\\\", kafka_broker) \\\\\\n    .option(\\\"subscribe\\\", input_kafka_topic) \\\\\\n    .load()\\n\\n# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data\\ndf = df.select(col(\\\"value\\\").cast(\\\"string\\\")) \\\\\\n    .withColumn(\\\"value\\\", from_json(\\\"value\\\", schema)) \\\\\\n\\nparsed_df = df \\\\\\n    .select(\\\"value.*\\\")\\n\\n# filter rows containing specific keywords\\nkeywords = ${keywords}\\n\\n# initialize the filter condition with False\\nfilter_condition = col(\\\"content\\\").contains(keywords[0])\\n\\n# loop through the rest of the keywords and update the filter condition\\nfor keyword in keywords[1:]:\\n    filter_condition = filter_condition | col(\\\"content\\\").contains(keyword)\\n\\n# apply the filter condition to the DataFrame\\nfiltered_df = parsed_df.filter(filter_condition)\\n\\n# stream the data to kafka\\nkafka_write = filtered_df \\\\\\n    .selectExpr(\\\"'' AS key\\\", \\\"to_json(struct(*)) AS value\\\") \\\\\\n    .writeStream \\\\\\n    .format(\\\"kafka\\\") \\\\\\n    .option(\\\"kafka.bootstrap.servers\\\", kafka_broker) \\\\\\n    .option(\\\"topic\\\", output_kafka_topic) \\\\\\n    .start()\\n\\n# Wait for the termination of the query\\nkafka_write.awaitTermination()\\n\",\"resourceList\":[]}",
+  "environmentConfig" : "export HADOOP_HOME=/opt/hadoop-3.4.0\nexport SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11\nexport PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "keyword filtering"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "keywords" : {
+      "prop" : "keywords",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "[\"singapore\", \"sg\"]"
+    },
+    "topics" : {
+      "prop" : "topics",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "\"reddit_post_preprocessed|reddit_post_filtered\""
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240429"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2008"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13377752024032"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240429033915"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "741"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240428"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "filter_data_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13377949373536"
+    }
+  },
+  "taskAppId" : "741_2008",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-29 03:39:15.113 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 03:39:15.114 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-29 03:39:15.115 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 03:39:15.132 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-29 03:39:15.136 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-29 03:39:15.140 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/741/2008 check successfully
+[INFO] 2024-04-29 03:39:15.142 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[INFO] 2024-04-29 03:39:15.144 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-04-29 03:39:15.147 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-29 03:39:15.148 +0800 - Task plugin instance: PYTHON create successfully
+[INFO] 2024-04-29 03:39:15.152 +0800 - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "from pyspark.sql import SparkSession\nfrom pyspark.sql.functions import col, from_json\nfrom pyspark.sql.types import StringType, StructType, StructField, IntegerType\n\nspark = SparkSession.builder \\\n    .master(\"local\") \\\n    .appName(\"Reddit Keyword Filtering\") \\\n    .config(\"spark.jars.packages\", \"org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1\") \\\n    .config(\"spark.sql.streaming.checkpointLocation\", r\"/tmp/\") \\\n    .config(\"spark.driver.extraJavaOptions\", \"-Divy.cache.dir=/tmp -Divy.home=/tmp\") \\\n    .getOrCreate()\n\n# define the schema for the JSON data\nschema = StructType([\n    StructField(\"user\", StringType(), nullable=True),\n    StructField(\"content\", StringType(), nullable=True),\n    StructField(\"url\", StringType(), nullable=True),\n    StructField(\"context\", StringType(), nullable=True),\n    StructField(\"score\", IntegerType(), nullable=True),\n    StructField(\"type\", StringType(), nullable=True),\n    StructField(\"id\", StringType(), nullable=True),\n    StructField(\"datetime\", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed\n])\n\n# parse the topics parameter\ntopics = ${topics}\nparsed_topics = topics.split(\"|\")\n\n# define the parameters for the input and output kafka broker and topic\nkafka_broker = \"kafka:9092\"\ninput_kafka_topic = parsed_topics[0]\noutput_kafka_topic = parsed_topics[1]\n\n# Subscribe to the input topic\ndf = spark \\\n    .readStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", kafka_broker) \\\n    .option(\"subscribe\", input_kafka_topic) \\\n    .load()\n\n# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data\ndf = df.select(col(\"value\").cast(\"string\")) \\\n    .withColumn(\"value\", from_json(\"value\", schema)) \\\n\nparsed_df = df \\\n    .select(\"value.*\")\n\n# filter rows containing specific keywords\nkeywords = ${keywords}\n\n# initialize the filter condition with False\nfilter_condition = col(\"content\").contains(keywords[0])\n\n# loop through the rest of the keywords and update the filter condition\nfor keyword in keywords[1:]:\n    filter_condition = filter_condition | col(\"content\").contains(keyword)\n\n# apply the filter condition to the DataFrame\nfiltered_df = parsed_df.filter(filter_condition)\n\n# stream the data to kafka\nkafka_write = filtered_df \\\n    .selectExpr(\"'' AS key\", \"to_json(struct(*)) AS value\") \\\n    .writeStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", kafka_broker) \\\n    .option(\"topic\", output_kafka_topic) \\\n    .start()\n\n# Wait for the termination of the query\nkafka_write.awaitTermination()\n",
+  "resourceList" : [ ]
+}
+[INFO] 2024-04-29 03:39:15.153 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-29 03:39:15.154 +0800 - Set taskVarPool: [] successfully
+[INFO] 2024-04-29 03:39:15.154 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 03:39:15.154 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-29 03:39:15.154 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 03:39:15.155 +0800 - raw python script : from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, from_json
+from pyspark.sql.types import StringType, StructType, StructField, IntegerType
+
+spark = SparkSession.builder \
+    .master("local") \
+    .appName("Reddit Keyword Filtering") \
+    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1") \
+    .config("spark.sql.streaming.checkpointLocation", r"/tmp/") \
+    .config("spark.driver.extraJavaOptions", "-Divy.cache.dir=/tmp -Divy.home=/tmp") \
+    .getOrCreate()
+
+# define the schema for the JSON data
+schema = StructType([
+    StructField("user", StringType(), nullable=True),
+    StructField("content", StringType(), nullable=True),
+    StructField("url", StringType(), nullable=True),
+    StructField("context", StringType(), nullable=True),
+    StructField("score", IntegerType(), nullable=True),
+    StructField("type", StringType(), nullable=True),
+    StructField("id", StringType(), nullable=True),
+    StructField("datetime", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed
+])
+
+# parse the topics parameter
+topics = ${topics}
+parsed_topics = topics.split("|")
+
+# define the parameters for the input and output kafka broker and topic
+kafka_broker = "kafka:9092"
+input_kafka_topic = parsed_topics[0]
+output_kafka_topic = parsed_topics[1]
+
+# Subscribe to the input topic
+df = spark \
+    .readStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("subscribe", input_kafka_topic) \
+    .load()
+
+# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data
+df = df.select(col("value").cast("string")) \
+    .withColumn("value", from_json("value", schema)) \
+
+parsed_df = df \
+    .select("value.*")
+
+# filter rows containing specific keywords
+keywords = ${keywords}
+
+# initialize the filter condition with False
+filter_condition = col("content").contains(keywords[0])
+
+# loop through the rest of the keywords and update the filter condition
+for keyword in keywords[1:]:
+    filter_condition = filter_condition | col("content").contains(keyword)
+
+# apply the filter condition to the DataFrame
+filtered_df = parsed_df.filter(filter_condition)
+
+# stream the data to kafka
+kafka_write = filtered_df \
+    .selectExpr("'' AS key", "to_json(struct(*)) AS value") \
+    .writeStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("topic", output_kafka_topic) \
+    .start()
+
+# Wait for the termination of the query
+kafka_write.awaitTermination()
+
+[INFO] 2024-04-29 03:39:15.159 +0800 - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/741/2008
+[INFO] 2024-04-29 03:39:15.161 +0800 - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/741/2008/py_741_2008.py
+[INFO] 2024-04-29 03:39:15.164 +0800 - #-*- encoding=utf8 -*-
+
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, from_json
+from pyspark.sql.types import StringType, StructType, StructField, IntegerType
+
+spark = SparkSession.builder \
+    .master("local") \
+    .appName("Reddit Keyword Filtering") \
+    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1") \
+    .config("spark.sql.streaming.checkpointLocation", r"/tmp/") \
+    .config("spark.driver.extraJavaOptions", "-Divy.cache.dir=/tmp -Divy.home=/tmp") \
+    .getOrCreate()
+
+# define the schema for the JSON data
+schema = StructType([
+    StructField("user", StringType(), nullable=True),
+    StructField("content", StringType(), nullable=True),
+    StructField("url", StringType(), nullable=True),
+    StructField("context", StringType(), nullable=True),
+    StructField("score", IntegerType(), nullable=True),
+    StructField("type", StringType(), nullable=True),
+    StructField("id", StringType(), nullable=True),
+    StructField("datetime", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed
+])
+
+# parse the topics parameter
+topics = "reddit_post_preprocessed|reddit_post_filtered"
+parsed_topics = topics.split("|")
+
+# define the parameters for the input and output kafka broker and topic
+kafka_broker = "kafka:9092"
+input_kafka_topic = parsed_topics[0]
+output_kafka_topic = parsed_topics[1]
+
+# Subscribe to the input topic
+df = spark \
+    .readStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("subscribe", input_kafka_topic) \
+    .load()
+
+# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data
+df = df.select(col("value").cast("string")) \
+    .withColumn("value", from_json("value", schema)) \
+
+parsed_df = df \
+    .select("value.*")
+
+# filter rows containing specific keywords
+keywords = ["singapore", "sg"]
+
+# initialize the filter condition with False
+filter_condition = col("content").contains(keywords[0])
+
+# loop through the rest of the keywords and update the filter condition
+for keyword in keywords[1:]:
+    filter_condition = filter_condition | col("content").contains(keyword)
+
+# apply the filter condition to the DataFrame
+filtered_df = parsed_df.filter(filter_condition)
+
+# stream the data to kafka
+kafka_write = filtered_df \
+    .selectExpr("'' AS key", "to_json(struct(*)) AS value") \
+    .writeStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("topic", output_kafka_topic) \
+    .start()
+
+# Wait for the termination of the query
+kafka_write.awaitTermination()
+
+[INFO] 2024-04-29 03:39:15.165 +0800 - Final Shell file is: 
+[INFO] 2024-04-29 03:39:15.170 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-29 03:39:15.171 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export HADOOP_HOME=/opt/hadoop-3.4.0
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYTHON_LAUNCHER=/bin/python3.11
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/741/2008/py_741_2008.py
+[INFO] 2024-04-29 03:39:15.172 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-29 03:39:15.173 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/741/2008/741_2008.sh
+[INFO] 2024-04-29 03:39:15.197 +0800 - process start, process id is: 261
+[INFO] 2024-04-29 03:39:16.202 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-04-29 03:39:18.235 +0800 -  -> 
+	:: loading settings :: url = jar:file:/opt/spark-3.5.1-bin-hadoop3/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+	Ivy Default Cache set to: /tmp
+	The jars for the packages stored in: /tmp/jars
+	org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+	:: resolving dependencies :: org.apache.spark#spark-submit-parent-53d351f4-71fa-46b4-8f9b-4d59c4918867;1.0
+		confs: [default]
+		found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+		found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+		found org.apache.kafka#kafka-clients;3.4.1 in central
+		found org.lz4#lz4-java;1.8.0 in central
+[INFO] 2024-04-29 03:39:19.236 +0800 -  -> 
+		found org.xerial.snappy#snappy-java;1.1.10.3 in central
+		found org.slf4j#slf4j-api;2.0.7 in central
+		found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+		found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+		found commons-logging#commons-logging;1.1.3 in central
+		found com.google.code.findbugs#jsr305;3.0.0 in central
+[INFO] 2024-04-29 03:39:24.241 +0800 -  -> 
+		found org.apache.commons#commons-pool2;2.11.1 in central
+[INFO] 2024-04-29 03:39:25.249 +0800 -  -> 
+	downloading https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.11.1/commons-pool2-2.11.1.jar ...
+		[SUCCESSFUL ] org.apache.commons#commons-pool2;2.11.1!commons-pool2.jar (659ms)
+	:: resolution report :: resolve 6298ms :: artifacts dl 682ms
+		:: modules in use:
+		com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+		commons-logging#commons-logging;1.1.3 from central in [default]
+		org.apache.commons#commons-pool2;2.11.1 from central in [default]
+		org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+		org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+		org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+		org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+		org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+		org.lz4#lz4-java;1.8.0 from central in [default]
+		org.slf4j#slf4j-api;2.0.7 from central in [default]
+		org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+		---------------------------------------------------------------------
+		|                  |            modules            ||   artifacts   |
+		|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+		---------------------------------------------------------------------
+		|      default     |   11  |   1   |   1   |   0   ||   11  |   1   |
+		---------------------------------------------------------------------
+	:: retrieving :: org.apache.spark#spark-submit-parent-53d351f4-71fa-46b4-8f9b-4d59c4918867
+		confs: [default]
+		11 artifacts copied, 0 already retrieved (56767kB/68ms)
+	24/04/29 03:39:25 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2024-04-29 03:39:26.259 +0800 -  -> 
+	Setting default log level to "WARN".
+	To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[INFO] 2024-04-29 03:39:36.297 +0800 -  -> 
+	24/04/29 03:39:35 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+[INFO] 2024-04-29 03:39:37.305 +0800 -  -> 
+	24/04/29 03:39:37 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+[INFO] 2024-04-29 03:39:38.310 +0800 -  -> 
+	24/04/29 03:39:37 WARN KafkaOffsetReaderAdmin: Error in attempt 1 getting Kafka offsets: 
+	java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+		at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+		at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1908)
+		at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:165)
+		at org.apache.spark.sql.kafka010.ConsumerStrategy.retrieveAllPartitions(ConsumerStrategy.scala:66)
+		at org.apache.spark.sql.kafka010.ConsumerStrategy.retrieveAllPartitions$(ConsumerStrategy.scala:65)
+		at org.apache.spark.sql.kafka010.SubscribeStrategy.retrieveAllPartitions(ConsumerStrategy.scala:102)
+		at org.apache.spark.sql.kafka010.SubscribeStrategy.assignedTopicPartitions(ConsumerStrategy.scala:113)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.$anonfun$partitionsAssignedToAdmin$1(KafkaOffsetReaderAdmin.scala:499)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.withRetries(KafkaOffsetReaderAdmin.scala:518)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.partitionsAssignedToAdmin(KafkaOffsetReaderAdmin.scala:498)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.fetchLatestOffsets(KafkaOffsetReaderAdmin.scala:297)
+		at org.apache.spark.sql.kafka010.KafkaMicroBatchStream.$anonfun$getOrCreateInitialPartitionOffsets$1(KafkaMicroBatchStream.scala:246)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.sql.kafka010.KafkaMicroBatchStream.getOrCreateInitialPartitionOffsets(KafkaMicroBatchStream.scala:241)
+		at org.apache.spark.sql.kafka010.KafkaMicroBatchStream.initialOffset(KafkaMicroBatchStream.scala:98)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$getStartOffset$2(MicroBatchExecution.scala:457)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.getStartOffset(MicroBatchExecution.scala:457)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$constructNextBatch$4(MicroBatchExecution.scala:491)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$constructNextBatch$2(MicroBatchExecution.scala:490)
+		at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+		at scala.collection.Iterator.foreach(Iterator.scala:943)
+		at scala.collection.Iterator.foreach$(Iterator.scala:943)
+		at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+		at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+		at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+		at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+		at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+		at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+		at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$constructNextBatch$1(MicroBatchExecution.scala:479)
+		at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.withProgressLocked(MicroBatchExecution.scala:810)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.constructNextBatch(MicroBatchExecution.scala:475)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:268)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:249)
+		at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:239)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:311)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:289)
+		at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.$anonfun$run$1(StreamExecution.scala:211)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+		at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:211)
+	Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[INFO] 2024-04-29 03:39:39.316 +0800 -  -> 
+	24/04/29 03:39:38 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+	24/04/29 03:39:39 WARN KafkaOffsetReaderAdmin: Error in attempt 2 getting Kafka offsets: 
+	java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+		at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+		at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1908)
+		at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:165)
+		at org.apache.spark.sql.kafka010.ConsumerStrategy.retrieveAllPartitions(ConsumerStrategy.scala:66)
+		at org.apache.spark.sql.kafka010.ConsumerStrategy.retrieveAllPartitions$(ConsumerStrategy.scala:65)
+		at org.apache.spark.sql.kafka010.SubscribeStrategy.retrieveAllPartitions(ConsumerStrategy.scala:102)
+		at org.apache.spark.sql.kafka010.SubscribeStrategy.assignedTopicPartitions(ConsumerStrategy.scala:113)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.$anonfun$partitionsAssignedToAdmin$1(KafkaOffsetReaderAdmin.scala:499)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.withRetries(KafkaOffsetReaderAdmin.scala:518)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.partitionsAssignedToAdmin(KafkaOffsetReaderAdmin.scala:498)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.fetchLatestOffsets(KafkaOffsetReaderAdmin.scala:297)
+		at org.apache.spark.sql.kafka010.KafkaMicroBatchStream.$anonfun$getOrCreateInitialPartitionOffsets$1(KafkaMicroBatchStream.scala:246)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.sql.kafka010.KafkaMicroBatchStream.getOrCreateInitialPartitionOffsets(KafkaMicroBatchStream.scala:241)
+		at org.apache.spark.sql.kafka010.KafkaMicroBatchStream.initialOffset(KafkaMicroBatchStream.scala:98)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$getStartOffset$2(MicroBatchExecution.scala:457)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.getStartOffset(MicroBatchExecution.scala:457)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$constructNextBatch$4(MicroBatchExecution.scala:491)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$constructNextBatch$2(MicroBatchExecution.scala:490)
+		at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+		at scala.collection.Iterator.foreach(Iterator.scala:943)
+		at scala.collection.Iterator.foreach$(Iterator.scala:943)
+		at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+		at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+		at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+		at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+		at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+		at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+		at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$constructNextBatch$1(MicroBatchExecution.scala:479)
+		at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.withProgressLocked(MicroBatchExecution.scala:810)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.constructNextBatch(MicroBatchExecution.scala:475)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:268)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:249)
+		at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:239)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:311)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:289)
+		at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.$anonfun$run$1(StreamExecution.scala:211)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+		at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:211)
+	Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[INFO] 2024-04-29 03:39:40.322 +0800 -  -> 
+	24/04/29 03:39:40 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+	24/04/29 03:39:40 WARN KafkaOffsetReaderAdmin: Error in attempt 3 getting Kafka offsets: 
+	java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+		at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+		at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1908)
+		at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:165)
+		at org.apache.spark.sql.kafka010.ConsumerStrategy.retrieveAllPartitions(ConsumerStrategy.scala:66)
+		at org.apache.spark.sql.kafka010.ConsumerStrategy.retrieveAllPartitions$(ConsumerStrategy.scala:65)
+		at org.apache.spark.sql.kafka010.SubscribeStrategy.retrieveAllPartitions(ConsumerStrategy.scala:102)
+		at org.apache.spark.sql.kafka010.SubscribeStrategy.assignedTopicPartitions(ConsumerStrategy.scala:113)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.$anonfun$partitionsAssignedToAdmin$1(KafkaOffsetReaderAdmin.scala:499)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.withRetries(KafkaOffsetReaderAdmin.scala:518)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.partitionsAssignedToAdmin(KafkaOffsetReaderAdmin.scala:498)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.fetchLatestOffsets(KafkaOffsetReaderAdmin.scala:297)
+		at org.apache.spark.sql.kafka010.KafkaMicroBatchStream.$anonfun$getOrCreateInitialPartitionOffsets$1(KafkaMicroBatchStream.scala:246)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.sql.kafka010.KafkaMicroBatchStream.getOrCreateInitialPartitionOffsets(KafkaMicroBatchStream.scala:241)
+		at org.apache.spark.sql.kafka010.KafkaMicroBatchStream.initialOffset(KafkaMicroBatchStream.scala:98)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$getStartOffset$2(MicroBatchExecution.scala:457)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.getStartOffset(MicroBatchExecution.scala:457)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$constructNextBatch$4(MicroBatchExecution.scala:491)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$constructNextBatch$2(MicroBatchExecution.scala:490)
+		at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+		at scala.collection.Iterator.foreach(Iterator.scala:943)
+		at scala.collection.Iterator.foreach$(Iterator.scala:943)
+		at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+		at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+		at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+		at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+		at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+		at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+		at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$constructNextBatch$1(MicroBatchExecution.scala:479)
+		at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.withProgressLocked(MicroBatchExecution.scala:810)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.constructNextBatch(MicroBatchExecution.scala:475)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:268)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:249)
+		at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:239)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:311)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:289)
+		at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.$anonfun$run$1(StreamExecution.scala:211)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+		at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:211)
+	Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[INFO] 2024-04-29 03:39:41.353 +0800 -  -> 
+	24/04/29 03:39:41 ERROR MicroBatchExecution: Query [id = 829659b1-b56f-49a6-9f50-0923b3c98cb3, runId = b1479002-4638-45c6-887c-b55b56cb9806] terminated with error
+	java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+		at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+		at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1908)
+		at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:165)
+		at org.apache.spark.sql.kafka010.ConsumerStrategy.retrieveAllPartitions(ConsumerStrategy.scala:66)
+		at org.apache.spark.sql.kafka010.ConsumerStrategy.retrieveAllPartitions$(ConsumerStrategy.scala:65)
+		at org.apache.spark.sql.kafka010.SubscribeStrategy.retrieveAllPartitions(ConsumerStrategy.scala:102)
+		at org.apache.spark.sql.kafka010.SubscribeStrategy.assignedTopicPartitions(ConsumerStrategy.scala:113)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.$anonfun$partitionsAssignedToAdmin$1(KafkaOffsetReaderAdmin.scala:499)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.withRetries(KafkaOffsetReaderAdmin.scala:518)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.partitionsAssignedToAdmin(KafkaOffsetReaderAdmin.scala:498)
+		at org.apache.spark.sql.kafka010.KafkaOffsetReaderAdmin.fetchLatestOffsets(KafkaOffsetReaderAdmin.scala:297)
+		at org.apache.spark.sql.kafka010.KafkaMicroBatchStream.$anonfun$getOrCreateInitialPartitionOffsets$1(KafkaMicroBatchStream.scala:246)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.sql.kafka010.KafkaMicroBatchStream.getOrCreateInitialPartitionOffsets(KafkaMicroBatchStream.scala:241)
+		at org.apache.spark.sql.kafka010.KafkaMicroBatchStream.initialOffset(KafkaMicroBatchStream.scala:98)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$getStartOffset$2(MicroBatchExecution.scala:457)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.getStartOffset(MicroBatchExecution.scala:457)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$constructNextBatch$4(MicroBatchExecution.scala:491)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$constructNextBatch$2(MicroBatchExecution.scala:490)
+		at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)
+		at scala.collection.Iterator.foreach(Iterator.scala:943)
+		at scala.collection.Iterator.foreach$(Iterator.scala:943)
+		at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+		at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+		at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+		at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+		at scala.collection.TraversableLike.map(TraversableLike.scala:286)
+		at scala.collection.TraversableLike.map$(TraversableLike.scala:279)
+		at scala.collection.AbstractTraversable.map(Traversable.scala:108)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$constructNextBatch$1(MicroBatchExecution.scala:479)
+		at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.withProgressLocked(MicroBatchExecution.scala:810)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.constructNextBatch(MicroBatchExecution.scala:475)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$2(MicroBatchExecution.scala:268)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken(ProgressReporter.scala:427)
+		at org.apache.spark.sql.execution.streaming.ProgressReporter.reportTimeTaken$(ProgressReporter.scala:425)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.reportTimeTaken(StreamExecution.scala:67)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.$anonfun$runActivatedStream$1(MicroBatchExecution.scala:249)
+		at org.apache.spark.sql.execution.streaming.ProcessingTimeExecutor.execute(TriggerExecutor.scala:67)
+		at org.apache.spark.sql.execution.streaming.MicroBatchExecution.runActivatedStream(MicroBatchExecution.scala:239)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.$anonfun$runStream$1(StreamExecution.scala:311)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+		at org.apache.spark.sql.execution.streaming.StreamExecution.org$apache$spark$sql$execution$streaming$StreamExecution$$runStream(StreamExecution.scala:289)
+		at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.$anonfun$run$1(StreamExecution.scala:211)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.JobArtifactSet$.withActiveJobArtifactState(JobArtifactSet.scala:94)
+		at org.apache.spark.sql.execution.streaming.StreamExecution$$anon$1.run(StreamExecution.scala:211)
+	Caused by: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[INFO] 2024-04-29 03:39:42.355 +0800 -  -> 
+	Traceback (most recent call last):
+	  File "/tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/741/2008/py_741_2008.py", line 74, in <module>
+	    kafka_write.awaitTermination()
+	  File "/usr/local/lib/python3.11/dist-packages/pyspark/sql/streaming/query.py", line 221, in awaitTermination
+	    return self._jsq.awaitTermination()
+	           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	  File "/usr/local/lib/python3.11/dist-packages/py4j/java_gateway.py", line 1322, in __call__
+	    return_value = get_return_value(
+	                   ^^^^^^^^^^^^^^^^^
+	  File "/usr/local/lib/python3.11/dist-packages/pyspark/errors/exceptions/captured.py", line 185, in deco
+	    raise converted from None
+	pyspark.errors.exceptions.captured.StreamingQueryException: [STREAM_FAILED] Query [id = 829659b1-b56f-49a6-9f50-0923b3c98cb3, runId = b1479002-4638-45c6-887c-b55b56cb9806] terminated with exception: org.apache.kafka.common.errors.UnknownTopicOrPartitionException: This server does not host this topic-partition.
+[INFO] 2024-04-29 03:39:43.362 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/741/2008, processId:261 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-04-29 03:39:43.363 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 03:39:43.364 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-29 03:39:43.365 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 03:39:43.365 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-29 03:39:43.373 +0800 - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[INFO] 2024-04-29 03:39:43.374 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-29 03:39:43.375 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/741/2008
+[INFO] 2024-04-29 03:39:43.376 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/741/2008
+[INFO] 2024-04-29 03:39:43.377 +0800 - FINALIZE_SESSION

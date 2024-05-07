@@ -1,0 +1,47 @@
+[INFO] 2024-03-22 09:17:55.455 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-03-22 09:17:55.467 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-03-22 09:17:55.468 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-03-22 09:17:55.475 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-03-22 09:17:55.476 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-03-22 09:17:55.476 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-03-22 09:17:55.477 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[INFO] 2024-03-22 09:36:29.909 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:243, taskInstanceName:show parameters, host: 172.20.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240322/13003655208096/12/71/243.log
+[INFO] 2024-03-22 09:36:30.345 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WARN] 2024-03-22 09:36:33.896 +0800 o.a.d.e.b.NettyRemotingClient:[253] - connect to Host(ip=172.20.0.5, port=1234) error
+io.netty.channel.ConnectTimeoutException: connection timed out: /172.20.0.5:1234
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe$2.run(AbstractEpollChannel.java:576)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-03-22 09:36:33.905 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.LoggerController#queryLog[4 args] Meet a ServiceException: view task instance log error: null
+[INFO] 2024-03-22 09:36:39.305 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:243, taskInstanceName:show parameters, host: 172.20.0.5:1234, logPath:/opt/dolphinscheduler/logs/20240322/13003655208096/12/71/243.log
+[WARN] 2024-03-22 09:36:42.321 +0800 o.a.d.e.b.NettyRemotingClient:[253] - connect to Host(ip=172.20.0.5, port=1234) error
+io.netty.channel.ConnectTimeoutException: connection timed out: /172.20.0.5:1234
+	at io.netty.channel.epoll.AbstractEpollChannel$AbstractEpollUnsafe$2.run(AbstractEpollChannel.java:576)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:384)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-03-22 09:36:42.323 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.LoggerController#queryLog[4 args] Meet a ServiceException: view task instance log error: null
+[INFO] 2024-03-22 09:37:01.661 +0800 o.a.d.a.s.i.ProjectServiceImpl:[143] - Project is created and id is :2
+[INFO] 2024-03-22 09:42:58.462 +0800 o.a.d.a.s.i.SchedulerServiceImpl:[219] - Schedule create complete, projectCode:13001194483488, processDefinitionCode:13002839652640, scheduleId:1.
+[INFO] 2024-03-22 09:43:03.280 +0800 o.a.d.s.q.QuartzScheduler:[104] - Add job, job name: job_1, group name: jobgroup_1
+[INFO] 2024-03-22 09:43:03.414 +0800 o.a.d.s.q.QuartzScheduler:[137] - schedule job trigger, triggerName: job_1, triggerGroupName: jobgroup_1, cronExpression: * 0 * * * ? *, startDate: Fri Mar 22 09:43:03 CST 2024, endDate: Wed Mar 22 00:00:00 CST 2124
+[INFO] 2024-03-22 09:43:09.545 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13002839652640, commandCount:1.
+[INFO] 2024-03-22 09:44:52.816 +0800 o.a.d.s.q.QuartzScheduler:[155] - Try to delete scheduler task, projectId: 1, schedulerId: 1
+[INFO] 2024-03-22 09:45:13.494 +0800 o.a.d.a.s.i.SchedulerServiceImpl:[809] - Schedule update complete, projectCode:13001194483488, processDefinitionCode:13002839652640, scheduleId:1.
+[INFO] 2024-03-22 09:45:16.563 +0800 o.a.d.s.q.QuartzScheduler:[104] - Add job, job name: job_1, group name: jobgroup_1
+[INFO] 2024-03-22 09:45:16.597 +0800 o.a.d.s.q.QuartzScheduler:[137] - schedule job trigger, triggerName: job_1, triggerGroupName: jobgroup_1, cronExpression: 0/5 0 * * * ? *, startDate: Fri Mar 22 09:45:16 CST 2024, endDate: Wed Mar 22 00:00:00 CST 2124
+[INFO] 2024-03-22 09:45:20.650 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13002839652640, commandCount:1.
+[INFO] 2024-03-22 09:45:39.901 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13002839652640, commandCount:1.
+[INFO] 2024-03-22 09:45:45.720 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13002839652640, commandCount:1.
+[ERROR] 2024-03-22 09:59:19.572 +0800 o.a.d.a.e.ApiExceptionHandler:[40] - org.apache.dolphinscheduler.api.controller.ProcessDefinitionController#releaseProcessDefinition[4 args] Meet a ServiceException: Internal Server Error: SubWorkflowDefinition Workflow_A is not online

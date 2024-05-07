@@ -1,0 +1,189 @@
+[INFO] 2024-05-05 06:13:10.761 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:10.765 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-05 06:13:10.766 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:10.766 +0800 - Begin to initialize task
+[INFO] 2024-05-05 06:13:10.770 +0800 - Set task startTime: 1714860790770
+[INFO] 2024-05-05 06:13:10.761 +0800 - Submit LogicTask: data existence switch to MasterTaskExecutorThreadPool success
+[INFO] 2024-05-05 06:13:10.775 +0800 - Set task appId: 973_3542
+[INFO] 2024-05-05 06:13:10.786 +0800 - End initialize task {
+  "taskInstanceId" : 3542,
+  "taskName" : "data existence switch",
+  "firstSubmitTime" : 1714860790706,
+  "startTime" : 1714860790770,
+  "taskType" : "SWITCH",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.0.12:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240505/13471825071552/30/973/3542.log",
+  "processId" : 0,
+  "processDefineCode" : 13471825071552,
+  "processDefineVersion" : 30,
+  "processInstanceId" : 973,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topic\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"'Singapore'\"},{\"prop\":\"article_list\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"${news_articles_param_list}\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 13,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"\",\"resourceList\":[],\"switchResult\":{\"dependTaskList\":[{\"condition\":\"${article_hash_in_db}=='null'\",\"nextNode\":13475012246208}],\"nextNode\":13472444468544}}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "data existence switch"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "article_data" : {
+      "prop" : "article_data",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "${news_article}"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3542"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13474141219392"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505061310"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "973"
+    },
+    "topic" : {
+      "prop" : "topic",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "'Singapore'"
+    },
+    "article_data_hash" : {
+      "prop" : "article_data_hash",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "12dce0aecfe9b404b98d9e84e87e1cdb22aceb035be3c5185d407576f54c9911"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "article_list" : {
+      "prop" : "article_list",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "${news_articles_param_list}"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "extract_gnews_articles_hashing_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13471825071552"
+    },
+    "article_hash_in_db" : {
+      "prop" : "article_hash_in_db",
+      "direct" : "IN",
+      "type" : "LIST",
+      "value" : "null"
+    }
+  },
+  "taskAppId" : "973_3542",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"article_data_hash\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"12dce0aecfe9b404b98d9e84e87e1cdb22aceb035be3c5185d407576f54c9911\"},{\"prop\":\"article_data\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"${news_article}\"},{\"prop\":\"article_hash_in_db\",\"direct\":\"IN\",\"type\":\"LIST\",\"value\":\"null\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-05 06:13:10.798 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:10.799 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-05 06:13:10.800 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:10.822 +0800 - Send task status RUNNING_EXECUTION to master 172.18.0.12:5678
+[INFO] 2024-05-05 06:13:10.823 +0800 - Success initialize task parameters: 
+{
+  "localParams" : null,
+  "varPool" : null,
+  "dependRelation" : null,
+  "relation" : null,
+  "nextNode" : [ 13472444468544 ],
+  "resultConditionLocation" : 0,
+  "dependTaskList" : [ {
+    "condition" : "${article_hash_in_db}=='null'",
+    "nextNode" : [ 13475012246208 ]
+  } ]
+}
+[INFO] 2024-05-05 06:13:10.824 +0800 - Initialized task plugin instance: SWITCH successfully
+[INFO] 2024-05-05 06:13:10.825 +0800 - Initialize taskVarPool: [{"prop":"article_data_hash","direct":"IN","type":"VARCHAR","value":"12dce0aecfe9b404b98d9e84e87e1cdb22aceb035be3c5185d407576f54c9911"},{"prop":"article_data","direct":"IN","type":"VARCHAR","value":"${news_article}"},{"prop":"article_hash_in_db","direct":"IN","type":"LIST","value":"null"}] successfully
+[INFO] 2024-05-05 06:13:10.825 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:10.825 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-05 06:13:10.826 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:10.826 +0800 - Begin to execute 1 condition: ${article_hash_in_db}=='null' 
+[INFO] 2024-05-05 06:13:10.826 +0800 - paramName:article_hash_in_db，paramValue:"null"
+[INFO] 2024-05-05 06:13:10.827 +0800 - Format condition sentence::"null"=="null" successfully
+[INFO] 2024-05-05 06:13:10.827 +0800 - Execute condition sentence: "null"=="null" successfully: true
+[INFO] 2024-05-05 06:13:10.829 +0800 - The switch task depend result:SUCCESS, switch branch:0
+[INFO] 2024-05-05 06:13:10.830 +0800 - Switch task execute finished, condition result is: SUCCESS, task status is: SUCCESS
+[INFO] 2024-05-05 06:13:10.830 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:10.831 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-05 06:13:10.832 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 06:13:10.844 +0800 - Send task status: SUCCESS to master: 172.18.0.12:5678 successfully
+[INFO] 2024-05-05 06:13:10.845 +0800 - Execute task finished, will send the task execute result to master, the current task execute result is SUCCESS
+[INFO] 2024-05-05 06:13:10.846 +0800 - FINALIZE_SESSION

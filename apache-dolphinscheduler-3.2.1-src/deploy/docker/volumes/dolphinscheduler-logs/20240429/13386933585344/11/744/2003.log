@@ -1,0 +1,908 @@
+[INFO] 2024-04-29 01:00:23.594 +0800 - Submit LogicTask: create sentiment analysis instances to MasterTaskExecutorThreadPool success
+[INFO] 2024-04-29 01:00:23.595 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 01:00:23.624 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-29 01:00:23.624 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 01:00:23.624 +0800 - Begin to initialize task
+[INFO] 2024-04-29 01:00:23.624 +0800 - Set task startTime: 1714323623624
+[INFO] 2024-04-29 01:00:23.625 +0800 - Set task appId: 744_2003
+[INFO] 2024-04-29 01:00:23.625 +0800 - End initialize task {
+  "taskInstanceId" : 2003,
+  "taskName" : "create sentiment analysis instances",
+  "firstSubmitTime" : 1714323623567,
+  "startTime" : 1714323623624,
+  "taskType" : "DYNAMIC",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.0.11:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240429/13386933585344/11/744/2003.log",
+  "processId" : 0,
+  "processDefineCode" : 13386933585344,
+  "processDefineVersion" : 11,
+  "processInstanceId" : 744,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topics\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\\\"reddit_post_filtered|reddit_post_sa\\\"\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":13386218435520,\"maxNumOfSubWorkflowInstances\":1024,\"degreeOfParallelism\":2,\"filterCondition\":\"\",\"listParameters\":[{\"name\":\"topics\",\"value\":\"${topics}\",\"separator\":\",\",\"disabled\":true}]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "create sentiment analysis instances"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "topics" : {
+      "prop" : "topics",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "\"reddit_post_filtered|reddit_post_sa\""
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240429"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2003"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386894519360"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240429010023"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "744"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240428"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sentiment_analysis_main"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386933585344"
+    }
+  },
+  "taskAppId" : "744_2003",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-29 01:00:23.630 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 01:00:23.631 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-29 01:00:23.631 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 01:00:23.636 +0800 - Send task status RUNNING_EXECUTION to master 172.18.0.11:5678
+[INFO] 2024-04-29 01:00:23.637 +0800 - Success initialize task parameters: 
+{
+  "localParams" : [ ],
+  "varPool" : null,
+  "processDefinitionCode" : 13386218435520,
+  "maxNumOfSubWorkflowInstances" : 1024,
+  "degreeOfParallelism" : 2,
+  "filterCondition" : "",
+  "listParameters" : [ {
+    "name" : "topics",
+    "value" : "${topics}",
+    "separator" : ","
+  } ]
+}
+[INFO] 2024-04-29 01:00:23.641 +0800 - Initialized task plugin instance: DYNAMIC successfully
+[INFO] 2024-04-29 01:00:23.642 +0800 - Initialize taskVarPool: null successfully
+[INFO] 2024-04-29 01:00:23.642 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 01:00:23.642 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-29 01:00:23.642 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 01:00:23.643 +0800 - parameter group size: 1
+[INFO] 2024-04-29 01:00:23.643 +0800 - parameter group: {topics="reddit_post_filtered|reddit_post_sa"}
+[INFO] 2024-04-29 01:00:23.685 +0800 - Expected number of runs : 1, actual number of runs : 1
+[INFO] 2024-04-29 01:00:23.689 +0800 - insert 1 relation sub workflow
+[INFO] 2024-04-29 01:00:23.694 +0800 - There are 2 sub process instances that can be started
+[INFO] 2024-04-29 01:00:23.714 +0800 - start sub process instance, sub process instance id: 745, command: Command(id=975, commandType=DYNAMIC_GENERATION, processDefinitionCode=13386218435520, executorId=1, commandParam={"StartParams":"{\"topics\":\"\\\"reddit_post_filtered|reddit_post_sa\\\"\"}"}, taskDependType=TASK_POST, failureStrategy=CONTINUE, warningType=NONE, warningGroupId=0, scheduleTime=null, startTime=Mon Apr 29 01:00:23 GMT+08:00 2024, processInstancePriority=MEDIUM, updateTime=Mon Apr 29 01:00:23 GMT+08:00 2024, workerGroup=default, tenantCode=null, environmentCode=null, dryRun=0, processInstanceId=745, processDefinitionVersion=19, testFlag=0)
+[INFO] 2024-04-29 01:00:33.720 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:00:43.728 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:00:53.734 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:01:03.738 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:01:13.742 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:01:23.745 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:01:33.750 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:01:43.772 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:01:53.801 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:02:03.807 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:02:13.829 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:02:23.836 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:02:33.839 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:02:43.841 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:02:53.844 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:03:03.847 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:03:13.853 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:03:23.856 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:03:33.859 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:03:43.868 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:03:53.872 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:04:03.877 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:04:13.881 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:04:23.885 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:04:33.889 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:04:43.893 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:04:53.894 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:05:03.902 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:05:13.910 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:05:23.914 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:05:33.917 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:05:43.920 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:05:53.922 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:06:03.926 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:06:13.932 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:06:23.938 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:06:33.950 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:06:43.955 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:06:53.961 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:07:03.964 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:07:13.970 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:07:23.974 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:07:33.977 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:07:43.981 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:07:53.987 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:08:04.000 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:08:14.004 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:08:24.008 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:08:34.011 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:08:44.014 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:08:54.018 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:09:04.022 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:09:14.026 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:09:24.029 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:09:34.071 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:09:44.073 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:09:54.076 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:10:04.082 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:10:14.087 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:10:24.089 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:10:34.091 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:10:44.094 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:10:54.103 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:11:04.107 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:11:14.109 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:11:24.114 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:11:34.118 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:11:44.121 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:11:54.125 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:12:04.128 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:12:14.135 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:12:24.141 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:12:34.142 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:12:44.148 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:12:54.154 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:13:04.157 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:13:14.161 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:13:24.165 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:13:34.168 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:13:44.170 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:13:54.175 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:14:04.178 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:14:14.181 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:14:24.183 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:14:34.189 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:14:44.192 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:14:54.196 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:15:04.200 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:15:14.202 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:15:24.204 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:15:34.213 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:15:44.216 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:15:54.218 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:16:04.221 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:16:14.225 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:16:24.228 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:16:34.230 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:16:44.233 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:16:54.238 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:17:04.246 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:17:14.250 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:17:24.253 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:17:34.259 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:17:44.263 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:17:54.267 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:18:04.270 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:18:14.273 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:18:24.278 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:18:34.281 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:18:44.289 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:18:54.291 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:19:04.298 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:19:14.300 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:19:24.307 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:19:34.309 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:19:44.314 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:19:54.318 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:20:04.324 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:20:14.328 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:20:24.334 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:20:34.335 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:20:44.347 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:20:54.352 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:21:04.353 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:21:14.358 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:21:24.362 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:21:34.373 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:21:44.379 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:21:54.383 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:22:04.389 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:22:14.393 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:22:24.400 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:22:34.406 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:22:44.408 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:22:54.413 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:23:04.417 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:23:14.426 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:23:24.429 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:23:34.433 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:23:44.435 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:23:54.439 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:24:04.442 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:24:14.479 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:24:24.484 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:24:34.490 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:24:44.493 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:24:54.500 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:25:04.502 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:25:14.510 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:25:24.515 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:25:34.518 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:25:44.523 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:25:54.526 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:26:04.528 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:26:14.537 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:26:24.540 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:26:34.544 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:26:44.549 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:26:54.558 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:27:04.564 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:27:14.569 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:27:24.574 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:27:34.578 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:27:44.587 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:27:54.595 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:28:04.610 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:28:14.614 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:28:24.618 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:28:34.622 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:28:44.625 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:28:54.629 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:29:04.637 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:29:14.638 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:29:24.642 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:29:34.647 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:29:44.652 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:29:54.657 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:30:04.662 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:30:14.664 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:30:24.667 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:30:34.670 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:30:44.674 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:30:54.678 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:31:04.682 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:31:14.685 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:31:24.687 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:31:34.695 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:31:44.698 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:31:54.701 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:32:04.705 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:32:14.709 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:32:24.714 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:32:34.718 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:32:44.721 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:32:54.724 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:33:04.727 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:33:14.731 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:33:24.734 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:33:34.737 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:33:44.741 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:33:54.744 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:34:04.749 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:34:14.751 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:34:24.756 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:34:34.759 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:34:44.763 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:34:54.766 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:35:04.769 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:35:14.771 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:35:24.782 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:35:34.786 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:35:44.791 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:35:54.794 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:36:04.799 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:36:14.804 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:36:24.812 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:36:34.816 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:36:44.820 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:36:54.831 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:37:04.845 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:37:14.851 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:37:24.867 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:37:34.871 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:37:44.875 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:37:54.891 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:38:04.893 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:38:14.897 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:38:24.900 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:38:34.903 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:38:44.909 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:38:54.911 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:39:04.914 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:39:14.916 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:39:24.919 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:39:34.921 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:39:44.926 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:39:54.930 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:40:04.933 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:40:14.940 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:40:24.942 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:40:34.945 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:40:44.948 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:40:54.951 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:41:04.954 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:41:14.958 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:41:24.964 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:41:34.968 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:41:44.972 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:41:54.975 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:42:04.981 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:42:14.985 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:42:24.988 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:42:34.991 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:42:44.993 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:42:54.995 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:43:04.998 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:43:15.001 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:43:25.005 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:43:35.014 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:43:45.019 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:43:55.023 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:44:05.027 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:44:15.031 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:44:25.034 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:44:35.039 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:44:45.042 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:44:55.045 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:45:05.049 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:45:15.057 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:45:25.069 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:45:35.073 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:45:45.076 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:45:55.083 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:46:05.088 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:46:15.090 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:46:25.094 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:46:35.098 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:46:45.101 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:46:55.106 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:47:05.112 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:47:15.114 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:47:25.117 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:47:35.119 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:47:45.122 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:47:55.125 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:48:05.128 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:48:15.130 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:48:25.134 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:48:35.138 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:48:45.141 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:48:55.144 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:49:05.147 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:49:15.149 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:49:25.154 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:49:35.156 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:49:45.158 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:49:55.162 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:50:05.167 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:50:15.169 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:50:25.173 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:50:35.176 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:50:45.181 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:50:55.183 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:51:05.188 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:51:15.192 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:51:25.197 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:51:35.199 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:51:45.202 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:51:55.216 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:52:05.219 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:52:15.221 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:52:25.228 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:52:35.231 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:52:45.234 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:52:55.237 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:53:05.247 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:53:15.252 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:53:25.257 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:53:35.259 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:53:45.265 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:53:55.267 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:54:05.271 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:54:15.274 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:54:25.280 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:54:35.285 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:54:45.289 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:54:55.292 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:55:05.297 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:55:15.301 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:55:25.306 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:55:35.309 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:55:45.313 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:55:55.317 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:56:05.321 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:56:15.330 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:56:25.333 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:56:35.337 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:56:45.340 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:56:55.347 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:57:05.352 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:57:15.364 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:57:25.385 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:57:35.390 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:57:45.394 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:57:55.396 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:58:05.399 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:58:15.402 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:58:25.418 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:58:35.421 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:58:45.424 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:58:55.428 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:59:05.433 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:59:15.436 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:59:25.442 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:59:35.444 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:59:45.448 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 01:59:55.450 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:00:05.455 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:00:15.458 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:00:25.461 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:00:35.464 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:00:45.466 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:00:55.470 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:01:05.474 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:01:15.477 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:01:25.480 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:01:35.482 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:01:45.487 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:01:55.489 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:02:05.502 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:02:15.513 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:02:25.517 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:02:35.521 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:02:45.526 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:02:55.529 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:03:05.534 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:03:15.540 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:03:25.545 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:03:35.549 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:03:45.557 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:03:55.651 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:04:05.662 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:04:15.670 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:04:25.679 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:04:35.682 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:04:45.686 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:04:55.689 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:05:05.696 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:05:15.726 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:05:25.738 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:05:35.746 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:05:45.751 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:05:55.754 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:06:05.757 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:06:15.762 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:06:25.770 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:06:35.774 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:06:45.780 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:06:55.785 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:07:05.791 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:07:15.798 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:07:25.805 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:07:35.825 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:07:45.833 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:07:55.846 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:08:05.855 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:08:15.857 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:08:25.861 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:08:35.887 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:08:45.895 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:08:55.905 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:09:05.910 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:09:15.917 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:09:25.923 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:09:35.934 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:09:45.943 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:09:55.948 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:10:05.975 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:10:16.025 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:10:26.029 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:10:36.041 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:10:46.046 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:10:56.053 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:11:06.062 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:11:16.074 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:11:26.083 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:11:36.087 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:11:46.092 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:11:56.099 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:12:06.103 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:12:16.107 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:12:26.111 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:12:36.115 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:12:46.118 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:12:56.121 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:13:06.134 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:13:16.140 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:13:26.145 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:13:36.148 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:13:46.154 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:13:56.158 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:14:06.189 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:14:16.199 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:14:26.203 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:14:36.206 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:14:46.214 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:14:56.222 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:15:06.230 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:15:16.239 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:15:26.247 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:15:36.254 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:15:46.264 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:15:56.270 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:16:06.275 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:16:16.279 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:16:26.284 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:16:36.291 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:16:46.298 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:16:56.303 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:17:06.309 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:17:16.315 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:17:26.318 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:17:36.322 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:17:46.326 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:17:56.331 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:18:06.336 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:18:16.341 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:18:26.350 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:18:36.355 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:18:46.361 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:18:57.049 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:19:07.055 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:19:17.060 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:19:27.066 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:19:37.071 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:19:47.074 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:19:57.078 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:20:07.082 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:20:17.091 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:20:27.098 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:20:37.101 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:20:47.103 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:20:57.114 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:21:07.118 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:21:17.123 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:21:27.127 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:21:37.135 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:21:47.143 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:21:57.150 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:22:07.165 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:22:17.169 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:22:27.172 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:22:37.177 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:22:47.183 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:22:57.185 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:23:07.187 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:23:17.192 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:23:27.197 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:23:37.200 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:23:47.204 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:23:57.207 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:24:07.212 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:24:17.219 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:24:27.222 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:24:37.226 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:24:47.231 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:24:57.236 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:25:07.246 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:25:17.253 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:25:27.258 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:25:37.264 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:25:47.268 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:25:57.274 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:26:07.277 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:26:17.283 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:26:27.287 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:26:37.290 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:26:47.301 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:26:57.303 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:27:07.307 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:27:17.311 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:27:27.315 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:27:37.317 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:27:47.322 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:27:57.325 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:28:07.333 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:28:17.336 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:28:27.352 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:28:37.371 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:28:47.377 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:28:57.379 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:29:07.384 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:29:17.390 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:29:27.394 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:29:37.397 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:29:47.401 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:29:57.405 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:30:07.409 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:30:17.413 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:30:27.422 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:30:37.428 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:30:47.441 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:30:57.447 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:31:07.455 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:31:17.461 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:31:27.473 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:31:37.481 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:31:47.487 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:31:57.498 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:32:07.502 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:32:17.505 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:32:27.512 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:32:37.526 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:32:47.530 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:32:57.533 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:33:07.541 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:33:17.544 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:33:27.549 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:33:37.559 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:33:47.566 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:33:57.572 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:34:07.576 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:34:17.580 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:34:27.586 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:34:37.590 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:34:47.593 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:34:57.599 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:35:07.607 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:35:17.619 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:35:27.623 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:35:37.627 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:35:47.629 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:35:57.636 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:36:07.644 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:36:17.653 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:36:27.657 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:36:37.673 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:36:47.681 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:36:57.685 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:37:07.690 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:37:17.716 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:37:27.720 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:37:37.724 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:37:47.727 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:37:57.735 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:38:07.737 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:38:17.746 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:38:27.751 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:38:37.754 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:38:47.759 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:38:57.771 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:39:07.781 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:39:17.785 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:39:27.788 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:39:37.793 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:39:47.801 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:39:57.807 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:40:07.812 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:40:17.820 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:40:27.827 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:40:37.834 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:40:47.841 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:40:58.570 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:41:08.576 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:41:18.583 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:41:28.606 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:41:38.619 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:41:48.626 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:41:58.631 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:42:08.641 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:42:18.644 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:42:28.647 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:42:38.682 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:42:48.685 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:42:58.688 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:43:08.695 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:43:18.699 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:43:28.711 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:43:38.717 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:43:48.722 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:43:58.726 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:44:08.734 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:44:18.738 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:44:28.741 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:44:38.745 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:44:48.750 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:44:58.759 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:45:08.764 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:45:18.768 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:45:28.773 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:45:38.776 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:45:48.778 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:45:58.785 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:46:08.790 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:46:18.800 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:46:28.804 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:46:38.807 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:46:48.814 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-04-29 02:46:58.819 +0800 - There are 1 sub process instances that can be started
+[WARN] 2024-04-29 02:47:08.863 +0800 - DolphinScheduler - Failed to validate connection org.postgresql.jdbc.PgConnection@75679c72 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+[WARN] 2024-04-29 02:47:08.883 +0800 - DolphinScheduler - Connection org.postgresql.jdbc.PgConnection@31af509d marked as broken because of SQLSTATE(57P01), ErrorCode(0)
+org.postgresql.util.PSQLException: FATAL: terminating connection due to unexpected postmaster exit
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:181)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:170)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy180.query(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy179.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy136.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy198.queryAllSubProcessInstance(Unknown Source)
+	at org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl.getAllDynamicSubWorkflow(SubWorkflowServiceImpl.java:54)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicAsyncTaskExecuteFunction.getAllSubProcessInstance(DynamicAsyncTaskExecuteFunction.java:170)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicAsyncTaskExecuteFunction.getAsyncTaskExecutionStatus(DynamicAsyncTaskExecuteFunction.java:80)
+	at org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskDelayQueueLooper.lambda$run$0(AsyncMasterTaskDelayQueueLooper.java:90)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[WARN] 2024-04-29 02:47:09.259 +0800 - DolphinScheduler - Failed to validate connection org.postgresql.jdbc.PgConnection@6b450554 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+[WARN] 2024-04-29 02:47:09.336 +0800 - DolphinScheduler - Failed to validate connection org.postgresql.jdbc.PgConnection@6afeedd7 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+[WARN] 2024-04-29 02:47:09.370 +0800 - DolphinScheduler - Failed to validate connection org.postgresql.jdbc.PgConnection@4a9c2454 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+[INFO] 2024-04-29 02:47:13.008 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 02:47:13.009 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-29 02:47:13.010 +0800 - ***********************************************************************************************
+[ERROR] 2024-04-29 02:47:13.010 +0800 - Get a exception when execute the task, will try to cancel the task
+org.springframework.dao.DataAccessResourceFailureException: 
+### Error querying database.  Cause: org.postgresql.util.PSQLException: FATAL: terminating connection due to unexpected postmaster exit
+### The error may exist in class path resource [org/apache/dolphinscheduler/dao/mapper/RelationSubWorkflowMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select         id, parent_workflow_instance_id, parent_task_code, sub_workflow_instance_id         FROM t_ds_relation_sub_workflow         WHERE parent_workflow_instance_id = ?             AND parent_task_code = ?
+### Cause: org.postgresql.util.PSQLException: FATAL: terminating connection due to unexpected postmaster exit
+; FATAL: terminating connection due to unexpected postmaster exit; nested exception is org.postgresql.util.PSQLException: FATAL: terminating connection due to unexpected postmaster exit
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:107)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy136.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at com.sun.proxy.$Proxy198.queryAllSubProcessInstance(Unknown Source)
+	at org.apache.dolphinscheduler.service.subworkflow.SubWorkflowServiceImpl.getAllDynamicSubWorkflow(SubWorkflowServiceImpl.java:54)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicAsyncTaskExecuteFunction.getAllSubProcessInstance(DynamicAsyncTaskExecuteFunction.java:170)
+	at org.apache.dolphinscheduler.server.master.runner.task.dynamic.DynamicAsyncTaskExecuteFunction.getAsyncTaskExecutionStatus(DynamicAsyncTaskExecuteFunction.java:80)
+	at org.apache.dolphinscheduler.server.master.runner.execute.AsyncMasterTaskDelayQueueLooper.lambda$run$0(AsyncMasterTaskDelayQueueLooper.java:90)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.postgresql.util.PSQLException: FATAL: terminating connection due to unexpected postmaster exit
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:181)
+	at org.postgresql.jdbc.PgPreparedStatement.execute(PgPreparedStatement.java:170)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.GeneratedMethodAccessor70.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy180.query(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62)
+	at com.sun.proxy.$Proxy179.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at sun.reflect.GeneratedMethodAccessor74.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 14 common frames omitted
+[INFO] 2024-04-29 02:47:13.118 +0800 - Success send [WorkflowExecutionStatus{code=4, desc='ready stop'}] request to SubWorkflow's master: 172.18.0.11:5678
+[INFO] 2024-04-29 02:47:13.146 +0800 - Send task status: FAILURE to master: 172.18.0.11:5678 successfully
+[INFO] 2024-04-29 02:47:13.146 +0800 - Get a exception when execute the task, sent the task execute result to master, the current task execute result is TaskExecutionStatus{code=6, desc='failure'}
+[INFO] 2024-04-29 02:47:13.146 +0800 - Get a exception when execute the task, removed the TaskExecutionContext
+[INFO] 2024-04-29 02:47:13.147 +0800 - FINALIZE_SESSION

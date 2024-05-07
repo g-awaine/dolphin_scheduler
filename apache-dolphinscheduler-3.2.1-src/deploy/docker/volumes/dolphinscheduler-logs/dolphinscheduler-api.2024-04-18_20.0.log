@@ -1,0 +1,32 @@
+[INFO] 2024-04-18 20:18:19.998 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-04-18 20:18:20.003 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-04-18 20:18:20.005 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-04-18 20:18:20.006 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-04-18 20:18:20.007 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-04-18 20:18:20.007 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-04-18 20:18:20.008 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[INFO] 2024-04-18 20:31:06.357 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13300689577641, processVersion:5.
+[INFO] 2024-04-18 20:31:06.383 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13300689577641, processVersion:6.
+[INFO] 2024-04-18 20:31:06.438 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13300689577641, processVersion:6.
+[INFO] 2024-04-18 20:31:18.888 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13300689577641, commandCount:1.
+[INFO] 2024-04-18 20:34:29.507 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[765] - Update process definition complete, projectCode:13001194483488, processDefinitionName:kafka test.
+[INFO] 2024-04-18 20:34:29.546 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[770] - Update task relations complete, projectCode:13001194483488, processDefinitionCode:13300689577641, processDefinitionVersion:7.
+[INFO] 2024-04-18 20:34:29.624 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[791] - Update process instance complete, projectCode:13001194483488, processDefinitionCode:13300689577641, processDefinitionVersion:7, processInstanceId:307
+[INFO] 2024-04-18 20:34:52.727 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13300689577641, commandCount:1.
+[INFO] 2024-04-18 20:35:40.098 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:689, taskInstanceName:send to kafka test topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13300689577641/7/308/689.log
+[INFO] 2024-04-18 20:35:40.475 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2024-04-18 20:35:41.650 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:689, taskInstanceName:send to kafka test topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13300689577641/7/308/689.log
+[INFO] 2024-04-18 20:40:04.511 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13300689577641, processVersion:7.
+[INFO] 2024-04-18 20:40:04.532 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13300689577641, processVersion:8.
+[INFO] 2024-04-18 20:40:04.581 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13300689577641, processVersion:8.
+[INFO] 2024-04-18 20:40:10.370 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13300689577641, commandCount:1.
+[INFO] 2024-04-18 20:40:49.762 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:694, taskInstanceName:send to kafka test topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13300689577641/8/309/694.log
+[INFO] 2024-04-18 20:40:49.922 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:694, taskInstanceName:send to kafka test topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13300689577641/8/309/694.log
+[INFO] 2024-04-18 20:41:27.093 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[765] - Update process definition complete, projectCode:13001194483488, processDefinitionName:kafka test.
+[INFO] 2024-04-18 20:41:27.120 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[770] - Update task relations complete, projectCode:13001194483488, processDefinitionCode:13300689577641, processDefinitionVersion:9.
+[INFO] 2024-04-18 20:41:27.153 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[791] - Update process instance complete, projectCode:13001194483488, processDefinitionCode:13300689577641, processDefinitionVersion:9, processInstanceId:309
+[INFO] 2024-04-18 20:41:51.424 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13300689577641, commandCount:1.
+[INFO] 2024-04-18 20:42:45.352 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:699, taskInstanceName:send to kafka test topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13300689577641/9/310/699.log
+[INFO] 2024-04-18 20:42:45.479 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:699, taskInstanceName:send to kafka test topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13300689577641/9/310/699.log
+[INFO] 2024-04-18 20:44:20.783 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:699, taskInstanceName:send to kafka test topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13300689577641/9/310/699.log
+[INFO] 2024-04-18 20:44:20.985 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:699, taskInstanceName:send to kafka test topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13300689577641/9/310/699.log

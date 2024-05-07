@@ -1,0 +1,274 @@
+[WI-0][TI-0] - [INFO] 2024-04-25 06:00:02.729 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:00:07.746 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:00:12.777 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:00:17.808 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:00:22.833 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:00:27.853 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:00:32.884 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:00:37.899 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:00:42.913 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:00:47.927 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:00:52.948 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:00:57.962 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:01:02.979 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:01:07.997 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:01:13.014 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:01:18.040 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:01:23.059 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:01:28.075 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:01:33.092 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:01:38.115 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:01:43.134 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:01:48.152 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:01:53.173 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:01:58.189 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-605][TI-1697] - [INFO] 2024-04-25 06:02:02.584 +0800 o.a.d.s.m.r.l.TaskInstanceExecutionResultEventListenFunction:[45] - Received TaskInstanceExecutionFinishEvent: TaskEvent(taskInstanceId=1697, workerAddress=172.18.1.1:1234, state=TaskExecutionStatus{code=9, desc='kill'}, startTime=Thu Apr 25 05:27:42 GMT+08:00 2024, endTime=Thu Apr 25 05:30:06 GMT+08:00 2024, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13383445003744_3/605/1697, logPath=/opt/dolphinscheduler/logs/20240425/13383445003744/3/605/1697.log, processId=86, appIds=null, event=RESULT, varPool=[], cacheTaskInstanceId=0, processInstanceId=605)
+[WI-0][TI-0] - [WARN] 2024-04-25 06:02:02.591 +0800 o.a.d.s.m.p.q.TaskExecuteThreadPool:[85] - Cannot find workflowExecuteThread from cacheManager, event: TaskEvent(taskInstanceId=1697, workerAddress=172.18.1.1:1234, state=TaskExecutionStatus{code=9, desc='kill'}, startTime=Thu Apr 25 05:27:42 GMT+08:00 2024, endTime=Thu Apr 25 05:30:06 GMT+08:00 2024, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13383445003744_3/605/1697, logPath=/opt/dolphinscheduler/logs/20240425/13383445003744/3/605/1697.log, processId=86, appIds=null, event=RESULT, varPool=[], cacheTaskInstanceId=0, processInstanceId=605)
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:03.205 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:08.217 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:13.237 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:18.264 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:23.319 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:28.334 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:33.348 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:38.365 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:43.387 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:48.405 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:52.756 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-25 06:02:52.756 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:53.439 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:02:58.453 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:03:03.472 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:03:08.493 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:03:13.513 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:03:18.538 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:03:23.556 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:03:28.583 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:03:33.605 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:03:38.627 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:03:43.677 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:03:48.699 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:03:53.738 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:03:58.761 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:04:03.780 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:04:08.856 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:04:13.880 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:04:18.898 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:04:23.920 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:04:28.936 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:04:33.953 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:04:38.976 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:04:44.016 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:04:49.060 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:04:54.074 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:04:59.092 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:05:04.114 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:05:09.133 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:05:14.161 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:05:19.185 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:05:24.202 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:05:29.230 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:05:34.251 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:05:39.262 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:05:44.277 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:05:49.293 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:05:54.311 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:05:59.347 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:04.368 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:09.389 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:14.415 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:19.463 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:23.660 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-25 06:06:23.660 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:24.480 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:28.671 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.005249343832021 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:29.517 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:34.533 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:39.560 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:44.584 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:49.598 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:54.627 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:06:59.642 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-605][TI-1697] - [INFO] 2024-04-25 06:07:02.652 +0800 o.a.d.s.m.r.l.TaskInstanceExecutionResultEventListenFunction:[45] - Received TaskInstanceExecutionFinishEvent: TaskEvent(taskInstanceId=1697, workerAddress=172.18.1.1:1234, state=TaskExecutionStatus{code=9, desc='kill'}, startTime=Thu Apr 25 05:27:42 GMT+08:00 2024, endTime=Thu Apr 25 05:30:06 GMT+08:00 2024, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13383445003744_3/605/1697, logPath=/opt/dolphinscheduler/logs/20240425/13383445003744/3/605/1697.log, processId=86, appIds=null, event=RESULT, varPool=[], cacheTaskInstanceId=0, processInstanceId=605)
+[WI-0][TI-0] - [WARN] 2024-04-25 06:07:02.653 +0800 o.a.d.s.m.p.q.TaskExecuteThreadPool:[85] - Cannot find workflowExecuteThread from cacheManager, event: TaskEvent(taskInstanceId=1697, workerAddress=172.18.1.1:1234, state=TaskExecutionStatus{code=9, desc='kill'}, startTime=Thu Apr 25 05:27:42 GMT+08:00 2024, endTime=Thu Apr 25 05:30:06 GMT+08:00 2024, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13383445003744_3/605/1697, logPath=/opt/dolphinscheduler/logs/20240425/13383445003744/3/605/1697.log, processId=86, appIds=null, event=RESULT, varPool=[], cacheTaskInstanceId=0, processInstanceId=605)
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:04.660 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:09.681 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:14.736 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:19.748 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:24.768 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:27.626 +0800 o.a.d.s.m.s.MasterFailoverService:[86] - Master failover service 172.18.0.10:5678 begin to failover hosts:[172.18.0.10:5678]
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:27.656 +0800 o.a.d.s.m.s.MasterFailoverService:[124] - Master[172.18.0.10:5678] failover starting there are 5 workflowInstance may need to failover, will do a deep check, workflowInstanceIds: [448, 508, 510, 511, 638]
+[WI-448][TI-0] - [INFO] 2024-04-25 06:07:27.656 +0800 o.a.d.s.m.s.MasterFailoverService:[133] - WorkflowInstance failover starting
+[WI-448][TI-0] - [INFO] 2024-04-25 06:07:27.657 +0800 o.a.d.s.m.s.MasterFailoverService:[190] - The workflowInstance's restartTime is after the dead master startup time, no need to failover
+[WI-508][TI-0] - [INFO] 2024-04-25 06:07:27.657 +0800 o.a.d.s.m.s.MasterFailoverService:[133] - WorkflowInstance failover starting
+[WI-508][TI-0] - [INFO] 2024-04-25 06:07:27.657 +0800 o.a.d.s.m.s.MasterFailoverService:[190] - The workflowInstance's restartTime is after the dead master startup time, no need to failover
+[WI-510][TI-0] - [INFO] 2024-04-25 06:07:27.657 +0800 o.a.d.s.m.s.MasterFailoverService:[133] - WorkflowInstance failover starting
+[WI-510][TI-0] - [INFO] 2024-04-25 06:07:27.657 +0800 o.a.d.s.m.s.MasterFailoverService:[190] - The workflowInstance's restartTime is after the dead master startup time, no need to failover
+[WI-511][TI-0] - [INFO] 2024-04-25 06:07:27.657 +0800 o.a.d.s.m.s.MasterFailoverService:[133] - WorkflowInstance failover starting
+[WI-511][TI-0] - [INFO] 2024-04-25 06:07:27.658 +0800 o.a.d.s.m.s.MasterFailoverService:[190] - The workflowInstance's restartTime is after the dead master startup time, no need to failover
+[WI-638][TI-0] - [INFO] 2024-04-25 06:07:27.658 +0800 o.a.d.s.m.s.MasterFailoverService:[133] - WorkflowInstance failover starting
+[WI-638][TI-0] - [INFO] 2024-04-25 06:07:27.658 +0800 o.a.d.s.m.s.MasterFailoverService:[184] - The workflowInstance is newly created, no need to failover
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:27.658 +0800 o.a.d.s.m.s.MasterFailoverService:[148] - Master[172.18.0.10:5678] failover finished, useTime:6ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:29.804 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:34.813 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:39.835 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:44.851 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:49.871 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:54.889 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:07:59.911 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:08:04.924 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:08:09.968 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 29/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:08:15.019 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:08:20.063 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:08:25.078 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:08:30.097 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:08:35.117 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:08:40.140 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:08:45.157 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:08:50.170 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:08:55.188 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:00.204 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:05.220 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:10.237 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:15.268 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:20.291 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:25.321 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:30.378 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:35.399 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:35.601 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-25 06:09:35.602 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:39.695 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-25 06:09:39.695 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:40.430 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:45.451 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:50.464 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:09:55.481 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:00.500 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:05.514 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:10.529 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:15.562 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:20.577 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:25.602 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:30.619 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:35.640 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:40.686 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:45.700 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:50.722 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:55.746 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:10:58.785 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-25 06:10:58.785 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:00.757 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:05.784 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:10.805 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:15.856 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:20.872 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:25.905 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:30.917 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:35.934 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:40.945 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:45.958 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:50.968 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:56.009 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:11:58.127 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-25 06:12:01.020 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-605][TI-1697] - [INFO] 2024-04-25 06:12:02.906 +0800 o.a.d.s.m.r.l.TaskInstanceExecutionResultEventListenFunction:[45] - Received TaskInstanceExecutionFinishEvent: TaskEvent(taskInstanceId=1697, workerAddress=172.18.1.1:1234, state=TaskExecutionStatus{code=9, desc='kill'}, startTime=Thu Apr 25 05:27:42 GMT+08:00 2024, endTime=Thu Apr 25 05:30:06 GMT+08:00 2024, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13383445003744_3/605/1697, logPath=/opt/dolphinscheduler/logs/20240425/13383445003744/3/605/1697.log, processId=86, appIds=null, event=RESULT, varPool=[], cacheTaskInstanceId=0, processInstanceId=605)
+[WI-0][TI-0] - [WARN] 2024-04-25 06:12:02.907 +0800 o.a.d.s.m.p.q.TaskExecuteThreadPool:[85] - Cannot find workflowExecuteThread from cacheManager, event: TaskEvent(taskInstanceId=1697, workerAddress=172.18.1.1:1234, state=TaskExecutionStatus{code=9, desc='kill'}, startTime=Thu Apr 25 05:27:42 GMT+08:00 2024, endTime=Thu Apr 25 05:30:06 GMT+08:00 2024, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13383445003744_3/605/1697, logPath=/opt/dolphinscheduler/logs/20240425/13383445003744/3/605/1697.log, processId=86, appIds=null, event=RESULT, varPool=[], cacheTaskInstanceId=0, processInstanceId=605)
+[WI-0][TI-0] - [INFO] 2024-04-25 06:12:06.036 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:12:11.055 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:12:16.084 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:12:21.113 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:12:26.127 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:12:31.146 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:12:36.160 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:12:41.183 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:12:46.198 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:12:51.213 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:12:56.229 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:13:01.245 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:13:06.272 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:13:11.589 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:13:16.615 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:13:21.632 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:13:26.643 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:13:31.658 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:13:36.675 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:13:41.690 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:13:46.711 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:13:51.727 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:13:56.768 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:14:01.784 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:14:06.806 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:14:11.830 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:14:16.854 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:14:21.870 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:14:26.914 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:14:31.932 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:14:36.946 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:14:41.960 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:14:46.979 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:14:52.016 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:14:57.046 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:02.060 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:07.073 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:12.094 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:17.152 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:22.166 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:24.159 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-25 06:15:24.159 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:27.178 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:32.201 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:37.219 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:42.263 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:47.297 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:51.359 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.5 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-25 06:15:51.359 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:52.318 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:15:57.350 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:02.371 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:07.388 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:12.409 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:17.440 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:18.463 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:22.453 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:27.469 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:32.503 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:37.528 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:42.561 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:47.602 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:47.751 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-04-25 06:16:47.751 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:52.614 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:54.779 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.5 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-04-25 06:16:57.630 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:02.646 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-605][TI-1697] - [INFO] 2024-04-25 06:17:03.544 +0800 o.a.d.s.m.r.l.TaskInstanceExecutionResultEventListenFunction:[45] - Received TaskInstanceExecutionFinishEvent: TaskEvent(taskInstanceId=1697, workerAddress=172.18.1.1:1234, state=TaskExecutionStatus{code=9, desc='kill'}, startTime=Thu Apr 25 05:27:42 GMT+08:00 2024, endTime=Thu Apr 25 05:30:06 GMT+08:00 2024, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13383445003744_3/605/1697, logPath=/opt/dolphinscheduler/logs/20240425/13383445003744/3/605/1697.log, processId=86, appIds=null, event=RESULT, varPool=[], cacheTaskInstanceId=0, processInstanceId=605)
+[WI-0][TI-0] - [WARN] 2024-04-25 06:17:03.544 +0800 o.a.d.s.m.p.q.TaskExecuteThreadPool:[85] - Cannot find workflowExecuteThread from cacheManager, event: TaskEvent(taskInstanceId=1697, workerAddress=172.18.1.1:1234, state=TaskExecutionStatus{code=9, desc='kill'}, startTime=Thu Apr 25 05:27:42 GMT+08:00 2024, endTime=Thu Apr 25 05:30:06 GMT+08:00 2024, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13383445003744_3/605/1697, logPath=/opt/dolphinscheduler/logs/20240425/13383445003744/3/605/1697.log, processId=86, appIds=null, event=RESULT, varPool=[], cacheTaskInstanceId=0, processInstanceId=605)
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:07.660 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:12.678 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:17.705 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:22.725 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:27.685 +0800 o.a.d.s.m.s.MasterFailoverService:[86] - Master failover service 172.18.0.10:5678 begin to failover hosts:[172.18.0.10:5678]
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:27.709 +0800 o.a.d.s.m.s.MasterFailoverService:[124] - Master[172.18.0.10:5678] failover starting there are 5 workflowInstance may need to failover, will do a deep check, workflowInstanceIds: [448, 508, 510, 511, 638]
+[WI-448][TI-0] - [INFO] 2024-04-25 06:17:27.710 +0800 o.a.d.s.m.s.MasterFailoverService:[133] - WorkflowInstance failover starting
+[WI-448][TI-0] - [INFO] 2024-04-25 06:17:27.710 +0800 o.a.d.s.m.s.MasterFailoverService:[190] - The workflowInstance's restartTime is after the dead master startup time, no need to failover
+[WI-508][TI-0] - [INFO] 2024-04-25 06:17:27.710 +0800 o.a.d.s.m.s.MasterFailoverService:[133] - WorkflowInstance failover starting
+[WI-508][TI-0] - [INFO] 2024-04-25 06:17:27.710 +0800 o.a.d.s.m.s.MasterFailoverService:[190] - The workflowInstance's restartTime is after the dead master startup time, no need to failover
+[WI-510][TI-0] - [INFO] 2024-04-25 06:17:27.710 +0800 o.a.d.s.m.s.MasterFailoverService:[133] - WorkflowInstance failover starting
+[WI-510][TI-0] - [INFO] 2024-04-25 06:17:27.710 +0800 o.a.d.s.m.s.MasterFailoverService:[190] - The workflowInstance's restartTime is after the dead master startup time, no need to failover
+[WI-511][TI-0] - [INFO] 2024-04-25 06:17:27.710 +0800 o.a.d.s.m.s.MasterFailoverService:[133] - WorkflowInstance failover starting
+[WI-511][TI-0] - [INFO] 2024-04-25 06:17:27.710 +0800 o.a.d.s.m.s.MasterFailoverService:[190] - The workflowInstance's restartTime is after the dead master startup time, no need to failover
+[WI-638][TI-0] - [INFO] 2024-04-25 06:17:27.710 +0800 o.a.d.s.m.s.MasterFailoverService:[133] - WorkflowInstance failover starting
+[WI-638][TI-0] - [INFO] 2024-04-25 06:17:27.710 +0800 o.a.d.s.m.s.MasterFailoverService:[184] - The workflowInstance is newly created, no need to failover
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:27.710 +0800 o.a.d.s.m.s.MasterFailoverService:[148] - Master[172.18.0.10:5678] failover finished, useTime:4ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:27.741 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:32.756 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:37.820 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:42.843 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:47.859 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:52.869 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 0/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:17:57.884 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:18:02.910 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:18:07.931 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:18:12.947 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:18:17.974 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-04-25 06:18:23.001 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms

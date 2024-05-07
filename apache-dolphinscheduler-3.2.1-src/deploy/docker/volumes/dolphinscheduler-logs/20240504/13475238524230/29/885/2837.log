@@ -1,0 +1,203 @@
+[INFO] 2024-05-04 02:48:44.343 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 02:48:44.346 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-04 02:48:44.347 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 02:48:44.347 +0800 - Begin to initialize task
+[INFO] 2024-05-04 02:48:44.347 +0800 - Set task startTime: 1714762124347
+[INFO] 2024-05-04 02:48:44.349 +0800 - Set task appId: 885_2837
+[INFO] 2024-05-04 02:48:44.351 +0800 - End initialize task {
+  "taskInstanceId" : 2837,
+  "taskName" : "move to processing",
+  "firstSubmitTime" : 1714762124327,
+  "startTime" : 1714762124347,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240504/13475238524230/29/885/2837.log",
+  "processId" : 0,
+  "processDefineCode" : 13475238524230,
+  "processDefineVersion" : 29,
+  "processInstanceId" : 885,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"folder\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"in\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 7,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"raw_file_dir\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}],\"rawScript\":\"# move file to the reddit processing folder\\n# but dont move it, if it already exists in the folder, for example when the selected folder to search is reddit/processing, the file may already be inside the processing folder, which will lead to an error\\nfilename=$(basename \\\"${raw_file_dir}\\\")\\nif ! grep -q \\\"${GNEW_HOME}/processing\\\" <<< \\\"${raw_file_dir}\\\"; then\\n    mv ${raw_file_dir} ${GNEW_HOME}/processing\\nelse\\n    echo JSON is already in processing\\nfi\\n\\n# update the raw_file_dir parameters in the scenario that the raw file gets moved to processing\\necho \\\"${setValue(raw_file_dir=${GNEW_HOME}/processing/${filename})}\\\"\",\"resourceList\":[]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "move to processing"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2837"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13475238524227"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504024844"
+    },
+    "folder" : {
+      "prop" : "folder",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "in"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "885"
+    },
+    "raw_file_dir" : {
+      "prop" : "raw_file_dir",
+      "direct" : "OUT",
+      "type" : "VARCHAR",
+      "value" : "${GNEW_HOME}/processing/${filename}"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240503"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocess_gnews_article"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13475238524230"
+    },
+    "is_exists" : {
+      "prop" : "is_exists",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1"
+    }
+  },
+  "taskAppId" : "885_2837",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"is_exists\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"1\"},{\"prop\":\"raw_file_dir\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"${GNEW_HOME}/processing/${filename}\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-04 02:48:44.358 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 02:48:44.358 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-04 02:48:44.358 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 02:48:44.365 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-04 02:48:44.366 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-04 02:48:44.367 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_29/885/2837 check successfully
+[INFO] 2024-05-04 02:48:44.367 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-05-04 02:48:44.368 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-04 02:48:44.368 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-04 02:48:44.368 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-05-04 02:48:44.369 +0800 - Initialize shell task params {
+  "localParams" : [ {
+    "prop" : "raw_file_dir",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  } ],
+  "varPool" : null,
+  "rawScript" : "# move file to the reddit processing folder\n# but dont move it, if it already exists in the folder, for example when the selected folder to search is reddit/processing, the file may already be inside the processing folder, which will lead to an error\nfilename=$(basename \"${raw_file_dir}\")\nif ! grep -q \"${GNEW_HOME}/processing\" <<< \"${raw_file_dir}\"; then\n    mv ${raw_file_dir} ${GNEW_HOME}/processing\nelse\n    echo JSON is already in processing\nfi\n\n# update the raw_file_dir parameters in the scenario that the raw file gets moved to processing\necho \"${setValue(raw_file_dir=${GNEW_HOME}/processing/${filename})}\"",
+  "resourceList" : [ ]
+}
+[INFO] 2024-05-04 02:48:44.369 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-04 02:48:44.369 +0800 - Set taskVarPool: [{"prop":"is_exists","direct":"IN","type":"VARCHAR","value":"1"},{"prop":"raw_file_dir","direct":"OUT","type":"VARCHAR","value":"${GNEW_HOME}/processing/${filename}"}] successfully
+[INFO] 2024-05-04 02:48:44.370 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 02:48:44.370 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-04 02:48:44.370 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 02:48:44.372 +0800 - Final Shell file is: 
+[INFO] 2024-05-04 02:48:44.372 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-04 02:48:44.372 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+# move file to the reddit processing folder
+# but dont move it, if it already exists in the folder, for example when the selected folder to search is reddit/processing, the file may already be inside the processing folder, which will lead to an error
+filename=$(basename "${GNEW_HOME}/processing/${filename}")
+if ! grep -q "${GNEW_HOME}/processing" <<< "${GNEW_HOME}/processing/${filename}"; then
+    mv ${GNEW_HOME}/processing/${filename} ${GNEW_HOME}/processing
+else
+    echo JSON is already in processing
+fi
+
+# update the raw_file_dir parameters in the scenario that the raw file gets moved to processing
+echo "${setValue(raw_file_dir=${GNEW_HOME}/processing/${filename})}"
+[INFO] 2024-05-04 02:48:44.372 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-04 02:48:44.372 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_29/885/2837/885_2837.sh
+[INFO] 2024-05-04 02:48:44.386 +0800 - process start, process id is: 2416
+[INFO] 2024-05-04 02:48:45.387 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	JSON is already in processing
+	/tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_29/885/2837/885_2837.sh: line 15: ${setValue(raw_file_dir=${GNEW_HOME}/processing/${filename})}: bad substitution
+[INFO] 2024-05-04 02:48:45.391 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_29/885/2837, processId:2416 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-05-04 02:48:45.392 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 02:48:45.392 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-04 02:48:45.392 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 02:48:45.392 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-04 02:48:45.398 +0800 - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[INFO] 2024-05-04 02:48:45.399 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-04 02:48:45.400 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_29/885/2837
+[INFO] 2024-05-04 02:48:45.400 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_29/885/2837
+[INFO] 2024-05-04 02:48:45.401 +0800 - FINALIZE_SESSION

@@ -1,0 +1,393 @@
+[INFO] 2024-05-04 03:46:25.117 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:46:25.118 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-04 03:46:25.118 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:46:25.119 +0800 - Begin to initialize task
+[INFO] 2024-05-04 03:46:25.119 +0800 - Set task startTime: 1714765585119
+[INFO] 2024-05-04 03:46:25.119 +0800 - Set task appId: 886_2848
+[INFO] 2024-05-04 03:46:25.121 +0800 - End initialize task {
+  "taskInstanceId" : 2848,
+  "taskName" : "preprocessing and kafka",
+  "firstSubmitTime" : 1714765585106,
+  "startTime" : 1714765585119,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240504/13475238524230/31/886/2848.log",
+  "processId" : 0,
+  "processDefineCode" : 13475238524230,
+  "processDefineVersion" : 31,
+  "processInstanceId" : 886,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"folder\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"in\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 7,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"$SPARK_HOME/bin/spark-submit \\\\\\n    --master local \\\\\\n    --deploy-mode client \\\\\\n    --conf spark.driver.cores=1 \\\\\\n    --conf spark.driver.memory=1G \\\\\\n    --conf spark.executor.instances=1 \\\\\\n    --conf spark.executor.cores=1 \\\\\\n    --conf spark.executor.memory=1G \\\\\\n    --name gnews_preprocessing \\\\\\n    --files ${raw_file_dir} \\\\\\n    --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 \\\\\\n    --conf spark.driver.extraJavaOptions=\\\"-Divy.cache.dir=/tmp -Divy.home=/tmp\\\" \\\\\\n    spark_gnews_preprocessing.py\\n\",\"resourceList\":[{\"id\":null,\"resourceName\":\"file:/dolphinscheduler/default/resources/spark_gnews_preprocessing.py\",\"res\":null}]}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11\nexport PYSPARK_PYTHON=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocessing and kafka"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2848"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13475238524229"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504034625"
+    },
+    "folder" : {
+      "prop" : "folder",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "in"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "886"
+    },
+    "raw_file_dir" : {
+      "prop" : "raw_file_dir",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news/processing/830-20240503110322.json"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240503"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocess_gnews_article"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13475238524230"
+    },
+    "is_exists" : {
+      "prop" : "is_exists",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1"
+    }
+  },
+  "taskAppId" : "886_2848",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"raw_file_dir\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"/local_storage/google_news/processing/830-20240503110322.json\"},{\"prop\":\"is_exists\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"1\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-04 03:46:25.122 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:46:25.123 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-04 03:46:25.123 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:46:25.126 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-04 03:46:25.127 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-04 03:46:25.127 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_31/886/2848 check successfully
+[INFO] 2024-05-04 03:46:25.127 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-05-04 03:46:25.160 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={file:/dolphinscheduler/default/resources/spark_gnews_preprocessing.py=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=file:/dolphinscheduler/default/resources/spark_gnews_preprocessing.py, resourceRelativePath=spark_gnews_preprocessing.py, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_31/886/2848/spark_gnews_preprocessing.py)})
+[INFO] 2024-05-04 03:46:25.161 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-04 03:46:25.162 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-05-04 03:46:25.164 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "$SPARK_HOME/bin/spark-submit \\\n    --master local \\\n    --deploy-mode client \\\n    --conf spark.driver.cores=1 \\\n    --conf spark.driver.memory=1G \\\n    --conf spark.executor.instances=1 \\\n    --conf spark.executor.cores=1 \\\n    --conf spark.executor.memory=1G \\\n    --name gnews_preprocessing \\\n    --files ${raw_file_dir} \\\n    --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 \\\n    --conf spark.driver.extraJavaOptions=\"-Divy.cache.dir=/tmp -Divy.home=/tmp\" \\\n    spark_gnews_preprocessing.py\n",
+  "resourceList" : [ {
+    "id" : null,
+    "resourceName" : "file:/dolphinscheduler/default/resources/spark_gnews_preprocessing.py",
+    "res" : null
+  } ]
+}
+[INFO] 2024-05-04 03:46:25.165 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-04 03:46:25.166 +0800 - Set taskVarPool: [{"prop":"raw_file_dir","direct":"IN","type":"VARCHAR","value":"/local_storage/google_news/processing/830-20240503110322.json"},{"prop":"is_exists","direct":"IN","type":"VARCHAR","value":"1"}] successfully
+[INFO] 2024-05-04 03:46:25.166 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:46:25.167 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-04 03:46:25.167 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:46:25.168 +0800 - Final Shell file is: 
+[INFO] 2024-05-04 03:46:25.169 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-04 03:46:25.169 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYSPARK_PYTHON=/bin/python3.11
+$SPARK_HOME/bin/spark-submit \
+    --master local \
+    --deploy-mode client \
+    --conf spark.driver.cores=1 \
+    --conf spark.driver.memory=1G \
+    --conf spark.executor.instances=1 \
+    --conf spark.executor.cores=1 \
+    --conf spark.executor.memory=1G \
+    --name gnews_preprocessing \
+    --files /local_storage/google_news/processing/830-20240503110322.json \
+    --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 \
+    --conf spark.driver.extraJavaOptions="-Divy.cache.dir=/tmp -Divy.home=/tmp" \
+    spark_gnews_preprocessing.py
+
+[INFO] 2024-05-04 03:46:25.170 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-04 03:46:25.170 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_31/886/2848/886_2848.sh
+[INFO] 2024-05-04 03:46:25.179 +0800 - process start, process id is: 537
+[INFO] 2024-05-04 03:46:26.182 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-05-04 03:46:30.196 +0800 -  -> 
+	:: loading settings :: url = jar:file:/opt/spark-3.5.1-bin-hadoop3/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+	Ivy Default Cache set to: /tmp
+	The jars for the packages stored in: /tmp/jars
+	org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+	:: resolving dependencies :: org.apache.spark#spark-submit-parent-3234c5f8-cde8-4bac-83cb-a5756798e094;1.0
+		confs: [default]
+[INFO] 2024-05-04 03:46:35.201 +0800 -  -> 
+		found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+[INFO] 2024-05-04 03:46:36.209 +0800 -  -> 
+		found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+		found org.apache.kafka#kafka-clients;3.4.1 in central
+[INFO] 2024-05-04 03:46:37.211 +0800 -  -> 
+		found org.lz4#lz4-java;1.8.0 in central
+		found org.xerial.snappy#snappy-java;1.1.10.3 in central
+[INFO] 2024-05-04 03:46:39.214 +0800 -  -> 
+		found org.slf4j#slf4j-api;2.0.7 in central
+[INFO] 2024-05-04 03:46:42.219 +0800 -  -> 
+		found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+		found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+[INFO] 2024-05-04 03:46:45.232 +0800 -  -> 
+		found commons-logging#commons-logging;1.1.3 in central
+[INFO] 2024-05-04 03:46:46.233 +0800 -  -> 
+		found com.google.code.findbugs#jsr305;3.0.0 in central
+[INFO] 2024-05-04 03:46:49.241 +0800 -  -> 
+		found org.apache.commons#commons-pool2;2.11.1 in central
+	downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.5.1/spark-sql-kafka-0-10_2.12-3.5.1.jar ...
+[INFO] 2024-05-04 03:46:50.242 +0800 -  -> 
+		[SUCCESSFUL ] org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1!spark-sql-kafka-0-10_2.12.jar (842ms)
+	downloading https://repo1.maven.org/maven2/org/apache/spark/spark-token-provider-kafka-0-10_2.12/3.5.1/spark-token-provider-kafka-0-10_2.12-3.5.1.jar ...
+		[SUCCESSFUL ] org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1!spark-token-provider-kafka-0-10_2.12.jar (403ms)
+	downloading https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/3.4.1/kafka-clients-3.4.1.jar ...
+[INFO] 2024-05-04 03:46:52.245 +0800 -  -> 
+		[SUCCESSFUL ] org.apache.kafka#kafka-clients;3.4.1!kafka-clients.jar (2357ms)
+[INFO] 2024-05-04 03:46:53.253 +0800 -  -> 
+	downloading https://repo1.maven.org/maven2/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar ...
+		[SUCCESSFUL ] com.google.code.findbugs#jsr305;3.0.0!jsr305.jar (391ms)
+	downloading https://repo1.maven.org/maven2/org/apache/commons/commons-pool2/2.11.1/commons-pool2-2.11.1.jar ...
+		[SUCCESSFUL ] org.apache.commons#commons-pool2;2.11.1!commons-pool2.jar (426ms)
+	downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-client-runtime/3.3.4/hadoop-client-runtime-3.3.4.jar ...
+[INFO] 2024-05-04 03:47:00.266 +0800 -  -> 
+		[SUCCESSFUL ] org.apache.hadoop#hadoop-client-runtime;3.3.4!hadoop-client-runtime.jar (7134ms)
+[INFO] 2024-05-04 03:47:01.267 +0800 -  -> 
+	downloading https://repo1.maven.org/maven2/org/lz4/lz4-java/1.8.0/lz4-java-1.8.0.jar ...
+		[SUCCESSFUL ] org.lz4#lz4-java;1.8.0!lz4-java.jar (510ms)
+	downloading https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.10.3/snappy-java-1.1.10.3.jar ...
+[INFO] 2024-05-04 03:47:02.267 +0800 -  -> 
+		[SUCCESSFUL ] org.xerial.snappy#snappy-java;1.1.10.3!snappy-java.jar(bundle) (728ms)
+	downloading https://repo1.maven.org/maven2/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar ...
+		[SUCCESSFUL ] org.slf4j#slf4j-api;2.0.7!slf4j-api.jar (411ms)
+	downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-client-api/3.3.4/hadoop-client-api-3.3.4.jar ...
+[INFO] 2024-05-04 03:47:06.273 +0800 -  -> 
+		[SUCCESSFUL ] org.apache.hadoop#hadoop-client-api;3.3.4!hadoop-client-api.jar (4102ms)
+	downloading https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar ...
+[INFO] 2024-05-04 03:47:07.274 +0800 -  -> 
+		com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+		commons-logging#commons-logging;1.1.3 from central in [default]
+		org.apache.commons#commons-pool2;2.11.1 from central in [default]
+		org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+		org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+		org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+		org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+		org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+		org.lz4#lz4-java;1.8.0 from central in [default]
+		org.slf4j#slf4j-api;2.0.7 from central in [default]
+		org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+		---------------------------------------------------------------------
+		|                  |            modules            ||   artifacts   |
+		|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+		---------------------------------------------------------------------
+		|      default     |   11  |   11  |   11  |   0   ||   11  |   11  |
+		---------------------------------------------------------------------
+	:: retrieving :: org.apache.spark#spark-submit-parent-3234c5f8-cde8-4bac-83cb-a5756798e094
+		confs: [default]
+		11 artifacts copied, 0 already retrieved (56767kB/348ms)
+	24/05/04 03:47:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2024-05-04 03:47:09.276 +0800 -  -> 
+	24/05/04 03:47:09 INFO SparkContext: Running Spark version 3.5.1
+	24/05/04 03:47:09 INFO SparkContext: OS info Linux, 6.5.0-28-generic, amd64
+	24/05/04 03:47:09 INFO SparkContext: Java version 1.8.0_402
+	24/05/04 03:47:09 INFO ResourceUtils: ==============================================================
+	24/05/04 03:47:09 INFO ResourceUtils: No custom resources configured for spark.driver.
+	24/05/04 03:47:09 INFO ResourceUtils: ==============================================================
+	24/05/04 03:47:09 INFO SparkContext: Submitted application: gnews_preprocessing
+	24/05/04 03:47:09 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+	24/05/04 03:47:09 INFO ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+	24/05/04 03:47:09 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[INFO] 2024-05-04 03:47:10.277 +0800 -  -> 
+	24/05/04 03:47:09 INFO SecurityManager: Changing view acls to: default
+	24/05/04 03:47:09 INFO SecurityManager: Changing modify acls to: default
+	24/05/04 03:47:09 INFO SecurityManager: Changing view acls groups to: 
+	24/05/04 03:47:09 INFO SecurityManager: Changing modify acls groups to: 
+	24/05/04 03:47:09 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: default; groups with view permissions: EMPTY; users with modify permissions: default; groups with modify permissions: EMPTY
+	24/05/04 03:47:10 INFO Utils: Successfully started service 'sparkDriver' on port 33787.
+	24/05/04 03:47:10 INFO SparkEnv: Registering MapOutputTracker
+	24/05/04 03:47:10 INFO SparkEnv: Registering BlockManagerMaster
+[INFO] 2024-05-04 03:47:11.283 +0800 -  -> 
+	24/05/04 03:47:10 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+	24/05/04 03:47:10 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+	24/05/04 03:47:10 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+	24/05/04 03:47:10 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-b90e426d-b6af-4e1d-a133-4d099d7a2633
+	24/05/04 03:47:10 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+	24/05/04 03:47:10 INFO SparkEnv: Registering OutputCommitCoordinator
+	24/05/04 03:47:11 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[INFO] 2024-05-04 03:47:12.284 +0800 -  -> 
+	24/05/04 03:47:11 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+	24/05/04 03:47:11 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar at spark://addf0afec0d4:33787/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1714765628994
+	24/05/04 03:47:11 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar at spark://addf0afec0d4:33787/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1714765628994
+	24/05/04 03:47:11 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar at spark://addf0afec0d4:33787/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1714765628994
+	24/05/04 03:47:11 INFO SparkContext: Added JAR file:///tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar at spark://addf0afec0d4:33787/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1714765628994
+	24/05/04 03:47:11 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar at spark://addf0afec0d4:33787/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1714765628994
+	24/05/04 03:47:11 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar at spark://addf0afec0d4:33787/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1714765628994
+	24/05/04 03:47:11 INFO SparkContext: Added JAR file:///tmp/jars/org.lz4_lz4-java-1.8.0.jar at spark://addf0afec0d4:33787/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1714765628994
+	24/05/04 03:47:11 INFO SparkContext: Added JAR file:///tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar at spark://addf0afec0d4:33787/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1714765628994
+	24/05/04 03:47:11 INFO SparkContext: Added JAR file:///tmp/jars/org.slf4j_slf4j-api-2.0.7.jar at spark://addf0afec0d4:33787/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1714765628994
+	24/05/04 03:47:11 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar at spark://addf0afec0d4:33787/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1714765628994
+	24/05/04 03:47:11 INFO SparkContext: Added JAR file:///tmp/jars/commons-logging_commons-logging-1.1.3.jar at spark://addf0afec0d4:33787/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1714765628994
+	24/05/04 03:47:11 ERROR SparkContext: Error initializing SparkContext.
+	java.io.FileNotFoundException: File file:/local_storage/google_news/processing/830-20240503110322.json does not exist
+		at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+		at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+		at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+		at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+		at org.apache.spark.SparkContext.addFile(SparkContext.scala:1755)
+		at org.apache.spark.SparkContext.$anonfun$new$16(SparkContext.scala:533)
+		at org.apache.spark.SparkContext.$anonfun$new$16$adapted(SparkContext.scala:533)
+		at scala.collection.immutable.List.foreach(List.scala:431)
+		at org.apache.spark.SparkContext.<init>(SparkContext.scala:533)
+		at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+		at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+		at py4j.Gateway.invoke(Gateway.java:238)
+		at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+		at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+		at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+		at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+		at java.lang.Thread.run(Thread.java:750)
+	24/05/04 03:47:11 INFO SparkContext: SparkContext is stopping with exitCode 0.
+	24/05/04 03:47:11 INFO SparkUI: Stopped Spark web UI at http://addf0afec0d4:4040
+	24/05/04 03:47:11 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+	24/05/04 03:47:11 INFO MemoryStore: MemoryStore cleared
+	24/05/04 03:47:11 INFO BlockManager: BlockManager stopped
+	24/05/04 03:47:11 INFO BlockManagerMaster: BlockManagerMaster stopped
+	24/05/04 03:47:11 WARN MetricsSystem: Stopping a MetricsSystem that is not running
+	24/05/04 03:47:11 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+	24/05/04 03:47:11 INFO SparkContext: Successfully stopped SparkContext
+	Traceback (most recent call last):
+	  File "/tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_31/886/2848/spark_gnews_preprocessing.py", line 12, in <module>
+	    sc = pyspark.SparkContext(appName="gnews_preprocessing")
+	         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/context.py", line 203, in __init__
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/context.py", line 296, in _do_init
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/context.py", line 421, in _initialize_context
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1587, in __call__
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 326, in get_return_value
+	py4j.protocol.Py4JJavaError: An error occurred while calling None.org.apache.spark.api.java.JavaSparkContext.
+	: java.io.FileNotFoundException: File file:/local_storage/google_news/processing/830-20240503110322.json does not exist
+		at org.apache.hadoop.fs.RawLocalFileSystem.deprecatedGetFileStatus(RawLocalFileSystem.java:779)
+		at org.apache.hadoop.fs.RawLocalFileSystem.getFileLinkStatusInternal(RawLocalFileSystem.java:1100)
+		at org.apache.hadoop.fs.RawLocalFileSystem.getFileStatus(RawLocalFileSystem.java:769)
+		at org.apache.hadoop.fs.FilterFileSystem.getFileStatus(FilterFileSystem.java:462)
+		at org.apache.spark.SparkContext.addFile(SparkContext.scala:1755)
+		at org.apache.spark.SparkContext.$anonfun$new$16(SparkContext.scala:533)
+		at org.apache.spark.SparkContext.$anonfun$new$16$adapted(SparkContext.scala:533)
+		at scala.collection.immutable.List.foreach(List.scala:431)
+		at org.apache.spark.SparkContext.<init>(SparkContext.scala:533)
+		at org.apache.spark.api.java.JavaSparkContext.<init>(JavaSparkContext.scala:58)
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+		at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+		at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+		at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+		at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:247)
+		at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+		at py4j.Gateway.invoke(Gateway.java:238)
+		at py4j.commands.ConstructorCommand.invokeConstructor(ConstructorCommand.java:80)
+		at py4j.commands.ConstructorCommand.execute(ConstructorCommand.java:69)
+		at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+		at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+		at java.lang.Thread.run(Thread.java:750)
+	
+	24/05/04 03:47:11 INFO ShutdownHookManager: Shutdown hook called
+	24/05/04 03:47:11 INFO ShutdownHookManager: Deleting directory /tmp/spark-dae17d46-33a6-4d03-8660-c2348c2f7b1e
+	24/05/04 03:47:11 INFO ShutdownHookManager: Deleting directory /tmp/spark-c763f07e-4564-4d25-b3e7-c9d6dd6e1c49
+[INFO] 2024-05-04 03:47:12.287 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_31/886/2848, processId:537 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-05-04 03:47:12.288 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:47:12.289 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-04 03:47:12.289 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 03:47:12.290 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-04 03:47:12.296 +0800 - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[INFO] 2024-05-04 03:47:12.298 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-04 03:47:12.298 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_31/886/2848
+[INFO] 2024-05-04 03:47:12.300 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_31/886/2848
+[INFO] 2024-05-04 03:47:12.304 +0800 - FINALIZE_SESSION

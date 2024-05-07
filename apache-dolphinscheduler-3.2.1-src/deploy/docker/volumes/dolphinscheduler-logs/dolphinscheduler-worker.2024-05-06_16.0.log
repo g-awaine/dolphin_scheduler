@@ -1,0 +1,917 @@
+[WI-0][TI-0] - [WARN] 2024-05-06 16:01:46.388 +0800 o.a.d.e.b.s.JdkDynamicServerHandler:[147] - [id: 0x329e840a, L:/172.18.1.1:1234 - R:/172.18.0.11:47844] is not writable, over high water level : 65536
+[WI-0][TI-0] - [WARN] 2024-05-06 16:01:46.403 +0800 o.a.d.e.b.s.JdkDynamicServerHandler:[154] - [id: 0x329e840a, L:/172.18.1.1:1234 - R:/172.18.0.11:47844] is writable, to low water : 32768
+[WI-0][TI-3939] - [INFO] 2024-05-06 16:02:02.298 +0800 o.a.d.s.w.m.MessageRetryRunner:[132] - Begin retry send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3939, processInstanceId=1050, status=6, startTime=1714982368420, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3939.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3939, endTime=1714982386657, processId=9373, appIds=, varPool=[], eventCreateTime=0, eventSendTime=0)
+[WI-0][TI-3939] - [INFO] 2024-05-06 16:02:02.307 +0800 o.a.d.s.w.m.MessageRetryRunner:[135] - Success send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3939, processInstanceId=1050, status=6, startTime=1714982368420, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3939.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3939, endTime=1714982386657, processId=9373, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714982522298)
+[WI-0][TI-0] - [INFO] 2024-05-06 16:02:07.446 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7020057306590257 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-05-06 16:02:11.116 +0800 o.a.d.e.b.s.JdkDynamicServerHandler:[147] - [id: 0x329e840a, L:/172.18.1.1:1234 - R:/172.18.0.11:47844] is not writable, over high water level : 65536
+[WI-0][TI-0] - [WARN] 2024-05-06 16:02:11.116 +0800 o.a.d.e.b.s.JdkDynamicServerHandler:[154] - [id: 0x329e840a, L:/172.18.1.1:1234 - R:/172.18.0.11:47844] is writable, to low water : 32768
+[WI-0][TI-0] - [INFO] 2024-05-06 16:02:16.479 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7097701149425287 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-3939] - [INFO] 2024-05-06 16:07:02.343 +0800 o.a.d.s.w.m.MessageRetryRunner:[132] - Begin retry send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3939, processInstanceId=1050, status=6, startTime=1714982368420, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3939.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3939, endTime=1714982386657, processId=9373, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714982522298)
+[WI-0][TI-3939] - [INFO] 2024-05-06 16:07:02.347 +0800 o.a.d.s.w.m.MessageRetryRunner:[135] - Success send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3939, processInstanceId=1050, status=6, startTime=1714982368420, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3939.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3939, endTime=1714982386657, processId=9373, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714982822342)
+[WI-0][TI-3939] - [INFO] 2024-05-06 16:12:02.709 +0800 o.a.d.s.w.m.MessageRetryRunner:[132] - Begin retry send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3939, processInstanceId=1050, status=6, startTime=1714982368420, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3939.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3939, endTime=1714982386657, processId=9373, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714982822342)
+[WI-0][TI-3939] - [INFO] 2024-05-06 16:12:02.716 +0800 o.a.d.s.w.m.MessageRetryRunner:[135] - Success send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3939, processInstanceId=1050, status=6, startTime=1714982368420, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3939.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3939, endTime=1714982386657, processId=9373, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714983122709)
+[WI-0][TI-3939] - [INFO] 2024-05-06 16:17:02.970 +0800 o.a.d.s.w.m.MessageRetryRunner:[132] - Begin retry send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3939, processInstanceId=1050, status=6, startTime=1714982368420, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3939.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3939, endTime=1714982386657, processId=9373, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714983122709)
+[WI-0][TI-3939] - [INFO] 2024-05-06 16:17:02.973 +0800 o.a.d.s.w.m.MessageRetryRunner:[135] - Success send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3939, processInstanceId=1050, status=6, startTime=1714982368420, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3939.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3939, endTime=1714982386657, processId=9373, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714983422970)
+[WI-0][TI-0] - [INFO] 2024-05-06 16:20:19.207 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7018072289156627 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-3939] - [INFO] 2024-05-06 16:22:03.270 +0800 o.a.d.s.w.m.MessageRetryRunner:[132] - Begin retry send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3939, processInstanceId=1050, status=6, startTime=1714982368420, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3939.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3939, endTime=1714982386657, processId=9373, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714983422970)
+[WI-0][TI-3939] - [INFO] 2024-05-06 16:22:03.276 +0800 o.a.d.s.w.m.MessageRetryRunner:[135] - Success send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3939, processInstanceId=1050, status=6, startTime=1714982368420, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3939.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3939, endTime=1714982386657, processId=9373, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714983723270)
+[WI-0][TI-0] - [INFO] 2024-05-06 16:24:47.576 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7823529411764706 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:26:38.401 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7243401759530792 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-05-06 16:35:46.354 +0800 o.a.z.ClientCnxn:[1249] - Client session timed out, have not heard from server in 536894ms for session id 0x1000003f2f20001
+[WI-0][TI-3939] - [INFO] 2024-05-06 16:35:46.377 +0800 o.a.d.s.w.m.MessageRetryRunner:[132] - Begin retry send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3939, processInstanceId=1050, status=6, startTime=1714982368420, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3939.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3939, endTime=1714982386657, processId=9373, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714983723270)
+[WI-0][TI-0] - [WARN] 2024-05-06 16:35:46.569 +0800 o.a.z.ClientCnxn:[1292] - Session 0x1000003f2f20001 for server dolphinscheduler-zookeeper/172.18.0.6:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 536894ms for session id 0x1000003f2f20001
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1250)
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:46.823 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: SUSPENDED
+[WI-0][TI-0] - [WARN] 2024-05-06 16:35:46.825 +0800 o.a.d.p.r.z.ZookeeperConnectionStateListener:[50] - Registry suspended
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:46.828 +0800 o.a.d.s.w.r.WorkerConnectionStateListener:[42] - Worker received a SUSPENDED event from registry, the current server state is RUNNING
+[WI-0][TI-3939] - [WARN] 2024-05-06 16:35:46.844 +0800 o.a.d.s.w.m.MessageRetryRunner:[139] - Retry send message to master error
+java.lang.reflect.UndeclaredThrowableException: null
+	at com.sun.proxy.$Proxy158.onTaskInstanceExecutionFinish(Unknown Source)
+	at org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionFinishEventSender.sendEvent(TaskInstanceExecutionFinishEventSender.java:39)
+	at org.apache.dolphinscheduler.server.worker.message.TaskInstanceExecutionFinishEventSender.sendEvent(TaskInstanceExecutionFinishEventSender.java:28)
+	at org.apache.dolphinscheduler.server.worker.message.MessageRetryRunner.run(MessageRetryRunner.java:134)
+Caused by: org.apache.dolphinscheduler.extract.base.exception.RemotingException: Host(ip=172.18.0.13, port=5678)
+	at org.apache.dolphinscheduler.extract.base.NettyRemotingClient.sendSync(NettyRemotingClient.java:217)
+	at org.apache.dolphinscheduler.extract.base.client.SyncClientMethodInvoker.invoke(SyncClientMethodInvoker.java:46)
+	at org.apache.dolphinscheduler.extract.base.client.ClientInvocationHandler.invoke(ClientInvocationHandler.java:55)
+	... 4 common frames omitted
+Caused by: io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source)
+[WI-0][TI-0] - [ERROR] 2024-05-06 16:35:46.844 +0800 o.a.d.e.b.NettyRemotingClient:[207] - Send Sync request Transporter(header=TransporterHeader(methodIdentifier=public abstract void org.apache.dolphinscheduler.extract.master.ITaskInstanceExecutionEventListener.onTaskInstanceExecutionFinish(org.apache.dolphinscheduler.extract.master.transportor.TaskInstanceExecutionFinishEvent), opaque=148), body=[123, 34, 97, 114, 103, 115, 34, 58, 91, 34, 101, 121, 74, 48, 89, 88, 78, 114, 83, 87, 53, 122, 100, 71, 70, 117, 89, 50, 86, 74, 90, 67, 73, 54, 77, 122, 107, 122, 79, 83, 119, 105, 99, 72, 74, 118, 89, 50, 86, 122, 99, 48, 108, 117, 99, 51, 82, 104, 98, 109, 78, 108, 83, 87, 81, 105, 79, 106, 69, 119, 78, 84, 65, 115, 73, 110, 78, 48, 89, 88, 82, 49, 99, 121, 73, 54, 78, 105, 119, 105, 99, 51, 82, 104, 99, 110, 82, 85, 97, 87, 49, 108, 73, 106, 111, 120, 78, 122, 69, 48, 79, 84, 103, 121, 77, 122, 89, 52, 78, 68, 73, 119, 76, 67, 74, 48, 89, 88, 78, 114, 83, 87, 53, 122, 100, 71, 70, 117, 89, 50, 86, 73, 98, 51, 78, 48, 73, 106, 111, 105, 77, 84, 99, 121, 76, 106, 69, 52, 76, 106, 69, 117, 77, 84, 111, 120, 77, 106, 77, 48, 73, 105, 119, 105, 100, 50, 57, 121, 97, 50, 90, 115, 98, 51, 100, 74, 98, 110, 78, 48, 89, 87, 53, 106, 90, 85, 104, 118, 99, 51, 81, 105, 79, 105, 73, 120, 78, 122, 73, 117, 77, 84, 103, 117, 77, 67, 52, 120, 77, 122, 111, 49, 78, 106, 99, 52, 73, 105, 119, 105, 98, 71, 57, 110, 85, 71, 70, 48, 97, 67, 73, 54, 73, 105, 57, 118, 99, 72, 81, 118, 90, 71, 57, 115, 99, 71, 104, 112, 98, 110, 78, 106, 97, 71, 86, 107, 100, 87, 120, 108, 99, 105, 57, 115, 98, 50, 100, 122, 76, 122, 73, 119, 77, 106, 81, 119, 78, 84, 65, 50, 76, 122, 69, 122, 78, 84, 65, 49, 77, 106, 107, 52, 78, 84, 81, 50, 77, 106, 99, 121, 76, 122, 73, 120, 76, 122, 69, 119, 78, 84, 65, 118, 77, 122, 107, 122, 79, 83, 53, 115, 98, 50, 99, 105, 76, 67, 74, 108, 101, 71, 86, 106, 100, 88, 82, 108, 85, 71, 70, 48, 97, 67, 73, 54, 73, 105, 57, 48, 98, 88, 65, 118, 90, 71, 57, 115, 99, 71, 104, 112, 98, 110, 78, 106, 97, 71, 86, 107, 100, 87, 120, 108, 99, 105, 57, 108, 101, 71, 86, 106, 76, 51, 66, 121, 98, 50, 78, 108, 99, 51, 77, 118, 90, 71, 86, 109, 89, 88, 86, 115, 100, 67, 56, 120, 77, 122, 65, 119, 77, 84, 69, 53, 78, 68, 81, 52, 77, 122, 81, 52, 79, 67, 56, 120, 77, 122, 85, 119, 78, 84, 73, 53, 79, 68, 85, 48, 78, 106, 73, 51, 77, 108, 56, 121, 77, 83, 56, 120, 77, 68, 85, 119, 76, 122, 77, 53, 77, 122, 107, 105, 76, 67, 74, 108, 98, 109, 82, 85, 97, 87, 49, 108, 73, 106, 111, 120, 78, 122, 69, 48, 79, 84, 103, 121, 77, 122, 103, 50, 78, 106, 85, 51, 76, 67, 74, 119, 99, 109, 57, 106, 90, 88, 78, 122, 83, 87, 81, 105, 79, 106, 107, 122, 78, 122, 77, 115, 73, 109, 70, 119, 99, 69, 108, 107, 99, 121, 73, 54, 73, 105, 73, 115, 73, 110, 90, 104, 99, 108, 66, 118, 98, 50, 119, 105, 79, 105, 74, 98, 88, 83, 73, 115, 73, 109, 86, 50, 90, 87, 53, 48, 81, 51, 74, 108, 89, 88, 82, 108, 86, 71, 108, 116, 90, 83, 73, 54, 77, 67, 119, 105, 90, 88, 90, 108, 98, 110, 82, 84, 90, 87, 53, 107, 86, 71, 108, 116, 90, 83, 73, 54, 77, 84, 99, 120, 78, 68, 107, 52, 78, 68, 85, 48, 78, 106, 77, 51, 78, 51, 48, 61, 34, 93, 44, 34, 97, 114, 103, 115, 84, 121, 112, 101, 115, 34, 58, 91, 34, 111, 114, 103, 46, 97, 112, 97, 99, 104, 101, 46, 100, 111, 108, 112, 104, 105, 110, 115, 99, 104, 101, 100, 117, 108, 101, 114, 46, 101, 120, 116, 114, 97, 99, 116, 46, 109, 97, 115, 116, 101, 114, 46, 116, 114, 97, 110, 115, 112, 111, 114, 116, 111, 114, 46, 84, 97, 115, 107, 73, 110, 115, 116, 97, 110, 99, 101, 69, 120, 101, 99, 117, 116, 105, 111, 110, 70, 105, 110, 105, 115, 104, 69, 118, 101, 110, 116, 34, 93, 125]) to host Host(ip=172.18.0.13, port=5678) failed
+io.netty.channel.StacklessClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(Object, ChannelPromise)(Unknown Source)
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:48.699 +0800 o.a.z.ClientCnxn:[1171] - Opening socket connection to server dolphinscheduler-zookeeper/172.18.0.6:2181.
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:48.700 +0800 o.a.z.ClientCnxn:[1173] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:48.726 +0800 o.a.z.ClientCnxn:[1005] - Socket connection established, initiating session, client: /172.18.1.1:40488, server: dolphinscheduler-zookeeper/172.18.0.6:2181
+[WI-0][TI-0] - [WARN] 2024-05-06 16:35:48.736 +0800 o.a.z.ClientCnxn:[1429] - Unable to reconnect to ZooKeeper service, session 0x1000003f2f20001 has expired
+[WI-0][TI-0] - [WARN] 2024-05-06 16:35:48.736 +0800 o.a.z.ClientCnxn:[1292] - Session 0x1000003f2f20001 for server dolphinscheduler-zookeeper/172.18.0.6:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x1000003f2f20001 has expired
+	at org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1430)
+	at org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:154)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:86)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WI-0][TI-0] - [WARN] 2024-05-06 16:35:48.745 +0800 o.a.c.ConnectionState:[316] - Session expired event received
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:48.747 +0800 o.a.z.ZooKeeper:[637] - Initiating client connection, connectString=dolphinscheduler-zookeeper:2181 sessionTimeout=30000 watcher=org.apache.curator.ConnectionState@1de08775
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:48.747 +0800 o.a.z.ClientCnxnSocket:[239] - jute.maxbuffer value is 1048575 Bytes
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:48.748 +0800 o.a.z.ClientCnxn:[1732] - zookeeper.request.timeout value is 0. feature enabled=false
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:48.751 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: LOST
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:48.876 +0800 o.a.z.ClientCnxn:[568] - EventThread shut down for session: 0x1000003f2f20001
+[WI-0][TI-0] - [WARN] 2024-05-06 16:35:48.937 +0800 o.a.d.p.r.z.ZookeeperConnectionStateListener:[42] - Registry disconnected
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:48.938 +0800 o.a.d.s.w.r.WorkerConnectionStateListener:[42] - Worker received a DISCONNECTED event from registry, the current server state is RUNNING
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:49.007 +0800 o.a.z.ClientCnxn:[1171] - Opening socket connection to server dolphinscheduler-zookeeper/172.18.0.6:2181.
+[WI-0][TI-0] - [WARN] 2024-05-06 16:35:49.012 +0800 o.a.d.s.w.r.WorkerWaitingStrategy:[126] - Worker server clear the tasks due to lost connection from registry
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:49.012 +0800 o.a.z.ClientCnxn:[1173] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+[WI-0][TI-0] - [WARN] 2024-05-06 16:35:49.013 +0800 o.a.d.s.w.r.WorkerWaitingStrategy:[128] - Worker server clear the retry message due to lost connection from registry
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:49.013 +0800 o.a.d.s.w.r.WorkerWaitingStrategy:[73] - Worker disconnect from registry will try to reconnect in 100 s
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:49.065 +0800 o.a.z.ClientCnxn:[1005] - Socket connection established, initiating session, client: /172.18.1.1:40500, server: dolphinscheduler-zookeeper/172.18.0.6:2181
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:49.127 +0800 o.a.z.ClientCnxn:[1444] - Session establishment complete on server dolphinscheduler-zookeeper/172.18.0.6:2181, session id = 0x1000003f2f20006, negotiated timeout = 30000
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:49.149 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: RECONNECTED
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:49.157 +0800 o.a.d.p.r.z.ZookeeperConnectionStateListener:[46] - Registry reconnected
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:49.157 +0800 o.a.d.s.w.r.WorkerConnectionStateListener:[42] - Worker received a RECONNECTED event from registry, the current server state is WAITING
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:49.157 +0800 o.a.d.s.w.r.WorkerWaitingStrategy:[105] - Recover from waiting success, the current server status is RUNNING
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:49.285 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:50.282 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9859154929577465 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:51.328 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.947945205479452 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:52.330 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9580419580419581 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:53.341 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9375 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:54.343 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9727626459143969 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:35:55.344 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9566787003610109 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-3939] - [INFO] 2024-05-06 16:36:02.504 +0800 o.a.d.s.w.r.o.UpdateWorkflowHostOperationFunction:[49] - Received UpdateWorkflowHostRequest: UpdateWorkflowHostRequest(taskInstanceId=3939, workflowHost=172.18.0.13:5678)
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:02.580 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=3940, taskName=[null check] filtered data persistence, firstSubmitTime=1714984562530, startTime=0, taskType=DATA_QUALITY, workflowInstanceHost=172.18.0.13:5678, host=172.18.1.1:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13505298546272, processDefineVersion=21, appIds=null, processInstanceId=1050, scheduleTime=0, globalParams=null, executorId=1, cmdTypeIfComplement=2, tenantCode=default, processDefineId=0, projectId=0, projectCode=13001194483488, taskParams={"localParams":[],"resourceList":[],"ruleId":6,"ruleInputParameter":{"check_type":"0","comparison_type":1,"comparison_name":"0","failure_strategy":"0","operator":"0","src_connector_type":1,"src_datasource_id":6,"src_database":"persistence","src_field":"content","src_table":"filtered_data_persistence","threshold":"0"},"sparkParameters":{"deployMode":"local","driverCores":1,"driverMemory":"512M","executorCores":1,"executorMemory":"1G","numExecutors":1,"others":"--conf spark.driver.extraJavaOptions=\"-Divy.cache.dir=/tmp -Divy.home=/tmp\" \\\n--packages org.postgresql:postgresql:42.7.3","yarnQueue":""}}, environmentConfig=export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYSPARK_PYTHON=/bin/python3.11, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='[null check] filtered data persistence'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13001194483488'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='1050'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240506'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240505'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='3940'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='qualti_test'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13505264408800'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13505298546272'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240506163602'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=org.apache.dolphinscheduler.plugin.task.api.DataQualityTaskExecutionContext@3935f78f, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.584 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: [null check] filtered data persistence to wait queue success
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.584 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.587 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.587 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.587 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.587 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1714984562587
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.587 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 1050_3940
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.588 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 3940,
+  "taskName" : "[null check] filtered data persistence",
+  "firstSubmitTime" : 1714984562530,
+  "startTime" : 1714984562587,
+  "taskType" : "DATA_QUALITY",
+  "workflowInstanceHost" : "172.18.0.13:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3940.log",
+  "processId" : 0,
+  "processDefineCode" : 13505298546272,
+  "processDefineVersion" : 21,
+  "processInstanceId" : 1050,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 2,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"ruleId\":6,\"ruleInputParameter\":{\"check_type\":\"0\",\"comparison_type\":1,\"comparison_name\":\"0\",\"failure_strategy\":\"0\",\"operator\":\"0\",\"src_connector_type\":1,\"src_datasource_id\":6,\"src_database\":\"persistence\",\"src_field\":\"content\",\"src_table\":\"filtered_data_persistence\",\"threshold\":\"0\"},\"sparkParameters\":{\"deployMode\":\"local\",\"driverCores\":1,\"driverMemory\":\"512M\",\"executorCores\":1,\"executorMemory\":\"1G\",\"numExecutors\":1,\"others\":\"--conf spark.driver.extraJavaOptions=\\\"-Divy.cache.dir=/tmp -Divy.home=/tmp\\\" \\\\\\n--packages org.postgresql:postgresql:42.7.3\",\"yarnQueue\":\"\"}}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11\nexport PYSPARK_PYTHON=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "[null check] filtered data persistence"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1050"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240506"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3940"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "qualti_test"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13505264408800"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13505298546272"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240506163602"
+    }
+  },
+  "taskAppId" : "1050_3940",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "dataQualityTaskExecutionContext" : {
+    "ruleId" : 6,
+    "ruleName" : "$t(uniqueness_check)",
+    "ruleType" : 0,
+    "ruleInputEntryList" : "[{\"id\":1,\"field\":\"src_connector_type\",\"type\":\"select\",\"title\":\"$t(src_connector_type)\",\"data\":\"\",\"options\":\"[{\\\"label\\\":\\\"HIVE\\\",\\\"value\\\":\\\"HIVE\\\"},{\\\"label\\\":\\\"JDBC\\\",\\\"value\\\":\\\"JDBC\\\"}]\",\"placeholder\":\"please select source connector type\",\"optionSourceType\":2,\"dataType\":2,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":false,\"valuesMap\":null,\"index\":1,\"createTime\":null,\"updateTime\":null},{\"id\":2,\"field\":\"src_datasource_id\",\"type\":\"select\",\"title\":\"$t(src_datasource_id)\",\"data\":\"\",\"options\":null,\"placeholder\":\"please select source datasource id\",\"optionSourceType\":1,\"dataType\":2,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":false,\"valuesMap\":null,\"index\":2,\"createTime\":null,\"updateTime\":null},{\"id\":30,\"field\":\"src_database\",\"type\":\"select\",\"title\":\"$t(src_database)\",\"data\":null,\"options\":null,\"placeholder\":\"Please select source database\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":true,\"valuesMap\":null,\"index\":2,\"createTime\":null,\"updateTime\":null},{\"id\":3,\"field\":\"src_table\",\"type\":\"select\",\"title\":\"$t(src_table)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter source table name\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":true,\"valuesMap\":null,\"index\":3,\"createTime\":null,\"updateTime\":null},{\"id\":4,\"field\":\"src_filter\",\"type\":\"input\",\"title\":\"$t(src_filter)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter filter expression\",\"optionSourceType\":0,\"dataType\":3,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":false,\"valuesMap\":null,\"index\":4,\"createTime\":null,\"updateTime\":null},{\"id\":5,\"field\":\"src_field\",\"type\":\"select\",\"title\":\"$t(src_field)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter column, only single column is supported\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":true,\"valuesMap\":null,\"index\":5,\"createTime\":null,\"updateTime\":null},{\"id\":6,\"field\":\"statistics_name\",\"type\":\"input\",\"title\":\"$t(statistics_name)\",\"data\":\"duplicate_count.duplicates\",\"options\":null,\"placeholder\":\"Please enter statistics name, the alias in statistics execute sql\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":1,\"isShow\":false,\"canEdit\":false,\"isEmit\":false,\"isValidate\":true,\"valuesMap\":\"{\\\"statistics_name\\\":\\\"duplicate_count.duplicates\\\"}\",\"index\":6,\"createTime\":null,\"updateTime\":null},{\"id\":7,\"field\":\"check_type\",\"type\":\"select\",\"title\":\"$t(check_type)\",\"data\":\"0\",\"options\":\"[{\\\"label\\\":\\\"Expected - Actual\\\",\\\"value\\\":\\\"0\\\"},{\\\"label\\\":\\\"Actual - Expected\\\",\\\"value\\\":\\\"1\\\"},{\\\"label\\\":\\\"Actual / Expected\\\",\\\"value\\\":\\\"2\\\"},{\\\"label\\\":\\\"(Expected - Actual) / Expected\\\",\\\"value\\\":\\\"3\\\"}]\",\"placeholder\":\"please select check type\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":3,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":false,\"valuesMap\":null,\"index\":7,\"createTime\":null,\"updateTime\":null},{\"id\":8,\"field\":\"operator\",\"type\":\"select\",\"title\":\"$t(operator)\",\"data\":\"0\",\"options\":\"[{\\\"label\\\":\\\"=\\\",\\\"value\\\":\\\"0\\\"},{\\\"label\\\":\\\"<\\\",\\\"value\\\":\\\"1\\\"},{\\\"label\\\":\\\"<=\\\",\\\"value\\\":\\\"2\\\"},{\\\"label\\\":\\\">\\\",\\\"value\\\":\\\"3\\\"},{\\\"label\\\":\\\">=\\\",\\\"value\\\":\\\"4\\\"},{\\\"label\\\":\\\"!=\\\",\\\"value\\\":\\\"5\\\"}]\",\"placeholder\":\"please select operator\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":3,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":false,\"valuesMap\":null,\"index\":8,\"createTime\":null,\"updateTime\":null},{\"id\":9,\"field\":\"threshold\",\"type\":\"input\",\"title\":\"$t(threshold)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter threshold, number is needed\",\"optionSourceType\":0,\"dataType\":2,\"inputType\":3,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":true,\"valuesMap\":null,\"index\":9,\"createTime\":null,\"updateTime\":null},{\"id\":10,\"field\":\"failure_strategy\",\"type\":\"select\",\"title\":\"$t(failure_strategy)\",\"data\":\"0\",\"options\":\"[{\\\"label\\\":\\\"Alert\\\",\\\"value\\\":\\\"0\\\"},{\\\"label\\\":\\\"Block\\\",\\\"value\\\":\\\"1\\\"}]\",\"placeholder\":\"please select failure strategy\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":3,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":false,\"valuesMap\":null,\"index\":10,\"createTime\":null,\"updateTime\":null},{\"id\":17,\"field\":\"comparison_name\",\"type\":\"input\",\"title\":\"$t(comparison_name)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter comparison name, the alias in comparison execute sql\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":0,\"isShow\":false,\"canEdit\":false,\"isEmit\":false,\"isValidate\":true,\"valuesMap\":\"\",\"index\":11,\"createTime\":null,\"updateTime\":null},{\"id\":19,\"field\":\"comparison_type\",\"type\":\"select\",\"title\":\"$t(comparison_type)\",\"data\":\"\",\"options\":null,\"placeholder\":\"Please enter comparison title\",\"optionSourceType\":3,\"dataType\":0,\"inputType\":2,\"isShow\":true,\"canEdit\":false,\"isEmit\":true,\"isValidate\":false,\"valuesMap\":null,\"index\":12,\"createTime\":null,\"updateTime\":null}]",
+    "executeSqlList" : "[{\"id\":6,\"index\":1,\"sql\":\"SELECT ${src_field} FROM ${src_table} group by ${src_field} having count(*) > 1\",\"tableAlias\":\"duplicate_items\",\"type\":0,\"createTime\":\"2021-03-03 11:31:24\",\"updateTime\":\"2021-03-03 11:31:24\",\"errorOutputSql\":true},{\"id\":7,\"index\":1,\"sql\":\"SELECT COUNT(*) AS duplicates FROM duplicate_items\",\"tableAlias\":\"duplicate_count\",\"type\":1,\"createTime\":\"2021-03-03 11:31:24\",\"updateTime\":\"2021-03-03 11:31:24\",\"errorOutputSql\":false}]",
+    "comparisonNeedStatisticsValueTable" : false,
+    "compareWithFixedValue" : true,
+    "hdfsPath" : "hdfs://mycluster:8020/user/default/data_quality_error_data",
+    "sourceConnectorType" : "JDBC",
+    "sourceType" : 1,
+    "sourceConnectionParams" : "{\"user\":\"root\",\"password\":\"root\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"persistence\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence\",\"driverClassName\":\"org.postgresql.Driver\",\"validationQuery\":\"select version()\",\"other\":{\"password\":\"root\"}}",
+    "targetConnectorType" : null,
+    "targetType" : 0,
+    "targetConnectionParams" : null,
+    "writerConnectorType" : "JDBC",
+    "writerType" : 1,
+    "writerTable" : "t_ds_dq_execute_result",
+    "writerConnectionParams" : "{\"user\":\"root\",\"password\":\"root\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"dolphinscheduler\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler\"}",
+    "statisticsValueConnectorType" : "JDBC",
+    "statisticsValueType" : 1,
+    "statisticsValueTable" : "t_ds_dq_task_statistics_value",
+    "statisticsValueWriterConnectionParams" : "{\"user\":\"root\",\"password\":\"root\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"dolphinscheduler\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler\"}"
+  },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.589 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.589 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.589 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.605 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.605 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.606 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3940 check successfully
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.606 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.dq.DataQualityTaskChannel successfully
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.607 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.607 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.607 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: DATA_QUALITY create successfully
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.607 +0800 o.a.d.p.t.d.DataQualityTask:[89] - Initialize data quality task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "ruleId" : 6,
+  "ruleInputParameter" : {
+    "check_type" : "0",
+    "comparison_type" : "1",
+    "comparison_name" : "0",
+    "failure_strategy" : "0",
+    "operator" : "0",
+    "src_connector_type" : "1",
+    "src_datasource_id" : "6",
+    "src_database" : "persistence",
+    "src_field" : "content",
+    "src_table" : "filtered_data_persistence",
+    "threshold" : "0"
+  },
+  "sparkParameters" : {
+    "localParams" : null,
+    "varPool" : null,
+    "mainJar" : null,
+    "mainClass" : null,
+    "deployMode" : "local",
+    "mainArgs" : null,
+    "driverCores" : 1,
+    "driverMemory" : "512M",
+    "numExecutors" : 1,
+    "executorCores" : 1,
+    "executorMemory" : "1G",
+    "appName" : null,
+    "yarnQueue" : "",
+    "others" : "--conf spark.driver.extraJavaOptions=\"-Divy.cache.dir=/tmp -Divy.home=/tmp\" \\\n--packages org.postgresql:postgresql:42.7.3",
+    "programType" : null,
+    "resourceList" : [ ]
+  }
+}
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.609 +0800 o.a.d.p.t.d.DataQualityTask:[119] - data quality configuration: {
+  "name" : "$t(uniqueness_check)",
+  "env" : {
+    "type" : "batch",
+    "config" : null
+  },
+  "readers" : [ {
+    "type" : "JDBC",
+    "config" : {
+      "database" : "persistence",
+      "password" : "root",
+      "driver" : "org.postgresql.Driver",
+      "user" : "root",
+      "output_table" : "persistence_filtered_data_persistence",
+      "table" : "filtered_data_persistence",
+      "url" : "jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence?password=root"
+    }
+  } ],
+  "transformers" : [ {
+    "type" : "sql",
+    "config" : {
+      "index" : 1,
+      "output_table" : "duplicate_items",
+      "sql" : "SELECT content FROM persistence_filtered_data_persistence group by content having count(*) > 1"
+    }
+  }, {
+    "type" : "sql",
+    "config" : {
+      "index" : 2,
+      "output_table" : "duplicate_count",
+      "sql" : "SELECT COUNT(*) AS duplicates FROM duplicate_items"
+    }
+  } ],
+  "writers" : [ {
+    "type" : "JDBC",
+    "config" : {
+      "database" : "dolphinscheduler",
+      "password" : "root",
+      "driver" : "org.postgresql.Driver",
+      "user" : "root",
+      "table" : "t_ds_dq_execute_result",
+      "url" : "jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler",
+      "sql" : "select 0 as rule_type,'$t(uniqueness_check)' as rule_name,0 as process_definition_id,1050 as process_instance_id,3940 as task_instance_id,duplicate_count.duplicates AS statistics_value,0 AS comparison_value,1 AS comparison_type,0 as check_type,0 as threshold,0 as operator,0 as failure_strategy,'hdfs://mycluster:8020/user/default/data_quality_error_data/0_1050_[null check] filtered data persistence' as error_output_path,'2024-05-06 16:36:02' as create_time,'2024-05-06 16:36:02' as update_time from duplicate_count "
+    }
+  }, {
+    "type" : "JDBC",
+    "config" : {
+      "database" : "dolphinscheduler",
+      "password" : "root",
+      "driver" : "org.postgresql.Driver",
+      "user" : "root",
+      "table" : "t_ds_dq_task_statistics_value",
+      "url" : "jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler",
+      "sql" : "select 0 as process_definition_id,3940 as task_instance_id,6 as rule_id,'KA0AXXWVHWW+GZX4BPZXFGFZ0F0OYMUQ+BVYG4+ZIKG=' as unique_code,'duplicate_count.duplicates'AS statistics_name,duplicate_count.duplicates AS statistics_value,'2024-05-06 16:36:02' as data_time,'2024-05-06 16:36:02' as create_time,'2024-05-06 16:36:02' as update_time from duplicate_count"
+    }
+  }, {
+    "type" : "hdfs_file",
+    "config" : {
+      "path" : "hdfs://mycluster:8020/user/default/data_quality_error_data/0_1050_[null check] filtered data persistence",
+      "input_table" : "duplicate_items"
+    }
+  } ]
+}
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.609 +0800 o.a.d.p.d.a.u.CommonUtils:[136] - Trying to get data quality jar in path
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.610 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.610 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.610 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.610 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.610 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.611 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.611 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.611 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYSPARK_PYTHON=/bin/python3.11
+${SPARK_HOME}/bin/spark-submit --master local --driver-cores 1 --driver-memory 512M --num-executors 1 --executor-cores 1 --executor-memory 1G --conf spark.driver.extraJavaOptions="-Divy.cache.dir=/tmp -Divy.home=/tmp" \
+--packages org.postgresql:postgresql:42.7.3 /opt/dolphinscheduler/conf/../libs/dolphinscheduler-data-quality-3.2.1.jar "{\"name\":\"$t(uniqueness_check)\",\"env\":{\"type\":\"batch\",\"config\":null},\"readers\":[{\"type\":\"JDBC\",\"config\":{\"database\":\"persistence\",\"password\":\"root\",\"driver\":\"org.postgresql.Driver\",\"user\":\"root\",\"output_table\":\"persistence_filtered_data_persistence\",\"table\":\"filtered_data_persistence\",\"url\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence?password=root\"} }],\"transformers\":[{\"type\":\"sql\",\"config\":{\"index\":1,\"output_table\":\"duplicate_items\",\"sql\":\"SELECT content FROM persistence_filtered_data_persistence group by content having count(*) > 1\"} },{\"type\":\"sql\",\"config\":{\"index\":2,\"output_table\":\"duplicate_count\",\"sql\":\"SELECT COUNT(*) AS duplicates FROM duplicate_items\"} }],\"writers\":[{\"type\":\"JDBC\",\"config\":{\"database\":\"dolphinscheduler\",\"password\":\"root\",\"driver\":\"org.postgresql.Driver\",\"user\":\"root\",\"table\":\"t_ds_dq_execute_result\",\"url\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler\",\"sql\":\"select 0 as rule_type,'$t(uniqueness_check)' as rule_name,0 as process_definition_id,1050 as process_instance_id,3940 as task_instance_id,duplicate_count.duplicates AS statistics_value,0 AS comparison_value,1 AS comparison_type,0 as check_type,0 as threshold,0 as operator,0 as failure_strategy,'hdfs://mycluster:8020/user/default/data_quality_error_data/0_1050_[null check] filtered data persistence' as error_output_path,'2024-05-06 16:36:02' as create_time,'2024-05-06 16:36:02' as update_time from duplicate_count \"} },{\"type\":\"JDBC\",\"config\":{\"database\":\"dolphinscheduler\",\"password\":\"root\",\"driver\":\"org.postgresql.Driver\",\"user\":\"root\",\"table\":\"t_ds_dq_task_statistics_value\",\"url\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler\",\"sql\":\"select 0 as process_definition_id,3940 as task_instance_id,6 as rule_id,'KA0AXXWVHWW+GZX4BPZXFGFZ0F0OYMUQ+BVYG4+ZIKG=' as unique_code,'duplicate_count.duplicates'AS statistics_name,duplicate_count.duplicates AS statistics_value,'2024-05-06 16:36:02' as data_time,'2024-05-06 16:36:02' as create_time,'2024-05-06 16:36:02' as update_time from duplicate_count\"} },{\"type\":\"hdfs_file\",\"config\":{\"path\":\"hdfs://mycluster:8020/user/default/data_quality_error_data/0_1050_[null check] filtered data persistence\",\"input_table\":\"duplicate_items\"} }]}"
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.611 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.611 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3940/1050_3940.sh
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:02.743 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 9840
+[WI-0][TI-3940] - [INFO] 2024-05-06 16:36:02.907 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=3940, success=true)
+[WI-0][TI-3940] - [INFO] 2024-05-06 16:36:02.915 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=3940)
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:03.744 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:05.419 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7009012401745613 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:05.756 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	:: loading settings :: url = jar:file:/opt/spark-3.5.1-bin-hadoop3/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+	Ivy Default Cache set to: /tmp
+	The jars for the packages stored in: /tmp/jars
+	org.postgresql#postgresql added as a dependency
+	:: resolving dependencies :: org.apache.spark#spark-submit-parent-fac0a74c-2c9a-4ab4-b753-a793ec9f8fed;1.0
+		confs: [default]
+		found org.postgresql#postgresql;42.7.3 in central
+		found org.checkerframework#checker-qual;3.42.0 in central
+	:: resolution report :: resolve 210ms :: artifacts dl 10ms
+		:: modules in use:
+		org.checkerframework#checker-qual;3.42.0 from central in [default]
+		org.postgresql#postgresql;42.7.3 from central in [default]
+		---------------------------------------------------------------------
+		|                  |            modules            ||   artifacts   |
+		|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+		---------------------------------------------------------------------
+		|      default     |   2   |   0   |   0   |   0   ||   2   |   0   |
+		---------------------------------------------------------------------
+	:: retrieving :: org.apache.spark#spark-submit-parent-fac0a74c-2c9a-4ab4-b753-a793ec9f8fed
+		confs: [default]
+		0 artifacts copied, 2 already retrieved (0kB/28ms)
+	24/05/06 16:36:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:06.431 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.702878059178111 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:06.758 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/06 16:36:06 INFO SparkContext: Running Spark version 3.5.1
+	24/05/06 16:36:06 INFO SparkContext: OS info Linux, 6.5.0-28-generic, amd64
+	24/05/06 16:36:06 INFO SparkContext: Java version 1.8.0_402
+	24/05/06 16:36:06 INFO ResourceUtils: ==============================================================
+	24/05/06 16:36:06 INFO ResourceUtils: No custom resources configured for spark.driver.
+	24/05/06 16:36:06 INFO ResourceUtils: ==============================================================
+	24/05/06 16:36:06 INFO SparkContext: Submitted application: (uniqueness_check)
+	24/05/06 16:36:06 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+	24/05/06 16:36:06 INFO ResourceProfile: Limiting resource is cpu
+	24/05/06 16:36:06 INFO ResourceProfileManager: Added ResourceProfile id: 0
+	24/05/06 16:36:06 INFO SecurityManager: Changing view acls to: default
+	24/05/06 16:36:06 INFO SecurityManager: Changing modify acls to: default
+	24/05/06 16:36:06 INFO SecurityManager: Changing view acls groups to: 
+	24/05/06 16:36:06 INFO SecurityManager: Changing modify acls groups to: 
+	24/05/06 16:36:06 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: default; groups with view permissions: EMPTY; users with modify permissions: default; groups with modify permissions: EMPTY
+	24/05/06 16:36:06 INFO Utils: Successfully started service 'sparkDriver' on port 39263.
+	24/05/06 16:36:06 INFO SparkEnv: Registering MapOutputTracker
+	24/05/06 16:36:06 INFO SparkEnv: Registering BlockManagerMaster
+	24/05/06 16:36:06 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+	24/05/06 16:36:06 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+	24/05/06 16:36:06 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:07.433 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7050976558927181 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:07.760 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/06 16:36:06 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-8d01a672-dd85-4956-8cc0-255069f8162b
+	24/05/06 16:36:06 INFO MemoryStore: MemoryStore started with capacity 93.3 MiB
+	24/05/06 16:36:06 INFO SparkEnv: Registering OutputCommitCoordinator
+	24/05/06 16:36:06 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+	24/05/06 16:36:07 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+	24/05/06 16:36:07 INFO SparkContext: Added JAR file:///tmp/jars/org.postgresql_postgresql-42.7.3.jar at spark://02dc7f71660d:39263/jars/org.postgresql_postgresql-42.7.3.jar with timestamp 1714984566122
+	24/05/06 16:36:07 INFO SparkContext: Added JAR file:///tmp/jars/org.checkerframework_checker-qual-3.42.0.jar at spark://02dc7f71660d:39263/jars/org.checkerframework_checker-qual-3.42.0.jar with timestamp 1714984566122
+	24/05/06 16:36:07 INFO SparkContext: Added JAR file:/opt/dolphinscheduler/libs/dolphinscheduler-data-quality-3.2.1.jar at spark://02dc7f71660d:39263/jars/dolphinscheduler-data-quality-3.2.1.jar with timestamp 1714984566122
+	24/05/06 16:36:07 INFO Executor: Starting executor ID driver on host 02dc7f71660d
+	24/05/06 16:36:07 INFO Executor: OS info Linux, 6.5.0-28-generic, amd64
+	24/05/06 16:36:07 INFO Executor: Java version 1.8.0_402
+	24/05/06 16:36:07 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+	24/05/06 16:36:07 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@698fee9a for default.
+	24/05/06 16:36:07 INFO Executor: Fetching spark://02dc7f71660d:39263/jars/dolphinscheduler-data-quality-3.2.1.jar with timestamp 1714984566122
+	24/05/06 16:36:07 INFO TransportClientFactory: Successfully created connection to 02dc7f71660d/172.18.1.1:39263 after 40 ms (0 ms spent in bootstraps)
+	24/05/06 16:36:07 INFO Utils: Fetching spark://02dc7f71660d:39263/jars/dolphinscheduler-data-quality-3.2.1.jar to /tmp/spark-b4e8e008-921e-4baf-a4c7-45b2e960af49/userFiles-90dd9c4c-a5a5-4967-aa7b-a0ebd9c48981/fetchFileTemp5118909112440183014.tmp
+	24/05/06 16:36:07 INFO Executor: Adding file:/tmp/spark-b4e8e008-921e-4baf-a4c7-45b2e960af49/userFiles-90dd9c4c-a5a5-4967-aa7b-a0ebd9c48981/dolphinscheduler-data-quality-3.2.1.jar to class loader default
+	24/05/06 16:36:07 INFO Executor: Fetching spark://02dc7f71660d:39263/jars/org.checkerframework_checker-qual-3.42.0.jar with timestamp 1714984566122
+	24/05/06 16:36:07 INFO Utils: Fetching spark://02dc7f71660d:39263/jars/org.checkerframework_checker-qual-3.42.0.jar to /tmp/spark-b4e8e008-921e-4baf-a4c7-45b2e960af49/userFiles-90dd9c4c-a5a5-4967-aa7b-a0ebd9c48981/fetchFileTemp5163548301760229824.tmp
+	24/05/06 16:36:07 INFO Executor: Adding file:/tmp/spark-b4e8e008-921e-4baf-a4c7-45b2e960af49/userFiles-90dd9c4c-a5a5-4967-aa7b-a0ebd9c48981/org.checkerframework_checker-qual-3.42.0.jar to class loader default
+	24/05/06 16:36:07 INFO Executor: Fetching spark://02dc7f71660d:39263/jars/org.postgresql_postgresql-42.7.3.jar with timestamp 1714984566122
+	24/05/06 16:36:07 INFO Utils: Fetching spark://02dc7f71660d:39263/jars/org.postgresql_postgresql-42.7.3.jar to /tmp/spark-b4e8e008-921e-4baf-a4c7-45b2e960af49/userFiles-90dd9c4c-a5a5-4967-aa7b-a0ebd9c48981/fetchFileTemp8096545460874326284.tmp
+	24/05/06 16:36:07 INFO Executor: Adding file:/tmp/spark-b4e8e008-921e-4baf-a4c7-45b2e960af49/userFiles-90dd9c4c-a5a5-4967-aa7b-a0ebd9c48981/org.postgresql_postgresql-42.7.3.jar to class loader default
+	24/05/06 16:36:07 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35037.
+	24/05/06 16:36:07 INFO NettyBlockTransferService: Server created on 02dc7f71660d:35037
+	24/05/06 16:36:07 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+	24/05/06 16:36:07 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 02dc7f71660d, 35037, None)
+	24/05/06 16:36:07 INFO BlockManagerMasterEndpoint: Registering block manager 02dc7f71660d:35037 with 93.3 MiB RAM, BlockManagerId(driver, 02dc7f71660d, 35037, None)
+	24/05/06 16:36:07 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 02dc7f71660d, 35037, None)
+	24/05/06 16:36:07 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 02dc7f71660d, 35037, None)
+	24/05/06 16:36:07 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:08.898 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/06 16:36:07 INFO SharedState: Warehouse path is 'file:/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3940/spark-warehouse'.
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:08.899 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7067815907288739 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:09.900 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7089646017769499 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:10.901 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.709437630584981 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:11.922 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7112418606833726 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:12.918 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/06 16:36:12 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:12.923 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7130952030623794 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:13.919 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/06 16:36:13 INFO CodeGenerator: Code generated in 389.949783 ms
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:13.924 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7131200574554033 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:14.927 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7138891517931351 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:14.927 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/06 16:36:14 INFO DAGScheduler: Registering RDD 2 (save at JdbcWriter.java:87) as input to shuffle 0
+	24/05/06 16:36:14 INFO DAGScheduler: Got map stage job 0 (save at JdbcWriter.java:87) with 1 output partitions
+	24/05/06 16:36:14 INFO DAGScheduler: Final stage: ShuffleMapStage 0 (save at JdbcWriter.java:87)
+	24/05/06 16:36:14 INFO DAGScheduler: Parents of final stage: List()
+	24/05/06 16:36:14 INFO DAGScheduler: Missing parents: List()
+	24/05/06 16:36:14 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[2] at save at JdbcWriter.java:87), which has no missing parents
+	24/05/06 16:36:14 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 34.8 KiB, free 93.3 MiB)
+	24/05/06 16:36:14 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 16.4 KiB, free 93.3 MiB)
+	24/05/06 16:36:14 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 02dc7f71660d:35037 (size: 16.4 KiB, free: 93.3 MiB)
+	24/05/06 16:36:14 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+	24/05/06 16:36:14 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[2] at save at JdbcWriter.java:87) (first 15 tasks are for partitions Vector(0))
+	24/05/06 16:36:14 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+	24/05/06 16:36:14 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (02dc7f71660d, executor driver, partition 0, PROCESS_LOCAL, 7878 bytes) 
+	24/05/06 16:36:14 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+	24/05/06 16:36:14 INFO CodeGenerator: Code generated in 63.673722 ms
+	24/05/06 16:36:14 INFO CodeGenerator: Code generated in 25.514508 ms
+	24/05/06 16:36:14 INFO CodeGenerator: Code generated in 9.633519 ms
+	24/05/06 16:36:14 INFO CodeGenerator: Code generated in 13.150274 ms
+	24/05/06 16:36:14 INFO CodeGenerator: Code generated in 15.032394 ms
+	24/05/06 16:36:14 INFO JDBCRDD: closed connection
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:15.928 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7140758579935307 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:15.929 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/06 16:36:14 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2534 bytes result sent to driver
+	24/05/06 16:36:15 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 710 ms on 02dc7f71660d (executor driver) (1/1)
+	24/05/06 16:36:15 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+	24/05/06 16:36:15 INFO DAGScheduler: ShuffleMapStage 0 (save at JdbcWriter.java:87) finished in 0.894 s
+	24/05/06 16:36:15 INFO DAGScheduler: looking for newly runnable stages
+	24/05/06 16:36:15 INFO DAGScheduler: running: Set()
+	24/05/06 16:36:15 INFO DAGScheduler: waiting: Set()
+	24/05/06 16:36:15 INFO DAGScheduler: failed: Set()
+	24/05/06 16:36:15 INFO ShufflePartitionsUtil: For shuffle(0), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+	24/05/06 16:36:15 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+	24/05/06 16:36:15 INFO CodeGenerator: Code generated in 68.563188 ms
+	24/05/06 16:36:15 INFO DAGScheduler: Registering RDD 5 (save at JdbcWriter.java:87) as input to shuffle 1
+	24/05/06 16:36:15 INFO DAGScheduler: Got map stage job 1 (save at JdbcWriter.java:87) with 1 output partitions
+	24/05/06 16:36:15 INFO DAGScheduler: Final stage: ShuffleMapStage 2 (save at JdbcWriter.java:87)
+	24/05/06 16:36:15 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+	24/05/06 16:36:15 INFO DAGScheduler: Missing parents: List()
+	24/05/06 16:36:15 INFO DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[5] at save at JdbcWriter.java:87), which has no missing parents
+	24/05/06 16:36:15 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 40.5 KiB, free 93.2 MiB)
+	24/05/06 16:36:15 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 19.1 KiB, free 93.2 MiB)
+	24/05/06 16:36:15 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 02dc7f71660d:35037 (size: 19.1 KiB, free: 93.3 MiB)
+	24/05/06 16:36:15 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+	24/05/06 16:36:15 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[5] at save at JdbcWriter.java:87) (first 15 tasks are for partitions Vector(0))
+	24/05/06 16:36:15 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+	24/05/06 16:36:15 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 1) (02dc7f71660d, executor driver, partition 0, NODE_LOCAL, 8032 bytes) 
+	24/05/06 16:36:15 INFO Executor: Running task 0.0 in stage 2.0 (TID 1)
+	24/05/06 16:36:15 INFO ShuffleBlockFetcherIterator: Getting 1 (2.9 KiB) non-empty blocks including 1 (2.9 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+	24/05/06 16:36:15 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 21 ms
+	24/05/06 16:36:15 INFO CodeGenerator: Code generated in 55.513465 ms
+	24/05/06 16:36:15 INFO Executor: Finished task 0.0 in stage 2.0 (TID 1). 5420 bytes result sent to driver
+	24/05/06 16:36:15 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 1) in 242 ms on 02dc7f71660d (executor driver) (1/1)
+	24/05/06 16:36:15 INFO DAGScheduler: ShuffleMapStage 2 (save at JdbcWriter.java:87) finished in 0.265 s
+	24/05/06 16:36:15 INFO DAGScheduler: looking for newly runnable stages
+	24/05/06 16:36:15 INFO DAGScheduler: running: Set()
+	24/05/06 16:36:15 INFO DAGScheduler: waiting: Set()
+	24/05/06 16:36:15 INFO DAGScheduler: failed: Set()
+	24/05/06 16:36:15 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+	24/05/06 16:36:15 INFO CodeGenerator: Code generated in 21.441417 ms
+	24/05/06 16:36:15 INFO SparkContext: Starting job: save at JdbcWriter.java:87
+	24/05/06 16:36:15 INFO DAGScheduler: Got job 2 (save at JdbcWriter.java:87) with 1 output partitions
+	24/05/06 16:36:15 INFO DAGScheduler: Final stage: ResultStage 5 (save at JdbcWriter.java:87)
+	24/05/06 16:36:15 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 4)
+	24/05/06 16:36:15 INFO DAGScheduler: Missing parents: List()
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:16.932 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/06 16:36:15 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[10] at save at JdbcWriter.java:87), which has no missing parents
+	24/05/06 16:36:16 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 51.4 KiB, free 93.1 MiB)
+	24/05/06 16:36:16 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 23.0 KiB, free 93.1 MiB)
+	24/05/06 16:36:16 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 02dc7f71660d:35037 (size: 23.0 KiB, free: 93.2 MiB)
+	24/05/06 16:36:16 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1585
+	24/05/06 16:36:16 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[10] at save at JdbcWriter.java:87) (first 15 tasks are for partitions Vector(0))
+	24/05/06 16:36:16 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks resource profile 0
+	24/05/06 16:36:16 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 2) (02dc7f71660d, executor driver, partition 0, NODE_LOCAL, 8043 bytes) 
+	24/05/06 16:36:16 INFO Executor: Running task 0.0 in stage 5.0 (TID 2)
+	24/05/06 16:36:16 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 02dc7f71660d:35037 in memory (size: 16.4 KiB, free: 93.3 MiB)
+	24/05/06 16:36:16 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 02dc7f71660d:35037 in memory (size: 19.1 KiB, free: 93.3 MiB)
+	24/05/06 16:36:16 INFO ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+	24/05/06 16:36:16 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+	24/05/06 16:36:16 INFO CodeGenerator: Code generated in 16.021461 ms
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:16.940 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7148630463293839 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:17.936 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/06 16:36:17 INFO CodeGenerator: Code generated in 25.081335 ms
+	24/05/06 16:36:17 ERROR Executor: Exception in task 0.0 in stage 5.0 (TID 2)
+	java.sql.BatchUpdateException: Batch entry 0 INSERT INTO dolphinscheduler.t_ds_dq_execute_result ("rule_type","rule_name","process_definition_id","process_instance_id","task_instance_id","statistics_value","comparison_value","comparison_type","check_type","threshold","operator","failure_strategy","error_output_path","create_time","update_time") VALUES (('0'::int4),('(uniqueness_check)'),('0'::int4),('1050'::int4),('3940'::int4),('1'::int8),('0'::int4),('1'::int4),('0'::int4),('0'::int4),('0'::int4),('0'::int4),('hdfs://mycluster:8020/user/default/data_quality_error_data/0_1050_[null check] filtered data persistence'),('2024-05-06 16:36:02'),('2024-05-06 16:36:02')) was aborted: ERROR: column "create_time" is of type timestamp without time zone but expression is of type character varying
+	  Hint: You will need to rewrite or cast the expression.
+	  Position: 354  Call getNextException to see other errors in the batch.
+		at org.postgresql.jdbc.BatchResultHandler.handleError(BatchResultHandler.java:165)
+		at org.postgresql.core.ResultHandlerDelegate.handleError(ResultHandlerDelegate.java:52)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2413)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:579)
+		at org.postgresql.jdbc.PgStatement.internalExecuteBatch(PgStatement.java:912)
+		at org.postgresql.jdbc.PgStatement.executeBatch(PgStatement.java:936)
+		at org.postgresql.jdbc.PgPreparedStatement.executeBatch(PgPreparedStatement.java:1733)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:751)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:902)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:901)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+		at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2438)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: org.postgresql.util.PSQLException: ERROR: column "create_time" is of type timestamp without time zone but expression is of type character varying
+	  Hint: You will need to rewrite or cast the expression.
+	  Position: 354
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+		... 21 more
+	24/05/06 16:36:17 WARN TaskSetManager: Lost task 0.0 in stage 5.0 (TID 2) (02dc7f71660d executor driver): java.sql.BatchUpdateException: Batch entry 0 INSERT INTO dolphinscheduler.t_ds_dq_execute_result ("rule_type","rule_name","process_definition_id","process_instance_id","task_instance_id","statistics_value","comparison_value","comparison_type","check_type","threshold","operator","failure_strategy","error_output_path","create_time","update_time") VALUES (('0'::int4),('(uniqueness_check)'),('0'::int4),('1050'::int4),('3940'::int4),('1'::int8),('0'::int4),('1'::int4),('0'::int4),('0'::int4),('0'::int4),('0'::int4),('hdfs://mycluster:8020/user/default/data_quality_error_data/0_1050_[null check] filtered data persistence'),('2024-05-06 16:36:02'),('2024-05-06 16:36:02')) was aborted: ERROR: column "create_time" is of type timestamp without time zone but expression is of type character varying
+	  Hint: You will need to rewrite or cast the expression.
+	  Position: 354  Call getNextException to see other errors in the batch.
+		at org.postgresql.jdbc.BatchResultHandler.handleError(BatchResultHandler.java:165)
+		at org.postgresql.core.ResultHandlerDelegate.handleError(ResultHandlerDelegate.java:52)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2413)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:579)
+		at org.postgresql.jdbc.PgStatement.internalExecuteBatch(PgStatement.java:912)
+		at org.postgresql.jdbc.PgStatement.executeBatch(PgStatement.java:936)
+		at org.postgresql.jdbc.PgPreparedStatement.executeBatch(PgPreparedStatement.java:1733)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:751)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:902)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:901)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+		at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2438)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: org.postgresql.util.PSQLException: ERROR: column "create_time" is of type timestamp without time zone but expression is of type character varying
+	  Hint: You will need to rewrite or cast the expression.
+	  Position: 354
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+		... 21 more
+	
+	24/05/06 16:36:17 ERROR TaskSetManager: Task 0 in stage 5.0 failed 1 times; aborting job
+	24/05/06 16:36:17 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+	24/05/06 16:36:17 INFO TaskSchedulerImpl: Cancelling stage 5
+	24/05/06 16:36:17 INFO TaskSchedulerImpl: Killing all running tasks in stage 5: Stage cancelled: Job aborted due to stage failure: Task 0 in stage 5.0 failed 1 times, most recent failure: Lost task 0.0 in stage 5.0 (TID 2) (02dc7f71660d executor driver): java.sql.BatchUpdateException: Batch entry 0 INSERT INTO dolphinscheduler.t_ds_dq_execute_result ("rule_type","rule_name","process_definition_id","process_instance_id","task_instance_id","statistics_value","comparison_value","comparison_type","check_type","threshold","operator","failure_strategy","error_output_path","create_time","update_time") VALUES (('0'::int4),('(uniqueness_check)'),('0'::int4),('1050'::int4),('3940'::int4),('1'::int8),('0'::int4),('1'::int4),('0'::int4),('0'::int4),('0'::int4),('0'::int4),('hdfs://mycluster:8020/user/default/data_quality_error_data/0_1050_[null check] filtered data persistence'),('2024-05-06 16:36:02'),('2024-05-06 16:36:02')) was aborted: ERROR: column "create_time" is of type timestamp without time zone but expression is of type character varying
+	  Hint: You will need to rewrite or cast the expression.
+	  Position: 354  Call getNextException to see other errors in the batch.
+		at org.postgresql.jdbc.BatchResultHandler.handleError(BatchResultHandler.java:165)
+		at org.postgresql.core.ResultHandlerDelegate.handleError(ResultHandlerDelegate.java:52)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2413)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:579)
+		at org.postgresql.jdbc.PgStatement.internalExecuteBatch(PgStatement.java:912)
+		at org.postgresql.jdbc.PgStatement.executeBatch(PgStatement.java:936)
+		at org.postgresql.jdbc.PgPreparedStatement.executeBatch(PgPreparedStatement.java:1733)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:751)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:902)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:901)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+		at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2438)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: org.postgresql.util.PSQLException: ERROR: column "create_time" is of type timestamp without time zone but expression is of type character varying
+	  Hint: You will need to rewrite or cast the expression.
+	  Position: 354
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+		... 21 more
+	
+	Driver stacktrace:
+	24/05/06 16:36:17 INFO DAGScheduler: ResultStage 5 (save at JdbcWriter.java:87) failed in 1.925 s due to Job aborted due to stage failure: Task 0 in stage 5.0 failed 1 times, most recent failure: Lost task 0.0 in stage 5.0 (TID 2) (02dc7f71660d executor driver): java.sql.BatchUpdateException: Batch entry 0 INSERT INTO dolphinscheduler.t_ds_dq_execute_result ("rule_type","rule_name","process_definition_id","process_instance_id","task_instance_id","statistics_value","comparison_value","comparison_type","check_type","threshold","operator","failure_strategy","error_output_path","create_time","update_time") VALUES (('0'::int4),('(uniqueness_check)'),('0'::int4),('1050'::int4),('3940'::int4),('1'::int8),('0'::int4),('1'::int4),('0'::int4),('0'::int4),('0'::int4),('0'::int4),('hdfs://mycluster:8020/user/default/data_quality_error_data/0_1050_[null check] filtered data persistence'),('2024-05-06 16:36:02'),('2024-05-06 16:36:02')) was aborted: ERROR: column "create_time" is of type timestamp without time zone but expression is of type character varying
+	  Hint: You will need to rewrite or cast the expression.
+	  Position: 354  Call getNextException to see other errors in the batch.
+		at org.postgresql.jdbc.BatchResultHandler.handleError(BatchResultHandler.java:165)
+		at org.postgresql.core.ResultHandlerDelegate.handleError(ResultHandlerDelegate.java:52)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2413)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:579)
+		at org.postgresql.jdbc.PgStatement.internalExecuteBatch(PgStatement.java:912)
+		at org.postgresql.jdbc.PgStatement.executeBatch(PgStatement.java:936)
+		at org.postgresql.jdbc.PgPreparedStatement.executeBatch(PgPreparedStatement.java:1733)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:751)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:902)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:901)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+		at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2438)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: org.postgresql.util.PSQLException: ERROR: column "create_time" is of type timestamp without time zone but expression is of type character varying
+	  Hint: You will need to rewrite or cast the expression.
+	  Position: 354
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+		... 21 more
+	
+	Driver stacktrace:
+	24/05/06 16:36:17 INFO DAGScheduler: Job 2 failed: save at JdbcWriter.java:87, took 1.961645 s
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:17.943 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7158144724943392 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:36:18.941 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 5.0 failed 1 times, most recent failure: Lost task 0.0 in stage 5.0 (TID 2) (02dc7f71660d executor driver): java.sql.BatchUpdateException: Batch entry 0 INSERT INTO dolphinscheduler.t_ds_dq_execute_result ("rule_type","rule_name","process_definition_id","process_instance_id","task_instance_id","statistics_value","comparison_value","comparison_type","check_type","threshold","operator","failure_strategy","error_output_path","create_time","update_time") VALUES (('0'::int4),('(uniqueness_check)'),('0'::int4),('1050'::int4),('3940'::int4),('1'::int8),('0'::int4),('1'::int4),('0'::int4),('0'::int4),('0'::int4),('0'::int4),('hdfs://mycluster:8020/user/default/data_quality_error_data/0_1050_[null check] filtered data persistence'),('2024-05-06 16:36:02'),('2024-05-06 16:36:02')) was aborted: ERROR: column "create_time" is of type timestamp without time zone but expression is of type character varying
+	  Hint: You will need to rewrite or cast the expression.
+	  Position: 354  Call getNextException to see other errors in the batch.
+		at org.postgresql.jdbc.BatchResultHandler.handleError(BatchResultHandler.java:165)
+		at org.postgresql.core.ResultHandlerDelegate.handleError(ResultHandlerDelegate.java:52)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2413)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:579)
+		at org.postgresql.jdbc.PgStatement.internalExecuteBatch(PgStatement.java:912)
+		at org.postgresql.jdbc.PgStatement.executeBatch(PgStatement.java:936)
+		at org.postgresql.jdbc.PgPreparedStatement.executeBatch(PgPreparedStatement.java:1733)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:751)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:902)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:901)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+		at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2438)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: org.postgresql.util.PSQLException: ERROR: column "create_time" is of type timestamp without time zone but expression is of type character varying
+	  Hint: You will need to rewrite or cast the expression.
+	  Position: 354
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+		... 21 more
+	
+	Driver stacktrace:
+		at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+		at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+		at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+		at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+		at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+		at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+		at scala.Option.foreach(Option.scala:407)
+		at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+		at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+		at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+		at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+		at org.apache.spark.SparkContext.runJob(SparkContext.scala:2398)
+		at org.apache.spark.SparkContext.runJob(SparkContext.scala:2419)
+		at org.apache.spark.SparkContext.runJob(SparkContext.scala:2438)
+		at org.apache.spark.SparkContext.runJob(SparkContext.scala:2463)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$1(RDD.scala:1039)
+		at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+		at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+		at org.apache.spark.rdd.RDD.withScope(RDD.scala:410)
+		at org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:1037)
+		at org.apache.spark.sql.Dataset.$anonfun$foreachPartition$1(Dataset.scala:3514)
+		at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+		at org.apache.spark.sql.Dataset.$anonfun$withNewRDDExecutionId$1(Dataset.scala:4309)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+		at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+		at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+		at org.apache.spark.sql.Dataset.withNewRDDExecutionId(Dataset.scala:4307)
+		at org.apache.spark.sql.Dataset.foreachPartition(Dataset.scala:3514)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.saveTable(JdbcUtils.scala:901)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:70)
+		at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:48)
+		at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+		at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+		at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+		at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+		at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+		at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+		at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+		at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+		at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+		at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+		at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+		at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+		at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+		at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+		at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+		at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+		at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+		at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+		at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)
+		at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)
+		at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)
+		at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:248)
+		at org.apache.dolphinscheduler.data.quality.flow.batch.writer.JdbcWriter.write(JdbcWriter.java:87)
+		at org.apache.dolphinscheduler.data.quality.execution.SparkBatchExecution.executeWriter(SparkBatchExecution.java:132)
+		at org.apache.dolphinscheduler.data.quality.execution.SparkBatchExecution.execute(SparkBatchExecution.java:58)
+		at org.apache.dolphinscheduler.data.quality.context.DataQualityContext.execute(DataQualityContext.java:62)
+		at org.apache.dolphinscheduler.data.quality.DataQualityApplication.main(DataQualityApplication.java:78)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.spark.deploy.JavaMainApplication.start(SparkApplication.scala:52)
+		at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:1029)
+		at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:194)
+		at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:217)
+		at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:91)
+		at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1120)
+		at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1129)
+		at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+	Caused by: java.sql.BatchUpdateException: Batch entry 0 INSERT INTO dolphinscheduler.t_ds_dq_execute_result ("rule_type","rule_name","process_definition_id","process_instance_id","task_instance_id","statistics_value","comparison_value","comparison_type","check_type","threshold","operator","failure_strategy","error_output_path","create_time","update_time") VALUES (('0'::int4),('(uniqueness_check)'),('0'::int4),('1050'::int4),('3940'::int4),('1'::int8),('0'::int4),('1'::int4),('0'::int4),('0'::int4),('0'::int4),('0'::int4),('hdfs://mycluster:8020/user/default/data_quality_error_data/0_1050_[null check] filtered data persistence'),('2024-05-06 16:36:02'),('2024-05-06 16:36:02')) was aborted: ERROR: column "create_time" is of type timestamp without time zone but expression is of type character varying
+	  Hint: You will need to rewrite or cast the expression.
+	  Position: 354  Call getNextException to see other errors in the batch.
+		at org.postgresql.jdbc.BatchResultHandler.handleError(BatchResultHandler.java:165)
+		at org.postgresql.core.ResultHandlerDelegate.handleError(ResultHandlerDelegate.java:52)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2413)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:579)
+		at org.postgresql.jdbc.PgStatement.internalExecuteBatch(PgStatement.java:912)
+		at org.postgresql.jdbc.PgStatement.executeBatch(PgStatement.java:936)
+		at org.postgresql.jdbc.PgPreparedStatement.executeBatch(PgPreparedStatement.java:1733)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:751)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:902)
+		at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:901)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+		at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+		at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2438)
+		at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+		at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+		at org.apache.spark.scheduler.Task.run(Task.scala:141)
+		at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+		at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+		at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+		at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: org.postgresql.util.PSQLException: ERROR: column "create_time" is of type timestamp without time zone but expression is of type character varying
+	  Hint: You will need to rewrite or cast the expression.
+	  Position: 354
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+		... 21 more
+	24/05/06 16:36:18 INFO SparkContext: Invoking stop() from shutdown hook
+	24/05/06 16:36:18 INFO SparkContext: SparkContext is stopping with exitCode 0.
+	24/05/06 16:36:18 INFO SparkUI: Stopped Spark web UI at http://02dc7f71660d:4040
+	24/05/06 16:36:18 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+	24/05/06 16:36:18 INFO MemoryStore: MemoryStore cleared
+	24/05/06 16:36:18 INFO BlockManager: BlockManager stopped
+	24/05/06 16:36:18 INFO BlockManagerMaster: BlockManagerMaster stopped
+	24/05/06 16:36:18 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+	24/05/06 16:36:18 INFO SparkContext: Successfully stopped SparkContext
+	24/05/06 16:36:18 INFO ShutdownHookManager: Shutdown hook called
+	24/05/06 16:36:18 INFO ShutdownHookManager: Deleting directory /tmp/spark-b4e8e008-921e-4baf-a4c7-45b2e960af49
+	24/05/06 16:36:18 INFO ShutdownHookManager: Deleting directory /tmp/spark-c7a656dd-3e64-43ba-b58d-32c926e4925e
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:18.945 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[204] - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3940, processId:9840 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:18.946 +0800 o.a.d.p.t.a.u.LogUtils:[79] - Start finding appId in /opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3940.log, fetch way: log 
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:18.947 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:18.948 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Finalize task instance  ************************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:18.950 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:18.951 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[289] - Upload output files: [] successfully
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:18.956 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[294] - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:18.957 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[111] - Remove the current task execute context from worker cache
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:18.957 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[301] - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3940
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:18.958 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[316] - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3940
+[WI-1050][TI-3940] - [INFO] 2024-05-06 16:36:18.959 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[342] - FINALIZE_SESSION
+[WI-0][TI-3940] - [INFO] 2024-05-06 16:40:49.855 +0800 o.a.d.s.w.m.MessageRetryRunner:[132] - Begin retry send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3940, processInstanceId=1050, status=6, startTime=1714984562587, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3940.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3940, endTime=1714984578950, processId=9840, appIds=, varPool=[], eventCreateTime=0, eventSendTime=0)
+[WI-0][TI-3940] - [INFO] 2024-05-06 16:40:49.859 +0800 o.a.d.s.w.m.MessageRetryRunner:[135] - Success send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3940, processInstanceId=1050, status=6, startTime=1714984562587, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3940.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3940, endTime=1714984578950, processId=9840, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714984849855)
+[WI-0][TI-0] - [INFO] 2024-05-06 16:43:56.578 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7005602379022733 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:43:57.587 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7000126459151705 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:43:58.588 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7058916046234739 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:43:59.588 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.70298523132083 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:00.590 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.701309448725586 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:01.591 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7016627787768139 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:02.592 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.70127405606992 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:03.594 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7012738572347758 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:04.595 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7011581351808565 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:05.597 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7011692699489311 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:06.598 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7012424412819935 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:07.607 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7009089947451848 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:08.609 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7009215213592689 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:09.610 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.700832244379527 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:10.612 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7008437768178901 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:11.614 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7007715996605487 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:12.615 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.700919533007827 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:13.616 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7007556928490133 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:14.619 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7007487336189666 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:15.621 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7007483359486782 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:16.622 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.700912374942636 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:17.635 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7007835297692001 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:18.637 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7007240780610869 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:19.638 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7007240780610869 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:20.640 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7007238792259427 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:21.648 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7009243050512876 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:22.649 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7006849075376812 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:23.650 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7009714289804608 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:24.651 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7007433650700735 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:25.654 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7007433650700735 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:44:33.007 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7003216357292438 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-3940] - [INFO] 2024-05-06 16:45:50.583 +0800 o.a.d.s.w.m.MessageRetryRunner:[132] - Begin retry send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3940, processInstanceId=1050, status=6, startTime=1714984562587, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3940.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3940, endTime=1714984578950, processId=9840, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714984849855)
+[WI-0][TI-3940] - [INFO] 2024-05-06 16:45:50.590 +0800 o.a.d.s.w.m.MessageRetryRunner:[135] - Success send message to master, event: TaskInstanceExecutionFinishEvent(taskInstanceId=3940, processInstanceId=1050, status=6, startTime=1714984562587, taskInstanceHost=172.18.1.1:1234, workflowInstanceHost=172.18.0.13:5678, logPath=/opt/dolphinscheduler/logs/20240506/13505298546272/21/1050/3940.log, executePath=/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1050/3940, endTime=1714984578950, processId=9840, appIds=, varPool=[], eventCreateTime=0, eventSendTime=1714985150583)
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:24.078 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7029506340057408 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:25.093 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.703340748558644 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:26.096 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7052370393287962 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:27.098 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7021841245248834 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:28.100 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.702307402314282 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:29.102 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.702307402314282 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:30.103 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7024988805581383 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:31.104 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7023147592146171 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:32.107 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7023079988197146 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:33.111 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7023079988197146 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:34.112 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7023076011494263 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:35.122 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7023919072505633 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:36.124 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7022670387800112 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:37.126 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7022795653940952 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:38.127 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7022793665589511 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:39.127 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7019787278209338 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:40.131 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7022266752457403 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:41.134 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7019057553230157 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:42.135 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7019057553230157 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:43.137 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7019055564878715 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:44.139 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7019053576527272 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:45.160 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7023419996293713 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:46.161 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7020107402791487 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:47.163 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7020093484331393 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:48.163 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7020093484331393 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:49.165 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7019540722630542 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:50.166 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7019101296961878 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:51.168 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7019825056886735 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:52.171 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7019825056886735 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:53.172 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.701865590623889 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:58.190 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7035855146211435 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:47:59.206 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7039644944059721 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:48:00.212 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7020449399239496 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-06 16:48:01.213 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[65] - Worker OverLoad: the SystemMemoryUsedPercentage: 0.7013977315296069 is over then the MaxSystemMemoryUsagePercentageThresholds 0.7

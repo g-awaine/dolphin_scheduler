@@ -1,0 +1,12 @@
+[INFO] 2024-04-09 12:04:19.229 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13201021801792, processVersion:12.
+[INFO] 2024-04-09 12:04:19.259 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13201021801792, processVersion:13.
+[INFO] 2024-04-09 12:04:19.293 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13201021801792, processVersion:13.
+[INFO] 2024-04-09 12:04:26.518 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[ERROR] 2024-04-09 12:05:07.263 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:530.
+[INFO] 2024-04-09 12:08:22.943 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[858] - The task has not changed, so skip
+[INFO] 2024-04-09 12:08:22.943 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13201021801792, processVersion:13.
+[INFO] 2024-04-09 12:08:22.980 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13201021801792, processVersion:14.
+[INFO] 2024-04-09 12:08:22.993 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13201021801792, processVersion:14.
+[INFO] 2024-04-09 12:08:31.955 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 12:09:18.419 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[ERROR] 2024-04-09 12:10:06.296 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:532.

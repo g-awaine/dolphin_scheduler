@@ -1,0 +1,30 @@
+[INFO] 2024-04-09 10:19:19.034 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 10:22:37.882 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13201021801792, processVersion:3.
+[INFO] 2024-04-09 10:22:37.947 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13201021801792, processVersion:4.
+[INFO] 2024-04-09 10:22:38.093 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13201021801792, processVersion:4.
+[INFO] 2024-04-09 10:22:46.964 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 10:23:33.908 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:522, taskInstanceName:spark, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/4/250/522.log
+[INFO] 2024-04-09 10:23:34.384 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:522, taskInstanceName:spark, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/4/250/522.log
+[INFO] 2024-04-09 10:26:27.532 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:522, taskInstanceName:spark, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/4/250/522.log
+[INFO] 2024-04-09 10:26:27.920 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:522, taskInstanceName:spark, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/4/250/522.log
+[INFO] 2024-04-09 10:30:26.271 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13201021801792, processVersion:4.
+[INFO] 2024-04-09 10:30:26.276 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13201021801792, processVersion:5.
+[INFO] 2024-04-09 10:30:26.315 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13201021801792, processVersion:5.
+[INFO] 2024-04-09 10:30:36.040 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 10:30:43.300 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance spark-3-20240409101934064 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-04-09 10:30:53.692 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 10:31:06.584 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[ERROR] 2024-04-09 10:31:24.533 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:525.
+[ERROR] 2024-04-09 10:31:50.295 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:524.
+[INFO] 2024-04-09 10:32:12.561 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[ERROR] 2024-04-09 10:33:00.421 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:526.
+[INFO] 2024-04-09 10:33:02.303 +0800 o.a.d.a.i.LoginHandlerInterceptor:[75] - user does not exist
+[INFO] 2024-04-09 10:34:30.642 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[858] - The task has not changed, so skip
+[INFO] 2024-04-09 10:34:30.648 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13201021801792, processVersion:5.
+[INFO] 2024-04-09 10:34:30.667 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13201021801792, processVersion:6.
+[INFO] 2024-04-09 10:34:30.773 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13201021801792, processVersion:6.
+[INFO] 2024-04-09 10:34:40.134 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 10:36:47.951 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:527, taskInstanceName:spark, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/6/255/527.log
+[INFO] 2024-04-09 10:36:48.134 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:527, taskInstanceName:spark, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/6/255/527.log
+[INFO] 2024-04-09 10:39:01.907 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:527, taskInstanceName:spark, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/6/255/527.log
+[INFO] 2024-04-09 10:39:02.406 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:527, taskInstanceName:spark, host: 172.18.0.7:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/6/255/527.log

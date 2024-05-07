@@ -1,0 +1,287 @@
+[INFO] 2024-05-07 08:02:48.634 +0800 o.a.d.a.c.TaskTypeConfiguration:[75] - support default universal task types: [SHELL, JAVA, PYTHON, PROCEDURE, SQL, SPARK, FLINK, HTTP, MR, DINKY, FLINK_STREAM, HIVECLI, REMOTESHELL]
+[INFO] 2024-05-07 08:02:48.653 +0800 o.a.d.a.c.TaskTypeConfiguration:[76] - support default cloud task types: [EMR, K8S, DMS, DATA_FACTORY]
+[INFO] 2024-05-07 08:02:48.656 +0800 o.a.d.a.c.TaskTypeConfiguration:[77] - support default logic task types: [SUB_PROCESS, DEPENDENT, CONDITIONS, SWITCH, DYNAMIC]
+[INFO] 2024-05-07 08:02:48.659 +0800 o.a.d.a.c.TaskTypeConfiguration:[78] - support default dataIntegration task types: [SEATUNNEL, DATAX, SQOOP]
+[INFO] 2024-05-07 08:02:48.661 +0800 o.a.d.a.c.TaskTypeConfiguration:[79] - support default dataQuality task types: [DATA_QUALITY]
+[INFO] 2024-05-07 08:02:48.700 +0800 o.a.d.a.c.TaskTypeConfiguration:[80] - support default machineLearning task types: [JUPYTER, MLFLOW, OPENMLDB, DVC, SAGEMAKER, PYTORCH, KUBEFLOW]
+[INFO] 2024-05-07 08:02:48.700 +0800 o.a.d.a.c.TaskTypeConfiguration:[81] - support default other task types: [PIGEON, ZEPPELIN, CHUNJUN, DATASYNC, LINKIS]
+[ERROR] 2024-05-07 08:02:49.763 +0800 o.a.d.c.u.JSONUtils:[148] - Parse object exception, jsonStr: {"localParams":null,"varPool":[{"prop":"is_message_empty","direct":"IN","type":"VARCHAR","value":"0"},{"prop":"filtered_data_message","direct":"IN","type":"VARCHAR","value":"{\n\t\"authors\": [\n\t\t\"premiumplatinum\"\n\t],\n\t\"content\": \"singapore is stupid\",\n\t\"url\": \"https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/\",\n\t\"context\": \"21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist\",\n\t\"type\": \"post\",\n\t\"datetime\": \"2024-04-21 22:10:42\"\n}"}],"dependRelation":null,"relation":null,"nextNode":[13504600516704],"resultConditionLocation":0,"dependTaskList":[{"condition":"${is_message_empty}==0","nextNode":[13426451158240]},{"condition":null,"nextNode":[13504600516704]}]}, class: class org.apache.dolphinscheduler.plugin.task.api.parameters.SwitchParameters
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (String)"{"localParams":null,"varPool":[{"prop":"is_message_empty","direct":"IN","type":"VARCHAR","value":"0"},{"prop":"filtered_data_message","direct":"IN","type":"VARCHAR","value":"{\n\t\"authors\": [\n\t\t\"premiumplatinum\"\n\t],\n\t\"content\": \"singapore is stupid\",\n\t\"url\": \"https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/\",\n\t\"context\": \"21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist\",\n\t\"type\":"[truncated 285 chars]; line: 1, column: 32] (through reference chain: org.apache.dolphinscheduler.plugin.task.api.parameters.SwitchParameters["varPool"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1741)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromArray(StdDeserializer.java:222)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:46)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:11)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3597)
+	at org.apache.dolphinscheduler.common.utils.JSONUtils.parseObject(JSONUtils.java:146)
+	at org.apache.dolphinscheduler.dao.entity.TaskInstance.getSwitchDependency(TaskInstance.java:329)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.commons.beanutils.BeanMap.get(BeanMap.java:415)
+	at org.apache.commons.beanutils.BeanMap$12.next(BeanMap.java:606)
+	at org.apache.commons.beanutils.BeanMap$12.next(BeanMap.java:600)
+	at java.util.Collections$UnmodifiableCollection$1.next(Collections.java:1044)
+	at org.apache.dolphinscheduler.common.utils.CollectionUtils.getListByExclusion(CollectionUtils.java:65)
+	at org.apache.dolphinscheduler.api.service.impl.TaskInstanceServiceImpl.queryTaskListPaging(TaskInstanceServiceImpl.java:203)
+	at org.apache.dolphinscheduler.api.service.impl.TaskInstanceServiceImpl$$FastClassBySpringCGLIB$$a1a6235.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.TaskInstanceServiceImpl$$EnhancerBySpringCGLIB$$8ed5ad7c.queryTaskListPaging(<generated>)
+	at org.apache.dolphinscheduler.api.controller.TaskInstanceController.queryTaskListPaging(TaskInstanceController.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:497)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-05-07 08:02:49.776 +0800 o.a.d.c.u.JSONUtils:[148] - Parse object exception, jsonStr: {"localParams":null,"varPool":[{"prop":"is_message_empty","direct":"IN","type":"VARCHAR","value":"0"},{"prop":"filtered_data_message","direct":"IN","type":"VARCHAR","value":"{\n\t\"authors\": [\n\t\t\"premiumplatinum\"\n\t],\n\t\"content\": \"singapore is stupid\",\n\t\"url\": \"https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/\",\n\t\"context\": \"21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist\",\n\t\"type\": \"post\",\n\t\"datetime\": \"2024-04-21 22:10:42\"\n}"}],"dependRelation":null,"relation":null,"nextNode":[13504600516704],"resultConditionLocation":0,"dependTaskList":[{"condition":"${is_message_empty}==0","nextNode":[13426451158240]},{"condition":null,"nextNode":[13504600516704]}]}, class: class org.apache.dolphinscheduler.plugin.task.api.parameters.SwitchParameters
+com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (String)"{"localParams":null,"varPool":[{"prop":"is_message_empty","direct":"IN","type":"VARCHAR","value":"0"},{"prop":"filtered_data_message","direct":"IN","type":"VARCHAR","value":"{\n\t\"authors\": [\n\t\t\"premiumplatinum\"\n\t],\n\t\"content\": \"singapore is stupid\",\n\t\"url\": \"https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/\",\n\t\"context\": \"21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist\",\n\t\"type\":"[truncated 285 chars]; line: 1, column: 32] (through reference chain: org.apache.dolphinscheduler.plugin.task.api.parameters.SwitchParameters["varPool"])
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1741)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1515)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer._deserializeFromArray(StdDeserializer.java:222)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:46)
+	at com.fasterxml.jackson.databind.deser.std.StringDeserializer.deserialize(StringDeserializer.java:11)
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3597)
+	at org.apache.dolphinscheduler.common.utils.JSONUtils.parseObject(JSONUtils.java:146)
+	at org.apache.dolphinscheduler.dao.entity.TaskInstance.getSwitchDependency(TaskInstance.java:329)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.commons.beanutils.BeanMap.get(BeanMap.java:415)
+	at org.apache.commons.beanutils.BeanMap$12.next(BeanMap.java:606)
+	at org.apache.commons.beanutils.BeanMap$12.next(BeanMap.java:600)
+	at java.util.Collections$UnmodifiableCollection$1.next(Collections.java:1044)
+	at org.apache.dolphinscheduler.common.utils.CollectionUtils.getListByExclusion(CollectionUtils.java:65)
+	at org.apache.dolphinscheduler.api.service.impl.TaskInstanceServiceImpl.queryTaskListPaging(TaskInstanceServiceImpl.java:203)
+	at org.apache.dolphinscheduler.api.service.impl.TaskInstanceServiceImpl$$FastClassBySpringCGLIB$$a1a6235.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at org.apache.dolphinscheduler.api.service.impl.TaskInstanceServiceImpl$$EnhancerBySpringCGLIB$$8ed5ad7c.queryTaskListPaging(<generated>)
+	at org.apache.dolphinscheduler.api.controller.TaskInstanceController.queryTaskListPaging(TaskInstanceController.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:497)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1656)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] 2024-05-07 08:03:09.206 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3942, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1050/3942.log
+[INFO] 2024-05-07 08:03:09.460 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[INFO] 2024-05-07 08:03:10.052 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3942, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1050/3942.log
+[INFO] 2024-05-07 08:03:10.107 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3942, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1050/3942.log
+[INFO] 2024-05-07 08:17:51.103 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13505298546272, commandCount:1.
+[INFO] 2024-05-07 08:18:02.833 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3944, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1051/3944.log
+[INFO] 2024-05-07 08:18:03.167 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3944, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1051/3944.log
+[INFO] 2024-05-07 08:18:04.118 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3944, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1051/3944.log
+[INFO] 2024-05-07 08:18:04.257 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3944, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1051/3944.log
+[INFO] 2024-05-07 08:18:15.572 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3944, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1051/3944.log
+[INFO] 2024-05-07 08:18:15.801 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3944, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1051/3944.log
+[INFO] 2024-05-07 08:18:25.425 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3944, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1051/3944.log
+[INFO] 2024-05-07 08:18:25.638 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3944, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1051/3944.log
+[INFO] 2024-05-07 08:18:37.980 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3944, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1051/3944.log
+[INFO] 2024-05-07 08:18:38.115 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3944, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1051/3944.log
+[INFO] 2024-05-07 08:18:38.195 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3944, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1051/3944.log
+[INFO] 2024-05-07 08:23:14.323 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance qualti_test-21-20240507081756839 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-05-07 08:23:15.277 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance qualti_test-21-20240506155928346 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-05-07 08:25:28.281 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13505298546272, commandCount:1.
+[INFO] 2024-05-07 08:25:44.650 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13505298546272, commandCount:1.
+[INFO] 2024-05-07 08:25:59.531 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance qualti_test-21-20240507082546999 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-05-07 08:26:06.450 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3945, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1052/3945.log
+[INFO] 2024-05-07 08:26:06.578 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3945, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1052/3945.log
+[INFO] 2024-05-07 08:26:06.733 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3945, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1052/3945.log
+[INFO] 2024-05-07 08:31:44.133 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance qualti_test-21-20240507082538714 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-05-07 08:31:53.943 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13505298546272, commandCount:1.
+[INFO] 2024-05-07 08:33:03.129 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3947, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1054/3947.log
+[INFO] 2024-05-07 08:33:03.246 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3947, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1054/3947.log
+[INFO] 2024-05-07 08:33:03.311 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3947, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1054/3947.log
+[INFO] 2024-05-07 08:38:40.946 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance qualti_test-21-20240507083153989 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-05-07 08:38:55.991 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13505298546272, commandCount:1.
+[INFO] 2024-05-07 08:39:02.981 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3948, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1055/3948.log
+[INFO] 2024-05-07 08:39:03.244 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3948, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1055/3948.log
+[INFO] 2024-05-07 08:39:16.749 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3948, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1055/3948.log
+[INFO] 2024-05-07 08:39:16.894 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3948, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1055/3948.log
+[INFO] 2024-05-07 08:40:46.046 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3948, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1055/3948.log
+[INFO] 2024-05-07 08:40:46.307 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3948, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1055/3948.log
+[INFO] 2024-05-07 08:40:46.420 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3948, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1055/3948.log
+[INFO] 2024-05-07 08:40:57.901 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance qualti_test-21-20240507083856810 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-05-07 08:41:01.342 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13505298546272, commandCount:1.
+[INFO] 2024-05-07 08:41:11.576 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3949, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1056/3949.log
+[INFO] 2024-05-07 08:41:11.657 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3949, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1056/3949.log
+[INFO] 2024-05-07 08:41:24.967 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3949, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1056/3949.log
+[INFO] 2024-05-07 08:41:25.175 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3949, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1056/3949.log
+[INFO] 2024-05-07 08:41:25.275 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3949, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1056/3949.log
+[INFO] 2024-05-07 08:41:52.906 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance qualti_test-21-20240507084101506 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-05-07 08:41:56.827 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13505298546272, commandCount:1.
+[INFO] 2024-05-07 08:42:12.328 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3950, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1057/3950.log
+[INFO] 2024-05-07 08:42:12.425 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3950, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1057/3950.log
+[INFO] 2024-05-07 08:42:25.613 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3950, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1057/3950.log
+[INFO] 2024-05-07 08:42:25.833 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3950, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1057/3950.log
+[INFO] 2024-05-07 08:42:25.930 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3950, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1057/3950.log
+[INFO] 2024-05-07 08:50:46.235 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance qualti_test-21-20240507084157804 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-05-07 08:50:49.900 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13505298546272, commandCount:1.
+[INFO] 2024-05-07 08:51:18.139 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3951, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1058/3951.log
+[INFO] 2024-05-07 08:51:18.249 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3951, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1058/3951.log
+[INFO] 2024-05-07 08:51:18.413 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3951, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1058/3951.log
+[INFO] 2024-05-07 08:53:05.273 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance qualti_test-21-20240507085049982 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-05-07 08:53:11.164 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13505298546272, commandCount:1.
+[INFO] 2024-05-07 08:53:42.985 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3952, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1059/3952.log
+[INFO] 2024-05-07 08:53:43.080 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3952, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1059/3952.log
+[INFO] 2024-05-07 08:56:38.861 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3951, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1058/3951.log
+[INFO] 2024-05-07 08:56:39.013 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3951, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1058/3951.log
+[INFO] 2024-05-07 08:56:39.111 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3951, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1058/3951.log
+[INFO] 2024-05-07 08:57:53.379 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3952, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1059/3952.log
+[INFO] 2024-05-07 08:57:53.552 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3952, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1059/3952.log
+[INFO] 2024-05-07 08:57:54.842 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3952, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1059/3952.log
+[INFO] 2024-05-07 08:57:54.967 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3952, taskInstanceName:[null check] filtered data persistence, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240507/13505298546272/21/1059/3952.log

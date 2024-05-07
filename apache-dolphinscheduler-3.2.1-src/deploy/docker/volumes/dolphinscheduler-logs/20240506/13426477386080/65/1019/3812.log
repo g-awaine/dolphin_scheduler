@@ -1,0 +1,178 @@
+[INFO] 2024-05-06 03:52:14.635 +0800 - Submit LogicTask: check if message empty to MasterTaskExecutorThreadPool success
+[INFO] 2024-05-06 03:52:14.635 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 03:52:14.646 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-06 03:52:14.649 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 03:52:14.650 +0800 - Begin to initialize task
+[INFO] 2024-05-06 03:52:14.650 +0800 - Set task startTime: 1714938734650
+[INFO] 2024-05-06 03:52:14.650 +0800 - Set task appId: 1019_3812
+[INFO] 2024-05-06 03:52:14.651 +0800 - End initialize task {
+  "taskInstanceId" : 3812,
+  "taskName" : "check if message empty",
+  "firstSubmitTime" : 1714938734628,
+  "startTime" : 1714938734650,
+  "taskType" : "SWITCH",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.0.11:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240506/13426477386080/65/1019/3812.log",
+  "processId" : 0,
+  "processDefineCode" : 13426477386080,
+  "processDefineVersion" : 65,
+  "processInstanceId" : 1019,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"input_topic\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"gnews_filtered\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"\",\"resourceList\":[],\"switchResult\":{\"dependTaskList\":[{\"condition\":\"${is_message_empty}==0\",\"nextNode\":13426451158240}],\"nextNode\":13504600516704}}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "check if message empty"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "input_topic" : {
+      "prop" : "input_topic",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "gnews_filtered"
+    },
+    "is_message_empty" : {
+      "prop" : "is_message_empty",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240506"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3812"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13504574550240"
+    },
+    "filtered_data_message" : {
+      "prop" : "filtered_data_message",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "null"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240506035214"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1019"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "es_filtered_data_persistence_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13426477386080"
+    }
+  },
+  "taskAppId" : "1019_3812",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"is_message_empty\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"1\"},{\"prop\":\"filtered_data_message\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"null\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-06 03:52:14.651 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 03:52:14.651 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-06 03:52:14.651 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 03:52:14.654 +0800 - Send task status RUNNING_EXECUTION to master 172.18.0.11:5678
+[INFO] 2024-05-06 03:52:14.655 +0800 - Success initialize task parameters: 
+{
+  "localParams" : null,
+  "varPool" : null,
+  "dependRelation" : null,
+  "relation" : null,
+  "nextNode" : [ 13504600516704 ],
+  "resultConditionLocation" : 0,
+  "dependTaskList" : [ {
+    "condition" : "${is_message_empty}==0",
+    "nextNode" : [ 13426451158240 ]
+  } ]
+}
+[INFO] 2024-05-06 03:52:14.655 +0800 - Initialized task plugin instance: SWITCH successfully
+[INFO] 2024-05-06 03:52:14.656 +0800 - Initialize taskVarPool: [{"prop":"is_message_empty","direct":"IN","type":"VARCHAR","value":"1"},{"prop":"filtered_data_message","direct":"IN","type":"VARCHAR","value":"null"}] successfully
+[INFO] 2024-05-06 03:52:14.656 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 03:52:14.656 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-06 03:52:14.656 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 03:52:14.657 +0800 - Begin to execute 1 condition: ${is_message_empty}==0 
+[INFO] 2024-05-06 03:52:14.657 +0800 - paramName:is_message_empty，paramValue:"1"
+[INFO] 2024-05-06 03:52:14.657 +0800 - Format condition sentence::"1"==0 successfully
+[INFO] 2024-05-06 03:52:14.658 +0800 - Execute condition sentence: "1"==0 successfully: false
+[INFO] 2024-05-06 03:52:14.658 +0800 - Begin to execute 2 condition: null 
+[INFO] 2024-05-06 03:52:14.659 +0800 - The switch task depend result:SUCCESS, switch branch:1
+[INFO] 2024-05-06 03:52:14.659 +0800 - Switch task execute finished, condition result is: SUCCESS, task status is: SUCCESS
+[INFO] 2024-05-06 03:52:14.659 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 03:52:14.659 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-06 03:52:14.660 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 03:52:14.662 +0800 - Send task status: SUCCESS to master: 172.18.0.11:5678 successfully
+[INFO] 2024-05-06 03:52:14.663 +0800 - Execute task finished, will send the task execute result to master, the current task execute result is SUCCESS
+[INFO] 2024-05-06 03:52:14.663 +0800 - FINALIZE_SESSION

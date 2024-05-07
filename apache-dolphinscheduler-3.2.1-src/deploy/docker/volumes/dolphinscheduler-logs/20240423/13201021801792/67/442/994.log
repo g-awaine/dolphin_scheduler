@@ -1,0 +1,348 @@
+[INFO] 2024-04-23 03:17:56.744 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:17:56.746 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-23 03:17:56.746 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:17:56.746 +0800 - Begin to initialize task
+[INFO] 2024-04-23 03:17:56.746 +0800 - Set task startTime: 1713813476746
+[INFO] 2024-04-23 03:17:56.746 +0800 - Set task appId: 442_994
+[INFO] 2024-04-23 03:17:56.749 +0800 - End initialize task {
+  "taskInstanceId" : 994,
+  "taskName" : "spark preprocessing",
+  "firstSubmitTime" : 1713813476727,
+  "startTime" : 1713813476746,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240423/13201021801792/67/442/994.log",
+  "processId" : 0,
+  "processDefineCode" : 13201021801792,
+  "processDefineVersion" : 67,
+  "processInstanceId" : 442,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"folder\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"processing\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"$SPARK_HOME/bin/spark-submit \\\\\\n    --master spark://spark-master:7077 \\\\\\n    --conf spark.driver.cores=1 \\\\\\n    --conf spark.driver.memory=512M \\\\\\n    --conf spark.executor.instances=2 \\\\\\n    --conf spark.executor.cores=2 \\\\\\n    --conf spark.executor.memory=1G \\\\\\n    --files ${raw_file_dir} \\\\\\n    --name reddit_preprocessing spark_reddit_preprocessing.py\\n\",\"resourceList\":[{\"id\":null,\"resourceName\":\"file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py\",\"res\":null}]}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport HADOOP_CONF_DIR=/opt/hadoop-3.4.0/etc/hadoop\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "spark preprocessing"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240423"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "994"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13210058002752"
+    },
+    "raw_file" : {
+      "prop" : "raw_file",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "386-20240422.json"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240423031756"
+    },
+    "folder" : {
+      "prop" : "folder",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "processing"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "442"
+    },
+    "raw_file_dir" : {
+      "prop" : "raw_file_dir",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit/processing/386-20240422.json"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240422"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocess_post"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13201021801792"
+    }
+  },
+  "taskAppId" : "442_994",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"raw_file_dir\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"/local_storage/reddit/processing/386-20240422.json\"},{\"prop\":\"raw_file\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"386-20240422.json\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-23 03:17:56.749 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:17:56.749 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-23 03:17:56.749 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:17:56.756 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-23 03:17:56.757 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-23 03:17:56.757 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/994 check successfully
+[INFO] 2024-04-23 03:17:56.757 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-04-23 03:17:56.787 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py, resourceRelativePath=spark_reddit_preprocessing.py, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/994/spark_reddit_preprocessing.py)})
+[INFO] 2024-04-23 03:17:56.788 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-23 03:17:56.788 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-04-23 03:17:56.789 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "$SPARK_HOME/bin/spark-submit \\\n    --master spark://spark-master:7077 \\\n    --conf spark.driver.cores=1 \\\n    --conf spark.driver.memory=512M \\\n    --conf spark.executor.instances=2 \\\n    --conf spark.executor.cores=2 \\\n    --conf spark.executor.memory=1G \\\n    --files ${raw_file_dir} \\\n    --name reddit_preprocessing spark_reddit_preprocessing.py\n",
+  "resourceList" : [ {
+    "id" : null,
+    "resourceName" : "file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py",
+    "res" : null
+  } ]
+}
+[INFO] 2024-04-23 03:17:56.790 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-23 03:17:56.790 +0800 - Set taskVarPool: [{"prop":"raw_file_dir","direct":"IN","type":"VARCHAR","value":"/local_storage/reddit/processing/386-20240422.json"},{"prop":"raw_file","direct":"IN","type":"VARCHAR","value":"386-20240422.json"}] successfully
+[INFO] 2024-04-23 03:17:56.790 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:17:56.790 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-23 03:17:56.790 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:17:56.792 +0800 - Final Shell file is: 
+[INFO] 2024-04-23 03:17:56.792 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-23 03:17:56.793 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export HADOOP_CONF_DIR=/opt/hadoop-3.4.0/etc/hadoop
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+$SPARK_HOME/bin/spark-submit \
+    --master spark://spark-master:7077 \
+    --conf spark.driver.cores=1 \
+    --conf spark.driver.memory=512M \
+    --conf spark.executor.instances=2 \
+    --conf spark.executor.cores=2 \
+    --conf spark.executor.memory=1G \
+    --files /local_storage/reddit/processing/386-20240422.json \
+    --name reddit_preprocessing spark_reddit_preprocessing.py
+
+[INFO] 2024-04-23 03:17:56.793 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-23 03:17:56.793 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/994/442_994.sh
+[INFO] 2024-04-23 03:17:56.797 +0800 - process start, process id is: 803
+[INFO] 2024-04-23 03:17:57.797 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-04-23 03:18:05.849 +0800 -  -> 
+	24/04/23 03:18:04 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2024-04-23 03:18:07.854 +0800 -  -> 
+	24/04/23 03:18:07 INFO SparkContext: Running Spark version 3.5.1
+	24/04/23 03:18:07 INFO SparkContext: OS info Linux, 6.5.0-28-generic, amd64
+	24/04/23 03:18:07 INFO SparkContext: Java version 1.8.0_402
+	24/04/23 03:18:07 INFO ResourceUtils: ==============================================================
+	24/04/23 03:18:07 INFO ResourceUtils: No custom resources configured for spark.driver.
+	24/04/23 03:18:07 INFO ResourceUtils: ==============================================================
+	24/04/23 03:18:07 INFO SparkContext: Submitted application: reddit_preprocessing
+	24/04/23 03:18:07 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 2, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+	24/04/23 03:18:07 INFO ResourceProfile: Limiting resource is cpus at 2 tasks per executor
+	24/04/23 03:18:07 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[INFO] 2024-04-23 03:18:08.857 +0800 -  -> 
+	24/04/23 03:18:08 INFO SecurityManager: Changing view acls to: default
+	24/04/23 03:18:08 INFO SecurityManager: Changing modify acls to: default
+	24/04/23 03:18:08 INFO SecurityManager: Changing view acls groups to: 
+	24/04/23 03:18:08 INFO SecurityManager: Changing modify acls groups to: 
+	24/04/23 03:18:08 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: default; groups with view permissions: EMPTY; users with modify permissions: default; groups with modify permissions: EMPTY
+[INFO] 2024-04-23 03:18:09.877 +0800 -  -> 
+	24/04/23 03:18:09 INFO Utils: Successfully started service 'sparkDriver' on port 39261.
+	24/04/23 03:18:09 INFO SparkEnv: Registering MapOutputTracker
+	24/04/23 03:18:09 INFO SparkEnv: Registering BlockManagerMaster
+	24/04/23 03:18:09 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+	24/04/23 03:18:09 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+	24/04/23 03:18:09 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+	24/04/23 03:18:09 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-82411abb-927c-4cc5-befe-4ee60b7fe6ee
+[INFO] 2024-04-23 03:18:10.887 +0800 -  -> 
+	24/04/23 03:18:09 INFO MemoryStore: MemoryStore started with capacity 93.3 MiB
+	24/04/23 03:18:09 INFO SparkEnv: Registering OutputCommitCoordinator
+	24/04/23 03:18:10 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+	24/04/23 03:18:10 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[INFO] 2024-04-23 03:18:11.891 +0800 -  -> 
+	24/04/23 03:18:10 INFO SparkContext: Added file file:///local_storage/reddit/processing/386-20240422.json at spark://5a1e1e642ebe:39261/files/386-20240422.json with timestamp 1713813487403
+	24/04/23 03:18:10 INFO Utils: Copying /local_storage/reddit/processing/386-20240422.json to /tmp/spark-b26117c0-364c-4cd9-a6f5-525fab58ad3e/userFiles-1253e34e-0184-40d6-a74a-42f2e7380539/386-20240422.json
+	24/04/23 03:18:11 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+	24/04/23 03:18:11 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.4:7077 after 98 ms (0 ms spent in bootstraps)
+[INFO] 2024-04-23 03:18:12.895 +0800 -  -> 
+	24/04/23 03:18:12 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20240422191812-0000
+	24/04/23 03:18:12 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37541.
+	24/04/23 03:18:12 INFO NettyBlockTransferService: Server created on 5a1e1e642ebe:37541
+	24/04/23 03:18:12 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+	24/04/23 03:18:12 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 5a1e1e642ebe, 37541, None)
+	24/04/23 03:18:12 INFO BlockManagerMasterEndpoint: Registering block manager 5a1e1e642ebe:37541 with 93.3 MiB RAM, BlockManagerId(driver, 5a1e1e642ebe, 37541, None)
+	24/04/23 03:18:12 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240422191812-0000/0 on worker-20240422182259-172.18.0.7-45411 (172.18.0.7:45411) with 2 core(s)
+	24/04/23 03:18:12 INFO StandaloneSchedulerBackend: Granted executor ID app-20240422191812-0000/0 on hostPort 172.18.0.7:45411 with 2 core(s), 1024.0 MiB RAM
+	24/04/23 03:18:12 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 5a1e1e642ebe, 37541, None)
+	24/04/23 03:18:12 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 5a1e1e642ebe, 37541, None)
+[INFO] 2024-04-23 03:18:13.902 +0800 -  -> 
+	24/04/23 03:18:13 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240422191812-0000/0 is now RUNNING
+	24/04/23 03:18:13 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+[INFO] 2024-04-23 03:18:16.921 +0800 -  -> 
+	24/04/23 03:18:16 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 345.3 KiB, free 93.0 MiB)
+[INFO] 2024-04-23 03:18:18.924 +0800 -  -> 
+	24/04/23 03:18:18 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 32.7 KiB, free 92.9 MiB)
+	24/04/23 03:18:18 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 5a1e1e642ebe:37541 (size: 32.7 KiB, free: 93.3 MiB)
+	24/04/23 03:18:18 INFO SparkContext: Created broadcast 0 from wholeTextFiles at NativeMethodAccessorImpl.java:0
+	24/04/23 03:18:18 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+	24/04/23 03:18:18 INFO SharedState: Warehouse path is 'file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/994/spark-warehouse'.
+[INFO] 2024-04-23 03:18:24.985 +0800 -  -> 
+	24/04/23 03:18:24 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.7:41548) with ID 0,  ResourceProfileId 0
+	24/04/23 03:18:24 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.7:39039 with 434.4 MiB RAM, BlockManagerId(0, 172.18.0.7, 39039, None)
+[INFO] 2024-04-23 03:18:33.021 +0800 -  -> 
+	24/04/23 03:18:32 INFO CodeGenerator: Code generated in 906.636491 ms
+[INFO] 2024-04-23 03:18:34.024 +0800 -  -> 
+	Traceback (most recent call last):
+	  File "/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/994/spark_reddit_preprocessing.py", line 49, in <module>
+	    raw_df = spark.read.json(raw_df)
+	             ^^^^^^^^^^^^^^^^^^^^^^^
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 440, in json
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 179, in deco
+	  File "/opt/spark-3.5.1-bin-hadoop3/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 326, in get_return_value
+	py4j.protocol.Py4JJavaError: An error occurred while calling o35.json.
+	: org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/994/386-20240422.json
+		at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:340)
+		at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:279)
+		at org.apache.spark.input.WholeTextFileInputFormat.setMinPartitions(WholeTextFileInputFormat.scala:52)
+		at org.apache.spark.rdd.WholeTextFileRDD.getPartitions(WholeTextFileRDD.scala:54)
+		at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:294)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.rdd.RDD.partitions(RDD.scala:290)
+		at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+		at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:294)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.rdd.RDD.partitions(RDD.scala:290)
+		at org.apache.spark.api.python.PythonRDD.getPartitions(PythonRDD.scala:57)
+		at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:294)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.rdd.RDD.partitions(RDD.scala:290)
+		at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+		at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:294)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.rdd.RDD.partitions(RDD.scala:290)
+		at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+		at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:294)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.rdd.RDD.partitions(RDD.scala:290)
+		at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+		at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:294)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.rdd.RDD.partitions(RDD.scala:290)
+		at org.apache.spark.sql.execution.SQLExecutionRDD.getPartitions(SQLExecutionRDD.scala:44)
+		at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:294)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.rdd.RDD.partitions(RDD.scala:290)
+		at org.apache.spark.rdd.MapPartitionsRDD.getPartitions(MapPartitionsRDD.scala:49)
+		at org.apache.spark.rdd.RDD.$anonfun$partitions$2(RDD.scala:294)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.rdd.RDD.partitions(RDD.scala:290)
+		at org.apache.spark.SparkContext.runJob(SparkContext.scala:2493)
+		at org.apache.spark.sql.catalyst.json.JsonInferSchema.infer(JsonInferSchema.scala:120)
+		at org.apache.spark.sql.execution.datasources.json.TextInputJsonDataSource$.$anonfun$inferFromDataset$5(JsonDataSource.scala:109)
+		at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+		at org.apache.spark.sql.execution.datasources.json.TextInputJsonDataSource$.inferFromDataset(JsonDataSource.scala:109)
+		at org.apache.spark.sql.DataFrameReader.$anonfun$json$4(DataFrameReader.scala:416)
+		at scala.Option.getOrElse(Option.scala:189)
+		at org.apache.spark.sql.DataFrameReader.json(DataFrameReader.scala:416)
+		at org.apache.spark.sql.DataFrameReader.json(DataFrameReader.scala:391)
+		at org.apache.spark.sql.DataFrameReader.json(DataFrameReader.scala:377)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+		at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+		at py4j.Gateway.invoke(Gateway.java:282)
+		at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+		at py4j.commands.CallCommand.execute(CallCommand.java:79)
+		at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+		at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: java.io.IOException: Input path does not exist: file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/994/386-20240422.json
+		at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:313)
+		... 56 more
+	
+	24/04/23 03:18:33 INFO SparkContext: Invoking stop() from shutdown hook
+	24/04/23 03:18:33 INFO SparkContext: SparkContext is stopping with exitCode 0.
+	24/04/23 03:18:33 INFO SparkUI: Stopped Spark web UI at http://5a1e1e642ebe:4040
+	24/04/23 03:18:33 INFO StandaloneSchedulerBackend: Shutting down all executors
+	24/04/23 03:18:33 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Asking each executor to shut down
+	24/04/23 03:18:33 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+	24/04/23 03:18:33 INFO MemoryStore: MemoryStore cleared
+	24/04/23 03:18:33 INFO BlockManager: BlockManager stopped
+	24/04/23 03:18:33 INFO BlockManagerMaster: BlockManagerMaster stopped
+	24/04/23 03:18:33 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+[INFO] 2024-04-23 03:18:35.044 +0800 -  -> 
+	24/04/23 03:18:34 INFO SparkContext: Successfully stopped SparkContext
+	24/04/23 03:18:34 INFO ShutdownHookManager: Shutdown hook called
+	24/04/23 03:18:34 INFO ShutdownHookManager: Deleting directory /tmp/spark-b26117c0-364c-4cd9-a6f5-525fab58ad3e/pyspark-3bf8e310-7e98-4273-a4ca-82465eb4b6d5
+	24/04/23 03:18:34 INFO ShutdownHookManager: Deleting directory /tmp/spark-b26117c0-364c-4cd9-a6f5-525fab58ad3e
+	24/04/23 03:18:34 INFO ShutdownHookManager: Deleting directory /tmp/spark-1a983f7f-d076-46ec-8523-fac929ba7d62
+[INFO] 2024-04-23 03:18:35.050 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/994, processId:803 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-04-23 03:18:35.057 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:18:35.060 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-23 03:18:35.061 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:18:35.064 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-23 03:18:35.089 +0800 - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[INFO] 2024-04-23 03:18:35.090 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-23 03:18:35.090 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/994
+[INFO] 2024-04-23 03:18:35.092 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/994
+[INFO] 2024-04-23 03:18:35.092 +0800 - FINALIZE_SESSION

@@ -1,0 +1,8 @@
+[INFO] 2024-04-19 00:18:34.957 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:733, taskInstanceName:consume kafka topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13314339450656/3/321/733.log
+[INFO] 2024-04-19 00:18:35.364 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:733, taskInstanceName:consume kafka topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240418/13314339450656/3/321/733.log
+[INFO] 2024-04-19 00:20:49.885 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13001194483488, processCode:13314339450656, processVersion:3.
+[INFO] 2024-04-19 00:20:49.890 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13314339450656, processVersion:4.
+[INFO] 2024-04-19 00:20:49.894 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13001194483488, processCode:13314339450656, processVersion:4.
+[INFO] 2024-04-19 00:20:55.307 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13314339450656, commandCount:1.
+[INFO] 2024-04-19 00:21:39.942 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:734, taskInstanceName:consume kafka topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240419/13314339450656/4/322/734.log
+[INFO] 2024-04-19 00:21:40.243 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:734, taskInstanceName:consume kafka topic, host: 172.22.0.13:1234, logPath:/opt/dolphinscheduler/logs/20240419/13314339450656/4/322/734.log

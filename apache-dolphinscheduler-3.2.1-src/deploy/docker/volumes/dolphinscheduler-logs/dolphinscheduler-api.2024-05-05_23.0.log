@@ -1,0 +1,80 @@
+[WARN] 2024-05-05 23:10:45.776 +0800 o.a.z.ClientCnxn:[1249] - Client session timed out, have not heard from server in 360963ms for session id 0x10000020921001c
+[WARN] 2024-05-05 23:10:45.777 +0800 o.a.z.ClientCnxn:[1292] - Session 0x10000020921001c for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 360963ms for session id 0x10000020921001c
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1250)
+[WARN] 2024-05-05 23:10:45.829 +0800 c.z.h.p.HikariPool:[788] - DolphinScheduler - Thread starvation or clock leap detected (housekeeper delta=6m3s405ms86µs914ns).
+[INFO] 2024-05-05 23:10:45.936 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: SUSPENDED
+[WARN] 2024-05-05 23:10:47.934 +0800 o.a.z.ClientCnxn:[1429] - Unable to reconnect to ZooKeeper service, session 0x10000020921001c has expired
+[WARN] 2024-05-05 23:10:47.934 +0800 o.a.c.ConnectionState:[316] - Session expired event received
+[WARN] 2024-05-05 23:10:47.936 +0800 o.a.z.ClientCnxn:[1292] - Session 0x10000020921001c for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x10000020921001c has expired
+	at org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1430)
+	at org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:154)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:86)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[INFO] 2024-05-05 23:10:47.966 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: LOST
+[INFO] 2024-05-05 23:10:48.080 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: RECONNECTED
+[INFO] 2024-05-05 23:10:48.275 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[WARN] 2024-05-05 23:16:45.185 +0800 c.z.h.p.HikariPool:[788] - DolphinScheduler - Thread starvation or clock leap detected (housekeeper delta=1m29s220ms959µs803ns).
+[WARN] 2024-05-05 23:16:45.250 +0800 o.a.z.ClientCnxn:[1292] - Session 0x10000020921001f for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10000020921001f, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[INFO] 2024-05-05 23:16:45.453 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: SUSPENDED
+[WARN] 2024-05-05 23:16:47.241 +0800 o.a.c.ConnectionState:[316] - Session expired event received
+[WARN] 2024-05-05 23:16:47.241 +0800 o.a.z.ClientCnxn:[1429] - Unable to reconnect to ZooKeeper service, session 0x10000020921001f has expired
+[WARN] 2024-05-05 23:16:47.242 +0800 o.a.z.ClientCnxn:[1292] - Session 0x10000020921001f for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x10000020921001f has expired
+	at org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1430)
+	at org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:154)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:86)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[INFO] 2024-05-05 23:16:47.251 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: LOST
+[INFO] 2024-05-05 23:16:47.266 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: RECONNECTED
+[INFO] 2024-05-05 23:16:47.283 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[WARN] 2024-05-05 23:22:57.548 +0800 c.z.h.p.HikariPool:[788] - DolphinScheduler - Thread starvation or clock leap detected (housekeeper delta=2m42s352ms6µs242ns).
+[WARN] 2024-05-05 23:22:57.586 +0800 o.a.z.ClientCnxn:[1249] - Client session timed out, have not heard from server in 157073ms for session id 0x100000209210024
+[WARN] 2024-05-05 23:22:57.586 +0800 o.a.z.ClientCnxn:[1292] - Session 0x100000209210024 for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 157073ms for session id 0x100000209210024
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1250)
+[INFO] 2024-05-05 23:22:57.707 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: SUSPENDED
+[WARN] 2024-05-05 23:22:59.484 +0800 o.a.z.ClientCnxn:[1429] - Unable to reconnect to ZooKeeper service, session 0x100000209210024 has expired
+[WARN] 2024-05-05 23:22:59.484 +0800 o.a.z.ClientCnxn:[1292] - Session 0x100000209210024 for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x100000209210024 has expired
+	at org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1430)
+	at org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:154)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:86)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WARN] 2024-05-05 23:22:59.490 +0800 o.a.c.ConnectionState:[316] - Session expired event received
+[INFO] 2024-05-05 23:22:59.495 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: LOST
+[INFO] 2024-05-05 23:22:59.517 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: RECONNECTED
+[INFO] 2024-05-05 23:22:59.558 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-05-05 23:23:55.799 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13426477386080, processVersion:41.
+[INFO] 2024-05-05 23:23:55.813 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13426477386080, processVersion:42.
+[INFO] 2024-05-05 23:23:55.841 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13426477386080, processVersion:42.
+[INFO] 2024-05-05 23:27:15.485 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13426477386080, commandCount:1.
+[INFO] 2024-05-05 23:28:55.434 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3703, taskInstanceName:persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13426477386080/42/998/3703.log
+[INFO] 2024-05-05 23:28:55.730 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3703, taskInstanceName:persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13426477386080/42/998/3703.log
+[WARN] 2024-05-05 23:56:19.240 +0800 o.a.z.ClientCnxn:[1292] - Session 0x100000209210029 for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x100000209210029, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WARN] 2024-05-05 23:56:19.290 +0800 c.z.h.p.HikariPool:[788] - DolphinScheduler - Thread starvation or clock leap detected (housekeeper delta=5m21s671ms596µs932ns).
+[INFO] 2024-05-05 23:56:19.363 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: SUSPENDED
+[WARN] 2024-05-05 23:56:21.282 +0800 o.a.z.ClientCnxn:[1429] - Unable to reconnect to ZooKeeper service, session 0x100000209210029 has expired
+[WARN] 2024-05-05 23:56:21.284 +0800 o.a.z.ClientCnxn:[1292] - Session 0x100000209210029 for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x100000209210029 has expired
+	at org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1430)
+	at org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:154)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:86)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[WARN] 2024-05-05 23:56:21.283 +0800 o.a.c.ConnectionState:[316] - Session expired event received
+[INFO] 2024-05-05 23:56:21.293 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: LOST
+[INFO] 2024-05-05 23:56:21.319 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: RECONNECTED
+[INFO] 2024-05-05 23:56:21.345 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}

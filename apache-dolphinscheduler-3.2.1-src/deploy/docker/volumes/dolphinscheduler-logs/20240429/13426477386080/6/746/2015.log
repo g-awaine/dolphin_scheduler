@@ -1,0 +1,284 @@
+[INFO] 2024-04-29 17:27:28.250 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:27:28.252 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-29 17:27:28.252 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:27:28.252 +0800 - Begin to initialize task
+[INFO] 2024-04-29 17:27:28.253 +0800 - Set task startTime: 1714382848253
+[INFO] 2024-04-29 17:27:28.254 +0800 - Set task appId: 746_2015
+[INFO] 2024-04-29 17:27:28.254 +0800 - End initialize task {
+  "taskInstanceId" : 2015,
+  "taskName" : "persist_to_postgre",
+  "firstSubmitTime" : 1714382848223,
+  "startTime" : 1714382848253,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.10:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240429/13426477386080/6/746/2015.log",
+  "processId" : 0,
+  "processDefineCode" : 13426477386080,
+  "processDefineVersion" : 6,
+  "processInstanceId" : 746,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"query\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}],\"rawScript\":\"import re\\n\\n# define the table to send the data to\\ntable_name = \\\"filtered_data_persistence\\\"\\n\\n# Provided JSON data as strings\\njson_data = ''' \\n{\\n  \\\"user\\\": \\\"premiumplatinum\\\",\\n  \\\"content\\\": \\\"singapore is stupid\\\",\\n  \\\"url\\\": \\\"https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/\\\",\\n  \\\"context\\\": \\\"21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist\\\",\\n  \\\"score\\\": 131,\\n  \\\"type\\\": \\\"post\\\",\\n  \\\"id\\\": \\\"1c9itat\\\",\\n  \\\"datetime\\\": \\\"2024-04-21 22:10:42\\\"\\n}\\n{\\n        \\\"user\\\": \\\"premiumplatinum\\\",\\n        \\\"content\\\": \\\"s is stupid\\\",\\n        \\\"url\\\": \\\"https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/\\\",\\n        \\\"context\\\": \\\"21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist\\\",\\n        \\\"score\\\": 131,\\n        \\\"type\\\": \\\"post\\\",\\n        \\\"id\\\": \\\"1c9itat\\\",\\n        \\\"datetime\\\": \\\"2024-04-21 22:10:42\\\"\\n}\\n'''\\n\\n# process the kafka messages to individual JSON objects\\njson_objects = json_data.replace('}\\\\n{', '},\\\\n{').strip()\\njson_objects = re.sub(\\\" +\\\", \\\" \\\",json_objects)   \\njson_objects = '[' + json_objects + ']'\\n\\n# convert JSON string to a list of dicts\\njson_list = json.loads(json_objects)\\n\\n# convert list of dictionaries into list of tuples containing only the values\\nvalues = [tuple(message.values()) for message in json_list]\\n\\n# create the SQL Query\\nquery = f'''\\nINSERT INTO {table_name} (user, content, url, context, score, type, id, datetime)\\nVALUES \\n'''\\n\\nfor value in values:\\n    query += str(value) + ',\\\\n'\\n\\n# remove the last 2 character ,\\\\n and change it to ; for the query\\nquery = query[:-2] + ';'\\n\\n# pass the query as a parameter downstream\\nprint(\\\"#setValue(query=%s)\\\" % query)\",\"resourceList\":[]}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "persist_to_postgre"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "query" : {
+      "prop" : "query",
+      "direct" : "OUT",
+      "type" : "VARCHAR",
+      "value" : ""
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240429"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2015"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13426451158240"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240429172728"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "746"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240428"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "es_filtered_data_persistence_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13426477386080"
+    }
+  },
+  "taskAppId" : "746_2015",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"query\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-29 17:27:28.255 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:27:28.255 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-29 17:27:28.255 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:27:28.302 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-29 17:27:28.303 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-29 17:27:28.304 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_6/746/2015 check successfully
+[INFO] 2024-04-29 17:27:28.305 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[INFO] 2024-04-29 17:27:28.305 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-04-29 17:27:28.306 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-29 17:27:28.306 +0800 - Task plugin instance: PYTHON create successfully
+[INFO] 2024-04-29 17:27:28.307 +0800 - Initialize python task params {
+  "localParams" : [ {
+    "prop" : "query",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  } ],
+  "varPool" : null,
+  "rawScript" : "import re\n\n# define the table to send the data to\ntable_name = \"filtered_data_persistence\"\n\n# Provided JSON data as strings\njson_data = ''' \n{\n  \"user\": \"premiumplatinum\",\n  \"content\": \"singapore is stupid\",\n  \"url\": \"https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/\",\n  \"context\": \"21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist\",\n  \"score\": 131,\n  \"type\": \"post\",\n  \"id\": \"1c9itat\",\n  \"datetime\": \"2024-04-21 22:10:42\"\n}\n{\n        \"user\": \"premiumplatinum\",\n        \"content\": \"s is stupid\",\n        \"url\": \"https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/\",\n        \"context\": \"21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist\",\n        \"score\": 131,\n        \"type\": \"post\",\n        \"id\": \"1c9itat\",\n        \"datetime\": \"2024-04-21 22:10:42\"\n}\n'''\n\n# process the kafka messages to individual JSON objects\njson_objects = json_data.replace('}\\n{', '},\\n{').strip()\njson_objects = re.sub(\" +\", \" \",json_objects)   \njson_objects = '[' + json_objects + ']'\n\n# convert JSON string to a list of dicts\njson_list = json.loads(json_objects)\n\n# convert list of dictionaries into list of tuples containing only the values\nvalues = [tuple(message.values()) for message in json_list]\n\n# create the SQL Query\nquery = f'''\nINSERT INTO {table_name} (user, content, url, context, score, type, id, datetime)\nVALUES \n'''\n\nfor value in values:\n    query += str(value) + ',\\n'\n\n# remove the last 2 character ,\\n and change it to ; for the query\nquery = query[:-2] + ';'\n\n# pass the query as a parameter downstream\nprint(\"#setValue(query=%s)\" % query)",
+  "resourceList" : [ ]
+}
+[INFO] 2024-04-29 17:27:28.307 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-29 17:27:28.307 +0800 - Set taskVarPool: [{"prop":"query","direct":"OUT","type":"VARCHAR","value":""}] successfully
+[INFO] 2024-04-29 17:27:28.307 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:27:28.307 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-29 17:27:28.308 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:27:28.308 +0800 - raw python script : import re
+
+# define the table to send the data to
+table_name = "filtered_data_persistence"
+
+# Provided JSON data as strings
+json_data = ''' 
+{
+  "user": "premiumplatinum",
+  "content": "singapore is stupid",
+  "url": "https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/",
+  "context": "21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist",
+  "score": 131,
+  "type": "post",
+  "id": "1c9itat",
+  "datetime": "2024-04-21 22:10:42"
+}
+{
+        "user": "premiumplatinum",
+        "content": "s is stupid",
+        "url": "https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/",
+        "context": "21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist",
+        "score": 131,
+        "type": "post",
+        "id": "1c9itat",
+        "datetime": "2024-04-21 22:10:42"
+}
+'''
+
+# process the kafka messages to individual JSON objects
+json_objects = json_data.replace('}\n{', '},\n{').strip()
+json_objects = re.sub(" +", " ",json_objects)   
+json_objects = '[' + json_objects + ']'
+
+# convert JSON string to a list of dicts
+json_list = json.loads(json_objects)
+
+# convert list of dictionaries into list of tuples containing only the values
+values = [tuple(message.values()) for message in json_list]
+
+# create the SQL Query
+query = f'''
+INSERT INTO {table_name} (user, content, url, context, score, type, id, datetime)
+VALUES 
+'''
+
+for value in values:
+    query += str(value) + ',\n'
+
+# remove the last 2 character ,\n and change it to ; for the query
+query = query[:-2] + ';'
+
+# pass the query as a parameter downstream
+print("#setValue(query=%s)" % query)
+[INFO] 2024-04-29 17:27:28.308 +0800 - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_6/746/2015
+[INFO] 2024-04-29 17:27:28.308 +0800 - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_6/746/2015/py_746_2015.py
+[INFO] 2024-04-29 17:27:28.308 +0800 - #-*- encoding=utf8 -*-
+
+import re
+
+# define the table to send the data to
+table_name = "filtered_data_persistence"
+
+# Provided JSON data as strings
+json_data = ''' 
+{
+  "user": "premiumplatinum",
+  "content": "singapore is stupid",
+  "url": "https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/",
+  "context": "21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist",
+  "score": 131,
+  "type": "post",
+  "id": "1c9itat",
+  "datetime": "2024-04-21 22:10:42"
+}
+{
+        "user": "premiumplatinum",
+        "content": "s is stupid",
+        "url": "https://www.reddit.com/r/singapore/comments/1c9itat/21apr2024_orchard_road_camcar_turning_right_into/",
+        "context": "21apr2024 orchard road camcar turning right into centrepoint get tbone by cyclist",
+        "score": 131,
+        "type": "post",
+        "id": "1c9itat",
+        "datetime": "2024-04-21 22:10:42"
+}
+'''
+
+# process the kafka messages to individual JSON objects
+json_objects = json_data.replace('}\n{', '},\n{').strip()
+json_objects = re.sub(" +", " ",json_objects)   
+json_objects = '[' + json_objects + ']'
+
+# convert JSON string to a list of dicts
+json_list = json.loads(json_objects)
+
+# convert list of dictionaries into list of tuples containing only the values
+values = [tuple(message.values()) for message in json_list]
+
+# create the SQL Query
+query = f'''
+INSERT INTO {table_name} (user, content, url, context, score, type, id, datetime)
+VALUES 
+'''
+
+for value in values:
+    query += str(value) + ',\n'
+
+# remove the last 2 character ,\n and change it to ; for the query
+query = query[:-2] + ';'
+
+# pass the query as a parameter downstream
+print("#setValue(query=%s)" % query)
+[INFO] 2024-04-29 17:27:28.316 +0800 - Final Shell file is: 
+[INFO] 2024-04-29 17:27:28.316 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-29 17:27:28.316 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_6/746/2015/py_746_2015.py
+[INFO] 2024-04-29 17:27:28.316 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-29 17:27:28.316 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_6/746/2015/746_2015.sh
+[INFO] 2024-04-29 17:27:28.343 +0800 - process start, process id is: 162
+[INFO] 2024-04-29 17:27:28.343 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-04-29 17:27:29.347 +0800 -  -> 
+	/tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_6/746/2015/746_2015.sh: line 4: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_6/746/2015/py_746_2015.py: Permission denied
+[INFO] 2024-04-29 17:27:29.361 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_6/746/2015, processId:162 ,exitStatusCode:126 ,processWaitForStatus:true ,processExitValue:126
+[INFO] 2024-04-29 17:27:29.362 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:27:29.362 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-29 17:27:29.362 +0800 - ***********************************************************************************************
+[INFO] 2024-04-29 17:27:29.364 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-29 17:27:29.388 +0800 - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[INFO] 2024-04-29 17:27:29.389 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-29 17:27:29.389 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_6/746/2015
+[INFO] 2024-04-29 17:27:29.390 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_6/746/2015
+[INFO] 2024-04-29 17:27:29.391 +0800 - FINALIZE_SESSION

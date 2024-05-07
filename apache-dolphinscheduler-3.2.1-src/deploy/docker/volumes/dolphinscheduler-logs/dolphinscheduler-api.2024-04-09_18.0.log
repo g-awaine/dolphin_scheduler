@@ -1,0 +1,10 @@
+[INFO] 2024-04-09 18:00:05.854 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance spark-16-20240409175804292 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-04-09 18:00:07.408 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance spark-16-20240409175706817 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-04-09 18:00:22.927 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 18:02:47.662 +0800 o.a.d.a.e.w.i.s.StopExecuteFunction:[57] - Workflow instance spark-16-20240409180024232 ready to stop success, will call master to stop the workflow instance
+[INFO] 2024-04-09 18:05:31.861 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13201021801792, processVersion:16.
+[INFO] 2024-04-09 18:05:31.868 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13201021801792, processVersion:17.
+[INFO] 2024-04-09 18:05:31.888 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13201021801792, processVersion:17.
+[INFO] 2024-04-09 18:05:52.287 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-09 18:07:56.017 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:539, taskInstanceName:spark_shell, host: 172.20.0.9:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/17/267/539.log
+[INFO] 2024-04-09 18:07:56.194 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:539, taskInstanceName:spark_shell, host: 172.20.0.9:1234, logPath:/opt/dolphinscheduler/logs/20240409/13201021801792/17/267/539.log

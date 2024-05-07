@@ -1,0 +1,771 @@
+[INFO] 2024-04-23 05:31:42.245 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 05:31:42.247 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-23 05:31:42.247 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 05:31:42.247 +0800 - Begin to initialize task
+[INFO] 2024-04-23 05:31:42.247 +0800 - Set task startTime: 1713821502247
+[INFO] 2024-04-23 05:31:42.247 +0800 - Set task appId: 442_1019
+[INFO] 2024-04-23 05:31:42.248 +0800 - End initialize task {
+  "taskInstanceId" : 1019,
+  "taskName" : "spark preprocessing",
+  "firstSubmitTime" : 1713821502220,
+  "startTime" : 1713821502247,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240423/13201021801792/67/442/1019.log",
+  "processId" : 0,
+  "processDefineCode" : 13201021801792,
+  "processDefineVersion" : 67,
+  "processInstanceId" : 442,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"folder\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"processing\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 7,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"$SPARK_HOME/bin/spark-submit \\\\\\n    --master spark://spark-master:7077 \\\\\\n    --conf spark.driver.cores=1 \\\\\\n    --conf spark.driver.memory=512M \\\\\\n    --conf spark.executor.instances=2 \\\\\\n    --conf spark.executor.cores=2 \\\\\\n    --conf spark.executor.memory=1G \\\\\\n    --files ${raw_file_dir} \\\\\\n    --name reddit_preprocessing spark_reddit_preprocessing.py\\n\",\"resourceList\":[{\"id\":null,\"resourceName\":\"file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py\",\"res\":null}]}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport HADOOP_CONF_DIR=/opt/hadoop-3.4.0/etc/hadoop\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "spark preprocessing"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240423"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1019"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13210058002752"
+    },
+    "raw_file" : {
+      "prop" : "raw_file",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "386-20240422.json"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240423053142"
+    },
+    "folder" : {
+      "prop" : "folder",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "processing"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "442"
+    },
+    "raw_file_dir" : {
+      "prop" : "raw_file_dir",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit/processing/386-20240422.json"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240422"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocess_post"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13201021801792"
+    }
+  },
+  "taskAppId" : "442_1019",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"raw_file_dir\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"/local_storage/reddit/processing/386-20240422.json\"},{\"prop\":\"raw_file\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"386-20240422.json\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-23 05:31:42.249 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 05:31:42.249 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-23 05:31:42.249 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 05:31:42.257 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-23 05:31:42.259 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-23 05:31:42.264 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/1019 check successfully
+[INFO] 2024-04-23 05:31:42.264 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-04-23 05:31:42.268 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py, resourceRelativePath=spark_reddit_preprocessing.py, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/1019/spark_reddit_preprocessing.py)})
+[INFO] 2024-04-23 05:31:42.274 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-23 05:31:42.280 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-04-23 05:31:42.281 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "$SPARK_HOME/bin/spark-submit \\\n    --master spark://spark-master:7077 \\\n    --conf spark.driver.cores=1 \\\n    --conf spark.driver.memory=512M \\\n    --conf spark.executor.instances=2 \\\n    --conf spark.executor.cores=2 \\\n    --conf spark.executor.memory=1G \\\n    --files ${raw_file_dir} \\\n    --name reddit_preprocessing spark_reddit_preprocessing.py\n",
+  "resourceList" : [ {
+    "id" : null,
+    "resourceName" : "file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py",
+    "res" : null
+  } ]
+}
+[INFO] 2024-04-23 05:31:42.282 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-23 05:31:42.282 +0800 - Set taskVarPool: [{"prop":"raw_file_dir","direct":"IN","type":"VARCHAR","value":"/local_storage/reddit/processing/386-20240422.json"},{"prop":"raw_file","direct":"IN","type":"VARCHAR","value":"386-20240422.json"}] successfully
+[INFO] 2024-04-23 05:31:42.282 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 05:31:42.282 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-23 05:31:42.282 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 05:31:42.283 +0800 - Final Shell file is: 
+[INFO] 2024-04-23 05:31:42.283 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-23 05:31:42.284 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export HADOOP_CONF_DIR=/opt/hadoop-3.4.0/etc/hadoop
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+$SPARK_HOME/bin/spark-submit \
+    --master spark://spark-master:7077 \
+    --conf spark.driver.cores=1 \
+    --conf spark.driver.memory=512M \
+    --conf spark.executor.instances=2 \
+    --conf spark.executor.cores=2 \
+    --conf spark.executor.memory=1G \
+    --files /local_storage/reddit/processing/386-20240422.json \
+    --name reddit_preprocessing spark_reddit_preprocessing.py
+
+[INFO] 2024-04-23 05:31:42.284 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-23 05:31:42.284 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/1019/442_1019.sh
+[INFO] 2024-04-23 05:31:42.289 +0800 - process start, process id is: 3299
+[INFO] 2024-04-23 05:31:43.298 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-04-23 05:31:46.309 +0800 -  -> 
+	24/04/23 05:31:46 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2024-04-23 05:31:48.335 +0800 -  -> 
+	24/04/23 05:31:47 INFO SparkContext: Running Spark version 3.5.1
+	24/04/23 05:31:47 INFO SparkContext: OS info Linux, 6.5.0-28-generic, amd64
+	24/04/23 05:31:47 INFO SparkContext: Java version 1.8.0_402
+	24/04/23 05:31:48 INFO ResourceUtils: ==============================================================
+	24/04/23 05:31:48 INFO ResourceUtils: No custom resources configured for spark.driver.
+	24/04/23 05:31:48 INFO ResourceUtils: ==============================================================
+	24/04/23 05:31:48 INFO SparkContext: Submitted application: reddit_preprocessing
+	24/04/23 05:31:48 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 2, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+	24/04/23 05:31:48 INFO ResourceProfile: Limiting resource is cpus at 2 tasks per executor
+	24/04/23 05:31:48 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[INFO] 2024-04-23 05:31:49.343 +0800 -  -> 
+	24/04/23 05:31:48 INFO SecurityManager: Changing view acls to: default
+	24/04/23 05:31:48 INFO SecurityManager: Changing modify acls to: default
+	24/04/23 05:31:48 INFO SecurityManager: Changing view acls groups to: 
+	24/04/23 05:31:48 INFO SecurityManager: Changing modify acls groups to: 
+	24/04/23 05:31:48 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: default; groups with view permissions: EMPTY; users with modify permissions: default; groups with modify permissions: EMPTY
+[INFO] 2024-04-23 05:31:50.354 +0800 -  -> 
+	24/04/23 05:31:49 INFO Utils: Successfully started service 'sparkDriver' on port 36005.
+	24/04/23 05:31:50 INFO SparkEnv: Registering MapOutputTracker
+[INFO] 2024-04-23 05:31:51.356 +0800 -  -> 
+	24/04/23 05:31:50 INFO SparkEnv: Registering BlockManagerMaster
+	24/04/23 05:31:50 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+	24/04/23 05:31:50 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+	24/04/23 05:31:50 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+	24/04/23 05:31:50 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-af77863e-d8c0-44c2-b569-2724ee04e0e1
+	24/04/23 05:31:50 INFO MemoryStore: MemoryStore started with capacity 93.3 MiB
+	24/04/23 05:31:50 INFO SparkEnv: Registering OutputCommitCoordinator
+	24/04/23 05:31:51 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+	24/04/23 05:31:51 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+	24/04/23 05:31:51 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+	24/04/23 05:31:51 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+	24/04/23 05:31:51 WARN Utils: Service 'SparkUI' could not bind on port 4043. Attempting port 4044.
+	24/04/23 05:31:51 INFO Utils: Successfully started service 'SparkUI' on port 4044.
+[INFO] 2024-04-23 05:31:52.358 +0800 -  -> 
+	24/04/23 05:31:51 INFO SparkContext: Added file file:///local_storage/reddit/processing/386-20240422.json at spark://5a1e1e642ebe:36005/files/386-20240422.json with timestamp 1713821507901
+	24/04/23 05:31:51 INFO Utils: Copying /local_storage/reddit/processing/386-20240422.json to /tmp/spark-70a29ce2-51a0-403a-89b9-696e5f81d8c0/userFiles-593a2d1e-0aab-4584-89f4-4c6cd8412a0c/386-20240422.json
+	24/04/23 05:31:51 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+	24/04/23 05:31:52 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.4:7077 after 76 ms (0 ms spent in bootstraps)
+	24/04/23 05:31:52 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20240422213152-0006
+	24/04/23 05:31:52 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33867.
+	24/04/23 05:31:52 INFO NettyBlockTransferService: Server created on 5a1e1e642ebe:33867
+	24/04/23 05:31:52 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+	24/04/23 05:31:52 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 5a1e1e642ebe, 33867, None)
+	24/04/23 05:31:52 INFO BlockManagerMasterEndpoint: Registering block manager 5a1e1e642ebe:33867 with 93.3 MiB RAM, BlockManagerId(driver, 5a1e1e642ebe, 33867, None)
+	24/04/23 05:31:52 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 5a1e1e642ebe, 33867, None)
+	24/04/23 05:31:52 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 5a1e1e642ebe, 33867, None)
+[INFO] 2024-04-23 05:31:53.367 +0800 -  -> 
+	24/04/23 05:31:52 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+	386-20240422.json
+	json file /tmp/spark-70a29ce2-51a0-403a-89b9-696e5f81d8c0/userFiles-593a2d1e-0aab-4584-89f4-4c6cd8412a0c/386-20240422.json
+	24/04/23 05:31:53 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+	24/04/23 05:31:53 INFO SharedState: Warehouse path is 'file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/1019/spark-warehouse'.
+[INFO] 2024-04-23 05:31:56.396 +0800 -  -> 
+	24/04/23 05:31:56 INFO InMemoryFileIndex: It took 114 ms to list leaf files for 1 paths.
+[INFO] 2024-04-23 05:31:57.424 +0800 -  -> 
+	24/04/23 05:31:56 INFO InMemoryFileIndex: It took 2 ms to list leaf files for 1 paths.
+[INFO] 2024-04-23 05:32:04.449 +0800 -  -> 
+	24/04/23 05:32:04 INFO FileSourceStrategy: Pushed Filters: 
+	24/04/23 05:32:04 INFO FileSourceStrategy: Post-Scan Filters: 
+[INFO] 2024-04-23 05:32:05.455 +0800 -  -> 
+	24/04/23 05:32:05 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 351.5 KiB, free 93.0 MiB)
+	24/04/23 05:32:05 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 34.6 KiB, free 92.9 MiB)
+	24/04/23 05:32:05 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 5a1e1e642ebe:33867 (size: 34.6 KiB, free: 93.3 MiB)
+	24/04/23 05:32:05 INFO SparkContext: Created broadcast 0 from json at NativeMethodAccessorImpl.java:0
+	24/04/23 05:32:05 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+[INFO] 2024-04-23 05:32:06.457 +0800 -  -> 
+	24/04/23 05:32:05 INFO SparkContext: Starting job: json at NativeMethodAccessorImpl.java:0
+	24/04/23 05:32:05 INFO DAGScheduler: Got job 0 (json at NativeMethodAccessorImpl.java:0) with 1 output partitions
+	24/04/23 05:32:05 INFO DAGScheduler: Final stage: ResultStage 0 (json at NativeMethodAccessorImpl.java:0)
+	24/04/23 05:32:05 INFO DAGScheduler: Parents of final stage: List()
+	24/04/23 05:32:05 INFO DAGScheduler: Missing parents: List()
+	24/04/23 05:32:05 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at json at NativeMethodAccessorImpl.java:0), which has no missing parents
+	24/04/23 05:32:06 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 16.5 KiB, free 92.9 MiB)
+	24/04/23 05:32:06 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 7.8 KiB, free 92.9 MiB)
+	24/04/23 05:32:06 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 5a1e1e642ebe:33867 (size: 7.8 KiB, free: 93.3 MiB)
+	24/04/23 05:32:06 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+	24/04/23 05:32:06 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at json at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+	24/04/23 05:32:06 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+[INFO] 2024-04-23 05:32:21.480 +0800 -  -> 
+	24/04/23 05:32:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:32:36.504 +0800 -  -> 
+	24/04/23 05:32:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:32:51.535 +0800 -  -> 
+	24/04/23 05:32:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:33:06.589 +0800 -  -> 
+	24/04/23 05:33:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:33:21.622 +0800 -  -> 
+	24/04/23 05:33:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:33:36.709 +0800 -  -> 
+	24/04/23 05:33:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:33:51.760 +0800 -  -> 
+	24/04/23 05:33:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:34:06.824 +0800 -  -> 
+	24/04/23 05:34:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:34:21.856 +0800 -  -> 
+	24/04/23 05:34:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:34:36.903 +0800 -  -> 
+	24/04/23 05:34:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:34:51.936 +0800 -  -> 
+	24/04/23 05:34:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:35:06.977 +0800 -  -> 
+	24/04/23 05:35:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:35:22.029 +0800 -  -> 
+	24/04/23 05:35:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:35:37.094 +0800 -  -> 
+	24/04/23 05:35:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:35:52.138 +0800 -  -> 
+	24/04/23 05:35:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:36:07.166 +0800 -  -> 
+	24/04/23 05:36:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:36:21.503 +0800 -  -> 
+	24/04/23 05:36:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:36:36.591 +0800 -  -> 
+	24/04/23 05:36:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:36:51.712 +0800 -  -> 
+	24/04/23 05:36:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:37:06.772 +0800 -  -> 
+	24/04/23 05:37:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:37:21.803 +0800 -  -> 
+	24/04/23 05:37:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:37:36.853 +0800 -  -> 
+	24/04/23 05:37:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:37:51.880 +0800 -  -> 
+	24/04/23 05:37:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:38:06.898 +0800 -  -> 
+	24/04/23 05:38:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:38:21.978 +0800 -  -> 
+	24/04/23 05:38:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:38:37.014 +0800 -  -> 
+	24/04/23 05:38:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:38:52.136 +0800 -  -> 
+	24/04/23 05:38:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:39:06.201 +0800 -  -> 
+	24/04/23 05:39:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:39:21.230 +0800 -  -> 
+	24/04/23 05:39:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:39:36.328 +0800 -  -> 
+	24/04/23 05:39:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:39:51.378 +0800 -  -> 
+	24/04/23 05:39:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:40:06.415 +0800 -  -> 
+	24/04/23 05:40:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:40:21.439 +0800 -  -> 
+	24/04/23 05:40:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:40:36.625 +0800 -  -> 
+	24/04/23 05:40:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:40:51.700 +0800 -  -> 
+	24/04/23 05:40:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:41:06.721 +0800 -  -> 
+	24/04/23 05:41:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:41:21.764 +0800 -  -> 
+	24/04/23 05:41:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:41:36.797 +0800 -  -> 
+	24/04/23 05:41:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:41:51.848 +0800 -  -> 
+	24/04/23 05:41:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:42:06.577 +0800 -  -> 
+	24/04/23 05:42:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:42:21.623 +0800 -  -> 
+	24/04/23 05:42:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:42:36.736 +0800 -  -> 
+	24/04/23 05:42:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:42:51.869 +0800 -  -> 
+	24/04/23 05:42:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:43:06.900 +0800 -  -> 
+	24/04/23 05:43:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:43:21.928 +0800 -  -> 
+	24/04/23 05:43:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:43:36.964 +0800 -  -> 
+	24/04/23 05:43:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:43:51.992 +0800 -  -> 
+	24/04/23 05:43:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:44:07.111 +0800 -  -> 
+	24/04/23 05:44:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:44:22.129 +0800 -  -> 
+	24/04/23 05:44:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:44:37.189 +0800 -  -> 
+	24/04/23 05:44:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:44:51.240 +0800 -  -> 
+	24/04/23 05:44:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:45:06.337 +0800 -  -> 
+	24/04/23 05:45:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:45:21.370 +0800 -  -> 
+	24/04/23 05:45:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:45:36.443 +0800 -  -> 
+	24/04/23 05:45:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:45:51.533 +0800 -  -> 
+	24/04/23 05:45:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:46:06.631 +0800 -  -> 
+	24/04/23 05:46:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:46:21.662 +0800 -  -> 
+	24/04/23 05:46:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:46:36.744 +0800 -  -> 
+	24/04/23 05:46:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:46:51.795 +0800 -  -> 
+	24/04/23 05:46:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:47:06.899 +0800 -  -> 
+	24/04/23 05:47:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:47:21.945 +0800 -  -> 
+	24/04/23 05:47:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:47:36.975 +0800 -  -> 
+	24/04/23 05:47:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:47:51.671 +0800 -  -> 
+	24/04/23 05:47:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:48:06.726 +0800 -  -> 
+	24/04/23 05:48:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:48:21.781 +0800 -  -> 
+	24/04/23 05:48:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:48:36.804 +0800 -  -> 
+	24/04/23 05:48:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:48:51.870 +0800 -  -> 
+	24/04/23 05:48:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:49:06.909 +0800 -  -> 
+	24/04/23 05:49:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:49:21.966 +0800 -  -> 
+	24/04/23 05:49:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:49:37.099 +0800 -  -> 
+	24/04/23 05:49:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:49:52.121 +0800 -  -> 
+	24/04/23 05:49:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:50:07.139 +0800 -  -> 
+	24/04/23 05:50:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:50:22.162 +0800 -  -> 
+	24/04/23 05:50:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:50:36.690 +0800 -  -> 
+	24/04/23 05:50:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:50:51.720 +0800 -  -> 
+	24/04/23 05:50:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:51:06.743 +0800 -  -> 
+	24/04/23 05:51:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:51:21.852 +0800 -  -> 
+	24/04/23 05:51:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:51:36.874 +0800 -  -> 
+	24/04/23 05:51:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:51:51.907 +0800 -  -> 
+	24/04/23 05:51:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:52:06.938 +0800 -  -> 
+	24/04/23 05:52:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:52:21.978 +0800 -  -> 
+	24/04/23 05:52:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:52:37.011 +0800 -  -> 
+	24/04/23 05:52:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:52:52.070 +0800 -  -> 
+	24/04/23 05:52:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:53:06.740 +0800 -  -> 
+	24/04/23 05:53:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:53:21.832 +0800 -  -> 
+	24/04/23 05:53:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:53:36.886 +0800 -  -> 
+	24/04/23 05:53:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:53:51.746 +0800 -  -> 
+	24/04/23 05:53:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:54:06.782 +0800 -  -> 
+	24/04/23 05:54:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:54:21.876 +0800 -  -> 
+	24/04/23 05:54:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:54:36.893 +0800 -  -> 
+	24/04/23 05:54:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:54:51.923 +0800 -  -> 
+	24/04/23 05:54:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:55:06.996 +0800 -  -> 
+	24/04/23 05:55:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:55:22.024 +0800 -  -> 
+	24/04/23 05:55:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:55:37.101 +0800 -  -> 
+	24/04/23 05:55:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:55:52.125 +0800 -  -> 
+	24/04/23 05:55:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:56:07.139 +0800 -  -> 
+	24/04/23 05:56:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:56:22.158 +0800 -  -> 
+	24/04/23 05:56:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:56:36.202 +0800 -  -> 
+	24/04/23 05:56:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:56:51.287 +0800 -  -> 
+	24/04/23 05:56:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:57:06.924 +0800 -  -> 
+	24/04/23 05:57:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:57:21.964 +0800 -  -> 
+	24/04/23 05:57:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:57:37.001 +0800 -  -> 
+	24/04/23 05:57:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:57:52.047 +0800 -  -> 
+	24/04/23 05:57:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:58:07.067 +0800 -  -> 
+	24/04/23 05:58:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:58:22.107 +0800 -  -> 
+	24/04/23 05:58:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:58:37.121 +0800 -  -> 
+	24/04/23 05:58:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:58:52.147 +0800 -  -> 
+	24/04/23 05:58:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:59:07.164 +0800 -  -> 
+	24/04/23 05:59:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:59:22.195 +0800 -  -> 
+	24/04/23 05:59:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:59:36.210 +0800 -  -> 
+	24/04/23 05:59:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 05:59:51.246 +0800 -  -> 
+	24/04/23 05:59:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:00:06.263 +0800 -  -> 
+	24/04/23 06:00:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:00:21.287 +0800 -  -> 
+	24/04/23 06:00:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:00:36.307 +0800 -  -> 
+	24/04/23 06:00:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:00:51.335 +0800 -  -> 
+	24/04/23 06:00:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:01:06.359 +0800 -  -> 
+	24/04/23 06:01:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:01:21.385 +0800 -  -> 
+	24/04/23 06:01:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:01:37.050 +0800 -  -> 
+	24/04/23 06:01:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:01:52.086 +0800 -  -> 
+	24/04/23 06:01:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:02:07.095 +0800 -  -> 
+	24/04/23 06:02:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:02:22.125 +0800 -  -> 
+	24/04/23 06:02:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:02:37.144 +0800 -  -> 
+	24/04/23 06:02:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:02:52.166 +0800 -  -> 
+	24/04/23 06:02:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:03:06.205 +0800 -  -> 
+	24/04/23 06:03:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:03:21.248 +0800 -  -> 
+	24/04/23 06:03:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:03:36.271 +0800 -  -> 
+	24/04/23 06:03:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:03:51.302 +0800 -  -> 
+	24/04/23 06:03:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:04:06.325 +0800 -  -> 
+	24/04/23 06:04:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:04:21.364 +0800 -  -> 
+	24/04/23 06:04:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:04:36.398 +0800 -  -> 
+	24/04/23 06:04:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:04:51.413 +0800 -  -> 
+	24/04/23 06:04:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:05:06.438 +0800 -  -> 
+	24/04/23 06:05:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:05:21.465 +0800 -  -> 
+	24/04/23 06:05:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:05:36.496 +0800 -  -> 
+	24/04/23 06:05:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:05:51.524 +0800 -  -> 
+	24/04/23 06:05:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:06:06.557 +0800 -  -> 
+	24/04/23 06:06:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:06:21.572 +0800 -  -> 
+	24/04/23 06:06:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:06:36.611 +0800 -  -> 
+	24/04/23 06:06:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:06:51.638 +0800 -  -> 
+	24/04/23 06:06:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:07:06.651 +0800 -  -> 
+	24/04/23 06:07:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:07:21.669 +0800 -  -> 
+	24/04/23 06:07:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:07:36.698 +0800 -  -> 
+	24/04/23 06:07:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:07:52.133 +0800 -  -> 
+	24/04/23 06:07:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:08:07.159 +0800 -  -> 
+	24/04/23 06:08:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:08:22.179 +0800 -  -> 
+	24/04/23 06:08:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:08:36.197 +0800 -  -> 
+	24/04/23 06:08:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:08:51.226 +0800 -  -> 
+	24/04/23 06:08:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:09:06.243 +0800 -  -> 
+	24/04/23 06:09:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:09:21.273 +0800 -  -> 
+	24/04/23 06:09:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:09:36.300 +0800 -  -> 
+	24/04/23 06:09:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:09:51.317 +0800 -  -> 
+	24/04/23 06:09:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:10:06.339 +0800 -  -> 
+	24/04/23 06:10:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:10:21.353 +0800 -  -> 
+	24/04/23 06:10:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:10:36.370 +0800 -  -> 
+	24/04/23 06:10:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:10:51.399 +0800 -  -> 
+	24/04/23 06:10:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:11:06.466 +0800 -  -> 
+	24/04/23 06:11:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:11:21.487 +0800 -  -> 
+	24/04/23 06:11:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:11:36.563 +0800 -  -> 
+	24/04/23 06:11:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:11:51.601 +0800 -  -> 
+	24/04/23 06:11:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:12:06.698 +0800 -  -> 
+	24/04/23 06:12:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:12:21.735 +0800 -  -> 
+	24/04/23 06:12:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:12:36.803 +0800 -  -> 
+	24/04/23 06:12:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:12:51.833 +0800 -  -> 
+	24/04/23 06:12:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:13:06.851 +0800 -  -> 
+	24/04/23 06:13:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:13:21.913 +0800 -  -> 
+	24/04/23 06:13:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:13:36.255 +0800 -  -> 
+	24/04/23 06:13:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:13:51.285 +0800 -  -> 
+	24/04/23 06:13:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:14:06.356 +0800 -  -> 
+	24/04/23 06:14:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:14:21.857 +0800 -  -> 
+	24/04/23 06:14:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:14:36.906 +0800 -  -> 
+	24/04/23 06:14:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:14:51.971 +0800 -  -> 
+	24/04/23 06:14:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:15:07.012 +0800 -  -> 
+	24/04/23 06:15:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:15:22.062 +0800 -  -> 
+	24/04/23 06:15:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:15:36.312 +0800 -  -> 
+	24/04/23 06:15:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:15:51.337 +0800 -  -> 
+	24/04/23 06:15:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:16:06.399 +0800 -  -> 
+	24/04/23 06:16:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:16:21.560 +0800 -  -> 
+	24/04/23 06:16:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:16:36.599 +0800 -  -> 
+	24/04/23 06:16:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:16:51.667 +0800 -  -> 
+	24/04/23 06:16:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:17:06.748 +0800 -  -> 
+	24/04/23 06:17:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:17:21.778 +0800 -  -> 
+	24/04/23 06:17:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:17:36.836 +0800 -  -> 
+	24/04/23 06:17:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:17:51.856 +0800 -  -> 
+	24/04/23 06:17:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:18:06.906 +0800 -  -> 
+	24/04/23 06:18:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:18:21.991 +0800 -  -> 
+	24/04/23 06:18:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:18:37.125 +0800 -  -> 
+	24/04/23 06:18:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:18:52.161 +0800 -  -> 
+	24/04/23 06:18:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:19:06.218 +0800 -  -> 
+	24/04/23 06:19:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:19:21.290 +0800 -  -> 
+	24/04/23 06:19:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:19:36.358 +0800 -  -> 
+	24/04/23 06:19:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:19:51.392 +0800 -  -> 
+	24/04/23 06:19:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:20:06.440 +0800 -  -> 
+	24/04/23 06:20:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:20:21.465 +0800 -  -> 
+	24/04/23 06:20:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:20:36.709 +0800 -  -> 
+	24/04/23 06:20:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:20:51.791 +0800 -  -> 
+	24/04/23 06:20:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:21:06.838 +0800 -  -> 
+	24/04/23 06:21:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:21:21.914 +0800 -  -> 
+	24/04/23 06:21:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:21:36.970 +0800 -  -> 
+	24/04/23 06:21:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:21:52.088 +0800 -  -> 
+	24/04/23 06:21:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:22:07.179 +0800 -  -> 
+	24/04/23 06:22:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:22:21.202 +0800 -  -> 
+	24/04/23 06:22:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:22:36.546 +0800 -  -> 
+	24/04/23 06:22:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:22:51.607 +0800 -  -> 
+	24/04/23 06:22:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:23:06.713 +0800 -  -> 
+	24/04/23 06:23:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:23:21.792 +0800 -  -> 
+	24/04/23 06:23:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:23:36.983 +0800 -  -> 
+	24/04/23 06:23:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:23:52.019 +0800 -  -> 
+	24/04/23 06:23:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:24:06.469 +0800 -  -> 
+	24/04/23 06:24:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:24:21.526 +0800 -  -> 
+	24/04/23 06:24:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:24:36.574 +0800 -  -> 
+	24/04/23 06:24:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:24:51.612 +0800 -  -> 
+	24/04/23 06:24:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:25:06.631 +0800 -  -> 
+	24/04/23 06:25:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:25:21.760 +0800 -  -> 
+	24/04/23 06:25:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:25:36.579 +0800 -  -> 
+	24/04/23 06:25:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:25:51.601 +0800 -  -> 
+	24/04/23 06:25:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:26:06.708 +0800 -  -> 
+	24/04/23 06:26:06 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:26:21.743 +0800 -  -> 
+	24/04/23 06:26:21 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:26:36.819 +0800 -  -> 
+	24/04/23 06:26:36 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-23 06:26:51.584 +0800 -  -> 
+	24/04/23 06:26:51 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[ERROR] 2024-04-23 06:26:59.141 +0800 - kill task error
+java.io.IOException: Cannot run program "pstree": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.dolphinscheduler.common.shell.AbstractShell.runCommand(AbstractShell.java:138)
+	at org.apache.dolphinscheduler.common.shell.AbstractShell.run(AbstractShell.java:118)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execute(ShellExecutor.java:125)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execCommand(ShellExecutor.java:103)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execCommand(ShellExecutor.java:86)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.exeShell(OSUtils.java:345)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.exeCmd(OSUtils.java:334)
+	at org.apache.dolphinscheduler.plugin.task.api.utils.ProcessUtils.getPidsStr(ProcessUtils.java:129)
+	at org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction.killProcess(TaskInstanceKillOperationFunction.java:130)
+	at org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction.doKill(TaskInstanceKillOperationFunction.java:96)
+	at org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction.operate(TaskInstanceKillOperationFunction.java:69)
+	at org.apache.dolphinscheduler.server.worker.rpc.TaskInstanceOperatorImpl.killTask(TaskInstanceOperatorImpl.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.dolphinscheduler.extract.base.server.ServerMethodInvokerImpl.invoke(ServerMethodInvokerImpl.java:41)
+	at org.apache.dolphinscheduler.extract.base.server.JdkDynamicServerHandler.lambda$processReceived$0(JdkDynamicServerHandler.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 21 common frames omitted
+[INFO] 2024-04-23 06:26:59.142 +0800 - Get appIds from worker 172.18.1.1:1234, taskLogPath: /opt/dolphinscheduler/logs/20240423/13201021801792/67/442/1019.log
+[INFO] 2024-04-23 06:26:59.143 +0800 - Start finding appId in /opt/dolphinscheduler/logs/20240423/13201021801792/67/442/1019.log, fetch way: log 
+[INFO] 2024-04-23 06:26:59.145 +0800 - The appId is empty
+[INFO] 2024-04-23 06:26:59.146 +0800 - Begin to kill process process, pid is : 3299
+[INFO] 2024-04-23 06:27:04.168 +0800 - Success kill task: 442_1019, pid: 3299
+[INFO] 2024-04-23 06:27:04.170 +0800 - kill task by cancelApplication, taskInstanceId: 1019
+[ERROR] 2024-04-23 06:27:06.195 +0800 - Parse var pool error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:283)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at org.apache.dolphinscheduler.plugin.task.api.AbstractCommandExecutor.lambda$parseProcessOutput$1(AbstractCommandExecutor.java:273)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] 2024-04-23 06:27:06.620 +0800 - process has killed. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/1019, processId:3299 ,exitStatusCode:137 ,processWaitForStatus:true ,processExitValue:137
+[INFO] 2024-04-23 06:27:06.620 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 06:27:06.620 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-23 06:27:06.620 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 06:27:06.621 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-23 06:27:06.627 +0800 - Send task execute status: KILL to master : 172.18.1.1:1234
+[INFO] 2024-04-23 06:27:06.628 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-23 06:27:06.628 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/1019
+[INFO] 2024-04-23 06:27:06.629 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/1019
+[INFO] 2024-04-23 06:27:06.629 +0800 - FINALIZE_SESSION

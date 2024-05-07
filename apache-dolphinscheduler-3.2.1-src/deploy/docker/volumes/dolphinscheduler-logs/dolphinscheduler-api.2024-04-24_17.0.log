@@ -1,0 +1,31 @@
+[INFO] 2024-04-24 17:20:27.836 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13377949373536, processVersion:9.
+[INFO] 2024-04-24 17:20:27.875 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13377949373536, processVersion:10.
+[INFO] 2024-04-24 17:20:27.886 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13377949373536, processVersion:10.
+[INFO] 2024-04-24 17:20:31.600 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13377949373536, commandCount:1.
+[INFO] 2024-04-24 17:22:56.873 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13045665829504, commandCount:1.
+[INFO] 2024-04-24 17:23:00.551 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-24 17:23:06.025 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13377949373536, commandCount:1.
+[INFO] 2024-04-24 17:23:47.044 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1499, taskInstanceName:Extract Reddit Data, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240424/13045665829504/14/591/1499.log
+[INFO] 2024-04-24 17:23:47.262 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1499, taskInstanceName:Extract Reddit Data, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240424/13045665829504/14/591/1499.log
+[INFO] 2024-04-24 17:24:23.316 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13045665829504, commandCount:1.
+[INFO] 2024-04-24 17:24:41.666 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1510, taskInstanceName:Extract Reddit Data, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240424/13045665829504/14/594/1510.log
+[INFO] 2024-04-24 17:24:41.845 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1510, taskInstanceName:Extract Reddit Data, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240424/13045665829504/14/594/1510.log
+[INFO] 2024-04-24 17:33:32.414 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[765] - Update process definition complete, projectCode:13010050770016, processDefinitionName:extract_post.
+[INFO] 2024-04-24 17:33:32.417 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[770] - Update task relations complete, projectCode:13010050770016, processDefinitionCode:13045665829504, processDefinitionVersion:15.
+[INFO] 2024-04-24 17:33:32.419 +0800 o.a.d.a.s.i.ProcessInstanceServiceImpl:[791] - Update process instance complete, projectCode:13010050770016, processDefinitionCode:13045665829504, processDefinitionVersion:15, processInstanceId:594
+[INFO] 2024-04-24 17:33:51.280 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13045665829504, commandCount:1.
+[INFO] 2024-04-24 17:34:08.344 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-24 17:34:17.398 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-24 17:35:02.807 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13377949373536, commandCount:1.
+[INFO] 2024-04-24 17:35:20.165 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1522, taskInstanceName:keyword filtering, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240424/13377949373536/10/598/1522.log
+[INFO] 2024-04-24 17:35:20.290 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1522, taskInstanceName:keyword filtering, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240424/13377949373536/10/598/1522.log
+[INFO] 2024-04-24 17:35:32.893 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1518, taskInstanceName:extract from preprocessed queue, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240424/13377949373536/10/598/1518.log
+[INFO] 2024-04-24 17:35:32.975 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1518, taskInstanceName:extract from preprocessed queue, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240424/13377949373536/10/598/1518.log
+[INFO] 2024-04-24 17:37:52.212 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[397] - Save process definition complete, processCode:13378697240416, processVersion:1.
+[INFO] 2024-04-24 17:37:52.222 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[408] - Save process task relations complete, projectCode:13010050770016, processCode:13378697240416, processVersion:1.
+[INFO] 2024-04-24 17:38:12.146 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13377949373536, processVersion:10.
+[INFO] 2024-04-24 17:38:12.150 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13377949373536, processVersion:11.
+[INFO] 2024-04-24 17:38:12.180 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13377949373536, processVersion:11.
+[INFO] 2024-04-24 17:38:16.415 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13377949373536, commandCount:1.
+[INFO] 2024-04-24 17:45:03.064 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1528, taskInstanceName:extract from preprocessed queue, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240424/13377949373536/11/599/1528.log
+[INFO] 2024-04-24 17:45:03.165 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:1528, taskInstanceName:extract from preprocessed queue, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240424/13377949373536/11/599/1528.log

@@ -1,0 +1,644 @@
+[INFO] 2024-04-09 10:19:34.177 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 10:19:34.184 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-09 10:19:34.184 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 10:19:34.184 +0800 - Begin to initialize task
+[INFO] 2024-04-09 10:19:34.185 +0800 - Set task startTime: 1712629174184
+[INFO] 2024-04-09 10:19:34.195 +0800 - Set task appId: 249_521
+[INFO] 2024-04-09 10:19:34.206 +0800 - End initialize task {
+  "taskInstanceId" : 521,
+  "taskName" : "spark",
+  "firstSubmitTime" : 1712629174140,
+  "startTime" : 1712629174184,
+  "taskType" : "SPARK",
+  "workflowInstanceHost" : "172.18.0.5:5678",
+  "host" : "172.18.0.7:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240409/13201021801792/3/249/521.log",
+  "processId" : 0,
+  "processDefineCode" : 13201021801792,
+  "processDefineVersion" : 3,
+  "processInstanceId" : 249,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"\",\"resourceList\":[],\"programType\":\"PYTHON\",\"mainClass\":\"\",\"mainJar\":{\"id\":null,\"resourceName\":\"file:/dolphinscheduler/default/resources/spark-test.py\",\"res\":null},\"deployMode\":\"client\",\"appName\":\"myapple\",\"yarnQueue\":\"\",\"driverCores\":1,\"driverMemory\":\"512M\",\"numExecutors\":2,\"executorMemory\":\"2G\",\"executorCores\":2,\"sqlExecutionType\":\"SCRIPT\"}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport HADOOP_CONF_DIR=/opt/hadoop-3.4.0/etc/hadoop",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "spark"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "249"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240409"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240408"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "521"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "spark"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13201016413888"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13201021801792"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240409101934"
+    }
+  },
+  "taskAppId" : "249_521",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-09 10:19:34.207 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 10:19:34.207 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-09 10:19:34.207 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 10:19:34.304 +0800 - Send task status RUNNING_EXECUTION master: 172.18.0.7:1234
+[INFO] 2024-04-09 10:19:34.305 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-09 10:19:34.307 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_3/249/521 check successfully
+[INFO] 2024-04-09 10:19:34.307 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.spark.SparkTaskChannel successfully
+[INFO] 2024-04-09 10:19:34.311 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={file:/dolphinscheduler/default/resources/spark-test.py=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=file:/dolphinscheduler/default/resources/spark-test.py, resourceRelativePath=spark-test.py, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_3/249/521/spark-test.py)})
+[INFO] 2024-04-09 10:19:34.313 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-09 10:19:34.313 +0800 - Task plugin instance: SPARK create successfully
+[INFO] 2024-04-09 10:19:34.314 +0800 - Initialize spark task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "mainJar" : {
+    "id" : null,
+    "resourceName" : "file:/dolphinscheduler/default/resources/spark-test.py",
+    "res" : null
+  },
+  "mainClass" : "",
+  "deployMode" : "client",
+  "mainArgs" : null,
+  "driverCores" : 1,
+  "driverMemory" : "512M",
+  "numExecutors" : 2,
+  "executorCores" : 2,
+  "executorMemory" : "2G",
+  "appName" : "myapple",
+  "yarnQueue" : "",
+  "others" : null,
+  "programType" : "PYTHON",
+  "rawScript" : "",
+  "namespace" : null,
+  "resourceList" : [ ],
+  "sqlExecutionType" : "SCRIPT"
+}
+[INFO] 2024-04-09 10:19:34.316 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-09 10:19:34.316 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-04-09 10:19:34.316 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 10:19:34.316 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-09 10:19:34.316 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 10:19:34.319 +0800 - Final Shell file is: 
+[INFO] 2024-04-09 10:19:34.319 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-09 10:19:34.319 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export HADOOP_CONF_DIR=/opt/hadoop-3.4.0/etc/hadoop
+${SPARK_HOME}/bin/spark-submit --master yarn --deploy-mode client --conf spark.driver.cores=1 --conf spark.driver.memory=512M --conf spark.executor.instances=2 --conf spark.executor.cores=2 --conf spark.executor.memory=2G --name myapple /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_3/249/521/spark-test.py
+[INFO] 2024-04-09 10:19:34.320 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-09 10:19:34.320 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_3/249/521/249_521.sh
+[INFO] 2024-04-09 10:19:34.343 +0800 - process start, process id is: 2938
+[INFO] 2024-04-09 10:19:35.344 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-04-09 10:19:46.357 +0800 -  -> 
+	24/04/09 10:19:45 INFO SparkContext: Running Spark version 3.5.1
+	24/04/09 10:19:45 INFO SparkContext: OS info Linux, 6.5.0-26-generic, amd64
+	24/04/09 10:19:45 INFO SparkContext: Java version 1.8.0_402
+[INFO] 2024-04-09 10:19:47.359 +0800 -  -> 
+	24/04/09 10:19:46 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+	24/04/09 10:19:46 INFO ResourceUtils: ==============================================================
+	24/04/09 10:19:46 INFO ResourceUtils: No custom resources configured for spark.driver.
+	24/04/09 10:19:46 INFO ResourceUtils: ==============================================================
+	24/04/09 10:19:46 INFO SparkContext: Submitted application: My App
+	24/04/09 10:19:46 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 2, script: , vendor: , memory -> name: memory, amount: 2048, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+	24/04/09 10:19:47 INFO ResourceProfile: Limiting resource is cpus at 2 tasks per executor
+	24/04/09 10:19:47 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[INFO] 2024-04-09 10:19:48.361 +0800 -  -> 
+	24/04/09 10:19:47 INFO SecurityManager: Changing view acls to: default
+	24/04/09 10:19:47 INFO SecurityManager: Changing modify acls to: default
+	24/04/09 10:19:47 INFO SecurityManager: Changing view acls groups to: 
+	24/04/09 10:19:47 INFO SecurityManager: Changing modify acls groups to: 
+	24/04/09 10:19:47 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: default; groups with view permissions: EMPTY; users with modify permissions: default; groups with modify permissions: EMPTY
+[INFO] 2024-04-09 10:19:49.363 +0800 -  -> 
+	24/04/09 10:19:49 INFO Utils: Successfully started service 'sparkDriver' on port 45791.
+[INFO] 2024-04-09 10:19:50.366 +0800 -  -> 
+	24/04/09 10:19:49 INFO SparkEnv: Registering MapOutputTracker
+	24/04/09 10:19:49 INFO SparkEnv: Registering BlockManagerMaster
+	24/04/09 10:19:49 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+	24/04/09 10:19:49 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+	24/04/09 10:19:50 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+	24/04/09 10:19:50 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-cc07f991-25f2-4f21-a75d-5c102d4f8051
+	24/04/09 10:19:50 INFO MemoryStore: MemoryStore started with capacity 93.3 MiB
+[INFO] 2024-04-09 10:19:51.369 +0800 -  -> 
+	24/04/09 10:19:50 INFO SparkEnv: Registering OutputCommitCoordinator
+	24/04/09 10:19:50 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+	24/04/09 10:19:51 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[INFO] 2024-04-09 10:19:52.372 +0800 -  -> 
+	24/04/09 10:19:52 INFO DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+[INFO] 2024-04-09 10:19:55.390 +0800 -  -> 
+	24/04/09 10:19:54 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:19:56.392 +0800 -  -> 
+	24/04/09 10:19:55 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:19:57.393 +0800 -  -> 
+	24/04/09 10:19:56 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:19:58.395 +0800 -  -> 
+	24/04/09 10:19:57 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:19:59.400 +0800 -  -> 
+	24/04/09 10:19:58 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:00.407 +0800 -  -> 
+	24/04/09 10:19:59 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:01.408 +0800 -  -> 
+	24/04/09 10:20:00 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:02.410 +0800 -  -> 
+	24/04/09 10:20:01 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:03.411 +0800 -  -> 
+	24/04/09 10:20:02 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:04.412 +0800 -  -> 
+	24/04/09 10:20:03 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:05.413 +0800 -  -> 
+	24/04/09 10:20:04 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:06.414 +0800 -  -> 
+	24/04/09 10:20:05 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:07.416 +0800 -  -> 
+	24/04/09 10:20:06 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:08.417 +0800 -  -> 
+	24/04/09 10:20:07 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:09.424 +0800 -  -> 
+	24/04/09 10:20:08 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:10.426 +0800 -  -> 
+	24/04/09 10:20:09 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:11.434 +0800 -  -> 
+	24/04/09 10:20:10 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:12.437 +0800 -  -> 
+	24/04/09 10:20:11 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:13.439 +0800 -  -> 
+	24/04/09 10:20:12 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:14.441 +0800 -  -> 
+	24/04/09 10:20:13 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:20:13 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 1 failover attempts. Trying to failover after sleeping for 42421ms.
+[INFO] 2024-04-09 10:20:57.478 +0800 -  -> 
+	24/04/09 10:20:57 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:58.479 +0800 -  -> 
+	24/04/09 10:20:58 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:20:59.481 +0800 -  -> 
+	24/04/09 10:20:59 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:00.482 +0800 -  -> 
+	24/04/09 10:21:00 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:01.483 +0800 -  -> 
+	24/04/09 10:21:01 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:02.485 +0800 -  -> 
+	24/04/09 10:21:02 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:03.486 +0800 -  -> 
+	24/04/09 10:21:03 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:04.487 +0800 -  -> 
+	24/04/09 10:21:04 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:05.489 +0800 -  -> 
+	24/04/09 10:21:05 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:06.492 +0800 -  -> 
+	24/04/09 10:21:06 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:21:06 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 2 failover attempts. Trying to failover after sleeping for 33309ms.
+[INFO] 2024-04-09 10:21:41.537 +0800 -  -> 
+	24/04/09 10:21:40 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:42.547 +0800 -  -> 
+	24/04/09 10:21:41 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:43.553 +0800 -  -> 
+	24/04/09 10:21:42 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:44.555 +0800 -  -> 
+	24/04/09 10:21:43 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:45.556 +0800 -  -> 
+	24/04/09 10:21:44 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:46.559 +0800 -  -> 
+	24/04/09 10:21:45 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:47.561 +0800 -  -> 
+	24/04/09 10:21:46 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:48.562 +0800 -  -> 
+	24/04/09 10:21:47 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:49.563 +0800 -  -> 
+	24/04/09 10:21:48 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:21:50.564 +0800 -  -> 
+	24/04/09 10:21:49 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:21:49 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 3 failover attempts. Trying to failover after sleeping for 20872ms.
+[INFO] 2024-04-09 10:22:11.589 +0800 -  -> 
+	24/04/09 10:22:11 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:22:12.590 +0800 -  -> 
+	24/04/09 10:22:12 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:22:13.593 +0800 -  -> 
+	24/04/09 10:22:13 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:22:14.597 +0800 -  -> 
+	24/04/09 10:22:14 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:22:15.599 +0800 -  -> 
+	24/04/09 10:22:15 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:22:16.603 +0800 -  -> 
+	24/04/09 10:22:16 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:22:17.604 +0800 -  -> 
+	24/04/09 10:22:17 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:22:18.607 +0800 -  -> 
+	24/04/09 10:22:18 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:22:19.615 +0800 -  -> 
+	24/04/09 10:22:19 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:22:20.617 +0800 -  -> 
+	24/04/09 10:22:20 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:22:20 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 4 failover attempts. Trying to failover after sleeping for 34871ms.
+[INFO] 2024-04-09 10:22:56.676 +0800 -  -> 
+	24/04/09 10:22:56 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:22:57.678 +0800 -  -> 
+	24/04/09 10:22:57 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:22:58.680 +0800 -  -> 
+	24/04/09 10:22:58 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:22:59.681 +0800 -  -> 
+	24/04/09 10:22:59 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:00.683 +0800 -  -> 
+	24/04/09 10:23:00 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:01.685 +0800 -  -> 
+	24/04/09 10:23:01 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:02.687 +0800 -  -> 
+	24/04/09 10:23:02 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:03.691 +0800 -  -> 
+	24/04/09 10:23:03 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:04.696 +0800 -  -> 
+	24/04/09 10:23:04 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:05.698 +0800 -  -> 
+	24/04/09 10:23:05 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:23:05 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 5 failover attempts. Trying to failover after sleeping for 41685ms.
+[INFO] 2024-04-09 10:23:48.740 +0800 -  -> 
+	24/04/09 10:23:48 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:49.744 +0800 -  -> 
+	24/04/09 10:23:49 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:50.747 +0800 -  -> 
+	24/04/09 10:23:50 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:51.748 +0800 -  -> 
+	24/04/09 10:23:51 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:52.750 +0800 -  -> 
+	24/04/09 10:23:52 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:53.750 +0800 -  -> 
+	24/04/09 10:23:53 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:54.752 +0800 -  -> 
+	24/04/09 10:23:54 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:55.756 +0800 -  -> 
+	24/04/09 10:23:55 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:56.757 +0800 -  -> 
+	24/04/09 10:23:56 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:23:57.761 +0800 -  -> 
+	24/04/09 10:23:57 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:23:57 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 6 failover attempts. Trying to failover after sleeping for 15040ms.
+[INFO] 2024-04-09 10:24:13.777 +0800 -  -> 
+	24/04/09 10:24:13 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:14.778 +0800 -  -> 
+	24/04/09 10:24:14 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:15.780 +0800 -  -> 
+	24/04/09 10:24:15 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:16.785 +0800 -  -> 
+	24/04/09 10:24:16 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:17.788 +0800 -  -> 
+	24/04/09 10:24:17 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:18.790 +0800 -  -> 
+	24/04/09 10:24:18 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:19.791 +0800 -  -> 
+	24/04/09 10:24:19 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:20.794 +0800 -  -> 
+	24/04/09 10:24:20 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:21.795 +0800 -  -> 
+	24/04/09 10:24:21 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:22.797 +0800 -  -> 
+	24/04/09 10:24:22 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:24:22 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 7 failover attempts. Trying to failover after sleeping for 18707ms.
+[INFO] 2024-04-09 10:24:42.814 +0800 -  -> 
+	24/04/09 10:24:41 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:43.816 +0800 -  -> 
+	24/04/09 10:24:42 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:44.818 +0800 -  -> 
+	24/04/09 10:24:43 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:45.819 +0800 -  -> 
+	24/04/09 10:24:44 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:46.821 +0800 -  -> 
+	24/04/09 10:24:45 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:47.824 +0800 -  -> 
+	24/04/09 10:24:46 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:48.826 +0800 -  -> 
+	24/04/09 10:24:47 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:49.829 +0800 -  -> 
+	24/04/09 10:24:48 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:50.830 +0800 -  -> 
+	24/04/09 10:24:49 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:24:51.831 +0800 -  -> 
+	24/04/09 10:24:50 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:24:50 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 8 failover attempts. Trying to failover after sleeping for 22100ms.
+[INFO] 2024-04-09 10:25:14.854 +0800 -  -> 
+	24/04/09 10:25:14 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:15.855 +0800 -  -> 
+	24/04/09 10:25:15 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:16.857 +0800 -  -> 
+	24/04/09 10:25:16 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:17.858 +0800 -  -> 
+	24/04/09 10:25:17 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:18.860 +0800 -  -> 
+	24/04/09 10:25:18 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:19.861 +0800 -  -> 
+	24/04/09 10:25:19 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:20.862 +0800 -  -> 
+	24/04/09 10:25:20 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:21.864 +0800 -  -> 
+	24/04/09 10:25:21 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:22.865 +0800 -  -> 
+	24/04/09 10:25:22 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:23.868 +0800 -  -> 
+	24/04/09 10:25:23 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:25:23 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 9 failover attempts. Trying to failover after sleeping for 30692ms.
+[INFO] 2024-04-09 10:25:54.903 +0800 -  -> 
+	24/04/09 10:25:54 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:55.906 +0800 -  -> 
+	24/04/09 10:25:55 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:56.909 +0800 -  -> 
+	24/04/09 10:25:56 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:57.911 +0800 -  -> 
+	24/04/09 10:25:57 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:58.913 +0800 -  -> 
+	24/04/09 10:25:58 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:25:59.916 +0800 -  -> 
+	24/04/09 10:25:59 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:00.918 +0800 -  -> 
+	24/04/09 10:26:00 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:01.919 +0800 -  -> 
+	24/04/09 10:26:01 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:02.920 +0800 -  -> 
+	24/04/09 10:26:02 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:03.921 +0800 -  -> 
+	24/04/09 10:26:03 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:26:03 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 10 failover attempts. Trying to failover after sleeping for 39233ms.
+[INFO] 2024-04-09 10:26:44.959 +0800 -  -> 
+	24/04/09 10:26:44 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:45.960 +0800 -  -> 
+	24/04/09 10:26:45 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:46.962 +0800 -  -> 
+	24/04/09 10:26:46 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:47.963 +0800 -  -> 
+	24/04/09 10:26:47 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:48.965 +0800 -  -> 
+	24/04/09 10:26:48 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:49.967 +0800 -  -> 
+	24/04/09 10:26:49 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:50.968 +0800 -  -> 
+	24/04/09 10:26:50 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:51.969 +0800 -  -> 
+	24/04/09 10:26:51 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:52.972 +0800 -  -> 
+	24/04/09 10:26:52 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:26:53.974 +0800 -  -> 
+	24/04/09 10:26:53 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:26:53 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 11 failover attempts. Trying to failover after sleeping for 28576ms.
+[INFO] 2024-04-09 10:27:23.008 +0800 -  -> 
+	24/04/09 10:27:22 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:27:24.010 +0800 -  -> 
+	24/04/09 10:27:23 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:27:25.011 +0800 -  -> 
+	24/04/09 10:27:24 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:27:26.012 +0800 -  -> 
+	24/04/09 10:27:25 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:27:27.013 +0800 -  -> 
+	24/04/09 10:27:26 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:27:28.014 +0800 -  -> 
+	24/04/09 10:27:27 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:27:29.016 +0800 -  -> 
+	24/04/09 10:27:28 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:27:30.017 +0800 -  -> 
+	24/04/09 10:27:29 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:27:31.021 +0800 -  -> 
+	24/04/09 10:27:30 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:27:32.038 +0800 -  -> 
+	24/04/09 10:27:31 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:27:31 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 12 failover attempts. Trying to failover after sleeping for 32535ms.
+[INFO] 2024-04-09 10:28:06.067 +0800 -  -> 
+	24/04/09 10:28:05 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:07.071 +0800 -  -> 
+	24/04/09 10:28:06 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:08.072 +0800 -  -> 
+	24/04/09 10:28:07 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:09.073 +0800 -  -> 
+	24/04/09 10:28:08 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:10.074 +0800 -  -> 
+	24/04/09 10:28:09 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:11.076 +0800 -  -> 
+	24/04/09 10:28:10 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:12.078 +0800 -  -> 
+	24/04/09 10:28:11 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:13.080 +0800 -  -> 
+	24/04/09 10:28:12 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:14.082 +0800 -  -> 
+	24/04/09 10:28:13 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:15.083 +0800 -  -> 
+	24/04/09 10:28:14 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:28:14 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 13 failover attempts. Trying to failover after sleeping for 38928ms.
+[INFO] 2024-04-09 10:28:54.181 +0800 -  -> 
+	24/04/09 10:28:54 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:55.183 +0800 -  -> 
+	24/04/09 10:28:55 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:56.186 +0800 -  -> 
+	24/04/09 10:28:56 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:57.193 +0800 -  -> 
+	24/04/09 10:28:57 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:58.195 +0800 -  -> 
+	24/04/09 10:28:58 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:28:59.198 +0800 -  -> 
+	24/04/09 10:28:59 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:00.199 +0800 -  -> 
+	24/04/09 10:29:00 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:01.201 +0800 -  -> 
+	24/04/09 10:29:01 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:02.798 +0800 -  -> 
+	24/04/09 10:29:02 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:03.800 +0800 -  -> 
+	24/04/09 10:29:03 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:29:03 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 14 failover attempts. Trying to failover after sleeping for 18324ms.
+[INFO] 2024-04-09 10:29:22.818 +0800 -  -> 
+	24/04/09 10:29:22 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:23.819 +0800 -  -> 
+	24/04/09 10:29:23 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:24.821 +0800 -  -> 
+	24/04/09 10:29:24 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:25.823 +0800 -  -> 
+	24/04/09 10:29:25 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:26.826 +0800 -  -> 
+	24/04/09 10:29:26 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:27.827 +0800 -  -> 
+	24/04/09 10:29:27 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:28.828 +0800 -  -> 
+	24/04/09 10:29:28 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:29.831 +0800 -  -> 
+	24/04/09 10:29:29 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:30.835 +0800 -  -> 
+	24/04/09 10:29:30 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:31.837 +0800 -  -> 
+	24/04/09 10:29:31 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:29:31 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 15 failover attempts. Trying to failover after sleeping for 22380ms.
+[INFO] 2024-04-09 10:29:55.860 +0800 -  -> 
+	24/04/09 10:29:54 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:56.862 +0800 -  -> 
+	24/04/09 10:29:55 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:57.864 +0800 -  -> 
+	24/04/09 10:29:56 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:58.866 +0800 -  -> 
+	24/04/09 10:29:57 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:29:59.869 +0800 -  -> 
+	24/04/09 10:29:58 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:00.873 +0800 -  -> 
+	24/04/09 10:29:59 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:01.875 +0800 -  -> 
+	24/04/09 10:30:00 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:02.876 +0800 -  -> 
+	24/04/09 10:30:01 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:03.877 +0800 -  -> 
+	24/04/09 10:30:02 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:04.878 +0800 -  -> 
+	24/04/09 10:30:03 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:30:03 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 16 failover attempts. Trying to failover after sleeping for 18669ms.
+[INFO] 2024-04-09 10:30:23.902 +0800 -  -> 
+	24/04/09 10:30:23 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:24.903 +0800 -  -> 
+	24/04/09 10:30:24 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:25.904 +0800 -  -> 
+	24/04/09 10:30:25 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:26.906 +0800 -  -> 
+	24/04/09 10:30:26 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:27.909 +0800 -  -> 
+	24/04/09 10:30:27 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:28.910 +0800 -  -> 
+	24/04/09 10:30:28 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:29.925 +0800 -  -> 
+	24/04/09 10:30:29 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:30.928 +0800 -  -> 
+	24/04/09 10:30:30 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:31.940 +0800 -  -> 
+	24/04/09 10:30:31 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+[INFO] 2024-04-09 10:30:32.942 +0800 -  -> 
+	24/04/09 10:30:32 INFO Client: Retrying connect to server: 0.0.0.0/0.0.0.0:8032. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+	24/04/09 10:30:32 INFO RetryInvocationHandler: java.net.ConnectException: Your endpoint configuration is wrong; For more details see:  http://wiki.apache.org/hadoop/UnsetHostnameOrPort, while invoking ApplicationClientProtocolPBClientImpl.getNewApplication over null after 17 failover attempts. Trying to failover after sleeping for 33877ms.
+[ERROR] 2024-04-09 10:30:43.681 +0800 - kill task error
+java.io.IOException: Cannot run program "pstree": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+	at org.apache.dolphinscheduler.common.shell.AbstractShell.runCommand(AbstractShell.java:138)
+	at org.apache.dolphinscheduler.common.shell.AbstractShell.run(AbstractShell.java:118)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execute(ShellExecutor.java:125)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execCommand(ShellExecutor.java:103)
+	at org.apache.dolphinscheduler.common.shell.ShellExecutor.execCommand(ShellExecutor.java:86)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.exeShell(OSUtils.java:345)
+	at org.apache.dolphinscheduler.common.utils.OSUtils.exeCmd(OSUtils.java:334)
+	at org.apache.dolphinscheduler.plugin.task.api.utils.ProcessUtils.getPidsStr(ProcessUtils.java:129)
+	at org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction.killProcess(TaskInstanceKillOperationFunction.java:130)
+	at org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction.doKill(TaskInstanceKillOperationFunction.java:96)
+	at org.apache.dolphinscheduler.server.worker.runner.operator.TaskInstanceKillOperationFunction.operate(TaskInstanceKillOperationFunction.java:69)
+	at org.apache.dolphinscheduler.server.worker.rpc.TaskInstanceOperatorImpl.killTask(TaskInstanceOperatorImpl.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.dolphinscheduler.extract.base.server.ServerMethodInvokerImpl.invoke(ServerMethodInvokerImpl.java:41)
+	at org.apache.dolphinscheduler.extract.base.server.JdkDynamicServerHandler.lambda$processReceived$0(JdkDynamicServerHandler.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+	... 21 common frames omitted
+[INFO] 2024-04-09 10:30:43.683 +0800 - Get appIds from worker 172.18.0.7:1234, taskLogPath: /opt/dolphinscheduler/logs/20240409/13201021801792/3/249/521.log
+[INFO] 2024-04-09 10:30:43.688 +0800 - Start finding appId in /opt/dolphinscheduler/logs/20240409/13201021801792/3/249/521.log, fetch way: log 
+[INFO] 2024-04-09 10:30:43.689 +0800 - The appId is empty
+[INFO] 2024-04-09 10:30:43.689 +0800 - Begin to kill process process, pid is : 2938
+[INFO] 2024-04-09 10:30:48.701 +0800 - Success kill task: 249_521, pid: 2938
+[INFO] 2024-04-09 10:30:48.740 +0800 - kill task by cancelApplication, taskInstanceId: 521
+[ERROR] 2024-04-09 10:31:07.626 +0800 - Parse var pool error
+java.io.IOException: Stream closed
+	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:170)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:283)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at org.apache.dolphinscheduler.plugin.task.api.AbstractCommandExecutor.lambda$parseProcessOutput$1(AbstractCommandExecutor.java:273)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] 2024-04-09 10:31:07.993 +0800 - process has killed. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_3/249/521, processId:2938 ,exitStatusCode:137 ,processWaitForStatus:true ,processExitValue:137
+[INFO] 2024-04-09 10:31:07.994 +0800 - Start finding appId in /opt/dolphinscheduler/logs/20240409/13201021801792/3/249/521.log, fetch way: log 
+[INFO] 2024-04-09 10:31:07.995 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 10:31:07.996 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-09 10:31:07.996 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 10:31:07.997 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-09 10:31:08.019 +0800 - Send task execute status: KILL to master : 172.18.0.7:1234
+[INFO] 2024-04-09 10:31:08.019 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-09 10:31:08.019 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_3/249/521
+[INFO] 2024-04-09 10:31:08.020 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_3/249/521
+[INFO] 2024-04-09 10:31:08.021 +0800 - FINALIZE_SESSION

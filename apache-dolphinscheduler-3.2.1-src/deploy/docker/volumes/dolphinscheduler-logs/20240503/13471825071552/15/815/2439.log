@@ -1,0 +1,170 @@
+[INFO] 2024-05-03 08:40:56.168 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 08:40:56.171 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-03 08:40:56.172 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 08:40:56.172 +0800 - Begin to initialize task
+[INFO] 2024-05-03 08:40:56.172 +0800 - Set task startTime: 1714696856172
+[INFO] 2024-05-03 08:40:56.173 +0800 - Set task appId: 815_2439
+[INFO] 2024-05-03 08:40:56.173 +0800 - End initialize task {
+  "taskInstanceId" : 2439,
+  "taskName" : "check if it exists in the database",
+  "firstSubmitTime" : 1714696856144,
+  "startTime" : 1714696856172,
+  "taskType" : "SQL",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240503/13471825071552/15/815/2439.log",
+  "processId" : 0,
+  "processDefineCode" : 13471825071552,
+  "processDefineVersion" : 15,
+  "processInstanceId" : 815,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 7,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"artricle_hash\",\"direct\":\"OUT\",\"type\":\"LIST\",\"value\":\"\"}],\"resourceList\":[],\"type\":\"POSTGRESQL\",\"datasource\":5,\"sql\":\"SELECT hash\\nFROM article_hashes\\nWHERE hash = 'llll'\\n\",\"sqlType\":\"0\",\"preStatements\":[\"CREATE TABLE IF NOT EXISTS article_hashes (\\n\\t    hash TEXT NOT NULL\\n\\t);\"],\"postStatements\":[],\"displayRows\":10}",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "check if it exists in the database"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "artricle_hash" : {
+      "prop" : "artricle_hash",
+      "direct" : "OUT",
+      "type" : "LIST",
+      "value" : "null"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240503"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2439"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13472192399424"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240503084056"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "815"
+    },
+    "article_data_hash" : {
+      "prop" : "article_data_hash",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "c1890cda263e4d010c5292e71f03fbcca8e13aa3a5e703e6efcc2966dad482df"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240502"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "extract_gnews_articles_hashing_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13471825071552"
+    }
+  },
+  "taskAppId" : "815_2439",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "resourceParametersHelper" : {
+    "resourceMap" : {
+      "DATASOURCE" : {
+        "5" : {
+          "resourceType" : "DATASOURCE",
+          "type" : "POSTGRESQL",
+          "connectionParams" : "{\"user\":\"root\",\"password\":\"******\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"gnews_article_hash_db\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/gnews_article_hash_db\",\"driverClassName\":\"org.postgresql.Driver\",\"validationQuery\":\"select version()\",\"other\":{\"password\":\"****\"}}",
+          "DATASOURCE" : null
+        }
+      }
+    }
+  },
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"artricle_hash\",\"direct\":\"IN\",\"type\":\"LIST\",\"value\":\"null\"},{\"prop\":\"article_data_hash\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"c1890cda263e4d010c5292e71f03fbcca8e13aa3a5e703e6efcc2966dad482df\"},{\"prop\":\"artricle_hash\",\"direct\":\"OUT\",\"type\":\"LIST\",\"value\":\"null\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-03 08:40:56.174 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 08:40:56.175 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-03 08:40:56.175 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 08:40:56.203 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-03 08:40:56.204 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-03 08:40:56.204 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_15/815/2439 check successfully
+[INFO] 2024-05-03 08:40:56.204 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.sql.SqlTaskChannel successfully
+[INFO] 2024-05-03 08:40:56.205 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[ERROR] 2024-05-03 08:40:56.205 +0800 - Task execute failed, due to meet an exception
+java.lang.IllegalStateException: Duplicate key Property{prop='artricle_hash', direct=IN, type=LIST, value='null'}
+	at java.util.stream.Collectors.lambda$throwingMerger$0(Collectors.java:133)
+	at java.util.HashMap.merge(HashMap.java:1255)
+	at java.util.stream.Collectors.lambda$toMap$58(Collectors.java:1320)
+	at java.util.stream.ReduceOps$3ReducingSink.accept(ReduceOps.java:169)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:566)
+	at org.apache.dolphinscheduler.server.worker.utils.TaskFilesTransferUtils.downloadUpstreamFiles(TaskFilesTransferUtils.java:142)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor.beforeExecute(WorkerTaskExecutor.java:234)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor.run(WorkerTaskExecutor.java:167)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] 2024-05-03 08:40:56.205 +0800 - Cancel the task successfully
+[INFO] 2024-05-03 08:40:56.209 +0800 - Get a exception when execute the task, will send the task status: FAILURE to master: 172.18.1.1:1234
+[INFO] 2024-05-03 08:40:56.210 +0800 - FINALIZE_SESSION

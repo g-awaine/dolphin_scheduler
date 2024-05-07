@@ -1,0 +1,7 @@
+[INFO] 2024-04-08 17:35:24.995 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[858] - The task has not changed, so skip
+[INFO] 2024-04-08 17:35:25.009 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13201021801792, processVersion:2.
+[INFO] 2024-04-08 17:35:25.055 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13201021801792, processVersion:3.
+[INFO] 2024-04-08 17:35:25.079 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13201021801792, processVersion:3.
+[INFO] 2024-04-08 17:35:35.591 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13201021801792, commandCount:1.
+[INFO] 2024-04-08 17:36:51.110 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:516, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/3/244/516.log
+[INFO] 2024-04-08 17:36:51.454 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:516, taskInstanceName:spark, host: 172.18.0.3:1234, logPath:/opt/dolphinscheduler/logs/20240408/13201021801792/3/244/516.log

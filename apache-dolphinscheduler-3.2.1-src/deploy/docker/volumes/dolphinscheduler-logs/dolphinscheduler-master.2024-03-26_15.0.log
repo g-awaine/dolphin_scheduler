@@ -1,0 +1,991 @@
+[WI-0][TI-0] - [WARN] 2024-03-26 15:00:00.740 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:00:01.748 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:00:02.749 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:02.837 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:00:03.760 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:00:04.761 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:05.765 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:00:05.765 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [WARN] 2024-03-26 15:00:06.766 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:07.772 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:00:07.773 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:07.858 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:08.447 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:08.771 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:12.880 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:13.806 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:00:13.806 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:17.897 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:22.935 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:27.958 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:32.978 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:37.995 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:43.011 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:48.025 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:53.040 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:00:58.057 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:01:03.072 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:01:08.089 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:01:13.108 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:01:18.127 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:01:23.169 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:01:28.191 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:01:33.213 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:01:38.230 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:01:43.248 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:01:48.265 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:01:53.281 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:01:58.296 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:02:03.318 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:02:08.336 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:02:13.353 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:02:18.369 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:02:23.401 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:02:28.420 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:02:33.439 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:02:38.466 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:02:43.488 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:02:48.518 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:02:53.537 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:02:58.559 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:03:03.585 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:03:08.612 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:03:13.634 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:03:18.657 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:03:23.689 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:03:28.711 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:03:33.730 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:03:38.753 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:03:43.773 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:03:48.790 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:03:53.812 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:03:58.835 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:04:03.854 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:04:08.875 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:04:13.903 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:04:18.925 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:04:23.970 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:04:28.997 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:04:34.017 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:04:39.036 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:04:44.061 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:04:49.081 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:04:54.109 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:04:59.131 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:04.151 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:09.173 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:14.197 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:19.214 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:20.604 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7209792551329468 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:20.677 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7209792551329468 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:05:20.678 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:24.255 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:29.285 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:34.309 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:39.327 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:44.351 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:49.369 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:54.387 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:58.808 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:05:58.808 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:05:59.402 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:04.418 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:09.435 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:09.841 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:14.450 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:17.880 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:17.881 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:19.477 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:24.519 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:29.551 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:34.573 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:34.944 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7146661361166802 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:34.945 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7146661361166802 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:34.946 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:39.616 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:39.967 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8613333333333334 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:39.967 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:39.973 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8613333333333334 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:44.638 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:49.005 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:49.108 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:49.658 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:50.012 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:51.016 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:52.021 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:53.613 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:54.614 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:54.677 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:55.616 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:56.617 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:57.619 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:57.620 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:58.620 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:06:58.620 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:59.126 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:06:59.709 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:04.745 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:09.683 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8201634877384196 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:09.774 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:10.660 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8201634877384196 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:07:10.661 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:14.790 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:19.811 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:24.856 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:29.900 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:32.790 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7024793388429752 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:33.728 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7024793388429752 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:07:33.729 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:34.925 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:40.000 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 40/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:45.021 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:50.064 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:07:55.100 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:00.143 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 16/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:05.180 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:10.197 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:15.218 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:20.253 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 13/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:25.292 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:30.323 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 10/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:35.347 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:40.078 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7959770114942529 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:40.369 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:40.933 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7959770114942529 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:08:40.933 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:45.390 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:50.407 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:08:55.434 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:00.461 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:05.483 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:10.519 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:15.549 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 11/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:20.572 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:25.610 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:30.633 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:35.661 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:40.682 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:45.704 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:50.724 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:51.662 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:09:55.748 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:00.773 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:05.792 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:06.714 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.704 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:10:06.715 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:06.758 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.704 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:07.718 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7541899441340781 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:10:07.718 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:07.817 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7541899441340781 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:09.731 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8201634877384195 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:10:09.732 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:09.850 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8201634877384195 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:10.733 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7929155313351498 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:10:10.734 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:10.816 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:10.904 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7929155313351498 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:12.741 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8675324675324675 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:10:12.742 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:12.914 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8675324675324675 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:15.840 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:20.860 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:25.902 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:30.927 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:35.961 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:40.982 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:46.009 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:51.044 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:10:56.073 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:01.113 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 17/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:06.152 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 15/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:11.189 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:16.212 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:21.245 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:26.268 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:29.769 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:11:29.770 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:30.768 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:31.294 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:36.314 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:41.335 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:46.360 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:51.385 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:56.404 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:11:58.877 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0091743119266054 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:11:58.877 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:01.425 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:06.446 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:11.470 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:16.500 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:21.546 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:26.579 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:31.639 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:36.036 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 2.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:12:36.036 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:36.669 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:41.689 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:46.710 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:51.735 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:56.762 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:57.131 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:12:57.132 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:12:58.130 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:01.788 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:06.809 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:11.829 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:16.848 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:21.886 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:24.725 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:13:24.725 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:26.912 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:31.942 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:36.960 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:41.987 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:47.008 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:52.030 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:13:57.052 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:14:02.071 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:14:07.086 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:14:12.104 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:14:17.124 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:14:22.170 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:14:27.203 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:14:32.250 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 14/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:14:37.285 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:14:42.305 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:14:47.322 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:14:52.337 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:14:57.364 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:15:02.380 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:15:07.410 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:15:12.433 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:15:17.454 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:15:22.485 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:15:27.502 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:15:32.530 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:15:37.553 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:15:42.572 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:15:47.590 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:15:52.615 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:15:57.653 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:02.675 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:07.695 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:12.715 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:17.741 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:22.786 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:27.809 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:32.827 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:33.817 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.860724233983287 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:16:33.817 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:34.478 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.860724233983287 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:37.848 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:42.874 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:47.897 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:52.920 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:16:57.941 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:17:02.959 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:17:07.977 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:17:12.995 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:17:18.011 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:17:23.050 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:17:28.075 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:17:33.093 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:17:38.115 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:17:43.136 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:17:48.166 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:17:53.195 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:17:58.216 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:18:03.236 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:18:08.256 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:18:13.279 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:18:18.302 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:18:23.329 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:18:28.346 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:18:33.366 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:18:38.388 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:18:43.409 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:18:48.426 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:18:53.446 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:18:58.467 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:19:03.490 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:19:08.512 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:19:13.536 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:19:18.551 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:19:23.603 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 18/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:19:28.625 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:19:33.658 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:19:38.675 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:19:43.706 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:19:48.745 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:19:53.780 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:19:58.797 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:20:03.820 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:20:08.857 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:20:13.878 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:20:18.911 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:20:23.962 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:20:28.984 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:20:34.003 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:20:39.026 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:20:44.048 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:20:49.072 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:20:54.093 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:20:59.119 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:21:04.142 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:21:09.182 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:21:14.205 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:21:19.224 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:21:24.301 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 10/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:21:29.329 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:21:34.348 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:21:39.364 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:21:44.382 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:21:49.404 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:21:54.430 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:21:59.450 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:22:04.471 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:22:09.495 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:22:14.521 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:22:19.550 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:22:24.587 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:22:29.620 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:22:34.649 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:22:39.676 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:22:44.691 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:22:49.720 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:22:54.748 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:22:59.769 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:23:04.794 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:23:09.812 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:23:14.843 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:23:19.869 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:23:24.910 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:23:29.934 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:23:34.950 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:23:39.965 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:23:45.000 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 16/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:23:50.027 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:23:55.054 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:00.084 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:05.109 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:10.132 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:15.160 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:19.452 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 2.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:19.453 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:20.184 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:23.465 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:23.466 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:25.223 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:30.263 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 10/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:34.505 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:34.506 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:35.298 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:37.513 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:37.513 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:40.319 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:40.528 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:40.989 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:41.533 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:42.537 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:43.538 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:44.540 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:45.336 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:45.542 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:46.544 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:47.546 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:48.549 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:49.551 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:50.364 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:24:50.553 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:51.005 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:24:55.385 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:25:00.401 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:25:05.429 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:25:10.452 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:25:15.475 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:25:20.495 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:25:25.544 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:25:30.564 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:25:35.583 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:25:40.623 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:25:45.651 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:25:50.694 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:25:55.720 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:26:00.740 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:26:05.763 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:26:10.805 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 17/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:26:15.830 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:26:20.856 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:26:25.896 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:26:30.925 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:26:35.960 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:26:40.987 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:26:46.030 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:26:51.048 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:26:56.066 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:27:01.114 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:27:06.135 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:27:11.163 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:27:16.184 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:27:21.232 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:27:26.261 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:27:31.286 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:27:36.308 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:27:41.326 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:27:46.347 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:27:51.365 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:27:56.380 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:01.402 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:06.429 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:11.450 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:11.944 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:16.481 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:21.514 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:26.548 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:31.570 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:36.596 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:41.617 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:46.645 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:51.668 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:28:56.687 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:01.702 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:02.174 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:29:02.174 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:06.733 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:11.754 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:16.777 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:21.821 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:26.842 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:31.861 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:36.887 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:41.904 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:46.928 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:47.348 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:29:47.348 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:49.360 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:29:49.361 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:51.950 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:29:56.971 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:01.990 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:04.425 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:30:04.425 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:07.014 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:12.058 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:17.076 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:20.485 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:30:20.488 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:22.113 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:27.143 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:32.165 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:36.548 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.5 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:30:36.548 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:37.184 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:42.200 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:47.222 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:51.603 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.5 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:30:51.655 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:52.245 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:30:52.612 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:30:53.616 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:30:54.628 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:30:55.632 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:30:56.634 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:30:57.269 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:30:57.637 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:30:58.640 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:30:59.643 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:00.644 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:01.646 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:01.682 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:02.306 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:07.329 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:12.357 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:17.949 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:22.985 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:24.973 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.5 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:24.974 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:25.976 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.009009009009009 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:25.977 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:27.984 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:28.004 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:33.022 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:36.024 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:36.024 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:38.051 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:41.053 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:41.749 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:42.056 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:43.060 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:43.072 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:44.062 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:45.064 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:46.066 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:47.067 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:48.072 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:48.092 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:49.078 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:50.089 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:31:51.092 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:51.759 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:53.111 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:31:58.132 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:03.160 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:09.030 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:14.054 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:19.078 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:21.035 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:32:21.036 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:24.110 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:29.136 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:34.169 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:39.190 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:44.208 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:48.153 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:49.230 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:54.252 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:32:59.268 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:04.294 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:09.312 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:14.336 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:15.264 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:33:15.271 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:19.356 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:22.292 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:33:22.293 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:24.400 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:29.317 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.5 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:33:29.318 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:29.434 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:34.456 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:35.341 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:33:35.342 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:36.337 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:39.480 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:44.503 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:46.397 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:33:46.397 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:49.526 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:54.545 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:33:59.566 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:34:04.582 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:34:09.601 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:34:14.621 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:34:19.642 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:34:24.673 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:34:29.689 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:34:34.707 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:34:39.722 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:34:44.749 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:34:49.777 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:34:54.796 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:34:59.815 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:35:04.832 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:35:09.848 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:35:14.866 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:35:19.890 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:35:24.953 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:35:29.981 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:35:35.003 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:35:40.025 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:35:45.053 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:35:50.072 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:35:55.096 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:36:00.121 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:36:05.140 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:36:10.156 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:36:15.170 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:36:20.197 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:36:25.241 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:36:30.270 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:36:35.299 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:36:40.322 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:36:45.339 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:36:50.355 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:36:55.374 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:37:00.389 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:37:05.411 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:37:11.023 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:37:16.052 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:37:21.070 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:37:26.107 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:37:31.127 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:37:36.150 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:37:41.168 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:37:46.197 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:37:51.216 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:37:56.234 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:01.255 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:06.279 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:09.010 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:38:09.010 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:10.009 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:11.298 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:16.322 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:17.048 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:21.366 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:26.394 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:31.414 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:36.430 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:41.454 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:46.478 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:51.498 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:38:56.530 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:01.547 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:06.566 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:11.582 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:16.602 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:21.252 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:39:21.252 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:21.642 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:26.668 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:31.689 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:36.711 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:41.746 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:46.766 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:49.356 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:39:49.356 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:51.786 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:39:56.808 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:01.829 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:06.848 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:11.866 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:12.456 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:40:12.457 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:16.884 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:21.927 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:23.501 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:26.953 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:31.975 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:37.004 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:42.036 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:47.062 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:52.087 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:40:57.111 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:02.135 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:07.156 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:12.175 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:17.192 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:22.221 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:27.250 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:32.064 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:41:32.064 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:32.284 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:37.311 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:41.093 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:41:41.093 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:42.332 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:47.355 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:52.371 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:41:57.393 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:00.152 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:42:00.152 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:02.420 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:07.438 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:12.190 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:42:12.191 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:12.465 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:13.189 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:17.500 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:22.538 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:27.566 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:32.583 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:38.160 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:43.199 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:48.141 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:42:48.141 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:48.218 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:53.240 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:57.186 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:42:58.258 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:03.278 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:08.297 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:13.315 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:18.339 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:23.384 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:28.416 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:32.325 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:43:32.325 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:33.435 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:38.698 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:43.725 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:48.750 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:53.773 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:43:58.800 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:03.822 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:08.841 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:13.862 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:18.885 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:23.181 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0088235294117647 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:44:23.181 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:23.920 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:28.942 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:33.975 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 11/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:35.216 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:44:35.216 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:39.004 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:44.049 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 17/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:49.080 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:53.281 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:44:53.281 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:54.100 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:44:59.123 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:04.139 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:04.326 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0119402985074626 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:45:04.327 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:06.332 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:45:06.332 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:09.167 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:14.199 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:19.272 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 23/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:24.329 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:29.357 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:34.375 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:39.406 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:44.316 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:45:44.317 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:44.423 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:47.328 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:45:47.329 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:49.437 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:54.452 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:45:59.470 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:04.489 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:08.417 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:46:08.417 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:09.518 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:14.550 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:19.469 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:46:19.469 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:19.570 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:24.606 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:25.494 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:46:25.494 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:26.500 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:46:26.500 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:27.498 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:29.631 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:34.655 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:39.678 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:44.706 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:49.726 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:54.748 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:46:59.764 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:00.654 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.5 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:04.786 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:10.196 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:15.220 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:20.208 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 2.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:47:20.209 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:20.242 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:22.213 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:47:22.213 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:25.277 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:26.232 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:30.296 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:35.313 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:40.330 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 1/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:44.308 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:45.354 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:50.375 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:47:55.391 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:00.416 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:05.441 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:10.490 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:15.516 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:20.524 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 2.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:48:20.524 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:20.536 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:26.280 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:31.315 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:36.333 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:41.349 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:46.371 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:51.386 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:48:56.407 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:49:01.437 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:49:06.460 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:49:11.476 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:49:16.491 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:49:21.525 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:49:26.552 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:49:31.566 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:49:36.589 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:49:41.609 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:49:46.627 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:49:51.646 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:49:56.681 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:50:01.705 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:50:06.725 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:50:11.745 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:50:16.765 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:50:21.847 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:50:26.874 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:50:31.903 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:50:36.925 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:50:41.961 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:50:46.994 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:50:52.041 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 24/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:50:57.072 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:02.102 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:07.129 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:12.149 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:15.726 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8548604469176594 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:51:15.726 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:15.802 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8548604469176594 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:17.186 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:22.398 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 17/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:24.760 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.86628171578109 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:51:24.760 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:24.887 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.86628171578109 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:27.486 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:32.523 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:37.554 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:42.590 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:47.616 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:51.335 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.1111111111111112 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:52.681 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:57.704 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:59.384 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7353760445682451 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:51:59.385 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:51:59.420 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7353760445682451 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:00.390 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8157181571815717 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:00.391 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:00.444 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8157181571815717 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:01.398 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8474114441416895 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:01.399 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:01.446 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.8474114441416895 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:02.807 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 41/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:07.850 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:11.485 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7146814404432134 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:11.485 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:11.527 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7146814404432134 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:12.891 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:17.956 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:23.061 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 26/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:28.173 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:33.237 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:33.661 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7555226636108988 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:33.664 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:33.712 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 0.7555226636108988 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:33.863 +0800 o.a.d.s.m.d.h.LowerWeightHostManager:[139] - Worker 172.24.0.5:1234 in workerGroup default is Busy, heartbeat is WorkerHeartBeat(startupTime=1711423922191, reportTime=1711439553658, cpuUsage=0.752112676056338, jvmMemoryUsage=0.03408409754435222, memoryUsage=0.47350134502006547, diskUsage=0.0, serverStatus=BUSY, processId=8, host=172.24.0.5, port=1234, workerHostWeight=100, threadPoolUsage=0)
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:33.870 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:34.669 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:35.682 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:36.688 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:37.690 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:38.288 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:38.696 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:39.699 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:40.714 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:41.718 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:42.721 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:43.329 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:52:43.723 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:43.889 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:48.361 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:53.389 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:52:58.415 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:03.450 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:07.909 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.5 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:08.543 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:13.573 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:18.603 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:23.722 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:28.749 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:33.773 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:38.801 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:43.822 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:48.870 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:53.904 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:53:58.965 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 10/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:54:04.001 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:54:09.032 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:54:14.076 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:54:19.105 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:54:24.143 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:54:29.173 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 10/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:54:34.194 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:54:39.220 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:54:44.246 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:54:49.279 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:54:54.300 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:54:59.325 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:55:04.350 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:55:09.370 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:55:14.396 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:55:19.422 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:55:24.506 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:55:29.536 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:55:34.560 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:55:39.594 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:55:44.621 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:55:49.650 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:55:54.675 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:55:59.696 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:56:04.717 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:56:09.741 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:56:14.764 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:56:19.794 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:56:24.840 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:56:29.880 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:56:34.907 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:56:39.939 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:56:44.969 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:56:49.991 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:56:55.010 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:00.053 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 9/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:05.083 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:10.120 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:15.141 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:20.170 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 12/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:25.217 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:29.116 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.5 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:57:29.117 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:30.234 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:35.262 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:40.287 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:45.322 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:50.363 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:53.219 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:57:53.221 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:54.218 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:57:54.469 +0800 o.a.d.s.m.r.MasterSlotManager:[90] - Current master is not in active master list
+[WI-0][TI-0] - [WARN] 2024-03-26 15:57:55.227 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:57:55.391 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 6/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:57:56.231 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:57:57.234 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:57:58.238 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:57:59.240 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:58:00.244 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:00.411 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [WARN] 2024-03-26 15:58:01.247 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:58:02.250 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:58:03.253 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [WARN] 2024-03-26 15:58:04.255 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[179] - Master count: 0 is invalid, the current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:04.482 +0800 o.a.d.s.m.r.MasterSlotManager:[94] - Update master nodes, total master size: 1, current slot: 0
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:05.440 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:10.471 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:15.494 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:20.521 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:25.577 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:30.597 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:35.624 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 7/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:39.440 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [WARN] 2024-03-26 15:58:39.441 +0800 o.a.d.s.m.r.MasterSchedulerBootstrap:[123] - The current server is overload, cannot consumes commands.
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:40.663 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:45.685 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:50.501 +0800 o.a.d.s.m.c.MasterServerLoadProtection:[48] - Master OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:50.734 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 8/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:58:55.775 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:59:00.797 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:59:05.820 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:59:10.841 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:59:15.863 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 4/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:59:20.917 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 18/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:59:25.963 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:59:31.001 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:59:36.029 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 2/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:59:41.054 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:59:46.075 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 3/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:59:51.099 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms
+[WI-0][TI-0] - [INFO] 2024-03-26 15:59:56.131 +0800 o.a.d.s.m.r.t.TaskGroupCoordinator:[127] - TaskGroupCoordinator round time cost: 5/ms

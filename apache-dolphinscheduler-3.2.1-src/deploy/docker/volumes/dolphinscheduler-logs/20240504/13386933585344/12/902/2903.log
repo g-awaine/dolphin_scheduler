@@ -1,0 +1,260 @@
+[INFO] 2024-05-04 22:48:02.791 +0800 - Submit LogicTask: create sentiment analysis instances to MasterTaskExecutorThreadPool success
+[INFO] 2024-05-04 22:48:02.792 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 22:48:02.805 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-04 22:48:02.807 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 22:48:02.810 +0800 - Begin to initialize task
+[INFO] 2024-05-04 22:48:02.810 +0800 - Set task startTime: 1714834082810
+[INFO] 2024-05-04 22:48:02.811 +0800 - Set task appId: 902_2903
+[INFO] 2024-05-04 22:48:02.812 +0800 - End initialize task {
+  "taskInstanceId" : 2903,
+  "taskName" : "create sentiment analysis instances",
+  "firstSubmitTime" : 1714834082756,
+  "startTime" : 1714834082810,
+  "taskType" : "DYNAMIC",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.0.11:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240504/13386933585344/12/902/2903.log",
+  "processId" : 0,
+  "processDefineCode" : 13386933585344,
+  "processDefineVersion" : 12,
+  "processInstanceId" : 902,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topics\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\\\"reddit_post_filtered|reddit_post_sa\\\"\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"processDefinitionCode\":13386218435520,\"maxNumOfSubWorkflowInstances\":1024,\"degreeOfParallelism\":2,\"filterCondition\":\"\",\"listParameters\":[{\"name\":\"topics\",\"value\":\"${topics}\",\"separator\":\",\",\"disabled\":true}]}",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "create sentiment analysis instances"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "topics" : {
+      "prop" : "topics",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "\"reddit_post_filtered|reddit_post_sa\""
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2903"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386894519360"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504224802"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "902"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240503"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sentiment_analysis_main"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386933585344"
+    }
+  },
+  "taskAppId" : "902_2903",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-04 22:48:02.819 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 22:48:02.833 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-04 22:48:02.887 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 22:48:02.902 +0800 - Send task status RUNNING_EXECUTION to master 172.18.0.11:5678
+[INFO] 2024-05-04 22:48:02.904 +0800 - Success initialize task parameters: 
+{
+  "localParams" : [ ],
+  "varPool" : null,
+  "processDefinitionCode" : 13386218435520,
+  "maxNumOfSubWorkflowInstances" : 1024,
+  "degreeOfParallelism" : 2,
+  "filterCondition" : "",
+  "listParameters" : [ {
+    "name" : "topics",
+    "value" : "${topics}",
+    "separator" : ","
+  } ]
+}
+[INFO] 2024-05-04 22:48:02.925 +0800 - Initialized task plugin instance: DYNAMIC successfully
+[INFO] 2024-05-04 22:48:02.925 +0800 - Initialize taskVarPool: null successfully
+[INFO] 2024-05-04 22:48:02.934 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 22:48:02.934 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-04 22:48:02.934 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 22:48:02.935 +0800 - parameter group size: 1
+[INFO] 2024-05-04 22:48:02.936 +0800 - parameter group: {topics="reddit_post_filtered|reddit_post_sa"}
+[INFO] 2024-05-04 22:48:02.976 +0800 - Expected number of runs : 1, actual number of runs : 1
+[INFO] 2024-05-04 22:48:02.985 +0800 - insert 1 relation sub workflow
+[INFO] 2024-05-04 22:48:02.990 +0800 - There are 2 sub process instances that can be started
+[INFO] 2024-05-04 22:48:03.002 +0800 - start sub process instance, sub process instance id: 904, command: Command(id=1337, commandType=DYNAMIC_GENERATION, processDefinitionCode=13386218435520, executorId=1, commandParam={"StartParams":"{\"topics\":\"\\\"reddit_post_filtered|reddit_post_sa\\\"\"}"}, taskDependType=TASK_POST, failureStrategy=CONTINUE, warningType=NONE, warningGroupId=0, scheduleTime=null, startTime=Sat May 04 22:48:02 GMT+08:00 2024, processInstancePriority=MEDIUM, updateTime=Sat May 04 22:48:02 GMT+08:00 2024, workerGroup=default, tenantCode=null, environmentCode=null, dryRun=0, processInstanceId=904, processDefinitionVersion=20, testFlag=0)
+[INFO] 2024-05-04 22:48:13.049 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:48:23.059 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:48:33.089 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:48:43.101 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:48:53.110 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:49:03.121 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:49:13.130 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:49:23.138 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:49:33.147 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:49:43.171 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:49:53.185 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:50:03.196 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:50:13.208 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:50:23.212 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:50:33.216 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:50:43.218 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:50:53.224 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:51:03.231 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:51:13.243 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:51:23.256 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:51:33.262 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:51:43.271 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:51:53.274 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:52:03.282 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:52:13.288 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:52:23.293 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:52:33.321 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:52:43.326 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:52:53.332 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:53:03.340 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:53:13.405 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:53:23.409 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:53:33.416 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:53:43.423 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:53:53.430 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:54:03.432 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:54:13.436 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:54:23.450 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:54:33.454 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:54:43.459 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:54:53.474 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:55:03.480 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:55:13.487 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:55:23.495 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:55:33.506 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:55:43.516 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:55:53.519 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:56:03.522 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:56:13.529 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:56:23.546 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:56:33.560 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:56:43.570 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:56:53.576 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:57:03.583 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:57:13.592 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:57:23.598 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:57:33.605 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:57:43.617 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:57:53.638 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:58:03.646 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:58:13.660 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:58:23.671 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:58:33.680 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:58:43.688 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:58:53.695 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:59:03.699 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:59:13.708 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:59:23.714 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:59:33.737 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:59:43.744 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 22:59:53.753 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:00:03.756 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:00:13.764 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:00:23.769 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:00:33.778 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:00:43.795 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:00:53.800 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:01:03.804 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:01:13.811 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:01:23.819 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:01:33.825 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:01:43.833 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:01:53.844 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:02:03.852 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:02:13.857 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:02:23.859 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:02:33.864 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:02:43.871 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:02:53.876 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:03:03.880 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:03:13.884 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:03:23.887 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:03:33.891 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:03:43.895 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:03:53.899 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:04:03.902 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:08:54.532 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:09:04.541 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:09:14.544 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:09:24.550 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:09:34.571 +0800 - There are 1 sub process instances that can be started
+[INFO] 2024-05-04 23:09:44.574 +0800 - There are 1 sub process instances that can be started

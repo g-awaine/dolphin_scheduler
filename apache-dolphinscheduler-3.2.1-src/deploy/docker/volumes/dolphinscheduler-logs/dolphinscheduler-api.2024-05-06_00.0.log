@@ -1,0 +1,34 @@
+[WARN] 2024-05-06 00:18:11.817 +0800 c.z.h.p.HikariPool:[788] - DolphinScheduler - Thread starvation or clock leap detected (housekeeper delta=4m52s490ms573µs146ns).
+[WARN] 2024-05-06 00:18:17.796 +0800 o.a.z.ClientCnxn:[1292] - Session 0x10000020921002c for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x10000020921002c, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[INFO] 2024-05-06 00:18:21.468 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: SUSPENDED
+[WARN] 2024-05-06 00:18:23.453 +0800 o.a.z.ClientCnxn:[1429] - Unable to reconnect to ZooKeeper service, session 0x10000020921002c has expired
+[WARN] 2024-05-06 00:18:23.453 +0800 o.a.c.ConnectionState:[316] - Session expired event received
+[WARN] 2024-05-06 00:18:23.454 +0800 o.a.z.ClientCnxn:[1292] - Session 0x10000020921002c for server dolphinscheduler-zookeeper/172.18.0.4:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionExpiredException: Unable to reconnect to ZooKeeper service, session 0x10000020921002c has expired
+	at org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1430)
+	at org.apache.zookeeper.ClientCnxnSocket.readConnectResult(ClientCnxnSocket.java:154)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:86)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1282)
+[INFO] 2024-05-06 00:18:23.456 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: LOST
+[INFO] 2024-05-06 00:18:23.473 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: RECONNECTED
+[INFO] 2024-05-06 00:18:23.477 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[INFO] 2024-05-06 00:24:38.369 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3703, taskInstanceName:persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13426477386080/42/998/3703.log
+[INFO] 2024-05-06 00:24:38.612 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3703, taskInstanceName:persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13426477386080/42/998/3703.log
+[INFO] 2024-05-06 00:26:37.250 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13426477386080, processVersion:42.
+[INFO] 2024-05-06 00:26:37.258 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13426477386080, processVersion:43.
+[INFO] 2024-05-06 00:26:37.269 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13426477386080, processVersion:43.
+[INFO] 2024-05-06 00:28:33.974 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3703, taskInstanceName:persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13426477386080/42/998/3703.log
+[INFO] 2024-05-06 00:28:34.076 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3703, taskInstanceName:persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240505/13426477386080/42/998/3703.log
+[INFO] 2024-05-06 00:32:21.534 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13426477386080, processVersion:43.
+[INFO] 2024-05-06 00:32:21.537 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13426477386080, processVersion:44.
+[INFO] 2024-05-06 00:32:21.559 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13426477386080, processVersion:44.
+[INFO] 2024-05-06 00:32:26.252 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13426477386080, commandCount:1.
+[INFO] 2024-05-06 00:32:50.809 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3706, taskInstanceName:persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240506/13426477386080/44/999/3706.log
+[INFO] 2024-05-06 00:32:50.957 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3706, taskInstanceName:persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240506/13426477386080/44/999/3706.log
+[INFO] 2024-05-06 00:59:15.555 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3706, taskInstanceName:persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240506/13426477386080/44/999/3706.log
+[INFO] 2024-05-06 00:59:15.714 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:3706, taskInstanceName:persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240506/13426477386080/44/999/3706.log

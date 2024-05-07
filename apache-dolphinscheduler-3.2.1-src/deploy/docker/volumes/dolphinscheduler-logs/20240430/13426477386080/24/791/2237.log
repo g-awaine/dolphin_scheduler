@@ -1,0 +1,236 @@
+[INFO] 2024-04-30 04:03:01.804 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 04:03:01.806 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-30 04:03:01.807 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 04:03:01.809 +0800 - Begin to initialize task
+[INFO] 2024-04-30 04:03:01.810 +0800 - Set task startTime: 1714420981810
+[INFO] 2024-04-30 04:03:01.810 +0800 - Set task appId: 791_2237
+[INFO] 2024-04-30 04:03:01.810 +0800 - End initialize task {
+  "taskInstanceId" : 2237,
+  "taskName" : "persist in postgresql",
+  "firstSubmitTime" : 1714420981796,
+  "startTime" : 1714420981810,
+  "taskType" : "SQL",
+  "workflowInstanceHost" : "172.18.0.3:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240430/13426477386080/24/791/2237.log",
+  "processId" : 0,
+  "processDefineCode" : 13426477386080,
+  "processDefineVersion" : 24,
+  "processInstanceId" : 791,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 7,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"table_name\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"filtered_data_persistence\"}],\"resourceList\":[],\"type\":\"POSTGRESQL\",\"datasource\":1,\"sql\":\"SELECT * FROM ${table_name}\",\"sqlType\":\"0\",\"preStatements\":[],\"postStatements\":[],\"displayRows\":10}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "persist in postgresql"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "query" : {
+      "prop" : "query",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "SELECT * FROM filtered_data_persistence"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240430"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2237"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13427698681952"
+    },
+    "table_name" : {
+      "prop" : "table_name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "filtered_data_persistence"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240430040301"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "791"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240429"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "es_filtered_data_persistence_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13426477386080"
+    }
+  },
+  "taskAppId" : "791_2237",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "resourceParametersHelper" : {
+    "resourceMap" : {
+      "DATASOURCE" : {
+        "1" : {
+          "resourceType" : "DATASOURCE",
+          "type" : "POSTGRESQL",
+          "connectionParams" : "{\"user\":\"root\",\"password\":\"******\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"persistence\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence\",\"driverClassName\":\"org.postgresql.Driver\",\"validationQuery\":\"select version()\",\"other\":{\"password\":\"****\"}}",
+          "DATASOURCE" : null
+        }
+      }
+    }
+  },
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"query\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"SELECT * FROM filtered_data_persistence\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-30 04:03:01.831 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 04:03:01.848 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-30 04:03:01.850 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 04:03:01.862 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-30 04:03:01.866 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-30 04:03:01.867 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_24/791/2237 check successfully
+[INFO] 2024-04-30 04:03:01.867 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.sql.SqlTaskChannel successfully
+[INFO] 2024-04-30 04:03:01.867 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-04-30 04:03:01.868 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-30 04:03:01.868 +0800 - Initialize sql task parameter {
+  "localParams" : [ {
+    "prop" : "table_name",
+    "direct" : "IN",
+    "type" : "VARCHAR",
+    "value" : "filtered_data_persistence"
+  } ],
+  "varPool" : null,
+  "type" : "POSTGRESQL",
+  "datasource" : 1,
+  "sql" : "SELECT * FROM ${table_name}",
+  "sqlType" : 0,
+  "sendEmail" : null,
+  "displayRows" : 10,
+  "udfs" : null,
+  "showType" : null,
+  "connParams" : null,
+  "preStatements" : [ ],
+  "postStatements" : [ ],
+  "groupId" : 0,
+  "title" : null,
+  "limit" : 0
+}
+[INFO] 2024-04-30 04:03:01.874 +0800 - Task plugin instance: SQL create successfully
+[INFO] 2024-04-30 04:03:01.875 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-30 04:03:01.875 +0800 - Set taskVarPool: [{"prop":"query","direct":"IN","type":"VARCHAR","value":"SELECT * FROM filtered_data_persistence"}] successfully
+[INFO] 2024-04-30 04:03:01.875 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 04:03:01.875 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-30 04:03:01.875 +0800 - ***********************************************************************************************
+[INFO] 2024-04-30 04:03:01.875 +0800 - Full sql parameters: SqlParameters{type='POSTGRESQL', datasource=1, sql='SELECT * FROM ${table_name}', sqlType=0, sendEmail=null, displayRows=10, limit=0, udfs='null', showType='null', connParams='null', groupId='0', title='null', preStatements=[], postStatements=[]}
+[INFO] 2024-04-30 04:03:01.875 +0800 - sql type : POSTGRESQL, datasource : 1, sql : SELECT * FROM ${table_name} , localParams : [Property{prop='table_name', direct=IN, type=VARCHAR, value='filtered_data_persistence'}],udfs : null,showType : null,connParams : null,varPool : [Property{prop='query', direct=IN, type=VARCHAR, value='SELECT * FROM filtered_data_persistence'}] ,query max result limit  0
+[INFO] 2024-04-30 04:03:01.876 +0800 - setSqlParamsMap: Property with paramName: table_name put in sqlParamsMap of content SELECT * FROM ${table_name} successfully.
+[INFO] 2024-04-30 04:03:01.876 +0800 - after replace sql , preparing : SELECT * FROM ?
+[INFO] 2024-04-30 04:03:01.876 +0800 - Sql Params are replaced sql , parameters:filtered_data_persistence(VARCHAR)
+[INFO] 2024-04-30 04:03:01.876 +0800 - can't find udf function resource
+[WARN] 2024-04-30 04:03:01.878 +0800 - Connect strings must start with jdbc:snowflake://
+[INFO] 2024-04-30 04:03:01.913 +0800 - prepare statement replace sql : SELECT * FROM ?, sql parameters : {1=Property{prop='table_name', direct=IN, type=VARCHAR, value='filtered_data_persistence'}}
+[INFO] 2024-04-30 04:03:01.913 +0800 - main statement execute query, for sql: SELECT * FROM ?
+[ERROR] 2024-04-30 04:03:01.917 +0800 - execute sql error: ERROR: syntax error at or near "$1"
+  Position: 15
+[ERROR] 2024-04-30 04:03:01.918 +0800 - sql task error
+org.postgresql.util.PSQLException: ERROR: syntax error at or near "$1"
+  Position: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:181)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:133)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeQuery(SqlTask.java:317)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeFuncAndSql(SqlTask.java:205)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:159)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerTaskExecutor.executeTask(DefaultWorkerTaskExecutor.java:54)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor.run(WorkerTaskExecutor.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[ERROR] 2024-04-30 04:03:01.918 +0800 - Task execute failed, due to meet an exception
+org.apache.dolphinscheduler.plugin.task.api.TaskException: Execute sql task failed
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:166)
+	at org.apache.dolphinscheduler.server.worker.runner.DefaultWorkerTaskExecutor.executeTask(DefaultWorkerTaskExecutor.java:54)
+	at org.apache.dolphinscheduler.server.worker.runner.WorkerTaskExecutor.run(WorkerTaskExecutor.java:175)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "$1"
+  Position: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:181)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:133)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeQuery(SqlTask.java:317)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.executeFuncAndSql(SqlTask.java:205)
+	at org.apache.dolphinscheduler.plugin.task.sql.SqlTask.handle(SqlTask.java:159)
+	... 5 common frames omitted
+[INFO] 2024-04-30 04:03:01.918 +0800 - Get appIds from worker 172.18.1.1:1234, taskLogPath: /opt/dolphinscheduler/logs/20240430/13426477386080/24/791/2237.log
+[INFO] 2024-04-30 04:03:01.919 +0800 - Start finding appId in /opt/dolphinscheduler/logs/20240430/13426477386080/24/791/2237.log, fetch way: log 
+[INFO] 2024-04-30 04:03:01.919 +0800 - The appId is empty
+[INFO] 2024-04-30 04:03:01.919 +0800 - Cancel the task successfully
+[INFO] 2024-04-30 04:03:01.944 +0800 - Get a exception when execute the task, will send the task status: FAILURE to master: 172.18.1.1:1234
+[INFO] 2024-04-30 04:03:01.944 +0800 - FINALIZE_SESSION

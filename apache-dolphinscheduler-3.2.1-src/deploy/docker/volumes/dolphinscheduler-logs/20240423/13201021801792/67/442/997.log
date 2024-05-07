@@ -1,0 +1,188 @@
+[INFO] 2024-04-23 03:25:33.817 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:25:33.818 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-23 03:25:33.818 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:25:33.818 +0800 - Begin to initialize task
+[INFO] 2024-04-23 03:25:33.819 +0800 - Set task startTime: 1713813933819
+[INFO] 2024-04-23 03:25:33.819 +0800 - Set task appId: 442_997
+[INFO] 2024-04-23 03:25:33.821 +0800 - End initialize task {
+  "taskInstanceId" : 997,
+  "taskName" : "move to processing",
+  "firstSubmitTime" : 1713813933790,
+  "startTime" : 1713813933819,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240423/13201021801792/67/442/997.log",
+  "processId" : 0,
+  "processDefineCode" : 13201021801792,
+  "processDefineVersion" : 67,
+  "processInstanceId" : 442,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"folder\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"processing\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 7,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"# move file to the reddit processing folder\\n# but dont move it, if it already exists in the folder, for example when the selected folder to search is reddit/processing, the file may already be inside the processing folder, which will lead to an error\\nif [\\\"${folder}\\\"!=\\\"processing\\\"]; then\\n    mv ${raw_file_dir} ${REDDIT_HOME}/processing\\nelse\\n    echo JSON is already in processing\\nfi\",\"resourceList\":[]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "move to processing"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240423"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "997"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13340390094208"
+    },
+    "raw_file" : {
+      "prop" : "raw_file",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "386-20240422.json"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240423032533"
+    },
+    "folder" : {
+      "prop" : "folder",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "processing"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "442"
+    },
+    "raw_file_dir" : {
+      "prop" : "raw_file_dir",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit/processing/386-20240422.json"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240422"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocess_post"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13201021801792"
+    }
+  },
+  "taskAppId" : "442_997",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"raw_file_dir\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"/local_storage/reddit/processing/386-20240422.json\"},{\"prop\":\"raw_file\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"386-20240422.json\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-23 03:25:33.823 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:25:33.823 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-23 03:25:33.823 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:25:33.826 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-04-23 03:25:33.826 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-23 03:25:33.827 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/997 check successfully
+[INFO] 2024-04-23 03:25:33.827 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-04-23 03:25:33.827 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-04-23 03:25:33.828 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-23 03:25:33.828 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-04-23 03:25:33.829 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "# move file to the reddit processing folder\n# but dont move it, if it already exists in the folder, for example when the selected folder to search is reddit/processing, the file may already be inside the processing folder, which will lead to an error\nif [\"${folder}\"!=\"processing\"]; then\n    mv ${raw_file_dir} ${REDDIT_HOME}/processing\nelse\n    echo JSON is already in processing\nfi",
+  "resourceList" : [ ]
+}
+[INFO] 2024-04-23 03:25:33.829 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-23 03:25:33.829 +0800 - Set taskVarPool: [{"prop":"raw_file_dir","direct":"IN","type":"VARCHAR","value":"/local_storage/reddit/processing/386-20240422.json"},{"prop":"raw_file","direct":"IN","type":"VARCHAR","value":"386-20240422.json"}] successfully
+[INFO] 2024-04-23 03:25:33.830 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:25:33.830 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-23 03:25:33.830 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:25:33.831 +0800 - Final Shell file is: 
+[INFO] 2024-04-23 03:25:33.831 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-23 03:25:33.832 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+# move file to the reddit processing folder
+# but dont move it, if it already exists in the folder, for example when the selected folder to search is reddit/processing, the file may already be inside the processing folder, which will lead to an error
+if ["processing"!="processing"]; then
+    mv /local_storage/reddit/processing/386-20240422.json /local_storage/reddit/processing
+else
+    echo JSON is already in processing
+fi
+[INFO] 2024-04-23 03:25:33.832 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-23 03:25:33.832 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/997/442_997.sh
+[INFO] 2024-04-23 03:25:33.848 +0800 - process start, process id is: 1037
+[INFO] 2024-04-23 03:25:34.849 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/997/442_997.sh: line 7: [processing!=processing]: command not found
+	JSON is already in processing
+[INFO] 2024-04-23 03:25:34.852 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/997, processId:1037 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[INFO] 2024-04-23 03:25:34.852 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:25:34.853 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-23 03:25:34.859 +0800 - ***********************************************************************************************
+[INFO] 2024-04-23 03:25:34.859 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-23 03:25:34.872 +0800 - Send task execute status: SUCCESS to master : 172.18.1.1:1234
+[INFO] 2024-04-23 03:25:34.873 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-23 03:25:34.873 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/997
+[INFO] 2024-04-23 03:25:34.873 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_67/442/997
+[INFO] 2024-04-23 03:25:34.873 +0800 - FINALIZE_SESSION

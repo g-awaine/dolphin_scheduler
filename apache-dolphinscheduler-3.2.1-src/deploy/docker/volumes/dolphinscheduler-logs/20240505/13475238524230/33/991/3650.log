@@ -1,0 +1,193 @@
+[INFO] 2024-05-05 07:33:25.539 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:33:25.540 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-05 07:33:25.541 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:33:25.541 +0800 - Begin to initialize task
+[INFO] 2024-05-05 07:33:25.541 +0800 - Set task startTime: 1714865605541
+[INFO] 2024-05-05 07:33:25.541 +0800 - Set task appId: 991_3650
+[INFO] 2024-05-05 07:33:25.541 +0800 - End initialize task {
+  "taskInstanceId" : 3650,
+  "taskName" : "move to archives",
+  "firstSubmitTime" : 1714865605530,
+  "startTime" : 1714865605541,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240505/13475238524230/33/991/3650.log",
+  "processId" : 0,
+  "processDefineCode" : 13475238524230,
+  "processDefineVersion" : 33,
+  "processInstanceId" : 991,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"folder\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"processing\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 7,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"raw_file_dir\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"}],\"rawScript\":\"# move file to the reddit archive folder\\nmv ${raw_file_dir} ${GNEWS_HOME}/archive\\n\",\"resourceList\":[]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "move to archives"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3650"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13475238524228"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505073325"
+    },
+    "folder" : {
+      "prop" : "folder",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "processing"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "991"
+    },
+    "raw_file_dir" : {
+      "prop" : "raw_file_dir",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news/processing/988-20240505062610.json"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocess_gnews_article"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13475238524230"
+    },
+    "is_exists" : {
+      "prop" : "is_exists",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1"
+    }
+  },
+  "taskAppId" : "991_3650",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"raw_file_dir\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"/local_storage/google_news/processing/988-20240505062610.json\"},{\"prop\":\"is_exists\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"1\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-05 07:33:25.542 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:33:25.542 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-05 07:33:25.542 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:33:25.545 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-05 07:33:25.545 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-05 07:33:25.546 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_33/991/3650 check successfully
+[INFO] 2024-05-05 07:33:25.547 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-05-05 07:33:25.547 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-05 07:33:25.548 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-05 07:33:25.548 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-05-05 07:33:25.548 +0800 - Initialize shell task params {
+  "localParams" : [ {
+    "prop" : "raw_file_dir",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  } ],
+  "varPool" : null,
+  "rawScript" : "# move file to the reddit archive folder\nmv ${raw_file_dir} ${GNEWS_HOME}/archive\n",
+  "resourceList" : [ ]
+}
+[INFO] 2024-05-05 07:33:25.548 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-05 07:33:25.551 +0800 - Set taskVarPool: [{"prop":"raw_file_dir","direct":"IN","type":"VARCHAR","value":"/local_storage/google_news/processing/988-20240505062610.json"},{"prop":"is_exists","direct":"IN","type":"VARCHAR","value":"1"}] successfully
+[INFO] 2024-05-05 07:33:25.551 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:33:25.551 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-05 07:33:25.551 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:33:25.551 +0800 - Final Shell file is: 
+[INFO] 2024-05-05 07:33:25.551 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-05 07:33:25.552 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+# move file to the reddit archive folder
+mv /local_storage/google_news/processing/988-20240505062610.json /local_storage/google_news/archive
+
+[INFO] 2024-05-05 07:33:25.552 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-05 07:33:25.552 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_33/991/3650/991_3650.sh
+[INFO] 2024-05-05 07:33:25.558 +0800 - process start, process id is: 3040
+[INFO] 2024-05-05 07:33:26.560 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-05-05 07:33:26.567 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_33/991/3650, processId:3040 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[INFO] 2024-05-05 07:33:26.568 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:33:26.568 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-05 07:33:26.568 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:33:26.570 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-05 07:33:26.573 +0800 - Send task execute status: SUCCESS to master : 172.18.1.1:1234
+[INFO] 2024-05-05 07:33:26.573 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-05 07:33:26.573 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_33/991/3650
+[INFO] 2024-05-05 07:33:26.574 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13475238524230_33/991/3650
+[INFO] 2024-05-05 07:33:26.574 +0800 - FINALIZE_SESSION

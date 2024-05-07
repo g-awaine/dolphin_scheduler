@@ -1,0 +1,398 @@
+[INFO] 2024-04-06 18:35:24.058 +0800 - ***********************************************************************************************
+[INFO] 2024-04-06 18:35:24.082 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-06 18:35:24.085 +0800 - ***********************************************************************************************
+[INFO] 2024-04-06 18:35:24.085 +0800 - Begin to initialize task
+[INFO] 2024-04-06 18:35:24.089 +0800 - Set task startTime: 1712399724089
+[INFO] 2024-04-06 18:35:24.093 +0800 - Set task appId: 233_504
+[INFO] 2024-04-06 18:35:24.113 +0800 - End initialize task {
+  "taskInstanceId" : 504,
+  "taskName" : "reddit_api",
+  "firstSubmitTime" : 1712399721376,
+  "startTime" : 1712399724089,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.22.0.7:5678",
+  "host" : "172.22.0.6:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240406/13056845592480/2/233/504.log",
+  "processId" : 0,
+  "processDefineCode" : 13056845592480,
+  "processDefineVersion" : 2,
+  "processInstanceId" : 233,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13056817857952,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"import praw\\n\\nclass RedditPostDataExtractor:\\n    def __init__(self):\\n        self.data = {}\\n\\n    def extract_data(self, hot_posts):\\n        if hot_posts:\\n            for post in hot_posts:\\n                # initialise a dictionary to contain the data of the post\\n                post_data = {}\\n\\n                # get the unique name of the post (name refers to the id of the post prefixed with t3_)\\n                # t3 represents that it is a post\\n                name = post.name\\n\\n                # get the relevant post's data and store it inside post_data\\n\\n                # get the poster's name\\n                if post.author is not None:\\n                    post_data['author'] = post.author.name\\n                else:\\n                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'\\n\\n\\n                # get the unix time in which the post was created\\n                unix_time = post.created_utc\\n                post_data['datetime'] = unix_time\\n                \\n                post_data['permalink'] = post.permalink\\n                post_data['score'] = post.score\\n                post_data['subreddit'] = post.subreddit.display_name\\n                post_data['post_title'] = post.title\\n                post_data['body'] = post.selftext\\n\\n                # store the posts data in the dictionary where the name is used as the key\\n                self.data[name] = post_data\\n\\n                # extract the comments from the post\\n                comments = post.comments\\n\\n                # extract the data in the comments and store them inside the dictionary\\n                self.extract_comments_data(comments)\\n        \\n        return self.data\\n\\n    def extract_comments_data(self, comments):\\n        if comments:\\n            for comment in comments:\\n                # initialise a dictionary to contain the data of the comment\\n                comment_data = {}\\n\\n                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)\\n                # t1 represents that it is a post\\n                name = comment.name\\n\\n                # get the relevant post's data and store it inside post_data\\n\\n                # get the commenter name\\n                if comment.author is not None:\\n                    comment_data['author'] = comment.author.name\\n                else:\\n                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'\\n\\n                # get the unix time in which the comment was created\\n                unix_time = comment.created_utc\\n                comment_data['datetime'] = unix_time\\n\\n                comment_data['permalink'] = comment.permalink\\n                comment_data['score'] = comment.score\\n                comment_data['subreddit'] = comment.subreddit.display_name\\n                comment_data['post_title'] = comment.submission.title\\n                comment_data['body'] = comment.body\\n\\n                # store the comment's data in the dictionary where the name is used as the key\\n                self.data[name] = comment_data\\n\\n                # extract the comment's replies from the post\\n                replies = comment.replies\\n\\n                # extract the data in the comments and store them inside the dictionary\\n                self.extract_comments_data(replies)\\n        \\n        return\\n    \\ndef get_hot_posts(reddit_instance, subreddit_name, limit):\\n    # Define the subreddit\\n    subreddit = reddit_instance.subreddit(subreddit_name)\\n\\n    # Get hot posts from the subreddit\\n    hot_posts = subreddit.hot(limit=limit)\\n\\n    # Filter out posts that are not pinned\\n    filtered_posts = [post for post in hot_posts if not post.stickied]\\n    return filtered_posts\\n\\n# initialize Reddit instance\\nreddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',\\n                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',\\n                     user_agent='Prawlingv1')\\n\\n\\n# choose the subreddit to extract data from\\nsubreddit = 'singapore'\\nlimit = 5\\n\\n# get hot posts from the subreddit\\nhot_posts = get_hot_posts(reddit, subreddit, limit)\\n\\n# initialise a reddit data extractor object\\ndata_extractor = RedditPostDataExtractor()\\n\\n# extract data from the hot posts from r/singapore\\ndata = data_extractor.extract_data(hot_posts)\\nprint(data)\\n\",\"resourceList\":[]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "reddit_api"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13056817857952"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "233"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240406"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240405"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "504"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "batch_reddit_post_analysis"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13056825838112"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13056845592480"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240406183521"
+    }
+  },
+  "taskAppId" : "233_504",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-06 18:35:24.129 +0800 - ***********************************************************************************************
+[INFO] 2024-04-06 18:35:24.129 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-06 18:35:24.134 +0800 - ***********************************************************************************************
+[INFO] 2024-04-06 18:35:24.972 +0800 - Send task status RUNNING_EXECUTION master: 172.22.0.6:1234
+[INFO] 2024-04-06 18:35:25.183 +0800 - create linux os user: default
+[INFO] 2024-04-06 18:35:25.184 +0800 - execute cmd: sudo useradd -g root
+ default
+[INFO] 2024-04-06 18:35:25.659 +0800 - create user default success
+[INFO] 2024-04-06 18:35:25.661 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-06 18:35:25.681 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_2/233/504 check successfully
+[INFO] 2024-04-06 18:35:25.686 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[INFO] 2024-04-06 18:35:25.716 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-04-06 18:35:25.750 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-06 18:35:25.761 +0800 - Task plugin instance: PYTHON create successfully
+[INFO] 2024-04-06 18:35:25.773 +0800 - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "import praw\n\nclass RedditPostDataExtractor:\n    def __init__(self):\n        self.data = {}\n\n    def extract_data(self, hot_posts):\n        if hot_posts:\n            for post in hot_posts:\n                # initialise a dictionary to contain the data of the post\n                post_data = {}\n\n                # get the unique name of the post (name refers to the id of the post prefixed with t3_)\n                # t3 represents that it is a post\n                name = post.name\n\n                # get the relevant post's data and store it inside post_data\n\n                # get the poster's name\n                if post.author is not None:\n                    post_data['author'] = post.author.name\n                else:\n                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'\n\n\n                # get the unix time in which the post was created\n                unix_time = post.created_utc\n                post_data['datetime'] = unix_time\n                \n                post_data['permalink'] = post.permalink\n                post_data['score'] = post.score\n                post_data['subreddit'] = post.subreddit.display_name\n                post_data['post_title'] = post.title\n                post_data['body'] = post.selftext\n\n                # store the posts data in the dictionary where the name is used as the key\n                self.data[name] = post_data\n\n                # extract the comments from the post\n                comments = post.comments\n\n                # extract the data in the comments and store them inside the dictionary\n                self.extract_comments_data(comments)\n        \n        return self.data\n\n    def extract_comments_data(self, comments):\n        if comments:\n            for comment in comments:\n                # initialise a dictionary to contain the data of the comment\n                comment_data = {}\n\n                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)\n                # t1 represents that it is a post\n                name = comment.name\n\n                # get the relevant post's data and store it inside post_data\n\n                # get the commenter name\n                if comment.author is not None:\n                    comment_data['author'] = comment.author.name\n                else:\n                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'\n\n                # get the unix time in which the comment was created\n                unix_time = comment.created_utc\n                comment_data['datetime'] = unix_time\n\n                comment_data['permalink'] = comment.permalink\n                comment_data['score'] = comment.score\n                comment_data['subreddit'] = comment.subreddit.display_name\n                comment_data['post_title'] = comment.submission.title\n                comment_data['body'] = comment.body\n\n                # store the comment's data in the dictionary where the name is used as the key\n                self.data[name] = comment_data\n\n                # extract the comment's replies from the post\n                replies = comment.replies\n\n                # extract the data in the comments and store them inside the dictionary\n                self.extract_comments_data(replies)\n        \n        return\n    \ndef get_hot_posts(reddit_instance, subreddit_name, limit):\n    # Define the subreddit\n    subreddit = reddit_instance.subreddit(subreddit_name)\n\n    # Get hot posts from the subreddit\n    hot_posts = subreddit.hot(limit=limit)\n\n    # Filter out posts that are not pinned\n    filtered_posts = [post for post in hot_posts if not post.stickied]\n    return filtered_posts\n\n# initialize Reddit instance\nreddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',\n                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',\n                     user_agent='Prawlingv1')\n\n\n# choose the subreddit to extract data from\nsubreddit = 'singapore'\nlimit = 5\n\n# get hot posts from the subreddit\nhot_posts = get_hot_posts(reddit, subreddit, limit)\n\n# initialise a reddit data extractor object\ndata_extractor = RedditPostDataExtractor()\n\n# extract data from the hot posts from r/singapore\ndata = data_extractor.extract_data(hot_posts)\nprint(data)\n",
+  "resourceList" : [ ]
+}
+[INFO] 2024-04-06 18:35:25.775 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-06 18:35:25.776 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-04-06 18:35:25.786 +0800 - ***********************************************************************************************
+[INFO] 2024-04-06 18:35:25.787 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-06 18:35:25.787 +0800 - ***********************************************************************************************
+[INFO] 2024-04-06 18:35:25.787 +0800 - raw python script : import praw
+
+class RedditPostDataExtractor:
+    def __init__(self):
+        self.data = {}
+
+    def extract_data(self, hot_posts):
+        if hot_posts:
+            for post in hot_posts:
+                # initialise a dictionary to contain the data of the post
+                post_data = {}
+
+                # get the unique name of the post (name refers to the id of the post prefixed with t3_)
+                # t3 represents that it is a post
+                name = post.name
+
+                # get the relevant post's data and store it inside post_data
+
+                # get the poster's name
+                if post.author is not None:
+                    post_data['author'] = post.author.name
+                else:
+                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'
+
+
+                # get the unix time in which the post was created
+                unix_time = post.created_utc
+                post_data['datetime'] = unix_time
+                
+                post_data['permalink'] = post.permalink
+                post_data['score'] = post.score
+                post_data['subreddit'] = post.subreddit.display_name
+                post_data['post_title'] = post.title
+                post_data['body'] = post.selftext
+
+                # store the posts data in the dictionary where the name is used as the key
+                self.data[name] = post_data
+
+                # extract the comments from the post
+                comments = post.comments
+
+                # extract the data in the comments and store them inside the dictionary
+                self.extract_comments_data(comments)
+        
+        return self.data
+
+    def extract_comments_data(self, comments):
+        if comments:
+            for comment in comments:
+                # initialise a dictionary to contain the data of the comment
+                comment_data = {}
+
+                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)
+                # t1 represents that it is a post
+                name = comment.name
+
+                # get the relevant post's data and store it inside post_data
+
+                # get the commenter name
+                if comment.author is not None:
+                    comment_data['author'] = comment.author.name
+                else:
+                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'
+
+                # get the unix time in which the comment was created
+                unix_time = comment.created_utc
+                comment_data['datetime'] = unix_time
+
+                comment_data['permalink'] = comment.permalink
+                comment_data['score'] = comment.score
+                comment_data['subreddit'] = comment.subreddit.display_name
+                comment_data['post_title'] = comment.submission.title
+                comment_data['body'] = comment.body
+
+                # store the comment's data in the dictionary where the name is used as the key
+                self.data[name] = comment_data
+
+                # extract the comment's replies from the post
+                replies = comment.replies
+
+                # extract the data in the comments and store them inside the dictionary
+                self.extract_comments_data(replies)
+        
+        return
+    
+def get_hot_posts(reddit_instance, subreddit_name, limit):
+    # Define the subreddit
+    subreddit = reddit_instance.subreddit(subreddit_name)
+
+    # Get hot posts from the subreddit
+    hot_posts = subreddit.hot(limit=limit)
+
+    # Filter out posts that are not pinned
+    filtered_posts = [post for post in hot_posts if not post.stickied]
+    return filtered_posts
+
+# initialize Reddit instance
+reddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',
+                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',
+                     user_agent='Prawlingv1')
+
+
+# choose the subreddit to extract data from
+subreddit = 'singapore'
+limit = 5
+
+# get hot posts from the subreddit
+hot_posts = get_hot_posts(reddit, subreddit, limit)
+
+# initialise a reddit data extractor object
+data_extractor = RedditPostDataExtractor()
+
+# extract data from the hot posts from r/singapore
+data = data_extractor.extract_data(hot_posts)
+print(data)
+
+[INFO] 2024-04-06 18:35:25.814 +0800 - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_2/233/504
+[INFO] 2024-04-06 18:35:25.815 +0800 - generate python script file:/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_2/233/504/py_233_504.py
+[INFO] 2024-04-06 18:35:25.816 +0800 - #-*- encoding=utf8 -*-
+
+import praw
+
+class RedditPostDataExtractor:
+    def __init__(self):
+        self.data = {}
+
+    def extract_data(self, hot_posts):
+        if hot_posts:
+            for post in hot_posts:
+                # initialise a dictionary to contain the data of the post
+                post_data = {}
+
+                # get the unique name of the post (name refers to the id of the post prefixed with t3_)
+                # t3 represents that it is a post
+                name = post.name
+
+                # get the relevant post's data and store it inside post_data
+
+                # get the poster's name
+                if post.author is not None:
+                    post_data['author'] = post.author.name
+                else:
+                    post_data['author'] = 'deleted' # if the user was deleted, post.author will return None. This line will catch that scenario and instead provide the value 'deleted'
+
+
+                # get the unix time in which the post was created
+                unix_time = post.created_utc
+                post_data['datetime'] = unix_time
+                
+                post_data['permalink'] = post.permalink
+                post_data['score'] = post.score
+                post_data['subreddit'] = post.subreddit.display_name
+                post_data['post_title'] = post.title
+                post_data['body'] = post.selftext
+
+                # store the posts data in the dictionary where the name is used as the key
+                self.data[name] = post_data
+
+                # extract the comments from the post
+                comments = post.comments
+
+                # extract the data in the comments and store them inside the dictionary
+                self.extract_comments_data(comments)
+        
+        return self.data
+
+    def extract_comments_data(self, comments):
+        if comments:
+            for comment in comments:
+                # initialise a dictionary to contain the data of the comment
+                comment_data = {}
+
+                # get the unique name of the comment (name refers to the id of the post prefixed with t1_)
+                # t1 represents that it is a post
+                name = comment.name
+
+                # get the relevant post's data and store it inside post_data
+
+                # get the commenter name
+                if comment.author is not None:
+                    comment_data['author'] = comment.author.name
+                else:
+                    comment_data['author'] = 'deleted' # if the user was deleted, comment.author will return None, this line will catch that scenario and instead provide the value 'deleted'
+
+                # get the unix time in which the comment was created
+                unix_time = comment.created_utc
+                comment_data['datetime'] = unix_time
+
+                comment_data['permalink'] = comment.permalink
+                comment_data['score'] = comment.score
+                comment_data['subreddit'] = comment.subreddit.display_name
+                comment_data['post_title'] = comment.submission.title
+                comment_data['body'] = comment.body
+
+                # store the comment's data in the dictionary where the name is used as the key
+                self.data[name] = comment_data
+
+                # extract the comment's replies from the post
+                replies = comment.replies
+
+                # extract the data in the comments and store them inside the dictionary
+                self.extract_comments_data(replies)
+        
+        return
+    
+def get_hot_posts(reddit_instance, subreddit_name, limit):
+    # Define the subreddit
+    subreddit = reddit_instance.subreddit(subreddit_name)
+
+    # Get hot posts from the subreddit
+    hot_posts = subreddit.hot(limit=limit)
+
+    # Filter out posts that are not pinned
+    filtered_posts = [post for post in hot_posts if not post.stickied]
+    return filtered_posts
+
+# initialize Reddit instance
+reddit = praw.Reddit(client_id='hM2BAD8XKakgkVdR2V2S-Q',
+                     client_secret='dWBfOf7Ed2WxqVavqQIcZ6V72QyBLg',
+                     user_agent='Prawlingv1')
+
+
+# choose the subreddit to extract data from
+subreddit = 'singapore'
+limit = 5
+
+# get hot posts from the subreddit
+hot_posts = get_hot_posts(reddit, subreddit, limit)
+
+# initialise a reddit data extractor object
+data_extractor = RedditPostDataExtractor()
+
+# extract data from the hot posts from r/singapore
+data = data_extractor.extract_data(hot_posts)
+print(data)
+
+[INFO] 2024-04-06 18:35:25.943 +0800 - Final Shell file is: 
+[INFO] 2024-04-06 18:35:25.944 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-06 18:35:25.945 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_2/233/504/py_233_504.py
+[INFO] 2024-04-06 18:35:25.945 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-06 18:35:25.951 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_2/233/504/233_504.sh
+[INFO] 2024-04-06 18:35:25.974 +0800 - process start, process id is: 1603
+[INFO] 2024-04-06 18:35:26.972 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	Traceback (most recent call last):
+	  File "/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_2/233/504/py_233_504.py", line 3, in <module>
+	    import praw
+	ModuleNotFoundError: No module named 'praw'
+[INFO] 2024-04-06 18:35:26.981 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_2/233/504, processId:1603 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-04-06 18:35:26.986 +0800 - ***********************************************************************************************
+[INFO] 2024-04-06 18:35:26.987 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-06 18:35:26.987 +0800 - ***********************************************************************************************
+[INFO] 2024-04-06 18:35:26.995 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-06 18:35:27.036 +0800 - Send task execute status: FAILURE to master : 172.22.0.6:1234
+[INFO] 2024-04-06 18:35:27.036 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-06 18:35:27.037 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_2/233/504
+[INFO] 2024-04-06 18:35:27.079 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13056817857952/13056845592480_2/233/504
+[INFO] 2024-04-06 18:35:27.114 +0800 - FINALIZE_SESSION

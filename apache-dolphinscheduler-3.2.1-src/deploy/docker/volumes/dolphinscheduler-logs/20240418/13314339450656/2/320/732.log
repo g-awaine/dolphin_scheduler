@@ -1,0 +1,285 @@
+[INFO] 2024-04-18 21:59:06.557 +0800 - ***********************************************************************************************
+[INFO] 2024-04-18 21:59:06.558 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-18 21:59:06.558 +0800 - ***********************************************************************************************
+[INFO] 2024-04-18 21:59:06.558 +0800 - Begin to initialize task
+[INFO] 2024-04-18 21:59:06.559 +0800 - Set task startTime: 1713448746558
+[INFO] 2024-04-18 21:59:06.559 +0800 - Set task appId: 320_732
+[INFO] 2024-04-18 21:59:06.559 +0800 - End initialize task {
+  "taskInstanceId" : 732,
+  "taskName" : "consume kafka topic",
+  "firstSubmitTime" : 1713448746530,
+  "startTime" : 1713448746558,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.22.0.10:5678",
+  "host" : "172.22.0.13:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240418/13314339450656/2/320/732.log",
+  "processId" : 0,
+  "processDefineCode" : 13314339450656,
+  "processDefineVersion" : 2,
+  "processInstanceId" : 320,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"#!/bin/bash\\n\\nKAFKA_DIR=\\\"/opt/kafka_2.13-3.7.0/bin\\\"\\n\\n${KAFKA_DIR}/kafka-console-producer.sh --bootstrap-server kafka:9092 --topic test --from-beginning\",\"resourceList\":[]}",
+  "environmentConfig" : "export JAVA_HOME=/opt/java/openjdk",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "consume kafka topic"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "320"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240418"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240417"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "732"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "kafka consume test"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13314298788384"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13314339450656"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240418215906"
+    }
+  },
+  "taskAppId" : "320_732",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-18 21:59:06.560 +0800 - ***********************************************************************************************
+[INFO] 2024-04-18 21:59:06.560 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-18 21:59:06.560 +0800 - ***********************************************************************************************
+[INFO] 2024-04-18 21:59:06.583 +0800 - Send task status RUNNING_EXECUTION master: 172.22.0.13:1234
+[INFO] 2024-04-18 21:59:06.583 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-18 21:59:06.584 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_2/320/732 check successfully
+[INFO] 2024-04-18 21:59:06.585 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-04-18 21:59:06.585 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-04-18 21:59:06.586 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-18 21:59:06.587 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-04-18 21:59:06.587 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "#!/bin/bash\n\nKAFKA_DIR=\"/opt/kafka_2.13-3.7.0/bin\"\n\n${KAFKA_DIR}/kafka-console-producer.sh --bootstrap-server kafka:9092 --topic test --from-beginning",
+  "resourceList" : [ ]
+}
+[INFO] 2024-04-18 21:59:06.587 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-18 21:59:06.587 +0800 - Set taskVarPool: [] successfully
+[INFO] 2024-04-18 21:59:06.588 +0800 - ***********************************************************************************************
+[INFO] 2024-04-18 21:59:06.588 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-18 21:59:06.588 +0800 - ***********************************************************************************************
+[INFO] 2024-04-18 21:59:06.589 +0800 - Final Shell file is: 
+[INFO] 2024-04-18 21:59:06.589 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-18 21:59:06.590 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export JAVA_HOME=/opt/java/openjdk
+#!/bin/bash
+
+KAFKA_DIR="/opt/kafka_2.13-3.7.0/bin"
+
+${KAFKA_DIR}/kafka-console-producer.sh --bootstrap-server kafka:9092 --topic test --from-beginning
+[INFO] 2024-04-18 21:59:06.590 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-18 21:59:06.590 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_2/320/732/320_732.sh
+[INFO] 2024-04-18 21:59:06.597 +0800 - process start, process id is: 7035
+[INFO] 2024-04-18 21:59:07.605 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-04-18 21:59:12.627 +0800 -  -> 
+	from-beginning is not a recognized option
+	Option                                   Description                            
+	------                                   -----------                            
+	--batch-size <Integer: size>             Number of messages to send in a single 
+	                                           batch if they are not being sent     
+	                                           synchronously. please note that this 
+	                                           option will be replaced if max-      
+	                                           partition-memory-bytes is also set   
+	                                           (default: 16384)                     
+	--bootstrap-server <String: server to    REQUIRED unless --broker-list          
+	  connect to>                              (deprecated) is specified. The server
+	                                           (s) to connect to. The broker list   
+	                                           string in the form HOST1:PORT1,HOST2:
+	                                           PORT2.                               
+	--broker-list <String: broker-list>      DEPRECATED, use --bootstrap-server     
+	                                           instead; ignored if --bootstrap-     
+	                                           server is specified.  The broker     
+	                                           list string in the form HOST1:PORT1, 
+	                                           HOST2:PORT2.                         
+	--compression-codec [String:             The compression codec: either 'none',  
+	  compression-codec]                       'gzip', 'snappy', 'lz4', or 'zstd'.  
+	                                           If specified without value, then it  
+	                                           defaults to 'gzip'                   
+	--help                                   Print usage information.               
+	--line-reader <String: reader_class>     The class name of the class to use for 
+	                                           reading lines from standard in. By   
+	                                           default each line is read as a       
+	                                           separate message. (default: kafka.   
+	                                           tools.                               
+	                                           ConsoleProducer$LineMessageReader)   
+	--max-block-ms <Long: max block on       The max time that the producer will    
+	  send>                                    block for during a send request.     
+	                                           (default: 60000)                     
+	--max-memory-bytes <Long: total memory   The total memory used by the producer  
+	  in bytes>                                to buffer records waiting to be sent 
+	                                           to the server. This is the option to 
+	                                           control `buffer.memory` in producer  
+	                                           configs. (default: 33554432)         
+	--max-partition-memory-bytes <Integer:   The buffer size allocated for a        
+	  memory in bytes per partition>           partition. When records are received 
+	                                           which are smaller than this size the 
+	                                           producer will attempt to             
+	                                           optimistically group them together   
+	                                           until this size is reached. This is  
+	                                           the option to control `batch.size`   
+	                                           in producer configs. (default: 16384)
+	--message-send-max-retries <Integer>     Brokers can fail receiving the message 
+	                                           for multiple reasons, and being      
+	                                           unavailable transiently is just one  
+	                                           of them. This property specifies the 
+	                                           number of retries before the         
+	                                           producer give up and drop this       
+	                                           message. This is the option to       
+	                                           control `retries` in producer        
+	                                           configs. (default: 3)                
+	--metadata-expiry-ms <Long: metadata     The period of time in milliseconds     
+	  expiration interval>                     after which we force a refresh of    
+	                                           metadata even if we haven't seen any 
+	                                           leadership changes. This is the      
+	                                           option to control `metadata.max.age. 
+	                                           ms` in producer configs. (default:   
+	                                           300000)                              
+	--producer-property <String:             A mechanism to pass user-defined       
+	  producer_prop>                           properties in the form key=value to  
+	                                           the producer.                        
+	--producer.config <String: config file>  Producer config properties file. Note  
+	                                           that [producer-property] takes       
+	                                           precedence over this config.         
+	--property <String: prop>                A mechanism to pass user-defined       
+	                                           properties in the form key=value to  
+	                                           the message reader. This allows      
+	                                           custom configuration for a user-     
+	                                           defined message reader.              
+	                                         Default properties include:            
+	                                          parse.key=false                       
+	                                          parse.headers=false                   
+	                                          ignore.error=false                    
+	                                          key.separator=\t                      
+	                                          headers.delimiter=\t                  
+	                                          headers.separator=,                   
+	                                          headers.key.separator=:               
+	                                          null.marker=   When set, any fields   
+	                                           (key, value and headers) equal to    
+	                                           this will be replaced by null        
+	                                         Default parsing pattern when:          
+	                                          parse.headers=true and parse.key=true:
+	                                           "h1:v1,h2:v2...\tkey\tvalue"         
+	                                          parse.key=true:                       
+	                                           "key\tvalue"                         
+	                                          parse.headers=true:                   
+	                                           "h1:v1,h2:v2...\tvalue"              
+	--reader-config <String: config file>    Config properties file for the message 
+	                                           reader. Note that [property] takes   
+	                                           precedence over this config.         
+	--request-required-acks <String:         The required `acks` of the producer    
+	  request required acks>                   requests (default: -1)               
+	--request-timeout-ms <Integer: request   The ack timeout of the producer        
+	  timeout ms>                              requests. Value must be non-negative 
+	                                           and non-zero. (default: 1500)        
+	--retry-backoff-ms <Long>                Before each retry, the producer        
+	                                           refreshes the metadata of relevant   
+	                                           topics. Since leader election takes  
+	                                           a bit of time, this property         
+	                                           specifies the amount of time that    
+	                                           the producer waits before refreshing 
+	                                           the metadata. This is the option to  
+	                                           control `retry.backoff.ms` in        
+	                                           producer configs. (default: 100)     
+	--socket-buffer-size <Integer: size>     The size of the tcp RECV size. This is 
+	                                           the option to control `send.buffer.  
+	                                           bytes` in producer configs.          
+	                                           (default: 102400)                    
+	--sync                                   If set message send requests to the    
+	                                           brokers are synchronously, one at a  
+	                                           time as they arrive.                 
+	--timeout <Long: timeout_ms>             If set and the producer is running in  
+	                                           asynchronous mode, this gives the    
+	                                           maximum amount of time a message     
+	                                           will queue awaiting sufficient batch 
+	                                           size. The value is given in ms. This 
+	                                           is the option to control `linger.ms` 
+	                                           in producer configs. (default: 1000) 
+	--topic <String: topic>                  REQUIRED: The topic id to produce      
+	                                           messages to.                         
+	--version                                Display Kafka version.                 
+[INFO] 2024-04-18 21:59:12.630 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_2/320/732, processId:7035 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-04-18 21:59:12.632 +0800 - ***********************************************************************************************
+[INFO] 2024-04-18 21:59:12.632 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-04-18 21:59:12.632 +0800 - ***********************************************************************************************
+[INFO] 2024-04-18 21:59:12.633 +0800 - Upload output files: [] successfully
+[INFO] 2024-04-18 21:59:12.639 +0800 - Send task execute status: FAILURE to master : 172.22.0.13:1234
+[INFO] 2024-04-18 21:59:12.639 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-04-18 21:59:12.639 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_2/320/732
+[INFO] 2024-04-18 21:59:12.640 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13314339450656_2/320/732
+[INFO] 2024-04-18 21:59:12.641 +0800 - FINALIZE_SESSION

@@ -1,0 +1,176 @@
+[INFO] 2024-05-05 07:26:59.097 +0800 - Submit LogicTask: check file existence  to MasterTaskExecutorThreadPool success
+[INFO] 2024-05-05 07:26:59.098 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:26:59.106 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-05 07:26:59.106 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:26:59.107 +0800 - Begin to initialize task
+[INFO] 2024-05-05 07:26:59.107 +0800 - Set task startTime: 1714865219107
+[INFO] 2024-05-05 07:26:59.107 +0800 - Set task appId: 991_3639
+[INFO] 2024-05-05 07:26:59.107 +0800 - End initialize task {
+  "taskInstanceId" : 3639,
+  "taskName" : "check file existence ",
+  "firstSubmitTime" : 1714865219090,
+  "startTime" : 1714865219107,
+  "taskType" : "SWITCH",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.0.12:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240505/13475238524230/33/991/3639.log",
+  "processId" : 0,
+  "processDefineCode" : 13475238524230,
+  "processDefineVersion" : 33,
+  "processInstanceId" : 991,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"folder\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"processing\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"\",\"resourceList\":[],\"switchResult\":{\"dependTaskList\":[{\"condition\":\"${is_exists}==1\",\"nextNode\":13475238524227}],\"nextNode\":13475238524224}}",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "check file existence "
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3639"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13481487039552"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505072659"
+    },
+    "folder" : {
+      "prop" : "folder",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "processing"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "991"
+    },
+    "raw_file_dir" : {
+      "prop" : "raw_file_dir",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news/processing/988-20240505062610.json"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocess_gnews_article"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13475238524230"
+    },
+    "is_exists" : {
+      "prop" : "is_exists",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1"
+    }
+  },
+  "taskAppId" : "991_3639",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"raw_file_dir\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"/local_storage/google_news/processing/988-20240505062610.json\"},{\"prop\":\"is_exists\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"1\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-05 07:26:59.109 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:26:59.109 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-05 07:26:59.109 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:26:59.117 +0800 - Send task status RUNNING_EXECUTION to master 172.18.0.12:5678
+[INFO] 2024-05-05 07:26:59.118 +0800 - Success initialize task parameters: 
+{
+  "localParams" : null,
+  "varPool" : null,
+  "dependRelation" : null,
+  "relation" : null,
+  "nextNode" : [ 13475238524224 ],
+  "resultConditionLocation" : 0,
+  "dependTaskList" : [ {
+    "condition" : "${is_exists}==1",
+    "nextNode" : [ 13475238524227 ]
+  } ]
+}
+[INFO] 2024-05-05 07:26:59.119 +0800 - Initialized task plugin instance: SWITCH successfully
+[INFO] 2024-05-05 07:26:59.119 +0800 - Initialize taskVarPool: [{"prop":"raw_file_dir","direct":"IN","type":"VARCHAR","value":"/local_storage/google_news/processing/988-20240505062610.json"},{"prop":"is_exists","direct":"IN","type":"VARCHAR","value":"1"}] successfully
+[INFO] 2024-05-05 07:26:59.119 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:26:59.119 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-05 07:26:59.119 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:26:59.120 +0800 - Begin to execute 1 condition: ${is_exists}==1 
+[INFO] 2024-05-05 07:26:59.120 +0800 - paramName:is_exists，paramValue:"1"
+[INFO] 2024-05-05 07:26:59.120 +0800 - Format condition sentence::"1"==1 successfully
+[INFO] 2024-05-05 07:26:59.121 +0800 - Execute condition sentence: "1"==1 successfully: true
+[INFO] 2024-05-05 07:26:59.122 +0800 - The switch task depend result:SUCCESS, switch branch:0
+[INFO] 2024-05-05 07:26:59.123 +0800 - Switch task execute finished, condition result is: SUCCESS, task status is: SUCCESS
+[INFO] 2024-05-05 07:26:59.123 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:26:59.124 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-05 07:26:59.124 +0800 - ***********************************************************************************************
+[INFO] 2024-05-05 07:26:59.147 +0800 - Send task status: SUCCESS to master: 172.18.0.12:5678 successfully
+[INFO] 2024-05-05 07:26:59.147 +0800 - Execute task finished, will send the task execute result to master, the current task execute result is SUCCESS
+[INFO] 2024-05-05 07:26:59.147 +0800 - FINALIZE_SESSION

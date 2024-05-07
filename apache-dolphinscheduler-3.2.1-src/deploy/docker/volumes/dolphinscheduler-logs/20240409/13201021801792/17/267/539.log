@@ -1,0 +1,324 @@
+[INFO] 2024-04-09 18:05:55.021 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 18:05:55.027 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-04-09 18:05:55.028 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 18:05:55.029 +0800 - Begin to initialize task
+[INFO] 2024-04-09 18:05:55.030 +0800 - Set task startTime: 1712657155030
+[INFO] 2024-04-09 18:05:55.030 +0800 - Set task appId: 267_539
+[INFO] 2024-04-09 18:05:55.033 +0800 - End initialize task {
+  "taskInstanceId" : 539,
+  "taskName" : "spark_shell",
+  "firstSubmitTime" : 1712657154994,
+  "startTime" : 1712657155030,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.20.0.8:5678",
+  "host" : "172.20.0.9:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240409/13201021801792/17/267/539.log",
+  "processId" : 0,
+  "processDefineCode" : 13201021801792,
+  "processDefineVersion" : 17,
+  "processInstanceId" : 267,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"$SPARK_HOME/bin/spark-submit \\\\\\n    --master spark://spark-master:7077 \\\\\\n    --conf spark.driver.cores=1 \\\\\\n    --conf spark.driver.memory=512M \\\\\\n    --conf spark.executor.instances=2 \\\\\\n    --conf spark.executor.cores=2 \\\\\\n    --conf spark.executor.memory=1G \\\\\\n    --name myapple spark-test.py\\n\",\"resourceList\":[{\"id\":null,\"resourceName\":\"file:/dolphinscheduler/default/resources/spark-test.py\",\"res\":null}]}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport HADOOP_CONF_DIR=/opt/hadoop-3.4.0/etc/hadoop",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "spark_shell"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "267"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240409"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240408"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "539"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "spark"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13210058002752"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13201021801792"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240409180555"
+    }
+  },
+  "taskAppId" : "267_539",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-04-09 18:05:55.035 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 18:05:55.035 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-04-09 18:05:55.035 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 18:05:55.104 +0800 - Send task status RUNNING_EXECUTION master: 172.20.0.9:1234
+[INFO] 2024-04-09 18:05:55.105 +0800 - TenantCode: default check successfully
+[INFO] 2024-04-09 18:05:55.109 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_17/267/539 check successfully
+[INFO] 2024-04-09 18:05:55.109 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-04-09 18:05:55.136 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={file:/dolphinscheduler/default/resources/spark-test.py=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=file:/dolphinscheduler/default/resources/spark-test.py, resourceRelativePath=spark-test.py, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_17/267/539/spark-test.py)})
+[INFO] 2024-04-09 18:05:55.136 +0800 - Download upstream files: [] successfully
+[INFO] 2024-04-09 18:05:55.137 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-04-09 18:05:55.203 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "$SPARK_HOME/bin/spark-submit \\\n    --master spark://spark-master:7077 \\\n    --conf spark.driver.cores=1 \\\n    --conf spark.driver.memory=512M \\\n    --conf spark.executor.instances=2 \\\n    --conf spark.executor.cores=2 \\\n    --conf spark.executor.memory=1G \\\n    --name myapple spark-test.py\n",
+  "resourceList" : [ {
+    "id" : null,
+    "resourceName" : "file:/dolphinscheduler/default/resources/spark-test.py",
+    "res" : null
+  } ]
+}
+[INFO] 2024-04-09 18:05:55.204 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-04-09 18:05:55.204 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-04-09 18:05:55.204 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 18:05:55.204 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-04-09 18:05:55.205 +0800 - ***********************************************************************************************
+[INFO] 2024-04-09 18:05:55.232 +0800 - Final Shell file is: 
+[INFO] 2024-04-09 18:05:55.232 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-09 18:05:55.233 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export HADOOP_CONF_DIR=/opt/hadoop-3.4.0/etc/hadoop
+$SPARK_HOME/bin/spark-submit \
+    --master spark://spark-master:7077 \
+    --conf spark.driver.cores=1 \
+    --conf spark.driver.memory=512M \
+    --conf spark.executor.instances=2 \
+    --conf spark.executor.cores=2 \
+    --conf spark.executor.memory=1G \
+    --name myapple spark-test.py
+
+[INFO] 2024-04-09 18:05:55.234 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-04-09 18:05:55.243 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_17/267/539/267_539.sh
+[INFO] 2024-04-09 18:05:55.281 +0800 - process start, process id is: 995
+[INFO] 2024-04-09 18:05:56.282 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-04-09 18:06:08.319 +0800 -  -> 
+	24/04/09 18:06:07 INFO SparkContext: Running Spark version 3.5.1
+	24/04/09 18:06:07 INFO SparkContext: OS info Linux, 6.5.0-26-generic, amd64
+	24/04/09 18:06:07 INFO SparkContext: Java version 1.8.0_402
+	24/04/09 18:06:08 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2024-04-09 18:06:09.321 +0800 -  -> 
+	24/04/09 18:06:08 INFO ResourceUtils: ==============================================================
+	24/04/09 18:06:08 INFO ResourceUtils: No custom resources configured for spark.driver.
+	24/04/09 18:06:08 INFO ResourceUtils: ==============================================================
+	24/04/09 18:06:08 INFO SparkContext: Submitted application: My App
+	24/04/09 18:06:08 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 2, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+	24/04/09 18:06:08 INFO ResourceProfile: Limiting resource is cpus at 2 tasks per executor
+	24/04/09 18:06:08 INFO ResourceProfileManager: Added ResourceProfile id: 0
+	24/04/09 18:06:09 INFO SecurityManager: Changing view acls to: default
+	24/04/09 18:06:09 INFO SecurityManager: Changing modify acls to: default
+	24/04/09 18:06:09 INFO SecurityManager: Changing view acls groups to: 
+	24/04/09 18:06:09 INFO SecurityManager: Changing modify acls groups to: 
+	24/04/09 18:06:09 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: default; groups with view permissions: EMPTY; users with modify permissions: default; groups with modify permissions: EMPTY
+[INFO] 2024-04-09 18:06:11.323 +0800 -  -> 
+	24/04/09 18:06:10 INFO Utils: Successfully started service 'sparkDriver' on port 35299.
+	24/04/09 18:06:10 INFO SparkEnv: Registering MapOutputTracker
+	24/04/09 18:06:11 INFO SparkEnv: Registering BlockManagerMaster
+	24/04/09 18:06:11 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+	24/04/09 18:06:11 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[INFO] 2024-04-09 18:06:12.325 +0800 -  -> 
+	24/04/09 18:06:11 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+	24/04/09 18:06:11 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-79c28f18-5fb9-4c1a-9466-914cafc75c92
+	24/04/09 18:06:11 INFO MemoryStore: MemoryStore started with capacity 93.3 MiB
+	24/04/09 18:06:11 INFO SparkEnv: Registering OutputCommitCoordinator
+[INFO] 2024-04-09 18:06:13.327 +0800 -  -> 
+	24/04/09 18:06:12 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+	24/04/09 18:06:13 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+	24/04/09 18:06:13 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+	24/04/09 18:06:13 WARN Utils: Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+	24/04/09 18:06:13 INFO Utils: Successfully started service 'SparkUI' on port 4043.
+[INFO] 2024-04-09 18:06:14.334 +0800 -  -> 
+	24/04/09 18:06:14 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+[INFO] 2024-04-09 18:06:15.335 +0800 -  -> 
+	24/04/09 18:06:14 INFO TransportClientFactory: Successfully created connection to spark-master/172.20.0.3:7077 after 192 ms (0 ms spent in bootstraps)
+	24/04/09 18:06:15 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20240409100614-0003
+	24/04/09 18:06:15 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 37871.
+	24/04/09 18:06:15 INFO NettyBlockTransferService: Server created on 324c3e4172de:37871
+	24/04/09 18:06:15 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+	24/04/09 18:06:15 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 324c3e4172de, 37871, None)
+	24/04/09 18:06:15 INFO BlockManagerMasterEndpoint: Registering block manager 324c3e4172de:37871 with 93.3 MiB RAM, BlockManagerId(driver, 324c3e4172de, 37871, None)
+	24/04/09 18:06:15 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 324c3e4172de, 37871, None)
+	24/04/09 18:06:15 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 324c3e4172de, 37871, None)
+[INFO] 2024-04-09 18:06:17.337 +0800 -  -> 
+	24/04/09 18:06:16 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+[INFO] 2024-04-09 18:06:20.341 +0800 -  -> 
+	24/04/09 18:06:19 INFO SparkContext: Starting job: sum at /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_17/267/539/spark-test.py:12
+	24/04/09 18:06:19 INFO DAGScheduler: Got job 0 (sum at /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_17/267/539/spark-test.py:12) with 2 output partitions
+	24/04/09 18:06:19 INFO DAGScheduler: Final stage: ResultStage 0 (sum at /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_17/267/539/spark-test.py:12)
+	24/04/09 18:06:19 INFO DAGScheduler: Parents of final stage: List()
+	24/04/09 18:06:19 INFO DAGScheduler: Missing parents: List()
+	24/04/09 18:06:19 INFO DAGScheduler: Submitting ResultStage 0 (PythonRDD[1] at sum at /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_17/267/539/spark-test.py:12), which has no missing parents
+	24/04/09 18:06:20 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 7.5 KiB, free 93.3 MiB)
+[INFO] 2024-04-09 18:06:21.344 +0800 -  -> 
+	24/04/09 18:06:20 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 4.7 KiB, free 93.3 MiB)
+	24/04/09 18:06:20 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 324c3e4172de:37871 (size: 4.7 KiB, free: 93.3 MiB)
+	24/04/09 18:06:20 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+	24/04/09 18:06:20 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 0 (PythonRDD[1] at sum at /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_17/267/539/spark-test.py:12) (first 15 tasks are for partitions Vector(0, 1))
+	24/04/09 18:06:20 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks resource profile 0
+[INFO] 2024-04-09 18:06:36.361 +0800 -  -> 
+	24/04/09 18:06:35 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:06:51.526 +0800 -  -> 
+	24/04/09 18:06:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:07:06.537 +0800 -  -> 
+	24/04/09 18:07:05 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:07:21.563 +0800 -  -> 
+	24/04/09 18:07:20 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:07:36.586 +0800 -  -> 
+	24/04/09 18:07:35 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:07:51.608 +0800 -  -> 
+	24/04/09 18:07:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:08:06.632 +0800 -  -> 
+	24/04/09 18:08:05 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:08:21.652 +0800 -  -> 
+	24/04/09 18:08:20 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:08:35.668 +0800 -  -> 
+	24/04/09 18:08:35 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:08:50.687 +0800 -  -> 
+	24/04/09 18:08:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:09:05.706 +0800 -  -> 
+	24/04/09 18:09:05 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:09:20.724 +0800 -  -> 
+	24/04/09 18:09:20 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:09:35.741 +0800 -  -> 
+	24/04/09 18:09:35 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:09:50.767 +0800 -  -> 
+	24/04/09 18:09:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:10:05.779 +0800 -  -> 
+	24/04/09 18:10:05 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:10:20.787 +0800 -  -> 
+	24/04/09 18:10:20 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:10:35.803 +0800 -  -> 
+	24/04/09 18:10:35 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:10:50.825 +0800 -  -> 
+	24/04/09 18:10:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:11:05.843 +0800 -  -> 
+	24/04/09 18:11:05 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:11:20.859 +0800 -  -> 
+	24/04/09 18:11:20 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:11:35.874 +0800 -  -> 
+	24/04/09 18:11:35 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:11:50.890 +0800 -  -> 
+	24/04/09 18:11:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:12:05.904 +0800 -  -> 
+	24/04/09 18:12:05 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:12:20.921 +0800 -  -> 
+	24/04/09 18:12:20 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:12:35.935 +0800 -  -> 
+	24/04/09 18:12:35 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:12:50.952 +0800 -  -> 
+	24/04/09 18:12:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:13:05.966 +0800 -  -> 
+	24/04/09 18:13:05 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:13:20.980 +0800 -  -> 
+	24/04/09 18:13:20 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:13:35.995 +0800 -  -> 
+	24/04/09 18:13:35 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:13:51.011 +0800 -  -> 
+	24/04/09 18:13:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:14:06.025 +0800 -  -> 
+	24/04/09 18:14:05 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:14:21.040 +0800 -  -> 
+	24/04/09 18:14:20 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:14:36.062 +0800 -  -> 
+	24/04/09 18:14:35 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:14:51.081 +0800 -  -> 
+	24/04/09 18:14:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:15:06.101 +0800 -  -> 
+	24/04/09 18:15:05 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:15:21.116 +0800 -  -> 
+	24/04/09 18:15:20 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:15:36.127 +0800 -  -> 
+	24/04/09 18:15:35 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:15:51.145 +0800 -  -> 
+	24/04/09 18:15:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:16:06.164 +0800 -  -> 
+	24/04/09 18:16:05 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:16:21.174 +0800 -  -> 
+	24/04/09 18:16:20 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:16:36.186 +0800 -  -> 
+	24/04/09 18:16:35 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:16:51.197 +0800 -  -> 
+	24/04/09 18:16:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:17:06.211 +0800 -  -> 
+	24/04/09 18:17:05 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:17:21.227 +0800 -  -> 
+	24/04/09 18:17:20 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:17:36.244 +0800 -  -> 
+	24/04/09 18:17:35 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:17:51.258 +0800 -  -> 
+	24/04/09 18:17:50 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:18:05.891 +0800 -  -> 
+	24/04/09 18:18:05 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:18:20.921 +0800 -  -> 
+	24/04/09 18:18:20 INFO StandaloneAppClient$ClientEndpoint: Master removed worker worker-20240409092728-172.20.0.5-41945: 172.20.0.5:41945 got disassociated
+	24/04/09 18:18:20 INFO StandaloneSchedulerBackend: Worker worker-20240409092728-172.20.0.5-41945 removed: 172.20.0.5:41945 got disassociated
+	24/04/09 18:18:20 INFO TaskSchedulerImpl: Handle removed worker worker-20240409092728-172.20.0.5-41945: 172.20.0.5:41945 got disassociated
+	24/04/09 18:18:20 INFO DAGScheduler: Shuffle files lost for worker worker-20240409092728-172.20.0.5-41945 on host 172.20.0.5
+	24/04/09 18:18:20 WARN TaskSchedulerImpl: Initial job has not accepted any resources; check your cluster UI to ensure that workers are registered and have sufficient resources
+[INFO] 2024-04-09 18:18:21.927 +0800 -  -> 
+	24/04/09 18:18:21 WARN StandaloneAppClient$ClientEndpoint: Connection to 172.20.0.3:7077 failed; waiting for master to reconnect...
+	24/04/09 18:18:21 WARN StandaloneSchedulerBackend: Disconnected from Spark cluster! Waiting for reconnection...

@@ -1,0 +1,182 @@
+[INFO] 2024-05-04 01:43:36.362 +0800 - Submit LogicTask: switch to MasterTaskExecutorThreadPool success
+[INFO] 2024-05-04 01:43:36.362 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 01:43:36.365 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-04 01:43:36.367 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 01:43:36.367 +0800 - Begin to initialize task
+[INFO] 2024-05-04 01:43:36.367 +0800 - Set task startTime: 1714758216367
+[INFO] 2024-05-04 01:43:36.367 +0800 - Set task appId: 884_2743
+[INFO] 2024-05-04 01:43:36.367 +0800 - End initialize task {
+  "taskInstanceId" : 2743,
+  "taskName" : "switch",
+  "firstSubmitTime" : 1714758216352,
+  "startTime" : 1714758216367,
+  "taskType" : "SWITCH",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.0.11:5678",
+  "logPath" : "/opt/dolphinscheduler/logs/20240504/13481656603328/7/884/2743.log",
+  "processId" : 0,
+  "processDefineCode" : 13481656603328,
+  "processDefineVersion" : 7,
+  "processInstanceId" : 884,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 7,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"\",\"resourceList\":[],\"switchResult\":{\"dependTaskList\":[{\"condition\":\"'${raw_file_dir}' == 'local_storage'\",\"nextNode\":13481650245952}],\"nextNode\":13481652501568}}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/gnews"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "switch"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2743"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13481646211264"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240504014336"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "884"
+    },
+    "raw_file_dir" : {
+      "prop" : "raw_file_dir",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/gnews/in/830-20240503110322.json"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240503"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sd"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13481656603328"
+    }
+  },
+  "taskAppId" : "884_2743",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"raw_file_dir\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"/local_storage/gnews/in/830-20240503110322.json\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-04 01:43:36.368 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 01:43:36.368 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-04 01:43:36.368 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 01:43:36.370 +0800 - Send task status RUNNING_EXECUTION to master 172.18.0.11:5678
+[INFO] 2024-05-04 01:43:36.371 +0800 - Success initialize task parameters: 
+{
+  "localParams" : null,
+  "varPool" : null,
+  "dependRelation" : null,
+  "relation" : null,
+  "nextNode" : [ 13481652501568 ],
+  "resultConditionLocation" : 0,
+  "dependTaskList" : [ {
+    "condition" : "'${raw_file_dir}' == 'local_storage'",
+    "nextNode" : [ 13481650245952 ]
+  } ]
+}
+[INFO] 2024-05-04 01:43:36.371 +0800 - Initialized task plugin instance: SWITCH successfully
+[INFO] 2024-05-04 01:43:36.371 +0800 - Initialize taskVarPool: [{"prop":"raw_file_dir","direct":"IN","type":"VARCHAR","value":"/local_storage/gnews/in/830-20240503110322.json"}] successfully
+[INFO] 2024-05-04 01:43:36.371 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 01:43:36.371 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-04 01:43:36.371 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 01:43:36.371 +0800 - Begin to execute 1 condition: '${raw_file_dir}' == 'local_storage' 
+[INFO] 2024-05-04 01:43:36.371 +0800 - paramName:raw_file_dir，paramValue:"/local_storage/gnews/in/830-20240503110322.json"
+[ERROR] 2024-05-04 01:43:36.371 +0800 - Task execute failed, due to meet an exception
+java.lang.IllegalArgumentException: condition is not valid, please check it. condition: '${raw_file_dir}' == 'local_storage'
+	at org.apache.dolphinscheduler.server.master.utils.SwitchTaskUtils.generateContentWithTaskParams(SwitchTaskUtils.java:99)
+	at org.apache.dolphinscheduler.server.master.runner.task.switchtask.SwitchLogicTask.calculateConditionResult(SwitchLogicTask.java:109)
+	at org.apache.dolphinscheduler.server.master.runner.task.switchtask.SwitchLogicTask.handle(SwitchLogicTask.java:72)
+	at org.apache.dolphinscheduler.server.master.runner.execute.SyncMasterTaskExecutor.executeTask(SyncMasterTaskExecutor.java:44)
+	at org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor.run(MasterTaskExecutor.java:110)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[INFO] 2024-05-04 01:43:36.371 +0800 - ***********************************************************************************************
+[INFO] 2024-05-04 01:43:36.371 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-04 01:43:36.371 +0800 - ***********************************************************************************************
+[ERROR] 2024-05-04 01:43:36.371 +0800 - Get a exception when execute the task, will try to cancel the task
+java.lang.IllegalArgumentException: condition is not valid, please check it. condition: '${raw_file_dir}' == 'local_storage'
+	at org.apache.dolphinscheduler.server.master.utils.SwitchTaskUtils.generateContentWithTaskParams(SwitchTaskUtils.java:99)
+	at org.apache.dolphinscheduler.server.master.runner.task.switchtask.SwitchLogicTask.calculateConditionResult(SwitchLogicTask.java:109)
+	at org.apache.dolphinscheduler.server.master.runner.task.switchtask.SwitchLogicTask.handle(SwitchLogicTask.java:72)
+	at org.apache.dolphinscheduler.server.master.runner.execute.SyncMasterTaskExecutor.executeTask(SyncMasterTaskExecutor.java:44)
+	at org.apache.dolphinscheduler.server.master.runner.execute.MasterTaskExecutor.run(MasterTaskExecutor.java:110)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+[WARN] 2024-05-04 01:43:36.372 +0800 - The Sync task does not support kill operation
+[INFO] 2024-05-04 01:43:36.376 +0800 - Send task status: FAILURE to master: 172.18.0.11:5678 successfully
+[INFO] 2024-05-04 01:43:36.377 +0800 - Get a exception when execute the task, sent the task execute result to master, the current task execute result is TaskExecutionStatus{code=6, desc='failure'}
+[INFO] 2024-05-04 01:43:36.377 +0800 - Get a exception when execute the task, removed the TaskExecutionContext
+[INFO] 2024-05-04 01:43:36.377 +0800 - FINALIZE_SESSION

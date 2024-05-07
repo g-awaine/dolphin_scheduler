@@ -1,0 +1,1077 @@
+[WI-0][TI-0] - [WARN] 2024-05-02 22:15:47.839 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - [WARN] 2024-05-02 22:16:02.855 +0800 o.s.c.k.c.p.AbstractKubernetesProfileEnvironmentPostProcessor:[258] - Not running inside kubernetes. Skipping 'kubernetes' profile activation.
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:02.861 +0800 o.a.d.s.w.WorkerServer:[634] - No active profile set, falling back to 1 default profile: "default"
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:21.722 +0800 o.s.c.c.s.GenericScope:[283] - BeanFactory id=7e7bf7c6-2cb3-34d2-a0d5-a56161c67d0e
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:24.882 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:24.902 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:24.945 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$392/189820624] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:24.962 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:25.201 +0800 o.a.d.c.u.NetUtils:[312] - Get all NetworkInterfaces: [name:eth0 (eth0), name:lo (lo)]
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:25.374 +0800 o.a.d.s.w.c.WorkerConfig:[98] - 
+****************************Worker Configuration**************************************
+  listen-port -> 1234
+  exec-threads -> 100
+  max-heartbeat-interval -> PT10S
+  host-weight -> 100
+  tenantConfig -> TenantConfig(autoCreateTenantEnabled=true, distributedTenantEnabled=false, defaultTenantEnabled=false)
+  server-load-protection -> WorkerServerLoadProtection(enabled=true, maxCpuUsagePercentageThresholds=0.7, maxJVMMemoryUsagePercentageThresholds=0.7, maxSystemMemoryUsagePercentageThresholds=0.7, maxDiskUsagePercentageThresholds=0.7)
+  registry-disconnect-strategy -> ConnectStrategyProperties(strategy=WAITING, maxWaitingTime=PT1M40S)
+  task-execute-threads-full-policy: REJECT
+  address -> 172.18.1.1:1234
+  registry-path: /nodes/worker/172.18.1.1:1234
+****************************Worker Configuration**************************************
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:25.375 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'workerConfig' of type [org.apache.dolphinscheduler.server.worker.config.WorkerConfig$$EnhancerBySpringCGLIB$$153d90bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:25.921 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:26.222 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'kubernetes.manifests-io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties' of type [io.kubernetes.client.spring.extended.manifests.config.KubernetesManifestsProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:26.274 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration' of type [io.kubernetes.client.spring.extended.controller.config.KubernetesInformerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:26.434 +0800 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:[376] - Bean 'defaultApiClient' of type [io.kubernetes.client.openapi.ApiClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:27.406 +0800 o.e.j.u.log:[170] - Logging initialized @70184ms to org.eclipse.jetty.util.log.Slf4jLog
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:29.553 +0800 o.s.b.w.e.j.JettyServletWebServerFactory:[166] - Server initialized with port: 1235
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:29.723 +0800 o.e.j.s.Server:[375] - jetty-9.4.48.v20220622; built: 2022-06-21T20:42:25.880Z; git: 6b67c5719d1f4371b33655ff2d047d24e171e49a; jvm 1.8.0_402-b06
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:30.114 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring embedded WebApplicationContext
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:30.143 +0800 o.s.b.w.s.c.ServletWebServerApplicationContext:[292] - Root WebApplicationContext: initialization completed in 26929 ms
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:39.147 +0800 o.e.j.s.session:[334] - DefaultSessionIdManager workerName=node0
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:39.148 +0800 o.e.j.s.session:[339] - No SessionScavenger set, using defaults
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:39.153 +0800 o.e.j.s.session:[132] - node0 Scavenging every 660000ms
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:39.307 +0800 o.e.j.s.h.ContextHandler:[921] - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@5403431a{application,/,[file:///tmp/jetty-docbase.1235.1633675213463256394/],AVAILABLE}
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:39.321 +0800 o.e.j.s.Server:[415] - Started @82089ms
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.123 +0800 o.a.c.f.i.CuratorFrameworkImpl:[338] - Starting
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.173 +0800 o.a.z.ZooKeeper:[98] - Client environment:zookeeper.version=3.8.0-5a02a05eddb59aee6ac762f7ea82e92a68eb9c0f, built on 2022-02-25 08:49 UTC
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.182 +0800 o.a.z.ZooKeeper:[98] - Client environment:host.name=ec5a7828c340
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.183 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.version=1.8.0_402
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.184 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.vendor=Temurin
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.184 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.home=/opt/java/openjdk
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.189 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.class.path=/opt/dolphinscheduler/conf:/opt/dolphinscheduler/libs/kerb-client-1.0.1.jar:/opt/dolphinscheduler/libs/spring-cloud-starter-kubernetes-client-config-2.1.3.jar:/opt/dolphinscheduler/libs/oauth2-oidc-sdk-9.35.jar:/opt/dolphinscheduler/libs/jsqlparser-4.4.jar:/opt/dolphinscheduler/libs/reactive-streams-1.0.4.jar:/opt/dolphinscheduler/libs/kubernetes-model-extensions-5.10.2.jar:/opt/dolphinscheduler/libs/zookeeper-3.8.0.jar:/opt/dolphinscheduler/libs/kubernetes-model-apps-5.10.2.jar:/opt/dolphinscheduler/libs/grpc-api-1.41.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-pigeon-3.2.1.jar:/opt/dolphinscheduler/libs/client-java-api-13.0.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-obs-3.2.1.jar:/opt/dolphinscheduler/libs/spring-web-5.3.22.jar:/opt/dolphinscheduler/libs/aws-java-sdk-emr-1.12.300.jar:/opt/dolphinscheduler/libs/spring-context-5.3.22.jar:/opt/dolphinscheduler/libs/gapic-google-cloud-storage-v2-2.18.0-alpha.jar:/opt/dolphinscheduler/libs/spring-cloud-kubernetes-client-config-2.1.3.jar:/opt/dolphinscheduler/libs/jetty-io-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/annotations-13.0.jar:/opt/dolphinscheduler/libs/jpam-1.1.jar:/opt/dolphinscheduler/libs/joda-time-2.10.13.jar:/opt/dolphinscheduler/libs/spring-cloud-kubernetes-client-autoconfig-2.1.3.jar:/opt/dolphinscheduler/libs/kerb-identity-1.0.1.jar:/opt/dolphinscheduler/libs/vertica-jdbc-12.0.4-0.jar:/opt/dolphinscheduler/libs/grpc-googleapis-1.52.1.jar:/opt/dolphinscheduler/libs/aliyun-java-sdk-kms-2.11.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-dvc-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-hana-3.2.1.jar:/opt/dolphinscheduler/libs/kubernetes-httpclient-okhttp-6.0.0.jar:/opt/dolphinscheduler/libs/jline-2.12.jar:/opt/dolphinscheduler/libs/sshd-core-2.8.0.jar:/opt/dolphinscheduler/libs/jna-platform-5.10.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-sqlserver-3.2.1.jar:/opt/dolphinscheduler/libs/commons-beanutils-1.9.4.jar:/opt/dolphinscheduler/libs/grpc-services-1.41.0.jar:/opt/dolphinscheduler/libs/jmespath-java-1.12.300.jar:/opt/dolphinscheduler/libs/curator-client-5.3.0.jar:/opt/dolphinscheduler/libs/proto-google-common-protos-2.0.1.jar:/opt/dolphinscheduler/libs/mybatis-3.5.10.jar:/opt/dolphinscheduler/libs/jackson-annotations-2.13.4.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-all-3.2.1.jar:/opt/dolphinscheduler/libs/jakarta.xml.bind-api-2.3.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-jupyter-3.2.1.jar:/opt/dolphinscheduler/libs/mybatis-plus-extension-3.5.2.jar:/opt/dolphinscheduler/libs/j2objc-annotations-1.3.jar:/opt/dolphinscheduler/libs/Java-WebSocket-1.5.1.jar:/opt/dolphinscheduler/libs/azure-storage-common-12.20.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-sagemaker-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-databend-3.2.1.jar:/opt/dolphinscheduler/libs/google-auth-library-oauth2-http-1.15.0.jar:/opt/dolphinscheduler/libs/jetty-security-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-python-3.2.1.jar:/opt/dolphinscheduler/libs/snappy-java-1.1.10.1.jar:/opt/dolphinscheduler/libs/kubernetes-model-batch-5.10.2.jar:/opt/dolphinscheduler/libs/netty-transport-native-epoll-4.1.53.Final-linux-x86_64.jar:/opt/dolphinscheduler/libs/jackson-core-asl-1.9.13.jar:/opt/dolphinscheduler/libs/gson-fire-1.8.5.jar:/opt/dolphinscheduler/libs/clickhouse-jdbc-0.4.6.jar:/opt/dolphinscheduler/libs/grpc-netty-shaded-1.41.0.jar:/opt/dolphinscheduler/libs/caffeine-2.9.3.jar:/opt/dolphinscheduler/libs/aliyun-java-sdk-core-4.5.10.jar:/opt/dolphinscheduler/libs/jackson-module-jaxb-annotations-2.13.3.jar:/opt/dolphinscheduler/libs/jetty-http-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/jersey-servlet-1.19.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-dinky-3.2.1.jar:/opt/dolphinscheduler/libs/simpleclient_tracer_common-0.15.0.jar:/opt/dolphinscheduler/libs/netty-handler-4.1.53.Final.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-datafactory-3.2.1.jar:/opt/dolphinscheduler/libs/json-path-2.7.0.jar:/opt/dolphinscheduler/libs/mybatis-plus-annotation-3.5.2.jar:/opt/dolphinscheduler/libs/azure-resourcemanager-datafactory-1.0.0-beta.19.jar:/opt/dolphinscheduler/libs/commons-codec-1.11.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-master-3.2.1.jar:/opt/dolphinscheduler/libs/spring-aop-5.3.22.jar:/opt/dolphinscheduler/libs/kubernetes-model-core-5.10.2.jar:/opt/dolphinscheduler/libs/kubernetes-model-networking-5.10.2.jar:/opt/dolphinscheduler/libs/kotlin-stdlib-jdk7-1.6.21.jar:/opt/dolphinscheduler/libs/kerby-xdr-1.0.1.jar:/opt/dolphinscheduler/libs/aliyun-java-sdk-ram-3.1.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-k8s-3.2.1.jar:/opt/dolphinscheduler/libs/guava-31.1-jre.jar:/opt/dolphinscheduler/libs/netty-codec-dns-4.1.53.Final.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-kubeflow-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-azure-sql-3.2.1.jar:/opt/dolphinscheduler/libs/HikariCP-4.0.3.jar:/opt/dolphinscheduler/libs/hive-metastore-2.3.9.jar:/opt/dolphinscheduler/libs/msal4j-1.13.3.jar:/opt/dolphinscheduler/libs/jackson-core-2.13.4.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-hive-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-mr-3.2.1.jar:/opt/dolphinscheduler/libs/kubernetes-model-node-5.10.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-common-3.2.1.jar:/opt/dolphinscheduler/libs/jose4j-0.7.8.jar:/opt/dolphinscheduler/libs/jul-to-slf4j-1.7.36.jar:/opt/dolphinscheduler/libs/azure-identity-1.7.1.jar:/opt/dolphinscheduler/libs/spring-boot-autoconfigure-2.7.3.jar:/opt/dolphinscheduler/libs/commons-math3-3.1.1.jar:/opt/dolphinscheduler/libs/jackson-jaxrs-json-provider-2.13.3.jar:/opt/dolphinscheduler/libs/perfmark-api-0.23.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-doris-3.2.1.jar:/opt/dolphinscheduler/libs/httpclient-4.5.13.jar:/opt/dolphinscheduler/libs/hive-service-2.3.9.jar:/opt/dolphinscheduler/libs/kerby-util-1.0.1.jar:/opt/dolphinscheduler/libs/commons-collections-3.2.2.jar:/opt/dolphinscheduler/libs/hadoop-yarn-client-3.2.4.jar:/opt/dolphinscheduler/libs/commons-text-1.8.jar:/opt/dolphinscheduler/libs/dolphinscheduler-worker-3.2.1.jar:/opt/dolphinscheduler/libs/hadoop-yarn-common-3.2.4.jar:/opt/dolphinscheduler/libs/zeppelin-client-0.10.1.jar:/opt/dolphinscheduler/libs/azure-core-management-1.10.1.jar:/opt/dolphinscheduler/libs/hadoop-mapreduce-client-jobclient-3.2.4.jar:/opt/dolphinscheduler/libs/jta-1.1.jar:/opt/dolphinscheduler/libs/annotations-4.1.1.4.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-alert-3.2.1.jar:/opt/dolphinscheduler/libs/curator-framework-5.3.0.jar:/opt/dolphinscheduler/libs/hive-jdbc-2.3.9.jar:/opt/dolphinscheduler/libs/kyuubi-hive-jdbc-shaded-1.7.0.jar:/opt/dolphinscheduler/libs/client-java-proto-13.0.2.jar:/opt/dolphinscheduler/libs/checker-qual-3.19.0.jar:/opt/dolphinscheduler/libs/jetty-servlet-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/google-cloud-core-grpc-2.10.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-shell-3.2.1.jar:/opt/dolphinscheduler/libs/spring-security-rsa-1.0.10.RELEASE.jar:/opt/dolphinscheduler/libs/avro-1.7.7.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-postgresql-3.2.1.jar:/opt/dolphinscheduler/libs/netty-nio-client-2.17.282.jar:/opt/dolphinscheduler/libs/spring-webmvc-5.3.22.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-mysql-3.2.1.jar:/opt/dolphinscheduler/libs/opentracing-util-0.33.0.jar:/opt/dolphinscheduler/libs/auto-value-1.10.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-all-3.2.1.jar:/opt/dolphinscheduler/libs/jetcd-core-0.5.11.jar:/opt/dolphinscheduler/libs/grpc-context-1.41.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-datasync-3.2.1.jar:/opt/dolphinscheduler/libs/jackson-dataformat-cbor-2.13.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-gcs-3.2.1.jar:/opt/dolphinscheduler/libs/client-java-extended-13.0.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-redshift-3.2.1.jar:/opt/dolphinscheduler/libs/opencsv-2.3.jar:/opt/dolphinscheduler/libs/jcip-annotations-1.0-1.jar:/opt/dolphinscheduler/libs/accessors-smart-2.4.8.jar:/opt/dolphinscheduler/libs/hadoop-client-3.2.4.jar:/opt/dolphinscheduler/libs/commons-collections4-4.3.jar:/opt/dolphinscheduler/libs/metrics-core-4.2.11.jar:/opt/dolphinscheduler/libs/netty-resolver-4.1.53.Final.jar:/opt/dolphinscheduler/libs/parquet-hadoop-bundle-1.8.1.jar:/opt/dolphinscheduler/libs/bucket4j-core-6.2.0.jar:/opt/dolphinscheduler/libs/spring-cloud-starter-3.1.3.jar:/opt/dolphinscheduler/libs/mssql-jdbc-11.2.1.jre8.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final.jar:/opt/dolphinscheduler/libs/kubernetes-model-coordination-5.10.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-linkis-3.2.1.jar:/opt/dolphinscheduler/libs/commons-net-3.6.jar:/opt/dolphinscheduler/libs/netty-transport-native-kqueue-4.1.53.Final-osx-x86_64.jar:/opt/dolphinscheduler/libs/dolphinscheduler-meter-3.2.1.jar:/opt/dolphinscheduler/libs/kubernetes-client-api-6.0.0.jar:/opt/dolphinscheduler/libs/kubernetes-model-certificates-5.10.2.jar:/opt/dolphinscheduler/libs/opencensus-api-0.31.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-mlflow-3.2.1.jar:/opt/dolphinscheduler/libs/kotlin-stdlib-jdk8-1.6.21.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-jdbc-3.2.1.jar:/opt/dolphinscheduler/libs/audience-annotations-0.12.0.jar:/opt/dolphinscheduler/libs/simpleclient_httpserver-0.15.0.jar:/opt/dolphinscheduler/libs/jetty-xml-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/kerby-asn1-1.0.1.jar:/opt/dolphinscheduler/libs/lang-tag-1.6.jar:/opt/dolphinscheduler/libs/api-common-2.6.0.jar:/opt/dolphinscheduler/libs/HdrHistogram-2.1.12.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-abs-3.2.1.jar:/opt/dolphinscheduler/libs/failsafe-2.4.4.jar:/opt/dolphinscheduler/libs/hbase-noop-htrace-4.1.1.jar:/opt/dolphinscheduler/libs/jamon-runtime-2.3.1.jar:/opt/dolphinscheduler/libs/jetty-util-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/threetenbp-1.6.5.jar:/opt/dolphinscheduler/libs/jakarta.activation-api-1.2.2.jar:/opt/dolphinscheduler/libs/kubernetes-model-common-5.10.2.jar:/opt/dolphinscheduler/libs/okhttp-4.9.3.jar:/opt/dolphinscheduler/libs/profiles-2.17.282.jar:/opt/dolphinscheduler/libs/hadoop-auth-3.2.4.jar:/opt/dolphinscheduler/libs/grpc-netty-1.41.0.jar:/opt/dolphinscheduler/libs/httpcore-nio-4.4.15.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-seatunnel-3.2.1.jar:/opt/dolphinscheduler/libs/aws-java-sdk-sagemaker-1.12.300.jar:/opt/dolphinscheduler/libs/oshi-core-6.1.1.jar:/opt/dolphinscheduler/libs/bonecp-0.8.0.RELEASE.jar:/opt/dolphinscheduler/libs/jackson-module-parameter-names-2.13.3.jar:/opt/dolphinscheduler/libs/bcutil-jdk15on-1.69.jar:/opt/dolphinscheduler/libs/aws-json-protocol-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-base-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-all-3.2.1.jar:/opt/dolphinscheduler/libs/derby-10.14.2.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-snowflake-3.2.1.jar:/opt/dolphinscheduler/libs/netty-codec-http2-4.1.53.Final.jar:/opt/dolphinscheduler/libs/jetty-continuation-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/jackson-mapper-asl-1.9.13.jar:/opt/dolphinscheduler/libs/datanucleus-core-4.1.17.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-osx-aarch_64.jar:/opt/dolphinscheduler/libs/failureaccess-1.0.1.jar:/opt/dolphinscheduler/libs/error_prone_annotations-2.5.1.jar:/opt/dolphinscheduler/libs/kerb-admin-1.0.1.jar:/opt/dolphinscheduler/libs/token-provider-1.0.1.jar:/opt/dolphinscheduler/libs/reactor-netty-core-1.0.22.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-all-3.2.1.jar:/opt/dolphinscheduler/libs/jakarta.servlet-api-4.0.4.jar:/opt/dolphinscheduler/libs/http-client-spi-2.17.282.jar:/opt/dolphinscheduler/libs/regions-2.17.282.jar:/opt/dolphinscheduler/libs/logback-core-1.2.11.jar:/opt/dolphinscheduler/libs/json-1.8.jar:/opt/dolphinscheduler/libs/gax-grpc-2.23.0.jar:/opt/dolphinscheduler/libs/google-http-client-1.42.3.jar:/opt/dolphinscheduler/libs/hive-serde-2.3.9.jar:/opt/dolphinscheduler/libs/jettison-1.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-http-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-zookeeper-3.2.1.jar:/opt/dolphinscheduler/libs/spring-security-crypto-5.7.3.jar:/opt/dolphinscheduler/libs/auth-2.17.282.jar:/opt/dolphinscheduler/libs/proto-google-cloud-storage-v2-2.18.0-alpha.jar:/opt/dolphinscheduler/libs/jetty-server-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/javax.annotation-api-1.3.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-starrocks-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-dataquality-3.2.1.jar:/opt/dolphinscheduler/libs/jcl-over-slf4j-1.7.36.jar:/opt/dolphinscheduler/libs/commons-lang3-3.12.0.jar:/opt/dolphinscheduler/libs/tomcat-embed-el-9.0.65.jar:/opt/dolphinscheduler/libs/opentracing-noop-0.33.0.jar:/opt/dolphinscheduler/libs/client-java-13.0.2.jar:/opt/dolphinscheduler/libs/spring-beans-5.3.22.jar:/opt/dolphinscheduler/libs/snakeyaml-1.33.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-ssh-3.2.1.jar:/opt/dolphinscheduler/libs/commons-pool-1.6.jar:/opt/dolphinscheduler/libs/javax.servlet-api-3.1.0.jar:/opt/dolphinscheduler/libs/hadoop-common-3.2.4.jar:/opt/dolphinscheduler/libs/kubernetes-model-apiextensions-5.10.2.jar:/opt/dolphinscheduler/libs/spring-boot-2.7.3.jar:/opt/dolphinscheduler/libs/bcprov-ext-jdk15on-1.69.jar:/opt/dolphinscheduler/libs/spring-boot-starter-2.7.3.jar:/opt/dolphinscheduler/libs/paranamer-2.3.jar:/opt/dolphinscheduler/libs/httpmime-4.5.13.jar:/opt/dolphinscheduler/libs/reactor-core-3.4.22.jar:/opt/dolphinscheduler/libs/azure-core-1.36.0.jar:/opt/dolphinscheduler/libs/bcpkix-jdk15on-1.69.jar:/opt/dolphinscheduler/libs/kubernetes-model-scheduling-5.10.2.jar:/opt/dolphinscheduler/libs/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/opt/dolphinscheduler/libs/websocket-client-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/unirest-java-3.7.04-standalone.jar:/opt/dolphinscheduler/libs/hadoop-mapreduce-client-core-3.2.4.jar:/opt/dolphinscheduler/libs/google-auth-library-credentials-1.15.0.jar:/opt/dolphinscheduler/libs/azure-storage-internal-avro-12.6.0.jar:/opt/dolphinscheduler/libs/jackson-datatype-jdk8-2.13.3.jar:/opt/dolphinscheduler/libs/spring-expression-5.3.22.jar:/opt/dolphinscheduler/libs/aspectjweaver-1.9.7.jar:/opt/dolphinscheduler/libs/websocket-common-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/client-java-api-fluent-13.0.2.jar:/opt/dolphinscheduler/libs/mybatis-plus-3.5.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-athena-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-oss-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-openmldb-3.2.1.jar:/opt/dolphinscheduler/libs/curator-recipes-5.3.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-api-3.2.1.jar:/opt/dolphinscheduler/libs/netty-all-4.1.53.Final.jar:/opt/dolphinscheduler/libs/netty-resolver-dns-4.1.53.Final.jar:/opt/dolphinscheduler/libs/kubernetes-model-autoscaling-5.10.2.jar:/opt/dolphinscheduler/libs/kerb-util-1.0.1.jar:/opt/dolphinscheduler/libs/grpc-alts-1.41.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-presto-3.2.1.jar:/opt/dolphinscheduler/libs/kerb-simplekdc-1.0.1.jar:/opt/dolphinscheduler/libs/protobuf-java-util-3.17.2.jar:/opt/dolphinscheduler/libs/azure-core-http-netty-1.13.0.jar:/opt/dolphinscheduler/libs/transaction-api-1.1.jar:/opt/dolphinscheduler/libs/datanucleus-api-jdo-4.2.4.jar:/opt/dolphinscheduler/libs/zeppelin-common-0.10.1.jar:/opt/dolphinscheduler/libs/zt-zip-1.15.jar:/opt/dolphinscheduler/libs/animal-sniffer-annotations-1.19.jar:/opt/dolphinscheduler/libs/google-http-client-jackson2-1.42.3.jar:/opt/dolphinscheduler/libs/netty-buffer-4.1.53.Final.jar:/opt/dolphinscheduler/libs/jsr305-3.0.0.jar:/opt/dolphinscheduler/libs/netty-transport-classes-epoll-4.1.79.Final.jar:/opt/dolphinscheduler/libs/spring-boot-actuator-autoconfigure-2.7.3.jar:/opt/dolphinscheduler/libs/simpleclient-0.15.0.jar:/opt/dolphinscheduler/libs/aliyun-sdk-oss-3.15.1.jar:/opt/dolphinscheduler/libs/json-utils-2.17.282.jar:/opt/dolphinscheduler/libs/tephra-api-0.6.0.jar:/opt/dolphinscheduler/libs/spring-jdbc-5.3.22.jar:/opt/dolphinscheduler/libs/grpc-xds-1.41.0.jar:/opt/dolphinscheduler/libs/logback-classic-1.2.11.jar:/opt/dolphinscheduler/libs/google-cloud-storage-2.18.0.jar:/opt/dolphinscheduler/libs/micrometer-registry-prometheus-1.9.3.jar:/opt/dolphinscheduler/libs/grpc-core-1.41.0.jar:/opt/dolphinscheduler/libs/aws-java-sdk-kms-1.12.300.jar:/opt/dolphinscheduler/libs/kubernetes-model-rbac-5.10.2.jar:/opt/dolphinscheduler/libs/ini4j-0.5.4.jar:/opt/dolphinscheduler/libs/spring-boot-starter-web-2.7.3.jar:/opt/dolphinscheduler/libs/spring-cloud-commons-3.1.3.jar:/opt/dolphinscheduler/libs/netty-codec-http-4.1.53.Final.jar:/opt/dolphinscheduler/libs/jetty-client-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/jetcd-common-0.5.11.jar:/opt/dolphinscheduler/libs/metrics-spi-2.17.282.jar:/opt/dolphinscheduler/libs/utils-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-emr-3.2.1.jar:/opt/dolphinscheduler/libs/protocol-core-2.17.282.jar:/opt/dolphinscheduler/libs/micrometer-core-1.9.3.jar:/opt/dolphinscheduler/libs/netty-transport-native-unix-common-4.1.53.Final.jar:/opt/dolphinscheduler/libs/zjsonpatch-0.4.11.jar:/opt/dolphinscheduler/libs/annotations-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-sql-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-common-3.2.1.jar:/opt/dolphinscheduler/libs/apache-client-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-oceanbase-3.2.1.jar:/opt/dolphinscheduler/libs/jdo-api-3.0.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-datax-3.2.1.jar:/opt/dolphinscheduler/libs/postgresql-42.4.1.jar:/opt/dolphinscheduler/libs/jetty-util-ajax-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/gax-2.23.0.jar:/opt/dolphinscheduler/libs/grpc-stub-1.41.0.jar:/opt/dolphinscheduler/libs/libfb303-0.9.3.jar:/opt/dolphinscheduler/libs/spring-core-5.3.22.jar:/opt/dolphinscheduler/libs/jaxb-api-2.3.1.jar:/opt/dolphinscheduler/libs/hive-service-rpc-2.3.9.jar:/opt/dolphinscheduler/libs/kubernetes-model-flowcontrol-5.10.2.jar:/opt/dolphinscheduler/libs/commons-logging-1.1.1.jar:/opt/dolphinscheduler/libs/mybatis-spring-2.0.7.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-oracle-3.2.1.jar:/opt/dolphinscheduler/libs/opencensus-proto-0.2.0.jar:/opt/dolphinscheduler/libs/grpc-protobuf-1.41.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-clickhouse-3.2.1.jar:/opt/dolphinscheduler/libs/spring-cloud-starter-bootstrap-3.1.3.jar:/opt/dolphinscheduler/libs/kubernetes-model-admissionregistration-5.10.2.jar:/opt/dolphinscheduler/libs/grpc-google-cloud-storage-v2-2.18.0-alpha.jar:/opt/dolphinscheduler/libs/esdk-obs-java-bundle-3.23.3.jar:/opt/dolphinscheduler/libs/dnsjava-2.1.7.jar:/opt/dolphinscheduler/libs/asm-9.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-spark-3.2.1.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-linux-aarch_64.jar:/opt/dolphinscheduler/libs/re2j-1.6.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-vertica-3.2.1.jar:/opt/dolphinscheduler/libs/json-smart-2.4.8.jar:/opt/dolphinscheduler/libs/reactor-netty-http-1.0.22.jar:/opt/dolphinscheduler/libs/google-api-services-storage-v1-rev20220705-2.0.0.jar:/opt/dolphinscheduler/libs/kubernetes-client-6.0.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-kyuubi-3.2.1.jar:/opt/dolphinscheduler/libs/auto-value-annotations-1.10.1.jar:/opt/dolphinscheduler/libs/commons-cli-1.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-data-quality-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-chunjun-3.2.1.jar:/opt/dolphinscheduler/libs/kerb-server-1.0.1.jar:/opt/dolphinscheduler/libs/content-type-2.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-remoteshell-3.2.1.jar:/opt/dolphinscheduler/libs/opencensus-contrib-http-util-0.31.1.jar:/opt/dolphinscheduler/libs/druid-1.2.20.jar:/opt/dolphinscheduler/libs/javolution-5.5.1.jar:/opt/dolphinscheduler/libs/protobuf-java-3.17.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-db2-3.2.1.jar:/opt/dolphinscheduler/libs/aws-java-sdk-core-1.12.300.jar:/opt/dolphinscheduler/libs/spring-boot-starter-logging-2.7.3.jar:/opt/dolphinscheduler/libs/kerby-pkix-1.0.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-procedure-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-etcd-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-sqoop-3.2.1.jar:/opt/dolphinscheduler/libs/zookeeper-jute-3.8.0.jar:/opt/dolphinscheduler/libs/netty-resolver-dns-native-macos-4.1.53.Final-osx-x86_64.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-sagemaker-3.2.1.jar:/opt/dolphinscheduler/libs/spring-boot-configuration-processor-2.6.1.jar:/opt/dolphinscheduler/libs/hive-common-2.3.9.jar:/opt/dolphinscheduler/libs/kerb-common-1.0.1.jar:/opt/dolphinscheduler/libs/stax-api-1.0.1.jar:/opt/dolphinscheduler/libs/kubernetes-model-storageclass-5.10.2.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-s3-3.2.1.jar:/opt/dolphinscheduler/libs/spring-boot-starter-jetty-2.7.3.jar:/opt/dolphinscheduler/libs/okio-2.8.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-dms-3.2.1.jar:/opt/dolphinscheduler/libs/simpleclient_common-0.15.0.jar:/opt/dolphinscheduler/libs/sdk-core-2.17.282.jar:/opt/dolphinscheduler/libs/javax.activation-api-1.2.0.jar:/opt/dolphinscheduler/libs/netty-handler-proxy-4.1.53.Final.jar:/opt/dolphinscheduler/libs/kerby-config-1.0.1.jar:/opt/dolphinscheduler/libs/netty-tcnative-classes-2.0.53.Final.jar:/opt/dolphinscheduler/libs/jackson-jaxrs-base-2.13.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-trino-3.2.1.jar:/opt/dolphinscheduler/libs/presto-jdbc-0.238.1.jar:/opt/dolphinscheduler/libs/websocket-api-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-flink-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-api-3.2.1.jar:/opt/dolphinscheduler/libs/kubernetes-model-metrics-5.10.2.jar:/opt/dolphinscheduler/libs/datasync-2.17.282.jar:/opt/dolphinscheduler/libs/hadoop-yarn-api-3.2.4.jar:/opt/dolphinscheduler/libs/google-http-client-apache-v2-1.42.3.jar:/opt/dolphinscheduler/libs/hadoop-annotations-3.2.4.jar:/opt/dolphinscheduler/libs/google-oauth-client-1.34.1.jar:/opt/dolphinscheduler/libs/sshd-common-2.8.0.jar:/opt/dolphinscheduler/libs/LatencyUtils-2.0.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-spark-3.2.1.jar:/opt/dolphinscheduler/libs/slf4j-api-1.7.36.jar:/opt/dolphinscheduler/libs/snowflake-jdbc-3.13.29.jar:/opt/dolphinscheduler/libs/jackson-datatype-jsr310-2.13.3.jar:/opt/dolphinscheduler/libs/trino-jdbc-402.jar:/opt/dolphinscheduler/libs/logging-interceptor-4.9.3.jar:/opt/dolphinscheduler/libs/simpleclient_tracer_otel_agent-0.15.0.jar:/opt/dolphinscheduler/libs/janino-3.0.16.jar:/opt/dolphinscheduler/libs/jackson-dataformat-yaml-2.13.3.jar:/opt/dolphinscheduler/libs/ion-java-1.0.2.jar:/opt/dolphinscheduler/libs/commons-dbcp-1.4.jar:/opt/dolphinscheduler/libs/jsp-api-2.1.jar:/opt/dolphinscheduler/libs/google-http-client-gson-1.42.3.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-hivecli-3.2.1.jar:/opt/dolphinscheduler/libs/spring-boot-actuator-2.7.3.jar:/opt/dolphinscheduler/libs/google-cloud-core-http-2.10.0.jar:/opt/dolphinscheduler/libs/DmJdbcDriver18-8.1.2.79.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-java-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-dameng-3.2.1.jar:/opt/dolphinscheduler/libs/sshd-sftp-2.8.0.jar:/opt/dolphinscheduler/libs/kerb-crypto-1.0.1.jar:/opt/dolphinscheduler/libs/conscrypt-openjdk-uber-2.5.2.jar:/opt/dolphinscheduler/libs/httpcore-4.4.15.jar:/opt/dolphinscheduler/libs/lz4-java-1.4.0.jar:/opt/dolphinscheduler/libs/guava-retrying-2.0.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-flink-stream-3.2.1.jar:/opt/dolphinscheduler/libs/spring-tx-5.3.22.jar:/opt/dolphinscheduler/libs/grpc-auth-1.41.0.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-osx-x86_64.jar:/opt/dolphinscheduler/libs/databend-jdbc-0.0.7.jar:/opt/dolphinscheduler/libs/bcprov-jdk15on-1.69.jar:/opt/dolphinscheduler/libs/commons-lang-2.6.jar:/opt/dolphinscheduler/libs/kubernetes-model-policy-5.10.2.jar:/opt/dolphinscheduler/libs/commons-io-2.11.0.jar:/opt/dolphinscheduler/libs/grpc-grpclb-1.41.0.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-linux-x86_64.jar:/opt/dolphinscheduler/libs/opentracing-api-0.33.0.jar:/opt/dolphinscheduler/libs/sshd-scp-2.8.0.jar:/opt/dolphinscheduler/libs/reload4j-1.2.18.3.jar:/opt/dolphinscheduler/libs/netty-tcnative-2.0.48.Final.jar:/opt/dolphinscheduler/libs/jdom2-2.0.6.1.jar:/opt/dolphinscheduler/libs/spring-boot-starter-json-2.7.3.jar:/opt/dolphinscheduler/libs/netty-transport-native-epoll-4.1.53.Final.jar:/opt/dolphinscheduler/libs/google-cloud-core-2.10.0.jar:/opt/dolphinscheduler/libs/javax.jdo-3.2.0-m3.jar:/opt/dolphinscheduler/libs/gax-httpjson-0.108.0.jar:/opt/dolphinscheduler/libs/mybatis-plus-core-3.5.2.jar:/opt/dolphinscheduler/libs/auto-service-annotations-1.0.1.jar:/opt/dolphinscheduler/libs/nimbus-jose-jwt-9.22.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-zeppelin-3.2.1.jar:/opt/dolphinscheduler/libs/commons-compress-1.21.jar:/opt/dolphinscheduler/libs/hadoop-hdfs-client-3.2.4.jar:/opt/dolphinscheduler/libs/msal4j-persistence-extension-1.1.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-pytorch-3.2.1.jar:/opt/dolphinscheduler/libs/netty-tcnative-boringssl-static-2.0.53.Final-windows-x86_64.jar:/opt/dolphinscheduler/libs/jetty-servlets-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/woodstox-core-6.4.0.jar:/opt/dolphinscheduler/libs/spring-cloud-kubernetes-commons-2.1.3.jar:/opt/dolphinscheduler/libs/grpc-protobuf-lite-1.41.0.jar:/opt/dolphinscheduler/libs/jetty-webapp-9.4.48.v20220622.jar:/opt/dolphinscheduler/libs/eventstream-1.0.1.jar:/opt/dolphinscheduler/libs/commons-compiler-3.1.7.jar:/opt/dolphinscheduler/libs/netty-transport-4.1.53.Final.jar:/opt/dolphinscheduler/libs/spring-cloud-context-3.1.3.jar:/opt/dolphinscheduler/libs/aws-java-sdk-dms-1.12.300.jar:/opt/dolphinscheduler/libs/hive-storage-api-2.4.0.jar:/opt/dolphinscheduler/libs/client-java-spring-integration-13.0.2.jar:/opt/dolphinscheduler/libs/spring-boot-starter-actuator-2.7.3.jar:/opt/dolphinscheduler/libs/third-party-jackson-core-2.17.282.jar:/opt/dolphinscheduler/libs/dolphinscheduler-storage-hdfs-3.2.1.jar:/opt/dolphinscheduler/libs/netty-codec-4.1.53.Final.jar:/opt/dolphinscheduler/libs/google-http-client-appengine-1.42.3.jar:/opt/dolphinscheduler/libs/commons-configuration2-2.1.1.jar:/opt/dolphinscheduler/libs/datanucleus-rdbms-4.1.19.jar:/opt/dolphinscheduler/libs/swagger-annotations-1.6.2.jar:/opt/dolphinscheduler/libs/simpleclient_tracer_otel-0.15.0.jar:/opt/dolphinscheduler/libs/kotlin-stdlib-common-1.6.21.jar:/opt/dolphinscheduler/libs/aws-core-2.17.282.jar:/opt/dolphinscheduler/libs/kerb-core-1.0.1.jar:/opt/dolphinscheduler/libs/httpasyncclient-4.1.5.jar:/opt/dolphinscheduler/libs/dolphinscheduler-extract-worker-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-spi-3.2.1.jar:/opt/dolphinscheduler/libs/okhttp-2.7.5.jar:/opt/dolphinscheduler/libs/google-api-client-2.2.0.jar:/opt/dolphinscheduler/libs/kotlin-stdlib-1.6.21.jar:/opt/dolphinscheduler/libs/jakarta.websocket-api-1.1.2.jar:/opt/dolphinscheduler/libs/libthrift-0.9.3.jar:/opt/dolphinscheduler/libs/spring-boot-starter-aop-2.7.3.jar:/opt/dolphinscheduler/libs/netty-common-4.1.53.Final.jar:/opt/dolphinscheduler/libs/log4j-1.2-api-2.17.2.jar:/opt/dolphinscheduler/libs/jackson-databind-2.13.4.jar:/opt/dolphinscheduler/libs/jackson-dataformat-xml-2.13.3.jar:/opt/dolphinscheduler/libs/kubernetes-model-events-5.10.2.jar:/opt/dolphinscheduler/libs/gson-2.9.1.jar:/opt/dolphinscheduler/libs/proto-google-iam-v1-1.9.0.jar:/opt/dolphinscheduler/libs/netty-codec-socks-4.1.53.Final.jar:/opt/dolphinscheduler/libs/zjsonpatch-0.3.0.jar:/opt/dolphinscheduler/libs/hadoop-mapreduce-client-common-3.2.4.jar:/opt/dolphinscheduler/libs/dolphinscheduler-registry-api-3.2.1.jar:/opt/dolphinscheduler/libs/azure-storage-blob-12.21.0.jar:/opt/dolphinscheduler/libs/dolphinscheduler-task-zeppelin-3.2.1.jar:/opt/dolphinscheduler/libs/dolphinscheduler-datasource-api-3.2.1.jar:/opt/dolphinscheduler/libs/aws-java-sdk-s3-1.12.300.jar:/opt/dolphinscheduler/libs/stax2-api-4.2.1.jar:/opt/dolphinscheduler/libs/jakarta.annotation-api-1.3.5.jar:/opt/dolphinscheduler/libs/kubernetes-model-discovery-5.10.2.jar:/opt/dolphinscheduler/libs/jna-5.10.0.jar:/opt/dolphinscheduler/libs/spring-jcl-5.3.22.jar
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.189 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.190 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.io.tmpdir=/tmp
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.190 +0800 o.a.z.ZooKeeper:[98] - Client environment:java.compiler=<NA>
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.190 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.name=Linux
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.191 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.arch=amd64
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.191 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.version=6.5.0-28-generic
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.191 +0800 o.a.z.ZooKeeper:[98] - Client environment:user.name=root
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.191 +0800 o.a.z.ZooKeeper:[98] - Client environment:user.home=/root
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.193 +0800 o.a.z.ZooKeeper:[98] - Client environment:user.dir=/opt/dolphinscheduler
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.225 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.memory.free=3204MB
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.226 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.memory.max=3840MB
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.251 +0800 o.a.z.ZooKeeper:[98] - Client environment:os.memory.total=3840MB
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.332 +0800 o.a.z.ZooKeeper:[637] - Initiating client connection, connectString=dolphinscheduler-zookeeper:2181 sessionTimeout=30000 watcher=org.apache.curator.ConnectionState@1de08775
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.373 +0800 o.a.z.c.X509Util:[77] - Setting -D jdk.tls.rejectClientInitiatedRenegotiation=true to disable client-initiated TLS renegotiation
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.389 +0800 o.a.z.ClientCnxnSocket:[239] - jute.maxbuffer value is 1048575 Bytes
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.613 +0800 o.a.z.ClientCnxn:[1732] - zookeeper.request.timeout value is 0. feature enabled=false
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.932 +0800 o.a.c.f.i.CuratorFrameworkImpl:[386] - Default schema
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.979 +0800 o.a.z.ClientCnxn:[1171] - Opening socket connection to server dolphinscheduler-zookeeper/172.18.0.6:2181.
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:42.988 +0800 o.a.z.ClientCnxn:[1173] - SASL config status: Will not attempt to authenticate using SASL (unknown error)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:43.003 +0800 o.a.z.ClientCnxn:[1005] - Socket connection established, initiating session, client: /172.18.1.1:45330, server: dolphinscheduler-zookeeper/172.18.0.6:2181
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:43.150 +0800 o.a.z.ClientCnxn:[1444] - Session establishment complete on server dolphinscheduler-zookeeper/172.18.0.6:2181, session id = 0x100000322790001, negotiated timeout = 30000
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:43.162 +0800 o.a.c.f.s.ConnectionStateManager:[252] - State change: CONNECTED
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:44.076 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:44.078 +0800 o.a.c.f.i.EnsembleTracker:[201] - New config event received: {}
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:45.117 +0800 o.a.d.s.w.r.WorkerRpcServer:[41] - WorkerRpcServer starting...
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:46.982 +0800 o.a.d.e.b.NettyRemotingServer:[112] - WorkerRpcServer bind success at port: 1234
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:46.986 +0800 o.a.d.s.w.r.WorkerRpcServer:[43] - WorkerRpcServer started...
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.443 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JAVA - JavaTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.458 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JAVA - JavaTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.459 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: JUPYTER - JupyterTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.468 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: JUPYTER - JupyterTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.469 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SPARK - SparkTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.476 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SPARK - SparkTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.477 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.487 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK_STREAM - FlinkStreamTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.487 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTHON - PythonTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.489 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTHON - PythonTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.490 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATASYNC - DatasyncTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.492 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATASYNC - DatasyncTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.493 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.505 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_FACTORY - DatafactoryTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.505 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.507 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: CHUNJUN - ChunJunTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.508 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.526 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: REMOTESHELL - RemoteShellTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.527 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PIGEON - PigeonTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.530 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PIGEON - PigeonTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.531 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SHELL - ShellTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.542 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SHELL - ShellTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.542 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.553 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PROCEDURE - ProcedureTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.554 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MR - MapReduceTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.573 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MR - MapReduceTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.573 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQOOP - SqoopTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.585 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQOOP - SqoopTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.586 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: PYTORCH - PytorchTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.616 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: PYTORCH - PytorchTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.616 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: K8S - K8sTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.629 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: K8S - K8sTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.635 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.651 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SEATUNNEL - SeatunnelTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.652 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.669 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SAGEMAKER - SagemakerTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.670 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HTTP - HttpTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.700 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HTTP - HttpTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.740 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: EMR - EmrTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.776 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: EMR - EmrTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.777 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DMS - DmsTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.846 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DMS - DmsTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.847 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.876 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATA_QUALITY - DataQualityTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.877 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.909 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: KUBEFLOW - KubeflowTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.927 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: SQL - SqlTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.986 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: SQL - SqlTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:47.987 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DVC - DvcTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.004 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DVC - DvcTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.006 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DATAX - DataxTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.047 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DATAX - DataxTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.061 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.107 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: ZEPPELIN - ZeppelinTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.108 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: DINKY - DinkyTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.123 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: DINKY - DinkyTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.125 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: MLFLOW - MlflowTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.137 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: MLFLOW - MlflowTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.137 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.157 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: OPENMLDB - OpenmldbTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.157 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: LINKIS - LinkisTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.188 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: LINKIS - LinkisTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.200 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: FLINK - FlinkTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.207 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: FLINK - FlinkTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.208 +0800 o.a.d.p.t.a.TaskPluginManager:[63] - Registering task plugin: HIVECLI - HiveCliTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.254 +0800 o.a.d.p.t.a.TaskPluginManager:[68] - Registered task plugin: HIVECLI - HiveCliTaskChannelFactory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:48.805 +0800 o.a.d.c.u.JSONUtils:[72] - init timezone: sun.util.calendar.ZoneInfo[id="Asia/Shanghai",offset=28800000,dstSavings=0,useDaylight=false,transitions=31,lastRule=null]
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:50.036 +0800 o.a.d.s.w.r.WorkerRegistryClient:[104] - Worker node: 172.18.1.1:1234 registry to ZK /nodes/worker/172.18.1.1:1234 successfully
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:51.207 +0800 o.a.d.c.m.BaseHeartBeatTask:[48] - Starting WorkerHeartBeatTask...
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:51.212 +0800 o.a.d.c.m.BaseHeartBeatTask:[50] - Started WorkerHeartBeatTask, heartBeatInterval: 10000...
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:51.212 +0800 o.a.d.s.w.r.WorkerRegistryClient:[114] - Worker node: 172.18.1.1:1234 registry finished
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:51.213 +0800 o.a.d.s.w.m.MessageRetryRunner:[69] - Message retry runner staring
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:51.278 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0524534686971234 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:51.530 +0800 o.a.d.s.w.m.MessageRetryRunner:[72] - Injected message sender: TaskInstanceExecutionFinishEventSender
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:51.531 +0800 o.a.d.s.w.m.MessageRetryRunner:[72] - Injected message sender: TaskInstanceExecutionInfoUpdateEventSender
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:51.532 +0800 o.a.d.s.w.m.MessageRetryRunner:[72] - Injected message sender: TaskInstanceExecutionRunningEventSender
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:51.542 +0800 o.a.d.s.w.m.MessageRetryRunner:[75] - Message retry runner started
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:52.639 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.2746132458829402 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:53.666 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.3802795031055899 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:54.681 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.3614535182331793 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:55.767 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.959349593495935 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:57.076 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.6421399885255306 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:58.096 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.934782608695652 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:16:59.271 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 2.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:00.565 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.7372262773722627 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:01.702 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.5729166666666665 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:02.932 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.7044025157232705 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:03.936 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.9295916783108213 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:04.915 +0800 o.s.b.a.e.w.EndpointLinksResolver:[58] - Exposing 3 endpoint(s) beneath base path '/actuator'
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:04.973 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.7751479289940828 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:05.426 +0800 o.e.j.s.h.C.application:[2368] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:05.437 +0800 o.s.w.s.DispatcherServlet:[525] - Initializing Servlet 'dispatcherServlet'
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:05.462 +0800 o.s.w.s.DispatcherServlet:[547] - Completed initialization in 25 ms
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:05.535 +0800 o.e.j.s.AbstractConnector:[333] - Started ServerConnector@1f45db49{HTTP/1.1, (http/1.1)}{0.0.0.0:1235}
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:05.542 +0800 o.s.b.w.e.j.JettyWebServer:[172] - Jetty started on port(s) 1235 (http/1.1) with context path '/'
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:05.695 +0800 o.a.d.s.w.WorkerServer:[61] - Started WorkerServer in 98.663 seconds (JVM running for 108.473)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:05.979 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.4036697247706422 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:06.990 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9662921348314607 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:08.056 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9581589958158996 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:09.060 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9583333333333334 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:11.257 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.962962962962963 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:12.292 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8905109489051095 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:13.300 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8959276018099547 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:14.307 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9614147909967845 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:18.353 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8301158301158301 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:21.468 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9317269076305221 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:22.493 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.116182572614108 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:23.500 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0485687638998493 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:24.542 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8461906867079282 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:25.564 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9106145251396648 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:26.595 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9884393063583815 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:27.614 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9478672985781991 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:28.620 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8911385678225057 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:29.643 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9113790652648089 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:30.692 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9266666666666666 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:31.822 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7647058823529412 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:32.901 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9033457249070631 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:33.904 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9883720930232558 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:34.928 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9681985650572038 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:35.932 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9050632911392406 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:37.022 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.941747572815534 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:38.147 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9101123595505618 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:39.154 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9777777777777777 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:40.157 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.993421052631579 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:41.162 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9848484848484849 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:42.165 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9590163934426229 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:43.385 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8375796178343949 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:44.405 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9890710382513661 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:45.413 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8294573643410853 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:48.553 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7396694214876034 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:53.653 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9185185185185184 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-2322] - [INFO] 2024-05-02 22:17:54.248 +0800 o.a.d.s.w.r.o.UpdateWorkflowHostOperationFunction:[49] - Received UpdateWorkflowHostRequest: UpdateWorkflowHostRequest(taskInstanceId=2322, workflowHost=172.18.0.12:5678)
+[WI-0][TI-2319] - [INFO] 2024-05-02 22:17:54.248 +0800 o.a.d.s.w.r.o.UpdateWorkflowHostOperationFunction:[49] - Received UpdateWorkflowHostRequest: UpdateWorkflowHostRequest(taskInstanceId=2319, workflowHost=172.18.0.12:5678)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:54.543 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=2371, taskName=keyword filtering, firstSubmitTime=1714659474390, startTime=0, taskType=PYTHON, workflowInstanceHost=172.18.0.12:5678, host=172.18.1.1:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13377949373536, processDefineVersion=24, appIds=null, processInstanceId=801, scheduleTime=0, globalParams=[{"prop":"topics","direct":"IN","type":"VARCHAR","value":"\"reddit_post_preprocessed|reddit_post_filtered\""},{"prop":"keywords","direct":"IN","type":"VARCHAR","value":"[\"singapore\", \"sg\"]"}], executorId=1, cmdTypeIfComplement=2, tenantCode=default, processDefineId=0, projectId=0, projectCode=13010050770016, taskParams={"localParams":[],"rawScript":"from pyspark.sql import SparkSession\nfrom pyspark.sql.functions import col, from_json\nfrom pyspark.sql.types import StringType, StructType, StructField, IntegerType\n\nspark = SparkSession.builder \\\n    .master(\"local\") \\\n    .appName(\"Reddit Keyword Filtering\") \\\n    .config(\"spark.jars.packages\", \"org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1\") \\\n    .config(\"spark.sql.streaming.checkpointLocation\", r\"/tmp/\") \\\n    .config(\"spark.driver.extraJavaOptions\", \"-Divy.cache.dir=/tmp -Divy.home=/tmp\") \\\n    .getOrCreate()\n\n# define the schema for the JSON data\nschema = StructType([\n    StructField(\"user\", StringType(), nullable=True),\n    StructField(\"content\", StringType(), nullable=True),\n    StructField(\"url\", StringType(), nullable=True),\n    StructField(\"context\", StringType(), nullable=True),\n    StructField(\"score\", IntegerType(), nullable=True),\n    StructField(\"type\", StringType(), nullable=True),\n    StructField(\"id\", StringType(), nullable=True),\n    StructField(\"datetime\", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed\n])\n\n# parse the topics parameter\ntopics = ${topics}\nparsed_topics = topics.split(\"|\")\n\n# define the parameters for the input and output kafka broker and topic\nkafka_broker = \"kafka:9092\"\ninput_kafka_topic = parsed_topics[0]\noutput_kafka_topic = parsed_topics[1]\n\n# Subscribe to the input topic\ndf = spark \\\n    .readStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", kafka_broker) \\\n    .option(\"subscribe\", input_kafka_topic) \\\n    .load()\n\n# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data\ndf = df.select(col(\"value\").cast(\"string\")) \\\n    .withColumn(\"value\", from_json(\"value\", schema)) \\\n\nparsed_df = df \\\n    .select(\"value.*\")\n\n# filter rows containing specific keywords\nkeywords = ${keywords}\n\n# initialize the filter condition with False\nfilter_condition = col(\"content\").contains(keywords[0])\n\n# loop through the rest of the keywords and update the filter condition\nfor keyword in keywords[1:]:\n    filter_condition = filter_condition | col(\"content\").contains(keyword)\n\n# apply the filter condition to the DataFrame\nfiltered_df = parsed_df.filter(filter_condition)\n\n# stream the data to kafka\nkafka_write = filtered_df \\\n    .selectExpr(\"'' AS key\", \"to_json(struct(*)) AS value\") \\\n    .writeStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", kafka_broker) \\\n    .option(\"topic\", output_kafka_topic) \\\n    .start()\n\n# Wait for the termination of the query\nkafka_write.awaitTermination()\n","resourceList":[]}, environmentConfig=export HADOOP_HOME=/opt/hadoop-3.4.0
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYTHON_LAUNCHER=/bin/python3.11, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='keyword filtering'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, REDDIT_HOME=Property{prop='REDDIT_HOME', direct=IN, type=VARCHAR, value='/local_storage/reddit'}, keywords=Property{prop='keywords', direct=IN, type=VARCHAR, value='["singapore", "sg"]'}, topics=Property{prop='topics', direct=IN, type=VARCHAR, value='"reddit_post_preprocessed|reddit_post_filtered"'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240502'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='2371'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13377752024032'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240502221754'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13010050770016'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='801'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240501'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='filter_data_subprocess'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13377949373536'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.597 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: keyword filtering to wait queue success
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.620 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.644 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.647 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.649 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.651 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1714659474651
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.661 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 801_2371
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:54.651 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[53] - Receive TaskInstanceDispatchRequest: TaskInstanceDispatchRequest(taskExecutionContext=TaskExecutionContext(taskInstanceId=2372, taskName=sentiment anaysis, firstSubmitTime=1714659474387, startTime=0, taskType=PYTHON, workflowInstanceHost=172.18.0.12:5678, host=172.18.1.1:1234, executePath=null, logPath=null, appInfoPath=null, taskJson=null, processId=0, processDefineCode=13386218435520, processDefineVersion=19, appIds=null, processInstanceId=798, scheduleTime=0, globalParams=[{"prop":"topics","direct":"IN","type":"VARCHAR","value":"\"reddit_post_filtered|reddit_post_sa\""}], executorId=1, cmdTypeIfComplement=2, tenantCode=default, processDefineId=0, projectId=0, projectCode=13010050770016, taskParams={"localParams":[],"rawScript":"# use kafka streaming api\nfrom pyspark.sql.functions import udf, col, from_json\nfrom pyspark.sql.types import FloatType, ArrayType, StringType, StructType, StructField, IntegerType\nimport nltk\nfrom nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA\nfrom pyspark.sql import SparkSession\nimport os\n\n# access the nltk data directory variable\nnltk_data_dir = os.environ.get('NLTK_DATA')\n\n# download the model\nnltk.download('vader_lexicon', download_dir=nltk_data_dir)\n\n# init the sentiment analysis object\nsia = SIA()\n\n# init Spark session\nspark = SparkSession.builder \\\n    .master('local') \\\n    .appName(\"Sentiment Analysis\") \\\n    .config(\"spark.jars.packages\", \"org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1\") \\\n    .config(\"spark.sql.streaming.checkpointLocation\", r\"/tmp/\") \\\n    .config(\"spark.driver.extraJavaOptions\", \"-Divy.cache.dir=/tmp -Divy.home=/tmp\") \\\n    .getOrCreate()\n\n# define a udf to perform sentiment analysis\ndef analyze_sentiment(message):\n    # Perform sentiment analysis\n    pol_score = sia.polarity_scores(message)\n    # Return the compound score\n    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]\n\n# Register the function as a UDF\nanalyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))\n\n# define the schema for the JSON data\nschema = StructType([\n    StructField(\"user\", StringType(), nullable=True),\n    StructField(\"content\", StringType(), nullable=True),\n    StructField(\"url\", StringType(), nullable=True),\n    StructField(\"context\", StringType(), nullable=True),\n    StructField(\"score\", IntegerType(), nullable=True),\n    StructField(\"type\", StringType(), nullable=True),\n    StructField(\"id\", StringType(), nullable=True),\n    StructField(\"datetime\", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed\n])\n\n# parse the input parameter\ntopics = ${topics}\nparsed_topics = topics.split(\"|\")\n\n# define the parameters for the input and output kafka broker and topic\nkafka_broker = \"kafka:9092\"\ninput_kafka_topic = parsed_topics[0]\noutput_kafka_topic = parsed_topics[1]\n\n# Subscribe to the input topic\ndf = spark \\\n    .readStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", kafka_broker) \\\n    .option(\"subscribe\", input_kafka_topic) \\\n    .load()\n\n# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data\ndf = df.select(col(\"value\").cast(\"string\")) \\\n    .withColumn(\"value\", from_json(\"value\", schema)) \\\n\nparsed_df = df \\\n    .select(\"value.*\")\n\n# perform sentiment analysis on the parsed dataframe \nsa_reddit_df = parsed_df.withColumn('sentiment_score', analyze_sentiment_udf(parsed_df['content']))\n\n# split the sentiment_score column into separate columns\nsa_reddit_df = sa_reddit_df.withColumn(\"negative\", sa_reddit_df[\"sentiment_score\"][0]) \\\n            .withColumn(\"neutral\", sa_reddit_df[\"sentiment_score\"][1]) \\\n            .withColumn(\"positive\", sa_reddit_df[\"sentiment_score\"][2]) \\\n            .withColumn(\"compound\", sa_reddit_df[\"sentiment_score\"][3]) \\\n            .drop('sentiment_score')  # drop sentiment_score column after splitting\n\n# stream the data to kafka\nkafka_write = sa_reddit_df \\\n    .selectExpr(\"'' AS key\", \"to_json(struct(*)) AS value\") \\\n    .writeStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", kafka_broker) \\\n    .option(\"topic\", output_kafka_topic) \\\n    .start()\n\n# Wait for the termination of the query\nkafka_write.awaitTermination()","resourceList":[]}, environmentConfig=export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYSPARK_PYTHON=/bin/python3.11
+export PYTHON_LAUNCHER=/bin/python3.11
+export NLTK_DATA=/local_storage/nltk_data, definedParams=null, prepareParamsMap={system.task.definition.name=Property{prop='system.task.definition.name', direct=IN, type=VARCHAR, value='sentiment anaysis'}, system.project.name=Property{prop='system.project.name', direct=IN, type=VARCHAR, value='null'}, REDDIT_HOME=Property{prop='REDDIT_HOME', direct=IN, type=VARCHAR, value='/local_storage/reddit'}, topics=Property{prop='topics', direct=IN, type=VARCHAR, value='"reddit_post_filtered|reddit_post_sa"'}, system.biz.curdate=Property{prop='system.biz.curdate', direct=IN, type=VARCHAR, value='20240502'}, system.task.instance.id=Property{prop='system.task.instance.id', direct=IN, type=VARCHAR, value='2372'}, system.task.definition.code=Property{prop='system.task.definition.code', direct=IN, type=VARCHAR, value='13386027735104'}, system.datetime=Property{prop='system.datetime', direct=IN, type=VARCHAR, value='20240502221754'}, system.project.code=Property{prop='system.project.code', direct=IN, type=VARCHAR, value='13010050770016'}, system.workflow.instance.id=Property{prop='system.workflow.instance.id', direct=IN, type=VARCHAR, value='798'}, system.biz.date=Property{prop='system.biz.date', direct=IN, type=VARCHAR, value='20240501'}, system.workflow.definition.name=Property{prop='system.workflow.definition.name', direct=IN, type=VARCHAR, value='sentiment_analysis_subprocess'}, system.workflow.definition.code=Property{prop='system.workflow.definition.code', direct=IN, type=VARCHAR, value='13386218435520'}}, taskAppId=null, taskTimeoutStrategy=null, taskTimeout=2147483647, workerGroup=default, delayTime=0, currentExecutionStatus=TaskExecutionStatus{code=0, desc='submit success'}, resourceParametersHelper=null, endTime=0, sqlTaskExecutionContext=null, k8sTaskExecutionContext=null, resourceContext=null, varPool=null, dryRun=0, paramsMap={}, dataQualityTaskExecutionContext=null, cpuQuota=-1, memoryMax=-1, testFlag=0, logBufferEnable=false, dispatchFailTimes=0))
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.664 +0800 o.a.d.s.w.r.o.TaskInstanceDispatchOperationFunction:[79] - Submit task: sentiment anaysis to wait queue success
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.664 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.668 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Initialize task context  ***********************************
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:54.673 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7828571428571428 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.670 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.673 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[191] - Begin to initialize task
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.674 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[195] - Set task startTime: 1714659474674
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.677 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[200] - Set task appId: 798_2372
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.684 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 2372,
+  "taskName" : "sentiment anaysis",
+  "firstSubmitTime" : 1714659474387,
+  "startTime" : 1714659474674,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240502/13386218435520/19/798/2372.log",
+  "processId" : 0,
+  "processDefineCode" : 13386218435520,
+  "processDefineVersion" : 19,
+  "processInstanceId" : 798,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topics\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\\\"reddit_post_filtered|reddit_post_sa\\\"\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 2,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"# use kafka streaming api\\nfrom pyspark.sql.functions import udf, col, from_json\\nfrom pyspark.sql.types import FloatType, ArrayType, StringType, StructType, StructField, IntegerType\\nimport nltk\\nfrom nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA\\nfrom pyspark.sql import SparkSession\\nimport os\\n\\n# access the nltk data directory variable\\nnltk_data_dir = os.environ.get('NLTK_DATA')\\n\\n# download the model\\nnltk.download('vader_lexicon', download_dir=nltk_data_dir)\\n\\n# init the sentiment analysis object\\nsia = SIA()\\n\\n# init Spark session\\nspark = SparkSession.builder \\\\\\n    .master('local') \\\\\\n    .appName(\\\"Sentiment Analysis\\\") \\\\\\n    .config(\\\"spark.jars.packages\\\", \\\"org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1\\\") \\\\\\n    .config(\\\"spark.sql.streaming.checkpointLocation\\\", r\\\"/tmp/\\\") \\\\\\n    .config(\\\"spark.driver.extraJavaOptions\\\", \\\"-Divy.cache.dir=/tmp -Divy.home=/tmp\\\") \\\\\\n    .getOrCreate()\\n\\n# define a udf to perform sentiment analysis\\ndef analyze_sentiment(message):\\n    # Perform sentiment analysis\\n    pol_score = sia.polarity_scores(message)\\n    # Return the compound score\\n    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]\\n\\n# Register the function as a UDF\\nanalyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))\\n\\n# define the schema for the JSON data\\nschema = StructType([\\n    StructField(\\\"user\\\", StringType(), nullable=True),\\n    StructField(\\\"content\\\", StringType(), nullable=True),\\n    StructField(\\\"url\\\", StringType(), nullable=True),\\n    StructField(\\\"context\\\", StringType(), nullable=True),\\n    StructField(\\\"score\\\", IntegerType(), nullable=True),\\n    StructField(\\\"type\\\", StringType(), nullable=True),\\n    StructField(\\\"id\\\", StringType(), nullable=True),\\n    StructField(\\\"datetime\\\", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed\\n])\\n\\n# parse the input parameter\\ntopics = ${topics}\\nparsed_topics = topics.split(\\\"|\\\")\\n\\n# define the parameters for the input and output kafka broker and topic\\nkafka_broker = \\\"kafka:9092\\\"\\ninput_kafka_topic = parsed_topics[0]\\noutput_kafka_topic = parsed_topics[1]\\n\\n# Subscribe to the input topic\\ndf = spark \\\\\\n    .readStream \\\\\\n    .format(\\\"kafka\\\") \\\\\\n    .option(\\\"kafka.bootstrap.servers\\\", kafka_broker) \\\\\\n    .option(\\\"subscribe\\\", input_kafka_topic) \\\\\\n    .load()\\n\\n# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data\\ndf = df.select(col(\\\"value\\\").cast(\\\"string\\\")) \\\\\\n    .withColumn(\\\"value\\\", from_json(\\\"value\\\", schema)) \\\\\\n\\nparsed_df = df \\\\\\n    .select(\\\"value.*\\\")\\n\\n# perform sentiment analysis on the parsed dataframe \\nsa_reddit_df = parsed_df.withColumn('sentiment_score', analyze_sentiment_udf(parsed_df['content']))\\n\\n# split the sentiment_score column into separate columns\\nsa_reddit_df = sa_reddit_df.withColumn(\\\"negative\\\", sa_reddit_df[\\\"sentiment_score\\\"][0]) \\\\\\n            .withColumn(\\\"neutral\\\", sa_reddit_df[\\\"sentiment_score\\\"][1]) \\\\\\n            .withColumn(\\\"positive\\\", sa_reddit_df[\\\"sentiment_score\\\"][2]) \\\\\\n            .withColumn(\\\"compound\\\", sa_reddit_df[\\\"sentiment_score\\\"][3]) \\\\\\n            .drop('sentiment_score')  # drop sentiment_score column after splitting\\n\\n# stream the data to kafka\\nkafka_write = sa_reddit_df \\\\\\n    .selectExpr(\\\"'' AS key\\\", \\\"to_json(struct(*)) AS value\\\") \\\\\\n    .writeStream \\\\\\n    .format(\\\"kafka\\\") \\\\\\n    .option(\\\"kafka.bootstrap.servers\\\", kafka_broker) \\\\\\n    .option(\\\"topic\\\", output_kafka_topic) \\\\\\n    .start()\\n\\n# Wait for the termination of the query\\nkafka_write.awaitTermination()\",\"resourceList\":[]}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11\nexport PYSPARK_PYTHON=/bin/python3.11\nexport PYTHON_LAUNCHER=/bin/python3.11\nexport NLTK_DATA=/local_storage/nltk_data",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sentiment anaysis"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "topics" : {
+      "prop" : "topics",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "\"reddit_post_filtered|reddit_post_sa\""
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240502"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2372"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386027735104"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240502221754"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "798"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240501"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "sentiment_analysis_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13386218435520"
+    }
+  },
+  "taskAppId" : "798_2372",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.687 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.689 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.689 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.685 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[202] - End initialize task {
+  "taskInstanceId" : 2371,
+  "taskName" : "keyword filtering",
+  "firstSubmitTime" : 1714659474390,
+  "startTime" : 1714659474651,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240502/13377949373536/24/801/2371.log",
+  "processId" : 0,
+  "processDefineCode" : 13377949373536,
+  "processDefineVersion" : 24,
+  "processInstanceId" : 801,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"topics\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\\\"reddit_post_preprocessed|reddit_post_filtered\\\"\"},{\"prop\":\"keywords\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"[\\\"singapore\\\", \\\"sg\\\"]\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 2,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"from pyspark.sql import SparkSession\\nfrom pyspark.sql.functions import col, from_json\\nfrom pyspark.sql.types import StringType, StructType, StructField, IntegerType\\n\\nspark = SparkSession.builder \\\\\\n    .master(\\\"local\\\") \\\\\\n    .appName(\\\"Reddit Keyword Filtering\\\") \\\\\\n    .config(\\\"spark.jars.packages\\\", \\\"org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1\\\") \\\\\\n    .config(\\\"spark.sql.streaming.checkpointLocation\\\", r\\\"/tmp/\\\") \\\\\\n    .config(\\\"spark.driver.extraJavaOptions\\\", \\\"-Divy.cache.dir=/tmp -Divy.home=/tmp\\\") \\\\\\n    .getOrCreate()\\n\\n# define the schema for the JSON data\\nschema = StructType([\\n    StructField(\\\"user\\\", StringType(), nullable=True),\\n    StructField(\\\"content\\\", StringType(), nullable=True),\\n    StructField(\\\"url\\\", StringType(), nullable=True),\\n    StructField(\\\"context\\\", StringType(), nullable=True),\\n    StructField(\\\"score\\\", IntegerType(), nullable=True),\\n    StructField(\\\"type\\\", StringType(), nullable=True),\\n    StructField(\\\"id\\\", StringType(), nullable=True),\\n    StructField(\\\"datetime\\\", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed\\n])\\n\\n# parse the topics parameter\\ntopics = ${topics}\\nparsed_topics = topics.split(\\\"|\\\")\\n\\n# define the parameters for the input and output kafka broker and topic\\nkafka_broker = \\\"kafka:9092\\\"\\ninput_kafka_topic = parsed_topics[0]\\noutput_kafka_topic = parsed_topics[1]\\n\\n# Subscribe to the input topic\\ndf = spark \\\\\\n    .readStream \\\\\\n    .format(\\\"kafka\\\") \\\\\\n    .option(\\\"kafka.bootstrap.servers\\\", kafka_broker) \\\\\\n    .option(\\\"subscribe\\\", input_kafka_topic) \\\\\\n    .load()\\n\\n# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data\\ndf = df.select(col(\\\"value\\\").cast(\\\"string\\\")) \\\\\\n    .withColumn(\\\"value\\\", from_json(\\\"value\\\", schema)) \\\\\\n\\nparsed_df = df \\\\\\n    .select(\\\"value.*\\\")\\n\\n# filter rows containing specific keywords\\nkeywords = ${keywords}\\n\\n# initialize the filter condition with False\\nfilter_condition = col(\\\"content\\\").contains(keywords[0])\\n\\n# loop through the rest of the keywords and update the filter condition\\nfor keyword in keywords[1:]:\\n    filter_condition = filter_condition | col(\\\"content\\\").contains(keyword)\\n\\n# apply the filter condition to the DataFrame\\nfiltered_df = parsed_df.filter(filter_condition)\\n\\n# stream the data to kafka\\nkafka_write = filtered_df \\\\\\n    .selectExpr(\\\"'' AS key\\\", \\\"to_json(struct(*)) AS value\\\") \\\\\\n    .writeStream \\\\\\n    .format(\\\"kafka\\\") \\\\\\n    .option(\\\"kafka.bootstrap.servers\\\", kafka_broker) \\\\\\n    .option(\\\"topic\\\", output_kafka_topic) \\\\\\n    .start()\\n\\n# Wait for the termination of the query\\nkafka_write.awaitTermination()\\n\",\"resourceList\":[]}",
+  "environmentConfig" : "export HADOOP_HOME=/opt/hadoop-3.4.0\nexport SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11\nexport PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "keyword filtering"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "keywords" : {
+      "prop" : "keywords",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "[\"singapore\", \"sg\"]"
+    },
+    "topics" : {
+      "prop" : "topics",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "\"reddit_post_preprocessed|reddit_post_filtered\""
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240502"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2371"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13377752024032"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240502221754"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "801"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240501"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "filter_data_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13377949373536"
+    }
+  },
+  "taskAppId" : "801_2371",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.698 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.699 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Load task instance plugin  *********************************
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.715 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.840 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.840 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[209] - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.855 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.855 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[217] - TenantCode: default check successfully
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.870 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/801/2371 check successfully
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.872 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[220] - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_19/798/2372 check successfully
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.874 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.874 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[227] - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.895 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.895 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[232] - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.914 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.915 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[235] - Download upstream files: [] successfully
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.919 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: PYTHON create successfully
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.919 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[239] - Task plugin instance: PYTHON create successfully
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.935 +0800 o.a.d.p.t.p.PythonTask:[75] - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "# use kafka streaming api\nfrom pyspark.sql.functions import udf, col, from_json\nfrom pyspark.sql.types import FloatType, ArrayType, StringType, StructType, StructField, IntegerType\nimport nltk\nfrom nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA\nfrom pyspark.sql import SparkSession\nimport os\n\n# access the nltk data directory variable\nnltk_data_dir = os.environ.get('NLTK_DATA')\n\n# download the model\nnltk.download('vader_lexicon', download_dir=nltk_data_dir)\n\n# init the sentiment analysis object\nsia = SIA()\n\n# init Spark session\nspark = SparkSession.builder \\\n    .master('local') \\\n    .appName(\"Sentiment Analysis\") \\\n    .config(\"spark.jars.packages\", \"org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1\") \\\n    .config(\"spark.sql.streaming.checkpointLocation\", r\"/tmp/\") \\\n    .config(\"spark.driver.extraJavaOptions\", \"-Divy.cache.dir=/tmp -Divy.home=/tmp\") \\\n    .getOrCreate()\n\n# define a udf to perform sentiment analysis\ndef analyze_sentiment(message):\n    # Perform sentiment analysis\n    pol_score = sia.polarity_scores(message)\n    # Return the compound score\n    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]\n\n# Register the function as a UDF\nanalyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))\n\n# define the schema for the JSON data\nschema = StructType([\n    StructField(\"user\", StringType(), nullable=True),\n    StructField(\"content\", StringType(), nullable=True),\n    StructField(\"url\", StringType(), nullable=True),\n    StructField(\"context\", StringType(), nullable=True),\n    StructField(\"score\", IntegerType(), nullable=True),\n    StructField(\"type\", StringType(), nullable=True),\n    StructField(\"id\", StringType(), nullable=True),\n    StructField(\"datetime\", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed\n])\n\n# parse the input parameter\ntopics = ${topics}\nparsed_topics = topics.split(\"|\")\n\n# define the parameters for the input and output kafka broker and topic\nkafka_broker = \"kafka:9092\"\ninput_kafka_topic = parsed_topics[0]\noutput_kafka_topic = parsed_topics[1]\n\n# Subscribe to the input topic\ndf = spark \\\n    .readStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", kafka_broker) \\\n    .option(\"subscribe\", input_kafka_topic) \\\n    .load()\n\n# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data\ndf = df.select(col(\"value\").cast(\"string\")) \\\n    .withColumn(\"value\", from_json(\"value\", schema)) \\\n\nparsed_df = df \\\n    .select(\"value.*\")\n\n# perform sentiment analysis on the parsed dataframe \nsa_reddit_df = parsed_df.withColumn('sentiment_score', analyze_sentiment_udf(parsed_df['content']))\n\n# split the sentiment_score column into separate columns\nsa_reddit_df = sa_reddit_df.withColumn(\"negative\", sa_reddit_df[\"sentiment_score\"][0]) \\\n            .withColumn(\"neutral\", sa_reddit_df[\"sentiment_score\"][1]) \\\n            .withColumn(\"positive\", sa_reddit_df[\"sentiment_score\"][2]) \\\n            .withColumn(\"compound\", sa_reddit_df[\"sentiment_score\"][3]) \\\n            .drop('sentiment_score')  # drop sentiment_score column after splitting\n\n# stream the data to kafka\nkafka_write = sa_reddit_df \\\n    .selectExpr(\"'' AS key\", \"to_json(struct(*)) AS value\") \\\n    .writeStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", kafka_broker) \\\n    .option(\"topic\", output_kafka_topic) \\\n    .start()\n\n# Wait for the termination of the query\nkafka_write.awaitTermination()",
+  "resourceList" : [ ]
+}
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.936 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.936 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.939 +0800 o.a.d.p.t.p.PythonTask:[75] - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "from pyspark.sql import SparkSession\nfrom pyspark.sql.functions import col, from_json\nfrom pyspark.sql.types import StringType, StructType, StructField, IntegerType\n\nspark = SparkSession.builder \\\n    .master(\"local\") \\\n    .appName(\"Reddit Keyword Filtering\") \\\n    .config(\"spark.jars.packages\", \"org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1\") \\\n    .config(\"spark.sql.streaming.checkpointLocation\", r\"/tmp/\") \\\n    .config(\"spark.driver.extraJavaOptions\", \"-Divy.cache.dir=/tmp -Divy.home=/tmp\") \\\n    .getOrCreate()\n\n# define the schema for the JSON data\nschema = StructType([\n    StructField(\"user\", StringType(), nullable=True),\n    StructField(\"content\", StringType(), nullable=True),\n    StructField(\"url\", StringType(), nullable=True),\n    StructField(\"context\", StringType(), nullable=True),\n    StructField(\"score\", IntegerType(), nullable=True),\n    StructField(\"type\", StringType(), nullable=True),\n    StructField(\"id\", StringType(), nullable=True),\n    StructField(\"datetime\", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed\n])\n\n# parse the topics parameter\ntopics = ${topics}\nparsed_topics = topics.split(\"|\")\n\n# define the parameters for the input and output kafka broker and topic\nkafka_broker = \"kafka:9092\"\ninput_kafka_topic = parsed_topics[0]\noutput_kafka_topic = parsed_topics[1]\n\n# Subscribe to the input topic\ndf = spark \\\n    .readStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", kafka_broker) \\\n    .option(\"subscribe\", input_kafka_topic) \\\n    .load()\n\n# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data\ndf = df.select(col(\"value\").cast(\"string\")) \\\n    .withColumn(\"value\", from_json(\"value\", schema)) \\\n\nparsed_df = df \\\n    .select(\"value.*\")\n\n# filter rows containing specific keywords\nkeywords = ${keywords}\n\n# initialize the filter condition with False\nfilter_condition = col(\"content\").contains(keywords[0])\n\n# loop through the rest of the keywords and update the filter condition\nfor keyword in keywords[1:]:\n    filter_condition = filter_condition | col(\"content\").contains(keyword)\n\n# apply the filter condition to the DataFrame\nfiltered_df = parsed_df.filter(filter_condition)\n\n# stream the data to kafka\nkafka_write = filtered_df \\\n    .selectExpr(\"'' AS key\", \"to_json(struct(*)) AS value\") \\\n    .writeStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", kafka_broker) \\\n    .option(\"topic\", output_kafka_topic) \\\n    .start()\n\n# Wait for the termination of the query\nkafka_write.awaitTermination()\n",
+  "resourceList" : [ ]
+}
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.951 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.954 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.962 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.964 +0800 o.a.d.p.t.p.PythonTask:[165] - raw python script : # use kafka streaming api
+from pyspark.sql.functions import udf, col, from_json
+from pyspark.sql.types import FloatType, ArrayType, StringType, StructType, StructField, IntegerType
+import nltk
+from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
+from pyspark.sql import SparkSession
+import os
+
+# access the nltk data directory variable
+nltk_data_dir = os.environ.get('NLTK_DATA')
+
+# download the model
+nltk.download('vader_lexicon', download_dir=nltk_data_dir)
+
+# init the sentiment analysis object
+sia = SIA()
+
+# init Spark session
+spark = SparkSession.builder \
+    .master('local') \
+    .appName("Sentiment Analysis") \
+    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1") \
+    .config("spark.sql.streaming.checkpointLocation", r"/tmp/") \
+    .config("spark.driver.extraJavaOptions", "-Divy.cache.dir=/tmp -Divy.home=/tmp") \
+    .getOrCreate()
+
+# define a udf to perform sentiment analysis
+def analyze_sentiment(message):
+    # Perform sentiment analysis
+    pol_score = sia.polarity_scores(message)
+    # Return the compound score
+    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]
+
+# Register the function as a UDF
+analyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))
+
+# define the schema for the JSON data
+schema = StructType([
+    StructField("user", StringType(), nullable=True),
+    StructField("content", StringType(), nullable=True),
+    StructField("url", StringType(), nullable=True),
+    StructField("context", StringType(), nullable=True),
+    StructField("score", IntegerType(), nullable=True),
+    StructField("type", StringType(), nullable=True),
+    StructField("id", StringType(), nullable=True),
+    StructField("datetime", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed
+])
+
+# parse the input parameter
+topics = ${topics}
+parsed_topics = topics.split("|")
+
+# define the parameters for the input and output kafka broker and topic
+kafka_broker = "kafka:9092"
+input_kafka_topic = parsed_topics[0]
+output_kafka_topic = parsed_topics[1]
+
+# Subscribe to the input topic
+df = spark \
+    .readStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("subscribe", input_kafka_topic) \
+    .load()
+
+# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data
+df = df.select(col("value").cast("string")) \
+    .withColumn("value", from_json("value", schema)) \
+
+parsed_df = df \
+    .select("value.*")
+
+# perform sentiment analysis on the parsed dataframe 
+sa_reddit_df = parsed_df.withColumn('sentiment_score', analyze_sentiment_udf(parsed_df['content']))
+
+# split the sentiment_score column into separate columns
+sa_reddit_df = sa_reddit_df.withColumn("negative", sa_reddit_df["sentiment_score"][0]) \
+            .withColumn("neutral", sa_reddit_df["sentiment_score"][1]) \
+            .withColumn("positive", sa_reddit_df["sentiment_score"][2]) \
+            .withColumn("compound", sa_reddit_df["sentiment_score"][3]) \
+            .drop('sentiment_score')  # drop sentiment_score column after splitting
+
+# stream the data to kafka
+kafka_write = sa_reddit_df \
+    .selectExpr("'' AS key", "to_json(struct(*)) AS value") \
+    .writeStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("topic", output_kafka_topic) \
+    .start()
+
+# Wait for the termination of the query
+kafka_write.awaitTermination()
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.946 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[243] - Success initialized task plugin instance successfully
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.970 +0800 o.a.d.s.w.r.WorkerTaskExecutor:[246] - Set taskVarPool: null successfully
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.974 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.974 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - *********************************  Execute task instance  *************************************
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.975 +0800 o.a.d.p.t.a.l.TaskInstanceLogHeader:[1259] - ***********************************************************************************************
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.976 +0800 o.a.d.p.t.p.PythonTask:[165] - raw python script : from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, from_json
+from pyspark.sql.types import StringType, StructType, StructField, IntegerType
+
+spark = SparkSession.builder \
+    .master("local") \
+    .appName("Reddit Keyword Filtering") \
+    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1") \
+    .config("spark.sql.streaming.checkpointLocation", r"/tmp/") \
+    .config("spark.driver.extraJavaOptions", "-Divy.cache.dir=/tmp -Divy.home=/tmp") \
+    .getOrCreate()
+
+# define the schema for the JSON data
+schema = StructType([
+    StructField("user", StringType(), nullable=True),
+    StructField("content", StringType(), nullable=True),
+    StructField("url", StringType(), nullable=True),
+    StructField("context", StringType(), nullable=True),
+    StructField("score", IntegerType(), nullable=True),
+    StructField("type", StringType(), nullable=True),
+    StructField("id", StringType(), nullable=True),
+    StructField("datetime", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed
+])
+
+# parse the topics parameter
+topics = ${topics}
+parsed_topics = topics.split("|")
+
+# define the parameters for the input and output kafka broker and topic
+kafka_broker = "kafka:9092"
+input_kafka_topic = parsed_topics[0]
+output_kafka_topic = parsed_topics[1]
+
+# Subscribe to the input topic
+df = spark \
+    .readStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("subscribe", input_kafka_topic) \
+    .load()
+
+# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data
+df = df.select(col("value").cast("string")) \
+    .withColumn("value", from_json("value", schema)) \
+
+parsed_df = df \
+    .select("value.*")
+
+# filter rows containing specific keywords
+keywords = ${keywords}
+
+# initialize the filter condition with False
+filter_condition = col("content").contains(keywords[0])
+
+# loop through the rest of the keywords and update the filter condition
+for keyword in keywords[1:]:
+    filter_condition = filter_condition | col("content").contains(keyword)
+
+# apply the filter condition to the DataFrame
+filtered_df = parsed_df.filter(filter_condition)
+
+# stream the data to kafka
+kafka_write = filtered_df \
+    .selectExpr("'' AS key", "to_json(struct(*)) AS value") \
+    .writeStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("topic", output_kafka_topic) \
+    .start()
+
+# Wait for the termination of the query
+kafka_write.awaitTermination()
+
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.985 +0800 o.a.d.p.t.p.PythonTask:[131] - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_19/798/2372
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.989 +0800 o.a.d.p.t.p.PythonTask:[134] - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_19/798/2372/py_798_2372.py
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:54.990 +0800 o.a.d.p.t.p.PythonTask:[141] - #-*- encoding=utf8 -*-
+
+# use kafka streaming api
+from pyspark.sql.functions import udf, col, from_json
+from pyspark.sql.types import FloatType, ArrayType, StringType, StructType, StructField, IntegerType
+import nltk
+from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
+from pyspark.sql import SparkSession
+import os
+
+# access the nltk data directory variable
+nltk_data_dir = os.environ.get('NLTK_DATA')
+
+# download the model
+nltk.download('vader_lexicon', download_dir=nltk_data_dir)
+
+# init the sentiment analysis object
+sia = SIA()
+
+# init Spark session
+spark = SparkSession.builder \
+    .master('local') \
+    .appName("Sentiment Analysis") \
+    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1") \
+    .config("spark.sql.streaming.checkpointLocation", r"/tmp/") \
+    .config("spark.driver.extraJavaOptions", "-Divy.cache.dir=/tmp -Divy.home=/tmp") \
+    .getOrCreate()
+
+# define a udf to perform sentiment analysis
+def analyze_sentiment(message):
+    # Perform sentiment analysis
+    pol_score = sia.polarity_scores(message)
+    # Return the compound score
+    return [pol_score['neg'], pol_score['neu'], pol_score['pos'], pol_score['compound']]
+
+# Register the function as a UDF
+analyze_sentiment_udf = udf(lambda x:analyze_sentiment(x), ArrayType(FloatType()))
+
+# define the schema for the JSON data
+schema = StructType([
+    StructField("user", StringType(), nullable=True),
+    StructField("content", StringType(), nullable=True),
+    StructField("url", StringType(), nullable=True),
+    StructField("context", StringType(), nullable=True),
+    StructField("score", IntegerType(), nullable=True),
+    StructField("type", StringType(), nullable=True),
+    StructField("id", StringType(), nullable=True),
+    StructField("datetime", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed
+])
+
+# parse the input parameter
+topics = "reddit_post_filtered|reddit_post_sa"
+parsed_topics = topics.split("|")
+
+# define the parameters for the input and output kafka broker and topic
+kafka_broker = "kafka:9092"
+input_kafka_topic = parsed_topics[0]
+output_kafka_topic = parsed_topics[1]
+
+# Subscribe to the input topic
+df = spark \
+    .readStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("subscribe", input_kafka_topic) \
+    .load()
+
+# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data
+df = df.select(col("value").cast("string")) \
+    .withColumn("value", from_json("value", schema)) \
+
+parsed_df = df \
+    .select("value.*")
+
+# perform sentiment analysis on the parsed dataframe 
+sa_reddit_df = parsed_df.withColumn('sentiment_score', analyze_sentiment_udf(parsed_df['content']))
+
+# split the sentiment_score column into separate columns
+sa_reddit_df = sa_reddit_df.withColumn("negative", sa_reddit_df["sentiment_score"][0]) \
+            .withColumn("neutral", sa_reddit_df["sentiment_score"][1]) \
+            .withColumn("positive", sa_reddit_df["sentiment_score"][2]) \
+            .withColumn("compound", sa_reddit_df["sentiment_score"][3]) \
+            .drop('sentiment_score')  # drop sentiment_score column after splitting
+
+# stream the data to kafka
+kafka_write = sa_reddit_df \
+    .selectExpr("'' AS key", "to_json(struct(*)) AS value") \
+    .writeStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("topic", output_kafka_topic) \
+    .start()
+
+# Wait for the termination of the query
+kafka_write.awaitTermination()
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:54.993 +0800 o.a.d.p.t.p.PythonTask:[131] - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/801/2371
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:55.000 +0800 o.a.d.p.t.p.PythonTask:[134] - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/801/2371/py_801_2371.py
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:55.002 +0800 o.a.d.p.t.p.PythonTask:[141] - #-*- encoding=utf8 -*-
+
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, from_json
+from pyspark.sql.types import StringType, StructType, StructField, IntegerType
+
+spark = SparkSession.builder \
+    .master("local") \
+    .appName("Reddit Keyword Filtering") \
+    .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1") \
+    .config("spark.sql.streaming.checkpointLocation", r"/tmp/") \
+    .config("spark.driver.extraJavaOptions", "-Divy.cache.dir=/tmp -Divy.home=/tmp") \
+    .getOrCreate()
+
+# define the schema for the JSON data
+schema = StructType([
+    StructField("user", StringType(), nullable=True),
+    StructField("content", StringType(), nullable=True),
+    StructField("url", StringType(), nullable=True),
+    StructField("context", StringType(), nullable=True),
+    StructField("score", IntegerType(), nullable=True),
+    StructField("type", StringType(), nullable=True),
+    StructField("id", StringType(), nullable=True),
+    StructField("datetime", StringType(), nullable=True)  # Assuming the datetime is string type, you can change it to TimestampType if needed
+])
+
+# parse the topics parameter
+topics = "reddit_post_preprocessed|reddit_post_filtered"
+parsed_topics = topics.split("|")
+
+# define the parameters for the input and output kafka broker and topic
+kafka_broker = "kafka:9092"
+input_kafka_topic = parsed_topics[0]
+output_kafka_topic = parsed_topics[1]
+
+# Subscribe to the input topic
+df = spark \
+    .readStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("subscribe", input_kafka_topic) \
+    .load()
+
+# parse the JSON data in the 'value' column using the defined schema then create a dataframe containing the reddit data
+df = df.select(col("value").cast("string")) \
+    .withColumn("value", from_json("value", schema)) \
+
+parsed_df = df \
+    .select("value.*")
+
+# filter rows containing specific keywords
+keywords = ["singapore", "sg"]
+
+# initialize the filter condition with False
+filter_condition = col("content").contains(keywords[0])
+
+# loop through the rest of the keywords and update the filter condition
+for keyword in keywords[1:]:
+    filter_condition = filter_condition | col("content").contains(keyword)
+
+# apply the filter condition to the DataFrame
+filtered_df = parsed_df.filter(filter_condition)
+
+# stream the data to kafka
+kafka_write = filtered_df \
+    .selectExpr("'' AS key", "to_json(struct(*)) AS value") \
+    .writeStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", kafka_broker) \
+    .option("topic", output_kafka_topic) \
+    .start()
+
+# Wait for the termination of the query
+kafka_write.awaitTermination()
+
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:55.104 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:55.105 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:55.105 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYSPARK_PYTHON=/bin/python3.11
+export PYTHON_LAUNCHER=/bin/python3.11
+export NLTK_DATA=/local_storage/nltk_data
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_19/798/2372/py_798_2372.py
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:55.106 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:55.106 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[64] - Final Shell file is: 
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:55.107 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[65] - ****************************** Script Content *****************************************************************
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:55.107 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[67] - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export HADOOP_HOME=/opt/hadoop-3.4.0
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYTHON_LAUNCHER=/bin/python3.11
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/801/2371/py_801_2371.py
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:55.107 +0800 o.a.d.p.t.a.s.BaseLinuxShellInterceptorBuilder:[68] - ****************************** Script Content *****************************************************************
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:55.110 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13386218435520_19/798/2372/798_2372.sh
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:55.113 +0800 o.a.d.p.t.a.s.BaseShellInterceptor:[46] - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13377949373536_24/801/2371/801_2371.sh
+[WI-798][TI-2372] - [INFO] 2024-05-02 22:17:55.156 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 97
+[WI-801][TI-2371] - [INFO] 2024-05-02 22:17:55.194 +0800 o.a.d.p.t.a.AbstractCommandExecutor:[154] - process start, process id is: 98
+[WI-0][TI-2371] - [INFO] 2024-05-02 22:17:55.253 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=2371, success=true)
+[WI-0][TI-2372] - [INFO] 2024-05-02 22:17:55.269 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionRunningEventAckListenFunction:[44] - Receive TaskInstanceExecutionRunningEventAck: TaskInstanceExecutionRunningEventAck(taskInstanceId=2372, success=true)
+[WI-0][TI-2371] - [INFO] 2024-05-02 22:17:55.313 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=2371)
+[WI-0][TI-2372] - [INFO] 2024-05-02 22:17:55.322 +0800 o.a.d.s.w.r.l.TaskInstanceExecutionInfoEventAckListenFunction:[45] - Receive TaskInstanceExecutionInfoEventAck: TaskInstanceExecutionInfoEventAck(success=true, taskInstanceId=2372)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:55.837 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9710144927536233 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:56.163 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:56.224 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:57.168 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	[nltk_data] Downloading package vader_lexicon to
+	[nltk_data]     /local_storage/nltk_data...
+	[nltk_data]   Package vader_lexicon is already up-to-date!
+[WI-0][TI-0] - [INFO] 2024-05-02 22:17:57.866 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7198879551820728 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:00.926 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8067796610169491 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:03.035 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7692307692307693 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:03.290 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	:: loading settings :: url = jar:file:/opt/spark-3.5.1-bin-hadoop3/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+	Ivy Default Cache set to: /tmp
+	The jars for the packages stored in: /tmp/jars
+	org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+	:: resolving dependencies :: org.apache.spark#spark-submit-parent-bc85c306-c1a1-4320-9c41-39389cb38fcd;1.0
+		confs: [default]
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:03.291 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	:: loading settings :: url = jar:file:/opt/spark-3.5.1-bin-hadoop3/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+	Ivy Default Cache set to: /tmp
+	The jars for the packages stored in: /tmp/jars
+	org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+	:: resolving dependencies :: org.apache.spark#spark-submit-parent-153a231f-dbc4-431e-9607-28daa996911b;1.0
+		confs: [default]
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:04.066 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8933823529411764 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:04.294 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+		found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+		found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+		found org.apache.kafka#kafka-clients;3.4.1 in central
+		found org.lz4#lz4-java;1.8.0 in central
+		found org.xerial.snappy#snappy-java;1.1.10.3 in central
+		found org.slf4j#slf4j-api;2.0.7 in central
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:04.296 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+		found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+		found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+		found org.apache.kafka#kafka-clients;3.4.1 in central
+		found org.lz4#lz4-java;1.8.0 in central
+		found org.xerial.snappy#snappy-java;1.1.10.3 in central
+		found org.slf4j#slf4j-api;2.0.7 in central
+		found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:05.069 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8280000000000001 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:05.298 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+		found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+		found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+		found commons-logging#commons-logging;1.1.3 in central
+		found com.google.code.findbugs#jsr305;3.0.0 in central
+		found org.apache.commons#commons-pool2;2.11.1 in central
+	:: resolution report :: resolve 2035ms :: artifacts dl 25ms
+		:: modules in use:
+		com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+		commons-logging#commons-logging;1.1.3 from central in [default]
+		org.apache.commons#commons-pool2;2.11.1 from central in [default]
+		org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+		org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+		org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+		org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+		org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+		org.lz4#lz4-java;1.8.0 from central in [default]
+		org.slf4j#slf4j-api;2.0.7 from central in [default]
+		org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+		---------------------------------------------------------------------
+		|                  |            modules            ||   artifacts   |
+		|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+		---------------------------------------------------------------------
+		|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+		---------------------------------------------------------------------
+	:: retrieving :: org.apache.spark#spark-submit-parent-bc85c306-c1a1-4320-9c41-39389cb38fcd
+		confs: [default]
+		0 artifacts copied, 11 already retrieved (0kB/25ms)
+	24/05/02 22:18:05 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:05.301 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+		found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+		found commons-logging#commons-logging;1.1.3 in central
+		found com.google.code.findbugs#jsr305;3.0.0 in central
+		found org.apache.commons#commons-pool2;2.11.1 in central
+	:: resolution report :: resolve 1748ms :: artifacts dl 29ms
+		:: modules in use:
+		com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+		commons-logging#commons-logging;1.1.3 from central in [default]
+		org.apache.commons#commons-pool2;2.11.1 from central in [default]
+		org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+		org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+		org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+		org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+		org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+		org.lz4#lz4-java;1.8.0 from central in [default]
+		org.slf4j#slf4j-api;2.0.7 from central in [default]
+		org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+		---------------------------------------------------------------------
+		|                  |            modules            ||   artifacts   |
+		|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+		---------------------------------------------------------------------
+		|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+		---------------------------------------------------------------------
+	:: retrieving :: org.apache.spark#spark-submit-parent-153a231f-dbc4-431e-9607-28daa996911b
+		confs: [default]
+		0 artifacts copied, 11 already retrieved (0kB/14ms)
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:06.074 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.836734693877551 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:07.097 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9514563106796117 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:07.334 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	Setting default log level to "WARN".
+	To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:07.335 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	Setting default log level to "WARN".
+	To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:08.114 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9457831325301205 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:09.129 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9882005899705015 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:10.167 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9721254355400697 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:11.180 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9464285714285714 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:12.209 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:13.251 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9578544061302682 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:14.296 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9592391304347826 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:15.298 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9563758389261745 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:15.511 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/02 22:18:15 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:16.313 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9723926380368098 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:17.322 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9389830508474577 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:18.357 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9857549857549857 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:19.364 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.981424148606811 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:20.370 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9730538922155688 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:21.374 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9531772575250836 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:22.382 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9841772151898733 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:23.387 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9736070381231672 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:24.526 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 1.0133689839572193 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:25.532 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9519519519519519 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:30.551 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.918918918918919 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:31.623 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9494047619047619 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:32.627 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8964497041420119 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:33.656 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8419243986254296 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:34.658 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.763157894736842 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:35.665 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8305084745762712 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:35.666 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/02 22:18:34 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:35.666 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/02 22:18:35 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:37.669 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/02 22:18:36 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:37.670 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	24/05/02 22:18:36 WARN AdminClientConfig: These configurations '[key.deserializer, value.deserializer, enable.auto.commit, max.poll.records, auto.offset.reset]' were supplied but are not used yet.
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:37.685 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7170418006430869 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:38.712 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8386925779947504 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:40.730 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.935483870967742 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:41.749 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8063492063492064 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:42.686 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	
+	[Stage 0:>                                                          (0 + 1) / 1]
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:42.704 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	
+	[Stage 0:>                                                          (0 + 1) / 1]
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:42.765 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9136212624584718 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:43.768 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9498327759197324 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:44.715 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	
+	                                                                                
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:44.727 +0800 o.a.d.p.t.a.AbstractTask:[169] -  -> 
+	
+	                                                                                
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:44.780 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9503105590062111 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:45.782 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9880597014925373 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:46.785 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7477744807121662 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:47.788 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8862275449101796 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:48.790 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9527777777777778 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:49.804 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9728915662650602 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:50.814 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9365558912386708 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:51.876 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.823076923076923 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:18:59.905 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8371428571428572 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:19:01.950 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7982020262321564 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:19:07.213 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7005988023952097 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:19:08.241 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7470588235294117 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:19:09.247 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8842729970326408 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:19:10.268 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.9576857824591964 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:19:11.272 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7379080645556291 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:19:12.274 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8219584569732938 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:19:38.398 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7034883720930233 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:19:48.608 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7306501547987616 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:19:53.666 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8730650154798761 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:19:55.746 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8042168674698795 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:19:58.777 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7948717948717949 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:20:59.129 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7134986225895317 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:30:38.221 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8857142857142857 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:30:50.350 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8968481375358166 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:30:52.400 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7248520710059172 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:30:55.454 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.764367816091954 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:30:58.500 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7596439169139466 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:30:59.524 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7412790697674418 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:31:00.538 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.8084427915809463 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:31:01.539 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7929169666216003 is over then the MaxCpuUsagePercentageThresholds 0.7
+[WI-0][TI-0] - [INFO] 2024-05-02 22:31:06.569 +0800 o.a.d.s.w.c.WorkerServerLoadProtection:[48] - Worker OverLoad: the TotalCpuUsedPercentage: 0.7070063694267517 is over then the MaxCpuUsagePercentageThresholds 0.7

@@ -1,0 +1,211 @@
+[INFO] 2024-05-03 10:30:16.237 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:30:16.239 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-03 10:30:16.239 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:30:16.242 +0800 - Begin to initialize task
+[INFO] 2024-05-03 10:30:16.242 +0800 - Set task startTime: 1714703416242
+[INFO] 2024-05-03 10:30:16.242 +0800 - Set task appId: 822_2476
+[INFO] 2024-05-03 10:30:16.243 +0800 - End initialize task {
+  "taskInstanceId" : 2476,
+  "taskName" : "persist article hash in db",
+  "firstSubmitTime" : 1714703416226,
+  "startTime" : 1714703416242,
+  "taskType" : "SQL",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240503/13471825071552/23/822/2476.log",
+  "processId" : 0,
+  "processDefineCode" : 13471825071552,
+  "processDefineVersion" : 23,
+  "processInstanceId" : 822,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"type\":\"POSTGRESQL\",\"datasource\":5,\"sql\":\"INSERT INTO article_hashes\\nVALUES (${article_data_hash})\",\"sqlType\":\"1\",\"preStatements\":[],\"postStatements\":[],\"displayRows\":10}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/gnews"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "persist article hash in db"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240503"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2476"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13474505680320"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240503103016"
+    },
+    "article_data_json" : {
+      "prop" : "article_data_json",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "{\"title\": \"Singapore diplomat accused of filming naked boy at Tokyo bathhouse - South China Morning Post\", \"datetime\": \"Thu, 02 May 2024 08:01:58 GMT\", \"description\": \"Singapore diplomat accused of filming naked boy at Tokyo bathhouse  South China Morning Post\", \"url\": \"https://news.google.com/rss/articles/CBMinQFodHRwczovL3d3dy5zY21wLmNvbS9uZXdzL2FzaWEvc291dGhlYXN0LWFzaWEvYXJ0aWNsZS8zMjYxMTc4L2phcGFuLXBvbGljZS1pbnZlc3RpZ2F0ZS1zaW5nYXBvcmUtZGlwbG9tYXQtYWxsZWdlZGx5LWZpbG1pbmctbmFrZWQtc2Nob29sYm95LXRva3lvLXB1YmxpYy1iYXRo0gGdAWh0dHBzOi8vYW1wLnNjbXAuY29tL25ld3MvYXNpYS9zb3V0aGVhc3QtYXNpYS9hcnRpY2xlLzMyNjExNzgvamFwYW4tcG9saWNlLWludmVzdGlnYXRlLXNpbmdhcG9yZS1kaXBsb21hdC1hbGxlZ2VkbHktZmlsbWluZy1uYWtlZC1zY2hvb2xib3ktdG9reW8tcHVibGljLWJhdGg?oc=5&hl=en-SG&gl=SG&ceid=SG:en\", \"context\": \"The Yomiuri newspaper reported that on February 27, the man used his smartphone to secretly film a 13-year-old secondary school student in the changing room of a public bath. The boy was naked.\\n\\nThe diplomat in question is a 55-year-old, who is a \\u201cformer\\u201d counsellor at the embassy, according to NHK. A counsellor is a diplomatic rank for officers serving overseas, such as in an embassy.\\n\\nA diplomat at the Singapore embassy in Tokyo was questioned by police after being suspected of filming a male teenager at a public bath, according to Japanese media reports on Thursday.\\n\\nStaff members at the public bath in Tokyo\\u2019s Minato ward reportedly called the police who, upon arriving, searched the diplomat\\u2019s phone and found \\u201cmultiple naked photos of male customers\\u201d, according to the Asahi newspaper.\\n\\nIt added that the diplomat refused to go to the police station but told officers he had taken such photos in other public baths.\\n\\nWhen asked to delete the photos from his phone, the diplomat \\u201cdeleted them on the spot\\u201d, reported the Japanese news outlet. He allegedly deleted 700 photos from his phone, which he told police he had taken in the six months leading up to the incident.\\n\\nThe Tokyo police are investigating potential violations of child pornography laws and are planning to ask Singapore\\u2019s Ministry of Foreign Affairs (MFA) to have the man turn himself in, said Asahi. Formal charges are also being considered.\\n\\nThe diplomat has been dismissed as a counsellor but is immune to arrest in accordance with the Vienna Convention on Diplomatic Relations, which states that diplomats cannot be arrested or detained in a country they have been dispatched to.\\n\\nWhen asked by the Asahi newspaper on Thursday, the embassy was reportedly unaware of the public bath incident. The embassy also told the paper the diplomat had \\u201ccompleted his assignment as of April 12\\u201d and has returned to Singapore.\\n\\nCNA has reached out to MFA for comment.\\n\\nAdditional reporting by Kyodo\", \"authors\": \"Unknown Author\", \"publisher_href\": \"https://www.scmp.com\"}"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "822"
+    },
+    "article_data_hash" : {
+      "prop" : "article_data_hash",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "c1890cda263e4d010c5292e71f03fbcca8e13aa3a5e703e6efcc2966dad482df"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240502"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "extract_gnews_articles_hashing_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13471825071552"
+    },
+    "article_hash_in_db" : {
+      "prop" : "article_hash_in_db",
+      "direct" : "IN",
+      "type" : "LIST",
+      "value" : "null"
+    }
+  },
+  "taskAppId" : "822_2476",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "resourceParametersHelper" : {
+    "resourceMap" : {
+      "DATASOURCE" : {
+        "5" : {
+          "resourceType" : "DATASOURCE",
+          "type" : "POSTGRESQL",
+          "connectionParams" : "{\"user\":\"root\",\"password\":\"******\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"gnews_article_hash_db\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/gnews_article_hash_db\",\"driverClassName\":\"org.postgresql.Driver\",\"validationQuery\":\"select version()\",\"other\":{\"password\":\"****\"}}",
+          "DATASOURCE" : null
+        }
+      }
+    }
+  },
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"article_data_json\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"{\\\"title\\\": \\\"Singapore diplomat accused of filming naked boy at Tokyo bathhouse - South China Morning Post\\\", \\\"datetime\\\": \\\"Thu, 02 May 2024 08:01:58 GMT\\\", \\\"description\\\": \\\"Singapore diplomat accused of filming naked boy at Tokyo bathhouse  South China Morning Post\\\", \\\"url\\\": \\\"https://news.google.com/rss/articles/CBMinQFodHRwczovL3d3dy5zY21wLmNvbS9uZXdzL2FzaWEvc291dGhlYXN0LWFzaWEvYXJ0aWNsZS8zMjYxMTc4L2phcGFuLXBvbGljZS1pbnZlc3RpZ2F0ZS1zaW5nYXBvcmUtZGlwbG9tYXQtYWxsZWdlZGx5LWZpbG1pbmctbmFrZWQtc2Nob29sYm95LXRva3lvLXB1YmxpYy1iYXRo0gGdAWh0dHBzOi8vYW1wLnNjbXAuY29tL25ld3MvYXNpYS9zb3V0aGVhc3QtYXNpYS9hcnRpY2xlLzMyNjExNzgvamFwYW4tcG9saWNlLWludmVzdGlnYXRlLXNpbmdhcG9yZS1kaXBsb21hdC1hbGxlZ2VkbHktZmlsbWluZy1uYWtlZC1zY2hvb2xib3ktdG9reW8tcHVibGljLWJhdGg?oc=5&hl=en-SG&gl=SG&ceid=SG:en\\\", \\\"context\\\": \\\"The Yomiuri newspaper reported that on February 27, the man used his smartphone to secretly film a 13-year-old secondary school student in the changing room of a public bath. The boy was naked.\\\\n\\\\nThe diplomat in question is a 55-year-old, who is a \\\\u201cformer\\\\u201d counsellor at the embassy, according to NHK. A counsellor is a diplomatic rank for officers serving overseas, such as in an embassy.\\\\n\\\\nA diplomat at the Singapore embassy in Tokyo was questioned by police after being suspected of filming a male teenager at a public bath, according to Japanese media reports on Thursday.\\\\n\\\\nStaff members at the public bath in Tokyo\\\\u2019s Minato ward reportedly called the police who, upon arriving, searched the diplomat\\\\u2019s phone and found \\\\u201cmultiple naked photos of male customers\\\\u201d, according to the Asahi newspaper.\\\\n\\\\nIt added that the diplomat refused to go to the police station but told officers he had taken such photos in other public baths.\\\\n\\\\nWhen asked to delete the photos from his phone, the diplomat \\\\u201cdeleted them on the spot\\\\u201d, reported the Japanese news outlet. He allegedly deleted 700 photos from his phone, which he told police he had taken in the six months leading up to the incident.\\\\n\\\\nThe Tokyo police are investigating potential violations of child pornography laws and are planning to ask Singapore\\\\u2019s Ministry of Foreign Affairs (MFA) to have the man turn himself in, said Asahi. Formal charges are also being considered.\\\\n\\\\nThe diplomat has been dismissed as a counsellor but is immune to arrest in accordance with the Vienna Convention on Diplomatic Relations, which states that diplomats cannot be arrested or detained in a country they have been dispatched to.\\\\n\\\\nWhen asked by the Asahi newspaper on Thursday, the embassy was reportedly unaware of the public bath incident. The embassy also told the paper the diplomat had \\\\u201ccompleted his assignment as of April 12\\\\u201d and has returned to Singapore.\\\\n\\\\nCNA has reached out to MFA for comment.\\\\n\\\\nAdditional reporting by Kyodo\\\", \\\"authors\\\": \\\"Unknown Author\\\", \\\"publisher_href\\\": \\\"https://www.scmp.com\\\"}\"},{\"prop\":\"article_data_hash\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"c1890cda263e4d010c5292e71f03fbcca8e13aa3a5e703e6efcc2966dad482df\"},{\"prop\":\"article_hash_in_db\",\"direct\":\"IN\",\"type\":\"LIST\",\"value\":\"null\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-03 10:30:16.243 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:30:16.244 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-03 10:30:16.244 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:30:16.254 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-03 10:30:16.255 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-03 10:30:16.257 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_23/822/2476 check successfully
+[INFO] 2024-05-03 10:30:16.258 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.sql.SqlTaskChannel successfully
+[INFO] 2024-05-03 10:30:16.258 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-03 10:30:16.258 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-03 10:30:16.259 +0800 - Initialize sql task parameter {
+  "localParams" : [ ],
+  "varPool" : null,
+  "type" : "POSTGRESQL",
+  "datasource" : 5,
+  "sql" : "INSERT INTO article_hashes\nVALUES (${article_data_hash})",
+  "sqlType" : 1,
+  "sendEmail" : null,
+  "displayRows" : 10,
+  "udfs" : null,
+  "showType" : null,
+  "connParams" : null,
+  "preStatements" : [ ],
+  "postStatements" : [ ],
+  "groupId" : 0,
+  "title" : null,
+  "limit" : 0
+}
+[INFO] 2024-05-03 10:30:16.260 +0800 - Task plugin instance: SQL create successfully
+[INFO] 2024-05-03 10:30:16.260 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-03 10:30:16.260 +0800 - Set taskVarPool: [{"prop":"article_data_json","direct":"IN","type":"VARCHAR","value":"{\"title\": \"Singapore diplomat accused of filming naked boy at Tokyo bathhouse - South China Morning Post\", \"datetime\": \"Thu, 02 May 2024 08:01:58 GMT\", \"description\": \"Singapore diplomat accused of filming naked boy at Tokyo bathhouse  South China Morning Post\", \"url\": \"https://news.google.com/rss/articles/CBMinQFodHRwczovL3d3dy5zY21wLmNvbS9uZXdzL2FzaWEvc291dGhlYXN0LWFzaWEvYXJ0aWNsZS8zMjYxMTc4L2phcGFuLXBvbGljZS1pbnZlc3RpZ2F0ZS1zaW5nYXBvcmUtZGlwbG9tYXQtYWxsZWdlZGx5LWZpbG1pbmctbmFrZWQtc2Nob29sYm95LXRva3lvLXB1YmxpYy1iYXRo0gGdAWh0dHBzOi8vYW1wLnNjbXAuY29tL25ld3MvYXNpYS9zb3V0aGVhc3QtYXNpYS9hcnRpY2xlLzMyNjExNzgvamFwYW4tcG9saWNlLWludmVzdGlnYXRlLXNpbmdhcG9yZS1kaXBsb21hdC1hbGxlZ2VkbHktZmlsbWluZy1uYWtlZC1zY2hvb2xib3ktdG9reW8tcHVibGljLWJhdGg?oc=5&hl=en-SG&gl=SG&ceid=SG:en\", \"context\": \"The Yomiuri newspaper reported that on February 27, the man used his smartphone to secretly film a 13-year-old secondary school student in the changing room of a public bath. The boy was naked.\\n\\nThe diplomat in question is a 55-year-old, who is a \\u201cformer\\u201d counsellor at the embassy, according to NHK. A counsellor is a diplomatic rank for officers serving overseas, such as in an embassy.\\n\\nA diplomat at the Singapore embassy in Tokyo was questioned by police after being suspected of filming a male teenager at a public bath, according to Japanese media reports on Thursday.\\n\\nStaff members at the public bath in Tokyo\\u2019s Minato ward reportedly called the police who, upon arriving, searched the diplomat\\u2019s phone and found \\u201cmultiple naked photos of male customers\\u201d, according to the Asahi newspaper.\\n\\nIt added that the diplomat refused to go to the police station but told officers he had taken such photos in other public baths.\\n\\nWhen asked to delete the photos from his phone, the diplomat \\u201cdeleted them on the spot\\u201d, reported the Japanese news outlet. He allegedly deleted 700 photos from his phone, which he told police he had taken in the six months leading up to the incident.\\n\\nThe Tokyo police are investigating potential violations of child pornography laws and are planning to ask Singapore\\u2019s Ministry of Foreign Affairs (MFA) to have the man turn himself in, said Asahi. Formal charges are also being considered.\\n\\nThe diplomat has been dismissed as a counsellor but is immune to arrest in accordance with the Vienna Convention on Diplomatic Relations, which states that diplomats cannot be arrested or detained in a country they have been dispatched to.\\n\\nWhen asked by the Asahi newspaper on Thursday, the embassy was reportedly unaware of the public bath incident. The embassy also told the paper the diplomat had \\u201ccompleted his assignment as of April 12\\u201d and has returned to Singapore.\\n\\nCNA has reached out to MFA for comment.\\n\\nAdditional reporting by Kyodo\", \"authors\": \"Unknown Author\", \"publisher_href\": \"https://www.scmp.com\"}"},{"prop":"article_data_hash","direct":"IN","type":"VARCHAR","value":"c1890cda263e4d010c5292e71f03fbcca8e13aa3a5e703e6efcc2966dad482df"},{"prop":"article_hash_in_db","direct":"IN","type":"LIST","value":"null"}] successfully
+[INFO] 2024-05-03 10:30:16.260 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:30:16.260 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-03 10:30:16.261 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:30:16.261 +0800 - Full sql parameters: SqlParameters{type='POSTGRESQL', datasource=5, sql='INSERT INTO article_hashes
+VALUES (${article_data_hash})', sqlType=1, sendEmail=null, displayRows=10, limit=0, udfs='null', showType='null', connParams='null', groupId='0', title='null', preStatements=[], postStatements=[]}
+[INFO] 2024-05-03 10:30:16.261 +0800 - sql type : POSTGRESQL, datasource : 5, sql : INSERT INTO article_hashes
+VALUES (${article_data_hash}) , localParams : [],udfs : null,showType : null,connParams : null,varPool : [Property{prop='article_data_json', direct=IN, type=VARCHAR, value='{"title": "Singapore diplomat accused of filming naked boy at Tokyo bathhouse - South China Morning Post", "datetime": "Thu, 02 May 2024 08:01:58 GMT", "description": "Singapore diplomat accused of filming naked boy at Tokyo bathhouse  South China Morning Post", "url": "https://news.google.com/rss/articles/CBMinQFodHRwczovL3d3dy5zY21wLmNvbS9uZXdzL2FzaWEvc291dGhlYXN0LWFzaWEvYXJ0aWNsZS8zMjYxMTc4L2phcGFuLXBvbGljZS1pbnZlc3RpZ2F0ZS1zaW5nYXBvcmUtZGlwbG9tYXQtYWxsZWdlZGx5LWZpbG1pbmctbmFrZWQtc2Nob29sYm95LXRva3lvLXB1YmxpYy1iYXRo0gGdAWh0dHBzOi8vYW1wLnNjbXAuY29tL25ld3MvYXNpYS9zb3V0aGVhc3QtYXNpYS9hcnRpY2xlLzMyNjExNzgvamFwYW4tcG9saWNlLWludmVzdGlnYXRlLXNpbmdhcG9yZS1kaXBsb21hdC1hbGxlZ2VkbHktZmlsbWluZy1uYWtlZC1zY2hvb2xib3ktdG9reW8tcHVibGljLWJhdGg?oc=5&hl=en-SG&gl=SG&ceid=SG:en", "context": "The Yomiuri newspaper reported that on February 27, the man used his smartphone to secretly film a 13-year-old secondary school student in the changing room of a public bath. The boy was naked.\n\nThe diplomat in question is a 55-year-old, who is a \u201cformer\u201d counsellor at the embassy, according to NHK. A counsellor is a diplomatic rank for officers serving overseas, such as in an embassy.\n\nA diplomat at the Singapore embassy in Tokyo was questioned by police after being suspected of filming a male teenager at a public bath, according to Japanese media reports on Thursday.\n\nStaff members at the public bath in Tokyo\u2019s Minato ward reportedly called the police who, upon arriving, searched the diplomat\u2019s phone and found \u201cmultiple naked photos of male customers\u201d, according to the Asahi newspaper.\n\nIt added that the diplomat refused to go to the police station but told officers he had taken such photos in other public baths.\n\nWhen asked to delete the photos from his phone, the diplomat \u201cdeleted them on the spot\u201d, reported the Japanese news outlet. He allegedly deleted 700 photos from his phone, which he told police he had taken in the six months leading up to the incident.\n\nThe Tokyo police are investigating potential violations of child pornography laws and are planning to ask Singapore\u2019s Ministry of Foreign Affairs (MFA) to have the man turn himself in, said Asahi. Formal charges are also being considered.\n\nThe diplomat has been dismissed as a counsellor but is immune to arrest in accordance with the Vienna Convention on Diplomatic Relations, which states that diplomats cannot be arrested or detained in a country they have been dispatched to.\n\nWhen asked by the Asahi newspaper on Thursday, the embassy was reportedly unaware of the public bath incident. The embassy also told the paper the diplomat had \u201ccompleted his assignment as of April 12\u201d and has returned to Singapore.\n\nCNA has reached out to MFA for comment.\n\nAdditional reporting by Kyodo", "authors": "Unknown Author", "publisher_href": "https://www.scmp.com"}'}, Property{prop='article_data_hash', direct=IN, type=VARCHAR, value='c1890cda263e4d010c5292e71f03fbcca8e13aa3a5e703e6efcc2966dad482df'}, Property{prop='article_hash_in_db', direct=IN, type=LIST, value='null'}] ,query max result limit  0
+[INFO] 2024-05-03 10:30:16.262 +0800 - setSqlParamsMap: Property with paramName: article_data_hash put in sqlParamsMap of content INSERT INTO article_hashes
+VALUES (${article_data_hash}) successfully.
+[INFO] 2024-05-03 10:30:16.263 +0800 - after replace sql , preparing : INSERT INTO article_hashes
+VALUES (?)
+[INFO] 2024-05-03 10:30:16.263 +0800 - Sql Params are replaced sql , parameters:c1890cda263e4d010c5292e71f03fbcca8e13aa3a5e703e6efcc2966dad482df(VARCHAR)
+[INFO] 2024-05-03 10:30:16.263 +0800 - can't find udf function resource
+[WARN] 2024-05-03 10:30:16.264 +0800 - Connect strings must start with jdbc:snowflake://
+[INFO] 2024-05-03 10:30:16.286 +0800 - prepare statement replace sql : INSERT INTO article_hashes
+VALUES (?), sql parameters : {1=Property{prop='article_data_hash', direct=IN, type=VARCHAR, value='c1890cda263e4d010c5292e71f03fbcca8e13aa3a5e703e6efcc2966dad482df'}}
+[INFO] 2024-05-03 10:30:16.307 +0800 - main statement execute update result: 1, for sql: INSERT INTO article_hashes
+VALUES (?)
+[INFO] 2024-05-03 10:30:16.309 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:30:16.310 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-03 10:30:16.311 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:30:16.312 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-03 10:30:16.316 +0800 - Send task execute status: SUCCESS to master : 172.18.1.1:1234
+[INFO] 2024-05-03 10:30:16.317 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-03 10:30:16.317 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_23/822/2476
+[INFO] 2024-05-03 10:30:16.318 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_23/822/2476
+[INFO] 2024-05-03 10:30:16.318 +0800 - FINALIZE_SESSION

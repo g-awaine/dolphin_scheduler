@@ -1,0 +1,203 @@
+[INFO] 2024-05-03 10:58:48.926 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:58:48.930 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-03 10:58:48.930 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:58:48.930 +0800 - Begin to initialize task
+[INFO] 2024-05-03 10:58:48.930 +0800 - Set task startTime: 1714705128930
+[INFO] 2024-05-03 10:58:48.930 +0800 - Set task appId: 827_2516
+[INFO] 2024-05-03 10:58:48.931 +0800 - End initialize task {
+  "taskInstanceId" : 2516,
+  "taskName" : "store article data in intake folder",
+  "firstSubmitTime" : 1714705128915,
+  "startTime" : 1714705128930,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.12:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240503/13471825071552/27/827/2516.log",
+  "processId" : 0,
+  "processDefineCode" : 13471825071552,
+  "processDefineVersion" : 27,
+  "processInstanceId" : 827,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"\\nprint(${article_data})\\nwith open(\\\"{GNEWS_HOME}/in/${system.workflow.instance.id}-${system.datetime}.json\\\", \\\"w\\\") as fp:\\n    json.dump(${article_data} , fp, indent=4)\",\"resourceList\":[]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/gnews"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "store article data in intake folder"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240503"
+    },
+    "article_data" : {
+      "prop" : "article_data",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "{'title': 'Singapore diplomat accused of filming naked boy at Tokyo bathhouse - South China Morning Post', 'datetime': 'Thu, 02 May 2024 08:01:58 GMT', 'description': 'Singapore diplomat accused of filming naked boy at Tokyo bathhouse  South China Morning Post', 'url': 'https://news.google.com/rss/articles/CBMinQFodHRwczovL3d3dy5zY21wLmNvbS9uZXdzL2FzaWEvc291dGhlYXN0LWFzaWEvYXJ0aWNsZS8zMjYxMTc4L2phcGFuLXBvbGljZS1pbnZlc3RpZ2F0ZS1zaW5nYXBvcmUtZGlwbG9tYXQtYWxsZWdlZGx5LWZpbG1pbmctbmFrZWQtc2Nob29sYm95LXRva3lvLXB1YmxpYy1iYXRo0gGdAWh0dHBzOi8vYW1wLnNjbXAuY29tL25ld3MvYXNpYS9zb3V0aGVhc3QtYXNpYS9hcnRpY2xlLzMyNjExNzgvamFwYW4tcG9saWNlLWludmVzdGlnYXRlLXNpbmdhcG9yZS1kaXBsb21hdC1hbGxlZ2VkbHktZmlsbWluZy1uYWtlZC1zY2hvb2xib3ktdG9reW8tcHVibGljLWJhdGg?oc=5&hl=en-SG&gl=SG&ceid=SG:en', 'context': 'The Yomiuri newspaper reported that on February 27, the man used his smartphone to secretly film a 13-year-old secondary school student in the changing room of a public bath. The boy was naked.\\n\\nThe diplomat in question is a 55-year-old, who is a “former” counsellor at the embassy, according to NHK. A counsellor is a diplomatic rank for officers serving overseas, such as in an embassy.\\n\\nA diplomat at the Singapore embassy in Tokyo was questioned by police after being suspected of filming a male teenager at a public bath, according to Japanese media reports on Thursday.\\n\\nStaff members at the public bath in Tokyo’s Minato ward reportedly called the police who, upon arriving, searched the diplomat’s phone and found “multiple naked photos of male customers”, according to the Asahi newspaper.\\n\\nIt added that the diplomat refused to go to the police station but told officers he had taken such photos in other public baths.\\n\\nWhen asked to delete the photos from his phone, the diplomat “deleted them on the spot”, reported the Japanese news outlet. He allegedly deleted 700 photos from his phone, which he told police he had taken in the six months leading up to the incident.\\n\\nThe Tokyo police are investigating potential violations of child pornography laws and are planning to ask Singapore’s Ministry of Foreign Affairs (MFA) to have the man turn himself in, said Asahi. Formal charges are also being considered.\\n\\nThe diplomat has been dismissed as a counsellor but is immune to arrest in accordance with the Vienna Convention on Diplomatic Relations, which states that diplomats cannot be arrested or detained in a country they have been dispatched to.\\n\\nWhen asked by the Asahi newspaper on Thursday, the embassy was reportedly unaware of the public bath incident. The embassy also told the paper the diplomat had “completed his assignment as of April 12” and has returned to Singapore.\\n\\nCNA has reached out to MFA for comment.\\n\\nAdditional reporting by Kyodo', 'authors': 'Unknown Author', 'publisher_href': 'https://www.scmp.com'}"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "2516"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13475012246208"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240503105848"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "827"
+    },
+    "article_data_hash" : {
+      "prop" : "article_data_hash",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "c1890cda263e4d010c5292e71f03fbcca8e13aa3a5e703e6efcc2966dad482df"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240502"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "extract_gnews_articles_hashing_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13471825071552"
+    },
+    "article_hash_in_db" : {
+      "prop" : "article_hash_in_db",
+      "direct" : "IN",
+      "type" : "LIST",
+      "value" : "null"
+    }
+  },
+  "taskAppId" : "827_2516",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"article_data_hash\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"c1890cda263e4d010c5292e71f03fbcca8e13aa3a5e703e6efcc2966dad482df\"},{\"prop\":\"article_data\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"{'title': 'Singapore diplomat accused of filming naked boy at Tokyo bathhouse - South China Morning Post', 'datetime': 'Thu, 02 May 2024 08:01:58 GMT', 'description': 'Singapore diplomat accused of filming naked boy at Tokyo bathhouse  South China Morning Post', 'url': 'https://news.google.com/rss/articles/CBMinQFodHRwczovL3d3dy5zY21wLmNvbS9uZXdzL2FzaWEvc291dGhlYXN0LWFzaWEvYXJ0aWNsZS8zMjYxMTc4L2phcGFuLXBvbGljZS1pbnZlc3RpZ2F0ZS1zaW5nYXBvcmUtZGlwbG9tYXQtYWxsZWdlZGx5LWZpbG1pbmctbmFrZWQtc2Nob29sYm95LXRva3lvLXB1YmxpYy1iYXRo0gGdAWh0dHBzOi8vYW1wLnNjbXAuY29tL25ld3MvYXNpYS9zb3V0aGVhc3QtYXNpYS9hcnRpY2xlLzMyNjExNzgvamFwYW4tcG9saWNlLWludmVzdGlnYXRlLXNpbmdhcG9yZS1kaXBsb21hdC1hbGxlZ2VkbHktZmlsbWluZy1uYWtlZC1zY2hvb2xib3ktdG9reW8tcHVibGljLWJhdGg?oc=5&hl=en-SG&gl=SG&ceid=SG:en', 'context': 'The Yomiuri newspaper reported that on February 27, the man used his smartphone to secretly film a 13-year-old secondary school student in the changing room of a public bath. The boy was naked.\\\\n\\\\nThe diplomat in question is a 55-year-old, who is a “former” counsellor at the embassy, according to NHK. A counsellor is a diplomatic rank for officers serving overseas, such as in an embassy.\\\\n\\\\nA diplomat at the Singapore embassy in Tokyo was questioned by police after being suspected of filming a male teenager at a public bath, according to Japanese media reports on Thursday.\\\\n\\\\nStaff members at the public bath in Tokyo’s Minato ward reportedly called the police who, upon arriving, searched the diplomat’s phone and found “multiple naked photos of male customers”, according to the Asahi newspaper.\\\\n\\\\nIt added that the diplomat refused to go to the police station but told officers he had taken such photos in other public baths.\\\\n\\\\nWhen asked to delete the photos from his phone, the diplomat “deleted them on the spot”, reported the Japanese news outlet. He allegedly deleted 700 photos from his phone, which he told police he had taken in the six months leading up to the incident.\\\\n\\\\nThe Tokyo police are investigating potential violations of child pornography laws and are planning to ask Singapore’s Ministry of Foreign Affairs (MFA) to have the man turn himself in, said Asahi. Formal charges are also being considered.\\\\n\\\\nThe diplomat has been dismissed as a counsellor but is immune to arrest in accordance with the Vienna Convention on Diplomatic Relations, which states that diplomats cannot be arrested or detained in a country they have been dispatched to.\\\\n\\\\nWhen asked by the Asahi newspaper on Thursday, the embassy was reportedly unaware of the public bath incident. The embassy also told the paper the diplomat had “completed his assignment as of April 12” and has returned to Singapore.\\\\n\\\\nCNA has reached out to MFA for comment.\\\\n\\\\nAdditional reporting by Kyodo', 'authors': 'Unknown Author', 'publisher_href': 'https://www.scmp.com'}\"},{\"prop\":\"article_hash_in_db\",\"direct\":\"IN\",\"type\":\"LIST\",\"value\":\"null\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-03 10:58:48.933 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:58:48.934 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-03 10:58:48.934 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:58:48.937 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-03 10:58:48.938 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-03 10:58:48.938 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_27/827/2516 check successfully
+[INFO] 2024-05-03 10:58:48.938 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[INFO] 2024-05-03 10:58:48.938 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-03 10:58:48.938 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-03 10:58:48.938 +0800 - Task plugin instance: PYTHON create successfully
+[INFO] 2024-05-03 10:58:48.939 +0800 - Initialize python task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "\nprint(${article_data})\nwith open(\"{GNEWS_HOME}/in/${system.workflow.instance.id}-${system.datetime}.json\", \"w\") as fp:\n    json.dump(${article_data} , fp, indent=4)",
+  "resourceList" : [ ]
+}
+[INFO] 2024-05-03 10:58:48.939 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-03 10:58:48.939 +0800 - Set taskVarPool: [{"prop":"article_data_hash","direct":"IN","type":"VARCHAR","value":"c1890cda263e4d010c5292e71f03fbcca8e13aa3a5e703e6efcc2966dad482df"},{"prop":"article_data","direct":"IN","type":"VARCHAR","value":"{'title': 'Singapore diplomat accused of filming naked boy at Tokyo bathhouse - South China Morning Post', 'datetime': 'Thu, 02 May 2024 08:01:58 GMT', 'description': 'Singapore diplomat accused of filming naked boy at Tokyo bathhouse  South China Morning Post', 'url': 'https://news.google.com/rss/articles/CBMinQFodHRwczovL3d3dy5zY21wLmNvbS9uZXdzL2FzaWEvc291dGhlYXN0LWFzaWEvYXJ0aWNsZS8zMjYxMTc4L2phcGFuLXBvbGljZS1pbnZlc3RpZ2F0ZS1zaW5nYXBvcmUtZGlwbG9tYXQtYWxsZWdlZGx5LWZpbG1pbmctbmFrZWQtc2Nob29sYm95LXRva3lvLXB1YmxpYy1iYXRo0gGdAWh0dHBzOi8vYW1wLnNjbXAuY29tL25ld3MvYXNpYS9zb3V0aGVhc3QtYXNpYS9hcnRpY2xlLzMyNjExNzgvamFwYW4tcG9saWNlLWludmVzdGlnYXRlLXNpbmdhcG9yZS1kaXBsb21hdC1hbGxlZ2VkbHktZmlsbWluZy1uYWtlZC1zY2hvb2xib3ktdG9reW8tcHVibGljLWJhdGg?oc=5&hl=en-SG&gl=SG&ceid=SG:en', 'context': 'The Yomiuri newspaper reported that on February 27, the man used his smartphone to secretly film a 13-year-old secondary school student in the changing room of a public bath. The boy was naked.\\n\\nThe diplomat in question is a 55-year-old, who is a “former” counsellor at the embassy, according to NHK. A counsellor is a diplomatic rank for officers serving overseas, such as in an embassy.\\n\\nA diplomat at the Singapore embassy in Tokyo was questioned by police after being suspected of filming a male teenager at a public bath, according to Japanese media reports on Thursday.\\n\\nStaff members at the public bath in Tokyo’s Minato ward reportedly called the police who, upon arriving, searched the diplomat’s phone and found “multiple naked photos of male customers”, according to the Asahi newspaper.\\n\\nIt added that the diplomat refused to go to the police station but told officers he had taken such photos in other public baths.\\n\\nWhen asked to delete the photos from his phone, the diplomat “deleted them on the spot”, reported the Japanese news outlet. He allegedly deleted 700 photos from his phone, which he told police he had taken in the six months leading up to the incident.\\n\\nThe Tokyo police are investigating potential violations of child pornography laws and are planning to ask Singapore’s Ministry of Foreign Affairs (MFA) to have the man turn himself in, said Asahi. Formal charges are also being considered.\\n\\nThe diplomat has been dismissed as a counsellor but is immune to arrest in accordance with the Vienna Convention on Diplomatic Relations, which states that diplomats cannot be arrested or detained in a country they have been dispatched to.\\n\\nWhen asked by the Asahi newspaper on Thursday, the embassy was reportedly unaware of the public bath incident. The embassy also told the paper the diplomat had “completed his assignment as of April 12” and has returned to Singapore.\\n\\nCNA has reached out to MFA for comment.\\n\\nAdditional reporting by Kyodo', 'authors': 'Unknown Author', 'publisher_href': 'https://www.scmp.com'}"},{"prop":"article_hash_in_db","direct":"IN","type":"LIST","value":"null"}] successfully
+[INFO] 2024-05-03 10:58:48.939 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:58:48.939 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-03 10:58:48.939 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:58:48.939 +0800 - raw python script : 
+print(${article_data})
+with open("{GNEWS_HOME}/in/${system.workflow.instance.id}-${system.datetime}.json", "w") as fp:
+    json.dump(${article_data} , fp, indent=4)
+[INFO] 2024-05-03 10:58:48.940 +0800 - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_27/827/2516
+[INFO] 2024-05-03 10:58:48.940 +0800 - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_27/827/2516/py_827_2516.py
+[INFO] 2024-05-03 10:58:48.940 +0800 - #-*- encoding=utf8 -*-
+
+
+print({'title': 'Singapore diplomat accused of filming naked boy at Tokyo bathhouse - South China Morning Post', 'datetime': 'Thu, 02 May 2024 08:01:58 GMT', 'description': 'Singapore diplomat accused of filming naked boy at Tokyo bathhouse  South China Morning Post', 'url': 'https://news.google.com/rss/articles/CBMinQFodHRwczovL3d3dy5zY21wLmNvbS9uZXdzL2FzaWEvc291dGhlYXN0LWFzaWEvYXJ0aWNsZS8zMjYxMTc4L2phcGFuLXBvbGljZS1pbnZlc3RpZ2F0ZS1zaW5nYXBvcmUtZGlwbG9tYXQtYWxsZWdlZGx5LWZpbG1pbmctbmFrZWQtc2Nob29sYm95LXRva3lvLXB1YmxpYy1iYXRo0gGdAWh0dHBzOi8vYW1wLnNjbXAuY29tL25ld3MvYXNpYS9zb3V0aGVhc3QtYXNpYS9hcnRpY2xlLzMyNjExNzgvamFwYW4tcG9saWNlLWludmVzdGlnYXRlLXNpbmdhcG9yZS1kaXBsb21hdC1hbGxlZ2VkbHktZmlsbWluZy1uYWtlZC1zY2hvb2xib3ktdG9reW8tcHVibGljLWJhdGg?oc=5&hl=en-SG&gl=SG&ceid=SG:en', 'context': 'The Yomiuri newspaper reported that on February 27, the man used his smartphone to secretly film a 13-year-old secondary school student in the changing room of a public bath. The boy was naked.\n\nThe diplomat in question is a 55-year-old, who is a “former” counsellor at the embassy, according to NHK. A counsellor is a diplomatic rank for officers serving overseas, such as in an embassy.\n\nA diplomat at the Singapore embassy in Tokyo was questioned by police after being suspected of filming a male teenager at a public bath, according to Japanese media reports on Thursday.\n\nStaff members at the public bath in Tokyo’s Minato ward reportedly called the police who, upon arriving, searched the diplomat’s phone and found “multiple naked photos of male customers”, according to the Asahi newspaper.\n\nIt added that the diplomat refused to go to the police station but told officers he had taken such photos in other public baths.\n\nWhen asked to delete the photos from his phone, the diplomat “deleted them on the spot”, reported the Japanese news outlet. He allegedly deleted 700 photos from his phone, which he told police he had taken in the six months leading up to the incident.\n\nThe Tokyo police are investigating potential violations of child pornography laws and are planning to ask Singapore’s Ministry of Foreign Affairs (MFA) to have the man turn himself in, said Asahi. Formal charges are also being considered.\n\nThe diplomat has been dismissed as a counsellor but is immune to arrest in accordance with the Vienna Convention on Diplomatic Relations, which states that diplomats cannot be arrested or detained in a country they have been dispatched to.\n\nWhen asked by the Asahi newspaper on Thursday, the embassy was reportedly unaware of the public bath incident. The embassy also told the paper the diplomat had “completed his assignment as of April 12” and has returned to Singapore.\n\nCNA has reached out to MFA for comment.\n\nAdditional reporting by Kyodo', 'authors': 'Unknown Author', 'publisher_href': 'https://www.scmp.com'})
+with open("{GNEWS_HOME}/in/827-20240503105848.json", "w") as fp:
+    json.dump({'title': 'Singapore diplomat accused of filming naked boy at Tokyo bathhouse - South China Morning Post', 'datetime': 'Thu, 02 May 2024 08:01:58 GMT', 'description': 'Singapore diplomat accused of filming naked boy at Tokyo bathhouse  South China Morning Post', 'url': 'https://news.google.com/rss/articles/CBMinQFodHRwczovL3d3dy5zY21wLmNvbS9uZXdzL2FzaWEvc291dGhlYXN0LWFzaWEvYXJ0aWNsZS8zMjYxMTc4L2phcGFuLXBvbGljZS1pbnZlc3RpZ2F0ZS1zaW5nYXBvcmUtZGlwbG9tYXQtYWxsZWdlZGx5LWZpbG1pbmctbmFrZWQtc2Nob29sYm95LXRva3lvLXB1YmxpYy1iYXRo0gGdAWh0dHBzOi8vYW1wLnNjbXAuY29tL25ld3MvYXNpYS9zb3V0aGVhc3QtYXNpYS9hcnRpY2xlLzMyNjExNzgvamFwYW4tcG9saWNlLWludmVzdGlnYXRlLXNpbmdhcG9yZS1kaXBsb21hdC1hbGxlZ2VkbHktZmlsbWluZy1uYWtlZC1zY2hvb2xib3ktdG9reW8tcHVibGljLWJhdGg?oc=5&hl=en-SG&gl=SG&ceid=SG:en', 'context': 'The Yomiuri newspaper reported that on February 27, the man used his smartphone to secretly film a 13-year-old secondary school student in the changing room of a public bath. The boy was naked.\n\nThe diplomat in question is a 55-year-old, who is a “former” counsellor at the embassy, according to NHK. A counsellor is a diplomatic rank for officers serving overseas, such as in an embassy.\n\nA diplomat at the Singapore embassy in Tokyo was questioned by police after being suspected of filming a male teenager at a public bath, according to Japanese media reports on Thursday.\n\nStaff members at the public bath in Tokyo’s Minato ward reportedly called the police who, upon arriving, searched the diplomat’s phone and found “multiple naked photos of male customers”, according to the Asahi newspaper.\n\nIt added that the diplomat refused to go to the police station but told officers he had taken such photos in other public baths.\n\nWhen asked to delete the photos from his phone, the diplomat “deleted them on the spot”, reported the Japanese news outlet. He allegedly deleted 700 photos from his phone, which he told police he had taken in the six months leading up to the incident.\n\nThe Tokyo police are investigating potential violations of child pornography laws and are planning to ask Singapore’s Ministry of Foreign Affairs (MFA) to have the man turn himself in, said Asahi. Formal charges are also being considered.\n\nThe diplomat has been dismissed as a counsellor but is immune to arrest in accordance with the Vienna Convention on Diplomatic Relations, which states that diplomats cannot be arrested or detained in a country they have been dispatched to.\n\nWhen asked by the Asahi newspaper on Thursday, the embassy was reportedly unaware of the public bath incident. The embassy also told the paper the diplomat had “completed his assignment as of April 12” and has returned to Singapore.\n\nCNA has reached out to MFA for comment.\n\nAdditional reporting by Kyodo', 'authors': 'Unknown Author', 'publisher_href': 'https://www.scmp.com'} , fp, indent=4)
+[INFO] 2024-05-03 10:58:48.951 +0800 - Final Shell file is: 
+[INFO] 2024-05-03 10:58:48.951 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-03 10:58:48.951 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_27/827/2516/py_827_2516.py
+[INFO] 2024-05-03 10:58:48.951 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-03 10:58:48.951 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_27/827/2516/827_2516.sh
+[INFO] 2024-05-03 10:58:48.962 +0800 - process start, process id is: 2651
+[INFO] 2024-05-03 10:58:49.972 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	{'title': 'Singapore diplomat accused of filming naked boy at Tokyo bathhouse - South China Morning Post', 'datetime': 'Thu, 02 May 2024 08:01:58 GMT', 'description': 'Singapore diplomat accused of filming naked boy at Tokyo bathhouse  South China Morning Post', 'url': 'https://news.google.com/rss/articles/CBMinQFodHRwczovL3d3dy5zY21wLmNvbS9uZXdzL2FzaWEvc291dGhlYXN0LWFzaWEvYXJ0aWNsZS8zMjYxMTc4L2phcGFuLXBvbGljZS1pbnZlc3RpZ2F0ZS1zaW5nYXBvcmUtZGlwbG9tYXQtYWxsZWdlZGx5LWZpbG1pbmctbmFrZWQtc2Nob29sYm95LXRva3lvLXB1YmxpYy1iYXRo0gGdAWh0dHBzOi8vYW1wLnNjbXAuY29tL25ld3MvYXNpYS9zb3V0aGVhc3QtYXNpYS9hcnRpY2xlLzMyNjExNzgvamFwYW4tcG9saWNlLWludmVzdGlnYXRlLXNpbmdhcG9yZS1kaXBsb21hdC1hbGxlZ2VkbHktZmlsbWluZy1uYWtlZC1zY2hvb2xib3ktdG9reW8tcHVibGljLWJhdGg?oc=5&hl=en-SG&gl=SG&ceid=SG:en', 'context': 'The Yomiuri newspaper reported that on February 27, the man used his smartphone to secretly film a 13-year-old secondary school student in the changing room of a public bath. The boy was naked.\n\nThe diplomat in question is a 55-year-old, who is a “former” counsellor at the embassy, according to NHK. A counsellor is a diplomatic rank for officers serving overseas, such as in an embassy.\n\nA diplomat at the Singapore embassy in Tokyo was questioned by police after being suspected of filming a male teenager at a public bath, according to Japanese media reports on Thursday.\n\nStaff members at the public bath in Tokyo’s Minato ward reportedly called the police who, upon arriving, searched the diplomat’s phone and found “multiple naked photos of male customers”, according to the Asahi newspaper.\n\nIt added that the diplomat refused to go to the police station but told officers he had taken such photos in other public baths.\n\nWhen asked to delete the photos from his phone, the diplomat “deleted them on the spot”, reported the Japanese news outlet. He allegedly deleted 700 photos from his phone, which he told police he had taken in the six months leading up to the incident.\n\nThe Tokyo police are investigating potential violations of child pornography laws and are planning to ask Singapore’s Ministry of Foreign Affairs (MFA) to have the man turn himself in, said Asahi. Formal charges are also being considered.\n\nThe diplomat has been dismissed as a counsellor but is immune to arrest in accordance with the Vienna Convention on Diplomatic Relations, which states that diplomats cannot be arrested or detained in a country they have been dispatched to.\n\nWhen asked by the Asahi newspaper on Thursday, the embassy was reportedly unaware of the public bath incident. The embassy also told the paper the diplomat had “completed his assignment as of April 12” and has returned to Singapore.\n\nCNA has reached out to MFA for comment.\n\nAdditional reporting by Kyodo', 'authors': 'Unknown Author', 'publisher_href': 'https://www.scmp.com'}
+	Traceback (most recent call last):
+	  File "/tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_27/827/2516/py_827_2516.py", line 5, in <module>
+	    with open("{GNEWS_HOME}/in/827-20240503105848.json", "w") as fp:
+	         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	FileNotFoundError: [Errno 2] No such file or directory: '{GNEWS_HOME}/in/827-20240503105848.json'
+[INFO] 2024-05-03 10:58:49.978 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_27/827/2516, processId:2651 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-05-03 10:58:49.979 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:58:49.979 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-03 10:58:49.979 +0800 - ***********************************************************************************************
+[INFO] 2024-05-03 10:58:49.981 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-03 10:58:49.987 +0800 - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[INFO] 2024-05-03 10:58:49.988 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-03 10:58:49.988 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_27/827/2516
+[INFO] 2024-05-03 10:58:49.989 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13471825071552_27/827/2516
+[INFO] 2024-05-03 10:58:49.989 +0800 - FINALIZE_SESSION

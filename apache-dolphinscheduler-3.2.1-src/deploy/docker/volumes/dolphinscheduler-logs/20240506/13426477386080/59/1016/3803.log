@@ -1,0 +1,282 @@
+[INFO] 2024-05-06 02:31:45.597 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 02:31:45.599 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-06 02:31:45.600 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 02:31:45.600 +0800 - Begin to initialize task
+[INFO] 2024-05-06 02:31:45.600 +0800 - Set task startTime: 1714933905600
+[INFO] 2024-05-06 02:31:45.601 +0800 - Set task appId: 1016_3803
+[INFO] 2024-05-06 02:31:45.601 +0800 - End initialize task {
+  "taskInstanceId" : 3803,
+  "taskName" : "parse the message",
+  "firstSubmitTime" : 1714933905586,
+  "startTime" : 1714933905600,
+  "taskType" : "PYTHON",
+  "workflowInstanceHost" : "172.18.0.11:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240506/13426477386080/59/1016/3803.log",
+  "processId" : 0,
+  "processDefineCode" : 13426477386080,
+  "processDefineVersion" : 59,
+  "processInstanceId" : 1016,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"input_topic\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"gnews_filtered\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[{\"prop\":\"authors\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"},{\"prop\":\"content\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"},{\"prop\":\"url\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"},{\"prop\":\"context\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"},{\"prop\":\"type\",\"direct\":\"OUT\",\"type\":\"VARCHAR\",\"value\":\"\"},{\"prop\":\"datetime\",\"direct\":\"OUT\",\"type\":\"TIMESTAMP\",\"value\":\"\"}],\"rawScript\":\"filtered_data_message = {\\n\\t\\\"authors\\\": [\\n\\t\\t\\\"Erin Hale\\\",\\n        \\\"sss hale\\\"\\n\\t],\\n\\t\\\"content\\\": \\\"lolcontent\\\",\\n\\t\\\"url\\\": \\\"lol\\\",\\n\\t\\\"context\\\": \\\"context\\\",\\n\\t\\\"type\\\": \\\"article\\\",\\n\\t\\\"datetime\\\": \\\"2024-05-03 13:45:22\\\"\\n}\\n\\n# save the message data into separate variables\\n\\nauthors = filtered_data_message['authors']\\n# convert the list of authors into a format that is accepted in the SQL query\\nauthors = \\\"{\\\" + ', '.join([f\\\"\\\\\\\"{x}\\\\\\\"\\\" for x in authors]) + \\\"}\\\"\\n\\ncontent = filtered_data_message['content']\\nurl = filtered_data_message['url']\\ncontext = filtered_data_message['context']\\ntype = filtered_data_message['type']\\ndatetime = filtered_data_message['datetime']\\n\\n# pass the data downstream as parameters suited for the parameterized query\\nprint('#{setValue(authors=%s)}' % str(authors))\\nprint('#{setValue(content=%s)}' % str(content))\\nprint('#{setValue(url=%s)}' % str(url))\\nprint('#{setValue(context=%s)}' % str(context))\\nprint('#{setValue(type=%s)}' % str(type))\\nprint('#{setValue(datetime=%s)}' % str(datetime))\",\"resourceList\":[]}",
+  "environmentConfig" : "export PYTHON_LAUNCHER=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "parse the message"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "input_topic" : {
+      "prop" : "input_topic",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "gnews_filtered"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240506"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3803"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13426451158240"
+    },
+    "filtered_data_message" : {
+      "prop" : "filtered_data_message",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : ""
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240506023145"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1016"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240505"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "es_filtered_data_persistence_subprocess"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13426477386080"
+    }
+  },
+  "taskAppId" : "1016_3803",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"filtered_data_message\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-06 02:31:45.601 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 02:31:45.601 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-06 02:31:45.601 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 02:31:45.656 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-06 02:31:45.656 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-06 02:31:45.656 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_59/1016/3803 check successfully
+[INFO] 2024-05-06 02:31:45.656 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.python.PythonTaskChannel successfully
+[INFO] 2024-05-06 02:31:45.656 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-06 02:31:45.657 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-06 02:31:45.657 +0800 - Task plugin instance: PYTHON create successfully
+[INFO] 2024-05-06 02:31:45.657 +0800 - Initialize python task params {
+  "localParams" : [ {
+    "prop" : "authors",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  }, {
+    "prop" : "content",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  }, {
+    "prop" : "url",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  }, {
+    "prop" : "context",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  }, {
+    "prop" : "type",
+    "direct" : "OUT",
+    "type" : "VARCHAR",
+    "value" : ""
+  }, {
+    "prop" : "datetime",
+    "direct" : "OUT",
+    "type" : "TIMESTAMP",
+    "value" : ""
+  } ],
+  "varPool" : null,
+  "rawScript" : "filtered_data_message = {\n\t\"authors\": [\n\t\t\"Erin Hale\",\n        \"sss hale\"\n\t],\n\t\"content\": \"lolcontent\",\n\t\"url\": \"lol\",\n\t\"context\": \"context\",\n\t\"type\": \"article\",\n\t\"datetime\": \"2024-05-03 13:45:22\"\n}\n\n# save the message data into separate variables\n\nauthors = filtered_data_message['authors']\n# convert the list of authors into a format that is accepted in the SQL query\nauthors = \"{\" + ', '.join([f\"\\\"{x}\\\"\" for x in authors]) + \"}\"\n\ncontent = filtered_data_message['content']\nurl = filtered_data_message['url']\ncontext = filtered_data_message['context']\ntype = filtered_data_message['type']\ndatetime = filtered_data_message['datetime']\n\n# pass the data downstream as parameters suited for the parameterized query\nprint('#{setValue(authors=%s)}' % str(authors))\nprint('#{setValue(content=%s)}' % str(content))\nprint('#{setValue(url=%s)}' % str(url))\nprint('#{setValue(context=%s)}' % str(context))\nprint('#{setValue(type=%s)}' % str(type))\nprint('#{setValue(datetime=%s)}' % str(datetime))",
+  "resourceList" : [ ]
+}
+[INFO] 2024-05-06 02:31:45.658 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-06 02:31:45.658 +0800 - Set taskVarPool: [{"prop":"filtered_data_message","direct":"IN","type":"VARCHAR","value":""}] successfully
+[INFO] 2024-05-06 02:31:45.658 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 02:31:45.658 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-06 02:31:45.658 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 02:31:45.659 +0800 - raw python script : filtered_data_message = {
+	"authors": [
+		"Erin Hale",
+        "sss hale"
+	],
+	"content": "lolcontent",
+	"url": "lol",
+	"context": "context",
+	"type": "article",
+	"datetime": "2024-05-03 13:45:22"
+}
+
+# save the message data into separate variables
+
+authors = filtered_data_message['authors']
+# convert the list of authors into a format that is accepted in the SQL query
+authors = "{" + ', '.join([f"\"{x}\"" for x in authors]) + "}"
+
+content = filtered_data_message['content']
+url = filtered_data_message['url']
+context = filtered_data_message['context']
+type = filtered_data_message['type']
+datetime = filtered_data_message['datetime']
+
+# pass the data downstream as parameters suited for the parameterized query
+print('#{setValue(authors=%s)}' % str(authors))
+print('#{setValue(content=%s)}' % str(content))
+print('#{setValue(url=%s)}' % str(url))
+print('#{setValue(context=%s)}' % str(context))
+print('#{setValue(type=%s)}' % str(type))
+print('#{setValue(datetime=%s)}' % str(datetime))
+[INFO] 2024-05-06 02:31:45.659 +0800 - tenantCode :default, task dir:/tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_59/1016/3803
+[INFO] 2024-05-06 02:31:45.659 +0800 - generate python script file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_59/1016/3803/py_1016_3803.py
+[INFO] 2024-05-06 02:31:45.659 +0800 - #-*- encoding=utf8 -*-
+
+filtered_data_message = {
+	"authors": [
+		"Erin Hale",
+        "sss hale"
+	],
+	"content": "lolcontent",
+	"url": "lol",
+	"context": "context",
+	"type": "article",
+	"datetime": "2024-05-03 13:45:22"
+}
+
+# save the message data into separate variables
+
+authors = filtered_data_message['authors']
+# convert the list of authors into a format that is accepted in the SQL query
+authors = "{" + ', '.join([f"\"{x}\"" for x in authors]) + "}"
+
+content = filtered_data_message['content']
+url = filtered_data_message['url']
+context = filtered_data_message['context']
+type = filtered_data_message['type']
+datetime = filtered_data_message['datetime']
+
+# pass the data downstream as parameters suited for the parameterized query
+print('#{setValue(authors=%s)}' % str(authors))
+print('#{setValue(content=%s)}' % str(content))
+print('#{setValue(url=%s)}' % str(url))
+print('#{setValue(context=%s)}' % str(context))
+print('#{setValue(type=%s)}' % str(type))
+print('#{setValue(datetime=%s)}' % str(datetime))
+[INFO] 2024-05-06 02:31:45.660 +0800 - Final Shell file is: 
+[INFO] 2024-05-06 02:31:45.660 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-06 02:31:45.660 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export PYTHON_LAUNCHER=/bin/python3.11
+${PYTHON_LAUNCHER} /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_59/1016/3803/py_1016_3803.py
+[INFO] 2024-05-06 02:31:45.660 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-06 02:31:45.660 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_59/1016/3803/1016_3803.sh
+[INFO] 2024-05-06 02:31:45.667 +0800 - process start, process id is: 3346
+[INFO] 2024-05-06 02:31:46.674 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+	#{setValue(authors={"Erin Hale", "sss hale"})}
+	#{setValue(content=lolcontent)}
+	#{setValue(url=lol)}
+	#{setValue(context=context)}
+	#{setValue(type=article)}
+	#{setValue(datetime=2024-05-03 13:45:22)}
+[INFO] 2024-05-06 02:31:46.701 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_59/1016/3803, processId:3346 ,exitStatusCode:0 ,processWaitForStatus:true ,processExitValue:0
+[INFO] 2024-05-06 02:31:46.707 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 02:31:46.707 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-06 02:31:46.707 +0800 - ***********************************************************************************************
+[INFO] 2024-05-06 02:31:46.709 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-06 02:31:46.716 +0800 - Send task execute status: SUCCESS to master : 172.18.1.1:1234
+[INFO] 2024-05-06 02:31:46.717 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-06 02:31:46.717 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_59/1016/3803
+[INFO] 2024-05-06 02:31:46.719 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13426477386080_59/1016/3803
+[INFO] 2024-05-06 02:31:46.719 +0800 - FINALIZE_SESSION

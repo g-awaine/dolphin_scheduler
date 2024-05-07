@@ -1,0 +1,32 @@
+[INFO] 2024-04-30 02:05:33.746 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13426477386080, processVersion:10.
+[INFO] 2024-04-30 02:05:33.759 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13426477386080, processVersion:11.
+[INFO] 2024-04-30 02:05:33.765 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13426477386080, processVersion:11.
+[INFO] 2024-04-30 02:05:45.931 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13426477386080, commandCount:1.
+[ERROR] 2024-04-30 02:08:29.463 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:2091.
+[INFO] 2024-04-30 02:09:16.617 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2098, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240430/13426477386080/11/783/2098.log
+[INFO] 2024-04-30 02:09:16.712 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2098, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240430/13426477386080/11/783/2098.log
+[INFO] 2024-04-30 02:34:00.098 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2101, taskInstanceName:print query, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240430/13426477386080/11/783/2101.log
+[INFO] 2024-04-30 02:34:00.224 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2101, taskInstanceName:print query, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240430/13426477386080/11/783/2101.log
+[INFO] 2024-04-30 02:34:32.442 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2102, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240430/13426477386080/11/783/2102.log
+[INFO] 2024-04-30 02:34:32.480 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2102, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240430/13426477386080/11/783/2102.log
+[INFO] 2024-04-30 02:36:56.760 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13426477386080, processVersion:11.
+[INFO] 2024-04-30 02:36:56.767 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13426477386080, processVersion:12.
+[INFO] 2024-04-30 02:36:56.772 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13426477386080, processVersion:12.
+[INFO] 2024-04-30 02:37:02.812 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13426477386080, commandCount:1.
+[INFO] 2024-04-30 02:37:56.752 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2111, taskInstanceName:print query, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240430/13426477386080/12/784/2111.log
+[INFO] 2024-04-30 02:37:56.818 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2111, taskInstanceName:print query, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240430/13426477386080/12/784/2111.log
+[INFO] 2024-04-30 02:38:40.931 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13426477386080, processVersion:12.
+[INFO] 2024-04-30 02:38:40.944 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13426477386080, processVersion:13.
+[INFO] 2024-04-30 02:38:41.001 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13426477386080, processVersion:13.
+[INFO] 2024-04-30 02:38:46.868 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13426477386080, commandCount:1.
+[INFO] 2024-04-30 02:39:12.100 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2115, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240430/13426477386080/13/785/2115.log
+[INFO] 2024-04-30 02:39:12.220 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2115, taskInstanceName:Persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240430/13426477386080/13/785/2115.log
+[INFO] 2024-04-30 02:52:05.370 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[888] - Process definition needs to be updated, projectCode:13010050770016, processCode:13426477386080, processVersion:13.
+[INFO] 2024-04-30 02:52:05.379 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[898] - Update process definition complete, processCode:13426477386080, processVersion:14.
+[INFO] 2024-04-30 02:52:05.418 +0800 o.a.d.a.s.i.ProcessDefinitionServiceImpl:[906] - Update process task relations complete, projectCode:13010050770016, processCode:13426477386080, processVersion:14.
+[INFO] 2024-04-30 02:52:13.190 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13426477386080, commandCount:1.
+[ERROR] 2024-04-30 02:52:34.745 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:2121.
+[ERROR] 2024-04-30 02:54:30.564 +0800 o.a.d.a.s.i.LoggerServiceImpl:[96] - Host of task instance is null, taskInstanceId:2128.
+[INFO] 2024-04-30 02:54:41.102 +0800 o.a.d.a.s.i.ExecutorServiceImpl:[278] - Create command complete, processDefinitionCode:13426477386080, commandCount:1.
+[INFO] 2024-04-30 02:57:00.341 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2134, taskInstanceName:persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240430/13426477386080/14/787/2134.log
+[INFO] 2024-04-30 02:57:00.446 +0800 o.a.d.a.s.i.LoggerServiceImpl:[189] - Query task instance log, taskInstanceId:2134, taskInstanceName:persist in postgresql, host: 172.18.1.1:1234, logPath:/opt/dolphinscheduler/logs/20240430/13426477386080/14/787/2134.log

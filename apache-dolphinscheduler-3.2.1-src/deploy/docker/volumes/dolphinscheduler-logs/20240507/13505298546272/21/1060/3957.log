@@ -1,0 +1,642 @@
+[INFO] 2024-05-07 10:40:24.451 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 10:40:24.459 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-07 10:40:24.463 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 10:40:24.465 +0800 - Begin to initialize task
+[INFO] 2024-05-07 10:40:24.466 +0800 - Set task startTime: 1715049624466
+[INFO] 2024-05-07 10:40:24.469 +0800 - Set task appId: 1060_3957
+[INFO] 2024-05-07 10:40:24.499 +0800 - End initialize task {
+  "taskInstanceId" : 3957,
+  "taskName" : "[null check] filtered data persistence",
+  "firstSubmitTime" : 1715049624185,
+  "startTime" : 1715049624466,
+  "taskType" : "DATA_QUALITY",
+  "workflowInstanceHost" : "172.18.0.14:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240507/13505298546272/21/1060/3957.log",
+  "processId" : 0,
+  "processDefineCode" : 13505298546272,
+  "processDefineVersion" : 21,
+  "processInstanceId" : 1060,
+  "scheduleTime" : 0,
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 2,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13001194483488,
+  "taskParams" : "{\"localParams\":[],\"resourceList\":[],\"ruleId\":6,\"ruleInputParameter\":{\"check_type\":\"0\",\"comparison_type\":1,\"comparison_name\":\"0\",\"failure_strategy\":\"0\",\"operator\":\"0\",\"src_connector_type\":1,\"src_datasource_id\":6,\"src_database\":\"persistence\",\"src_field\":\"content\",\"src_table\":\"filtered_data_persistence\",\"threshold\":\"0\"},\"sparkParameters\":{\"deployMode\":\"local\",\"driverCores\":1,\"driverMemory\":\"512M\",\"executorCores\":1,\"executorMemory\":\"1G\",\"numExecutors\":1,\"others\":\"--conf spark.driver.extraJavaOptions=\\\"-Divy.cache.dir=/tmp -Divy.home=/tmp\\\" \\\\\\n--packages org.postgresql:postgresql:42.7.3\",\"yarnQueue\":\"\"}}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11\nexport PYSPARK_PYTHON=/bin/python3.11",
+  "prepareParamsMap" : {
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "[null check] filtered data persistence"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13001194483488"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1060"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240507"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240506"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "3957"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "qualti_test"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13505264408800"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13505298546272"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240507104024"
+    }
+  },
+  "taskAppId" : "1060_3957",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "dataQualityTaskExecutionContext" : {
+    "ruleId" : 6,
+    "ruleName" : "$t(uniqueness_check)",
+    "ruleType" : 0,
+    "ruleInputEntryList" : "[{\"id\":1,\"field\":\"src_connector_type\",\"type\":\"select\",\"title\":\"$t(src_connector_type)\",\"data\":\"\",\"options\":\"[{\\\"label\\\":\\\"HIVE\\\",\\\"value\\\":\\\"HIVE\\\"},{\\\"label\\\":\\\"JDBC\\\",\\\"value\\\":\\\"JDBC\\\"}]\",\"placeholder\":\"please select source connector type\",\"optionSourceType\":2,\"dataType\":2,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":false,\"valuesMap\":null,\"index\":1,\"createTime\":null,\"updateTime\":null},{\"id\":2,\"field\":\"src_datasource_id\",\"type\":\"select\",\"title\":\"$t(src_datasource_id)\",\"data\":\"\",\"options\":null,\"placeholder\":\"please select source datasource id\",\"optionSourceType\":1,\"dataType\":2,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":false,\"valuesMap\":null,\"index\":2,\"createTime\":null,\"updateTime\":null},{\"id\":30,\"field\":\"src_database\",\"type\":\"select\",\"title\":\"$t(src_database)\",\"data\":null,\"options\":null,\"placeholder\":\"Please select source database\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":true,\"valuesMap\":null,\"index\":2,\"createTime\":null,\"updateTime\":null},{\"id\":3,\"field\":\"src_table\",\"type\":\"select\",\"title\":\"$t(src_table)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter source table name\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":true,\"valuesMap\":null,\"index\":3,\"createTime\":null,\"updateTime\":null},{\"id\":4,\"field\":\"src_filter\",\"type\":\"input\",\"title\":\"$t(src_filter)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter filter expression\",\"optionSourceType\":0,\"dataType\":3,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":false,\"valuesMap\":null,\"index\":4,\"createTime\":null,\"updateTime\":null},{\"id\":5,\"field\":\"src_field\",\"type\":\"select\",\"title\":\"$t(src_field)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter column, only single column is supported\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":0,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":true,\"valuesMap\":null,\"index\":5,\"createTime\":null,\"updateTime\":null},{\"id\":6,\"field\":\"statistics_name\",\"type\":\"input\",\"title\":\"$t(statistics_name)\",\"data\":\"duplicate_count.duplicates\",\"options\":null,\"placeholder\":\"Please enter statistics name, the alias in statistics execute sql\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":1,\"isShow\":false,\"canEdit\":false,\"isEmit\":false,\"isValidate\":true,\"valuesMap\":\"{\\\"statistics_name\\\":\\\"duplicate_count.duplicates\\\"}\",\"index\":6,\"createTime\":null,\"updateTime\":null},{\"id\":7,\"field\":\"check_type\",\"type\":\"select\",\"title\":\"$t(check_type)\",\"data\":\"0\",\"options\":\"[{\\\"label\\\":\\\"Expected - Actual\\\",\\\"value\\\":\\\"0\\\"},{\\\"label\\\":\\\"Actual - Expected\\\",\\\"value\\\":\\\"1\\\"},{\\\"label\\\":\\\"Actual / Expected\\\",\\\"value\\\":\\\"2\\\"},{\\\"label\\\":\\\"(Expected - Actual) / Expected\\\",\\\"value\\\":\\\"3\\\"}]\",\"placeholder\":\"please select check type\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":3,\"isShow\":true,\"canEdit\":true,\"isEmit\":true,\"isValidate\":false,\"valuesMap\":null,\"index\":7,\"createTime\":null,\"updateTime\":null},{\"id\":8,\"field\":\"operator\",\"type\":\"select\",\"title\":\"$t(operator)\",\"data\":\"0\",\"options\":\"[{\\\"label\\\":\\\"=\\\",\\\"value\\\":\\\"0\\\"},{\\\"label\\\":\\\"<\\\",\\\"value\\\":\\\"1\\\"},{\\\"label\\\":\\\"<=\\\",\\\"value\\\":\\\"2\\\"},{\\\"label\\\":\\\">\\\",\\\"value\\\":\\\"3\\\"},{\\\"label\\\":\\\">=\\\",\\\"value\\\":\\\"4\\\"},{\\\"label\\\":\\\"!=\\\",\\\"value\\\":\\\"5\\\"}]\",\"placeholder\":\"please select operator\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":3,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":false,\"valuesMap\":null,\"index\":8,\"createTime\":null,\"updateTime\":null},{\"id\":9,\"field\":\"threshold\",\"type\":\"input\",\"title\":\"$t(threshold)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter threshold, number is needed\",\"optionSourceType\":0,\"dataType\":2,\"inputType\":3,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":true,\"valuesMap\":null,\"index\":9,\"createTime\":null,\"updateTime\":null},{\"id\":10,\"field\":\"failure_strategy\",\"type\":\"select\",\"title\":\"$t(failure_strategy)\",\"data\":\"0\",\"options\":\"[{\\\"label\\\":\\\"Alert\\\",\\\"value\\\":\\\"0\\\"},{\\\"label\\\":\\\"Block\\\",\\\"value\\\":\\\"1\\\"}]\",\"placeholder\":\"please select failure strategy\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":3,\"isShow\":true,\"canEdit\":true,\"isEmit\":false,\"isValidate\":false,\"valuesMap\":null,\"index\":10,\"createTime\":null,\"updateTime\":null},{\"id\":17,\"field\":\"comparison_name\",\"type\":\"input\",\"title\":\"$t(comparison_name)\",\"data\":null,\"options\":null,\"placeholder\":\"Please enter comparison name, the alias in comparison execute sql\",\"optionSourceType\":0,\"dataType\":0,\"inputType\":0,\"isShow\":false,\"canEdit\":false,\"isEmit\":false,\"isValidate\":true,\"valuesMap\":\"\",\"index\":11,\"createTime\":null,\"updateTime\":null},{\"id\":19,\"field\":\"comparison_type\",\"type\":\"select\",\"title\":\"$t(comparison_type)\",\"data\":\"\",\"options\":null,\"placeholder\":\"Please enter comparison title\",\"optionSourceType\":3,\"dataType\":0,\"inputType\":2,\"isShow\":true,\"canEdit\":false,\"isEmit\":true,\"isValidate\":false,\"valuesMap\":null,\"index\":12,\"createTime\":null,\"updateTime\":null}]",
+    "executeSqlList" : "[{\"id\":6,\"index\":1,\"sql\":\"SELECT ${src_field} FROM ${src_table} group by ${src_field} having count(*) > 1\",\"tableAlias\":\"duplicate_items\",\"type\":0,\"createTime\":\"2021-03-03 11:31:24\",\"updateTime\":\"2021-03-03 11:31:24\",\"errorOutputSql\":true},{\"id\":7,\"index\":1,\"sql\":\"SELECT COUNT(*) AS duplicates FROM duplicate_items\",\"tableAlias\":\"duplicate_count\",\"type\":1,\"createTime\":\"2021-03-03 11:31:24\",\"updateTime\":\"2021-03-03 11:31:24\",\"errorOutputSql\":false}]",
+    "comparisonNeedStatisticsValueTable" : false,
+    "compareWithFixedValue" : true,
+    "hdfsPath" : "hdfs://mycluster:8020/user/default/data_quality_error_data",
+    "sourceConnectorType" : "JDBC",
+    "sourceType" : 1,
+    "sourceConnectionParams" : "{\"user\":\"root\",\"password\":\"****\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"persistence\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence\",\"driverClassName\":\"org.postgresql.Driver\",\"validationQuery\":\"select version()\",\"other\":{\"password\":\"****\"}}",
+    "targetConnectorType" : null,
+    "targetType" : 0,
+    "targetConnectionParams" : null,
+    "writerConnectorType" : "JDBC",
+    "writerType" : 1,
+    "writerTable" : "t_ds_dq_execute_result",
+    "writerConnectionParams" : "{\"user\":\"root\",\"password\":\"****\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"dolphinscheduler\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler\"}",
+    "statisticsValueConnectorType" : "JDBC",
+    "statisticsValueType" : 1,
+    "statisticsValueTable" : "t_ds_dq_task_statistics_value",
+    "statisticsValueWriterConnectionParams" : "{\"user\":\"root\",\"password\":\"****\",\"address\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432\",\"database\":\"dolphinscheduler\",\"jdbcUrl\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler\"}"
+  },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-07 10:40:24.524 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 10:40:24.525 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-07 10:40:24.525 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 10:40:24.661 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-07 10:40:24.684 +0800 - create linux os user: default
+[INFO] 2024-05-07 10:40:24.684 +0800 - execute cmd: sudo useradd -g root
+ default
+[INFO] 2024-05-07 10:40:24.749 +0800 - create user default success
+[INFO] 2024-05-07 10:40:24.750 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-07 10:40:24.755 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1060/3957 check successfully
+[INFO] 2024-05-07 10:40:24.758 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.dq.DataQualityTaskChannel successfully
+[INFO] 2024-05-07 10:40:24.769 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={})
+[INFO] 2024-05-07 10:40:24.778 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-07 10:40:24.781 +0800 - Task plugin instance: DATA_QUALITY create successfully
+[INFO] 2024-05-07 10:40:24.786 +0800 - Initialize data quality task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "ruleId" : 6,
+  "ruleInputParameter" : {
+    "check_type" : "0",
+    "comparison_type" : "1",
+    "comparison_name" : "0",
+    "failure_strategy" : "0",
+    "operator" : "0",
+    "src_connector_type" : "1",
+    "src_datasource_id" : "6",
+    "src_database" : "persistence",
+    "src_field" : "content",
+    "src_table" : "filtered_data_persistence",
+    "threshold" : "0"
+  },
+  "sparkParameters" : {
+    "localParams" : null,
+    "varPool" : null,
+    "mainJar" : null,
+    "mainClass" : null,
+    "deployMode" : "local",
+    "mainArgs" : null,
+    "driverCores" : 1,
+    "driverMemory" : "512M",
+    "numExecutors" : 1,
+    "executorCores" : 1,
+    "executorMemory" : "1G",
+    "appName" : null,
+    "yarnQueue" : "",
+    "others" : "--conf spark.driver.extraJavaOptions=\"-Divy.cache.dir=/tmp -Divy.home=/tmp\" \\\n--packages org.postgresql:postgresql:42.7.3",
+    "programType" : null,
+    "resourceList" : [ ]
+  }
+}
+[INFO] 2024-05-07 10:40:24.818 +0800 - start register processor: HANA
+[INFO] 2024-05-07 10:40:24.818 +0800 - done register processor: HANA
+[INFO] 2024-05-07 10:40:24.820 +0800 - start register processor: SQLSERVER
+[INFO] 2024-05-07 10:40:24.820 +0800 - done register processor: SQLSERVER
+[INFO] 2024-05-07 10:40:24.821 +0800 - start register processor: SAGEMAKER
+[INFO] 2024-05-07 10:40:24.822 +0800 - done register processor: SAGEMAKER
+[INFO] 2024-05-07 10:40:24.823 +0800 - start register processor: DATABEND
+[INFO] 2024-05-07 10:40:24.823 +0800 - done register processor: DATABEND
+[INFO] 2024-05-07 10:40:24.862 +0800 - start register processor: AZURESQL
+[INFO] 2024-05-07 10:40:24.863 +0800 - done register processor: AZURESQL
+[INFO] 2024-05-07 10:40:24.866 +0800 - start register processor: HIVE
+[INFO] 2024-05-07 10:40:24.866 +0800 - done register processor: HIVE
+[INFO] 2024-05-07 10:40:24.871 +0800 - start register processor: DORIS
+[INFO] 2024-05-07 10:40:24.871 +0800 - done register processor: DORIS
+[INFO] 2024-05-07 10:40:24.873 +0800 - start register processor: POSTGRESQL
+[INFO] 2024-05-07 10:40:24.873 +0800 - done register processor: POSTGRESQL
+[INFO] 2024-05-07 10:40:24.876 +0800 - start register processor: MYSQL
+[INFO] 2024-05-07 10:40:24.876 +0800 - done register processor: MYSQL
+[INFO] 2024-05-07 10:40:24.878 +0800 - start register processor: REDSHIFT
+[INFO] 2024-05-07 10:40:24.879 +0800 - done register processor: REDSHIFT
+[INFO] 2024-05-07 10:40:24.881 +0800 - start register processor: SNOWFLAKE
+[INFO] 2024-05-07 10:40:24.881 +0800 - done register processor: SNOWFLAKE
+[INFO] 2024-05-07 10:40:24.884 +0800 - start register processor: STARROCKS
+[INFO] 2024-05-07 10:40:24.884 +0800 - done register processor: STARROCKS
+[INFO] 2024-05-07 10:40:24.886 +0800 - start register processor: SSH
+[INFO] 2024-05-07 10:40:24.886 +0800 - done register processor: SSH
+[INFO] 2024-05-07 10:40:24.889 +0800 - start register processor: ATHENA
+[INFO] 2024-05-07 10:40:24.889 +0800 - done register processor: ATHENA
+[INFO] 2024-05-07 10:40:24.891 +0800 - start register processor: PRESTO
+[INFO] 2024-05-07 10:40:24.892 +0800 - done register processor: PRESTO
+[INFO] 2024-05-07 10:40:24.894 +0800 - start register processor: OCEANBASE
+[INFO] 2024-05-07 10:40:24.895 +0800 - done register processor: OCEANBASE
+[INFO] 2024-05-07 10:40:24.928 +0800 - start register processor: ORACLE
+[INFO] 2024-05-07 10:40:24.929 +0800 - done register processor: ORACLE
+[INFO] 2024-05-07 10:40:24.934 +0800 - start register processor: CLICKHOUSE
+[INFO] 2024-05-07 10:40:24.934 +0800 - done register processor: CLICKHOUSE
+[INFO] 2024-05-07 10:40:24.938 +0800 - start register processor: VERTICA
+[INFO] 2024-05-07 10:40:24.940 +0800 - done register processor: VERTICA
+[INFO] 2024-05-07 10:40:24.944 +0800 - start register processor: KYUUBI
+[INFO] 2024-05-07 10:40:24.945 +0800 - done register processor: KYUUBI
+[INFO] 2024-05-07 10:40:24.950 +0800 - start register processor: DB2
+[INFO] 2024-05-07 10:40:24.950 +0800 - done register processor: DB2
+[INFO] 2024-05-07 10:40:24.955 +0800 - start register processor: TRINO
+[INFO] 2024-05-07 10:40:24.956 +0800 - done register processor: TRINO
+[INFO] 2024-05-07 10:40:24.960 +0800 - start register processor: SPARK
+[INFO] 2024-05-07 10:40:24.960 +0800 - done register processor: SPARK
+[INFO] 2024-05-07 10:40:24.963 +0800 - start register processor: DAMENG
+[INFO] 2024-05-07 10:40:24.964 +0800 - done register processor: DAMENG
+[INFO] 2024-05-07 10:40:24.967 +0800 - start register processor: ZEPPELIN
+[INFO] 2024-05-07 10:40:24.967 +0800 - done register processor: ZEPPELIN
+[INFO] 2024-05-07 10:40:24.989 +0800 - data quality configuration: {
+  "name" : "$t(uniqueness_check)",
+  "env" : {
+    "type" : "batch",
+    "config" : null
+  },
+  "readers" : [ {
+    "type" : "JDBC",
+    "config" : {
+      "database" : "persistence",
+      "password" : "****",
+      "driver" : "org.postgresql.Driver",
+      "user" : "root",
+      "output_table" : "persistence_filtered_data_persistence",
+      "table" : "filtered_data_persistence",
+      "url" : "jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence?password=root"
+    }
+  } ],
+  "transformers" : [ {
+    "type" : "sql",
+    "config" : {
+      "index" : 1,
+      "output_table" : "duplicate_items",
+      "sql" : "SELECT content FROM persistence_filtered_data_persistence group by content having count(*) > 1"
+    }
+  }, {
+    "type" : "sql",
+    "config" : {
+      "index" : 2,
+      "output_table" : "duplicate_count",
+      "sql" : "SELECT COUNT(*) AS duplicates FROM duplicate_items"
+    }
+  } ],
+  "writers" : [ {
+    "type" : "JDBC",
+    "config" : {
+      "database" : "dolphinscheduler",
+      "password" : "****",
+      "driver" : "org.postgresql.Driver",
+      "user" : "root",
+      "table" : "t_ds_dq_execute_result",
+      "url" : "jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler",
+      "sql" : "select 0 as rule_type,'$t(uniqueness_check)' as rule_name,0 as process_definition_id,1060 as process_instance_id,3957 as task_instance_id,duplicate_count.duplicates AS statistics_value,0 AS comparison_value,1 AS comparison_type,0 as check_type,0 as threshold,0 as operator,0 as failure_strategy,'hdfs://mycluster:8020/user/default/data_quality_error_data/0_1060_[null check] filtered data persistence' as error_output_path,'2024-05-07 10:40:24' as create_time,'2024-05-07 10:40:24' as update_time from duplicate_count "
+    }
+  }, {
+    "type" : "JDBC",
+    "config" : {
+      "database" : "dolphinscheduler",
+      "password" : "****",
+      "driver" : "org.postgresql.Driver",
+      "user" : "root",
+      "table" : "t_ds_dq_task_statistics_value",
+      "url" : "jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler",
+      "sql" : "select 0 as process_definition_id,3957 as task_instance_id,6 as rule_id,'KA0AXXWVHWW+GZX4BPZXFGFZ0F0OYMUQ+BVYG4+ZIKG=' as unique_code,'duplicate_count.duplicates'AS statistics_name,duplicate_count.duplicates AS statistics_value,'2024-05-07 10:40:24' as data_time,'2024-05-07 10:40:24' as create_time,'2024-05-07 10:40:24' as update_time from duplicate_count"
+    }
+  }, {
+    "type" : "hdfs_file",
+    "config" : {
+      "path" : "hdfs://mycluster:8020/user/default/data_quality_error_data/0_1060_[null check] filtered data persistence",
+      "input_table" : "duplicate_items"
+    }
+  } ]
+}
+[INFO] 2024-05-07 10:40:24.995 +0800 - Trying to get data quality jar in path
+[INFO] 2024-05-07 10:40:24.995 +0800 - data quality jar path is empty, will try to auto discover it from build-in rules.
+[INFO] 2024-05-07 10:40:24.996 +0800 - Try to get data quality jar from path /opt/dolphinscheduler/conf/../libs
+[INFO] 2024-05-07 10:40:24.998 +0800 - get default data quality jar name: /opt/dolphinscheduler/conf/../libs/dolphinscheduler-data-quality-3.2.1.jar
+[INFO] 2024-05-07 10:40:24.998 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-07 10:40:24.998 +0800 - Set taskVarPool: null successfully
+[INFO] 2024-05-07 10:40:25.002 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 10:40:25.002 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-07 10:40:25.002 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 10:40:25.010 +0800 - Final Shell file is: 
+[INFO] 2024-05-07 10:40:25.010 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-07 10:40:25.010 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYSPARK_PYTHON=/bin/python3.11
+${SPARK_HOME}/bin/spark-submit --master local --driver-cores 1 --driver-memory 512M --num-executors 1 --executor-cores 1 --executor-memory 1G --conf spark.driver.extraJavaOptions="-Divy.cache.dir=/tmp -Divy.home=/tmp" \
+--packages org.postgresql:postgresql:42.7.3 /opt/dolphinscheduler/conf/../libs/dolphinscheduler-data-quality-3.2.1.jar "{\"name\":\"$t(uniqueness_check)\",\"env\":{\"type\":\"batch\",\"config\":null},\"readers\":[{\"type\":\"JDBC\",\"config\":{\"database\":\"persistence\",\"password\":\"****\",\"driver\":\"org.postgresql.Driver\",\"user\":\"root\",\"output_table\":\"persistence_filtered_data_persistence\",\"table\":\"filtered_data_persistence\",\"url\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/persistence?password=root\"} }],\"transformers\":[{\"type\":\"sql\",\"config\":{\"index\":1,\"output_table\":\"duplicate_items\",\"sql\":\"SELECT content FROM persistence_filtered_data_persistence group by content having count(*) > 1\"} },{\"type\":\"sql\",\"config\":{\"index\":2,\"output_table\":\"duplicate_count\",\"sql\":\"SELECT COUNT(*) AS duplicates FROM duplicate_items\"} }],\"writers\":[{\"type\":\"JDBC\",\"config\":{\"database\":\"dolphinscheduler\",\"password\":\"****\",\"driver\":\"org.postgresql.Driver\",\"user\":\"root\",\"table\":\"t_ds_dq_execute_result\",\"url\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler\",\"sql\":\"select 0 as rule_type,'$t(uniqueness_check)' as rule_name,0 as process_definition_id,1060 as process_instance_id,3957 as task_instance_id,duplicate_count.duplicates AS statistics_value,0 AS comparison_value,1 AS comparison_type,0 as check_type,0 as threshold,0 as operator,0 as failure_strategy,'hdfs://mycluster:8020/user/default/data_quality_error_data/0_1060_[null check] filtered data persistence' as error_output_path,'2024-05-07 10:40:24' as create_time,'2024-05-07 10:40:24' as update_time from duplicate_count \"} },{\"type\":\"JDBC\",\"config\":{\"database\":\"dolphinscheduler\",\"password\":\"****\",\"driver\":\"org.postgresql.Driver\",\"user\":\"root\",\"table\":\"t_ds_dq_task_statistics_value\",\"url\":\"jdbc:postgresql://dolphinscheduler-postgresql:5432/dolphinscheduler\",\"sql\":\"select 0 as process_definition_id,3957 as task_instance_id,6 as rule_id,'KA0AXXWVHWW+GZX4BPZXFGFZ0F0OYMUQ+BVYG4+ZIKG=' as unique_code,'duplicate_count.duplicates'AS statistics_name,duplicate_count.duplicates AS statistics_value,'2024-05-07 10:40:24' as data_time,'2024-05-07 10:40:24' as create_time,'2024-05-07 10:40:24' as update_time from duplicate_count\"} },{\"type\":\"hdfs_file\",\"config\":{\"path\":\"hdfs://mycluster:8020/user/default/data_quality_error_data/0_1060_[null check] filtered data persistence\",\"input_table\":\"duplicate_items\"} }]}"
+[INFO] 2024-05-07 10:40:25.011 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-07 10:40:25.013 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1060/3957/1060_3957.sh
+[INFO] 2024-05-07 10:40:25.021 +0800 - process start, process id is: 93
+[INFO] 2024-05-07 10:40:26.024 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-05-07 10:40:29.031 +0800 -  -> 
+	:: loading settings :: url = jar:file:/opt/spark-3.5.1-bin-hadoop3/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+	Ivy Default Cache set to: /tmp
+	The jars for the packages stored in: /tmp/jars
+	org.postgresql#postgresql added as a dependency
+	:: resolving dependencies :: org.apache.spark#spark-submit-parent-12ce2a5d-f6dc-4c79-81ee-a4f1f063ecf0;1.0
+		confs: [default]
+[INFO] 2024-05-07 10:40:30.032 +0800 -  -> 
+		found org.postgresql#postgresql;42.7.3 in central
+[INFO] 2024-05-07 10:40:31.033 +0800 -  -> 
+		found org.checkerframework#checker-qual;3.42.0 in central
+	downloading https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar ...
+[INFO] 2024-05-07 10:40:37.038 +0800 -  -> 
+		[SUCCESSFUL ] org.postgresql#postgresql;42.7.3!postgresql.jar (6816ms)
+[INFO] 2024-05-07 10:40:38.059 +0800 -  -> 
+	downloading https://repo1.maven.org/maven2/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar ...
+[INFO] 2024-05-07 10:40:39.062 +0800 -  -> 
+		[SUCCESSFUL ] org.checkerframework#checker-qual;3.42.0!checker-qual.jar (1967ms)
+	:: resolution report :: resolve 1952ms :: artifacts dl 8792ms
+		:: modules in use:
+		org.checkerframework#checker-qual;3.42.0 from central in [default]
+		org.postgresql#postgresql;42.7.3 from central in [default]
+		---------------------------------------------------------------------
+		|                  |            modules            ||   artifacts   |
+		|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+		---------------------------------------------------------------------
+		|      default     |   2   |   2   |   2   |   0   ||   2   |   2   |
+		---------------------------------------------------------------------
+	:: retrieving :: org.apache.spark#spark-submit-parent-12ce2a5d-f6dc-4c79-81ee-a4f1f063ecf0
+		confs: [default]
+		2 artifacts copied, 0 already retrieved (1289kB/8ms)
+[INFO] 2024-05-07 10:40:40.064 +0800 -  -> 
+	24/05/07 10:40:39 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+	24/05/07 10:40:39 INFO SparkContext: Running Spark version 3.5.1
+	24/05/07 10:40:39 INFO SparkContext: OS info Linux, 6.5.0-28-generic, amd64
+	24/05/07 10:40:39 INFO SparkContext: Java version 1.8.0_402
+	24/05/07 10:40:39 INFO ResourceUtils: ==============================================================
+	24/05/07 10:40:39 INFO ResourceUtils: No custom resources configured for spark.driver.
+	24/05/07 10:40:39 INFO ResourceUtils: ==============================================================
+	24/05/07 10:40:39 INFO SparkContext: Submitted application: (uniqueness_check)
+	24/05/07 10:40:39 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+	24/05/07 10:40:39 INFO ResourceProfile: Limiting resource is cpu
+	24/05/07 10:40:39 INFO ResourceProfileManager: Added ResourceProfile id: 0
+	24/05/07 10:40:40 INFO SecurityManager: Changing view acls to: default
+	24/05/07 10:40:40 INFO SecurityManager: Changing modify acls to: default
+	24/05/07 10:40:40 INFO SecurityManager: Changing view acls groups to: 
+	24/05/07 10:40:40 INFO SecurityManager: Changing modify acls groups to: 
+	24/05/07 10:40:40 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: default; groups with view permissions: EMPTY; users with modify permissions: default; groups with modify permissions: EMPTY
+[INFO] 2024-05-07 10:40:41.067 +0800 -  -> 
+	24/05/07 10:40:40 INFO Utils: Successfully started service 'sparkDriver' on port 41023.
+	24/05/07 10:40:40 INFO SparkEnv: Registering MapOutputTracker
+	24/05/07 10:40:40 INFO SparkEnv: Registering BlockManagerMaster
+	24/05/07 10:40:40 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+	24/05/07 10:40:40 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+	24/05/07 10:40:40 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+	24/05/07 10:40:40 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-5ac5647b-0bea-48f9-a828-bdaaf4b0a41e
+	24/05/07 10:40:40 INFO MemoryStore: MemoryStore started with capacity 93.3 MiB
+	24/05/07 10:40:40 INFO SparkEnv: Registering OutputCommitCoordinator
+	24/05/07 10:40:40 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+	24/05/07 10:40:40 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+	24/05/07 10:40:40 INFO SparkContext: Added JAR file:///tmp/jars/org.postgresql_postgresql-42.7.3.jar at spark://27ccc46d6f5e:41023/jars/org.postgresql_postgresql-42.7.3.jar with timestamp 1715049639862
+	24/05/07 10:40:40 INFO SparkContext: Added JAR file:///tmp/jars/org.checkerframework_checker-qual-3.42.0.jar at spark://27ccc46d6f5e:41023/jars/org.checkerframework_checker-qual-3.42.0.jar with timestamp 1715049639862
+	24/05/07 10:40:40 INFO SparkContext: Added JAR file:/opt/dolphinscheduler/libs/dolphinscheduler-data-quality-3.2.1.jar at spark://27ccc46d6f5e:41023/jars/dolphinscheduler-data-quality-3.2.1.jar with timestamp 1715049639862
+	24/05/07 10:40:40 INFO Executor: Starting executor ID driver on host 27ccc46d6f5e
+	24/05/07 10:40:40 INFO Executor: OS info Linux, 6.5.0-28-generic, amd64
+	24/05/07 10:40:40 INFO Executor: Java version 1.8.0_402
+	24/05/07 10:40:40 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+	24/05/07 10:40:40 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@358ab600 for default.
+	24/05/07 10:40:40 INFO Executor: Fetching spark://27ccc46d6f5e:41023/jars/org.checkerframework_checker-qual-3.42.0.jar with timestamp 1715049639862
+	24/05/07 10:40:40 INFO TransportClientFactory: Successfully created connection to 27ccc46d6f5e/172.18.1.1:41023 after 41 ms (0 ms spent in bootstraps)
+	24/05/07 10:40:40 INFO Utils: Fetching spark://27ccc46d6f5e:41023/jars/org.checkerframework_checker-qual-3.42.0.jar to /tmp/spark-6c2eea89-5784-47f3-8127-e41c6cf0be9a/userFiles-b54dfc55-3667-442b-96ed-79209e083458/fetchFileTemp6723324581467545183.tmp
+	24/05/07 10:40:41 INFO Executor: Adding file:/tmp/spark-6c2eea89-5784-47f3-8127-e41c6cf0be9a/userFiles-b54dfc55-3667-442b-96ed-79209e083458/org.checkerframework_checker-qual-3.42.0.jar to class loader default
+	24/05/07 10:40:41 INFO Executor: Fetching spark://27ccc46d6f5e:41023/jars/dolphinscheduler-data-quality-3.2.1.jar with timestamp 1715049639862
+	24/05/07 10:40:41 INFO Utils: Fetching spark://27ccc46d6f5e:41023/jars/dolphinscheduler-data-quality-3.2.1.jar to /tmp/spark-6c2eea89-5784-47f3-8127-e41c6cf0be9a/userFiles-b54dfc55-3667-442b-96ed-79209e083458/fetchFileTemp1509613850018495373.tmp
+	24/05/07 10:40:41 INFO Executor: Adding file:/tmp/spark-6c2eea89-5784-47f3-8127-e41c6cf0be9a/userFiles-b54dfc55-3667-442b-96ed-79209e083458/dolphinscheduler-data-quality-3.2.1.jar to class loader default
+	24/05/07 10:40:41 INFO Executor: Fetching spark://27ccc46d6f5e:41023/jars/org.postgresql_postgresql-42.7.3.jar with timestamp 1715049639862
+[INFO] 2024-05-07 10:40:42.069 +0800 -  -> 
+	24/05/07 10:40:41 INFO Utils: Fetching spark://27ccc46d6f5e:41023/jars/org.postgresql_postgresql-42.7.3.jar to /tmp/spark-6c2eea89-5784-47f3-8127-e41c6cf0be9a/userFiles-b54dfc55-3667-442b-96ed-79209e083458/fetchFileTemp10179718841733301.tmp
+	24/05/07 10:40:41 INFO Executor: Adding file:/tmp/spark-6c2eea89-5784-47f3-8127-e41c6cf0be9a/userFiles-b54dfc55-3667-442b-96ed-79209e083458/org.postgresql_postgresql-42.7.3.jar to class loader default
+	24/05/07 10:40:41 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42757.
+	24/05/07 10:40:41 INFO NettyBlockTransferService: Server created on 27ccc46d6f5e:42757
+	24/05/07 10:40:41 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+	24/05/07 10:40:41 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 27ccc46d6f5e, 42757, None)
+	24/05/07 10:40:41 INFO BlockManagerMasterEndpoint: Registering block manager 27ccc46d6f5e:42757 with 93.3 MiB RAM, BlockManagerId(driver, 27ccc46d6f5e, 42757, None)
+	24/05/07 10:40:41 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 27ccc46d6f5e, 42757, None)
+	24/05/07 10:40:41 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 27ccc46d6f5e, 42757, None)
+	24/05/07 10:40:41 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+	24/05/07 10:40:41 INFO SharedState: Warehouse path is 'file:/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1060/3957/spark-warehouse'.
+[INFO] 2024-05-07 10:40:46.194 +0800 -  -> 
+	24/05/07 10:40:46 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[INFO] 2024-05-07 10:40:47.195 +0800 -  -> 
+	24/05/07 10:40:46 INFO CodeGenerator: Code generated in 379.339448 ms
+[INFO] 2024-05-07 10:40:48.201 +0800 -  -> 
+	24/05/07 10:40:47 INFO DAGScheduler: Registering RDD 2 (save at JdbcWriter.java:87) as input to shuffle 0
+	24/05/07 10:40:47 INFO DAGScheduler: Got map stage job 0 (save at JdbcWriter.java:87) with 1 output partitions
+	24/05/07 10:40:47 INFO DAGScheduler: Final stage: ShuffleMapStage 0 (save at JdbcWriter.java:87)
+	24/05/07 10:40:47 INFO DAGScheduler: Parents of final stage: List()
+	24/05/07 10:40:47 INFO DAGScheduler: Missing parents: List()
+	24/05/07 10:40:47 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[2] at save at JdbcWriter.java:87), which has no missing parents
+	24/05/07 10:40:47 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 34.8 KiB, free 93.3 MiB)
+	24/05/07 10:40:47 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 16.4 KiB, free 93.2 MiB)
+	24/05/07 10:40:47 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 27ccc46d6f5e:42757 (size: 16.4 KiB, free: 93.3 MiB)
+	24/05/07 10:40:47 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+	24/05/07 10:40:47 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[2] at save at JdbcWriter.java:87) (first 15 tasks are for partitions Vector(0))
+	24/05/07 10:40:47 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+	24/05/07 10:40:47 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (27ccc46d6f5e, executor driver, partition 0, PROCESS_LOCAL, 7878 bytes) 
+	24/05/07 10:40:47 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+	24/05/07 10:40:48 INFO CodeGenerator: Code generated in 81.681548 ms
+	24/05/07 10:40:48 INFO CodeGenerator: Code generated in 16.433592 ms
+	24/05/07 10:40:48 INFO CodeGenerator: Code generated in 8.077083 ms
+	24/05/07 10:40:48 INFO CodeGenerator: Code generated in 11.685382 ms
+	24/05/07 10:40:48 INFO CodeGenerator: Code generated in 6.423588 ms
+	24/05/07 10:40:48 INFO JDBCRDD: closed connection
+[INFO] 2024-05-07 10:40:49.203 +0800 -  -> 
+	24/05/07 10:40:48 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2491 bytes result sent to driver
+	24/05/07 10:40:48 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 752 ms on 27ccc46d6f5e (executor driver) (1/1)
+	24/05/07 10:40:48 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+	24/05/07 10:40:48 INFO DAGScheduler: ShuffleMapStage 0 (save at JdbcWriter.java:87) finished in 1.071 s
+	24/05/07 10:40:48 INFO DAGScheduler: looking for newly runnable stages
+	24/05/07 10:40:48 INFO DAGScheduler: running: Set()
+	24/05/07 10:40:48 INFO DAGScheduler: waiting: Set()
+	24/05/07 10:40:48 INFO DAGScheduler: failed: Set()
+	24/05/07 10:40:48 INFO ShufflePartitionsUtil: For shuffle(0), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+	24/05/07 10:40:48 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+	24/05/07 10:40:48 INFO CodeGenerator: Code generated in 37.367916 ms
+	24/05/07 10:40:48 INFO DAGScheduler: Registering RDD 5 (save at JdbcWriter.java:87) as input to shuffle 1
+	24/05/07 10:40:48 INFO DAGScheduler: Got map stage job 1 (save at JdbcWriter.java:87) with 1 output partitions
+	24/05/07 10:40:48 INFO DAGScheduler: Final stage: ShuffleMapStage 2 (save at JdbcWriter.java:87)
+	24/05/07 10:40:48 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 1)
+	24/05/07 10:40:48 INFO DAGScheduler: Missing parents: List()
+	24/05/07 10:40:48 INFO DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[5] at save at JdbcWriter.java:87), which has no missing parents
+	24/05/07 10:40:48 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 40.5 KiB, free 93.2 MiB)
+	24/05/07 10:40:48 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 19.1 KiB, free 93.2 MiB)
+	24/05/07 10:40:48 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 27ccc46d6f5e:42757 (size: 19.1 KiB, free: 93.3 MiB)
+	24/05/07 10:40:48 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+	24/05/07 10:40:48 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[5] at save at JdbcWriter.java:87) (first 15 tasks are for partitions Vector(0))
+	24/05/07 10:40:48 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks resource profile 0
+	24/05/07 10:40:48 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 1) (27ccc46d6f5e, executor driver, partition 0, NODE_LOCAL, 8032 bytes) 
+	24/05/07 10:40:48 INFO Executor: Running task 0.0 in stage 2.0 (TID 1)
+	24/05/07 10:40:48 INFO ShuffleBlockFetcherIterator: Getting 1 (2.9 KiB) non-empty blocks including 1 (2.9 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+	24/05/07 10:40:48 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 22 ms
+	24/05/07 10:40:48 INFO CodeGenerator: Code generated in 41.20961 ms
+	24/05/07 10:40:48 INFO Executor: Finished task 0.0 in stage 2.0 (TID 1). 5463 bytes result sent to driver
+	24/05/07 10:40:48 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 27ccc46d6f5e:42757 in memory (size: 16.4 KiB, free: 93.3 MiB)
+	24/05/07 10:40:48 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 1) in 170 ms on 27ccc46d6f5e (executor driver) (1/1)
+	24/05/07 10:40:48 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+	24/05/07 10:40:48 INFO DAGScheduler: ShuffleMapStage 2 (save at JdbcWriter.java:87) finished in 0.196 s
+	24/05/07 10:40:48 INFO DAGScheduler: looking for newly runnable stages
+	24/05/07 10:40:48 INFO DAGScheduler: running: Set()
+	24/05/07 10:40:48 INFO DAGScheduler: waiting: Set()
+	24/05/07 10:40:48 INFO DAGScheduler: failed: Set()
+	24/05/07 10:40:48 INFO CodeGenerator: Code generated in 24.67396 ms
+	24/05/07 10:40:48 INFO SparkContext: Starting job: save at JdbcWriter.java:87
+	24/05/07 10:40:48 INFO DAGScheduler: Got job 2 (save at JdbcWriter.java:87) with 1 output partitions
+	24/05/07 10:40:48 INFO DAGScheduler: Final stage: ResultStage 5 (save at JdbcWriter.java:87)
+	24/05/07 10:40:48 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 4)
+	24/05/07 10:40:48 INFO DAGScheduler: Missing parents: List()
+	24/05/07 10:40:49 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[10] at save at JdbcWriter.java:87), which has no missing parents
+	24/05/07 10:40:49 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 51.4 KiB, free 93.2 MiB)
+	24/05/07 10:40:49 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 23.1 KiB, free 93.2 MiB)
+	24/05/07 10:40:49 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 27ccc46d6f5e:42757 (size: 23.1 KiB, free: 93.3 MiB)
+	24/05/07 10:40:49 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1585
+	24/05/07 10:40:49 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[10] at save at JdbcWriter.java:87) (first 15 tasks are for partitions Vector(0))
+	24/05/07 10:40:49 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks resource profile 0
+	24/05/07 10:40:49 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 2) (27ccc46d6f5e, executor driver, partition 0, NODE_LOCAL, 8043 bytes) 
+	24/05/07 10:40:49 INFO Executor: Running task 0.0 in stage 5.0 (TID 2)
+[INFO] 2024-05-07 10:40:50.206 +0800 -  -> 
+	24/05/07 10:40:49 INFO ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+	24/05/07 10:40:49 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+	24/05/07 10:40:49 INFO CodeGenerator: Code generated in 10.466982 ms
+	24/05/07 10:40:49 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 27ccc46d6f5e:42757 in memory (size: 19.1 KiB, free: 93.3 MiB)
+[INFO] 2024-05-07 10:40:51.209 +0800 -  -> 
+	24/05/07 10:40:50 INFO CodeGenerator: Code generated in 15.60294 ms
+	24/05/07 10:40:50 INFO Executor: Finished task 0.0 in stage 5.0 (TID 2). 6668 bytes result sent to driver
+	24/05/07 10:40:50 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 2) in 1507 ms on 27ccc46d6f5e (executor driver) (1/1)
+	24/05/07 10:40:50 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+	24/05/07 10:40:50 INFO DAGScheduler: ResultStage 5 (save at JdbcWriter.java:87) finished in 1.581 s
+	24/05/07 10:40:50 INFO DAGScheduler: Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+	24/05/07 10:40:50 INFO TaskSchedulerImpl: Killing all running tasks in stage 5: Stage finished
+	24/05/07 10:40:50 INFO DAGScheduler: Job 2 finished: save at JdbcWriter.java:87, took 1.610983 s
+	24/05/07 10:40:50 INFO DAGScheduler: Registering RDD 13 (save at JdbcWriter.java:87) as input to shuffle 2
+	24/05/07 10:40:50 INFO DAGScheduler: Got map stage job 3 (save at JdbcWriter.java:87) with 1 output partitions
+	24/05/07 10:40:50 INFO DAGScheduler: Final stage: ShuffleMapStage 6 (save at JdbcWriter.java:87)
+	24/05/07 10:40:50 INFO DAGScheduler: Parents of final stage: List()
+	24/05/07 10:40:50 INFO DAGScheduler: Missing parents: List()
+	24/05/07 10:40:50 INFO DAGScheduler: Submitting ShuffleMapStage 6 (MapPartitionsRDD[13] at save at JdbcWriter.java:87), which has no missing parents
+	24/05/07 10:40:50 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 34.8 KiB, free 93.2 MiB)
+	24/05/07 10:40:50 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 16.5 KiB, free 93.2 MiB)
+	24/05/07 10:40:50 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 27ccc46d6f5e:42757 (size: 16.5 KiB, free: 93.3 MiB)
+	24/05/07 10:40:50 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1585
+	24/05/07 10:40:50 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 6 (MapPartitionsRDD[13] at save at JdbcWriter.java:87) (first 15 tasks are for partitions Vector(0))
+	24/05/07 10:40:50 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks resource profile 0
+	24/05/07 10:40:50 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 3) (27ccc46d6f5e, executor driver, partition 0, PROCESS_LOCAL, 7878 bytes) 
+	24/05/07 10:40:50 INFO Executor: Running task 0.0 in stage 6.0 (TID 3)
+	24/05/07 10:40:50 INFO JDBCRDD: closed connection
+	24/05/07 10:40:50 INFO Executor: Finished task 0.0 in stage 6.0 (TID 3). 2448 bytes result sent to driver
+	24/05/07 10:40:50 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 3) in 105 ms on 27ccc46d6f5e (executor driver) (1/1)
+	24/05/07 10:40:50 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+	24/05/07 10:40:50 INFO DAGScheduler: ShuffleMapStage 6 (save at JdbcWriter.java:87) finished in 0.122 s
+	24/05/07 10:40:50 INFO DAGScheduler: looking for newly runnable stages
+	24/05/07 10:40:50 INFO DAGScheduler: running: Set()
+	24/05/07 10:40:50 INFO DAGScheduler: waiting: Set()
+	24/05/07 10:40:50 INFO DAGScheduler: failed: Set()
+	24/05/07 10:40:50 INFO ShufflePartitionsUtil: For shuffle(2), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+	24/05/07 10:40:50 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+	24/05/07 10:40:51 INFO DAGScheduler: Registering RDD 16 (save at JdbcWriter.java:87) as input to shuffle 3
+	24/05/07 10:40:51 INFO DAGScheduler: Got map stage job 4 (save at JdbcWriter.java:87) with 1 output partitions
+	24/05/07 10:40:51 INFO DAGScheduler: Final stage: ShuffleMapStage 8 (save at JdbcWriter.java:87)
+	24/05/07 10:40:51 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 7)
+	24/05/07 10:40:51 INFO DAGScheduler: Missing parents: List()
+	24/05/07 10:40:51 INFO DAGScheduler: Submitting ShuffleMapStage 8 (MapPartitionsRDD[16] at save at JdbcWriter.java:87), which has no missing parents
+	24/05/07 10:40:51 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 40.6 KiB, free 93.1 MiB)
+	24/05/07 10:40:51 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 19.1 KiB, free 93.1 MiB)
+	24/05/07 10:40:51 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 27ccc46d6f5e:42757 (size: 19.1 KiB, free: 93.2 MiB)
+	24/05/07 10:40:51 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1585
+	24/05/07 10:40:51 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 8 (MapPartitionsRDD[16] at save at JdbcWriter.java:87) (first 15 tasks are for partitions Vector(0))
+	24/05/07 10:40:51 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks resource profile 0
+	24/05/07 10:40:51 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 4) (27ccc46d6f5e, executor driver, partition 0, NODE_LOCAL, 8032 bytes) 
+	24/05/07 10:40:51 INFO Executor: Running task 0.0 in stage 8.0 (TID 4)
+	24/05/07 10:40:51 INFO ShuffleBlockFetcherIterator: Getting 1 (2.9 KiB) non-empty blocks including 1 (2.9 KiB) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+	24/05/07 10:40:51 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+	24/05/07 10:40:51 INFO Executor: Finished task 0.0 in stage 8.0 (TID 4). 5420 bytes result sent to driver
+	24/05/07 10:40:51 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 4) in 23 ms on 27ccc46d6f5e (executor driver) (1/1)
+	24/05/07 10:40:51 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+	24/05/07 10:40:51 INFO DAGScheduler: ShuffleMapStage 8 (save at JdbcWriter.java:87) finished in 0.035 s
+	24/05/07 10:40:51 INFO DAGScheduler: looking for newly runnable stages
+	24/05/07 10:40:51 INFO DAGScheduler: running: Set()
+	24/05/07 10:40:51 INFO DAGScheduler: waiting: Set()
+	24/05/07 10:40:51 INFO DAGScheduler: failed: Set()
+	24/05/07 10:40:51 INFO CodeGenerator: Code generated in 9.825507 ms
+	24/05/07 10:40:51 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 27ccc46d6f5e:42757 in memory (size: 19.1 KiB, free: 93.3 MiB)
+	24/05/07 10:40:51 INFO SparkContext: Starting job: save at JdbcWriter.java:87
+	24/05/07 10:40:51 INFO DAGScheduler: Got job 5 (save at JdbcWriter.java:87) with 1 output partitions
+	24/05/07 10:40:51 INFO DAGScheduler: Final stage: ResultStage 11 (save at JdbcWriter.java:87)
+	24/05/07 10:40:51 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 10)
+	24/05/07 10:40:51 INFO DAGScheduler: Missing parents: List()
+	24/05/07 10:40:51 INFO DAGScheduler: Submitting ResultStage 11 (MapPartitionsRDD[21] at save at JdbcWriter.java:87), which has no missing parents
+	24/05/07 10:40:51 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 27ccc46d6f5e:42757 in memory (size: 16.5 KiB, free: 93.3 MiB)
+	24/05/07 10:40:51 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 49.2 KiB, free 93.2 MiB)
+	24/05/07 10:40:51 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 22.7 KiB, free 93.2 MiB)
+	24/05/07 10:40:51 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 27ccc46d6f5e:42757 (size: 22.7 KiB, free: 93.3 MiB)
+[INFO] 2024-05-07 10:40:52.211 +0800 -  -> 
+	24/05/07 10:40:51 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 5) (27ccc46d6f5e, executor driver, partition 0, NODE_LOCAL, 8043 bytes) 
+	24/05/07 10:40:51 INFO Executor: Running task 0.0 in stage 11.0 (TID 5)
+	24/05/07 10:40:51 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 27ccc46d6f5e:42757 in memory (size: 23.1 KiB, free: 93.3 MiB)
+	24/05/07 10:40:51 INFO ShuffleBlockFetcherIterator: Getting 1 (60.0 B) non-empty blocks including 1 (60.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+	24/05/07 10:40:51 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+	24/05/07 10:40:51 INFO CodeGenerator: Code generated in 27.497311 ms
+	24/05/07 10:40:51 INFO CodeGenerator: Code generated in 13.856379 ms
+	24/05/07 10:40:51 INFO Executor: Finished task 0.0 in stage 11.0 (TID 5). 6625 bytes result sent to driver
+	24/05/07 10:40:51 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 5) in 105 ms on 27ccc46d6f5e (executor driver) (1/1)
+	24/05/07 10:40:51 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+	24/05/07 10:40:51 INFO DAGScheduler: ResultStage 11 (save at JdbcWriter.java:87) finished in 0.170 s
+	24/05/07 10:40:51 INFO DAGScheduler: Job 5 is finished. Cancelling potential speculative or zombie tasks for this job
+	24/05/07 10:40:51 INFO TaskSchedulerImpl: Killing all running tasks in stage 11: Stage finished
+	24/05/07 10:40:51 INFO DAGScheduler: Job 5 finished: save at JdbcWriter.java:87, took 0.189680 s
+	24/05/07 10:40:51 WARN FileSystem: Failed to initialize fileystem hdfs://mycluster:8020/user/default/data_quality_error_data/0_1060_%5Bnull%20check%5D%20filtered%20data%20persistence: java.lang.IllegalArgumentException: java.net.UnknownHostException: mycluster
+	Exception in thread "main" java.lang.IllegalArgumentException: java.net.UnknownHostException: mycluster
+		at org.apache.hadoop.security.SecurityUtil.buildTokenService(SecurityUtil.java:466)
+		at org.apache.hadoop.hdfs.NameNodeProxiesClient.createProxyWithClientProtocol(NameNodeProxiesClient.java:134)
+		at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:374)
+		at org.apache.hadoop.hdfs.DFSClient.<init>(DFSClient.java:308)
+		at org.apache.hadoop.hdfs.DistributedFileSystem.initDFSClient(DistributedFileSystem.java:202)
+		at org.apache.hadoop.hdfs.DistributedFileSystem.initialize(DistributedFileSystem.java:187)
+		at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3469)
+		at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:174)
+		at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3574)
+		at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3521)
+		at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:540)
+		at org.apache.hadoop.fs.Path.getFileSystem(Path.java:365)
+		at org.apache.spark.sql.execution.datasources.DataSource.planForWritingFileFormat(DataSource.scala:454)
+		at org.apache.spark.sql.execution.datasources.DataSource.planForWriting(DataSource.scala:530)
+		at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)
+		at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)
+		at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:240)
+		at org.apache.spark.sql.DataFrameWriter.csv(DataFrameWriter.scala:850)
+		at org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.BaseFileWriter.outputImpl(BaseFileWriter.java:114)
+		at org.apache.dolphinscheduler.data.quality.flow.batch.writer.file.HdfsFileWriter.write(HdfsFileWriter.java:40)
+		at org.apache.dolphinscheduler.data.quality.execution.SparkBatchExecution.executeWriter(SparkBatchExecution.java:132)
+		at org.apache.dolphinscheduler.data.quality.execution.SparkBatchExecution.execute(SparkBatchExecution.java:58)
+		at org.apache.dolphinscheduler.data.quality.context.DataQualityContext.execute(DataQualityContext.java:62)
+		at org.apache.dolphinscheduler.data.quality.DataQualityApplication.main(DataQualityApplication.java:78)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at org.apache.spark.deploy.JavaMainApplication.start(SparkApplication.scala:52)
+		at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:1029)
+		at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:194)
+		at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:217)
+		at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:91)
+		at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1120)
+		at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1129)
+		at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+	Caused by: java.net.UnknownHostException: mycluster
+		... 36 more
+	24/05/07 10:40:51 INFO SparkContext: Invoking stop() from shutdown hook
+	24/05/07 10:40:51 INFO SparkContext: SparkContext is stopping with exitCode 0.
+	24/05/07 10:40:51 INFO SparkUI: Stopped Spark web UI at http://27ccc46d6f5e:4040
+	24/05/07 10:40:51 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+	24/05/07 10:40:51 INFO MemoryStore: MemoryStore cleared
+	24/05/07 10:40:51 INFO BlockManager: BlockManager stopped
+	24/05/07 10:40:51 INFO BlockManagerMaster: BlockManagerMaster stopped
+	24/05/07 10:40:51 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+	24/05/07 10:40:51 INFO SparkContext: Successfully stopped SparkContext
+	24/05/07 10:40:51 INFO ShutdownHookManager: Shutdown hook called
+	24/05/07 10:40:51 INFO ShutdownHookManager: Deleting directory /tmp/spark-31f090e1-cacb-488e-9e6e-76e351a16ec9
+	24/05/07 10:40:51 INFO ShutdownHookManager: Deleting directory /tmp/spark-6c2eea89-5784-47f3-8127-e41c6cf0be9a
+[INFO] 2024-05-07 10:40:52.217 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1060/3957, processId:93 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-05-07 10:40:52.218 +0800 - Start finding appId in /opt/dolphinscheduler/logs/20240507/13505298546272/21/1060/3957.log, fetch way: log 
+[INFO] 2024-05-07 10:40:52.221 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 10:40:52.223 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-07 10:40:52.224 +0800 - ***********************************************************************************************
+[INFO] 2024-05-07 10:40:52.226 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-07 10:40:52.246 +0800 - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[INFO] 2024-05-07 10:40:52.246 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-07 10:40:52.247 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1060/3957
+[INFO] 2024-05-07 10:40:52.276 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13001194483488/13505298546272_21/1060/3957
+[INFO] 2024-05-07 10:40:52.280 +0800 - FINALIZE_SESSION
