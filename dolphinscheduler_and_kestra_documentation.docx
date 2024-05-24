@@ -1,0 +1,603 @@
+Abstract
+This comparative analysis evaluates DolphinScheduler and Kestra, focusing on their utility and user experience in orchestrating data pipelines. My findings suggest that DolphinScheduler, in its current state, is incomplete and has reached its development maturity. Due to it mainly being supported by users from China, troubleshooting may be inhibited. DolphinScheduler also offers limited enhancements to data pipeline orchestration. In comparison, Kestra is a relatively complete orchestrator that has been showing rapid growth in development since April 2024. While not being a mainstream orchestrator in the industry, it provides extensive utilities for orchestration, as well as a user-friendly experience that eases the initial learning curve. My findings suggest that DolphinScheduler is currently not in a state to be used for orchestration, but Kestra shows potential to be a powerful tool to be used by the team in CSIT. Further details are elaborated in this documentation.
+Introduction
+In this comparative analysis, I will be evaluating the orchestrators, DolphinScheduler and Kestra, based on the evaluation criteria:
+1.	Data Pipeline Observability
+2.	Ease Of Set-Up, Migration, And Deployment
+3.	Adoption
+4.	Community Support
+5.	Data Processing
+6.	Workflow Complexity Handling
+7.	Availability
+8.	Version Control
+9.	Extensibility
+10.	Documentation
+11.	Security
+Based on the evaluation criteria, I will recommend the optimal orchestrator to use.
+1	DolphinScheduler
+1.1	Terminology
+Process: Refers to a standalone workflow developed in a DolphinScheduler Project. It is semantically just a workflow.
+Task: Refers to an individual node in a DolphinScheduler process that runs a certain integrated feature of DolphinSche in the workflow.
+Project: Refers to a group of workflows that share the same Project Parameters and Project Preferences. Project can be used semantically to separate workflows into their corresponding data pipelines.
+Project Parameters: Refers to the parameters that can be called by all the tasks used within the project
+Project Preferences: Allows the configuration of the default values for the common parameters for each individual task in the project. 
+1.2	Data Pipeline Observability
+1.2.1	Project Overview
+  
+The Project Overview in DolphinScheduler is a dashboard that summarizes the statuses of tasks and processes within a specified timeframe (in red). For example, in the image above, from 1 May 2024 to 31 May 2024, there were 592 Tasks failures and 82 Process failures. It also tracks the number of workflows that each user has developed within the project.
+The insights provided are only general overviews of the tasks and workflows that have run. However, due to a lack of actionable insights, such as error logs, and a workflow execution history, it does not provide quick accessibility to understand and take appropriate action against warning or errors which may have occurred in the data pipeline. Hence, it contributes little to the observability of the data pipeline.
+1.2.2	Workflow Relation
+ 
+Workflow Relation is likely an incomplete feature that is still in development. It is not a documented feature in DolphinScheduler’s documentation. Hence, its purpose is still unknown. 
+In its current state, it can show whether the workflows are currently in an online or offline state, as well as show whether they have an active cronjob schedule.
+Despite its namesake, it does not show any relationship between the workflows.
+Hence, it does not contribute to the data pipeline observability.
+1.2.3	Workflow Definition
+ 
+Workflow Definition is the interface to create and manage workflows in DolphinScheduler. 
+The ‘#’ column’s values are arbitrary digits, representing the row number the workflow is currently on.
+After creating or editing a workflow, the workflow gets moved to the top row.
+While a filtering functionality is provided, the interface does not provide a sorting functionality which makes it difficult to identify the workflows in the tables as the workflow can only be sorted by most recent edits.
+The filtering mechanic also does not provide filtering for other columns, filtering rows by keyword in the “Workflow Name” column.
+I found using the DolphinScheduler Workflow Definition Interface as unintuitive and difficult to use.
+Furthermore, the paging functionality does not work, allowing only up to 50 workflows to be visible in the interface. For example, if there were 60 workflows, only 50 workflows are visible for the user to modify and run. The other 10 workflows will be inaccessible from the interface unless some workflows are deleted.
+The paging functionality does not function as well, allowing only 1 page to be observed. Hence, only a maximum of 50 workflows can be observed from the table.
+Hence, the workflow definition interface inhibits workflow observability, making it more difficult to access, troubleshoot or edit the desired workflows.
+ 
+An error was also found whereby the workflow definition interface is unable to delete certain workflows when the IP addresses of the master and worker nodes are dynamically assigned, such as when deploying it on docker-compose. This is likely because the original static IP addresses of the master and the worker in which the workflow was created was likely stored and reused in the connection to delete the workflow. The namespace of the nodes cannot be used as their static IP addresses are used in the connection, rather than the namespaces. Hence, the master and worker nodes must be assigned static IPv4 addresses in its deployment to allow workflows to be deleted. 
+This may introduce a vulnerability as the IP of the master and worker will be consistent as well as introducing potential IP conflicts in the deployment. 
+1.2.4	Workflow
+ 
+When creating a new workflow or editing an existing one, DolphinScheduler provides a drag-and-drop interface in which Tasks can be added to the plane to develop or edit the workflow. 
+The drag-and-drop interface is intuitive and easy to observe how the workflow is being developed.
+However, the user interface is not user friendly. When the names of the nodes exceed the length of the node, the name will be truncated with an ellipsis (…). There is no way to extend the length of the nodes as well. To observe the full name of the node, the mouse cursor needs to hover on the desired node. This inhibits the user’s ability to observe and understand the tasks throughout the workflow. 
+1.2.5	Task
+ 
+The task interface, as seen above, provides a poor user experience. The narrow design of the task interface makes it difficult to use the IDE within the interface. This makes it more difficult to observe the script or description within the task.
+1.2.6	Tree View
+ 
+Figure 1: Tree View
+ 
+
+The tree view interface provides an overview that can observe the statuses of up to the past 100 executions of the workflow, as well as showing the statuses of the tasks within the executions.
+
+Figure 2: Tree View Legend
+ 
+Figure 3: Cropped Tree View
+The colour of the nodes of the tree-like structure in Figure 3 (represented in the red box), is used to represent the type of each individual task with reference to the legend as seen in Figure 2. For example, the grey nodes represent a “SHELL’ task, and the orange node represents a “SWITCH” task
+Figure 3 is a cropped portion of Figure 1. It shows the earliest (least recent) 5 executions of the past 100 executions. It shows that the earliest 4 executions of the workflow were manually stopped by the user, resulting in the “preprocessing and kafka” task being killed. The following execution (most recent of the 5) shows that the workflow failed because the “move to processing” task failed.
+Intuitive Workflow Observation (+):
+•	Easy to identify the state of previously executed/executing workflows and tasks
+•	Hovering over a workflow (represented by a circle) displays its workflow ID, allowing easy identification and troubleshooting of failed workflows.
+•	Easy to identify the task that failed in recent executions.
+Poor User Experience (-):
+•	The legend has similar colors for certain nodes which are hard to differentiate.
+o	“PYTHON” and “DEPENDENT” nodes have similar hues of blue
+o	The bright color text is difficult to read on a white background.
+•	The “SWITCH” node’s diverging downstream lines overlap with the downstream nodes making it difficult to understand the logic. Observed in Figure 3 at the node “check file existence”.
+Poor Flexibility (-):
+•	It can only observe the latest 100 executions of the workflow, but not any of the earlier ones.
+
+1.2.7	Workflow Instance
+The interface to observe all the executed workflows.
+Accessibility for recovery (+):
+•	Intuitive buttons, “Rerun” and “Recovery Failed”, which can allow the workflow to be rerun from the beginning, or run from the last failed task respectively.
+Inflexible Table (-):
+•	No sorting functionality for the table
+•	Filtering functionality, represented in the red box in Figure 4, only supports filtering by workflow name, “Workflow Instance Name”, “Executor”, “Host”, “Status” and by date.
+Inaccessible Workflow Executions (-):
+•	The paging functionality is not functioning in DolphinScheduler 3.2.1. Hence, only 50 workflow executions can be observed on the interface. Earlier executions can only be observed by deleting or filtering the executions.
+1.2.8	Gantt Chart
+ 
+Figure 5: Gantt Chart
+ 
+Figure 6: Gantt Chart Time Granularity
+The Gantt Chart allows the user to observe the time it takes to execute the tasks within an executed workflow.
+Accessed by clicking the “Gantt Chart” button at the Workflow Instance interface.
+Second-level Time Granularity (-):
+•	Observing Figure 6, the time granularity of the Gantt Chart is to the second. This is shown as the duration of the “check file existence” task was round down to 0 seconds. Difficult to benchmark the tasks executed in the workflow.
+Task Execution Overhead (-):
+•	A common occurrence that can be observed from the Gantt chart is that there is a 1 second overhead before executing the following task, observed as the gaps between the tasks in Figure 5. This may add overhead to the workflow execution time. 
+Unintuitive Legend (-):
+•	“Delay execution”, “Forced success” and “Dispatch” in the legend (represented in the red box) have similar colours, making them difficult to differentiate.
+1.2.9	Workflow Timing and Schedules
+A central interface whereby all the cron jobs that was set up in the Project can be managed and modified.
+Central Interface (+):
+•	The central interface makes it easier to manage the schedules of the various workflows in the project
+ Unintuitive UI for Scheduling (-):
+•	The scheduling interface does not allow the user to write a cron expression, instead providing an unintuitive interface to observe and manage the cron schedule of the workflow. Observed in Figure 8.
+1.2.10	Task Definition
+ 
+Figure 9: Task Definition
+A central interface to observe the tasks developed throughout all the workflows in the project.
+Central Interface (+):
+•	Provides a central interface to manage and adjust the tasks created in the project. (The workflow must be in offline state).
+Inaccessible Task Definitions (-):
+•	The paging functionality is not functioning in DolphinScheduler 3.2.1. Hence, only up to 50 tasks can be observed on the interface.
+1.2.11	Task Instance
+ 
+Figure 10: Task Instance
+
+Central Interface (+):
+•	An interface that allows the managing and version controlling of the various tasks developed.
+Inaccessible Task Executions (-):
+•	The paging functionality is not functioning in DolphinScheduler 3.2.1. Hence, only up to 50 executed tasks can be observed on the interface.
+1.3	Ease of set-up, deployment, and migration
+Refers to features that contribute to making it easier to set-up, deploy and migrate the orchestration tool.
+1.3.1	Set-up
+Refers to the set-up configurations that are provided out of the box.
+DolphinScheduler can be set up with the following out-of-the-box configurations:
+•	Standalone Server
+•	Docker-compose
+•	Docker-swarm
+•	Kubernetes helm chart
+Incomplete docker-compose (-):
+ 
+Figure 11: Docker-compose
+•	Did not assign static IP addresses for the worker and master.
+•	Worker does not contain the dependencies needed to use the integrated tasks in DolphinScheduler.
+1.3.2	Deployments
+For testing or quick use, DolphinScheduler supports deployments such as:
+•	Standalone Deployment
+•	Pseudo-Cluster Deployment
+For deployments in production environments, DolphinScheduler has documentation that supports:
+•	Cluster Deployment
+•	Kubernetes Deployment
+1.3.2.1	Standalone Deployment
+A deployment that is used for users to quickly test and experience DolphinScheduler.
+Not to be used in production.
+Provides information regarding:
+•	Prerequisites
+•	Bash commands to set-up the server
+•	Starting and stopping the server
+•	Limitations of standalone server
+1.3.2.2	Pseudo-Cluster Deployment
+A deployment that deploys DolphinScheduler’s services on a single machine.
+Not to be used in production.
+1.3.2.3	Cluster Deployment
+A deployment that deploys DolphinScheduler’s services across multiple machines. 
+Provides information regarding:
+1.	Prerequisites
+2.	Startup Environment Configurations
+3.	DolphinScheduler Configurations
+4.	Startup Command Lines
+1.3.2.4	Kubernetes Deployment
+A deployment that deploys DolphinScheduler in the Kubernetes cluster.
+Provides information regarding:
+1.	Prerequisites
+2.	Helm Chart Installation
+3.	Ingress Configuration
+4.	Helm Chart Uninstallation
+5.	KEDA Worker Autoscaling Guide [Experimental]
+6.	FAQ
+a.	Viewing Logs
+b.	Scaling Out
+c.	MySQL Support
+d.	Python 2 & 3 Support
+e.	Hadoop, Spark, Flink, Hive and DataX Support
+f.	Shared Storage
+g.	Resource Storage Configuration
+1.3.3	Migration
+DolphinScheduler provides documentation that describes how to run the scheduler
+Incompatible Change (+):
+DolphinScheduler documented the incompatible updates between the versions of DolphinScheduler which need to be considered when upgrading
+Upgrade Guide (+):
+•	Documented the steps to take before conducting the upgrade.
+•	Provided a code template for the database upgrade.
+•	Provided an example to migrate resources.
+1.4	Adoption
+Refers to how widespread the orchestration tool is utilised and how many well-known companies use it.
+DolphinScheduler is mainly adopted by users in China. Internet companies and banks being the main users that adopt it.
+Widespread Adoption (+):
+•	>4000 users in China use DolphinScheduler.
+Adopted by well-known companies (+):
+•	China Unicom
+•	Tencent
+Adopters are mainly China-based (-):
+•	Majority of the companies that adopt DolphinScheduler are based in China.
+Few sources (-):
+•	Only 1 website was found that identifies the companies that adopt DolphinScheduler.
+•	This research of DolphinScheduler adoption may not effectively suggest how well-adopted DolphinScheduler is.
+1.5	Community Support
+Refers to the size and activity level of the orchestrator’s user and contributor community in providing support and resources for the orchestrator.
+Github: https://github.com/apache/dolphinscheduler
+Slack: https://s.apache.org/dolphinscheduler-slack
+Popular GitHub Repo (+):
+As of 22/5/2024, DolphinScheduler GitHub repository has:
+•	4.5k Forks
+•	12.2k Stars
+This indicates that DolphinScheduler is used and appreciated by many users in their own projects, suggesting that the community is relatively large.
+Large Number of Contributors (+):
+ 
+Figure 12: Contributors
+DolphinScheduler has many contributors (538), which suggests that the project is being maintained or developed by many users who may provide support for issues in DolphinScheduler.
+Maturity (-):
+ 
+Figure 13:Code Frequency
+ 
+Figure 14: Commits Timeline
+As of 22 May 2024, the code frequency of DolphinScheduler has decreased significantly since its peak in January 2020.
+The number of commits that have been conducted to the project has decreased substantially and is at its all-time low since 2019.
+These suggest that DolphinScheduler’s community is becoming less active and may provide less support for users. 
+
+1.6	Data Processing
+Refers to the ability of the orchestration tool at managing:
+•	Stream Data Processing
+•	Batch Data Processing
+Generally Versatile Data Processing (+):
+•	Handles both batch and stream data processing effectively.
+SQL Batch Processing Limitation (-):
+•	The integrated SQL feature is used as a parameterized query.
+•	Only a single instance of data can be inserted into the SQL database at once.
+A potential workaround is to load the batch upstream data in the form of a CSV file rather than as parameters. The data may then be inserted into the database as a batch. However, this has not been tested yet.
+1.7	Workflow Complexity Handling
+Refers to the availability of features in the orchestrator that can improve the handling of complex workflows.
+Unique Dynamic Task (+):
+•	Can be used to parallelize workflows with different input parameters based on a the input lists
+•	Uses the Cartesian product.
+Few Logic Integrations (-):
+•	Excluding the “DYNAMIC” task, DolphinScheduler provides few logic tools that can accommodate for more complex workflows.
+•	Does not provide tasks for:
+o	Sequential executions of a child workflow
+o	Pausing
+o	Exceptions
+1.8	Availability
+Refers to the scheduler's functionalities that minimize downtime and mitigate its impact.
+Fault Tolerant Queue (+):
+ 
+Figure 16: Fault Tolerant Queue
+The fault tolerant queue saves the workflows that were queued to be executed but were unable to due to the DolphinScheduler servers going down.
+Upon starting up DolphinScheduler again, the queued workflows will be run as a “Recover tolerance fault process”, ensuring the workflow gets executed despite downtime
+
+Fault Tolerant Architecture (+):
+ 
+Figure 17: Decentralized Architecture
+The decentralized structure of DolphinScheduler’s masters and worker minimizes single points of failure, mitigating the chances of incurring downtime from a failed worker or master.
+Provides a ZooKeeper Watcher (+):
+Ensures that there is a new manager in the architecture when the current manager goes down.
+1.9	Version Control
+Refers to the integrated version control functionalities of the orchestrator.
+ 
+Figure 18: Version Control
+The versioning feature can be accessed from either the workflow definition page or in the task definition page. They can version control the entire workflow and individual tasks respectively.
+Lacks Commit Message (-):
+•	Unable to provide a description for the modification made in the adjacent versions.
+•	Difficult to determine the correct version to rollback to.
+Lacks Major and Minor Versioning (-):
+•	Every minor or major changes will increment the version number by 1. i.e v1 -> v2
+•	Difficult to determine the version where a major or minor change was conducted.
+•	Requires memorising the version and their corresponding changes.
+Inaccessible Versions (-):
+•	The paging functionality is not functioning in DolphinScheduler 3.2.1.
+•	Only the latest 10 versions can be observed on the interface as shown in Figure 18.
+1.10	Extensibility
+Refers to the ability of the orchestrator that allows it to be extended with new features without significant modifications or workarounds.
+ 
+Figure 19: DolphinScheduler’s Integrated Features
+Extensive machine learning integrations (+):
+•	Supports 7 different tasks that supports machine learning workflows such as for MLOps.
+•	Further testing should be conducted to evaluate their effectiveness.
+Supports big data processing tools (+):
+•	Spark
+•	Hadoop MapReduce (“MR” Task)
+•	Flink
+•	Hive
+
+Lacks Kafka Integration (-):
+•	Workaround is to use the “SHELL” or “PYTHON” tasks to read from a Kafka topic.
+•	The Kafka driver for spark may also be used as a workaround.
+•	Requires a scheduled workflow that polls the Kafka topic.
+Limited programming language support (-):
+•	Supports few programming languages:
+o	Java
+o	Python
+o	Bash
+
+Dependencies require worker alteration (-):
+•	Worker does not contain the necessary dependencies for the tasks out-of-the-box.
+•	To use each task, their dependencies need to be configured in a Dockerfile and run as a new worker. 
+
+Manual installation and management of dependencies (-):
+•	Users must manually manage the versions of dependencies, which can lead to potential conflicts.
+•	Users might not have access to modify worker configurations in the production environment.
+•	Use of integrated features may be delayed while waiting for the required dependencies to be added and deployed.
+
+Certain integrations have limited utility (-):
+•	“SQL” Task:
+o	 Can only insert one data instance using a parameterized query; potential workaround is to load data from a CSV file instead of using upstream parameters.
+o	May not support specific datatypes such as an array as shown in Figure 20.
+•	“SPARK”:
+o	Provides a user interface to construct a spark-submit command-line.
+o	“SHELL” task can be used to achieve similar results. Depicted in Figure 21.
+ 
+Figure 21:Spark Integration
+“DATA QUALITY” task does not work out-of-the-box (-):
+•	Not functioning in DolphinScheduler 3.2.1.
+•	A task that’s used to alert the user when the data in a SQL database does not meet the specified requirements.
+•	Submits a spark job that analyses 1 or more database tables. 
+•	The number of rows identified to have failed the specified rule will be recorded as the “Actual”. An absolute value or a relative value of the number of the rows in the database can be specified as the “Expected”. 
+•	Based on the specified “CheckType” and “Operator” a mathematical operation is conducted on the “Actual” and “Expected’ values. 
+•	If the result is true, the data quality task is successful and continues to execute. Otherwise, the “FailureStrategy is conducted.
+•	“FailureStrategy” can be configured as:
+o	Alert: The data quality task is successful, and an alert is sent.
+o	Blocking: The data quality task fails, exiting the workflow. An alert is also sent.
+•	DolphinScheduler’s underlying code is unable to insert data into the appropriate table in the metadata database. 
+o	It tries to insert data into the PostgreSQL metadata database using MySQL syntax which is invalid.
+o	Current Syntax: INSERT INTO dolphinscheduler.t_ds_dq_execute_result 
+o	Correct Syntax: INSERT INTO public.t_ds_dq_execute_result
+•	Underlying code is incorrectly inserting data as a “VARCHAR” instead of a “TIMESTAMP”
+•	Requires configuring a Hadoop Distributed File System (HDFS) with a specific configuration:
+o	hdfs://mycluster:8020
+1.11	Documentation
+Refers to the documentation's effectiveness in explaining the purpose and usage of the orchestrator's integrated features, including the use of visuals.
+Link: DolphinScheduler | DolphinsScheduler Documentation (apache.org)
+Provides setup and deployment instructions (+):
+•	Provided steps to follow
+•	Examples
+•	Bash command snippets
+
+No best practices (-)
+Somewhat ineffective use of imagery (-):
+•	Most imagery come from older version of DolphinScheduler
+•	Some imagery does not show the full user interface, making it difficult to understand how they use the features.
+•	Limited videos available on Youtube
+No FAQ (-)
+No Templates (-):
+•	Provides little to no examples of how to use the orchestrator
+No guides for optimization (-)
+Poorly describes parameter outputting (-):
+•	Specifies how to output parameters using tasks which have print statements.
+•	Does not specify how to output parameters from tasks without specific print statements, such as the “SQL” Task.
+o	The solution is to configure a LIST parameter directed OUT. Depicted in Figure 22.
+Incomplete descriptions (-):
+•	Does not elaborate on the purpose of the other parameter types shown in Figure 23 for the “SQL” task.
+•	Did not specify that the task dependencies and environment variables needed to be configured by the user before using the integrated tasks.
+
+1.12	Security
+Refers to the integrated features of the orchestration tool that improves its overall security.
+IAM (+)
+Audit Logging (+)
+Supports 4 different Authentication types (+):
+1.	Apache DolphinScheduler Password
+2.	LDAP
+3.	Casdoor SSO
+4.	OAuth2
+No Role Management (-)
+No RBAC (-)
+No Secret Management (-)
+2	Kestra
+2.1	Terminology
+Namespaces: Categorizes the workflows and organizes them, allowing the management of resources such as secrets, variables, and files.
+2.2	Data Pipeline Observability
+Refers to the ability that the orchestrator provides to monitor, trace, and understand the workflows being executed and the data that’s being passed in the data pipeline.
+2.2.1	Dashboard
+  
+Central Interface to observe the execution statuses (+):
+•	Easy to read interface.
+•	Effective use of legends (showing only the existing statuses)
+•	Differentiable legend colours
+•	Able to observe statuses of workflows across namespaces.
+•	Can easily observe the proportions of statuses in the namespaces in “Executions per namespace”.
+Actionable Interface (+):
+•	Easy to identify the namespaces to troubleshoot. Namespaces which produce the largest proportion of execution errors can easily be observed in “Execution errors per namespace”.
+•	Recent execution failures can easily be observed for troubleshooting in “Failed executions”.
+o	Provides hyperlinks to jump to the execution or the workflow.
+•	 “Error logs” provides a quick glimpse into the recent error or warning logs that have been returned. Allows user to have a quick understanding of the potential issue.
+
+2.2.2	Flows
+ 
+Figure 25: Kestra Flows
+Intuitive Interface (+):
+•	Execution statuses in a timeline to observe patterns.
+•	Last status
+•	Execution Statistics
+2.2.3	Editor
+ 
+Figure 26: Editor
+An Integrated Development Environment which allows the user to configure the folders and files in which the tasks within the namespace can use in their operations.
+Intuitive UI to observe the resources used in the namespace (+)
+
+2.2.4	Logs
+ 
+Figure 27: Kestra Logs
+An interface to observe all the logs returned from the workflows in the namespaces.
+Log Categorization (+):
+•	Categorizing the logs to “INFO”, “WARN”, and “ERROR” makes it easier to identify key details from the logs.
+•	A filter is also provided to filter the logs by these categories.
+2.2.5	Triggers
+ 
+Figure 28: Triggers
+Triggers are the functions that causes a workflow to get triggered. The Triggers interface is used to monitor the existing triggers in Kestra and the flows they are used in.
+Central Interface (+):
+•	Makes it easier to manage and observe the triggers throughout the workflows in Kestra.
+•	Provides a filter function by namespace and flow name.
+2.2.6	Executions
+ 
+Figure 29: Executions
+A central interface to observe the executed workflows.
+Central Interface (+)
+2.2.7	Executions - Gantt Chart
+ 
+Figure 30: Kestra Gantt Chart
+The timeline of the tasks executed.
+Fine Time Granularity of 0.01s (+)
+2.2.8	Execution – Logs
+ 
+Figure 31: Execution – Logs
+Provides an overview of the logs of the tasks executed in the workflow.
+Log Categorization (+)
+Intuitive format to display the logs (+):
+•	Provides an overview of the task logs.
+•	Sequential ordering of the tasks.
+•	Allows the user to understand how the executed workflow was running.
+2.2.9	Execution – Topology
+ 
+Figure 32: Execution Topology
+Provides a visual representation of the workflow that was executed.
+Comprehensive UI (+):
+•	Highlights the successful and failed tasks with a green and red stripe respectively as shown in Figure 32.
+•	Trigger is depicted in a labelled green square
+•	High level overview which is easier to understand as compared to the workflow yaml configuration.
+2.2.10	Labels
+ 
+Figure 33: Labels
+Tags that can be assigned to workflows, making it easier to filter workflows in the User Interface. 
+2.2.11	Dependencies
+ 
+Figure 34: Dependencies
+Based on the configured triggers, Kestra creates a topological overview of the workflows that will execute sequentially of each other.
+Overview of the pipeline being developed (+)
+2.3	Ease of set-up, migration, and deployment
+Refers to features that contribute to making it easier to set-up, deploy and migrate the orchestration tool.
+2.3.1	Set-up
+Refers to the set-up configurations that are provided out of the box.
+Kestra can be set up with the various non-cloud based out-of-the-box configurations (+):
+•	Docker
+•	Docker-compose
+•	Helm Chart
+•	Standalone
+•	Podman Compose
+2.3.2	Deployment
+Provides various deployment options for different use cases (+):
+•	Small-sized deployment
+o	Runs in a single process.
+o	Cannot be scaled out.
+•	Medium-sized deployment
+o	Runs across containers or machines.
+o	Can be scaled out.
+o	Used when availability is less crucial.
+•	High-availability deployment
+o	Runs across containers or machines.
+o	Support higher throughput, and full horizontal and vertical scaling.
+o	Replaces database with Kafka and Elasticsearch, minimises single-points of failure.
+High-availability deployment only available in the Enterprise Edition (-)
+2.3.3	Migration
+Provides an automatic and manual database migration method for different uses (+):
+•	Automatic database migration uses flyway to migrate database and is relatively slower.
+•	Manual database migration is used for large databases and used to minimise downtime.
+Provides extensive migration guides (+):
+•	Supports:
+o	Docker
+o	Helm chart
+o	Kubernetes
+Incompatibility List (+):
+o	Details deprecated features.
+o	Provides solutions and workarounds to the changes.
+2.4	Adoption
+Refers to how widespread the orchestration tool is utilised and how many well-known companies use it.
+Widespread Adoption (+):
+•	>20 000 users (stated in website).
+Provided examples of how companies use Kestra (+)
+Adopted by few well-known companies (-):
+•	Huawei is the only one with a large marketshare
+Few sources (-):
+•	The only sources available was Kestra’s website
+2.5	Community Support
+Refers to the size and activity level of the orchestrator’s user and contributor community in providing support and resources for the orchestrator.
+Github: https://github.com/kestra-io/kestra
+Slack: https://kestra.io/slack
+Popular GitHub Repo (+):
+As of 22/5/2024, DolphinScheduler GitHub repository has:
+•	385 Forks
+•	6.7k Stars
+Growing GitHub Repository (+):
+ 
+Figure 35: Increasing Commits
+ 
+Figure 36: Increasing Code Frequency
+Few Contributors (-):
+ 
+Figure 37: Kestra Contributors
+2.6	Data Processing
+Yet to test
+2.7	Workflow Complexity Handling
+Refers to the availability of features in the orchestrator that can improve the handling of complex workflows.
+Docker Runner (+):
+Allows the task to be run in an isolated docker container. The Dockerfile used to bring up the docker container can be specified. Used if the task requires the isolated environments.
+ 
+Figure 38: Docker Runner
+Trigger (+):
+Integrated feature that allows a workflow to be executed from various events such as:
+•	Webhooks
+•	Successfully executed workflows
+•	Cron Schedules
+2.8	Availability
+Refers to the scheduler's functionalities that minimize downtime and mitigate its impact.
+Fault Tolerant Backend Option (+):
+•	Uses Kafka and Elasticsearch instead of JDBC database backend.
+•	Kafka allows scaling out to handle large volumes of data.
+•	Elasticsearch provides scalability by providing a robust, horizontally scalable UI backend.
+Only available in Enterprise Edition (-)
+2.9	Version Control
+Refers to the integrated version control functionalities of the orchestrator.
+ 
+Figure 39: Revisions
+Revisions (+):
+•	Side-by-side comparison of the changes made across the 2 specified versions.
+•	Depicted in Figure 39.
+Lacks Commit Message (-):
+•	Unable to provide a description for the modification made in the adjacent versions.
+•	Difficult to determine the correct version to rollback to other than comparing using Revisions.
+Lacks Major and Minor Versioning (-):
+•	Every minor or major changes will increment the version number by 1. i.e v1 -> v2
+•	Difficult to determine the version where a major or minor change was conducted.
+•	Requires memorising the version and their corresponding changes.
+2.10	Extensibility
+Refers to the ability of the orchestrator that allows it to be extended with new features without significant modifications or workarounds.
+ 
+Figure 40: Kestra Plugins
+Supports wide range of integrations (+)
+•	>470 plugins
+All key big data processing integrations available (+):
+•	Kubernetes
+•	Spark
+•	Hadoop
+•	Kafka
+Git Integration (+)
+Docker Runner (+):
+•	Allows the task to be executed in an isolated docker container.
+•	Dependencies do not need to be added to the Kestra worker to use certain tools.
+Spark integration lacks value add (-):
+•	Used to run a spark-submit command from within a spark container
+•	It can similarly be accomplished using the Shell plugin
+
+2.11	Documentation
+Refers to the documentation's effectiveness in explaining the purpose and usage of the orchestrator's integrated features, including the use of visuals.
+Documentation: https://kestra.io/docs
+Provides setup and deployment instructions (+):
+•	Provided steps to follow
+•	Examples
+•	Bash command snippets
+Best practices (+):
+•	Workflow development
+•	Version control
+•	Managing python libraries
+•	Naming conventions
+•	Pebble templating
+How-to guide (+):
+•	Administrator guide
+•	Develop guide
+•	Extensive guides to use Kestra’s plugins
+Effective use of imagery (+):
+•	Most imagery come from older version of DolphinScheduler.
+•	Some imagery does not show the full user interface, making it difficult to understand how they use the features.
+•	Extensive videos available on YouTube.
+FAQ (+)
+Code Templates - Blueprints (+):
+Blueprints are the templates that can be used as a reference to develop workflows in Kestra.
+•	Provides example workflows with their own example use cases.
+•	Workflow configuration of the blueprint can be copied into the workflow.
+No guides for optimization (-)
+Videos provided provide little value add (-):
+o	The speaker follows the documentation.
+o	Provides little value-add other than having a video.
+2.12	Security
+Refers to the integrated features of the orchestration tool that improves its overall security.
+Requires Enterprise Edition (-):
+•	Enterprise Edition is required in order to use the security functionalities of Kestra.
+o	Multi-Tenancy
+o	Single Sign-On (SSO)
+o	Role-Based Access Control (RBAC)
+o	Secrets Management
+o	Audit Logs
+

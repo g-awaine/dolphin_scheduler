@@ -1,0 +1,445 @@
+[INFO] 2024-05-15 10:13:32.555 +0800 - ***********************************************************************************************
+[INFO] 2024-05-15 10:13:32.556 +0800 - *********************************  Initialize task context  ***********************************
+[INFO] 2024-05-15 10:13:32.557 +0800 - ***********************************************************************************************
+[INFO] 2024-05-15 10:13:32.557 +0800 - Begin to initialize task
+[INFO] 2024-05-15 10:13:32.557 +0800 - Set task startTime: 1715739212557
+[INFO] 2024-05-15 10:13:32.557 +0800 - Set task appId: 1122_4117
+[INFO] 2024-05-15 10:13:32.557 +0800 - End initialize task {
+  "taskInstanceId" : 4117,
+  "taskName" : "preprocessing and kafka",
+  "firstSubmitTime" : 1715739212541,
+  "startTime" : 1715739212557,
+  "taskType" : "SHELL",
+  "workflowInstanceHost" : "172.18.2.1:5678",
+  "host" : "172.18.1.1:1234",
+  "logPath" : "/opt/dolphinscheduler/logs/20240515/13201021801792/121/1122/4117.log",
+  "processId" : 0,
+  "processDefineCode" : 13201021801792,
+  "processDefineVersion" : 121,
+  "processInstanceId" : 1122,
+  "scheduleTime" : 0,
+  "globalParams" : "[{\"prop\":\"folder\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"in\"}]",
+  "executorId" : 1,
+  "cmdTypeIfComplement" : 0,
+  "tenantCode" : "default",
+  "processDefineId" : 0,
+  "projectId" : 0,
+  "projectCode" : 13010050770016,
+  "taskParams" : "{\"localParams\":[],\"rawScript\":\"$SPARK_HOME/bin/spark-submit \\\\\\n    --master local \\\\\\n    --deploy-mode client \\\\\\n    --conf spark.driver.cores=1 \\\\\\n    --conf spark.driver.memory=1G \\\\\\n    --conf spark.executor.instances=1 \\\\\\n    --conf spark.executor.cores=1 \\\\\\n    --conf spark.executor.memory=1G \\\\\\n    --name reddit_preprocessing \\\\\\n    --files ${raw_file_dir} \\\\\\n    --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 \\\\\\n    --conf spark.driver.extraJavaOptions=\\\"-Divy.cache.dir=/tmp -Divy.home=/tmp\\\" \\\\\\n    spark_reddit_preprocessing.py\\n\\n#     --jars spark_packages/spark-sql-kafka-0-10_2.12-3.5.1.jar \\\\\",\"resourceList\":[{\"id\":null,\"resourceName\":\"file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py\",\"res\":null}]}",
+  "environmentConfig" : "export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3\nexport JAVA_HOME=/opt/java/openjdk\nexport PYSPARK_DRIVER_PYTHON=/bin/python3.11\nexport PYSPARK_PYTHON=/bin/python3.11",
+  "prepareParamsMap" : {
+    "GNEWS_HOME" : {
+      "prop" : "GNEWS_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/google_news"
+    },
+    "system.task.definition.name" : {
+      "prop" : "system.task.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocessing and kafka"
+    },
+    "system.project.name" : {
+      "prop" : "system.project.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : null
+    },
+    "REDDIT_HOME" : {
+      "prop" : "REDDIT_HOME",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit"
+    },
+    "system.biz.curdate" : {
+      "prop" : "system.biz.curdate",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240515"
+    },
+    "system.task.instance.id" : {
+      "prop" : "system.task.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "4117"
+    },
+    "system.task.definition.code" : {
+      "prop" : "system.task.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13210058002752"
+    },
+    "system.datetime" : {
+      "prop" : "system.datetime",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240515101332"
+    },
+    "folder" : {
+      "prop" : "folder",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "in"
+    },
+    "system.project.code" : {
+      "prop" : "system.project.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13010050770016"
+    },
+    "system.workflow.instance.id" : {
+      "prop" : "system.workflow.instance.id",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "1122"
+    },
+    "raw_file_dir" : {
+      "prop" : "raw_file_dir",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "/local_storage/reddit/processing/1118-20240514124016.json"
+    },
+    "system.biz.date" : {
+      "prop" : "system.biz.date",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "20240514"
+    },
+    "system.workflow.definition.name" : {
+      "prop" : "system.workflow.definition.name",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "preprocess_post"
+    },
+    "system.workflow.definition.code" : {
+      "prop" : "system.workflow.definition.code",
+      "direct" : "IN",
+      "type" : "VARCHAR",
+      "value" : "13201021801792"
+    }
+  },
+  "taskAppId" : "1122_4117",
+  "taskTimeout" : 2147483647,
+  "workerGroup" : "default",
+  "delayTime" : 0,
+  "currentExecutionStatus" : "SUBMITTED_SUCCESS",
+  "endTime" : 0,
+  "varPool" : "[{\"prop\":\"raw_file_dir\",\"direct\":\"IN\",\"type\":\"VARCHAR\",\"value\":\"/local_storage/reddit/processing/1118-20240514124016.json\"}]",
+  "dryRun" : 0,
+  "paramsMap" : { },
+  "cpuQuota" : -1,
+  "memoryMax" : -1,
+  "testFlag" : 0,
+  "logBufferEnable" : false,
+  "dispatchFailTimes" : 0
+}
+[INFO] 2024-05-15 10:13:32.557 +0800 - ***********************************************************************************************
+[INFO] 2024-05-15 10:13:32.557 +0800 - *********************************  Load task instance plugin  *********************************
+[INFO] 2024-05-15 10:13:32.558 +0800 - ***********************************************************************************************
+[INFO] 2024-05-15 10:13:32.560 +0800 - Send task status RUNNING_EXECUTION master: 172.18.1.1:1234
+[INFO] 2024-05-15 10:13:32.560 +0800 - TenantCode: default check successfully
+[INFO] 2024-05-15 10:13:32.561 +0800 - WorkflowInstanceExecDir: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_121/1122/4117 check successfully
+[INFO] 2024-05-15 10:13:32.561 +0800 - Create TaskChannel: org.apache.dolphinscheduler.plugin.task.shell.ShellTaskChannel successfully
+[INFO] 2024-05-15 10:13:32.563 +0800 - Download resources successfully: 
+ResourceContext(resourceItemMap={file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py=ResourceContext.ResourceItem(resourceAbsolutePathInStorage=file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py, resourceRelativePath=spark_reddit_preprocessing.py, resourceAbsolutePathInLocal=/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_121/1122/4117/spark_reddit_preprocessing.py)})
+[INFO] 2024-05-15 10:13:32.563 +0800 - Download upstream files: [] successfully
+[INFO] 2024-05-15 10:13:32.563 +0800 - Task plugin instance: SHELL create successfully
+[INFO] 2024-05-15 10:13:32.563 +0800 - Initialize shell task params {
+  "localParams" : [ ],
+  "varPool" : null,
+  "rawScript" : "$SPARK_HOME/bin/spark-submit \\\n    --master local \\\n    --deploy-mode client \\\n    --conf spark.driver.cores=1 \\\n    --conf spark.driver.memory=1G \\\n    --conf spark.executor.instances=1 \\\n    --conf spark.executor.cores=1 \\\n    --conf spark.executor.memory=1G \\\n    --name reddit_preprocessing \\\n    --files ${raw_file_dir} \\\n    --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 \\\n    --conf spark.driver.extraJavaOptions=\"-Divy.cache.dir=/tmp -Divy.home=/tmp\" \\\n    spark_reddit_preprocessing.py\n\n#     --jars spark_packages/spark-sql-kafka-0-10_2.12-3.5.1.jar \\",
+  "resourceList" : [ {
+    "id" : null,
+    "resourceName" : "file:/dolphinscheduler/default/resources/spark_reddit_preprocessing.py",
+    "res" : null
+  } ]
+}
+[INFO] 2024-05-15 10:13:32.564 +0800 - Success initialized task plugin instance successfully
+[INFO] 2024-05-15 10:13:32.564 +0800 - Set taskVarPool: [{"prop":"raw_file_dir","direct":"IN","type":"VARCHAR","value":"/local_storage/reddit/processing/1118-20240514124016.json"}] successfully
+[INFO] 2024-05-15 10:13:32.564 +0800 - ***********************************************************************************************
+[INFO] 2024-05-15 10:13:32.564 +0800 - *********************************  Execute task instance  *************************************
+[INFO] 2024-05-15 10:13:32.564 +0800 - ***********************************************************************************************
+[INFO] 2024-05-15 10:13:32.564 +0800 - Final Shell file is: 
+[INFO] 2024-05-15 10:13:32.565 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-15 10:13:32.565 +0800 - #!/bin/bash
+BASEDIR=$(cd `dirname $0`; pwd)
+cd $BASEDIR
+export SPARK_HOME=/opt/spark-3.5.1-bin-hadoop3
+export JAVA_HOME=/opt/java/openjdk
+export PYSPARK_DRIVER_PYTHON=/bin/python3.11
+export PYSPARK_PYTHON=/bin/python3.11
+$SPARK_HOME/bin/spark-submit \
+    --master local \
+    --deploy-mode client \
+    --conf spark.driver.cores=1 \
+    --conf spark.driver.memory=1G \
+    --conf spark.executor.instances=1 \
+    --conf spark.executor.cores=1 \
+    --conf spark.executor.memory=1G \
+    --name reddit_preprocessing \
+    --files /local_storage/reddit/processing/1118-20240514124016.json \
+    --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 \
+    --conf spark.driver.extraJavaOptions="-Divy.cache.dir=/tmp -Divy.home=/tmp" \
+    spark_reddit_preprocessing.py
+
+#     --jars spark_packages/spark-sql-kafka-0-10_2.12-3.5.1.jar \
+[INFO] 2024-05-15 10:13:32.565 +0800 - ****************************** Script Content *****************************************************************
+[INFO] 2024-05-15 10:13:32.565 +0800 - Executing shell command : sudo -u default -i /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_121/1122/4117/1122_4117.sh
+[INFO] 2024-05-15 10:13:32.568 +0800 - process start, process id is: 1737
+[INFO] 2024-05-15 10:13:33.575 +0800 -  -> 
+	sudo: unable to change directory to /home/default: No such file or directory
+[INFO] 2024-05-15 10:13:35.641 +0800 -  -> 
+	:: loading settings :: url = jar:file:/opt/spark-3.5.1-bin-hadoop3/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+	Ivy Default Cache set to: /tmp
+	The jars for the packages stored in: /tmp/jars
+	org.apache.spark#spark-sql-kafka-0-10_2.12 added as a dependency
+	:: resolving dependencies :: org.apache.spark#spark-submit-parent-a6aaa154-0d2a-4139-abd4-27b3a8eeeedc;1.0
+		confs: [default]
+		found org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 in central
+		found org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 in central
+		found org.apache.kafka#kafka-clients;3.4.1 in central
+		found org.lz4#lz4-java;1.8.0 in central
+		found org.xerial.snappy#snappy-java;1.1.10.3 in central
+[INFO] 2024-05-15 10:13:36.642 +0800 -  -> 
+		found org.slf4j#slf4j-api;2.0.7 in central
+		found org.apache.hadoop#hadoop-client-runtime;3.3.4 in central
+		found org.apache.hadoop#hadoop-client-api;3.3.4 in central
+		found commons-logging#commons-logging;1.1.3 in central
+		found com.google.code.findbugs#jsr305;3.0.0 in central
+		found org.apache.commons#commons-pool2;2.11.1 in central
+	:: resolution report :: resolve 489ms :: artifacts dl 18ms
+		:: modules in use:
+		com.google.code.findbugs#jsr305;3.0.0 from central in [default]
+		commons-logging#commons-logging;1.1.3 from central in [default]
+		org.apache.commons#commons-pool2;2.11.1 from central in [default]
+		org.apache.hadoop#hadoop-client-api;3.3.4 from central in [default]
+		org.apache.hadoop#hadoop-client-runtime;3.3.4 from central in [default]
+		org.apache.kafka#kafka-clients;3.4.1 from central in [default]
+		org.apache.spark#spark-sql-kafka-0-10_2.12;3.5.1 from central in [default]
+		org.apache.spark#spark-token-provider-kafka-0-10_2.12;3.5.1 from central in [default]
+		org.lz4#lz4-java;1.8.0 from central in [default]
+		org.slf4j#slf4j-api;2.0.7 from central in [default]
+		org.xerial.snappy#snappy-java;1.1.10.3 from central in [default]
+		---------------------------------------------------------------------
+		|                  |            modules            ||   artifacts   |
+		|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+		---------------------------------------------------------------------
+		|      default     |   11  |   0   |   0   |   0   ||   11  |   0   |
+		---------------------------------------------------------------------
+	:: retrieving :: org.apache.spark#spark-submit-parent-a6aaa154-0d2a-4139-abd4-27b3a8eeeedc
+		confs: [default]
+		0 artifacts copied, 11 already retrieved (0kB/20ms)
+	24/05/15 10:13:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[INFO] 2024-05-15 10:13:37.648 +0800 -  -> 
+	24/05/15 10:13:37 INFO SparkContext: Running Spark version 3.5.1
+	24/05/15 10:13:37 INFO SparkContext: OS info Linux, 6.5.0-35-generic, amd64
+	24/05/15 10:13:37 INFO SparkContext: Java version 1.8.0_402
+	24/05/15 10:13:37 INFO ResourceUtils: ==============================================================
+	24/05/15 10:13:37 INFO ResourceUtils: No custom resources configured for spark.driver.
+	24/05/15 10:13:37 INFO ResourceUtils: ==============================================================
+	24/05/15 10:13:37 INFO SparkContext: Submitted application: reddit_preprocessing
+	24/05/15 10:13:37 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+	24/05/15 10:13:37 INFO ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+	24/05/15 10:13:37 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[INFO] 2024-05-15 10:13:38.650 +0800 -  -> 
+	24/05/15 10:13:37 INFO SecurityManager: Changing view acls to: default
+	24/05/15 10:13:37 INFO SecurityManager: Changing modify acls to: default
+	24/05/15 10:13:37 INFO SecurityManager: Changing view acls groups to: 
+	24/05/15 10:13:37 INFO SecurityManager: Changing modify acls groups to: 
+	24/05/15 10:13:37 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: default; groups with view permissions: EMPTY; users with modify permissions: default; groups with modify permissions: EMPTY
+	24/05/15 10:13:38 INFO Utils: Successfully started service 'sparkDriver' on port 35451.
+	24/05/15 10:13:38 INFO SparkEnv: Registering MapOutputTracker
+	24/05/15 10:13:38 INFO SparkEnv: Registering BlockManagerMaster
+	24/05/15 10:13:38 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+	24/05/15 10:13:38 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+	24/05/15 10:13:38 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+	24/05/15 10:13:38 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-771d324a-3a26-4ea4-b9c2-8adb02a551a5
+	24/05/15 10:13:38 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+	24/05/15 10:13:38 INFO SparkEnv: Registering OutputCommitCoordinator
+	24/05/15 10:13:38 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+	24/05/15 10:13:38 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+	24/05/15 10:13:38 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar at spark://e5be9fed912a:35451/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar at spark://e5be9fed912a:35451/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar at spark://e5be9fed912a:35451/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO SparkContext: Added JAR file:///tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar at spark://e5be9fed912a:35451/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar at spark://e5be9fed912a:35451/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar at spark://e5be9fed912a:35451/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO SparkContext: Added JAR file:///tmp/jars/org.lz4_lz4-java-1.8.0.jar at spark://e5be9fed912a:35451/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO SparkContext: Added JAR file:///tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar at spark://e5be9fed912a:35451/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO SparkContext: Added JAR file:///tmp/jars/org.slf4j_slf4j-api-2.0.7.jar at spark://e5be9fed912a:35451/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO SparkContext: Added JAR file:///tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar at spark://e5be9fed912a:35451/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO SparkContext: Added JAR file:///tmp/jars/commons-logging_commons-logging-1.1.3.jar at spark://e5be9fed912a:35451/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO SparkContext: Added file file:///local_storage/reddit/processing/1118-20240514124016.json at file:///local_storage/reddit/processing/1118-20240514124016.json with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: Copying /local_storage/reddit/processing/1118-20240514124016.json to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/1118-20240514124016.json
+	24/05/15 10:13:38 INFO SparkContext: Added file file:///tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar at file:///tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: Copying /tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar
+	24/05/15 10:13:38 INFO SparkContext: Added file file:///tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar at file:///tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: Copying /tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar
+	24/05/15 10:13:38 INFO SparkContext: Added file file:///tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar at file:///tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: Copying /tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.kafka_kafka-clients-3.4.1.jar
+	24/05/15 10:13:38 INFO SparkContext: Added file file:///tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar at file:///tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: Copying /tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/com.google.code.findbugs_jsr305-3.0.0.jar
+	24/05/15 10:13:38 INFO SparkContext: Added file file:///tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar at file:///tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: Copying /tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.commons_commons-pool2-2.11.1.jar
+	24/05/15 10:13:38 INFO SparkContext: Added file file:///tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar at file:///tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: Copying /tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar
+[INFO] 2024-05-15 10:13:39.675 +0800 -  -> 
+	24/05/15 10:13:38 INFO SparkContext: Added file file:///tmp/jars/org.lz4_lz4-java-1.8.0.jar at file:///tmp/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: Copying /tmp/jars/org.lz4_lz4-java-1.8.0.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.lz4_lz4-java-1.8.0.jar
+	24/05/15 10:13:38 INFO SparkContext: Added file file:///tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar at file:///tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: Copying /tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.xerial.snappy_snappy-java-1.1.10.3.jar
+	24/05/15 10:13:38 INFO SparkContext: Added file file:///tmp/jars/org.slf4j_slf4j-api-2.0.7.jar at file:///tmp/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: Copying /tmp/jars/org.slf4j_slf4j-api-2.0.7.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.slf4j_slf4j-api-2.0.7.jar
+	24/05/15 10:13:38 INFO SparkContext: Added file file:///tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar at file:///tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: Copying /tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.hadoop_hadoop-client-api-3.3.4.jar
+	24/05/15 10:13:38 INFO SparkContext: Added file file:///tmp/jars/commons-logging_commons-logging-1.1.3.jar at file:///tmp/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: Copying /tmp/jars/commons-logging_commons-logging-1.1.3.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/commons-logging_commons-logging-1.1.3.jar
+	24/05/15 10:13:38 INFO Executor: Starting executor ID driver on host e5be9fed912a
+	24/05/15 10:13:38 INFO Executor: OS info Linux, 6.5.0-35-generic, amd64
+	24/05/15 10:13:38 INFO Executor: Java version 1.8.0_402
+	24/05/15 10:13:38 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+	24/05/15 10:13:38 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@7b8e21ef for default.
+	24/05/15 10:13:38 INFO Executor: Fetching file:///local_storage/reddit/processing/1118-20240514124016.json with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: /local_storage/reddit/processing/1118-20240514124016.json has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/1118-20240514124016.json
+	24/05/15 10:13:38 INFO Executor: Fetching file:///tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: /tmp/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar
+	24/05/15 10:13:38 INFO Executor: Fetching file:///tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: /tmp/jars/org.apache.commons_commons-pool2-2.11.1.jar has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.commons_commons-pool2-2.11.1.jar
+	24/05/15 10:13:38 INFO Executor: Fetching file:///tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: /tmp/jars/org.apache.kafka_kafka-clients-3.4.1.jar has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.kafka_kafka-clients-3.4.1.jar
+	24/05/15 10:13:38 INFO Executor: Fetching file:///tmp/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: /tmp/jars/org.lz4_lz4-java-1.8.0.jar has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.lz4_lz4-java-1.8.0.jar
+	24/05/15 10:13:38 INFO Executor: Fetching file:///tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: /tmp/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar
+	24/05/15 10:13:38 INFO Executor: Fetching file:///tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1715739217483
+	24/05/15 10:13:38 INFO Utils: /tmp/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.xerial.snappy_snappy-java-1.1.10.3.jar
+	24/05/15 10:13:39 INFO Executor: Fetching file:///tmp/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: /tmp/jars/org.slf4j_slf4j-api-2.0.7.jar has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.slf4j_slf4j-api-2.0.7.jar
+	24/05/15 10:13:39 INFO Executor: Fetching file:///tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: /tmp/jars/com.google.code.findbugs_jsr305-3.0.0.jar has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/com.google.code.findbugs_jsr305-3.0.0.jar
+	24/05/15 10:13:39 INFO Executor: Fetching file:///tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: /tmp/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar
+	24/05/15 10:13:39 INFO Executor: Fetching file:///tmp/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: /tmp/jars/commons-logging_commons-logging-1.1.3.jar has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/commons-logging_commons-logging-1.1.3.jar
+	24/05/15 10:13:39 INFO Executor: Fetching file:///tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: /tmp/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.hadoop_hadoop-client-api-3.3.4.jar
+	24/05/15 10:13:39 INFO Executor: Fetching spark://e5be9fed912a:35451/jars/org.slf4j_slf4j-api-2.0.7.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO TransportClientFactory: Successfully created connection to e5be9fed912a/172.18.1.1:35451 after 49 ms (0 ms spent in bootstraps)
+	24/05/15 10:13:39 INFO Utils: Fetching spark://e5be9fed912a:35451/jars/org.slf4j_slf4j-api-2.0.7.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp6795036723613715134.tmp
+	24/05/15 10:13:39 INFO Utils: /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp6795036723613715134.tmp has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.slf4j_slf4j-api-2.0.7.jar
+	24/05/15 10:13:39 INFO Executor: Adding file:/tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.slf4j_slf4j-api-2.0.7.jar to class loader default
+	24/05/15 10:13:39 INFO Executor: Fetching spark://e5be9fed912a:35451/jars/commons-logging_commons-logging-1.1.3.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: Fetching spark://e5be9fed912a:35451/jars/commons-logging_commons-logging-1.1.3.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp7364781461451292136.tmp
+	24/05/15 10:13:39 INFO Utils: /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp7364781461451292136.tmp has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/commons-logging_commons-logging-1.1.3.jar
+	24/05/15 10:13:39 INFO Executor: Adding file:/tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/commons-logging_commons-logging-1.1.3.jar to class loader default
+	24/05/15 10:13:39 INFO Executor: Fetching spark://e5be9fed912a:35451/jars/org.lz4_lz4-java-1.8.0.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: Fetching spark://e5be9fed912a:35451/jars/org.lz4_lz4-java-1.8.0.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp1776542119707433359.tmp
+	24/05/15 10:13:39 INFO Utils: /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp1776542119707433359.tmp has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.lz4_lz4-java-1.8.0.jar
+	24/05/15 10:13:39 INFO Executor: Adding file:/tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.lz4_lz4-java-1.8.0.jar to class loader default
+	24/05/15 10:13:39 INFO Executor: Fetching spark://e5be9fed912a:35451/jars/com.google.code.findbugs_jsr305-3.0.0.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: Fetching spark://e5be9fed912a:35451/jars/com.google.code.findbugs_jsr305-3.0.0.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp2188626292036731366.tmp
+	24/05/15 10:13:39 INFO Utils: /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp2188626292036731366.tmp has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/com.google.code.findbugs_jsr305-3.0.0.jar
+	24/05/15 10:13:39 INFO Executor: Adding file:/tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/com.google.code.findbugs_jsr305-3.0.0.jar to class loader default
+	24/05/15 10:13:39 INFO Executor: Fetching spark://e5be9fed912a:35451/jars/org.apache.kafka_kafka-clients-3.4.1.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: Fetching spark://e5be9fed912a:35451/jars/org.apache.kafka_kafka-clients-3.4.1.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp3905303390012389361.tmp
+	24/05/15 10:13:39 INFO Utils: /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp3905303390012389361.tmp has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.kafka_kafka-clients-3.4.1.jar
+	24/05/15 10:13:39 INFO Executor: Adding file:/tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.kafka_kafka-clients-3.4.1.jar to class loader default
+	24/05/15 10:13:39 INFO Executor: Fetching spark://e5be9fed912a:35451/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: Fetching spark://e5be9fed912a:35451/jars/org.xerial.snappy_snappy-java-1.1.10.3.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp8162830753693369356.tmp
+	24/05/15 10:13:39 INFO Utils: /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp8162830753693369356.tmp has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.xerial.snappy_snappy-java-1.1.10.3.jar
+	24/05/15 10:13:39 INFO Executor: Adding file:/tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.xerial.snappy_snappy-java-1.1.10.3.jar to class loader default
+	24/05/15 10:13:39 INFO Executor: Fetching spark://e5be9fed912a:35451/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: Fetching spark://e5be9fed912a:35451/jars/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp2176214188183129169.tmp
+	24/05/15 10:13:39 INFO Utils: /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp2176214188183129169.tmp has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar
+	24/05/15 10:13:39 INFO Executor: Adding file:/tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.spark_spark-sql-kafka-0-10_2.12-3.5.1.jar to class loader default
+	24/05/15 10:13:39 INFO Executor: Fetching spark://e5be9fed912a:35451/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: Fetching spark://e5be9fed912a:35451/jars/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp7336373485250355769.tmp
+	24/05/15 10:13:39 INFO Utils: /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp7336373485250355769.tmp has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar
+	24/05/15 10:13:39 INFO Executor: Adding file:/tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.spark_spark-token-provider-kafka-0-10_2.12-3.5.1.jar to class loader default
+	24/05/15 10:13:39 INFO Executor: Fetching spark://e5be9fed912a:35451/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: Fetching spark://e5be9fed912a:35451/jars/org.apache.hadoop_hadoop-client-api-3.3.4.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp4021346422940545337.tmp
+	24/05/15 10:13:39 INFO Utils: /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp4021346422940545337.tmp has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.hadoop_hadoop-client-api-3.3.4.jar
+	24/05/15 10:13:39 INFO Executor: Adding file:/tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.hadoop_hadoop-client-api-3.3.4.jar to class loader default
+	24/05/15 10:13:39 INFO Executor: Fetching spark://e5be9fed912a:35451/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: Fetching spark://e5be9fed912a:35451/jars/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp2031934701826510494.tmp
+	24/05/15 10:13:39 INFO Utils: /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp2031934701826510494.tmp has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar
+[INFO] 2024-05-15 10:13:40.680 +0800 -  -> 
+	24/05/15 10:13:39 INFO Executor: Adding file:/tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.hadoop_hadoop-client-runtime-3.3.4.jar to class loader default
+	24/05/15 10:13:39 INFO Executor: Fetching spark://e5be9fed912a:35451/jars/org.apache.commons_commons-pool2-2.11.1.jar with timestamp 1715739217483
+	24/05/15 10:13:39 INFO Utils: Fetching spark://e5be9fed912a:35451/jars/org.apache.commons_commons-pool2-2.11.1.jar to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp146384308679371943.tmp
+	24/05/15 10:13:39 INFO Utils: /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/fetchFileTemp146384308679371943.tmp has been previously copied to /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.commons_commons-pool2-2.11.1.jar
+	24/05/15 10:13:39 INFO Executor: Adding file:/tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/org.apache.commons_commons-pool2-2.11.1.jar to class loader default
+	24/05/15 10:13:39 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33593.
+	24/05/15 10:13:39 INFO NettyBlockTransferService: Server created on e5be9fed912a:33593
+	24/05/15 10:13:39 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+	24/05/15 10:13:39 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, e5be9fed912a, 33593, None)
+	24/05/15 10:13:39 INFO BlockManagerMasterEndpoint: Registering block manager e5be9fed912a:33593 with 366.3 MiB RAM, BlockManagerId(driver, e5be9fed912a, 33593, None)
+	24/05/15 10:13:39 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, e5be9fed912a, 33593, None)
+	24/05/15 10:13:39 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, e5be9fed912a, 33593, None)
+[INFO] 2024-05-15 10:13:41.717 +0800 -  -> 
+	24/05/15 10:13:40 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 345.7 KiB, free 366.0 MiB)
+	24/05/15 10:13:40 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 32.6 KiB, free 365.9 MiB)
+	24/05/15 10:13:40 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on e5be9fed912a:33593 (size: 32.6 KiB, free: 366.3 MiB)
+	24/05/15 10:13:40 INFO SparkContext: Created broadcast 0 from wholeTextFiles at NativeMethodAccessorImpl.java:0
+	24/05/15 10:13:40 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+	24/05/15 10:13:40 INFO SharedState: Warehouse path is 'file:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_121/1122/4117/spark-warehouse'.
+[INFO] 2024-05-15 10:13:45.767 +0800 -  -> 
+	24/05/15 10:13:45 INFO CodeGenerator: Code generated in 334.107699 ms
+	24/05/15 10:13:45 INFO FileInputFormat: Total input files to process : 1
+	24/05/15 10:13:45 INFO FileInputFormat: Total input files to process : 1
+	24/05/15 10:13:45 INFO SparkContext: Starting job: json at NativeMethodAccessorImpl.java:0
+	24/05/15 10:13:45 INFO DAGScheduler: Got job 0 (json at NativeMethodAccessorImpl.java:0) with 1 output partitions
+	24/05/15 10:13:45 INFO DAGScheduler: Final stage: ResultStage 0 (json at NativeMethodAccessorImpl.java:0)
+	24/05/15 10:13:45 INFO DAGScheduler: Parents of final stage: List()
+	24/05/15 10:13:45 INFO DAGScheduler: Missing parents: List()
+	24/05/15 10:13:45 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[7] at json at NativeMethodAccessorImpl.java:0), which has no missing parents
+	24/05/15 10:13:45 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 28.1 KiB, free 365.9 MiB)
+	24/05/15 10:13:45 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 12.4 KiB, free 365.9 MiB)
+	24/05/15 10:13:45 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on e5be9fed912a:33593 (size: 12.4 KiB, free: 366.3 MiB)
+	24/05/15 10:13:45 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+[INFO] 2024-05-15 10:13:46.808 +0800 -  -> 
+	24/05/15 10:13:45 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[7] at json at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+	24/05/15 10:13:45 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+	24/05/15 10:13:45 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (e5be9fed912a, executor driver, partition 0, PROCESS_LOCAL, 9887 bytes) 
+	24/05/15 10:13:45 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+	24/05/15 10:13:46 INFO WholeTextFileRDD: Input split: Paths:/tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/userFiles-3723f793-613d-4929-a1da-e4f5e90ab2db/1118-20240514124016.json:0+30064
+[INFO] 2024-05-15 10:13:47.813 +0800 -  -> 
+	24/05/15 10:13:46 INFO CodeGenerator: Code generated in 106.622132 ms
+	24/05/15 10:13:47 INFO PythonRunner: Times: total = 701, boot = 534, init = 165, finish = 2
+	24/05/15 10:13:47 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2763 bytes result sent to driver
+	24/05/15 10:13:47 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 1253 ms on e5be9fed912a (executor driver) (1/1)
+	24/05/15 10:13:47 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+	24/05/15 10:13:47 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 45985
+	24/05/15 10:13:47 INFO DAGScheduler: ResultStage 0 (json at NativeMethodAccessorImpl.java:0) finished in 1.458 s
+	24/05/15 10:13:47 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+	24/05/15 10:13:47 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage finished
+	24/05/15 10:13:47 INFO DAGScheduler: Job 0 finished: json at NativeMethodAccessorImpl.java:0, took 1.590197 s
+	Traceback (most recent call last):
+	  File "/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_121/1122/4117/spark_reddit_preprocessing.py", line 53, in <module>
+	    new_df = raw_df.withColumn("author", split(col("author"), ",").cast(ArrayType(StringType())))
+	                                               ^^^
+	NameError: name 'col' is not defined
+	24/05/15 10:13:47 INFO SparkContext: Invoking stop() from shutdown hook
+	24/05/15 10:13:47 INFO SparkContext: SparkContext is stopping with exitCode 0.
+	24/05/15 10:13:47 INFO SparkUI: Stopped Spark web UI at http://e5be9fed912a:4040
+	24/05/15 10:13:47 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+	24/05/15 10:13:47 INFO MemoryStore: MemoryStore cleared
+	24/05/15 10:13:47 INFO BlockManager: BlockManager stopped
+	24/05/15 10:13:47 INFO BlockManagerMaster: BlockManagerMaster stopped
+	24/05/15 10:13:47 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+	24/05/15 10:13:47 INFO SparkContext: Successfully stopped SparkContext
+	24/05/15 10:13:47 INFO ShutdownHookManager: Shutdown hook called
+	24/05/15 10:13:47 INFO ShutdownHookManager: Deleting directory /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15/pyspark-8fe4596a-97e2-4901-9263-5b6d41d802cb
+	24/05/15 10:13:47 INFO ShutdownHookManager: Deleting directory /tmp/spark-6b069d1e-7f00-4ad6-94c9-5b2e9f1a8047
+	24/05/15 10:13:47 INFO ShutdownHookManager: Deleting directory /tmp/spark-d7816da7-0580-4429-9c4a-1c86bd51bd15
+[INFO] 2024-05-15 10:13:47.814 +0800 - process has exited. execute path:/tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_121/1122/4117, processId:1737 ,exitStatusCode:1 ,processWaitForStatus:true ,processExitValue:1
+[INFO] 2024-05-15 10:13:47.814 +0800 - ***********************************************************************************************
+[INFO] 2024-05-15 10:13:47.814 +0800 - *********************************  Finalize task instance  ************************************
+[INFO] 2024-05-15 10:13:47.814 +0800 - ***********************************************************************************************
+[INFO] 2024-05-15 10:13:47.814 +0800 - Upload output files: [] successfully
+[INFO] 2024-05-15 10:13:47.816 +0800 - Send task execute status: FAILURE to master : 172.18.1.1:1234
+[INFO] 2024-05-15 10:13:47.817 +0800 - Remove the current task execute context from worker cache
+[INFO] 2024-05-15 10:13:47.817 +0800 - The current execute mode isn't develop mode, will clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_121/1122/4117
+[INFO] 2024-05-15 10:13:47.817 +0800 - Success clear the task execute file: /tmp/dolphinscheduler/exec/process/default/13010050770016/13201021801792_121/1122/4117
+[INFO] 2024-05-15 10:13:47.818 +0800 - FINALIZE_SESSION

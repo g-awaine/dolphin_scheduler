@@ -123,7 +123,8 @@ services:
       - ./volumes/dolphinscheduler-logs:/opt/dolphinscheduler/logs
       - ./volumes/dolphinscheduler-shared-local:/opt/soft
     networks:
-      - dolphinscheduler
+      dolphinscheduler:
+        ipv4_address: 172.18.2.1
 
   dolphinscheduler-worker:
     image: ${HUB}/dolphinscheduler-worker:local_${TAG}
